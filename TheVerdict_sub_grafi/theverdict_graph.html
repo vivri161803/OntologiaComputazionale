@@ -1,0 +1,463 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <link href="lib/tom-select/tom-select.css" rel="stylesheet">
+                <script src="lib/tom-select/tom-select.complete.min.js"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #1a1a1a;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="char_gisburn">char_gisburn</option>
+                                
+                                    <option value="SOGGETTO_EROE">SOGGETTO_EROE</option>
+                                
+                                    <option value="evt_gisburn_abandons_painting">evt_gisburn_abandons_painting</option>
+                                
+                                    <option value="evt_gisburn_establishes_villa">evt_gisburn_establishes_villa</option>
+                                
+                                    <option value="evt_grafton_gallery_show">evt_grafton_gallery_show</option>
+                                
+                                    <option value="evt_rickham_visits_villa">evt_rickham_visits_villa</option>
+                                
+                                    <option value="evt_gisburn_paints_stroud">evt_gisburn_paints_stroud</option>
+                                
+                                    <option value="evt_rickham_discovers_donkey_sketch">evt_rickham_discovers_donkey_sketch</option>
+                                
+                                    <option value="evt_gisburn_explains_abdication">evt_gisburn_explains_abdication</option>
+                                
+                                    <option value="CAMBIAMENTO_DI_STATO">CAMBIAMENTO_DI_STATO</option>
+                                
+                                    <option value="loc_riviera">loc_riviera</option>
+                                
+                                    <option value="loc_grafton_gallery">loc_grafton_gallery</option>
+                                
+                                    <option value="evt_rickham_visits_riviera">evt_rickham_visits_riviera</option>
+                                
+                                    <option value="loc_gisburn_villa">loc_gisburn_villa</option>
+                                
+                                    <option value="evt_stroud_death">evt_stroud_death</option>
+                                
+                                    <option value="evt_rickham_sees_portrait">evt_rickham_sees_portrait</option>
+                                
+                                    <option value="RIVELAZIONE_SCOPERTA">RIVELAZIONE_SCOPERTA</option>
+                                
+                                    <option value="evt_curiosity">evt_curiosity</option>
+                                
+                                    <option value="char_rickham">char_rickham</option>
+                                
+                                    <option value="char_gisburn_wife">char_gisburn_wife</option>
+                                
+                                    <option value="char_hermia_croft">char_hermia_croft</option>
+                                
+                                    <option value="char_claude_nutley">char_claude_nutley</option>
+                                
+                                    <option value="evt_nutley_publishes_obituary">evt_nutley_publishes_obituary</option>
+                                
+                                    <option value="char_grindle">char_grindle</option>
+                                
+                                    <option value="OPPONENTE_ANTAGONISTA">OPPONENTE_ANTAGONISTA</option>
+                                
+                                    <option value="evt_grindle_suggestion">evt_grindle_suggestion</option>
+                                
+                                    <option value="evt_grindle_paints">evt_grindle_paints</option>
+                                
+                                    <option value="evt_abandonment">evt_abandonment</option>
+                                
+                                    <option value="char_stroud">char_stroud</option>
+                                
+                                    <option value="DONATORE_FORNITORE">DONATORE_FORNITORE</option>
+                                
+                                    <option value="evt_discovery">evt_discovery</option>
+                                
+                                    <option value="evt_unease">evt_unease</option>
+                                
+                                    <option value="evt_journey">evt_journey</option>
+                                
+                                    <option value="PREDICAMENTO">PREDICAMENTO</option>
+                                
+                                    <option value="char_stroud_wife">char_stroud_wife</option>
+                                
+                                    <option value="evt_stroud_note">evt_stroud_note</option>
+                                
+                                    <option value="evt_request">evt_request</option>
+                                
+                                    <option value="ALL_APERTO">ALL_APERTO</option>
+                                
+                                    <option value="AL_CHIUSO">AL_CHIUSO</option>
+                                
+                                    <option value="ESPOSIZIONE">ESPOSIZIONE</option>
+                                
+                                    <option value="loc_room">loc_room</option>
+                                
+                                    <option value="char_narrator">char_narrator</option>
+                                
+                                    <option value="char_companion">char_companion</option>
+                                
+                                    <option value="evt_donkey_sketch">evt_donkey_sketch</option>
+                                
+                                    <option value="evt_revelation">evt_revelation</option>
+                                
+                                    <option value="SPOSTAMENTO_VIAGGIO">SPOSTAMENTO_VIAGGIO</option>
+                                
+                                    <option value="loc_stroud_house">loc_stroud_house</option>
+                                
+                                    <option value="SCONFITTA">SCONFITTA</option>
+                                
+                                    <option value="obj_sketch">obj_sketch</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#ff6666", "font": {"color": "white"}, "id": "char_gisburn", "label": "char_gisburn", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_gisburn"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SOGGETTO_EROE", "label": "SOGGETTO_EROE", "shape": "dot", "size": 10, "title": "Tipologia/ID: SOGGETTO_EROE"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_gisburn_abandons_painting", "label": "evt_gisburn_abandons_painting", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_gisburn_abandons_painting"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_gisburn_establishes_villa", "label": "evt_gisburn_establishes_villa", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_gisburn_establishes_villa"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_grafton_gallery_show", "label": "evt_grafton_gallery_show", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_grafton_gallery_show"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_rickham_visits_villa", "label": "evt_rickham_visits_villa", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_rickham_visits_villa"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_gisburn_paints_stroud", "label": "evt_gisburn_paints_stroud", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_gisburn_paints_stroud"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_rickham_discovers_donkey_sketch", "label": "evt_rickham_discovers_donkey_sketch", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_rickham_discovers_donkey_sketch"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_gisburn_explains_abdication", "label": "evt_gisburn_explains_abdication", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_gisburn_explains_abdication"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "CAMBIAMENTO_DI_STATO", "label": "CAMBIAMENTO_DI_STATO", "shape": "dot", "size": 10, "title": "Tipologia/ID: CAMBIAMENTO_DI_STATO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_riviera", "label": "loc_riviera", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_riviera"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_grafton_gallery", "label": "loc_grafton_gallery", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_grafton_gallery"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_rickham_visits_riviera", "label": "evt_rickham_visits_riviera", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_rickham_visits_riviera"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_gisburn_villa", "label": "loc_gisburn_villa", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_gisburn_villa"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_stroud_death", "label": "evt_stroud_death", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_stroud_death"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_rickham_sees_portrait", "label": "evt_rickham_sees_portrait", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_rickham_sees_portrait"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "RIVELAZIONE_SCOPERTA", "label": "RIVELAZIONE_SCOPERTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: RIVELAZIONE_SCOPERTA"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_curiosity", "label": "evt_curiosity", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_curiosity"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_rickham", "label": "char_rickham", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_rickham"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_gisburn_wife", "label": "char_gisburn_wife", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_gisburn_wife"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_hermia_croft", "label": "char_hermia_croft", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_hermia_croft"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_claude_nutley", "label": "char_claude_nutley", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_claude_nutley"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_nutley_publishes_obituary", "label": "evt_nutley_publishes_obituary", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_nutley_publishes_obituary"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_grindle", "label": "char_grindle", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_grindle"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "OPPONENTE_ANTAGONISTA", "label": "OPPONENTE_ANTAGONISTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: OPPONENTE_ANTAGONISTA"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_grindle_suggestion", "label": "evt_grindle_suggestion", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_grindle_suggestion"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_grindle_paints", "label": "evt_grindle_paints", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_grindle_paints"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_abandonment", "label": "evt_abandonment", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_abandonment"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_stroud", "label": "char_stroud", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_stroud"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "DONATORE_FORNITORE", "label": "DONATORE_FORNITORE", "shape": "dot", "size": 10, "title": "Tipologia/ID: DONATORE_FORNITORE"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_discovery", "label": "evt_discovery", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_discovery"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_unease", "label": "evt_unease", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_unease"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_journey", "label": "evt_journey", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_journey"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "PREDICAMENTO", "label": "PREDICAMENTO", "shape": "dot", "size": 10, "title": "Tipologia/ID: PREDICAMENTO"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_stroud_wife", "label": "char_stroud_wife", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_stroud_wife"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_stroud_note", "label": "evt_stroud_note", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_stroud_note"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_request", "label": "evt_request", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_request"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "ALL_APERTO", "label": "ALL_APERTO", "shape": "dot", "size": 10, "title": "Tipologia/ID: ALL_APERTO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "AL_CHIUSO", "label": "AL_CHIUSO", "shape": "dot", "size": 10, "title": "Tipologia/ID: AL_CHIUSO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "ESPOSIZIONE", "label": "ESPOSIZIONE", "shape": "dot", "size": 10, "title": "Tipologia/ID: ESPOSIZIONE"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_room", "label": "loc_room", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_room"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_narrator", "label": "char_narrator", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_narrator"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_companion", "label": "char_companion", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_companion"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_donkey_sketch", "label": "evt_donkey_sketch", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_donkey_sketch"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_revelation", "label": "evt_revelation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_revelation"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SPOSTAMENTO_VIAGGIO", "label": "SPOSTAMENTO_VIAGGIO", "shape": "dot", "size": 10, "title": "Tipologia/ID: SPOSTAMENTO_VIAGGIO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_stroud_house", "label": "loc_stroud_house", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_stroud_house"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SCONFITTA", "label": "SCONFITTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: SCONFITTA"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_sketch", "label": "obj_sketch", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_sketch"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "char_gisburn", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gisburn_abandons_painting", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gisburn_establishes_villa", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_grafton_gallery_show", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_visits_villa", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gisburn_paints_stroud", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_discovers_donkey_sketch", "width": 1}, {"arrows": "to", "from": "char_gisburn", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gisburn_explains_abdication", "width": 1}, {"arrows": "to", "from": "evt_gisburn_abandons_painting", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_gisburn_establishes_villa", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_gisburn_abandons_painting", "width": 1}, {"arrows": "to", "from": "evt_gisburn_establishes_villa", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_riviera", "width": 1}, {"arrows": "to", "from": "evt_grafton_gallery_show", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_grafton_gallery", "width": 1}, {"arrows": "to", "from": "evt_rickham_visits_villa", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_rickham_visits_riviera", "width": 1}, {"arrows": "to", "from": "evt_rickham_visits_villa", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_gisburn_villa", "width": 1}, {"arrows": "to", "from": "evt_gisburn_paints_stroud", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_stroud_death", "width": 1}, {"arrows": "to", "from": "evt_gisburn_paints_stroud", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_rickham_discovers_donkey_sketch", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_rickham_sees_portrait", "width": 1}, {"arrows": "to", "from": "evt_rickham_discovers_donkey_sketch", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_gisburn_villa", "width": 1}, {"arrows": "to", "from": "evt_rickham_discovers_donkey_sketch", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_gisburn_explains_abdication", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_rickham_discovers_donkey_sketch", "width": 1}, {"arrows": "to", "from": "evt_gisburn_explains_abdication", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_gisburn_villa", "width": 1}, {"arrows": "to", "from": "evt_gisburn_explains_abdication", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_curiosity", "width": 1}, {"arrows": "to", "from": "char_rickham", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_visits_riviera", "width": 1}, {"arrows": "to", "from": "char_rickham", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_visits_villa", "width": 1}, {"arrows": "to", "from": "char_rickham", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_sees_portrait", "width": 1}, {"arrows": "to", "from": "char_rickham", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_discovers_donkey_sketch", "width": 1}, {"arrows": "to", "from": "char_rickham", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_gisburn_explains_abdication", "width": 1}, {"arrows": "to", "from": "evt_rickham_visits_riviera", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_gisburn_establishes_villa", "width": 1}, {"arrows": "to", "from": "evt_rickham_visits_riviera", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_riviera", "width": 1}, {"arrows": "to", "from": "evt_rickham_sees_portrait", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_rickham_visits_villa", "width": 1}, {"arrows": "to", "from": "evt_rickham_sees_portrait", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_gisburn_villa", "width": 1}, {"arrows": "to", "from": "char_gisburn_wife", "label": "PARTECIPA_COME_CONIUGE_FAMILIARE", "title": "PARTECIPA_COME_CONIUGE_FAMILIARE", "to": "evt_gisburn_abandons_painting", "width": 1}, {"arrows": "to", "from": "char_gisburn_wife", "label": "PARTECIPA_COME_AMICO", "title": "PARTECIPA_COME_AMICO", "to": "evt_rickham_visits_villa", "width": 1}, {"arrows": "to", "from": "char_gisburn_wife", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_rickham_sees_portrait", "width": 1}, {"arrows": "to", "from": "char_hermia_croft", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_grafton_gallery_show", "width": 1}, {"arrows": "to", "from": "char_claude_nutley", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_nutley_publishes_obituary", "width": 1}, {"arrows": "to", "from": "evt_nutley_publishes_obituary", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_gisburn_abandons_painting", "width": 1}, {"arrows": "to", "from": "char_grindle", "label": "COME", "title": "COME", "to": "OPPONENTE_ANTAGONISTA", "width": 1}, {"arrows": "to", "from": "char_grindle", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_gisburn_abandons_painting", "width": 1}, {"arrows": "to", "from": "char_grindle", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_grindle_suggestion", "width": 1}, {"arrows": "to", "from": "char_grindle", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_grindle_paints", "width": 1}, {"arrows": "to", "from": "evt_grindle_suggestion", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_abandonment", "width": 1}, {"arrows": "to", "from": "evt_grindle_paints", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_grindle_suggestion", "width": 1}, {"arrows": "to", "from": "char_stroud", "label": "COME", "title": "COME", "to": "DONATORE_FORNITORE", "width": 1}, {"arrows": "to", "from": "char_stroud", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_discovery", "width": 1}, {"arrows": "to", "from": "char_stroud", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_unease", "width": 1}, {"arrows": "to", "from": "char_stroud", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_grindle_paints", "width": 1}, {"arrows": "to", "from": "evt_discovery", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_journey", "width": 1}, {"arrows": "to", "from": "evt_discovery", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_unease", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_discovery", "width": 1}, {"arrows": "to", "from": "evt_unease", "label": "COME", "title": "COME", "to": "PREDICAMENTO", "width": 1}, {"arrows": "to", "from": "char_stroud_wife", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_gisburn_paints_stroud", "width": 1}, {"arrows": "to", "from": "char_stroud_wife", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_stroud_note", "width": 1}, {"arrows": "to", "from": "char_stroud_wife", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_grindle_suggestion", "width": 1}, {"arrows": "to", "from": "evt_stroud_note", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_request", "width": 1}, {"arrows": "to", "from": "loc_riviera", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "loc_gisburn_villa", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "evt_curiosity", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_curiosity", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_room", "width": 1}, {"arrows": "to", "from": "char_narrator", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_request", "width": 1}, {"arrows": "to", "from": "evt_request", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_curiosity", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_request", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_stroud_note", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_journey", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_discovery", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_unease", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_donkey_sketch", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_revelation", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_abandonment", "width": 1}, {"arrows": "to", "from": "char_companion", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_grindle_suggestion", "width": 1}, {"arrows": "to", "from": "evt_journey", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_stroud_note", "width": 1}, {"arrows": "to", "from": "evt_journey", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_journey", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_stroud_house", "width": 1}, {"arrows": "to", "from": "evt_donkey_sketch", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_unease", "width": 1}, {"arrows": "to", "from": "evt_revelation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_donkey_sketch", "width": 1}, {"arrows": "to", "from": "evt_revelation", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_abandonment", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_revelation", "width": 1}, {"arrows": "to", "from": "evt_abandonment", "label": "COME", "title": "COME", "to": "SCONFITTA", "width": 1}, {"arrows": "to", "from": "loc_room", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_stroud_house", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "obj_sketch", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_donkey_sketch", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 1,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 150
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

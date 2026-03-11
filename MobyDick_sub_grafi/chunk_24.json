@@ -1,0 +1,466 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_peleg",
+      "label": "Captain Peleg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bildad",
+      "label": "Captain Bildad",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck",
+      "label": "Mr. Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Mr. Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flask",
+      "label": "Mr. Flask",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charity",
+      "label": "Charity",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bulkington",
+      "label": "Bulkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_pequod",
+      "label": "The Pequod",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dismissal",
+      "label": "Dismissal of the ship's riggers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hauling",
+      "label": "The Pequod hauled out from the wharf",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charity_gift",
+      "label": "Charity comes off with gifts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captains_emerge",
+      "label": "The two Captains issue from the cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_strike_tent",
+      "label": "Strike the tent",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_man_capstan",
+      "label": "Man the capstan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_anchor_up",
+      "label": "The anchor was up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sails_set",
+      "label": "The sails were set",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "The ship glided off into the ocean",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peleg_kick",
+      "label": "Captain Peleg kicks the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pilots_depart",
+      "label": "The two pilots depart the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bulkington_helm",
+      "label": "Bulkington stands at the helm",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_wharf",
+      "label": "The wharf",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "The cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarter_deck",
+      "label": "The quarter-deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_main_mast",
+      "label": "The main-mast",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_windlass",
+      "label": "The windlass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "The wintry Atlantic ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_bedford",
+      "label": "New Bedford",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_pilot",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_chief_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_captain",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_dismissal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hauling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charity_gift",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hauling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captains_emerge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charity_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_strike_tent",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captains_emerge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_man_capstan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_strike_tent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_kick",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_man_capstan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_anchor_up",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_peleg_kick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sails_set",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_anchor_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sails_set",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pilots_depart",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bulkington_helm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_peleg_kick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_peleg_kick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_man_capstan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_man_capstan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charity",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_charity_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captains_emerge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captains_emerge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pilots_depart",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pilots_depart",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bulkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bulkington_helm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charity_gift",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captains_emerge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_strike_tent",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarter_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_man_capstan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windlass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bulkington_helm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_quarter_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_peleg_kick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_captains_emerge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_strike_tent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_man_capstan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bulkington",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonah",
+      "label": "Jonah",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_preacher",
+      "label": "The Preacher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain",
+      "label": "The Captain of the Tarshish ship",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sailors",
+      "label": "The sailors and mariners",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_god",
+      "label": "God",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whale",
+      "label": "The great fish/whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_hymn",
+      "label": "The congregation sings a hymn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sermon_begins",
+      "label": "The preacher begins his sermon on Jonah",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_disobedience",
+      "label": "Jonah's disobedience to God's command",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flight",
+      "label": "Jonah flees to Joppa seeking a ship to Tarshish",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boarding",
+      "label": "Jonah boards the Tarshish ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_interrogation",
+      "label": "The Captain questions Jonah and accepts his passage payment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_sleeps",
+      "label": "Jonah falls asleep in his cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_departs",
+      "label": "The ship casts off and sails toward Tarshish",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_storm",
+      "label": "A dreadful storm comes upon the sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_awakens",
+      "label": "Jonah is awakened by the frightened master",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_casting_lots",
+      "label": "The sailors cast lots to discover the cause of the tempest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_confession",
+      "label": "Jonah confesses he is a Hebrew and fears the Lord",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_cast_overboard",
+      "label": "The sailors cast Jonah into the sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_swallows",
+      "label": "The whale swallows Jonah",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_prayer",
+      "label": "Jonah prays from within the fish's belly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_deliverance",
+      "label": "Jonah is delivered from the sea and the whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The chapel where the sermon is preached",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_joppa",
+      "label": "Joppa (modern Jaffa)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tarshish",
+      "label": "Tarshish (modern Cadiz)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "The Tarshish ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "Jonah's cabin on the ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fish_belly",
+      "label": "The belly of the fish/whale",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jonah",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_god",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_sailors",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_god",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_disobedience",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_flight",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_storm",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confession",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_prayer",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_deliverance",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_sea",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_ship",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chapel",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_hymn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sermon_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hymn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sermon_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_preacher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sermon_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_disobedience",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sermon_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_disobedience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_disobedience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_disobedience",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_disobedience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_joppa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_boarding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boarding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_boarding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boarding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boarding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captain_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_captain_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_departs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ship_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_departs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_jonah_awakens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_jonah_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_awakens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_casting_lots",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sailors",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_casting_lots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_casting_lots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_casting_lots",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_casting_lots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sailors",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_jonah_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jonah_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_cast_overboard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sailors",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_cast_overboard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonah_cast_overboard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_cast_overboard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_swallows",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_cast_overboard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_swallows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whale_swallows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_swallows",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fish_belly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_prayer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_swallows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonah_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_prayer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_jonah_prayer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fish_belly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deliverance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_deliverance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_deliverance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deliverance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_deliverance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    }
+  ]
+}

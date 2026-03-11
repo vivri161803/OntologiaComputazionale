@@ -1,0 +1,297 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_bildad",
+      "label": "Captain Bildad",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peleg",
+      "label": "Captain Peleg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interview",
+      "label": "Ishmael's interview with Bildad and Peleg in the cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lay_negotiation",
+      "label": "Negotiation of the lay (share of profits)",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quarrel",
+      "label": "Quarrel between Peleg and Bildad over Ishmael's lay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_signing",
+      "label": "Ishmael signs the ship's articles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inquiry",
+      "label": "Ishmael inquires about Captain Ahab",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "The cabin of the Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pequod",
+      "label": "The Pequod (whaling ship)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_ship_articles",
+      "label": "Ship's articles (contract)",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_captain",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_proprietor",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_sailor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_inquirer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_negotiation",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_meeting",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_enclosed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_ship",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_bildad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_lay_negotiation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lay_negotiation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lay_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lay_negotiation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lay_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_lay_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lay_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bildad",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    }
+  ]
+}

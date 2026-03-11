@@ -1,0 +1,932 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+                <link href="lib/tom-select/tom-select.css" rel="stylesheet">
+                <script src="lib/tom-select/tom-select.complete.min.js"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #1a1a1a;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+             #loadingBar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width: 100%;
+                 height: 800px;
+                 background-color:rgba(200,200,200,0.8);
+                 -webkit-transition: all 0.5s ease;
+                 -moz-transition: all 0.5s ease;
+                 -ms-transition: all 0.5s ease;
+                 -o-transition: all 0.5s ease;
+                 transition: all 0.5s ease;
+                 opacity:1;
+             }
+
+             #bar {
+                 position:absolute;
+                 top:0px;
+                 left:0px;
+                 width:20px;
+                 height:20px;
+                 margin:auto auto auto auto;
+                 border-radius:11px;
+                 border:2px solid rgba(30,30,30,0.05);
+                 background: rgb(0, 173, 246); /* Old browsers */
+                 box-shadow: 2px 0px 4px rgba(0,0,0,0.4);
+             }
+
+             #border {
+                 position:absolute;
+                 top:10px;
+                 left:10px;
+                 width:500px;
+                 height:23px;
+                 margin:auto auto auto auto;
+                 box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+                 border-radius:10px;
+             }
+
+             #text {
+                 position:absolute;
+                 top:8px;
+                 left:530px;
+                 width:30px;
+                 height:50px;
+                 margin:auto auto auto auto;
+                 font-size:22px;
+                 color: #000000;
+             }
+
+             div.outerBorder {
+                 position:relative;
+                 top:400px;
+                 width:600px;
+                 height:44px;
+                 margin:auto auto auto auto;
+                 border:8px solid rgba(0,0,0,0.1);
+                 background: rgb(252,252,252); /* Old browsers */
+                 background: -moz-linear-gradient(top,  rgba(252,252,252,1) 0%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+                 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,252,252,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+                 background: -webkit-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+                 background: -o-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+                 background: -ms-linear-gradient(top,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* IE10+ */
+                 background: linear-gradient(to bottom,  rgba(252,252,252,1) 0%,rgba(237,237,237,1) 100%); /* W3C */
+                 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+                 border-radius:72px;
+                 box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+             }
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+                <div id="select-menu" class="card-header">
+                    <div class="row no-gutters">
+                        <div class="col-10 pb-2">
+                            <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="selectNode([value]);"
+                            id="select-node"
+                            placeholder="Select node..."
+                            >
+                                <option selected>Select a Node by ID</option>
+                                
+                                    <option value="char_utterson">char_utterson</option>
+                                
+                                    <option value="AIUTANTE_MAGICO">AIUTANTE_MAGICO</option>
+                                
+                                    <option value="evt_story_telling">evt_story_telling</option>
+                                
+                                    <option value="evt_sunday_walk">evt_sunday_walk</option>
+                                
+                                    <option value="SOGGETTO_EROE">SOGGETTO_EROE</option>
+                                
+                                    <option value="evt_dinner">evt_dinner</option>
+                                
+                                    <option value="evt_reading_will">evt_reading_will</option>
+                                
+                                    <option value="evt_visit_lanyon">evt_visit_lanyon</option>
+                                
+                                    <option value="evt_conversation_lanyon">evt_conversation_lanyon</option>
+                                
+                                    <option value="evt_sleepless_night">evt_sleepless_night</option>
+                                
+                                    <option value="evt_haunting_door">evt_haunting_door</option>
+                                
+                                    <option value="evt_encounter_hyde">evt_encounter_hyde</option>
+                                
+                                    <option value="evt_utterson_reflection">evt_utterson_reflection</option>
+                                
+                                    <option value="evt_visit_jekyll_house">evt_visit_jekyll_house</option>
+                                
+                                    <option value="loc_jekyll_house">loc_jekyll_house</option>
+                                
+                                    <option value="evt_jekyll_promise">evt_jekyll_promise</option>
+                                
+                                    <option value="evt_hyde_house_search">evt_hyde_house_search</option>
+                                
+                                    <option value="evt_utterson_visits_jekyll">evt_utterson_visits_jekyll</option>
+                                
+                                    <option value="evt_utterson_reads_letter">evt_utterson_reads_letter</option>
+                                
+                                    <option value="evt_envelope_burned">evt_envelope_burned</option>
+                                
+                                    <option value="evt_utterson_dinner_jan8">evt_utterson_dinner_jan8</option>
+                                
+                                    <option value="evt_utterson_visits_lanyon">evt_utterson_visits_lanyon</option>
+                                
+                                    <option value="evt_utterson_writes_jekyll">evt_utterson_writes_jekyll</option>
+                                
+                                    <option value="evt_jekyll_replies">evt_jekyll_replies</option>
+                                
+                                    <option value="evt_lanyon_funeral">evt_lanyon_funeral</option>
+                                
+                                    <option value="evt_utterson_opens_envelope">evt_utterson_opens_envelope</option>
+                                
+                                    <option value="char_jekyll">char_jekyll</option>
+                                
+                                    <option value="char_lanyon">char_lanyon</option>
+                                
+                                    <option value="evt_walk">evt_walk</option>
+                                
+                                    <option value="evt_gaze">evt_gaze</option>
+                                
+                                    <option value="evt_conversation_street">evt_conversation_street</option>
+                                
+                                    <option value="evt_enter_court">evt_enter_court</option>
+                                
+                                    <option value="evt_greeting">evt_greeting</option>
+                                
+                                    <option value="evt_invitation">evt_invitation</option>
+                                
+                                    <option value="evt_jekyll_refusal">evt_jekyll_refusal</option>
+                                
+                                    <option value="evt_terror">evt_terror</option>
+                                
+                                    <option value="evt_departure">evt_departure</option>
+                                
+                                    <option value="evt_poole_visit">evt_poole_visit</option>
+                                
+                                    <option value="evt_poole_confession">evt_poole_confession</option>
+                                
+                                    <option value="evt_utterson_summoned">evt_utterson_summoned</option>
+                                
+                                    <option value="evt_night_journey">evt_night_journey</option>
+                                
+                                    <option value="evt_arrival_at_house">evt_arrival_at_house</option>
+                                
+                                    <option value="evt_poole_questions_voice">evt_poole_questions_voice</option>
+                                
+                                    <option value="evt_poole_reveals_suspicion">evt_poole_reveals_suspicion</option>
+                                
+                                    <option value="evt_utterson_explanation">evt_utterson_explanation</option>
+                                
+                                    <option value="evt_poole_identifies_hyde">evt_poole_identifies_hyde</option>
+                                
+                                    <option value="evt_decision_to_break_door">evt_decision_to_break_door</option>
+                                
+                                    <option value="evt_preparation_for_attack">evt_preparation_for_attack</option>
+                                
+                                    <option value="evt_waiting_in_theatre">evt_waiting_in_theatre</option>
+                                
+                                    <option value="evt_utterson_demands_entry">evt_utterson_demands_entry</option>
+                                
+                                    <option value="evt_voice_pleads_mercy">evt_voice_pleads_mercy</option>
+                                
+                                    <option value="evt_door_breaking">evt_door_breaking</option>
+                                
+                                    <option value="evt_body_discovery">evt_body_discovery</option>
+                                
+                                    <option value="evt_building_search">evt_building_search</option>
+                                
+                                    <option value="evt_cabinet_examination">evt_cabinet_examination</option>
+                                
+                                    <option value="evt_envelope_discovery">evt_envelope_discovery</option>
+                                
+                                    <option value="evt_letter_reading">evt_letter_reading</option>
+                                
+                                    <option value="evt_birth">evt_birth</option>
+                                
+                                    <option value="SPOSTAMENTO_VIAGGIO">SPOSTAMENTO_VIAGGIO</option>
+                                
+                                    <option value="loc_london_street">loc_london_street</option>
+                                
+                                    <option value="ESPOSIZIONE">ESPOSIZIONE</option>
+                                
+                                    <option value="loc_utterson_house">loc_utterson_house</option>
+                                
+                                    <option value="RIVELAZIONE_SCOPERTA">RIVELAZIONE_SCOPERTA</option>
+                                
+                                    <option value="loc_utterson_business_room">loc_utterson_business_room</option>
+                                
+                                    <option value="loc_cavendish_square">loc_cavendish_square</option>
+                                
+                                    <option value="loc_lanyon_house">loc_lanyon_house</option>
+                                
+                                    <option value="CAMBIAMENTO_DI_STATO">CAMBIAMENTO_DI_STATO</option>
+                                
+                                    <option value="loc_by_street">loc_by_street</option>
+                                
+                                    <option value="evt_hyde_enters_house">evt_hyde_enters_house</option>
+                                
+                                    <option value="evt_butler_conversation">evt_butler_conversation</option>
+                                
+                                    <option value="AL_CHIUSO">AL_CHIUSO</option>
+                                
+                                    <option value="RIFUGIO">RIFUGIO</option>
+                                
+                                    <option value="IL_CASTELLO">IL_CASTELLO</option>
+                                
+                                    <option value="ALLEANZA_PATTO">ALLEANZA_PATTO</option>
+                                
+                                    <option value="evt_utterson_jekyll_conversation">evt_utterson_jekyll_conversation</option>
+                                
+                                    <option value="evt_murder">evt_murder</option>
+                                
+                                    <option value="evt_stick_recognition">evt_stick_recognition</option>
+                                
+                                    <option value="loc_soho_house">loc_soho_house</option>
+                                
+                                    <option value="evt_bank_visit">evt_bank_visit</option>
+                                
+                                    <option value="loc_laboratory">loc_laboratory</option>
+                                
+                                    <option value="evt_jekyll_letter_received">evt_jekyll_letter_received</option>
+                                
+                                    <option value="evt_letter_handed">evt_letter_handed</option>
+                                
+                                    <option value="evt_jekyll_seclusion">evt_jekyll_seclusion</option>
+                                
+                                    <option value="evt_jekyll_confined">evt_jekyll_confined</option>
+                                
+                                    <option value="evt_lanyon_rejects_jekyll">evt_lanyon_rejects_jekyll</option>
+                                
+                                    <option value="evt_lanyon_death">evt_lanyon_death</option>
+                                
+                                    <option value="loc_utterson_office">loc_utterson_office</option>
+                                
+                                    <option value="evt_first_transformation">evt_first_transformation</option>
+                                
+                                    <option value="evt_reverse_transformation">evt_reverse_transformation</option>
+                                
+                                    <option value="evt_will_creation">evt_will_creation</option>
+                                
+                                    <option value="evt_bank_account">evt_bank_account</option>
+                                
+                                    <option value="evt_cruelty">evt_cruelty</option>
+                                
+                                    <option value="evt_confrontation">evt_confrontation</option>
+                                
+                                    <option value="evt_payment">evt_payment</option>
+                                
+                                    <option value="evt_adventure">evt_adventure</option>
+                                
+                                    <option value="evt_awakening">evt_awakening</option>
+                                
+                                    <option value="evt_transformation_discovery">evt_transformation_discovery</option>
+                                
+                                    <option value="evt_return_to_jekyll">evt_return_to_jekyll</option>
+                                
+                                    <option value="evt_choice">evt_choice</option>
+                                
+                                    <option value="evt_two_months_virtue">evt_two_months_virtue</option>
+                                
+                                    <option value="evt_relapse">evt_relapse</option>
+                                
+                                    <option value="evt_transformation_back">evt_transformation_back</option>
+                                
+                                    <option value="evt_remorse">evt_remorse</option>
+                                
+                                    <option value="evt_redemption">evt_redemption</option>
+                                
+                                    <option value="evt_temptation_again">evt_temptation_again</option>
+                                
+                                    <option value="evt_final_transformation">evt_final_transformation</option>
+                                
+                                    <option value="evt_lanyon_meeting">evt_lanyon_meeting</option>
+                                
+                                    <option value="evt_return_home">evt_return_home</option>
+                                
+                                    <option value="evt_sleep">evt_sleep</option>
+                                
+                                    <option value="evt_transformation_court">evt_transformation_court</option>
+                                
+                                    <option value="evt_cabinet_refuge">evt_cabinet_refuge</option>
+                                
+                                    <option value="evt_double_dose">evt_double_dose</option>
+                                
+                                    <option value="evt_repeated_transformations">evt_repeated_transformations</option>
+                                
+                                    <option value="evt_drug_failure">evt_drug_failure</option>
+                                
+                                    <option value="evt_final_statement">evt_final_statement</option>
+                                
+                                    <option value="OGGETTO_DI_VALORE">OGGETTO_DI_VALORE</option>
+                                
+                                    <option value="DESTINATARIO_BENEFICIARIO">DESTINATARIO_BENEFICIARIO</option>
+                                
+                                    <option value="evt_hyde_dictates">evt_hyde_dictates</option>
+                                
+                                    <option value="evt_jekyll_seclusion_deepens">evt_jekyll_seclusion_deepens</option>
+                                
+                                    <option value="evt_jekyll_window">evt_jekyll_window</option>
+                                
+                                    <option value="evt_voice_from_cabinet">evt_voice_from_cabinet</option>
+                                
+                                    <option value="evt_medicine_orders">evt_medicine_orders</option>
+                                
+                                    <option value="evt_footsteps_heard">evt_footsteps_heard</option>
+                                
+                                    <option value="DESTINANTE_MANDANTE">DESTINANTE_MANDANTE</option>
+                                
+                                    <option value="evt_jekyll_request">evt_jekyll_request</option>
+                                
+                                    <option value="evt_lanyon_receives_letter">evt_lanyon_receives_letter</option>
+                                
+                                    <option value="evt_revelation">evt_revelation</option>
+                                
+                                    <option value="evt_plan_lanyon">evt_plan_lanyon</option>
+                                
+                                    <option value="DONATORE_FORNITORE">DONATORE_FORNITORE</option>
+                                
+                                    <option value="evt_lanyon_shock">evt_lanyon_shock</option>
+                                
+                                    <option value="evt_journey_to_jekyll">evt_journey_to_jekyll</option>
+                                
+                                    <option value="evt_drawer_retrieval">evt_drawer_retrieval</option>
+                                
+                                    <option value="evt_examination">evt_examination</option>
+                                
+                                    <option value="evt_visitor_arrival">evt_visitor_arrival</option>
+                                
+                                    <option value="evt_transformation">evt_transformation</option>
+                                
+                                    <option value="loc_door">loc_door</option>
+                                
+                                    <option value="loc_court">loc_court</option>
+                                
+                                    <option value="loc_window">loc_window</option>
+                                
+                                    <option value="evt_window_shut">evt_window_shut</option>
+                                
+                                    <option value="loc_utterson_hearth">loc_utterson_hearth</option>
+                                
+                                    <option value="PREDICAMENTO">PREDICAMENTO</option>
+                                
+                                    <option value="loc_square">loc_square</option>
+                                
+                                    <option value="loc_kitchen">loc_kitchen</option>
+                                
+                                    <option value="evt_poole_sees_figure">evt_poole_sees_figure</option>
+                                
+                                    <option value="PREPARAZIONE">PREPARAZIONE</option>
+                                
+                                    <option value="loc_yard">loc_yard</option>
+                                
+                                    <option value="loc_surgical_theatre">loc_surgical_theatre</option>
+                                
+                                    <option value="LOTTA_SCONTRO">LOTTA_SCONTRO</option>
+                                
+                                    <option value="loc_jekyll_cabinet">loc_jekyll_cabinet</option>
+                                
+                                    <option value="char_enfield">char_enfield</option>
+                                
+                                    <option value="evt_collision">evt_collision</option>
+                                
+                                    <option value="evt_cruelty_to_child">evt_cruelty_to_child</option>
+                                
+                                    <option value="char_hyde">char_hyde</option>
+                                
+                                    <option value="OPPONENTE_ANTAGONISTA">OPPONENTE_ANTAGONISTA</option>
+                                
+                                    <option value="evt_cheque_payment">evt_cheque_payment</option>
+                                
+                                    <option value="evt_pleasures_seeking">evt_pleasures_seeking</option>
+                                
+                                    <option value="evt_destruction_papers">evt_destruction_papers</option>
+                                
+                                    <option value="evt_escape_plan">evt_escape_plan</option>
+                                
+                                    <option value="evt_hotel_arrival">evt_hotel_arrival</option>
+                                
+                                    <option value="evt_letter_writing">evt_letter_writing</option>
+                                
+                                    <option value="evt_waiting">evt_waiting</option>
+                                
+                                    <option value="evt_cab_ride">evt_cab_ride</option>
+                                
+                                    <option value="evt_woman_encounter">evt_woman_encounter</option>
+                                
+                                    <option value="evt_murder_danvers">evt_murder_danvers</option>
+                                
+                                    <option value="evt_hyde_disappears">evt_hyde_disappears</option>
+                                
+                                    <option value="evt_mixture_preparation">evt_mixture_preparation</option>
+                                
+                                    <option value="loc_lane_river">loc_lane_river</option>
+                                
+                                    <option value="loc_hotel_portland">loc_hotel_portland</option>
+                                
+                                    <option value="loc_private_room_inn">loc_private_room_inn</option>
+                                
+                                    <option value="evt_jekyll_dinner">evt_jekyll_dinner</option>
+                                
+                                    <option value="loc_london">loc_london</option>
+                                
+                                    <option value="evt_midnight_knock">evt_midnight_knock</option>
+                                
+                                    <option value="loc_lanyon_consulting_room">loc_lanyon_consulting_room</option>
+                                
+                                    <option value="char_girl">char_girl</option>
+                                
+                                    <option value="char_doctor">char_doctor</option>
+                                
+                                    <option value="char_cheque_drawer">char_cheque_drawer</option>
+                                
+                                    <option value="LA_STRADA">LA_STRADA</option>
+                                
+                                    <option value="ALL_APERTO">ALL_APERTO</option>
+                                
+                                    <option value="SPAZIO_STRATEGICO">SPAZIO_STRATEGICO</option>
+                                
+                                    <option value="loc_chambers">loc_chambers</option>
+                                
+                                    <option value="loc_bank">loc_bank</option>
+                                
+                                    <option value="evt_night_in_chambers">evt_night_in_chambers</option>
+                                
+                                    <option value="evt_drug_creation">evt_drug_creation</option>
+                                
+                                    <option value="evt_mirror_moment">evt_mirror_moment</option>
+                                
+                                    <option value="evt_house_preparation">evt_house_preparation</option>
+                                
+                                    <option value="SACRIFICIO">SACRIFICIO</option>
+                                
+                                    <option value="evt_news_murder">evt_news_murder</option>
+                                
+                                    <option value="loc_regent_park">loc_regent_park</option>
+                                
+                                    <option value="SCONFITTA">SCONFITTA</option>
+                                
+                                    <option value="TRADIMENTO_ROTTURA">TRADIMENTO_ROTTURA</option>
+                                
+                                    <option value="evt_servants_gathered">evt_servants_gathered</option>
+                                
+                                    <option value="evt_reflection">evt_reflection</option>
+                                
+                                    <option value="evt_scientific_studies">evt_scientific_studies</option>
+                                
+                                    <option value="evt_discovery">evt_discovery</option>
+                                
+                                    <option value="loc_jekyll_bedroom">loc_jekyll_bedroom</option>
+                                
+                                    <option value="loc_jekyll_study">loc_jekyll_study</option>
+                                
+                                    <option value="char_danvers_carew">char_danvers_carew</option>
+                                
+                                    <option value="char_child">char_child</option>
+                                
+                                    <option value="char_bradshaw">char_bradshaw</option>
+                                
+                                    <option value="evt_door_opening">evt_door_opening</option>
+                                
+                                    <option value="evt_signature">evt_signature</option>
+                                
+                                    <option value="loc_back_passage">loc_back_passage</option>
+                                
+                                    <option value="char_poole">char_poole</option>
+                                
+                                    <option value="char_woman_lights">char_woman_lights</option>
+                                
+                                    <option value="char_hansom_driver">char_hansom_driver</option>
+                                
+                                    <option value="obj_letters">obj_letters</option>
+                                
+                                    <option value="obj_drug_mixture">obj_drug_mixture</option>
+                                
+                                    <option value="obj_jekyll_confession">obj_jekyll_confession</option>
+                                
+                                    <option value="org_project_gutenberg">org_project_gutenberg</option>
+                                
+                                    <option value="org_pgaf">org_pgaf</option>
+                                
+                                    <option value="loc_fairbanks_alaska">loc_fairbanks_alaska</option>
+                                
+                                    <option value="loc_saltlake_city">loc_saltlake_city</option>
+                                
+                                    <option value="person_michael_hart">person_michael_hart</option>
+                                
+                                    <option value="evt_origination">evt_origination</option>
+                                
+                                    <option value="person_gregory_newby">person_gregory_newby</option>
+                                
+                                    <option value="evt_creation_pgaf">evt_creation_pgaf</option>
+                                
+                                    <option value="evt_distribution">evt_distribution</option>
+                                
+                                    <option value="evt_donations">evt_donations</option>
+                                
+                                    <option value="LA_SOGLIA">LA_SOGLIA</option>
+                                
+                                    <option value="loc_jekyll_hall">loc_jekyll_hall</option>
+                                
+                                    <option value="SPAZIO_AFFETTIVO">SPAZIO_AFFETTIVO</option>
+                                
+                                    <option value="obj_jekyll_will">obj_jekyll_will</option>
+                                
+                                    <option value="loc_dining_room">loc_dining_room</option>
+                                
+                                    <option value="char_maid_servant">char_maid_servant</option>
+                                
+                                    <option value="char_inspector_newcomen">char_inspector_newcomen</option>
+                                
+                                    <option value="evt_maid_faints">evt_maid_faints</option>
+                                
+                                    <option value="evt_police_called">evt_police_called</option>
+                                
+                                    <option value="evt_utterson_informed">evt_utterson_informed</option>
+                                
+                                    <option value="evt_utterson_identifies_body">evt_utterson_identifies_body</option>
+                                
+                                    <option value="char_servants">char_servants</option>
+                                
+                                    <option value="loc_theatre">loc_theatre</option>
+                                
+                                    <option value="loc_cellar">loc_cellar</option>
+                                
+                                    <option value="obj_drawer_powders">obj_drawer_powders</option>
+                                
+                                    <option value="obj_crystalline_powders">obj_crystalline_powders</option>
+                                
+                                    <option value="obj_blood_red_phial">obj_blood_red_phial</option>
+                                
+                                    <option value="obj_version_book">obj_version_book</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-2 pb-2">
+                            <button type="button" class="btn btn-primary btn-block" onclick="neighbourhoodHighlight({nodes: []});">Reset Selection</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+              <div id="filter-menu" class="card-header">
+                <div class="row no-gutters">
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'item')"
+                            id="select-item"
+                        >
+                        <option value="">Select a network item</option>
+                        <option value="edge">edge</option>
+                        <option value="node">node</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            onchange="updateFilter(value, 'property')"
+                            id="select-property"
+                        >
+                        <option value="">Select a property...</option>
+                    </select>
+                  </div>
+                  <div class="col-3 pb-2">
+                    <select
+                            class="form-select"
+                            aria-label="Default select example"
+                            id="select-value"
+                        >
+                        <option value="">Select value(s)...</option>
+                    </select>
+                  </div>
+                  <div class="col-1 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="highlightFilter(filter);">Filter</button>
+                  </div>
+                  <div class="col-2 pb-2">
+                    <button type="button" class="btn btn-primary btn-block" onclick="clearFilter(true)">Reset Selection</button>
+                  </div>
+                </div>
+              </div>
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+            <div id="loadingBar">
+              <div class="outerBorder">
+                <div id="text">0%</div>
+                <div id="border">
+                  <div id="bar"></div>
+                </div>
+              </div>
+            </div>
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+                  new TomSelect("#select-node",{
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      }
+                  });
+              
+
+              
+                  // explicitly using onItemAdd and this function as we need to save multiple values
+                  let updateValueFilter = function() {
+                      return function () {
+                      filter['value'].push(arguments[0])
+                      }
+                  }
+
+                  let valueControl = new TomSelect("#select-value",{
+                      maxItems: null,
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: updateValueFilter()
+                  });
+
+                  let addValues = function() {
+                      return function () {
+                          // clear the current value options and add the selected attribute values
+                          // tom-select handles duplicates
+                          let selectedProperty = arguments[0];
+                          valueControl.clear();
+                          valueControl.clearOptions();
+                          filter['value'] = []
+                          if (filter['item'] === 'node') {
+                              for (let each in allNodes) {
+                                  valueControl.addOption({
+                                      id:allNodes[each][selectedProperty],
+                                      title:allNodes[each][selectedProperty]
+                                  })
+                              }
+                          }
+                          else if (filter['item'] === 'edge') {
+                              for (let each in allEdges) {
+                                  valueControl.addOption({
+                                      id:allEdges[each][selectedProperty],
+                                      title:allEdges[each][selectedProperty]
+                                  })
+                              }
+                          }
+                      }
+                  };
+
+                  let propControl = new TomSelect("#select-property",{
+                      valueField: 'id',
+                      labelField: 'title',
+                      searchField: 'title',
+                      create: false,
+                      sortField: {
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addValues()
+                  });
+
+                  let addProperties = function() {
+                      return function () {
+                          // loops through the selected network item and adds the attributes to dropdown
+                          // tom-select handles duplicates
+                          clearFilter(false)
+                          if (arguments[0] === 'edge') {
+                              for (let each in allEdges) {
+                                  if (allEdges.hasOwnProperty(each)) {
+                                      for (let eachProp in allEdges[each]) {
+                                          if (allEdges[each].hasOwnProperty(eachProp)) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                          else if (arguments[0] === 'node') {
+                              for (let each in allNodes) {
+                                  if (allNodes.hasOwnProperty(each)) {
+                                      for (let eachProp in allNodes[each]) {
+                                          if (allNodes[each].hasOwnProperty(eachProp)
+                                              && (eachProp !== 'hidden' && eachProp !== 'savedLabel'
+                                                  && eachProp !== 'hiddenLabel')) {
+                                              propControl.addOption({id: eachProp, title: eachProp})
+
+                                          }
+                                      }
+                                  }
+                              }
+                          }
+                      }
+                  };
+
+                  let itemControl = new TomSelect("#select-item",{
+                      create: false,
+                      sortField:{
+                          field: "text",
+                          direction: "asc"
+                      },
+                      onItemAdd: addProperties()
+                  });
+
+                  function clearFilter(reset) {
+                      // utility function to clear all the selected filter options
+                      // if reset is set to true, the existing filter will be removed
+                      // else, only the dropdown options are cleared
+                      propControl.clear();
+                      propControl.clearOptions();
+                      valueControl.clear();
+                      valueControl.clearOptions();
+                      filter = {
+                          item : '',
+                          property : '',
+                          value : []
+                      }
+                      if (reset) {
+                          itemControl.clear();
+                          filterHighlight({nodes: []})
+                      }
+                  }
+
+                  function updateFilter(value, key) {
+                      // key could be 'item' or 'property' and value is as selected in dropdown
+                      filter[key] = value
+                  }
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#ff6666", "font": {"color": "white"}, "id": "char_utterson", "label": "char_utterson", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_utterson"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "AIUTANTE_MAGICO", "label": "AIUTANTE_MAGICO", "shape": "dot", "size": 10, "title": "Tipologia/ID: AIUTANTE_MAGICO"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_story_telling", "label": "evt_story_telling", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_story_telling"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_sunday_walk", "label": "evt_sunday_walk", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_sunday_walk"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SOGGETTO_EROE", "label": "SOGGETTO_EROE", "shape": "dot", "size": 10, "title": "Tipologia/ID: SOGGETTO_EROE"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_dinner", "label": "evt_dinner", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_dinner"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_reading_will", "label": "evt_reading_will", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_reading_will"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_visit_lanyon", "label": "evt_visit_lanyon", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_visit_lanyon"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_conversation_lanyon", "label": "evt_conversation_lanyon", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_conversation_lanyon"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_sleepless_night", "label": "evt_sleepless_night", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_sleepless_night"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_haunting_door", "label": "evt_haunting_door", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_haunting_door"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_encounter_hyde", "label": "evt_encounter_hyde", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_encounter_hyde"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_reflection", "label": "evt_utterson_reflection", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_reflection"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_visit_jekyll_house", "label": "evt_visit_jekyll_house", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_visit_jekyll_house"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_jekyll_house", "label": "loc_jekyll_house", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_jekyll_house"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_promise", "label": "evt_jekyll_promise", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_promise"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_hyde_house_search", "label": "evt_hyde_house_search", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_hyde_house_search"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_visits_jekyll", "label": "evt_utterson_visits_jekyll", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_visits_jekyll"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_reads_letter", "label": "evt_utterson_reads_letter", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_reads_letter"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_envelope_burned", "label": "evt_envelope_burned", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_envelope_burned"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_dinner_jan8", "label": "evt_utterson_dinner_jan8", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_dinner_jan8"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_visits_lanyon", "label": "evt_utterson_visits_lanyon", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_visits_lanyon"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_writes_jekyll", "label": "evt_utterson_writes_jekyll", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_writes_jekyll"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_replies", "label": "evt_jekyll_replies", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_replies"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_funeral", "label": "evt_lanyon_funeral", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_funeral"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_opens_envelope", "label": "evt_utterson_opens_envelope", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_opens_envelope"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_jekyll", "label": "char_jekyll", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_jekyll"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_lanyon", "label": "char_lanyon", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_lanyon"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_walk", "label": "evt_walk", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_walk"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_gaze", "label": "evt_gaze", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_gaze"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_conversation_street", "label": "evt_conversation_street", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_conversation_street"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_enter_court", "label": "evt_enter_court", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_enter_court"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_greeting", "label": "evt_greeting", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_greeting"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_invitation", "label": "evt_invitation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_invitation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_refusal", "label": "evt_jekyll_refusal", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_refusal"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_terror", "label": "evt_terror", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_terror"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_departure", "label": "evt_departure", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_departure"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_visit", "label": "evt_poole_visit", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_visit"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_confession", "label": "evt_poole_confession", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_confession"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_summoned", "label": "evt_utterson_summoned", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_summoned"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_night_journey", "label": "evt_night_journey", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_night_journey"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_arrival_at_house", "label": "evt_arrival_at_house", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_arrival_at_house"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_questions_voice", "label": "evt_poole_questions_voice", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_questions_voice"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_reveals_suspicion", "label": "evt_poole_reveals_suspicion", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_reveals_suspicion"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_explanation", "label": "evt_utterson_explanation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_explanation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_identifies_hyde", "label": "evt_poole_identifies_hyde", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_identifies_hyde"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_decision_to_break_door", "label": "evt_decision_to_break_door", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_decision_to_break_door"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_preparation_for_attack", "label": "evt_preparation_for_attack", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_preparation_for_attack"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_waiting_in_theatre", "label": "evt_waiting_in_theatre", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_waiting_in_theatre"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_demands_entry", "label": "evt_utterson_demands_entry", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_demands_entry"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_voice_pleads_mercy", "label": "evt_voice_pleads_mercy", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_voice_pleads_mercy"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_door_breaking", "label": "evt_door_breaking", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_door_breaking"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_body_discovery", "label": "evt_body_discovery", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_body_discovery"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_building_search", "label": "evt_building_search", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_building_search"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cabinet_examination", "label": "evt_cabinet_examination", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cabinet_examination"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_envelope_discovery", "label": "evt_envelope_discovery", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_envelope_discovery"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_letter_reading", "label": "evt_letter_reading", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_letter_reading"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_birth", "label": "evt_birth", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_birth"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SPOSTAMENTO_VIAGGIO", "label": "SPOSTAMENTO_VIAGGIO", "shape": "dot", "size": 10, "title": "Tipologia/ID: SPOSTAMENTO_VIAGGIO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_london_street", "label": "loc_london_street", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_london_street"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "ESPOSIZIONE", "label": "ESPOSIZIONE", "shape": "dot", "size": 10, "title": "Tipologia/ID: ESPOSIZIONE"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_utterson_house", "label": "loc_utterson_house", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_utterson_house"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "RIVELAZIONE_SCOPERTA", "label": "RIVELAZIONE_SCOPERTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: RIVELAZIONE_SCOPERTA"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_utterson_business_room", "label": "loc_utterson_business_room", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_utterson_business_room"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_cavendish_square", "label": "loc_cavendish_square", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_cavendish_square"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_lanyon_house", "label": "loc_lanyon_house", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_lanyon_house"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "CAMBIAMENTO_DI_STATO", "label": "CAMBIAMENTO_DI_STATO", "shape": "dot", "size": 10, "title": "Tipologia/ID: CAMBIAMENTO_DI_STATO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_by_street", "label": "loc_by_street", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_by_street"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_hyde_enters_house", "label": "evt_hyde_enters_house", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_hyde_enters_house"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_butler_conversation", "label": "evt_butler_conversation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_butler_conversation"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "AL_CHIUSO", "label": "AL_CHIUSO", "shape": "dot", "size": 10, "title": "Tipologia/ID: AL_CHIUSO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "RIFUGIO", "label": "RIFUGIO", "shape": "dot", "size": 10, "title": "Tipologia/ID: RIFUGIO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "IL_CASTELLO", "label": "IL_CASTELLO", "shape": "dot", "size": 10, "title": "Tipologia/ID: IL_CASTELLO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "ALLEANZA_PATTO", "label": "ALLEANZA_PATTO", "shape": "dot", "size": 10, "title": "Tipologia/ID: ALLEANZA_PATTO"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_jekyll_conversation", "label": "evt_utterson_jekyll_conversation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_jekyll_conversation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_murder", "label": "evt_murder", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_murder"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_stick_recognition", "label": "evt_stick_recognition", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_stick_recognition"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_soho_house", "label": "loc_soho_house", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_soho_house"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_bank_visit", "label": "evt_bank_visit", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_bank_visit"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_laboratory", "label": "loc_laboratory", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_laboratory"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_letter_received", "label": "evt_jekyll_letter_received", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_letter_received"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_letter_handed", "label": "evt_letter_handed", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_letter_handed"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_seclusion", "label": "evt_jekyll_seclusion", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_seclusion"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_confined", "label": "evt_jekyll_confined", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_confined"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_rejects_jekyll", "label": "evt_lanyon_rejects_jekyll", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_rejects_jekyll"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_death", "label": "evt_lanyon_death", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_death"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_utterson_office", "label": "loc_utterson_office", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_utterson_office"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_first_transformation", "label": "evt_first_transformation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_first_transformation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_reverse_transformation", "label": "evt_reverse_transformation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_reverse_transformation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_will_creation", "label": "evt_will_creation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_will_creation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_bank_account", "label": "evt_bank_account", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_bank_account"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cruelty", "label": "evt_cruelty", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cruelty"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_confrontation", "label": "evt_confrontation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_confrontation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_payment", "label": "evt_payment", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_payment"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_adventure", "label": "evt_adventure", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_adventure"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_awakening", "label": "evt_awakening", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_awakening"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_transformation_discovery", "label": "evt_transformation_discovery", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_transformation_discovery"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_return_to_jekyll", "label": "evt_return_to_jekyll", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_return_to_jekyll"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_choice", "label": "evt_choice", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_choice"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_two_months_virtue", "label": "evt_two_months_virtue", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_two_months_virtue"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_relapse", "label": "evt_relapse", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_relapse"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_transformation_back", "label": "evt_transformation_back", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_transformation_back"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_remorse", "label": "evt_remorse", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_remorse"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_redemption", "label": "evt_redemption", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_redemption"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_temptation_again", "label": "evt_temptation_again", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_temptation_again"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_final_transformation", "label": "evt_final_transformation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_final_transformation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_meeting", "label": "evt_lanyon_meeting", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_meeting"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_return_home", "label": "evt_return_home", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_return_home"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_sleep", "label": "evt_sleep", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_sleep"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_transformation_court", "label": "evt_transformation_court", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_transformation_court"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cabinet_refuge", "label": "evt_cabinet_refuge", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cabinet_refuge"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_double_dose", "label": "evt_double_dose", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_double_dose"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_repeated_transformations", "label": "evt_repeated_transformations", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_repeated_transformations"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_drug_failure", "label": "evt_drug_failure", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_drug_failure"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_final_statement", "label": "evt_final_statement", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_final_statement"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "OGGETTO_DI_VALORE", "label": "OGGETTO_DI_VALORE", "shape": "dot", "size": 10, "title": "Tipologia/ID: OGGETTO_DI_VALORE"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "DESTINATARIO_BENEFICIARIO", "label": "DESTINATARIO_BENEFICIARIO", "shape": "dot", "size": 10, "title": "Tipologia/ID: DESTINATARIO_BENEFICIARIO"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_hyde_dictates", "label": "evt_hyde_dictates", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_hyde_dictates"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_seclusion_deepens", "label": "evt_jekyll_seclusion_deepens", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_seclusion_deepens"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_window", "label": "evt_jekyll_window", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_window"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_voice_from_cabinet", "label": "evt_voice_from_cabinet", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_voice_from_cabinet"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_medicine_orders", "label": "evt_medicine_orders", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_medicine_orders"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_footsteps_heard", "label": "evt_footsteps_heard", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_footsteps_heard"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "DESTINANTE_MANDANTE", "label": "DESTINANTE_MANDANTE", "shape": "dot", "size": 10, "title": "Tipologia/ID: DESTINANTE_MANDANTE"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_request", "label": "evt_jekyll_request", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_request"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_receives_letter", "label": "evt_lanyon_receives_letter", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_receives_letter"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_revelation", "label": "evt_revelation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_revelation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_plan_lanyon", "label": "evt_plan_lanyon", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_plan_lanyon"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "DONATORE_FORNITORE", "label": "DONATORE_FORNITORE", "shape": "dot", "size": 10, "title": "Tipologia/ID: DONATORE_FORNITORE"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_lanyon_shock", "label": "evt_lanyon_shock", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_lanyon_shock"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_journey_to_jekyll", "label": "evt_journey_to_jekyll", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_journey_to_jekyll"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_drawer_retrieval", "label": "evt_drawer_retrieval", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_drawer_retrieval"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_examination", "label": "evt_examination", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_examination"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_visitor_arrival", "label": "evt_visitor_arrival", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_visitor_arrival"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_transformation", "label": "evt_transformation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_transformation"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_door", "label": "loc_door", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_door"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_court", "label": "loc_court", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_court"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_window", "label": "loc_window", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_window"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_window_shut", "label": "evt_window_shut", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_window_shut"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_utterson_hearth", "label": "loc_utterson_hearth", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_utterson_hearth"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "PREDICAMENTO", "label": "PREDICAMENTO", "shape": "dot", "size": 10, "title": "Tipologia/ID: PREDICAMENTO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_square", "label": "loc_square", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_square"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_kitchen", "label": "loc_kitchen", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_kitchen"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_poole_sees_figure", "label": "evt_poole_sees_figure", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_poole_sees_figure"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "PREPARAZIONE", "label": "PREPARAZIONE", "shape": "dot", "size": 10, "title": "Tipologia/ID: PREPARAZIONE"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_yard", "label": "loc_yard", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_yard"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_surgical_theatre", "label": "loc_surgical_theatre", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_surgical_theatre"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "LOTTA_SCONTRO", "label": "LOTTA_SCONTRO", "shape": "dot", "size": 10, "title": "Tipologia/ID: LOTTA_SCONTRO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_jekyll_cabinet", "label": "loc_jekyll_cabinet", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_jekyll_cabinet"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_enfield", "label": "char_enfield", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_enfield"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_collision", "label": "evt_collision", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_collision"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cruelty_to_child", "label": "evt_cruelty_to_child", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cruelty_to_child"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_hyde", "label": "char_hyde", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_hyde"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "OPPONENTE_ANTAGONISTA", "label": "OPPONENTE_ANTAGONISTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: OPPONENTE_ANTAGONISTA"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cheque_payment", "label": "evt_cheque_payment", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cheque_payment"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_pleasures_seeking", "label": "evt_pleasures_seeking", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_pleasures_seeking"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_destruction_papers", "label": "evt_destruction_papers", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_destruction_papers"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_escape_plan", "label": "evt_escape_plan", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_escape_plan"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_hotel_arrival", "label": "evt_hotel_arrival", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_hotel_arrival"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_letter_writing", "label": "evt_letter_writing", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_letter_writing"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_waiting", "label": "evt_waiting", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_waiting"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_cab_ride", "label": "evt_cab_ride", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_cab_ride"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_woman_encounter", "label": "evt_woman_encounter", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_woman_encounter"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_murder_danvers", "label": "evt_murder_danvers", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_murder_danvers"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_hyde_disappears", "label": "evt_hyde_disappears", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_hyde_disappears"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_mixture_preparation", "label": "evt_mixture_preparation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_mixture_preparation"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_lane_river", "label": "loc_lane_river", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_lane_river"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_hotel_portland", "label": "loc_hotel_portland", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_hotel_portland"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_private_room_inn", "label": "loc_private_room_inn", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_private_room_inn"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_jekyll_dinner", "label": "evt_jekyll_dinner", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_jekyll_dinner"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_london", "label": "loc_london", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_london"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_midnight_knock", "label": "evt_midnight_knock", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_midnight_knock"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_lanyon_consulting_room", "label": "loc_lanyon_consulting_room", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_lanyon_consulting_room"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_girl", "label": "char_girl", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_girl"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_doctor", "label": "char_doctor", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_doctor"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_cheque_drawer", "label": "char_cheque_drawer", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_cheque_drawer"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "LA_STRADA", "label": "LA_STRADA", "shape": "dot", "size": 10, "title": "Tipologia/ID: LA_STRADA"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "ALL_APERTO", "label": "ALL_APERTO", "shape": "dot", "size": 10, "title": "Tipologia/ID: ALL_APERTO"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SPAZIO_STRATEGICO", "label": "SPAZIO_STRATEGICO", "shape": "dot", "size": 10, "title": "Tipologia/ID: SPAZIO_STRATEGICO"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_chambers", "label": "loc_chambers", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_chambers"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_bank", "label": "loc_bank", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_bank"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_night_in_chambers", "label": "evt_night_in_chambers", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_night_in_chambers"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_drug_creation", "label": "evt_drug_creation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_drug_creation"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_mirror_moment", "label": "evt_mirror_moment", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_mirror_moment"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_house_preparation", "label": "evt_house_preparation", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_house_preparation"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SACRIFICIO", "label": "SACRIFICIO", "shape": "dot", "size": 10, "title": "Tipologia/ID: SACRIFICIO"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_news_murder", "label": "evt_news_murder", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_news_murder"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_regent_park", "label": "loc_regent_park", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_regent_park"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SCONFITTA", "label": "SCONFITTA", "shape": "dot", "size": 10, "title": "Tipologia/ID: SCONFITTA"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "TRADIMENTO_ROTTURA", "label": "TRADIMENTO_ROTTURA", "shape": "dot", "size": 10, "title": "Tipologia/ID: TRADIMENTO_ROTTURA"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_servants_gathered", "label": "evt_servants_gathered", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_servants_gathered"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_reflection", "label": "evt_reflection", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_reflection"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_scientific_studies", "label": "evt_scientific_studies", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_scientific_studies"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_discovery", "label": "evt_discovery", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_discovery"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_jekyll_bedroom", "label": "loc_jekyll_bedroom", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_jekyll_bedroom"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_jekyll_study", "label": "loc_jekyll_study", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_jekyll_study"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_danvers_carew", "label": "char_danvers_carew", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_danvers_carew"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_child", "label": "char_child", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_child"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_bradshaw", "label": "char_bradshaw", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_bradshaw"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_door_opening", "label": "evt_door_opening", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_door_opening"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_signature", "label": "evt_signature", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_signature"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_back_passage", "label": "loc_back_passage", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_back_passage"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_poole", "label": "char_poole", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_poole"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_woman_lights", "label": "char_woman_lights", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_woman_lights"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_hansom_driver", "label": "char_hansom_driver", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_hansom_driver"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_letters", "label": "obj_letters", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_letters"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_drug_mixture", "label": "obj_drug_mixture", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_drug_mixture"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_jekyll_confession", "label": "obj_jekyll_confession", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_jekyll_confession"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "org_project_gutenberg", "label": "org_project_gutenberg", "shape": "dot", "size": 10, "title": "Tipologia/ID: org_project_gutenberg"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "org_pgaf", "label": "org_pgaf", "shape": "dot", "size": 10, "title": "Tipologia/ID: org_pgaf"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_fairbanks_alaska", "label": "loc_fairbanks_alaska", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_fairbanks_alaska"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_saltlake_city", "label": "loc_saltlake_city", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_saltlake_city"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "person_michael_hart", "label": "person_michael_hart", "shape": "dot", "size": 10, "title": "Tipologia/ID: person_michael_hart"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_origination", "label": "evt_origination", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_origination"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "person_gregory_newby", "label": "person_gregory_newby", "shape": "dot", "size": 10, "title": "Tipologia/ID: person_gregory_newby"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_creation_pgaf", "label": "evt_creation_pgaf", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_creation_pgaf"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_distribution", "label": "evt_distribution", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_distribution"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_donations", "label": "evt_donations", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_donations"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "LA_SOGLIA", "label": "LA_SOGLIA", "shape": "dot", "size": 10, "title": "Tipologia/ID: LA_SOGLIA"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_jekyll_hall", "label": "loc_jekyll_hall", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_jekyll_hall"}, {"color": "#cccccc", "font": {"color": "white"}, "id": "SPAZIO_AFFETTIVO", "label": "SPAZIO_AFFETTIVO", "shape": "dot", "size": 10, "title": "Tipologia/ID: SPAZIO_AFFETTIVO"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_jekyll_will", "label": "obj_jekyll_will", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_jekyll_will"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_dining_room", "label": "loc_dining_room", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_dining_room"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_maid_servant", "label": "char_maid_servant", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_maid_servant"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_inspector_newcomen", "label": "char_inspector_newcomen", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_inspector_newcomen"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_maid_faints", "label": "evt_maid_faints", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_maid_faints"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_police_called", "label": "evt_police_called", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_police_called"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_informed", "label": "evt_utterson_informed", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_informed"}, {"color": "#66b3ff", "font": {"color": "white"}, "id": "evt_utterson_identifies_body", "label": "evt_utterson_identifies_body", "shape": "square", "size": 10, "title": "Tipologia/ID: evt_utterson_identifies_body"}, {"color": "#ff6666", "font": {"color": "white"}, "id": "char_servants", "label": "char_servants", "shape": "dot", "size": 10, "title": "Tipologia/ID: char_servants"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_theatre", "label": "loc_theatre", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_theatre"}, {"color": "#99ff99", "font": {"color": "white"}, "id": "loc_cellar", "label": "loc_cellar", "shape": "triangle", "size": 10, "title": "Tipologia/ID: loc_cellar"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_drawer_powders", "label": "obj_drawer_powders", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_drawer_powders"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_crystalline_powders", "label": "obj_crystalline_powders", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_crystalline_powders"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_blood_red_phial", "label": "obj_blood_red_phial", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_blood_red_phial"}, {"color": "#ffcc99", "font": {"color": "white"}, "id": "obj_version_book", "label": "obj_version_book", "shape": "star", "size": 10, "title": "Tipologia/ID: obj_version_book"}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": "char_utterson", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_story_telling", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_sunday_walk", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_dinner", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_reading_will", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_visit_lanyon", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_conversation_lanyon", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_sleepless_night", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_haunting_door", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_encounter_hyde", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_reflection", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_visit_jekyll_house", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PROVIENE_DA", "title": "PROVIENE_DA", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_jekyll_promise", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_hyde_house_search", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_visits_jekyll", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_reads_letter", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_envelope_burned", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_dinner_jan8", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_visits_lanyon", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_writes_jekyll", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_jekyll_replies", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_funeral", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_opens_envelope", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_AMICO", "title": "PARTECIPA_COME_AMICO", "to": "char_jekyll", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_AMICO", "title": "PARTECIPA_COME_AMICO", "to": "char_lanyon", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_walk", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gaze", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_conversation_street", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_enter_court", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_greeting", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_invitation", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_jekyll_refusal", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_terror", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_departure", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_poole_visit", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_poole_confession", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_summoned", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_night_journey", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_arrival_at_house", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_questions_voice", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_poole_reveals_suspicion", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_explanation", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_poole_identifies_hyde", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_decision_to_break_door", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_preparation_for_attack", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_waiting_in_theatre", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_demands_entry", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_voice_pleads_mercy", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_door_breaking", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_body_discovery", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_building_search", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cabinet_examination", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_envelope_discovery", "width": 1}, {"arrows": "to", "from": "char_utterson", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_letter_reading", "width": 1}, {"arrows": "to", "from": "evt_story_telling", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_sunday_walk", "width": 1}, {"arrows": "to", "from": "evt_story_telling", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_birth", "width": 1}, {"arrows": "to", "from": "evt_sunday_walk", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_sunday_walk", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london_street", "width": 1}, {"arrows": "to", "from": "evt_dinner", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_dinner", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_utterson_house", "width": 1}, {"arrows": "to", "from": "evt_reading_will", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_reading_will", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_utterson_business_room", "width": 1}, {"arrows": "to", "from": "evt_reading_will", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_dinner", "width": 1}, {"arrows": "to", "from": "evt_visit_lanyon", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_visit_lanyon", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_cavendish_square", "width": 1}, {"arrows": "to", "from": "evt_visit_lanyon", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_reading_will", "width": 1}, {"arrows": "to", "from": "evt_conversation_lanyon", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_conversation_lanyon", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lanyon_house", "width": 1}, {"arrows": "to", "from": "evt_conversation_lanyon", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_visit_lanyon", "width": 1}, {"arrows": "to", "from": "evt_sleepless_night", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_sleepless_night", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_conversation_lanyon", "width": 1}, {"arrows": "to", "from": "evt_haunting_door", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_haunting_door", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_by_street", "width": 1}, {"arrows": "to", "from": "evt_haunting_door", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_sleepless_night", "width": 1}, {"arrows": "to", "from": "evt_encounter_hyde", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_encounter_hyde", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_by_street", "width": 1}, {"arrows": "to", "from": "evt_encounter_hyde", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_haunting_door", "width": 1}, {"arrows": "to", "from": "evt_utterson_reflection", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_hyde_enters_house", "width": 1}, {"arrows": "to", "from": "evt_utterson_reflection", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_utterson_reflection", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_butler_conversation", "width": 1}, {"arrows": "to", "from": "evt_utterson_reflection", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_utterson", "width": 1}, {"arrows": "to", "from": "evt_visit_jekyll_house", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_visit_jekyll_house", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_visit_jekyll_house", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_reflection", "width": 1}, {"arrows": "to", "from": "evt_visit_jekyll_house", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_butler_conversation", "width": 1}, {"arrows": "to", "from": "loc_jekyll_house", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_house", "label": "COME", "title": "COME", "to": "RIFUGIO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_house", "label": "COME", "title": "COME", "to": "IL_CASTELLO", "width": 1}, {"arrows": "to", "from": "evt_jekyll_promise", "label": "COME", "title": "COME", "to": "ALLEANZA_PATTO", "width": 1}, {"arrows": "to", "from": "evt_jekyll_promise", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_jekyll_conversation", "width": 1}, {"arrows": "to", "from": "evt_jekyll_promise", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_jekyll", "width": 1}, {"arrows": "to", "from": "evt_jekyll_promise", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_utterson", "width": 1}, {"arrows": "to", "from": "evt_jekyll_promise", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "evt_hyde_house_search", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_stick_recognition", "width": 1}, {"arrows": "to", "from": "evt_hyde_house_search", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_soho_house", "width": 1}, {"arrows": "to", "from": "evt_utterson_visits_jekyll", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_bank_visit", "width": 1}, {"arrows": "to", "from": "evt_utterson_visits_jekyll", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_laboratory", "width": 1}, {"arrows": "to", "from": "evt_utterson_reads_letter", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_letter_received", "width": 1}, {"arrows": "to", "from": "evt_utterson_reads_letter", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_utterson_reads_letter", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_envelope_burned", "width": 1}, {"arrows": "to", "from": "evt_envelope_burned", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_envelope_burned", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_envelope_burned", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_letter_handed", "width": 1}, {"arrows": "to", "from": "evt_utterson_dinner_jan8", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_utterson_dinner_jan8", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_seclusion", "width": 1}, {"arrows": "to", "from": "evt_utterson_visits_lanyon", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_utterson_visits_lanyon", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_confined", "width": 1}, {"arrows": "to", "from": "evt_utterson_writes_jekyll", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_lanyon_rejects_jekyll", "width": 1}, {"arrows": "to", "from": "evt_jekyll_replies", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_writes_jekyll", "width": 1}, {"arrows": "to", "from": "evt_lanyon_funeral", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_lanyon_death", "width": 1}, {"arrows": "to", "from": "evt_utterson_opens_envelope", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_utterson_office", "width": 1}, {"arrows": "to", "from": "evt_utterson_opens_envelope", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_lanyon_funeral", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_first_transformation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_reverse_transformation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_will_creation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_bank_account", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cruelty", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_payment", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_adventure", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_awakening", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_transformation_discovery", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_return_to_jekyll", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_choice", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_two_months_virtue", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_relapse", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_transformation_back", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_remorse", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_redemption", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_temptation_again", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_final_transformation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_meeting", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_return_home", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_sleep", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_transformation_court", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cabinet_refuge", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_double_dose", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_repeated_transformations", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_drug_failure", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_final_statement", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "COME", "title": "COME", "to": "OGGETTO_DI_VALORE", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_reading_will", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "COME", "title": "COME", "to": "DESTINATARIO_BENEFICIARIO", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_jekyll_promise", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_utterson_visits_jekyll", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_jekyll_letter_received", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_envelope_burned", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_letter_handed", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_hyde_dictates", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_seclusion", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_dinner_jan8", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_confined", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_lanyon_rejects_jekyll", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_replies", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_seclusion_deepens", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_AMICO", "title": "PARTECIPA_COME_AMICO", "to": "char_lanyon", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_window", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_greeting", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_invitation", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_jekyll_refusal", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_terror", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_poole_confession", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_voice_from_cabinet", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_medicine_orders", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_footsteps_heard", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_utterson_demands_entry", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_voice_pleads_mercy", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "COME", "title": "COME", "to": "DESTINANTE_MANDANTE", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_jekyll_request", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_receives_letter", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_letter_reading", "width": 1}, {"arrows": "to", "from": "char_jekyll", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_revelation", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_plan_lanyon", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_lanyon_meeting", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "COME", "title": "COME", "to": "DONATORE_FORNITORE", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_visit_lanyon", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_conversation_lanyon", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_dinner_jan8", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_utterson_visits_lanyon", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_shock", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_rejects_jekyll", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_lanyon_death", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_lanyon_funeral", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "COME", "title": "COME", "to": "DESTINATARIO_BENEFICIARIO", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_jekyll_request", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_lanyon_receives_letter", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_letter_reading", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_journey_to_jekyll", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_drawer_retrieval", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_examination", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_visitor_arrival", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_transformation", "width": 1}, {"arrows": "to", "from": "char_lanyon", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_revelation", "width": 1}, {"arrows": "to", "from": "evt_walk", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_by_street", "width": 1}, {"arrows": "to", "from": "evt_walk", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_gaze", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_walk", "width": 1}, {"arrows": "to", "from": "evt_gaze", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_door", "width": 1}, {"arrows": "to", "from": "evt_conversation_street", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_gaze", "width": 1}, {"arrows": "to", "from": "evt_conversation_street", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_by_street", "width": 1}, {"arrows": "to", "from": "evt_enter_court", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_conversation_street", "width": 1}, {"arrows": "to", "from": "evt_enter_court", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_greeting", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_window", "width": 1}, {"arrows": "to", "from": "evt_greeting", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_invitation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_greeting", "width": 1}, {"arrows": "to", "from": "evt_invitation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_jekyll_refusal", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_invitation", "width": 1}, {"arrows": "to", "from": "evt_jekyll_refusal", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_terror", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_refusal", "width": 1}, {"arrows": "to", "from": "evt_terror", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_window", "width": 1}, {"arrows": "to", "from": "evt_terror", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_departure", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_window_shut", "width": 1}, {"arrows": "to", "from": "evt_departure", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_poole_visit", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_utterson_hearth", "width": 1}, {"arrows": "to", "from": "evt_poole_confession", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_poole_visit", "width": 1}, {"arrows": "to", "from": "evt_poole_confession", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_utterson_hearth", "width": 1}, {"arrows": "to", "from": "evt_poole_confession", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_poole_confession", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_summoned", "width": 1}, {"arrows": "to", "from": "evt_utterson_summoned", "label": "COME", "title": "COME", "to": "PREDICAMENTO", "width": 1}, {"arrows": "to", "from": "evt_utterson_summoned", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_night_journey", "label": "COME", "title": "COME", "to": "PREDICAMENTO", "width": 1}, {"arrows": "to", "from": "evt_night_journey", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london_street", "width": 1}, {"arrows": "to", "from": "evt_night_journey", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_summoned", "width": 1}, {"arrows": "to", "from": "evt_arrival_at_house", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_square", "width": 1}, {"arrows": "to", "from": "evt_arrival_at_house", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_night_journey", "width": 1}, {"arrows": "to", "from": "evt_poole_questions_voice", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_poole_questions_voice", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_kitchen", "width": 1}, {"arrows": "to", "from": "evt_poole_questions_voice", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_voice_from_cabinet", "width": 1}, {"arrows": "to", "from": "evt_poole_reveals_suspicion", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_poole_reveals_suspicion", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_kitchen", "width": 1}, {"arrows": "to", "from": "evt_poole_reveals_suspicion", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_poole_questions_voice", "width": 1}, {"arrows": "to", "from": "evt_utterson_explanation", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_utterson_explanation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_kitchen", "width": 1}, {"arrows": "to", "from": "evt_utterson_explanation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_poole_sees_figure", "width": 1}, {"arrows": "to", "from": "evt_poole_identifies_hyde", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_poole_identifies_hyde", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_kitchen", "width": 1}, {"arrows": "to", "from": "evt_poole_identifies_hyde", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_explanation", "width": 1}, {"arrows": "to", "from": "evt_decision_to_break_door", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_decision_to_break_door", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_kitchen", "width": 1}, {"arrows": "to", "from": "evt_decision_to_break_door", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_poole_identifies_hyde", "width": 1}, {"arrows": "to", "from": "evt_preparation_for_attack", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_preparation_for_attack", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_yard", "width": 1}, {"arrows": "to", "from": "evt_preparation_for_attack", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_decision_to_break_door", "width": 1}, {"arrows": "to", "from": "evt_waiting_in_theatre", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_waiting_in_theatre", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_surgical_theatre", "width": 1}, {"arrows": "to", "from": "evt_waiting_in_theatre", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_preparation_for_attack", "width": 1}, {"arrows": "to", "from": "evt_utterson_demands_entry", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_utterson_demands_entry", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_utterson_demands_entry", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_footsteps_heard", "width": 1}, {"arrows": "to", "from": "evt_voice_pleads_mercy", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_voice_pleads_mercy", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_voice_pleads_mercy", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_demands_entry", "width": 1}, {"arrows": "to", "from": "evt_voice_pleads_mercy", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_door_breaking", "width": 1}, {"arrows": "to", "from": "evt_door_breaking", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_door_breaking", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_body_discovery", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_body_discovery", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_body_discovery", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_door_breaking", "width": 1}, {"arrows": "to", "from": "evt_building_search", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_building_search", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_body_discovery", "width": 1}, {"arrows": "to", "from": "evt_cabinet_examination", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_cabinet_examination", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_building_search", "width": 1}, {"arrows": "to", "from": "evt_envelope_discovery", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_envelope_discovery", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cabinet_examination", "width": 1}, {"arrows": "to", "from": "evt_letter_reading", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_letter_reading", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_envelope_discovery", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_collision", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_story_telling", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_sunday_walk", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_walk", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_gaze", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_conversation_street", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_enter_court", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_terror", "width": 1}, {"arrows": "to", "from": "char_enfield", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_departure", "width": 1}, {"arrows": "to", "from": "evt_collision", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_collision", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london_street", "width": 1}, {"arrows": "to", "from": "evt_collision", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_sunday_walk", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london_street", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_collision", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cruelty_to_child", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cruelty", "width": 1}, {"arrows": "to", "from": "evt_confrontation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "COME", "title": "COME", "to": "OPPONENTE_ANTAGONISTA", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_collision", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_cheque_payment", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_pleasures_seeking", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cruelty_to_child", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_destruction_papers", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_plan_lanyon", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_escape_plan", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_hotel_arrival", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_letter_writing", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_waiting", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cab_ride", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_woman_encounter", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_repeated_transformations", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_encounter_hyde", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_hyde_enters_house", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_utterson_jekyll_conversation", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_jekyll_letter_received", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_hyde_dictates", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_murder_danvers", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_hyde_disappears", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_conversation_street", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_poole_sees_figure", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "COME", "title": "COME", "to": "OGGETTO_DI_VALORE", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_body_discovery", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_visitor_arrival", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_mixture_preparation", "width": 1}, {"arrows": "to", "from": "char_hyde", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_transformation", "width": 1}, {"arrows": "to", "from": "evt_cheque_payment", "label": "COME", "title": "COME", "to": "ALLEANZA_PATTO", "width": 1}, {"arrows": "to", "from": "evt_cheque_payment", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_door", "width": 1}, {"arrows": "to", "from": "evt_cheque_payment", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "evt_pleasures_seeking", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_will_creation", "width": 1}, {"arrows": "to", "from": "evt_pleasures_seeking", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_pleasures_seeking", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_soho_house", "width": 1}, {"arrows": "to", "from": "evt_cruelty_to_child", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_pleasures_seeking", "width": 1}, {"arrows": "to", "from": "evt_cruelty_to_child", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_murder", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_relapse", "width": 1}, {"arrows": "to", "from": "evt_murder", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_murder", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lane_river", "width": 1}, {"arrows": "to", "from": "evt_destruction_papers", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "evt_destruction_papers", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_soho_house", "width": 1}, {"arrows": "to", "from": "evt_plan_lanyon", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_final_transformation", "width": 1}, {"arrows": "to", "from": "evt_plan_lanyon", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_escape_plan", "width": 1}, {"arrows": "to", "from": "evt_escape_plan", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_hotel_arrival", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_hotel_arrival", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_escape_plan", "width": 1}, {"arrows": "to", "from": "evt_hotel_arrival", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_hotel_portland", "width": 1}, {"arrows": "to", "from": "evt_letter_writing", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_hotel_arrival", "width": 1}, {"arrows": "to", "from": "evt_letter_writing", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_private_room_inn", "width": 1}, {"arrows": "to", "from": "evt_letter_writing", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_waiting", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_letter_writing", "width": 1}, {"arrows": "to", "from": "evt_waiting", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_private_room_inn", "width": 1}, {"arrows": "to", "from": "evt_cab_ride", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_waiting", "width": 1}, {"arrows": "to", "from": "evt_cab_ride", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london_street", "width": 1}, {"arrows": "to", "from": "evt_woman_encounter", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cab_ride", "width": 1}, {"arrows": "to", "from": "evt_woman_encounter", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_repeated_transformations", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_double_dose", "width": 1}, {"arrows": "to", "from": "evt_repeated_transformations", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_hyde_enters_house", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_hyde_enters_house", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_encounter_hyde", "width": 1}, {"arrows": "to", "from": "evt_utterson_jekyll_conversation", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_utterson_jekyll_conversation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_utterson_jekyll_conversation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_dinner", "width": 1}, {"arrows": "to", "from": "evt_utterson_jekyll_conversation", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_utterson", "width": 1}, {"arrows": "to", "from": "evt_utterson_jekyll_conversation", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_jekyll", "width": 1}, {"arrows": "to", "from": "evt_jekyll_letter_received", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_hyde_dictates", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_hyde_dictates", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_letter_handed", "width": 1}, {"arrows": "to", "from": "evt_murder_danvers", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_murder_danvers", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london", "width": 1}, {"arrows": "to", "from": "evt_murder_danvers", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_hyde_dictates", "width": 1}, {"arrows": "to", "from": "evt_hyde_disappears", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_london", "width": 1}, {"arrows": "to", "from": "evt_hyde_disappears", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_murder_danvers", "width": 1}, {"arrows": "to", "from": "evt_poole_sees_figure", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_poole_sees_figure", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_surgical_theatre", "width": 1}, {"arrows": "to", "from": "evt_visitor_arrival", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_midnight_knock", "width": 1}, {"arrows": "to", "from": "evt_visitor_arrival", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_cavendish_square", "width": 1}, {"arrows": "to", "from": "evt_mixture_preparation", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_mixture_preparation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_visitor_arrival", "width": 1}, {"arrows": "to", "from": "evt_mixture_preparation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lanyon_consulting_room", "width": 1}, {"arrows": "to", "from": "evt_transformation", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_transformation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_mixture_preparation", "width": 1}, {"arrows": "to", "from": "evt_transformation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lanyon_consulting_room", "width": 1}, {"arrows": "to", "from": "char_girl", "label": "COME", "title": "COME", "to": "OGGETTO_DI_VALORE", "width": 1}, {"arrows": "to", "from": "char_girl", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_collision", "width": 1}, {"arrows": "to", "from": "char_doctor", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "char_doctor", "label": "PARTECIPA_COME_OPPONENTE_RIVALE", "title": "PARTECIPA_COME_OPPONENTE_RIVALE", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "char_cheque_drawer", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_cheque_drawer", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_cheque_payment", "width": 1}, {"arrows": "to", "from": "loc_london_street", "label": "COME", "title": "COME", "to": "LA_STRADA", "width": 1}, {"arrows": "to", "from": "loc_london_street", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "loc_door", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_door", "label": "COME", "title": "COME", "to": "SPAZIO_STRATEGICO", "width": 1}, {"arrows": "to", "from": "loc_chambers", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_bank", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "evt_cruelty", "label": "COME", "title": "COME", "to": "LOTTA_SCONTRO", "width": 1}, {"arrows": "to", "from": "evt_cruelty", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_night_in_chambers", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_chambers", "width": 1}, {"arrows": "to", "from": "evt_night_in_chambers", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cheque_payment", "width": 1}, {"arrows": "to", "from": "evt_bank_visit", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_bank_visit", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_bank", "width": 1}, {"arrows": "to", "from": "evt_bank_visit", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_night_in_chambers", "width": 1}, {"arrows": "to", "from": "evt_bank_visit", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_hyde_house_search", "width": 1}, {"arrows": "to", "from": "evt_birth", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_first_transformation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_drug_creation", "width": 1}, {"arrows": "to", "from": "evt_first_transformation", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_first_transformation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_laboratory", "width": 1}, {"arrows": "to", "from": "evt_reverse_transformation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_mirror_moment", "width": 1}, {"arrows": "to", "from": "evt_reverse_transformation", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_will_creation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_house_preparation", "width": 1}, {"arrows": "to", "from": "evt_will_creation", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_bank_account", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "evt_bank_account", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_bank_account", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_payment", "width": 1}, {"arrows": "to", "from": "evt_bank_account", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cruelty", "width": 1}, {"arrows": "to", "from": "evt_payment", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_confrontation", "width": 1}, {"arrows": "to", "from": "evt_adventure", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_awakening", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_adventure", "width": 1}, {"arrows": "to", "from": "evt_awakening", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_awakening", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_awakening", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_sleep", "width": 1}, {"arrows": "to", "from": "evt_transformation_discovery", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_awakening", "width": 1}, {"arrows": "to", "from": "evt_transformation_discovery", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_transformation_discovery", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_return_to_jekyll", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_transformation_discovery", "width": 1}, {"arrows": "to", "from": "evt_return_to_jekyll", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_return_to_jekyll", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_choice", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_return_to_jekyll", "width": 1}, {"arrows": "to", "from": "evt_choice", "label": "COME", "title": "COME", "to": "SACRIFICIO", "width": 1}, {"arrows": "to", "from": "evt_two_months_virtue", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_choice", "width": 1}, {"arrows": "to", "from": "evt_relapse", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_two_months_virtue", "width": 1}, {"arrows": "to", "from": "evt_relapse", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_transformation_back", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_destruction_papers", "width": 1}, {"arrows": "to", "from": "evt_transformation_back", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_remorse", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_transformation_back", "width": 1}, {"arrows": "to", "from": "evt_remorse", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_redemption", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_news_murder", "width": 1}, {"arrows": "to", "from": "evt_redemption", "label": "COME", "title": "COME", "to": "SACRIFICIO", "width": 1}, {"arrows": "to", "from": "evt_temptation_again", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_redemption", "width": 1}, {"arrows": "to", "from": "evt_final_transformation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_temptation_again", "width": 1}, {"arrows": "to", "from": "evt_final_transformation", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_final_transformation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_regent_park", "width": 1}, {"arrows": "to", "from": "evt_lanyon_meeting", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_woman_encounter", "width": 1}, {"arrows": "to", "from": "evt_lanyon_meeting", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lanyon_house", "width": 1}, {"arrows": "to", "from": "evt_return_home", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_lanyon_meeting", "width": 1}, {"arrows": "to", "from": "evt_return_home", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_sleep", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_return_home", "width": 1}, {"arrows": "to", "from": "evt_transformation_court", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_awakening", "width": 1}, {"arrows": "to", "from": "evt_transformation_court", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_court", "width": 1}, {"arrows": "to", "from": "evt_transformation_court", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_cabinet_refuge", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_transformation_court", "width": 1}, {"arrows": "to", "from": "evt_cabinet_refuge", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_double_dose", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_cabinet_refuge", "width": 1}, {"arrows": "to", "from": "evt_double_dose", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_drug_failure", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_repeated_transformations", "width": 1}, {"arrows": "to", "from": "evt_drug_failure", "label": "COME", "title": "COME", "to": "SCONFITTA", "width": 1}, {"arrows": "to", "from": "evt_final_statement", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_drug_failure", "width": 1}, {"arrows": "to", "from": "evt_final_statement", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_letter_handed", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_hyde_disappears", "width": 1}, {"arrows": "to", "from": "evt_jekyll_confined", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_jekyll_confined", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_dinner_jan8", "width": 1}, {"arrows": "to", "from": "evt_lanyon_rejects_jekyll", "label": "COME", "title": "COME", "to": "TRADIMENTO_ROTTURA", "width": 1}, {"arrows": "to", "from": "evt_lanyon_rejects_jekyll", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_lanyon_shock", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion_deepens", "label": "COME", "title": "COME", "to": "CAMBIAMENTO_DI_STATO", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion_deepens", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion_deepens", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_opens_envelope", "width": 1}, {"arrows": "to", "from": "evt_jekyll_seclusion_deepens", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_walk", "width": 1}, {"arrows": "to", "from": "evt_jekyll_window", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_enter_court", "width": 1}, {"arrows": "to", "from": "evt_jekyll_window", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_window", "width": 1}, {"arrows": "to", "from": "evt_voice_from_cabinet", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_voice_from_cabinet", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_voice_from_cabinet", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_servants_gathered", "width": 1}, {"arrows": "to", "from": "evt_medicine_orders", "label": "COME", "title": "COME", "to": "PREDICAMENTO", "width": 1}, {"arrows": "to", "from": "evt_medicine_orders", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_footsteps_heard", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_footsteps_heard", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_surgical_theatre", "width": 1}, {"arrows": "to", "from": "evt_footsteps_heard", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_waiting_in_theatre", "width": 1}, {"arrows": "to", "from": "evt_jekyll_request", "label": "COME", "title": "COME", "to": "ALLEANZA_PATTO", "width": 1}, {"arrows": "to", "from": "evt_jekyll_request", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_letter_reading", "width": 1}, {"arrows": "to", "from": "evt_lanyon_receives_letter", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_revelation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_transformation", "width": 1}, {"arrows": "to", "from": "evt_revelation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_lanyon_consulting_room", "width": 1}, {"arrows": "to", "from": "evt_reflection", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_birth", "width": 1}, {"arrows": "to", "from": "evt_scientific_studies", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_reflection", "width": 1}, {"arrows": "to", "from": "evt_discovery", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_scientific_studies", "width": 1}, {"arrows": "to", "from": "evt_discovery", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "evt_drug_creation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_discovery", "width": 1}, {"arrows": "to", "from": "evt_drug_creation", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "loc_laboratory", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_laboratory", "label": "COME", "title": "COME", "to": "SPAZIO_STRATEGICO", "width": 1}, {"arrows": "to", "from": "evt_mirror_moment", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_first_transformation", "width": 1}, {"arrows": "to", "from": "evt_mirror_moment", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_bedroom", "width": 1}, {"arrows": "to", "from": "evt_house_preparation", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_reverse_transformation", "width": 1}, {"arrows": "to", "from": "evt_house_preparation", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_house_preparation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_soho_house", "width": 1}, {"arrows": "to", "from": "loc_soho_house", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_soho_house", "label": "COME", "title": "COME", "to": "RIFUGIO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_study", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "char_danvers_carew", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "char_danvers_carew", "label": "COME", "title": "COME", "to": "OGGETTO_DI_VALORE", "width": 1}, {"arrows": "to", "from": "char_danvers_carew", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_murder_danvers", "width": 1}, {"arrows": "to", "from": "char_child", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_cruelty", "width": 1}, {"arrows": "to", "from": "char_bradshaw", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_return_to_jekyll", "width": 1}, {"arrows": "to", "from": "char_bradshaw", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_preparation_for_attack", "width": 1}, {"arrows": "to", "from": "evt_lanyon_shock", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_visits_lanyon", "width": 1}, {"arrows": "to", "from": "evt_lanyon_death", "label": "COME", "title": "COME", "to": "SACRIFICIO", "width": 1}, {"arrows": "to", "from": "evt_lanyon_death", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_jekyll_replies", "width": 1}, {"arrows": "to", "from": "evt_journey_to_jekyll", "label": "COME", "title": "COME", "to": "SPOSTAMENTO_VIAGGIO", "width": 1}, {"arrows": "to", "from": "evt_journey_to_jekyll", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_letter_reading", "width": 1}, {"arrows": "to", "from": "evt_journey_to_jekyll", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_drawer_retrieval", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_door_opening", "width": 1}, {"arrows": "to", "from": "evt_drawer_retrieval", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "evt_examination", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_drawer_retrieval", "width": 1}, {"arrows": "to", "from": "evt_examination", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_cavendish_square", "width": 1}, {"arrows": "to", "from": "evt_signature", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_bank_account", "width": 1}, {"arrows": "to", "from": "loc_lane_river", "label": "COME", "title": "COME", "to": "LA_STRADA", "width": 1}, {"arrows": "to", "from": "evt_news_murder", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_remorse", "width": 1}, {"arrows": "to", "from": "loc_regent_park", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_cabinet", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_cabinet", "label": "COME", "title": "COME", "to": "RIFUGIO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_cabinet", "label": "COME", "title": "COME", "to": "SPAZIO_STRATEGICO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_cabinet", "label": "PROVIENE_DA", "title": "PROVIENE_DA", "to": "loc_surgical_theatre", "width": 1}, {"arrows": "to", "from": "loc_surgical_theatre", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_back_passage", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_court", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_visit_jekyll_house", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_visit", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_confession", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_utterson_summoned", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_night_journey", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_arrival_at_house", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_questions_voice", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_reveals_suspicion", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_sees_figure", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_utterson_explanation", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_poole_identifies_hyde", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_decision_to_break_door", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_preparation_for_attack", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_waiting_in_theatre", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_door_breaking", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_body_discovery", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_building_search", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_cabinet_examination", "width": 1}, {"arrows": "to", "from": "char_poole", "label": "PARTECIPA_COME_AIUTANTE_ALLEATO", "title": "PARTECIPA_COME_AIUTANTE_ALLEATO", "to": "evt_door_opening", "width": 1}, {"arrows": "to", "from": "evt_door_opening", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_journey_to_jekyll", "width": 1}, {"arrows": "to", "from": "evt_door_opening", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_cabinet", "width": 1}, {"arrows": "to", "from": "char_woman_lights", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_woman_encounter", "width": 1}, {"arrows": "to", "from": "char_hansom_driver", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_hotel_arrival", "width": 1}, {"arrows": "to", "from": "loc_hotel_portland", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_private_room_inn", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "obj_letters", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_letter_writing", "width": 1}, {"arrows": "to", "from": "obj_drug_mixture", "label": "PARTECIPA_COME_DONATORE", "title": "PARTECIPA_COME_DONATORE", "to": "evt_double_dose", "width": 1}, {"arrows": "to", "from": "obj_drug_mixture", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_drug_failure", "width": 1}, {"arrows": "to", "from": "obj_jekyll_confession", "label": "PARTECIPA_COME_DESTINATARIO", "title": "PARTECIPA_COME_DESTINATARIO", "to": "evt_final_statement", "width": 1}, {"arrows": "to", "from": "org_project_gutenberg", "label": "COME", "title": "COME", "to": "SOGGETTO_EROE", "width": 1}, {"arrows": "to", "from": "org_pgaf", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "org_pgaf", "label": "PROVIENE_DA", "title": "PROVIENE_DA", "to": "loc_fairbanks_alaska", "width": 1}, {"arrows": "to", "from": "org_pgaf", "label": "PROVIENE_DA", "title": "PROVIENE_DA", "to": "loc_saltlake_city", "width": 1}, {"arrows": "to", "from": "loc_fairbanks_alaska", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_saltlake_city", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "person_michael_hart", "label": "PARTECIPA_COME_DESTINANTE", "title": "PARTECIPA_COME_DESTINANTE", "to": "evt_origination", "width": 1}, {"arrows": "to", "from": "evt_origination", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_dinner", "width": 1}, {"arrows": "to", "from": "person_gregory_newby", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "org_pgaf", "width": 1}, {"arrows": "to", "from": "evt_creation_pgaf", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_origination", "width": 1}, {"arrows": "to", "from": "evt_creation_pgaf", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_fairbanks_alaska", "width": 1}, {"arrows": "to", "from": "evt_distribution", "label": "COME", "title": "COME", "to": "PREPARAZIONE", "width": 1}, {"arrows": "to", "from": "evt_donations", "label": "COME", "title": "COME", "to": "ALLEANZA_PATTO", "width": 1}, {"arrows": "to", "from": "loc_utterson_house", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_utterson_business_room", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_cavendish_square", "label": "COME", "title": "COME", "to": "SPAZIO_STRATEGICO", "width": 1}, {"arrows": "to", "from": "loc_cavendish_square", "label": "COME", "title": "COME", "to": "LA_SOGLIA", "width": 1}, {"arrows": "to", "from": "loc_by_street", "label": "COME", "title": "COME", "to": "LA_STRADA", "width": 1}, {"arrows": "to", "from": "evt_butler_conversation", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_butler_conversation", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_house", "width": 1}, {"arrows": "to", "from": "evt_butler_conversation", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_utterson", "width": 1}, {"arrows": "to", "from": "evt_butler_conversation", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_poole", "width": 1}, {"arrows": "to", "from": "loc_jekyll_hall", "label": "COME", "title": "COME", "to": "SPAZIO_AFFETTIVO", "width": 1}, {"arrows": "to", "from": "loc_jekyll_hall", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "obj_jekyll_will", "label": "COME", "title": "COME", "to": "OGGETTO_DI_VALORE", "width": 1}, {"arrows": "to", "from": "evt_jekyll_dinner", "label": "COME", "title": "COME", "to": "ESPOSIZIONE", "width": 1}, {"arrows": "to", "from": "evt_jekyll_dinner", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_dining_room", "width": 1}, {"arrows": "to", "from": "evt_jekyll_dinner", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_reflection", "width": 1}, {"arrows": "to", "from": "evt_jekyll_dinner", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_jekyll", "width": 1}, {"arrows": "to", "from": "evt_jekyll_dinner", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "char_utterson", "width": 1}, {"arrows": "to", "from": "loc_dining_room", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "char_maid_servant", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "char_inspector_newcomen", "label": "PARTECIPA_COME_SOGGETTO", "title": "PARTECIPA_COME_SOGGETTO", "to": "evt_hyde_house_search", "width": 1}, {"arrows": "to", "from": "char_inspector_newcomen", "label": "COME", "title": "COME", "to": "AIUTANTE_MAGICO", "width": 1}, {"arrows": "to", "from": "evt_maid_faints", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_murder", "width": 1}, {"arrows": "to", "from": "evt_police_called", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_maid_faints", "width": 1}, {"arrows": "to", "from": "evt_utterson_informed", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_police_called", "width": 1}, {"arrows": "to", "from": "evt_utterson_identifies_body", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_informed", "width": 1}, {"arrows": "to", "from": "evt_stick_recognition", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_utterson_identifies_body", "width": 1}, {"arrows": "to", "from": "evt_stick_recognition", "label": "COME", "title": "COME", "to": "RIVELAZIONE_SCOPERTA", "width": 1}, {"arrows": "to", "from": "loc_london", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "loc_utterson_hearth", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_window", "label": "COME", "title": "COME", "to": "LA_SOGLIA", "width": 1}, {"arrows": "to", "from": "evt_window_shut", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_terror", "width": 1}, {"arrows": "to", "from": "evt_window_shut", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_window", "width": 1}, {"arrows": "to", "from": "char_servants", "label": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "title": "PARTECIPA_COME_SPETTATORE_NEUTRALE", "to": "evt_servants_gathered", "width": 1}, {"arrows": "to", "from": "evt_servants_gathered", "label": "AVVIENE_IN", "title": "AVVIENE_IN", "to": "loc_jekyll_hall", "width": 1}, {"arrows": "to", "from": "evt_servants_gathered", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_arrival_at_house", "width": 1}, {"arrows": "to", "from": "loc_square", "label": "COME", "title": "COME", "to": "ALL_APERTO", "width": 1}, {"arrows": "to", "from": "loc_kitchen", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_yard", "label": "COME", "title": "COME", "to": "SPAZIO_STRATEGICO", "width": 1}, {"arrows": "to", "from": "loc_theatre", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_cellar", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "loc_lanyon_consulting_room", "label": "COME", "title": "COME", "to": "AL_CHIUSO", "width": 1}, {"arrows": "to", "from": "evt_midnight_knock", "label": "AVVIENE_DOPO", "title": "AVVIENE_DOPO", "to": "evt_examination", "width": 1}, {"arrows": "to", "from": "obj_drawer_powders", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_drawer_retrieval", "width": 1}, {"arrows": "to", "from": "obj_crystalline_powders", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_examination", "width": 1}, {"arrows": "to", "from": "obj_blood_red_phial", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_examination", "width": 1}, {"arrows": "to", "from": "obj_version_book", "label": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "title": "PARTECIPA_COME_OGGETTO_BERSAGLIO", "to": "evt_examination", "width": 1}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 1,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 150
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+                    network.on("selectNode", neighbourhoodHighlight);
+                  
+
+                  
+
+
+                  
+                      network.on("stabilizationProgress", function(params) {
+                          document.getElementById('loadingBar').removeAttribute("style");
+                          var maxWidth = 496;
+                          var minWidth = 20;
+                          var widthFactor = params.iterations/params.total;
+                          var width = Math.max(minWidth,maxWidth * widthFactor);
+                          document.getElementById('bar').style.width = width + 'px';
+                          document.getElementById('text').innerHTML = Math.round(widthFactor*100) + '%';
+                      });
+                      network.once("stabilizationIterationsDone", function() {
+                          document.getElementById('text').innerHTML = '100%';
+                          document.getElementById('bar').style.width = '496px';
+                          document.getElementById('loadingBar').style.opacity = 0;
+                          // really clean the dom element
+                          setTimeout(function () {document.getElementById('loadingBar').style.display = 'none';}, 500);
+                      });
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,286 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stepmother",
+      "label": "Stepmother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_landlord",
+      "label": "Landlord",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whalemen",
+      "label": "Whalemen at the bar-room",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waking",
+      "label": "Ishmael wakes to find Queequeg's arm around him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_childhood_memory",
+      "label": "Ishmael recalls childhood punishment and supernatural encounter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_dressing",
+      "label": "Queequeg dresses himself in an unconventional manner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Ishmael and the whalemen gather for breakfast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_shaving",
+      "label": "Queequeg shaves his face with a harpoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom in the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_childhood_room",
+      "label": "Ishmael's childhood room on the third floor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar_room",
+      "label": "The bar-room of the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_breakfast_table",
+      "label": "The breakfast table",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ishmael_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_queequeg_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_stepmother_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_waking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_waking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_childhood_memory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_childhood_memory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_childhood_memory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_childhood_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_childhood_memory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stepmother",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_childhood_memory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_shaving",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_shaving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_shaving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_dressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_dressing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_dressing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_dressing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_dressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_breakfast_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whalemen",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_childhood_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_breakfast_table",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_bar_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    }
+  ]
+}

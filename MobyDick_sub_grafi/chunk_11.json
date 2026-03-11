@@ -1,0 +1,394 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john_talbot",
+      "label": "John Talbot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_robert_long",
+      "label": "Robert Long",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_willis_ellery",
+      "label": "Willis Ellery",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nathan_coleman",
+      "label": "Nathan Coleman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_walter_canny",
+      "label": "Walter Canny",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seth_macy",
+      "label": "Seth Macy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_samuel_gleig",
+      "label": "Samuel Gleig",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain_ezekiel_hardy",
+      "label": "Captain Ezekiel Hardy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sperm_whale",
+      "label": "Sperm Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_new_bedford",
+      "label": "New Bedford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whalemans_chapel",
+      "label": "Whaleman's Chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets_new_bedford",
+      "label": "Streets of New Bedford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_isle_of_desolation",
+      "label": "Isle of Desolation, off Patagonia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pacific",
+      "label": "Pacific Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_coast_of_japan",
+      "label": "Coast of Japan",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_stroll_through_streets",
+      "label": "Ishmael's daylight stroll through the streets of New Bedford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_stroll",
+      "label": "Ishmael's first morning stroll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_chapel",
+      "label": "Ishmael's visit to the Whaleman's Chapel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_john_talbot_lost",
+      "label": "John Talbot lost overboard near the Isle of Desolation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_crew_death",
+      "label": "Whale tows away the crew of the ship Eliza",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_hardy_killed",
+      "label": "Captain Ezekiel Hardy killed by a Sperm Whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nantucket_voyage",
+      "label": "Nantucket voyage",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ishmael",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_queequeg",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_whale",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "loctype_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loctype_chapel",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loctype_ocean",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "evttype_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evttype_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evttype_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evttype_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_stroll_through_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_stroll_through_streets",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_streets_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stroll_through_streets",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_stroll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_morning_stroll",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_stroll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_stroll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stroll_through_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_chapel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whalemans_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_chapel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_chapel",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_chapel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_stroll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_john_talbot_lost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_john_talbot_lost",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_isle_of_desolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_john_talbot_lost",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_john_talbot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pacific",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_sperm_whale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_robert_long",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_willis_ellery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_nathan_coleman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_walter_canny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_seth_macy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_crew_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_samuel_gleig",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_hardy_killed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_captain_hardy_killed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_coast_of_japan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_hardy_killed",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_captain_ezekiel_hardy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_hardy_killed",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_sperm_whale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nantucket_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_nantucket_voyage",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nantucket_voyage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_new_bedford",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_whalemans_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets_new_bedford",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_pacific",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_coast_of_japan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

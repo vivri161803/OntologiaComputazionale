@@ -1,0 +1,423 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_father_mapple",
+      "label": "Father Mapple",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_congregation",
+      "label": "The Congregation",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_god",
+      "label": "God",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whale",
+      "label": "The Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_angel",
+      "label": "The Angel",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_father_mapple_enters",
+      "label": "Father Mapple enters the chapel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_removes_clothes",
+      "label": "Father Mapple removes his wet clothes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_approaches_pulpit",
+      "label": "Father Mapple approaches the pulpit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_mounts_ladder",
+      "label": "Father Mapple mounts the ladder to the pulpit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_drags_ladder",
+      "label": "Father Mapple drags up the ladder into the pulpit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_ponders",
+      "label": "The narrator ponders the meaning of the ladder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_rises",
+      "label": "Father Mapple rises and orders the congregation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_congregation_condenses",
+      "label": "The congregation condenses and settles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_kneels",
+      "label": "Father Mapple kneels and prays",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_mapple_reads_hymn",
+      "label": "Father Mapple reads the hymn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_confines_speaker",
+      "label": "The whale confines the speaker in its ribs and terrors",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_speaker_despairs",
+      "label": "The speaker falls into despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_speaker_calls_god",
+      "label": "The speaker calls upon God",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_god_delivers",
+      "label": "God delivers the speaker from the whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The Chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pulpit",
+      "label": "The Pulpit",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whale_belly",
+      "label": "The belly of the whale",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hell",
+      "label": "Hell",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_chaplain",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_deliverer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_districamento",
+      "label": "DISTRICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_father_mapple_enters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_father_mapple_removes_clothes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_enters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_approaches_pulpit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_removes_clothes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_mounts_ladder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_approaches_pulpit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_drags_ladder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_mounts_ladder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_ponders",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_drags_ladder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_rises",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_ponders",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_congregation_condenses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_kneels",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_congregation_condenses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_reads_hymn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_mapple_kneels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_reads_hymn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_whale_confines_speaker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_speaker_despairs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_confines_speaker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_speaker_calls_god",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_speaker_despairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_god_delivers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_speaker_calls_god",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_god_delivers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DISTRICAMENTO"
+    },
+    {
+      "source_id": "evt_father_mapple_enters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_mounts_ladder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pulpit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_drags_ladder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pulpit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_kneels",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pulpit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_mapple_reads_hymn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pulpit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_confines_speaker",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whale_belly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_speaker_despairs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_pulpit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_enters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_congregation",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_father_mapple_enters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_removes_clothes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_mounts_ladder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_drags_ladder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_ponders",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_congregation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_congregation_condenses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_kneels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father_mapple",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_mapple_reads_hymn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_whale_confines_speaker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_god_delivers",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck",
+      "label": "Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flask",
+      "label": "Flask",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tashtego",
+      "label": "Tashtego",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daggoo",
+      "label": "Daggoo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moby_dick",
+      "label": "Moby Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_morning_walk",
+      "label": "Ahab ascends the cabin-gangway to the deck and paces",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crew_assembly",
+      "label": "Ahab orders the entire ship's company to assemble aft",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_questions",
+      "label": "Ahab questions the crew about what they do when they see a whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gold_offering",
+      "label": "Ahab nails a gold ounce to the mast as reward for raising the white whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_moby_dick_revelation",
+      "label": "Tashtego identifies the white whale as Moby Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_confession",
+      "label": "Ahab reveals that Moby Dick took off his leg and vows vengeance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_starbuck_objection",
+      "label": "Starbuck objects to Ahab's quest for vengeance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_persuasion",
+      "label": "Ahab persuades Starbuck and the crew to join his hunt for Moby Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grog_ceremony",
+      "label": "Ahab distributes grog to the crew and performs a ceremonial ritual with the mates and harpooneers",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_deck",
+      "label": "The deck of the ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "Ahab's cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mast",
+      "label": "The main-mast",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_gold_coin",
+      "label": "A Spanish ounce of gold (sixteen dollar piece)",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_harpoons",
+      "label": "Harpoons",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ahab_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_moby_dick_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_starbuck_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_crew_helpers",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_gold_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_deck_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_cabin_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_moby_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_gold_coin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_morning_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_crew_assembly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_whale_questions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_gold_offering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_moby_dick_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ahab_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_starbuck_objection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ahab_persuasion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_grog_ceremony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_mast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_morning_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_assembly",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_questions",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gold_offering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moby_dick_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_starbuck_objection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_persuasion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grog_ceremony",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crew_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gold_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ahab_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ahab_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grog_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_crew_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morning_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morning_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_moby_dick_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_moby_dick_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_moby_dick_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_starbuck_objection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_starbuck_objection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ahab_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_gold_coin",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gold_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moby_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ahab_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_assembly",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_questions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crew_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gold_offering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moby_dick_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gold_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_moby_dick_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_starbuck_objection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_persuasion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_starbuck_objection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grog_ceremony",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_persuasion",
+      "target_closed_value": null
+    }
+  ]
+}

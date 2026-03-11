@@ -1,0 +1,481 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lanyon",
+      "label": "Dr. Hastie Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_utterson",
+      "label": "Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "Jekyll's butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_small_man",
+      "label": "The small man",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter_reading",
+      "label": "Reading of Jekyll's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_jekyll",
+      "label": "Journey to Jekyll's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_opening",
+      "label": "Opening of the locked door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drawer_retrieval",
+      "label": "Retrieval of the drawer from the cabinet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Examination of the drawer's contents",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_midnight_knock",
+      "label": "Midnight knock on the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visitor_arrival",
+      "label": "Arrival of the small man at Cavendish Square",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mixture_preparation",
+      "label": "Preparation of the chemical mixture",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transformation",
+      "label": "Transformation of the small man into Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "Jekyll's revelation of his moral turpitude",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_surgical_theatre",
+      "label": "Dr. Denman's surgical theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_private_cabinet",
+      "label": "Jekyll's private cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cavendish_square",
+      "label": "Cavendish Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "The consulting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_drawer",
+      "label": "The drawer with powders and phial",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_powders",
+      "label": "The crystalline salt powders",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_phial",
+      "label": "The blood-red phial",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_book",
+      "label": "The version-book with dates and entries",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_lanyon",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_jekyll",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_hyde",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_butler",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_soglia",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mixture_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_journey_to_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_consulting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cavendish_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_jekyll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_opening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drawer_retrieval",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drawer_retrieval",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_midnight_knock",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visitor_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_midnight_knock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mixture_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visitor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mixture_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_door_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drawer_retrieval",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visitor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visitor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mixture_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_jekyll",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_opening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_private_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drawer_retrieval",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_private_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cavendish_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visitor_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cavendish_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mixture_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_drawer",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_drawer_retrieval",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_powders",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_phial",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_private_cabinet",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_surgical_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    }
+  ]
+}

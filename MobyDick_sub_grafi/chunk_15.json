@@ -1,0 +1,532 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_spouter_inn",
+      "label": "Spouter-Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "Chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_return_from_chapel",
+      "label": "Ishmael returns to the Spouter-Inn from the Chapel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_whittling",
+      "label": "Queequeg whittles his idol with a jack-knife",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_counting_pages",
+      "label": "Queequeg counts the pages of a large book",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_observes",
+      "label": "Ishmael observes Queequeg with interest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_approaches",
+      "label": "Ishmael draws his bench near Queequeg and makes friendly signs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_book_explanation",
+      "label": "Ishmael and Queequeg turn over the book together and discuss its pictures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_social_smoke",
+      "label": "Ishmael and Queequeg exchange puffs from Queequeg's wild pipe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_friendship_declaration",
+      "label": "Queequeg presses his forehead against Ishmael's and declares them bosom friends",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Ishmael and Queequeg have supper and another social chat and smoke",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gift_giving",
+      "label": "Queequeg gives Ishmael his embalmed head and shares his silver dollars",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_idol_worship",
+      "label": "Ishmael joins Queequeg in worshipping his wooden idol",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bedtime_chat",
+      "label": "Ishmael and Queequeg go to bed and chat in their hearts' honeymoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waking_in_bed",
+      "label": "Ishmael and Queequeg wake and sit up in bed, chatting and napping",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_smoking_in_bed",
+      "label": "Ishmael and Queequeg smoke the Tomahawk together in bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_tells_story",
+      "label": "Queequeg speaks of his native island and tells his history",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ishmael",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_queequeg",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_queequeg",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_return_from_chapel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_from_chapel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_whittling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_from_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_whittling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_whittling",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_counting_pages",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_whittling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_counting_pages",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_counting_pages",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_observes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_counting_pages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_observes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_observes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_observes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_approaches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_observes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_approaches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_approaches",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_approaches",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_approaches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_explanation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_explanation",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_social_smoke",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_book_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_social_smoke",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_social_smoke",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_social_smoke",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_declaration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_social_smoke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_declaration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_declaration",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_declaration",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_declaration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_friendship_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_giving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_giving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_giving",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_giving",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_giving",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_idol_worship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gift_giving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_idol_worship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_idol_worship",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_idol_worship",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_idol_worship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_bedtime_chat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_idol_worship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bedtime_chat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bedtime_chat",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bedtime_chat",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_in_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bedtime_chat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_in_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_in_bed",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_in_bed",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smoking_in_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking_in_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smoking_in_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smoking_in_bed",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smoking_in_bed",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tells_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_smoking_in_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tells_story",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tells_story",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tells_story",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tells_story",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "loc_spouter_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

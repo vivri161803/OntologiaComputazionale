@@ -1,0 +1,172 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_usher",
+      "label": "The pale Usher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_herman_melville",
+      "label": "Herman Melville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_michael_hart",
+      "label": "Michael S. Hart",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daniel_lazarus",
+      "label": "Daniel Lazarus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonesey",
+      "label": "Jonesey",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dusting_grammars",
+      "label": "dusting old lexicons and grammars",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_teaching_whale_name",
+      "label": "teaching the name of whale-fish",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_etext_preparation",
+      "label": "preparation of the Moby Dick etext",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_grammar_school",
+      "label": "Grammar School",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_whale",
+      "label": "whale-fish",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_handkerchief",
+      "label": "handkerchief embellished with flags of nations",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_usher_teacher",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_whale_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_usher",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_dusting_grammars",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_teaching_whale_name",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_etext_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_grammar_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_dusting_grammars",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grammar_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_teaching_whale_name",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grammar_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_usher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dusting_grammars",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_usher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_teaching_whale_name",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_whale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_teaching_whale_name",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daniel_lazarus",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_etext_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonesey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_etext_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_herman_melville",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_etext_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dusting_grammars",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_teaching_whale_name",
+      "target_closed_value": null
+    }
+  ]
+}

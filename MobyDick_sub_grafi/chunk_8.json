@@ -1,0 +1,469 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_landlord",
+      "label": "The Landlord",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harpooneer",
+      "label": "The Harpooneer",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_inn_room",
+      "label": "The Inn Room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "The Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_narrator_arrives",
+      "label": "The Narrator arrives at the inn seeking a bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_explains",
+      "label": "The Landlord explains about the shared bed and the harpooneer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_questions",
+      "label": "The Narrator questions the Landlord about the harpooneer's strange behavior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_head_peddling_revealed",
+      "label": "The truth about the harpooneer peddling embalmed New Zealand heads is revealed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_retires",
+      "label": "The Narrator retires to the room and prepares for bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_examines_room",
+      "label": "The Narrator examines the room and discovers strange objects",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_tries_garment",
+      "label": "The Narrator tries on the mysterious door-mat-like garment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_sleeps",
+      "label": "The Narrator attempts to sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpooneer_arrives",
+      "label": "The Harpooneer arrives in the room late at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_observes_harpooneer",
+      "label": "The Narrator observes the Harpooneer's appearance and realizes he is tattooed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpooneer_undresses",
+      "label": "The Harpooneer undresses, revealing his tattooed body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpooneer_idol_worship",
+      "label": "The Harpooneer performs a ritual with a wooden idol",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_landlord_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_harpooneer_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_narrator_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_narrator_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_explains",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_landlord_explains",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_explains",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_landlord_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlord_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_questions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_questions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_questions",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_narrator_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_head_peddling_revealed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_head_peddling_revealed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_head_peddling_revealed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_head_peddling_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_head_peddling_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_retires",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_retires",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_head_peddling_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_retires",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_retires",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_examines_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_examines_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_retires",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_examines_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_examines_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_tries_garment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_tries_garment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_examines_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_tries_garment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_tries_garment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_tries_garment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_harpooneer_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpooneer_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_observes_harpooneer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_observes_harpooneer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpooneer_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_observes_harpooneer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_observes_harpooneer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_narrator_observes_harpooneer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_undresses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_harpooneer_undresses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_observes_harpooneer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_undresses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpooneer_undresses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_harpooneer_undresses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_idol_worship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_harpooneer_idol_worship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpooneer_undresses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneer_idol_worship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpooneer_idol_worship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_harpooneer_idol_worship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_inn_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

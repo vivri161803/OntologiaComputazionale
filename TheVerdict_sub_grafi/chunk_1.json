@@ -1,0 +1,447 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jack_gisburn",
+      "label": "Jack Gisburn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rickham",
+      "label": "Mr. Rickham",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_gisburn",
+      "label": "Mrs. Gisburn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hermia_croft",
+      "label": "Hermia Croft",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_thwing",
+      "label": "Mrs. Gideon Thwing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_claude_nutley",
+      "label": "Claude Nutley",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_victor_grindle",
+      "label": "Victor Grindle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stroud",
+      "label": "Stroud",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_stroud",
+      "label": "Mrs. Stroud",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_gisburn_abandons_painting",
+      "label": "Jack Gisburn abandons painting and marries a rich widow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gisburn_establishes_villa",
+      "label": "Jack Gisburn establishes himself in a villa on the Riviera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grafton_gallery_show",
+      "label": "Hermia Croft encounters Gisburn's 'Moon-dancers' at Grafton Gallery show",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nutley_publishes_obituary",
+      "label": "Claude Nutley publishes an obituary on Jack in the Burlington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rickham_visits_riviera",
+      "label": "Rickham visits the Riviera and encounters Gisburn three years later",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rickham_visits_villa",
+      "label": "Rickham visits Gisburn's villa for tea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rickham_sees_portrait",
+      "label": "Rickham views Mrs. Gisburn's portrait in her boudoir",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gisburn_paints_stroud",
+      "label": "Jack Gisburn paints Stroud's portrait after his death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stroud_death",
+      "label": "Stroud's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rickham_discovers_donkey_sketch",
+      "label": "Rickham discovers the Stroud donkey sketch in Gisburn's study",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gisburn_explains_abdication",
+      "label": "Gisburn prepares to explain his abandonment of painting to Rickham",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "The Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gisburn_villa",
+      "label": "Gisburn's villa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monte_carlo",
+      "label": "Monte Carlo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grafton_gallery",
+      "label": "Grafton Gallery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gisburn_study",
+      "label": "Gisburn's study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boudoir",
+      "label": "Mrs. Gisburn's boudoir",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_gisburn",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_grindle",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_stroud",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_gisburn_abandons_painting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_gisburn_establishes_villa",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gisburn_abandons_painting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gisburn_establishes_villa",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gisburn_abandons_painting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_gisburn",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_gisburn_abandons_painting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gisburn_establishes_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grafton_gallery_show",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grafton_gallery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hermia_croft",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_grafton_gallery_show",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grafton_gallery_show",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nutley_publishes_obituary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gisburn_abandons_painting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_claude_nutley",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nutley_publishes_obituary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_visits_riviera",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gisburn_establishes_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_visits_riviera",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rickham",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_visits_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_visits_villa",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rickham_visits_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_visits_villa",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gisburn_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rickham",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_visits_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_visits_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_gisburn",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_rickham_visits_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_sees_portrait",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rickham_visits_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_sees_portrait",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boudoir",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rickham",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_sees_portrait",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_sees_portrait",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gisburn_paints_stroud",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stroud_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gisburn_paints_stroud",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gisburn_paints_stroud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_stroud",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_gisburn_paints_stroud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stroud",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_rickham_discovers_donkey_sketch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rickham_sees_portrait",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_discovers_donkey_sketch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gisburn_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rickham_discovers_donkey_sketch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_rickham",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_discovers_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rickham_discovers_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gisburn_explains_abdication",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rickham_discovers_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gisburn_explains_abdication",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gisburn_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_gisburn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gisburn_explains_abdication",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rickham",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gisburn_explains_abdication",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_riviera",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gisburn_villa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_boudoir",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gisburn_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_victor_grindle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_victor_grindle",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_gisburn_abandons_painting",
+      "target_closed_value": null
+    }
+  ]
+}

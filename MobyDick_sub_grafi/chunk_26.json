@@ -1,0 +1,236 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_starbuck",
+      "label": "Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck_father",
+      "label": "Starbuck's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck_brother",
+      "label": "Starbuck's brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck_wife",
+      "label": "Starbuck's young Cape wife",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck_child",
+      "label": "Starbuck's child",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_pequod",
+      "label": "The Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "The critical ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bottomless_deeps",
+      "label": "The bottomless deeps",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_whaling",
+      "label": "Whaling expedition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_hunt",
+      "label": "Hunting whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confronting_perils",
+      "label": "Confronting thousand-fold perils through life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_father",
+      "label": "Death of Starbuck's father",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_brother",
+      "label": "Death of Starbuck's brother",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_chief_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_second_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_nave",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_mare",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whaling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confronting_perils",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whaling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_hunt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_hunt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confronting_perils",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_death_father",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bottomless_deeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_brother",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bottomless_deeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck_father",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_death_father",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck_brother",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_death_brother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck_wife",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_starbuck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck_child",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "char_starbuck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

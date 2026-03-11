@@ -1,0 +1,689 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_grampus",
+      "label": "Grampus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_black_fish",
+      "label": "Black Fish (Hyena Whale)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narwhale",
+      "label": "Narwhale (Nostril Whale)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_killer",
+      "label": "Killer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thrasher",
+      "label": "Thrasher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_huzza_porpoise",
+      "label": "Huzza Porpoise",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_algerine_porpoise",
+      "label": "Algerine Porpoise",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mealy_porpoise",
+      "label": "Mealy-mouthed Porpoise",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sperm_whale",
+      "label": "Sperm Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_folio_whale",
+      "label": "Folio Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charley_coffin",
+      "label": "Charley Coffin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_martin_frobisher",
+      "label": "Sir Martin Frobisher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queen_bess",
+      "label": "Queen Bess",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_earl_leicester",
+      "label": "Earl of Leicester",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "Narrator (American whaleman)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_classification",
+      "label": "Classification of whales into Folio, Octavo, and Duodecimo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grampus_description",
+      "label": "Description of Grampus characteristics and behavior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_black_fish_description",
+      "label": "Description of Black Fish hunting and oil production",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narwhale_description",
+      "label": "Description of Narwhale horn and uses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_frobisher_presentation",
+      "label": "Sir Martin Frobisher presents Narwhale horn to Queen Bess",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leicester_presentation",
+      "label": "Earl of Leicester presents unicorn horn to Queen Bess",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_killer_description",
+      "label": "Description of Killer whale behavior and hunting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_killer_attacks_folio",
+      "label": "Killer whale attacks Folio whale by the lip",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thrasher_description",
+      "label": "Description of Thrasher whale and its tail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thrasher_attacks",
+      "label": "Thrasher mounts Folio whale's back and thrashes it",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_huzza_porpoise_description",
+      "label": "Description of Huzza Porpoise appearance and behavior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_algerine_porpoise_description",
+      "label": "Description of Algerine Porpoise as pirate and savage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mealy_porpoise_description",
+      "label": "Description of Mealy-mouthed Porpoise appearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_deep",
+      "label": "The Deep",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_polar_sea",
+      "label": "Polar Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_greenwich_palace",
+      "label": "Greenwich Palace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thames",
+      "label": "Thames River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_windsor_castle",
+      "label": "Windsor Castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pacific",
+      "label": "Pacific Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_circumpolar_seas",
+      "label": "Circumpolar Seas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_broad_sea",
+      "label": "Broad Sea",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject_grampus",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_black_fish",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_narwhale",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_killer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_thrasher",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_huzza",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_algerine",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_mealy",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist_killer",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist_thrasher",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_folio",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donator_frobisher",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donator_leicester",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_recipient_queen",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_description",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_grampus",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_black_fish",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narwhale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_killer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_thrasher",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_huzza_porpoise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_algerine_porpoise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mealy_porpoise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_killer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_thrasher",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_folio_whale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_martin_frobisher",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_earl_leicester",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_queen_bess",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_classification",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_grampus_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_black_fish_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narwhale_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_killer_attacks_folio",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_thrasher_attacks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_frobisher_presentation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_huzza_porpoise_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_algerine_porpoise_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mealy_porpoise_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "loc_deep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_polar_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_greenwich_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_windsor_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_pacific",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_broad_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_grampus_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_black_fish_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narwhale_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_circumpolar_seas",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_killer_attacks_folio",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrasher_attacks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_frobisher_presentation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_greenwich_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leicester_presentation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windsor_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_huzza_porpoise_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_broad_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_algerine_porpoise_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pacific",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mealy_porpoise_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pacific",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_grampus",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grampus_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_black_fish",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_black_fish_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narwhale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narwhale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_killer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_killer_attacks_folio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_folio_whale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_killer_attacks_folio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thrasher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thrasher_attacks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_folio_whale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_thrasher_attacks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_martin_frobisher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_frobisher_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queen_bess",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_frobisher_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_earl_leicester",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leicester_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queen_bess",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_leicester_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_huzza_porpoise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_huzza_porpoise_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_algerine_porpoise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_algerine_porpoise_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mealy_porpoise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mealy_porpoise_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_classification",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grampus_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grampus_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_black_fish_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_black_fish_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narwhale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narwhale_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_frobisher_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_frobisher_presentation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leicester_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leicester_presentation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_killer_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_killer_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_killer_attacks_folio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_killer_attacks_folio",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thrasher_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrasher_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thrasher_attacks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrasher_attacks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_huzza_porpoise_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_huzza_porpoise_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_algerine_porpoise_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_algerine_porpoise_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mealy_porpoise_description",
+      "target_closed_value": null
+    }
+  ]
+}

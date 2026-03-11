@@ -1,0 +1,323 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_monster",
+      "label": "the monster",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mates",
+      "label": "his mates",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_encounter",
+      "label": "the encounter with the monster",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dismemberment",
+      "label": "bodily dismemberment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homeward_voyage",
+      "label": "homeward voyage after the encounter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_madness_onset",
+      "label": "onset of monomania and madness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_raving",
+      "label": "raving in the hammock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_recovery_appearance",
+      "label": "apparent recovery and return to calm orders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dissembling",
+      "label": "dissembling and hiding true madness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_ashore",
+      "label": "stepping ashore with ivory leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sailing_pequod",
+      "label": "sailing in the Pequod on the present voyage",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_patagonian_cape",
+      "label": "Patagonian Cape",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tropics",
+      "label": "tranquil tropics",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hammock",
+      "label": "hammock",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "the ship",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ahab_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_monster_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ritorno",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_monster",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_dismemberment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dismemberment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dismemberment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_homeward_voyage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dismemberment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homeward_voyage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_patagonian_cape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_madness_onset",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homeward_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_madness_onset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_madness_onset",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_raving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_madness_onset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_raving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mates",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_raving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hammock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_raving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_recovery_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tropics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dissembling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dissembling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dissembling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_return_ashore",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dissembling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_ashore",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_ashore",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sailing_pequod",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_ashore",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sailing_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sailing_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_patagonian_cape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_hammock",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_nantucket",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

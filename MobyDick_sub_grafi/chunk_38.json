@@ -1,0 +1,207 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_pip",
+      "label": "Pip",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moby_dick",
+      "label": "white whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_man",
+      "label": "anaconda of an old man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_crew",
+      "label": "chaps",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_squall",
+      "label": "squall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hunt",
+      "label": "hunt for the white whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swearing_in",
+      "label": "swearing in to hunt",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ship",
+      "label": "ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_darkness",
+      "label": "yon darkness",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_pip",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_moby_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_squall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_swearing_in",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_hunt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_squall",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swearing_in",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_darkness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_darkness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_pip",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swearing_in",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swearing_in",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moby_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swearing_in",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_squall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swearing_in",
+      "target_closed_value": null
+    }
+  ]
+}

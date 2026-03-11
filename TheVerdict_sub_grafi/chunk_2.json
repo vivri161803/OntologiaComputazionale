@@ -1,0 +1,401 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_companion",
+      "label": "The Companion (the painter)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stroud",
+      "label": "Stroud",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_stroud",
+      "label": "Mrs. Stroud",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_grindle",
+      "label": "Grindle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rickham",
+      "label": "Rickham",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_curiosity",
+      "label": "The narrator's curiosity about the companion turns serious",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_request",
+      "label": "The narrator asks the companion to explain what happened",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stroud_note",
+      "label": "The companion receives Mrs. Stroud's note",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "The companion travels to Stroud's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "The companion discovers Stroud's face is superb",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_unease",
+      "label": "The companion feels watched and nervous while painting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_donkey_sketch",
+      "label": "The companion sees Stroud's donkey sketch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "The companion realizes his own artistic inadequacy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abandonment",
+      "label": "The companion abandons the portrait",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grindle_suggestion",
+      "label": "The companion suggests Grindle to Mrs. Stroud",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grindle_paints",
+      "label": "Grindle paints Stroud's portrait",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room where the narrator and companion converse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stroud_house",
+      "label": "Stroud's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_devonshire",
+      "label": "Devonshire",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_sketch",
+      "label": "The sketch of the donkey",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_portrait",
+      "label": "Grindle's portrait of Stroud",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_false_hero",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_interior",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_curiosity",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_curiosity",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_curiosity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stroud_note",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stroud_note",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_stroud",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_stroud_note",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stroud_note",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stroud_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stroud",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_unease",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_unease",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_unease",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stroud",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_unease",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_donkey_sketch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_unease",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_sketch",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_donkey_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abandonment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abandonment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grindle_suggestion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_companion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grindle_suggestion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_stroud",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_grindle_suggestion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_grindle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_grindle_suggestion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grindle_paints",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grindle_suggestion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_grindle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grindle_paints",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stroud",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_grindle_paints",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stroud_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

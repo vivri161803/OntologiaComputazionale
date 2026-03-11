@@ -1,0 +1,310 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_whale",
+      "label": "Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whaleman",
+      "label": "Whaleman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_samuel",
+      "label": "Samuel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mate",
+      "label": "Mate",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harpooneer",
+      "label": "Harpooneer",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_globe",
+      "label": "Whale-ship Globe",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_hobomack",
+      "label": "Whale-ship Hobomack",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_pursuit",
+      "label": "Pursuit of wounded whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_assault",
+      "label": "Whale rushes on the boat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leap",
+      "label": "Whalemen leap into the water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_emergence",
+      "label": "Mighty mass emerges from water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon",
+      "label": "Whale is harpooned",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_threat",
+      "label": "Sperm Whale threatens boat with destruction",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mutiny",
+      "label": "Mutiny on whale-ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_retaking",
+      "label": "Retaking of whale-ship Hobomack",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boat",
+      "label": "Boat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_water",
+      "label": "Water",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terra_del_fuego",
+      "label": "Terra Del Fuego",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_whale",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_whale",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_whaleman",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_assault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_leap",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_whale_emergence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_harpoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_threat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_mutiny",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_retaking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mutiny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_assault",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leap",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whaleman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whaleman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whaleman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leap",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_harpoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mate",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_samuel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mutiny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_assault",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leap",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_threat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "ship_globe",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_boat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    }
+  ]
+}

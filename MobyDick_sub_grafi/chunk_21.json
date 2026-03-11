@@ -1,0 +1,775 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_hussey",
+      "label": "Mrs. Hussey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chambermaid",
+      "label": "Chamber-maid",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg_father",
+      "label": "Queequeg's father the king",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_ramadan",
+      "label": "Queequeg's Ramadan fasting and humiliation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_disturbs",
+      "label": "Ishmael goes to Queequeg's room towards nightfall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_locked",
+      "label": "Ishmael finds the door locked and no answer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_alarm",
+      "label": "Ishmael grows alarmed thinking Queequeg had an apoplectic fit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon_found",
+      "label": "Ishmael sees Queequeg's harpoon against the wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chambermaid_called",
+      "label": "Ishmael tells the chamber-maid his suspicions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_hussey_appears",
+      "label": "Mrs. Hussey appears with mustard-pot and vinegar-cruet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon_missing",
+      "label": "Mrs. Hussey discovers Queequeg's harpoon is missing from the closet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_burst",
+      "label": "Ishmael bursts open the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_found",
+      "label": "Queequeg is found squatting in the middle of the room holding Yojo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_silent",
+      "label": "Queequeg remains silent and motionless throughout the day",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_supper",
+      "label": "Ishmael goes down to supper and listens to sailors' stories",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_still_sitting",
+      "label": "Ishmael returns to find Queequeg still sitting in the same position",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_covers_queequeg",
+      "label": "Ishmael throws his bearskin jacket over Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_sleeps",
+      "label": "Ishmael falls asleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_rises",
+      "label": "Queequeg rises at sunrise with stiff joints and cheerful look",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ramadan_ends",
+      "label": "Queequeg says his Ramadan is over",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ishmael_argues",
+      "label": "Ishmael argues with Queequeg about religion and fasting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dyspepsia_discussion",
+      "label": "Ishmael asks Queequeg about dyspepsia and Queequeg tells of a great feast after battle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Queequeg takes a hearty breakfast of chowders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_board_pequod",
+      "label": "Ishmael and Queequeg board the Pequod",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_queequeg_room",
+      "label": "Queequeg's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "The inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stairs",
+      "label": "The stairs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_queequeg_island",
+      "label": "Queequeg's native island",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_yojo",
+      "label": "Yojo",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_harpoon",
+      "label": "Queequeg's harpoon",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_queequeg_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_ishmael_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mrs_hussey_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_resolution",
+      "label": "DISTRICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_ramadan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ramadan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ramadan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_disturbs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ramadan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_disturbs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ishmael_disturbs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_disturbs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ishmael_disturbs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_alarm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_alarm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpoon_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpoon_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chambermaid_called",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_harpoon_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chambermaid_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chambermaid_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chambermaid",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_chambermaid_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chambermaid_called",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_hussey_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_chambermaid_called",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mrs_hussey_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_hussey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_hussey_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_hussey_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_missing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mrs_hussey_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpoon_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_hussey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpoon_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_missing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_burst",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_harpoon_missing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_burst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_burst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_hussey",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_door_burst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_burst",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_door_burst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_silent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_queequeg_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_silent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_silent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_silent",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_silent",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ishmael_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_still_sitting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ishmael_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_still_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_still_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_still_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_still_sitting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_covers_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_still_sitting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_covers_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ishmael_covers_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ishmael_covers_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_covers_queequeg",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_sleeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ishmael_covers_queequeg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ishmael_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_rises",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_ishmael_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_rises",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ramadan_ends",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DISTRICAMENTO"
+    },
+    {
+      "source_id": "evt_queequeg_rises",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ramadan_ends",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ramadan_ends",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ramadan_ends",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ramadan_ends",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_argues",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ramadan_ends",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ishmael_argues",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ishmael_argues",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ishmael_argues",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ishmael_argues",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dyspepsia_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ishmael_argues",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dyspepsia_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dyspepsia_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dyspepsia_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dyspepsia_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queequeg_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dyspepsia_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_board_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_board_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_board_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_board_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_queequeg_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

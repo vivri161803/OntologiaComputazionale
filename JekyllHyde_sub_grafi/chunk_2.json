@@ -1,0 +1,535 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Mr. Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Edward Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Dr. Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_enfield",
+      "label": "Mr. Enfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_child",
+      "label": "A child",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Utterson comes home and sits down to dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_will",
+      "label": "Utterson opens the safe and reads Dr. Jekyll's Will",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_lanyon",
+      "label": "Utterson visits Dr. Lanyon at Cavendish Square",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_lanyon",
+      "label": "Utterson and Lanyon discuss Dr. Jekyll and Mr. Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleepless_night",
+      "label": "Utterson spends a sleepless night tormented by visions of Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_haunting_door",
+      "label": "Utterson begins to haunt the by-street door looking for Mr. Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_hyde",
+      "label": "Utterson encounters and confronts Mr. Hyde on the by-street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hyde_enters_house",
+      "label": "Mr. Hyde unlocks the door and enters the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_reflection",
+      "label": "Utterson walks away troubled, reflecting on Hyde's appearance and nature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_jekyll_house",
+      "label": "Utterson visits Dr. Jekyll's house and speaks with Poole",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_utterson_house",
+      "label": "Mr. Utterson's bachelor house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_business_room",
+      "label": "Utterson's business-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cavendish_square",
+      "label": "Cavendish Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lanyon_house",
+      "label": "Dr. Lanyon's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_by_street",
+      "label": "The by-street of shops",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_entry_court",
+      "label": "The entry of the court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Dr. Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_hall",
+      "label": "The hall of Dr. Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_soho",
+      "label": "Soho",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_will",
+      "label": "Dr. Jekyll's Will",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lawyer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_informant",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_reading_will",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_conversation_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_sleepless_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_haunting_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_encounter_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_utterson_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_business_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cavendish_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_by_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_jekyll_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_utterson_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_will",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_business_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_lanyon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cavendish_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_lanyon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lanyon_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_haunting_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_by_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_hyde",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_by_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_enters_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_jekyll_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_will",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleepless_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_haunting_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_reading_will",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hyde_enters_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_will",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_lanyon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_will",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_lanyon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleepless_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_haunting_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleepless_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_hyde",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_haunting_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_enters_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hyde_enters_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_jekyll_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_will",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_will",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guest",
+      "label": "Mr. Guest",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Dr. Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_danvers",
+      "label": "Sir Danvers",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_envelope_burned",
+      "label": "Jekyll burns the envelope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_handed",
+      "label": "A letter is handed in to Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hyde_dictates",
+      "label": "Hyde dictates terms in Jekyll's will about disappearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_murder_danvers",
+      "label": "Murder of Sir Danvers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hyde_disappears",
+      "label": "Mr. Hyde disappears from police ken",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_seclusion",
+      "label": "Jekyll comes out of seclusion and renews friendships",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_dinner_jan8",
+      "label": "Utterson dines at Jekyll's house on January 8th",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_confined",
+      "label": "Jekyll is confined to the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_visits_lanyon",
+      "label": "Utterson visits Dr. Lanyon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_shock",
+      "label": "Lanyon reveals he has had a shock and will not recover",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_rejects_jekyll",
+      "label": "Lanyon refuses to see or hear of Dr. Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_writes_jekyll",
+      "label": "Utterson writes to Jekyll complaining of exclusion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_replies",
+      "label": "Jekyll sends a long mysterious reply to Utterson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_death",
+      "label": "Dr. Lanyon dies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_funeral",
+      "label": "Funeral of Dr. Lanyon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_opens_envelope",
+      "label": "Utterson opens the envelope from Lanyon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_seclusion_deepens",
+      "label": "Jekyll confines himself to the cabinet over the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Dr. Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabinet",
+      "label": "The cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_utterson_office",
+      "label": "Utterson's office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_utterson_hearth",
+      "label": "Utterson's hearth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_soho",
+      "label": "Soho",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_utterson_judge",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_jekyll_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hyde_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_lanyon_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_danvers_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_danvers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_envelope_burned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_murder_danvers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_lanyon_rejects_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_jekyll_seclusion_deepens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lanyon_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_envelope_burned",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_handed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_dictates",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder_danvers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_disappears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_seclusion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_dinner_jan8",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_confined",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_visits_lanyon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_seclusion_deepens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_opens_envelope",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_utterson_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_envelope_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_envelope_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_handed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hyde_dictates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hyde_dictates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_murder_danvers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_danvers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_murder_danvers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hyde_disappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jekyll_seclusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_dinner_jan8",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_dinner_jan8",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_dinner_jan8",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jekyll_confined",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_visits_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_visits_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_shock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_rejects_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lanyon_rejects_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_writes_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jekyll_replies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jekyll_replies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lanyon_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_opens_envelope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jekyll_seclusion_deepens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_envelope_burned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_handed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_dictates",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_handed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder_danvers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hyde_dictates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_disappears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_murder_danvers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_seclusion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hyde_disappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_dinner_jan8",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jekyll_seclusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_confined",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_dinner_jan8",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_visits_lanyon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jekyll_confined",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_shock",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_visits_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_rejects_jekyll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lanyon_shock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_writes_jekyll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lanyon_rejects_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_replies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_writes_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jekyll_replies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lanyon_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_opens_envelope",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lanyon_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_seclusion_deepens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_opens_envelope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_lanyon",
+      "target_closed_value": null
+    }
+  ]
+}

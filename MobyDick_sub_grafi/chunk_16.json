@@ -1,0 +1,1090 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (Ishmael)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg_father",
+      "label": "Queequeg's Father, the High Chief/King",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg_uncle",
+      "label": "Queequeg's Uncle, the High Priest",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain_sag_harbor",
+      "label": "Captain of the Sag Harbor Ship",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peter_coffin",
+      "label": "Peter Coffin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ship_captain",
+      "label": "Captain of the Moss (Schooner)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_greenhorn",
+      "label": "The Young Greenhorn Passenger",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_merchant_captain",
+      "label": "Commander of the Grand Merchant Ship",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg_sister",
+      "label": "Queequeg's Sister",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_rokovoko",
+      "label": "Rokovoko",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_native_woodlands",
+      "label": "Queequeg's Native Woodlands",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_christendom",
+      "label": "Christendom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fathers_bay",
+      "label": "Queequeg's Father's Bay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_distant_strait",
+      "label": "Distant Strait",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sag_harbor",
+      "label": "Sag Harbor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_bedford",
+      "label": "New Bedford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_acushnet_river",
+      "label": "Acushnet River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boarding_house",
+      "label": "Boarding House in Sag Harbor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wedding_feast",
+      "label": "Wedding Feast at Rokovoko",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bamboo_cottage",
+      "label": "Bride's Bamboo Cottage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_moss_schooner",
+      "label": "The Moss (Schooner)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wharf",
+      "label": "The Wharf",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_queequeg_childhood",
+      "label": "Queequeg's Childhood in Native Woodlands",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_visit",
+      "label": "Sag Harbor Ship Visits Father's Bay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_seeks_passage",
+      "label": "Queequeg Seeks Passage to Christian Lands",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_spurns_suit",
+      "label": "Ship Spurns Queequeg's Suit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_vows",
+      "label": "Queequeg Vows to Reach Christian Lands",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_canoe_ambush",
+      "label": "Queequeg Ambushes Ship from Canoe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_threatens",
+      "label": "Captain Threatens to Throw Queequeg Overboard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_relents",
+      "label": "Captain Relents and Accepts Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_becomes_whaleman",
+      "label": "Queequeg Becomes a Whaleman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_visits_sag_harbor",
+      "label": "Queequeg Arrives at Sag Harbor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_visits_nantucket",
+      "label": "Queequeg Goes to Nantucket",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_disillusionment",
+      "label": "Queequeg Becomes Disillusioned with Christians",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_meets_queequeg",
+      "label": "Narrator Meets Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_asks_about_return",
+      "label": "Narrator Asks Queequeg About Returning Home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_plans_return",
+      "label": "Queequeg Plans to Return After Baptism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_reveals_whaling_plan",
+      "label": "Narrator Reveals Whaling Plan to Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_agrees_to_accompany",
+      "label": "Queequeg Agrees to Accompany Narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_embraces_narrator",
+      "label": "Queequeg Embraces Narrator Before Sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_settle_bill",
+      "label": "Narrator Settles Bill at Boarding House",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_borrow_wheelbarrow",
+      "label": "Narrator and Queequeg Borrow Wheelbarrow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_wharf",
+      "label": "Journey to the Wharf with Wheelbarrow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wheelbarrow_story",
+      "label": "Queequeg Tells Story About First Wheelbarrow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wedding_feast_story",
+      "label": "Queequeg Tells Story of Wedding Feast and Captain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_board_schooner",
+      "label": "Narrator and Queequeg Board the Moss",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sail_acushnet_river",
+      "label": "Moss Sails Down Acushnet River",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_greenhorn_mimics",
+      "label": "Greenhorn Mimics Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_tosses_greenhorn",
+      "label": "Queequeg Tosses Greenhorn into Air",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_confronts_queequeg",
+      "label": "Captain Confronts Queequeg About Incident",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boom_breaks_loose",
+      "label": "Main-sail Weather-sheet Breaks, Boom Flies Loose",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_greenhorn_swept_overboard",
+      "label": "Greenhorn Swept Overboard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_secures_boom",
+      "label": "Queequeg Secures the Boom with Rope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_rescues_greenhorn",
+      "label": "Queequeg Rescues Greenhorn from Water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_greenhorn_restored",
+      "label": "Greenhorn is Restored to Life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_apologizes",
+      "label": "Captain Apologizes to Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_bonds_with_queequeg",
+      "label": "Narrator Bonds Deeply with Queequeg",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_rokovoko",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rokovoko",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_native_woodlands",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_distant_strait",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_fathers_bay",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_sag_harbor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_nantucket",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_new_bedford",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_boarding_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bamboo_cottage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_moss_schooner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "evt_queequeg_childhood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_childhood",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_native_woodlands",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ship_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fathers_bay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_seeks_passage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_seeks_passage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_spurns_suit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ship_spurns_suit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_seeks_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_vows",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_vows",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_spurns_suit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canoe_ambush",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_canoe_ambush",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_distant_strait",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canoe_ambush",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_vows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_threatens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_captain_threatens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_canoe_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_relents",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_captain_relents",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_threatens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_becomes_whaleman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_queequeg_becomes_whaleman",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_relents",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_visits_sag_harbor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_queequeg_visits_sag_harbor",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sag_harbor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_visits_sag_harbor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_becomes_whaleman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_visits_nantucket",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_queequeg_visits_nantucket",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_visits_nantucket",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_visits_sag_harbor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_disillusionment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_queequeg_disillusionment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_visits_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_narrator_asks_about_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_asks_about_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_meets_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_plans_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_queequeg_plans_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_asks_about_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reveals_whaling_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_narrator_reveals_whaling_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_plans_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_agrees_to_accompany",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_queequeg_agrees_to_accompany",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_reveals_whaling_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_embraces_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_queequeg_embraces_narrator",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_agrees_to_accompany",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_settle_bill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_settle_bill",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_embraces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_borrow_wheelbarrow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_borrow_wheelbarrow",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_settle_bill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_to_wharf",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_wharf",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_borrow_wheelbarrow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wheelbarrow_story",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_wheelbarrow_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_feast_story",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_wedding_feast_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wheelbarrow_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_board_schooner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_board_schooner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_moss_schooner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_board_schooner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wedding_feast_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sail_acushnet_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_sail_acushnet_river",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_acushnet_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sail_acushnet_river",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_board_schooner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_greenhorn_mimics",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_greenhorn_mimics",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sail_acushnet_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_tosses_greenhorn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_queequeg_tosses_greenhorn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_greenhorn_mimics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_confronts_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_captain_confronts_queequeg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_tosses_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boom_breaks_loose",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_boom_breaks_loose",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_confronts_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_greenhorn_swept_overboard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_greenhorn_swept_overboard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boom_breaks_loose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_secures_boom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_queequeg_secures_boom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_greenhorn_swept_overboard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_rescues_greenhorn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_queequeg_rescues_greenhorn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_secures_boom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_greenhorn_restored",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_greenhorn_restored",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_rescues_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_apologizes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_captain_apologizes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_greenhorn_restored",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_bonds_with_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_narrator_bonds_with_queequeg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_apologizes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_childhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_sag_harbor",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_captain_threatens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_sag_harbor",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_canoe_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captain_relents",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_meets_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_meets_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_agrees_to_accompany",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_agrees_to_accompany",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_embraces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_embraces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_greenhorn",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_greenhorn_mimics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_tosses_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_greenhorn",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_tosses_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ship_captain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captain_confronts_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_captain_confronts_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_secures_boom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_rescues_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_greenhorn",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_rescues_greenhorn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ship_captain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_captain_apologizes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_captain_apologizes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_bonds_with_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_bonds_with_queequeg",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain_sleet",
+      "label": "Captain Sleet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harpooneer",
+      "label": "A Harpooneer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_absent_minded_youth",
+      "label": "An Absent-Minded Young Platonist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_egyptians",
+      "label": "The Egyptians",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_saint_stylites",
+      "label": "Saint Stylites",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_washington",
+      "label": "Great Washington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nelson",
+      "label": "Admiral Nelson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obed_macy",
+      "label": "Obed Macy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_first_masthead",
+      "label": "The Narrator's First Mast-Head Assignment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_voyage",
+      "label": "A Three or Four Years' Whale Voyage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_standing_masthead",
+      "label": "Standing at the Mast-Head",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meditation_at_masthead",
+      "label": "Meditation and Reverie at the Mast-Head",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_failure_to_spot_whale",
+      "label": "Failure to Spot Whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_loss_of_identity",
+      "label": "Loss of Identity in Pantheistic Reverie",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_potential_fall",
+      "label": "Potential Fall from the Mast-Head",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_masthead",
+      "label": "The Mast-Head",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whale_ship",
+      "label": "A Whale-Ship at Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tropics",
+      "label": "The Tropics",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_greenland",
+      "label": "Greenland Waters",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_glacier_ship",
+      "label": "The Glacier (Captain Sleet's Ship)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_column_vendome",
+      "label": "The Column of Vendome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_baltimore",
+      "label": "Baltimore",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trafalgar_square",
+      "label": "Trafalgar Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_desert",
+      "label": "The Desert",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_crows_nest",
+      "label": "The Crow's-Nest",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_case_bottle",
+      "label": "A Case-Bottle of Spirits",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lookout",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_observer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_meditator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_first_masthead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_first_masthead",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whale_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_masthead",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_standing_masthead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_standing_masthead",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meditation_at_masthead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_meditation_at_masthead",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meditation_at_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meditation_at_masthead",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_failure_to_spot_whale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_failure_to_spot_whale",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_absent_minded_youth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_failure_to_spot_whale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_failure_to_spot_whale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_failure_to_spot_whale",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meditation_at_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_loss_of_identity",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_loss_of_identity",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_loss_of_identity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_loss_of_identity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meditation_at_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_potential_fall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_potential_fall",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_potential_fall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_potential_fall",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_loss_of_identity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_masthead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_whale_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_tropics",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_sleet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_saint_stylites",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_washington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nelson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_standing_masthead",
+      "target_closed_value": null
+    }
+  ]
+}

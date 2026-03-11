@@ -1,0 +1,356 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flask",
+      "label": "Flask",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck",
+      "label": "Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tashtego",
+      "label": "Tashtego",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daggoo",
+      "label": "Daggoo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pip",
+      "label": "Pip",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_pequod",
+      "label": "Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cape_cod",
+      "label": "Cape Cod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tisbury",
+      "label": "Tisbury, Martha's Vineyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gay_head",
+      "label": "Gay Head",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_africa",
+      "label": "Africa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_azores",
+      "label": "Azores",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shetland",
+      "label": "Shetland Islands",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_whale_hunt",
+      "label": "whale hunting expedition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battle_whales",
+      "label": "battle with whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voyage",
+      "label": "voyage of the Pequod",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_second_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_third_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_chief_mate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_harpooneer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_squire",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_captain",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_nave",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_mare",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_stubb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_cape_cod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_tisbury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_gay_head",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_africa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_starbuck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_stubb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_flask",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_whale_hunt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_whale_hunt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voyage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_starbuck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tashtego",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daggoo",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pip",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voyage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_hunt",
+      "target_closed_value": null
+    }
+  ]
+}

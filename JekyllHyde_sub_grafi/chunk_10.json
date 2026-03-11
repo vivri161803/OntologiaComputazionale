@@ -1,0 +1,409 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_henry_jekyll",
+      "label": "Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_edward_hyde",
+      "label": "Edward Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_birth",
+      "label": "Birth into a large fortune",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection",
+      "label": "Years of reflection on his dual nature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_scientific_studies",
+      "label": "Scientific studies toward the mystic and transcendental",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Discovery of the duality of man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drug_creation",
+      "label": "Compounding of the transformative drug",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_transformation",
+      "label": "First drinking of the potion and transformation into Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mirror_moment",
+      "label": "Seeing Edward Hyde in the mirror for the first time",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reverse_transformation",
+      "label": "Drinking the cup again and returning to Henry Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_preparation",
+      "label": "Taking and furnishing the house in Soho",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_will_creation",
+      "label": "Drawing up the will in favor of Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pleasures_seeking",
+      "label": "Seeking undignified pleasures in the disguise of Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cruelty_to_child",
+      "label": "Act of cruelty to a child by Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Confrontation with the passer-by and the child's family",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bank_account",
+      "label": "Opening a bank account in the name of Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Henry Jekyll's house in the square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Henry Jekyll's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "Henry Jekyll's laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_soho_house",
+      "label": "The house in Soho",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_study",
+      "label": "Henry Jekyll's study",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_henry_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_edward_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_birth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_birth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_studies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_scientific_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_drug_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drug_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_first_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drug_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_henry_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mirror_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mirror_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reverse_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mirror_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reverse_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_henry_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reverse_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reverse_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_house_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_soho_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_will_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_will_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_henry_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_will_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pleasures_seeking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_will_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pleasures_seeking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_edward_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pleasures_seeking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cruelty_to_child",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pleasures_seeking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cruelty_to_child",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_edward_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cruelty_to_child",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cruelty_to_child",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_edward_hyde",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_account",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_account",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_henry_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bank_account",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_soho_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_first_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pleasures_seeking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_soho_house",
+      "target_closed_value": null
+    }
+  ]
+}

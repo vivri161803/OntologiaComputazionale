@@ -1,0 +1,259 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_specksynder",
+      "label": "Specksynder (Chief Harpooneer)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harpooneers",
+      "label": "Harpooneers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain",
+      "label": "Captain (general)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mates",
+      "label": "Mates",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_men_before_mast",
+      "label": "Men before the mast",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicholas_czar",
+      "label": "Nicholas the Czar",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_whale_ship",
+      "label": "Whale-ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarter_deck",
+      "label": "Quarter-deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_after_part",
+      "label": "After part of the ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_captain_cabin",
+      "label": "Captain's cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forward",
+      "label": "Forward (crew quarters)",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_whale_hunting",
+      "label": "Whale-hunting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_southern_voyage",
+      "label": "Southern whaling voyage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_navigation",
+      "label": "Navigation and management of vessel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_watches",
+      "label": "Night watches on whaling ground",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_captain",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_chief_harpooneer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_harpooneer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subordinate",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_management",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_hunting",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_voyage",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_ship",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_specksynder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_harpooneers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_whale_hunting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_southern_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_navigation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_whale_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_quarter_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_specksynder",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneers",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_whale_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_navigation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_southern_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneers",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_southern_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_navigation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whale_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_hunting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whale_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_southern_voyage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whale_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneers",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_after_part",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_men_before_mast",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_forward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mates",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_captain_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_watches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_watches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarter_deck",
+      "target_closed_value": null
+    }
+  ]
+}

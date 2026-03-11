@@ -1,0 +1,397 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Mr. Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_enfield",
+      "label": "Mr. Richard Enfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor",
+      "label": "The doctor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cheque_drawer",
+      "label": "The drawer of the cheque",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_london_street",
+      "label": "A by-street in a busy quarter of London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_door",
+      "label": "The sinister block of building with the door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chambers",
+      "label": "Mr. Utterson's chambers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bank",
+      "label": "The bank",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_sunday_walk",
+      "label": "The Sunday walk of Utterson and Enfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collision",
+      "label": "Hyde tramples over the girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "The confrontation and threat of scandal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cheque_payment",
+      "label": "Hyde pays with a cheque from the mysterious drawer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_in_chambers",
+      "label": "The group spends the night in Utterson's chambers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bank_visit",
+      "label": "The group visits the bank to verify the cheque",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_story_telling",
+      "label": "Enfield tells Utterson the story of the door",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_utterson_friend",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_enfield_friend",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hyde_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_girl_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_doctor_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_cheque_drawer_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_collision",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_payment",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_building",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_enfield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_doctor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_cheque_drawer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_sunday_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_collision",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_cheque_payment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_bank_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_london_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chambers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_sunday_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collision",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cheque_payment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_in_chambers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chambers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sunday_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cheque_payment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_in_chambers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cheque_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_in_chambers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_story_telling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sunday_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_collision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enfield",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_collision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doctor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enfield",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_cheque_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cheque_drawer",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_cheque_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sunday_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enfield",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sunday_walk",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Edward Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Dr. Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_door_breaking",
+      "label": "Breaking down the cabinet door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_body_discovery",
+      "label": "Discovery of Hyde's dead body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_building_search",
+      "label": "Thorough examination of the building",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cabinet_examination",
+      "label": "Examination of the cabinet contents",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_envelope_discovery",
+      "label": "Discovery of the envelope addressed to Utterson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_reading",
+      "label": "Utterson reads Jekyll's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_receives_letter",
+      "label": "Lanyon receives Jekyll's registered letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_request",
+      "label": "Jekyll requests Lanyon's help",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cabinet",
+      "label": "The cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_theatre",
+      "label": "The theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cellar",
+      "label": "The cellar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_by_street_door",
+      "label": "The door on the by-street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cavendish_square",
+      "label": "Cavendish Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "Lanyon's consulting-room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject_utterson",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_poole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_hyde",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_jekyll",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_poole",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_sender_jekyll",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_recipient_lanyon",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_door_breaking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_body_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_building_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cabinet_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_envelope_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jekyll_request",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_lanyon_receives_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cellar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_by_street_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_door_breaking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_breaking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_building_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_body_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cabinet_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_building_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_envelope_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cabinet_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_envelope_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_breaking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_breaking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_body_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_body_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_body_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_building_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_building_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cabinet_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cabinet_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_envelope_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_jekyll_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jekyll_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_receives_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lanyon_receives_letter",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jekyll",
+      "label": "Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Edward Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_danvers",
+      "label": "Sir Danvers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kinsman",
+      "label": "The kinsman (doctor)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_child",
+      "label": "A child",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bradshaw",
+      "label": "Bradshaw",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_cruelty",
+      "label": "Act of cruelty to a child",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Confrontation with passer-by and child's family",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_payment",
+      "label": "Payment by cheque in the name of Henry Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bank_account",
+      "label": "Opening an account at another bank in the name of Edward Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_signature",
+      "label": "Supplying Edward Hyde with a forged signature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_adventure",
+      "label": "One of Jekyll's adventures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "Awakening as Edward Hyde in Jekyll's bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transformation_discovery",
+      "label": "Discovery of transformation into Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_jekyll",
+      "label": "Return to Jekyll's form after taking the drug",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_choice",
+      "label": "Jekyll's choice to abandon Hyde and embrace his better self",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_two_months_virtue",
+      "label": "Two months of virtuous living",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_relapse",
+      "label": "Jekyll's relapse and taking the transforming draught again",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_murder",
+      "label": "Murder of Sir Danvers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_destruction_papers",
+      "label": "Destruction of papers in the Soho house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transformation_back",
+      "label": "Transformation back to Jekyll after the murder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_remorse",
+      "label": "Jekyll's remorse and prayers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_news_murder",
+      "label": "News of the murder and Hyde's guilt becoming public",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_redemption",
+      "label": "Jekyll's resolve to redeem the past through good works",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_temptation_again",
+      "label": "Jekyll tempted to trifle with conscience",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_transformation",
+      "label": "Final involuntary transformation into Hyde in Regent's Park",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plan_lanyon",
+      "label": "Jekyll's plan to contact Lanyon for the drugs",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jekyll_room",
+      "label": "Jekyll's room in the square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_soho_room",
+      "label": "The little room in Soho",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabinet",
+      "label": "The cabinet with drugs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_anatomical_theatre",
+      "label": "The anatomical theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_back_passage",
+      "label": "The back passage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_open_court",
+      "label": "The open court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lamplit_streets",
+      "label": "The lamplit streets",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_regent_park",
+      "label": "Regent's Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jekyll_cruelty",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_child",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_kinsman",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_hyde_murder",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_danvers",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_cruelty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_cruelty",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cruelty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_child",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cruelty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cruelty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kinsman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_payment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_account",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signature",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bank_account",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_adventure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_adventure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_adventure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_transformation_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transformation_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_jekyll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transformation_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_to_jekyll",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_to_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bradshaw",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_return_to_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_choice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_choice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_choice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_months_virtue",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_choice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_two_months_virtue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_relapse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_two_months_virtue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_relapse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_relapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_relapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_danvers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_destruction_papers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_destruction_papers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_soho_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_destruction_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_back",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_destruction_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_back",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transformation_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_remorse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transformation_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_remorse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_remorse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_murder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_remorse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_redemption",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_news_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_redemption",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_redemption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_temptation_again",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_redemption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_temptation_again",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_temptation_again",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_final_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_regent_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_lanyon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_final_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_plan_lanyon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jekyll_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_soho_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_anatomical_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_back_passage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_open_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lamplit_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_regent_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_soho_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

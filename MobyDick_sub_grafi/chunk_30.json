@@ -1,0 +1,375 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_sperm_whale",
+      "label": "Sperm Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_right_whale",
+      "label": "Right Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fin_back_whale",
+      "label": "Fin-Back Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hump_back_whale",
+      "label": "Hump-Backed Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_razor_back_whale",
+      "label": "Razor-Back Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sulphur_bottom_whale",
+      "label": "Sulphur-Bottom Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_grampus",
+      "label": "Grampus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_porpoise",
+      "label": "Porpoise",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lamatins_dugongs",
+      "label": "Lamatins and Dugongs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_black_fish",
+      "label": "Black Fish",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narwhale",
+      "label": "Narwhale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thrasher",
+      "label": "Thrasher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_killer",
+      "label": "Killer",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_classification",
+      "label": "Classification of whales into three primary books",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sperm_whale_description",
+      "label": "Description of Sperm Whale characteristics and etymology",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_right_whale_description",
+      "label": "Description of Right Whale and its hunting history",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fin_back_description",
+      "label": "Description of Fin-Back Whale and its solitary nature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hump_back_description",
+      "label": "Description of Hump-Backed Whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_razor_back_description",
+      "label": "Description of Razor-Back Whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sulphur_bottom_description",
+      "label": "Description of Sulphur-Bottom Whale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_octavo_introduction",
+      "label": "Introduction of Octavo whales of middling magnitude",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_arctic_seas",
+      "label": "Arctic seas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_atlantic",
+      "label": "Atlantic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cape_horn",
+      "label": "Cape Horn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_southern_seas",
+      "label": "Southern seas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_indian_ocean",
+      "label": "Indian Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_brazil_banks",
+      "label": "Brazil Banks",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river_mouths",
+      "label": "Mouths of rivers",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject_sperm",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_right",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_fin",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_classification",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sperm_whale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sperm_whale_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_right_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_right_whale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_right_whale_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_fin_back_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fin_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fin_back_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_hump_back_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hump_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hump_back_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_razor_back_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_razor_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_razor_back_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_sulphur_bottom_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sulphur_bottom_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sulphur_bottom_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_sperm_whale_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_classification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_right_whale_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sperm_whale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fin_back_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_right_whale_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hump_back_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fin_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_razor_back_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hump_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sulphur_bottom_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_razor_back_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_octavo_introduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sulphur_bottom_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sperm_whale_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_right_whale_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_arctic_seas",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fin_back_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_atlantic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_razor_back_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cape_horn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sulphur_bottom_description",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_southern_seas",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_arctic_seas",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_atlantic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cape_horn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_southern_seas",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_lamatins_dugongs",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_classification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_river_mouths",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

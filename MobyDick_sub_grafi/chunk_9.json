@@ -1,0 +1,458 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_landlord",
+      "label": "Peter Coffin (the Landlord)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_narrator_deliberates",
+      "label": "The narrator deliberates what to say before the light is put out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_examines_tomahawk",
+      "label": "Queequeg examines his tomahawk and smokes tobacco",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_light_extinguished",
+      "label": "The light is extinguished",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_springs_into_bed",
+      "label": "Queequeg springs into bed with the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_sings_out",
+      "label": "The narrator sings out in fear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_feels_narrator",
+      "label": "Queequeg begins feeling the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_rolls_away",
+      "label": "The narrator rolls away against the wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_conjures_queequeg",
+      "label": "The narrator conjures Queequeg to keep quiet and let him light the lamp",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_threatens",
+      "label": "Queequeg threatens the narrator with his tomahawk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_calls_landlord",
+      "label": "The narrator calls out for the landlord",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_arrives",
+      "label": "The landlord arrives with a light",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_runs_to_landlord",
+      "label": "The narrator leaps from bed and runs to the landlord",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_reassures",
+      "label": "The landlord reassures the narrator about Queequeg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_questions_landlord",
+      "label": "The narrator questions why the landlord didn't tell him Queequeg was a cannibal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_explains",
+      "label": "The landlord explains he thought the narrator knew and mentions Queequeg peddling heads",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_invites_narrator",
+      "label": "Queequeg invites the narrator to get into bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_reflects",
+      "label": "The narrator reflects on Queequeg's humanity and kindness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_requests_no_smoking",
+      "label": "The narrator requests Queequeg stop smoking in bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queequeg_complies",
+      "label": "Queequeg complies and politely motions the narrator to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_sleeps",
+      "label": "The narrator turns in and sleeps well",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom at the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bed",
+      "label": "The bed",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_queequeg_initial",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_landlord",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_queequeg",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_narrator_deliberates",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_queequeg_examines_tomahawk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_deliberates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_light_extinguished",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_examines_tomahawk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_springs_into_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_light_extinguished",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sings_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_springs_into_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_feels_narrator",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_sings_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_rolls_away",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_feels_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_conjures_queequeg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_rolls_away",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_threatens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_conjures_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_threatens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_narrator_calls_landlord",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_threatens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_calls_landlord",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_runs_to_landlord",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_reassures",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_runs_to_landlord",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_questions_landlord",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_reassures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_explains",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_questions_landlord",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_explains",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_queequeg_invites_narrator",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reflects",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_invites_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reflects",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_narrator_requests_no_smoking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_reflects",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_complies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_requests_no_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_complies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queequeg_complies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_deliberates",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queequeg_springs_into_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_deliberates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_sings_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_feels_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queequeg_threatens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_calls_landlord",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_reflects",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_examines_tomahawk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_springs_into_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_feels_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_threatens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queequeg_invites_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_queequeg_complies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_landlord_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlord_reassures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlord_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    }
+  ]
+}

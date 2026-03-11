@@ -1,0 +1,459 @@
+{
+  "open_nodes": [
+    {
+      "id": "loc_spouter_inn",
+      "label": "Spouter-Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_entry",
+      "label": "gable-ended entry with old-fashioned wainscots",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_painting_study",
+      "label": "studying and contemplating the large oil painting",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_painting",
+      "label": "large oil painting depicting a Cape-Horner ship in a hurricane with a whale impaling itself on the mast-heads",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_public_room",
+      "label": "public room of the Spouter-Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_weapons",
+      "label": "array of monstrous clubs, spears, whaling lances and harpoons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nathan_swain",
+      "label": "Nathan Swain",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_nathan_whaling",
+      "label": "Nathan Swain killing fifteen whales between sunrise and sunset",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_jonah",
+      "label": "the little withered old man bartender called Jonah",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_bar",
+      "label": "the bar, a dark-looking den shaped like a whale's head",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_narrator",
+      "label": "the narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_narrator_arrival",
+      "label": "the narrator entering the Spouter-Inn and seeking accommodation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_offer",
+      "label": "the landlord offering to share a harpooneer's blanket",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_landlord",
+      "label": "the landlord of the Spouter-Inn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harpooneer",
+      "label": "the dark complexioned harpooneer",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_supper",
+      "label": "supper in the adjoining cold room with tallow candles",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_young_fellow",
+      "label": "young fellow in a green box coat eating dumplings",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_grampus_crew_arrival",
+      "label": "the crew of the Grampus arriving at the inn",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_grampus_crew",
+      "label": "wild set of mariners from the Grampus",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_crew_revelry",
+      "label": "the crew carousing and drinking at the bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_bulkington",
+      "label": "Bulkington, a tall man with noble shoulders and deep brown face",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_bulkington_departure",
+      "label": "Bulkington slipping away unobserved from the revelry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_sleeping_plan",
+      "label": "the narrator deciding to sleep on the bench instead of with the harpooneer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_planing_bench",
+      "label": "the landlord planing the bench to make it more comfortable",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_bench_discomfort",
+      "label": "the narrator finding the bench too short and narrow with drafts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_waiting",
+      "label": "the narrator waiting for the harpooneer to arrive",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_narrator",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_landlord",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "loctype_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loctype_il_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "evt_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_narrator_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_landlord_offer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_landlord_offer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_offer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_offer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_painting_study",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_painting_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_painting",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_painting_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_entry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_spouter_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_public_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_offer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_fellow",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grampus_crew_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grampus_crew_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_grampus_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grampus_crew_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_revelry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grampus_crew_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_revelry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_grampus_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crew_revelry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_crew_revelry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_crew_revelry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bulkington_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crew_revelry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bulkington_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bulkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bulkington_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeping_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crew_revelry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeping_plan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_sleeping_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_planing_bench",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_sleeping_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_planing_bench",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlord_planing_bench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_landlord_planing_bench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_bench_discomfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_planing_bench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_bench_discomfort",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_bench_discomfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_waiting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_bench_discomfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_waiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harpooneer",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_narrator_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nathan_whaling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_nathan_swain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nathan_whaling",
+      "target_closed_value": null
+    }
+  ]
+}

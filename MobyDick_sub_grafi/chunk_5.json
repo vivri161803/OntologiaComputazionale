@@ -1,0 +1,228 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_melancholy_reflection",
+      "label": "Ishmael's melancholic state and decision to go to sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_contemplation_water",
+      "label": "Contemplation of water and crowds gathering at Manhattan wharves",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_philosophical_meditation",
+      "label": "Philosophical meditation on the universal attraction to water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_sailor",
+      "label": "Decision to go to sea as a simple sailor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whaling_voyage",
+      "label": "Commitment to embark on a whaling voyage",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_manhattan",
+      "label": "Manhattan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_battery",
+      "label": "The Battery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corlears_hook",
+      "label": "Corlears Hook",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitehall",
+      "label": "Whitehall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "The ocean and distant seas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forecastle",
+      "label": "The forecastle of a ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "entity_whale",
+      "label": "The great white whale",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ishmael_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_whale_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "entity_whale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_melancholy_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_contemplation_water",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_melancholy_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_philosophical_meditation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_contemplation_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_sailor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_philosophical_meditation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whaling_voyage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision_sailor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_sailor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_whaling_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_melancholy_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_contemplation_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_sailor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whaling_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "entity_whale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whaling_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_melancholy_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_manhattan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_contemplation_water",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_battery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_manhattan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_battery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_forecastle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

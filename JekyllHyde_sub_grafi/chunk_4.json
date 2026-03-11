@@ -1,0 +1,418 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_maid",
+      "label": "Maid servant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aged_gentleman",
+      "label": "Aged and beautiful gentleman with white hair",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_utterson",
+      "label": "Mr. Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carew",
+      "label": "Sir Danvers Carew",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_inspector",
+      "label": "Inspector Newcomen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_woman",
+      "label": "Ivory-faced and silvery-haired old woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_lane",
+      "label": "The lane near the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maid_house",
+      "label": "House of the maid servant",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_soho",
+      "label": "Soho district",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hyde_house",
+      "label": "Mr. Hyde's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_laboratory",
+      "label": "Dr. Jekyll's laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_cabinet",
+      "label": "Dr. Jekyll's cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_police_station",
+      "label": "Police station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bank",
+      "label": "Bank",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_murder",
+      "label": "Murder of Sir Danvers Carew",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_maid_faints",
+      "label": "Maid faints at the horror",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_police_called",
+      "label": "Police called by the maid",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_informed",
+      "label": "Utterson informed of the murder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_identifies_body",
+      "label": "Utterson identifies the body as Sir Danvers Carew",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stick_recognition",
+      "label": "Utterson recognizes the broken stick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hyde_house_search",
+      "label": "Search of Mr. Hyde's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bank_visit",
+      "label": "Visit to the bank",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_visits_jekyll",
+      "label": "Utterson visits Dr. Jekyll",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_letter_received",
+      "label": "Dr. Jekyll receives letter from Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_reads_letter",
+      "label": "Utterson reads the letter from Hyde",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_murderer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_investigator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donator",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_viaggio",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_murder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carew",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_maid",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carew",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_maid_faints",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_called",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_maid_faints",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_informed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_police_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_identifies_body",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stick_recognition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_identifies_body",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stick_recognition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hyde_house_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stick_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hyde_house_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hyde_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inspector",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hyde_house_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hyde_house_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hyde_house_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bank_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_visits_jekyll",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bank_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_visits_jekyll",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_visits_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_utterson_visits_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_letter_received",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jekyll_letter_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_jekyll_letter_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_reads_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jekyll_letter_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_reads_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_reads_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lane",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_jekyll_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_jekyll_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hyde_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_inspector",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    }
+  ]
+}

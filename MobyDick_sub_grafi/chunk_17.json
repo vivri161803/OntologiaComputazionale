@@ -1,0 +1,381 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (Ishmael)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peter_coffin",
+      "label": "Peter Coffin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hosea_hussey",
+      "label": "Hosea Hussey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_hussey",
+      "label": "Mrs. Hussey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_stiggs",
+      "label": "Young Stiggs",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_try_pots",
+      "label": "The Try Pots Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_spouter_inn",
+      "label": "The Spouter-Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The Beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whalemen_chapel",
+      "label": "The Whalemen's Chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Arrival at Nantucket",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_inn",
+      "label": "Journey to the Try Pots Inn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Supper at the Try Pots",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clam_chowder",
+      "label": "Eating Clam Chowder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cod_chowder",
+      "label": "Eating Cod Chowder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon_confiscation",
+      "label": "Mrs. Hussey Confiscates Queequeg's Harpoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stiggs_death",
+      "label": "Death of Young Stiggs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voyage_of_moss",
+      "label": "Voyage of the Moss",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_provider",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_voyage_of_moss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voyage_of_moss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_inn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_inn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peter_coffin",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_journey_to_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_try_pots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_hussey",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clam_chowder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_clam_chowder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clam_chowder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_try_pots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clam_chowder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clam_chowder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cod_chowder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cod_chowder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clam_chowder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cod_chowder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_try_pots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cod_chowder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cod_chowder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_confiscation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_harpoon_confiscation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_confiscation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_try_pots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_harpoon_confiscation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_hussey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpoon_confiscation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stiggs_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_stiggs_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_try_pots",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_stiggs",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_stiggs_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_try_pots",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_try_pots",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_nantucket",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

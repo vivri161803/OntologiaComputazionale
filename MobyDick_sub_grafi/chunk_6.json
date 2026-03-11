@@ -1,0 +1,318 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peter_coffin",
+      "label": "Peter Coffin",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_departure_manhattan",
+      "label": "Ishmael leaves Manhattan for Cape Horn and the Pacific",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_new_bedford",
+      "label": "Ishmael arrives in New Bedford on Saturday night in December",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_missed_packet",
+      "label": "The packet for Nantucket has already sailed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_search_lodging",
+      "label": "Ishmael searches for lodging in New Bedford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_church_encounter",
+      "label": "Ishmael enters a negro church by mistake",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery_spouter_inn",
+      "label": "Ishmael discovers The Spouter Inn run by Peter Coffin",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_manhattan",
+      "label": "Manhattan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cape_horn",
+      "label": "Cape Horn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pacific",
+      "label": "The Pacific",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_bedford",
+      "label": "New Bedford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crossed_harpoons",
+      "label": "The Crossed Harpoons inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sword_fish_inn",
+      "label": "The Sword-Fish Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_negro_church",
+      "label": "The negro church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_spouter_inn",
+      "label": "The Spouter Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_docks",
+      "label": "The docks",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ishmael",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_departure_manhattan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_new_bedford",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_missed_packet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_search_lodging",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_church_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovery_spouter_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure_manhattan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_lodging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peter_coffin",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_discovery_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_manhattan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_manhattan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_new_bedford",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_missed_packet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_lodging",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_negro_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_spouter_inn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_manhattan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_new_bedford",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_negro_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_spouter_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "evt_departure_manhattan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_new_bedford",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_new_bedford",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_missed_packet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_missed_packet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_search_lodging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_lodging",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_church_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery_spouter_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_manhattan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_new_bedford",
+      "target_closed_value": null
+    }
+  ]
+}

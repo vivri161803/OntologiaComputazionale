@@ -1,0 +1,181 @@
+{
+  "open_nodes": [
+    {
+      "id": "org_pg",
+      "label": "Project Gutenberg-tm",
+      "node_type": "Character"
+    },
+    {
+      "id": "org_pgaf",
+      "label": "Project Gutenberg Literary Archive Foundation",
+      "node_type": "Character"
+    },
+    {
+      "id": "person_hart",
+      "label": "Professor Michael S. Hart",
+      "node_type": "Character"
+    },
+    {
+      "id": "person_newby",
+      "label": "Dr. Gregory B. Newby",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_creation_pgaf",
+      "label": "Creation of Project Gutenberg Literary Archive Foundation in 2001",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_distribution",
+      "label": "Free distribution of electronic works",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_donations",
+      "label": "Donations to Project Gutenberg Literary Archive Foundation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_origination",
+      "label": "Origination of Project Gutenberg-tm concept",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_fairbanks",
+      "label": "4557 Melan Dr. S. Fairbanks, AK 99712",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_saltlake",
+      "label": "809 North 1500 West, Salt Lake City, UT 84116",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_web",
+      "label": "Project Gutenberg Web site",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "org_pg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "org_pgaf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "person_hart",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_origination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "person_newby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "org_pgaf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_origination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creation_pgaf",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_origination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_distribution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_donations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_creation_pgaf",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fairbanks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "org_pgaf",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_fairbanks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "org_pgaf",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_saltlake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_fairbanks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_saltlake",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

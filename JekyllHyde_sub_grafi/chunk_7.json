@@ -1,0 +1,783 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Mr. Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bradshaw",
+      "label": "Bradshaw",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_housemaid",
+      "label": "The housemaid",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cook",
+      "label": "The cook",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_servants",
+      "label": "The servants",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_london_street",
+      "label": "The streets of London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_square",
+      "label": "The square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Dr. Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hall",
+      "label": "The hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory building",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_surgical_theatre",
+      "label": "The surgical theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabinet",
+      "label": "The cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_back_garden",
+      "label": "The back-garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_utterson_summoned",
+      "label": "Utterson is summoned by Poole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_journey",
+      "label": "Utterson and Poole journey through the cold March night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_at_house",
+      "label": "Utterson and Poole arrive at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_servants_gathered",
+      "label": "The servants are gathered in the hall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voice_from_cabinet",
+      "label": "A voice from the cabinet refuses to see Utterson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poole_questions_voice",
+      "label": "Poole questions whether the voice is his master's",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poole_reveals_suspicion",
+      "label": "Poole reveals his suspicion that the master has been murdered",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_medicine_orders",
+      "label": "The creature in the cabinet orders medicine repeatedly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poole_sees_figure",
+      "label": "Poole sees a masked figure in the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_explanation",
+      "label": "Utterson proposes a medical explanation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poole_identifies_hyde",
+      "label": "Poole identifies the figure as Mr. Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_to_break_door",
+      "label": "Utterson and Poole decide to break down the cabinet door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparation_for_attack",
+      "label": "Utterson and Poole prepare to force their way into the cabinet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waiting_in_theatre",
+      "label": "Utterson and Poole wait in the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_footsteps_heard",
+      "label": "Footsteps are heard moving in the cabinet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_demands_entry",
+      "label": "Utterson demands to see Jekyll and threatens to break in",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voice_pleads_mercy",
+      "label": "A voice from the cabinet pleads for mercy",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lawyer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_servant",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_utterson_summoned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_utterson_summoned",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_at_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_at_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_gathered",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_gathered",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_at_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voice_from_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_voice_from_cabinet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voice_from_cabinet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_servants_gathered",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_questions_voice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_poole_questions_voice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_questions_voice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_voice_from_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_reveals_suspicion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_poole_reveals_suspicion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_reveals_suspicion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poole_questions_voice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medicine_orders",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_medicine_orders",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_sees_figure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_poole_sees_figure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_surgical_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_utterson_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poole_sees_figure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_identifies_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_poole_identifies_hyde",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poole_identifies_hyde",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_to_break_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_decision_to_break_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_to_break_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poole_identifies_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparation_for_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_preparation_for_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparation_for_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision_to_break_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting_in_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_waiting_in_theatre",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_surgical_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting_in_theatre",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparation_for_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_footsteps_heard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_footsteps_heard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_surgical_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_footsteps_heard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting_in_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_demands_entry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_utterson_demands_entry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_demands_entry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_footsteps_heard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voice_pleads_mercy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_voice_pleads_mercy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voice_pleads_mercy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_demands_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_utterson_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_at_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival_at_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_servants",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_servants_gathered",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_voice_from_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poole_questions_voice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poole_questions_voice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poole_reveals_suspicion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_poole_reveals_suspicion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_medicine_orders",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poole_sees_figure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_poole_sees_figure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_utterson_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poole_identifies_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_poole_identifies_hyde",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_to_break_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_decision_to_break_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparation_for_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_preparation_for_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bradshaw",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_preparation_for_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting_in_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_poole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_waiting_in_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_footsteps_heard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_utterson_demands_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_utterson_demands_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voice_pleads_mercy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_voice_pleads_mercy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_surgical_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

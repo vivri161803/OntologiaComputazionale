@@ -1,0 +1,508 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_yojo",
+      "label": "Yojo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peleg",
+      "label": "Captain Peleg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bildad",
+      "label": "Captain Bildad",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_pequod",
+      "label": "The Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "ship_devildam",
+      "label": "The Devil-dam",
+      "node_type": "Location"
+    },
+    {
+      "id": "ship_titbit",
+      "label": "The Tit-bit",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Little bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harbor",
+      "label": "Whaling-fleet in harbor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarterdeck",
+      "label": "Quarter-deck of the Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "Cabin below deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_planning",
+      "label": "Ishmael and Queequeg concocting plans in bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consultation",
+      "label": "Queequeg consulting Yojo about ship selection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fasting",
+      "label": "Queequeg fasting and praying with Yojo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inquiry",
+      "label": "Ishmael inquiring about ships in harbor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inspection",
+      "label": "Ishmael inspecting the three ships",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision",
+      "label": "Ishmael deciding on the Pequod",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_peleg",
+      "label": "Ishmael encountering Captain Peleg on the Pequod",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Captain Peleg interrogating Ishmael about whaling",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_revelation",
+      "label": "Peleg revealing Captain Ahab and his lost leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_signing",
+      "label": "Ishmael signing papers to join the Pequod",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bildad_meeting",
+      "label": "Ishmael meeting Captain Bildad in the cabin",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ishmael",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_queequeg",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_peleg",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_planning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_planning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_planning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_yojo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fasting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_fasting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fasting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fasting",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquiry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_inquiry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fasting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquiry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harbor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquiry",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inspection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inspection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "ship_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_peleg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_encounter_peleg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_peleg",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarterdeck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_peleg",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarterdeck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ahab_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_revelation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_revelation",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_ahab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_bildad_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_meeting",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_meeting",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_bildad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_quarterdeck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_harbor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "ship_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    }
+  ]
+}

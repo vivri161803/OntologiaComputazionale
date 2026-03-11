@@ -1,0 +1,293 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flask",
+      "label": "Flask",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_merman",
+      "label": "Badger-haired old merman with a hump on his back",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_pipe_smoking",
+      "label": "Ahab smokes his pipe on deck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pipe_discarded",
+      "label": "Ahab tosses the lighted pipe into the sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stubb_dream",
+      "label": "Stubb recounts his dream to Flask",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_shout",
+      "label": "Ahab shouts about white whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cetology_discourse",
+      "label": "The Narrator discusses the science of Cetology",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_deck",
+      "label": "The deck of the ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hammock",
+      "label": "Stubb's hammock",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_ivory_stool",
+      "label": "Ivory stool",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_pipe",
+      "label": "Ahab's pipe",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_ivory_leg",
+      "label": "Ahab's ivory leg",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_white_whale",
+      "label": "White whale",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ahab_pipe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_pipe",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_stubb",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_ahab",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_pipe_smoking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_pipe_smoking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pipe_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_pipe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_pipe_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pipe_discarded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_pipe_discarded",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pipe_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pipe_discarded",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pipe_discarded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stubb_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_stubb_dream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pipe_discarded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stubb_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flask",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_stubb_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_merman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_stubb_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_stubb_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_shout",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_ahab_shout",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stubb_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_shout",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ahab_shout",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_white_whale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ahab_shout",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cetology_discourse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cetology_discourse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_shout",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cetology_discourse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hammock",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

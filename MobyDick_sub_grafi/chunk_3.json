@@ -1,0 +1,388 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_leviathan",
+      "label": "Leviathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonah",
+      "label": "Jonah",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_god",
+      "label": "God",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moses",
+      "label": "Moses",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_job",
+      "label": "Job",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sperm_whale",
+      "label": "Sperm Whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_right_whale",
+      "label": "Right Whale (Greenland Whale)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whalers",
+      "label": "Whalers and Fishermen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain",
+      "label": "Captain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_owen_chace",
+      "label": "Owen Chace",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_essex_crew",
+      "label": "Crew of the Essex",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_creation",
+      "label": "God creates great whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonah_swallowed",
+      "label": "Great fish swallows Jonah",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leviathan_punished",
+      "label": "Lord punishes Leviathan with sword",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_hunting",
+      "label": "Whale hunting and capture",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_attack",
+      "label": "Whale attacks boats and whalers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_essex_destroyed",
+      "label": "Sperm whale attacks and destroys the Essex",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_dissection",
+      "label": "Dissection and study of whale anatomy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whale_sighting",
+      "label": "Whale sighting from ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ocean",
+      "label": "Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_atlantic",
+      "label": "Atlantic Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pacific",
+      "label": "Pacific Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_spitzbergen",
+      "label": "Spitzbergen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_greenland",
+      "label": "Greenland",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "Whaling Ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boat",
+      "label": "Boat",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_monster",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hunter",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_creator",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_mare",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_nave",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_leviathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_whalers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_whale_hunting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_whale_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_essex_destroyed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "loc_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leviathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonah_swallowed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonah",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonah_swallowed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whalers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_whale_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whale_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whalers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whale_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_essex_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_essex_crew",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_essex_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonah_swallowed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_hunting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonah_swallowed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_essex_destroyed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whale_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_hunting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whale_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pacific",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_essex_destroyed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pacific",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leviathan",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sperm_whale",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_ocean",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peleg",
+      "label": "Captain Peleg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bildad",
+      "label": "Captain Bildad",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elijah",
+      "label": "Elijah",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nat_swaine",
+      "label": "Nat Swaine",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_pequod",
+      "label": "The Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wharf",
+      "label": "The wharf",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "The cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cape_horn",
+      "label": "Cape Horn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_japan",
+      "label": "Japan",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_boarding",
+      "label": "Queequeg and Ishmael walking down the wharf towards the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_papers_challenge",
+      "label": "Peleg challenges Queequeg about his papers and conversion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon_test",
+      "label": "Queequeg demonstrates his harpoon skill by striking the tar spot",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_signing",
+      "label": "Queequeg signs the ship's papers with his mark",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bildad_sermon",
+      "label": "Bildad gives Queequeg a tract and warns him about pagan ways",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peleg_bildad_debate",
+      "label": "Peleg and Bildad debate the merits of pious harpooneers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_typhoon",
+      "label": "The Pequod loses three masts in a typhoon off Japan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leaving_ship",
+      "label": "Queequeg and Ishmael leave the Pequod and walk away from the water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elijah_encounter",
+      "label": "Elijah approaches Ishmael and Queequeg with cryptic warnings about Captain Ahab",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elijah_following",
+      "label": "Elijah follows Ishmael and Queequeg after their conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_cape_horn",
+      "label": "Captain Ahab's incident at Cape Horn where he lay like dead for three days",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_leg_loss",
+      "label": "Captain Ahab loses his leg to a whale",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_false_hero",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_scontro",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambio_stato",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_boarding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boarding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_challenge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boarding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_challenge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "ship_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_challenge",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_challenge",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_challenge",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_bildad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_papers_challenge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "ship_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_test",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_test",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_test",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "char_bildad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpoon_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_bildad_sermon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_sermon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_sermon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bildad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bildad_sermon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_bildad_debate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bildad_sermon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_bildad_debate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_bildad_debate",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peleg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_bildad_debate",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_bildad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_typhoon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_japan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_typhoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ahab_cape_horn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cape_horn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_cape_horn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ahab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_leg_loss",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ahab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_leg_loss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_leaving_ship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_peleg_bildad_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leaving_ship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leaving_ship",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leaving_ship",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leaving_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elijah",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_elijah_following",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elijah_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_following",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elijah",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_following",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_ishmael",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elijah_following",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "ship_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_queequeg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_elijah",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    }
+  ]
+}

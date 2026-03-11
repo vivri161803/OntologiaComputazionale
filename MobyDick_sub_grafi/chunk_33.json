@@ -1,0 +1,368 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dough_boy",
+      "label": "Dough-Boy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck",
+      "label": "Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flask",
+      "label": "Flask",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_queequeg",
+      "label": "Queequeg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tashtego",
+      "label": "Tashtego",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daggoo",
+      "label": "Daggoo",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_observation",
+      "label": "Ahab taking an observation of the sun",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_announcement",
+      "label": "Dough-Boy announces dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_dinner",
+      "label": "Ahab's dinner in the cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mates_dinner",
+      "label": "The three mates dine together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpooneers_dinner",
+      "label": "The three harpooneers dine in the cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flask_hornpipe",
+      "label": "Flask dances a hornpipe on the quarter-deck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dough_boy_torment",
+      "label": "The harpooneers torment Dough-Boy",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "The cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_deck",
+      "label": "The deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarter_deck",
+      "label": "The quarter-deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lee_quarter_boat",
+      "label": "The lee quarter-boat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pantry",
+      "label": "The pantry",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ahab_master",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_ahab_commander",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mates_subordinates",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_dough_boy_servant",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_harpooneers_warriors",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_all_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lee_quarter_boat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_announcement",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dough_boy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_announcement",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_ahab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ahab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_starbuck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_stubb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_flask",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flask_hornpipe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarter_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flask_hornpipe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flask",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flask_hornpipe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mates_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mates_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mates_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_starbuck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mates_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_stubb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mates_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flask",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mates_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_queequeg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_tashtego",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daggoo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dough_boy_torment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dough_boy_torment",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_tashtego",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dough_boy_torment",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daggoo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dough_boy_torment",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_dough_boy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_harpooneers_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_quarter_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dough_boy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    }
+  ]
+}

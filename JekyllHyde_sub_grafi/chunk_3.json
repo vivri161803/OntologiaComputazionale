@@ -1,0 +1,315 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_utterson",
+      "label": "Mr. Utterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Dr. Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hyde",
+      "label": "Mr. Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_butler_conversation",
+      "label": "Utterson speaks with the butler about Jekyll's habits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_reflection",
+      "label": "Utterson walks home and reflects on Jekyll's troubles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_dinner",
+      "label": "Dr. Jekyll hosts a dinner party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_utterson_jekyll_conversation",
+      "label": "Utterson and Jekyll discuss the will and Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jekyll_promise",
+      "label": "Jekyll asks Utterson to promise to help Hyde",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_bedside",
+      "label": "Harry's bedside",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_will",
+      "label": "Jekyll's will",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lawyer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_utterson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_butler_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_utterson_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jekyll_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_utterson_jekyll_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jekyll_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_butler_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_jekyll_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butler_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_jekyll_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jekyll_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_utterson_jekyll_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_utterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_poole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_reflection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_utterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_utterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_jekyll_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_utterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_utterson_jekyll_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_promise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jekyll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jekyll_promise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_utterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_jekyll_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_utterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jekyll_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_utterson_jekyll_conversation",
+      "target_closed_value": null
+    }
+  ]
+}

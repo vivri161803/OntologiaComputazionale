@@ -1,0 +1,241 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_three_harpooneers",
+      "label": "Three harpooneers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_starbuck",
+      "label": "Starbuck",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mates",
+      "label": "Three mates",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moby_dick",
+      "label": "Moby Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_appointment",
+      "label": "Ahab appoints the mates as cupbearers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harpoon_preparation",
+      "label": "Harpooneers prepare harpoon sockets as goblets",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_filling_goblets",
+      "label": "Ahab fills the harpoon sockets with spirits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_oath_ceremony",
+      "label": "The harpooneers drink and swear an oath against Moby Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dispersal",
+      "label": "The crew disperses and Ahab retires to his cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_deck",
+      "label": "The ship's deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ahab_cabin",
+      "label": "Ahab's cabin",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ahab_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_harpooneers_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_moby_dick_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_appointment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_appointment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_appointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mates",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_appointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_harpoon_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_appointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harpoon_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_three_harpooneers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harpoon_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_filling_goblets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_filling_goblets",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harpoon_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_filling_goblets",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_filling_goblets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oath_ceremony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_oath_ceremony",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_filling_goblets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oath_ceremony",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_three_harpooneers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_oath_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_oath_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moby_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_oath_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dispersal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_oath_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dispersal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dispersal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ahab_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

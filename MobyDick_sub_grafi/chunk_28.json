@@ -1,0 +1,285 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ishmael",
+      "label": "Ishmael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stubb",
+      "label": "Stubb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mates",
+      "label": "The mates",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elijah",
+      "label": "Elijah",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tashtego_senior",
+      "label": "Tashtego's senior, an old Gay-Head Indian",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_manxman",
+      "label": "The old Manxman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dough_boy",
+      "label": "Dough-Boy, the steward",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Leaving Nantucket",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_appears",
+      "label": "Captain Ahab appears on deck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voyage_warming",
+      "label": "The ship sails into warmer weather",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ahab_stubb_confrontation",
+      "label": "Ahab confronts Stubb about his ivory leg noise",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_nantucket",
+      "label": "Nantucket",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pequod",
+      "label": "The Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_deck",
+      "label": "The deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabin",
+      "label": "The cabin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarter_deck",
+      "label": "The quarter-deck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_after_hold",
+      "label": "The after hold",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ahab_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_ahab_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_stubb_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nantucket",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ahab_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarter_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ahab_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ishmael",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_ahab_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voyage_warming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ahab_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_voyage_warming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_voyage_warming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_voyage_warming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_stubb_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_voyage_warming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ahab_stubb_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ahab_stubb_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ahab_stubb_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stubb",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ahab_stubb_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cabin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_quarter_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elijah",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    }
+  ]
+}

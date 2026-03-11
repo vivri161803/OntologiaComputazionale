@@ -1,0 +1,606 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_hyde",
+      "label": "Hyde",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jekyll",
+      "label": "Henry Jekyll",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanyon",
+      "label": "Lanyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_poole",
+      "label": "Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "Woman offering lights",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_driver",
+      "label": "Hansom driver",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "Laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Hotel in Portland Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_private_room",
+      "label": "Private room at the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets",
+      "label": "Streets of the city",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lanyon_house",
+      "label": "Lanyon's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jekyll_house",
+      "label": "Jekyll's own house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cabinet",
+      "label": "Jekyll's cabinet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_court",
+      "label": "Court of Jekyll's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_escape_plan",
+      "label": "Hyde plans escape and writes letters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hotel_arrival",
+      "label": "Hyde arrives at hotel in Portland Street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_writing",
+      "label": "Hyde writes letters to Lanyon and Poole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waiting",
+      "label": "Hyde waits in private room, gnawing nails",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cab_ride",
+      "label": "Hyde rides in closed cab through city streets",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_encounter",
+      "label": "Hyde strikes woman offering lights",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanyon_meeting",
+      "label": "Hyde comes to himself at Lanyon's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Jekyll returns to his own house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Jekyll sleeps deeply after exhaustion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "Jekyll awakens refreshed but weakened",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transformation_court",
+      "label": "Jekyll is seized by transformation sensations in the court",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cabinet_refuge",
+      "label": "Jekyll gains shelter in cabinet before transformation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_double_dose",
+      "label": "Jekyll requires double dose of drug to return to himself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_repeated_transformations",
+      "label": "Jekyll experiences repeated involuntary transformations",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drug_failure",
+      "label": "Jekyll's drug supply becomes impure and ineffective",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_statement",
+      "label": "Jekyll finishes his written confession",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_letters",
+      "label": "Letters to Lanyon and Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_drug",
+      "label": "The drug/salt mixture",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_confession",
+      "label": "Jekyll's written confession",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_hyde",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_hyde",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_jekyll",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_hyde",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_escape_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_escape_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cab_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cab_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lanyon_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_court",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cabinet_refuge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transformation_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_double_dose",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cabinet_refuge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_transformations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_double_dose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drug_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_repeated_transformations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_statement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drug_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_private_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_private_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cab_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanyon_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lanyon_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation_court",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cabinet_refuge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cabinet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_statement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jekyll_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cab_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_woman_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanyon_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanyon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_lanyon_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transformation_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cabinet_refuge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_double_dose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repeated_transformations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drug_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jekyll",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_statement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hyde",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_repeated_transformations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_letters",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_drug",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_double_dose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_drug",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_drug_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_confession",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_final_statement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_private_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_jekyll_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_cabinet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_woman_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_repeated_transformations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_drug_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_transformation_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_double_dose",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    }
+  ]
+}

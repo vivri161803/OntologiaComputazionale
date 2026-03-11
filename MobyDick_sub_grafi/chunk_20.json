@@ -1,0 +1,264 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_peleg",
+      "label": "Peleg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab",
+      "label": "Captain Ahab",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "the narrator (young man/lad)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab_mother",
+      "label": "Ahab's crazy, widowed mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tistig",
+      "label": "the old squaw Tistig",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bildad",
+      "label": "Bildad",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab_wife",
+      "label": "Ahab's wife",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ahab_child",
+      "label": "Ahab's child",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whale",
+      "label": "the accursed whale",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_naming",
+      "label": "Ahab being named by his mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_death",
+      "label": "Ahab's mother dying when he was a twelvemonth old",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leg_loss",
+      "label": "Ahab losing his leg to the whale on the last voyage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_passage_home",
+      "label": "the passage home when Ahab was out of his mind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peleg_warning",
+      "label": "Peleg warning the narrator about Ahab's name",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_reflection",
+      "label": "the narrator walking away and reflecting on Ahab",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_pequod",
+      "label": "the Pequod",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gayhead",
+      "label": "Gayhead",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_peleg",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_ahab",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_narrator",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_peleg",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_peleg_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_peleg_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_peleg_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pequod",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_naming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_ahab_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_ahab_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_naming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leg_loss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leg_loss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whale",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_leg_loss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_passage_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_ahab",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_passage_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leg_loss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_passage_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peleg_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pequod",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "char_peleg",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_peleg_warning",
+      "target_closed_value": null
+    }
+  ]
+}

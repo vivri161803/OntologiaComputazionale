@@ -1,0 +1,238 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_subsub",
+      "label": "Sub-Sub-Librarian",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_commentator",
+      "label": "Commentator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_research",
+      "label": "Going through the Vaticans and street-stalls picking up allusions to whales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_compilation",
+      "label": "Compilation of whale extracts from various books",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_address",
+      "label": "Commentator addressing the Sub-Sub with words of consolation and hope",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_vaticans",
+      "label": "Vaticans and street-stalls of the earth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hampton_court",
+      "label": "Hampton Court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tuileries",
+      "label": "Tuileries",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_heaven",
+      "label": "Seven-storied heavens",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_whale_extracts",
+      "label": "Whale extracts and allusions",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gabriel",
+      "label": "Gabriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_michael",
+      "label": "Michael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_raphael",
+      "label": "Raphael",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subsub_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_commentator_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_extracts_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_research_type",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_compilation_type",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_address_type",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_vaticans_type",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_hampton_type",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_heaven_type",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_subsub",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_commentator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_whale_extracts",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_research",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_compilation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_address",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_vaticans",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hampton_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_heaven",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_subsub",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_research",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subsub",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_compilation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_commentator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_address",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subsub",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_address",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_whale_extracts",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_compilation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vaticans",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_compilation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_address",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_compilation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gabriel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_address",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_michael",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_address",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_raphael",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_address",
+      "target_closed_value": null
+    }
+  ]
+}
