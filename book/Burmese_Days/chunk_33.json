@@ -1,0 +1,429 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor",
+      "label": "The doctor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nero",
+      "label": "Nero",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_club_proposal",
+      "label": "Flory commits to proposing the doctor's election to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_arrival",
+      "label": "Elizabeth comes into Flory's life and changes it",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ma_hla_may_return",
+      "label": "Ma Hla May returns to Flory's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Flory and Ma Hla May confront each other in the bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rejection",
+      "label": "Flory definitively rejects Ma Hla May's plea to return",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_payment",
+      "label": "Flory gives Ma Hla May fifty rupees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Ma Hla May leaves Flory's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hill",
+      "label": "The hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Flory's garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "Flory's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "Ma Hla May's village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_breakup",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_club_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_elizabeth_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_ma_hla_may_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_rejection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_payment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_club_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doctor",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_club_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_elizabeth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_elizabeth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ma_hla_may_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ma_hla_may_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_club_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ma_hla_may_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_payment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rejection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_payment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_england",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    }
+  ]
+}

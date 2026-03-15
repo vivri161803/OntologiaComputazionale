@@ -1,0 +1,294 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_minimus",
+      "label": "Minimus",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_executions",
+      "label": "executions of traitors",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_commandment_discovery",
+      "label": "discovery of the altered Sixth Commandment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_rebuild",
+      "label": "rebuilding of the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squealer_reports",
+      "label": "Squealer reading production figures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_isolation",
+      "label": "Napoleon's increasing isolation and formalization",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poem_composition",
+      "label": "composition of the poem Comrade Napoleon",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_farm",
+      "label": "the farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "the farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sunday_gathering",
+      "label": "Sunday morning gathering",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_napoleon",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_snowball",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_squealer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_farm",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_farmhouse",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_executions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_executions",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_commandment_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_executions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandment_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_commandment_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_commandment_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_commandment_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_muriel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_commandment_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_commandment_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_reports",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_rebuild",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_reports",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sunday_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squealer_reports",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_isolation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_squealer_reports",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_isolation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_napoleon_isolation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_poem_composition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poem_composition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_minimus",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poem_composition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "loc_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

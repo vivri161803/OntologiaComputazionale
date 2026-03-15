@@ -1,0 +1,388 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Lucy's mother (Mrs. Westenra)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur (Lord Godalming)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_undertaker",
+      "label": "The undertaker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maid",
+      "label": "A maid",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_solicitor",
+      "label": "Mr. Marquand (solicitor)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "The funeral of Lucy and her mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination_papers",
+      "label": "Examination of Lucy's papers and documents",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_viewing_corpse",
+      "label": "Viewing Lucy's corpse in the death chamber",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crucifix_stolen",
+      "label": "The golden crucifix is stolen from Lucy's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_solicitor_visit",
+      "label": "The solicitor's visit and discussion of the will",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_arrival",
+      "label": "Arthur's arrival at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_farewell",
+      "label": "Arthur's farewell to Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_death_chamber",
+      "label": "The death chamber",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_room",
+      "label": "Dr. Seward's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_household",
+      "label": "The household",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_seward",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_van_helsing",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_lucy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_arthur",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_crucifix_stolen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_solicitor_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_death_chamber",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_death_chamber",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_death_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_papers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_viewing_corpse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crucifix_stolen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_viewing_corpse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_solicitor_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crucifix_stolen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_solicitor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_farewell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy_mother",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_examination_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_viewing_corpse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_viewing_corpse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_viewing_corpse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crucifix_stolen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_crucifix_stolen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_solicitor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_solicitor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_solicitor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_solicitor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_solicitor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arthur_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_papers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_household",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_viewing_corpse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_death_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_death_chamber",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mollie",
+      "label": "Mollie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington_man",
+      "label": "Mr. Pilkington's man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_publican",
+      "label": "Fat red-faced publican",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Mr. Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_foxwood",
+      "label": "Foxwood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_willingdon",
+      "label": "Willingdon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_long_pasture",
+      "label": "Long pasture",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_knoll",
+      "label": "Small knoll",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shed",
+      "label": "Shed with smooth wooden floor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_big_barn",
+      "label": "Big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hedge",
+      "label": "Hedge dividing Animal Farm from Foxwood",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_mollie_late",
+      "label": "Mollie becomes late for work and complains of pains",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_drinking_pool",
+      "label": "Mollie goes to drinking pool to gaze at reflection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clover_confrontation",
+      "label": "Clover confronts Mollie about the man at the hedge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_discovery",
+      "label": "Clover discovers sugar and ribbons in Mollie's stall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_disappearance",
+      "label": "Mollie disappears from Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_sighting",
+      "label": "Pigeons report seeing Mollie at Willingdon with publican",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winter_hard_weather",
+      "label": "Bitterly hard weather comes in January",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barn_meetings",
+      "label": "Many meetings held in big barn for planning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_napoleon_disputes",
+      "label": "Disputes between Snowball and Napoleon over farm policy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_proposal",
+      "label": "Snowball proposes building a windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_plans",
+      "label": "Snowball completes detailed plans for the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_rejects_windmill",
+      "label": "Napoleon urinates on Snowball's windmill plans",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_debate",
+      "label": "Farm divided into factions over windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_defence_debate",
+      "label": "Snowball and Napoleon debate farm defence strategy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_vote_meeting",
+      "label": "Sunday meeting to vote on building the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_speech",
+      "label": "Snowball gives passionate speech for the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dogs_attack",
+      "label": "Nine dogs attack and chase Snowball from the barn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_escape",
+      "label": "Snowball escapes through hedge and disappears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_announcement",
+      "label": "Napoleon announces end of Sunday Meetings and establishes pig committee",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squealer_explanation",
+      "label": "Squealer explains new arrangement to the animals",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_mollie",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_clover",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_snowball",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_napoleon",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_squealer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_pilkington",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_publican",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mollie",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_pilkington_man",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_publican",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_mollie_late",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_clover_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mollie_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mollie_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_windmill_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_windmill_plans",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_snowball_napoleon_disputes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_dogs_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_snowball_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_napoleon_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_animal_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_big_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_long_pasture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_knoll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_mollie_late",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_drinking_pool",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_late",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clover_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_drinking_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clover_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_sighting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winter_hard_weather",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barn_meetings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winter_hard_weather",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_napoleon_disputes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_barn_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_napoleon_disputes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_plans",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_rejects_windmill",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_plans",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_debate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_rejects_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_defence_debate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_vote_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_defence_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_vote_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dogs_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_late",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_drinking_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clover_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_clover_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clover_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_publican",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mollie_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_plans",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_snowball_napoleon_disputes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_snowball_napoleon_disputes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_rejects_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_napoleon_rejects_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dogs_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dogs_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_late",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_drinking_pool",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clover_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_long_pasture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_plans",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_napoleon_disputes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_vote_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_long_pasture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_willingdon",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. John Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westenra",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter",
+      "label": "Seward writes a letter to Arthur about Lucy's condition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Van Helsing meets Seward at Liverpool Street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consultation",
+      "label": "Van Helsing and Seward consult about Lucy's case",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Van Helsing and Seward examine Lucy in her room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_arrival",
+      "label": "Arthur arrives at the house unexpectedly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transfusion",
+      "label": "Blood transfusion from Arthur to Lucy is performed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mark_discovery",
+      "label": "Seward discovers two punctures on Lucy's throat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vanhelsing_departure",
+      "label": "Van Helsing departs for Amsterdam",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_liverpool_street",
+      "label": "Liverpool Street station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_house",
+      "label": "Seward's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lucy_room",
+      "label": "Lucy's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hall",
+      "label": "The hall of the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amsterdam",
+      "label": "Amsterdam",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_doctor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_specialist",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_lover",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transfusion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mark_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mark_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_liverpool_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transfusion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mark_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amsterdam",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_mark_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mark_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mark_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mark_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lucy_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Jonathan finds a cold breakfast laid out and eats a hearty meal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_library_discovery",
+      "label": "Jonathan discovers a library full of English books and magazines",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_enters",
+      "label": "The Count enters the library and greets Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_england",
+      "label": "The Count and Jonathan have a long conversation about England and the Count's desire to go to London",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_treasure_explanation",
+      "label": "The Count explains the legend of blue flames marking hidden treasure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_estate_discussion",
+      "label": "Jonathan and the Count discuss the Carfax estate in Purfleet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Jonathan takes supper while the Count sits with him and chats",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_late_conversation",
+      "label": "The Count and Jonathan continue chatting late into the night until dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The Count's castle in Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London, England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax estate at Purfleet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby on the Yorkshire coast",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_peter_hawkins",
+      "label": "Peter Hawkins",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jonathan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_count",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_count",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_library_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_discovery",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_enters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_count_enters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_library_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_enters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_enters",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_enters",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_england",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_conversation_england",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_enters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_england",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_england",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_england",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treasure_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_treasure_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_england",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treasure_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treasure_explanation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treasure_explanation",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_treasure_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_estate_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_late_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_late_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_late_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_late_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_late_conversation",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_estate_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peter_hawkins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    }
+  ]
+}

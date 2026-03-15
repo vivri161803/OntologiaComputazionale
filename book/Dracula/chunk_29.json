@@ -1,0 +1,671 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor",
+      "label": "The Professor (Van Helsing)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (John Seward)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hennessey",
+      "label": "Patrick Hennessey, MD",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carrier1",
+      "label": "Jack Smollet (carrier)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carrier2",
+      "label": "Thomas Snelling (carrier)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hardy",
+      "label": "Hardy (attendant)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lucy_sleep",
+      "label": "Lucy sleeps fitfully through the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_watching",
+      "label": "The Professor and narrator take turns watching Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quincey_patrol",
+      "label": "Quincey Morris patrols around the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_decline",
+      "label": "Lucy's physical decline becomes visible in daylight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_transformation",
+      "label": "Lucy shows signs of physical transformation while sleeping",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_telegram",
+      "label": "Lucy asks for Arthur and they telegraph for him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_arrival",
+      "label": "Arthur arrives at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_reunion",
+      "label": "Arthur reunites with Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_letter1",
+      "label": "Mina writes to Lucy about her new life at Exeter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hawkins_inheritance",
+      "label": "Mr. Hawkins offers his home and inheritance to Jonathan and Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_outburst1",
+      "label": "Renfield verbally attacks the carrier at the gate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_escape",
+      "label": "Renfield breaks out through his window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_attack",
+      "label": "Renfield attacks the carriers and is subdued",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hawkins_death",
+      "label": "Mr. Hawkins dies suddenly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_letter2",
+      "label": "Mina writes to Lucy about Mr. Hawkins' death",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_lucy_house",
+      "label": "Lucy's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The railway station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hawkins_house",
+      "label": "Mr. Hawkins' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cathedral_close",
+      "label": "The cathedral close",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_empty_house",
+      "label": "The empty house adjacent to the asylum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_asylum",
+      "label": "The asylum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_padded_room",
+      "label": "The padded room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_lucy_sleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lucy_decline",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lucy_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_watching",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quincey_patrol",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_decline",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_telegram",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_reunion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_letter1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_exeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hawkins_inheritance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hawkins_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_outburst1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_hawkins_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_hawkins_inheritance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_watching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_watching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_quincey_patrol",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_decline",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_letter1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_letter1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_hawkins_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_hawkins_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_hawkins_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_outburst1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carrier1",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_outburst1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carrier1",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carrier2",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hennessey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hardy",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hawkins_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_letter2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_watching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_decline",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_decline",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_telegram",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_reunion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_outburst1",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_outburst1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hawkins_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_letter2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hawkins_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lucy_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_asylum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hawkins_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cathedral_close",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_empty_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_padded_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

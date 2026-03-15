@@ -1,0 +1,330 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virge",
+      "label": "Virge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_men",
+      "label": "The dark men",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_attack_house",
+      "label": "Attack on Neville's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gunfight",
+      "label": "Gunfight between Neville and the dark men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_captured",
+      "label": "Neville is captured and dragged from the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_wakes",
+      "label": "Neville wakes up in a cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_visits",
+      "label": "Ruth visits Neville in his cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_gives_packet",
+      "label": "Ruth gives Neville a packet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_at_window",
+      "label": "Neville stands at the window and sees the crowd",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_neville_house",
+      "label": "Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cell",
+      "label": "The cell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "The street outside the cell",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dark_men",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_ruth",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_attack_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_gunfight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_neville_captured",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_ruth_visits",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_neville_at_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_neville_wakes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_neville_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_cell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_attack_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gunfight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_captured",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_wakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_at_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gunfight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_attack_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_captured",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gunfight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_captured",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_gives_packet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_at_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_gives_packet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_attack_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_attack_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gunfight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_gunfight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_neville_captured",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_captured",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_ruth_gives_packet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ruth_gives_packet",
+      "target_closed_value": null
+    }
+  ]
+}

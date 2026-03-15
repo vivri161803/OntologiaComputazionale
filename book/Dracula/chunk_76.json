@@ -1,0 +1,322 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey_morris",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey_boy",
+      "label": "Quincey (their son)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_flames",
+      "label": "Going through the flames seven years ago",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transylvania_journey",
+      "label": "Journey to Transylvania in the summer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Return home and reminiscence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage_godalming",
+      "label": "Godalming's marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage_seward",
+      "label": "Seward's marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quincey_death",
+      "label": "Death of Quincey Morris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boy_birth",
+      "label": "Birth of Quincey (their son)",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_home",
+      "label": "Home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_safe",
+      "label": "The safe",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jonathan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_mina",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_quincey",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ritorno",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey_morris",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_quincey_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flames",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quincey_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boy_birth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_godalming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_seward",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transylvania_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transylvania_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transylvania_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_transylvania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transylvania_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transylvania_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transylvania_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_marriage_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_marriage_seward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flames",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_transylvania_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "evt_boy_birth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_transylvania",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_quincey_boy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_boy_birth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey_morris",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_boy_birth",
+      "target_closed_value": null
+    }
+  ]
+}

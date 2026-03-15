@@ -1,0 +1,385 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_compound",
+      "label": "Compound",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "Maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "Cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dak_bungalow",
+      "label": "Dak bungalow",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Verrall's arrival at Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Flory meets Verrall on the road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tent_pegging",
+      "label": "Verrall performs tent-pegging",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_fall",
+      "label": "Flory falls from the chestnut pony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_rejection",
+      "label": "Elizabeth ignores Flory after his fall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_recovery",
+      "label": "Flory returns home and tends to his wounds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_club_quarrel",
+      "label": "Flory quarrels with Ellis and Westfield at the Club",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_verrall",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_elizabeth",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_ko_sla",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_tent_pegging",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_flory_fall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_elizabeth_rejection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_club_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_maidan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_maidan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tent_pegging",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_maidan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_fall",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_maidan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_rejection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_maidan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compound",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tent_pegging",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_fall",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tent_pegging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_fall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_quarrel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tent_pegging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_fall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_flory_fall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_elizabeth_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_club_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_club_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_club_quarrel",
+      "target_closed_value": null
+    }
+  ]
+}

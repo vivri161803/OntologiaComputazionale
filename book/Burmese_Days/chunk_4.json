@@ -1,0 +1,574 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "Butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chokra",
+      "label": "Chokra",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_quarrel",
+      "label": "Ellis's tirade against Orientals and Veraswami",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_response",
+      "label": "Flory's weak response to Ellis",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_westfield_intervention",
+      "label": "Westfield offers drinks to calm the situation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ellis_rant_continued",
+      "label": "Ellis continues his rant about colonial governance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ellis_sits_down",
+      "label": "Ellis sits down and drinks beer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_butler_called",
+      "label": "Ellis calls the butler and chastises him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_about_tour",
+      "label": "Men discuss going on tour and avoiding the padre's service",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_smutty_rhymes",
+      "label": "Men exchange smutty rhymes and jokes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_arrival",
+      "label": "Mr Macgregor and Mrs Lackersteen arrive at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_lackersteen_complaint",
+      "label": "Mrs Lackersteen complains about the heat and servants",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_conversation",
+      "label": "Macgregor and Mrs Lackersteen discuss the decline of servant authority",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_notice_confrontation",
+      "label": "Ellis confronts Macgregor about the native member notice",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_response",
+      "label": "Macgregor responds to Ellis's objections",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veraswami_house",
+      "label": "Veraswami's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "The jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "The church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_response",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_response",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_intervention",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_intervention",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_westfield_intervention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_rant_continued",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_westfield_intervention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_rant_continued",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ellis_rant_continued",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_sits_down",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ellis_rant_continued",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_sits_down",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ellis_sits_down",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_called",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ellis_sits_down",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_called",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_butler_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_butler_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_about_tour",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butler_called",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_about_tour",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_about_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_about_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_about_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smutty_rhymes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_about_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_smutty_rhymes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_maxwell",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_smutty_rhymes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_complaint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_complaint",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_lackersteen_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mrs_lackersteen_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notice_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notice_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_notice_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_notice_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_notice_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_response",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_notice_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_response",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_macgregor_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_veraswami_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

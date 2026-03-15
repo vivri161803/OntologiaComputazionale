@@ -1,0 +1,550 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_abraham_van_helsing",
+      "label": "Abraham van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john_seward",
+      "label": "John Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Madam Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_szgany",
+      "label": "Szgany",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_three_women",
+      "label": "Three women of the mist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_journey_borgo_pass",
+      "label": "Journey to Borgo Pass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnotism_attempt",
+      "label": "Hypnotism attempt on Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_sleep",
+      "label": "Mina's prolonged sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_castle",
+      "label": "Arrival near the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wafer_circle",
+      "label": "Drawing the wafer circle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_cannot_cross",
+      "label": "Mina cannot cross the fire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horses_scream",
+      "label": "Horses screaming in terror",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_appear",
+      "label": "Three women materialize",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dawn_comes",
+      "label": "Dawn breaks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horses_dead",
+      "label": "Discovery of dead horses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_pursuit",
+      "label": "Jonathan's pursuit on horseback",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_szgany_flight",
+      "label": "Szgany fleeing with wagon",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_borgo_pass",
+      "label": "Borgo Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mountain_road",
+      "label": "Mountain road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "Camp near castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wolds",
+      "label": "The wolds",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_van_helsing",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_mina",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_count",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_jonathan",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_journey_borgo_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_borgo_pass",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_borgo_pass",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mountain_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_journey_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotism_attempt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_hypnotism_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnotism_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hypnotism_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnotism_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arrival_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wafer_circle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_wafer_circle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wafer_circle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wafer_circle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wafer_circle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_cannot_cross",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_cannot_cross",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wafer_circle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_cannot_cross",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_cannot_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mina_cannot_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_scream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_horses_scream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_cannot_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_scream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horses_scream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_three_women",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_women_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_women_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_women_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dawn_comes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dawn_comes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_dead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_horses_dead",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dawn_comes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_dead",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abraham_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horses_dead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_pursuit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_jonathan_pursuit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wolds",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_szgany_flight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_szgany_flight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_szgany",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_szgany_flight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_borgo_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_mountain_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_wolds",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

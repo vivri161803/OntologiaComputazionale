@@ -1,0 +1,699 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_attendant",
+      "label": "The attendant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sister_agatha",
+      "label": "Sister Agatha",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_master",
+      "label": "The Master",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_renfield_excitement",
+      "label": "Renfield becomes excited and sniffs about like a dog",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_haughty",
+      "label": "Renfield becomes haughty and refuses to talk to the attendant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_visits",
+      "label": "Dr. Seward visits Renfield at nine o'clock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_quiet",
+      "label": "Renfield becomes quiet and sits on his bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_questions_pets",
+      "label": "Dr. Seward tries to lead Renfield to talk of his pets",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_enigmatic_reply",
+      "label": "Renfield gives an enigmatic reply about bride maidens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_escape",
+      "label": "Renfield escapes through the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_pursuit",
+      "label": "Dr. Seward pursues Renfield through the grounds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_carfax",
+      "label": "Renfield is found at the chapel door of Carfax",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_capture",
+      "label": "Renfield is captured and restrained",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_journey",
+      "label": "Mina travels to Buda-Pesth to meet Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_finds_jonathan",
+      "label": "Mina finds Jonathan thin, pale, and weak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_notebook",
+      "label": "Jonathan gives Mina his notebook with instructions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_jonathan_marriage",
+      "label": "Mina and Jonathan are married",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_recovery",
+      "label": "Lucy recovers her health and appetite at Whitby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_arthur_engagement",
+      "label": "Lucy and Arthur are engaged to be married",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_asylum",
+      "label": "The asylum ward",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax, the deserted house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The chapel at Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_budapest",
+      "label": "Buda-Pesth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jonathan_room",
+      "label": "Jonathan's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_notebook",
+      "label": "Jonathan's notebook",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_recipient",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_excitement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_renfield_excitement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_excitement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_excitement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_haughty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_haughty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_renfield_haughty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_haughty",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_haughty",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_quiet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_quiet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_quiet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_quiet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_questions_pets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_questions_pets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_questions_pets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_questions_pets",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_questions_pets",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_enigmatic_reply",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_enigmatic_reply",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_enigmatic_reply",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_enigmatic_reply",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_renfield_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_seward_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_pursuit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_pursuit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_master",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_renfield_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_carfax",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_carfax",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_capture",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_capture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_mina_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_finds_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_finds_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_finds_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_finds_jonathan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_budapest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_finds_jonathan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_notebook",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_notebook",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonathan_notebook",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_notebook",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_jonathan_notebook",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_notebook",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jonathan_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_notebook",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_jonathan_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_jonathan_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_mina_jonathan_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sister_agatha",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mina_jonathan_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_jonathan_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_mina_jonathan_marriage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_budapest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_jonathan_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_arthur_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_arthur_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_lucy_arthur_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_arthur_engagement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_lucy_arthur_engagement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "loc_asylum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_budapest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

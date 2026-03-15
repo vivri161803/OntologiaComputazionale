@@ -1,0 +1,473 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_schoolboys",
+      "label": "Five High School boys",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wounded_boy",
+      "label": "Wounded schoolboy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_maxwell_death",
+      "label": "Maxwell's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_murder",
+      "label": "Murder of a white man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "Maxwell's funeral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "Arrest of murderers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ellis_attack",
+      "label": "Ellis attacks schoolboys",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_riot",
+      "label": "Villagers attack the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burma",
+      "label": "Burma",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "Cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "Maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_office",
+      "label": "Ellis's office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_murder",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_funeral",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrest",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_riot",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_saloon",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_maxwell_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_maxwell",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_maxwell_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_maxwell_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_murder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cemetery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ellis_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ellis_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_schoolboys",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ellis_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wounded_boy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ellis_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ellis_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_riot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_cemetery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    }
+  ]
+}

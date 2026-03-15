@@ -1,0 +1,484 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_correspondent",
+      "label": "war correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cavalry",
+      "label": "defender's cavalry",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cyclists",
+      "label": "cyclists",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_horsemen",
+      "label": "defender-horsemen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_colonel",
+      "label": "colonel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_lieutenant",
+      "label": "young lieutenant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ironclad_crew",
+      "label": "young men in blue pyjamas",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_adventures",
+      "label": "private adventures of the war correspondent",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horse_theft",
+      "label": "stolen a horse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horse_broken",
+      "label": "found the brute had broken its leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horse_shot",
+      "label": "shot it with his revolver",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squad_company",
+      "label": "spent some hours in the company of a squad of dispirited riflemen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quarrel",
+      "label": "quarrelled with them about topography",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charge",
+      "label": "defender-horsemen trying to charge cyclists",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_retreat",
+      "label": "cyclists could retreat over open turf before horsemen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_surrender_horsemen",
+      "label": "horsemen surrendered",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ironclad_threat",
+      "label": "forward movement of one of those machines threatened to enfilade his wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blister",
+      "label": "discovered a fearful blister on his heel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peace_decision",
+      "label": "decided to make his own little unconditional peace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_surrender",
+      "label": "war correspondent's surrender",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cavalry_emergence",
+      "label": "remainder of the defender's cavalry emerged and halted",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_medical_attendance",
+      "label": "three or four men and horses receiving medical attendance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_capture",
+      "label": "land ironclads captured the whole blessed army",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_stone_wall",
+      "label": "broken stone wall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_scrubby_place",
+      "label": "scrubby gravelly place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_plain",
+      "label": "big level plain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "banks of the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road_bridge",
+      "label": "road bridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_railway_bridge",
+      "label": "railway bridge",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_cavalry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_cyclists",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_adventures",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_horse_theft",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_adventures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horse_broken",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horse_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horse_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horse_broken",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squad_company",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horse_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_squad_company",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surrender_horsemen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surrender_horsemen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_ironclad_threat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_surrender_horsemen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blister",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ironclad_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peace_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blister",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_surrender",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_peace_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_surrender",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_cavalry_emergence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_final_surrender",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medical_attendance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cavalry_emergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_capture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_medical_attendance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_capture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_adventures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horse_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horse_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squad_company",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_surrender",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_horsemen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cyclists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_horsemen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_surrender_horsemen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cavalry",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cavalry_emergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cavalry",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ironclad_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_stone_wall",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_charge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_stone_wall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_scrubby_place",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_peace_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_scrubby_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_plain",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_cavalry_emergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_plain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_road_bridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_road_bridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_railway_bridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_capture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_railway_bridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

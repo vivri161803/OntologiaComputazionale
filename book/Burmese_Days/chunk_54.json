@@ -1,0 +1,489 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_sein",
+      "label": "Ba Sein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hla_pe",
+      "label": "Hla Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nga_shwe_o",
+      "label": "Nga Shwe O",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_riot",
+      "label": "the riot on the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_maxwell_murder",
+      "label": "Maxwell's murder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_heroism",
+      "label": "Flory's heroic act during the riot",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_elizabeth_meeting",
+      "label": "Flory and Elizabeth's meeting at the Club veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_kiss",
+      "label": "Flory kissing Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_macgregor_talk",
+      "label": "Flory's conversation with Mr Macgregor about the doctor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_doctor_election",
+      "label": "Dr Veraswami's election to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_departure",
+      "label": "Flory's departure to camp",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_council",
+      "label": "U Po Kyin's council of war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_plan",
+      "label": "U Po Kyin's plan to disgrace Flory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rebellion",
+      "label": "the so-called rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prison_escape",
+      "label": "Nga Shwe O's escape from prison",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warder_trial",
+      "label": "the prison warder's trial",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "the Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_garden",
+      "label": "the Club garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_veranda",
+      "label": "the Club veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dr_house",
+      "label": "Dr Veraswami's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "the jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "the camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "the maidan",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_riot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_flory_heroism",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_flory_elizabeth_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_doctor_election",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_u_po_kyin_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_flory_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_club_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_riot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_heroism",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_macgregor_talk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_council",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_plan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_heroism",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_heroism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_elizabeth_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_macgregor_talk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_macgregor_talk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_council",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_council",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_murder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_heroism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_elizabeth_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_flory_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_election",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_macgregor_talk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_council",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ba_sein",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_u_po_kyin_council",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hla_pe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_u_po_kyin_council",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_kin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_u_po_kyin_council",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_u_po_kyin_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_u_po_kyin_plan",
+      "target_closed_value": null
+    }
+  ]
+}

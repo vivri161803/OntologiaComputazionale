@@ -1,0 +1,582 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina_harker",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_billington_senior",
+      "label": "Mr. Billington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_billington_junior",
+      "label": "Billington junior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_journey_to_whitby",
+      "label": "Jonathan's journey to Whitby to investigate the cargo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_billingtons",
+      "label": "Jonathan meets the Billingtons at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_review_papers",
+      "label": "Jonathan reviews the consignment papers in Billington's office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interview_port_officials",
+      "label": "Jonathan interviews coastguards, customs officers, and harbour master",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_london",
+      "label": "Jonathan travels to London to King's Cross station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_check_kings_cross",
+      "label": "Jonathan verifies the boxes' arrival at King's Cross",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_carter_paterson",
+      "label": "Jonathan visits Carter Paterson's central office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interview_carriers",
+      "label": "Jonathan interviews the carriers' men about delivery to Carfax",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_organize_papers",
+      "label": "Jonathan and Mina organize all papers into order",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lord_godalming_arrival",
+      "label": "Lord Godalming and Mr. Morris arrive at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_shares_documents",
+      "label": "Mina shares the typewritten papers and diaries with Lord Godalming and Mr. Morris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_godalming_grief",
+      "label": "Lord Godalming breaks down in grief over Lucy's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_comforts_godalming",
+      "label": "Mina comforts Lord Godalming and offers her sympathy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_comforts_morris",
+      "label": "Mina offers comfort and friendship to Mr. Morris",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_billington_house",
+      "label": "Billington's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby_port",
+      "label": "Whitby port",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kings_cross",
+      "label": "King's Cross station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carter_paterson_office",
+      "label": "Carter Paterson's central office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The library",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_boxes_earth",
+      "label": "Fifty cases of common earth",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_papers_diaries",
+      "label": "Papers and diaries",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_journey_to_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_to_whitby",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_whitby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_billingtons",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_billingtons",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_billington_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_billingtons",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_billingtons",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_billington_junior",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_review_papers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_billingtons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_review_papers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_billington_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_review_papers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_port_officials",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_review_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_port_officials",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby_port",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_port_officials",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_london",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interview_port_officials",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_to_london",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kings_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_london",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kings_cross",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kings_cross",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kings_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kings_cross",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kings_cross",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_carter_paterson",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_check_kings_cross",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_carter_paterson",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carter_paterson_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_carter_paterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_carriers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_carter_paterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_carriers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_carriers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_carriers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_organize_papers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interview_carriers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_organize_papers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_organize_papers",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_mina_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_godalming_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_organize_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_godalming_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_lord_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_godalming_arrival",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_mr_morris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lord_godalming_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_lord_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_mr_morris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_shares_documents",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_godalming_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_shares_documents",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_godalming_grief",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_lord_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_godalming_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mina_comforts_godalming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_godalming_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_godalming",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_lord_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_godalming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_mina_comforts_morris",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_comforts_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina_harker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_morris",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_mr_morris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_comforts_morris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_kings_cross",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_billington_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

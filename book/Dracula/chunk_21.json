@@ -1,0 +1,479 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_holmwood",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_zoophagous_patient",
+      "label": "Zoophagous patient",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_attendant",
+      "label": "Attendant",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_vanhelsing_visit",
+      "label": "Van Helsing's visit to Hillingham",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Van Helsing's examination of Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Van Helsing's conversation with Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_outburst_noon",
+      "label": "Zoophagous patient's violent outburst at noon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_calm",
+      "label": "Patient becomes calm and contented",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_outburst_sunset",
+      "label": "Zoophagous patient's violent outburst at sunset",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_recovery",
+      "label": "Patient recovers and discards fly collection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_deterioration",
+      "label": "Lucy's condition deteriorates",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_consultation",
+      "label": "Mrs. Westenra consults Dr. Seward professionally",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hillingham",
+      "label": "Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town",
+      "label": "Town",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amsterdam",
+      "label": "Amsterdam",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_asylum",
+      "label": "Asylum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_patient_room",
+      "label": "Patient's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_gate",
+      "label": "Seward's gate",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_doctor",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_specialist",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_examination",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_outburst",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_vanhelsing_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_patient_outburst_noon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_patient_outburst_sunset",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_patient_calm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_patient_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_deterioration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_seward_consultation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_hillingham",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_asylum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_patient_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_vanhelsing_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_outburst_noon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_asylum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_calm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_patient_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_outburst_sunset",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_patient_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vanhelsing_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_outburst_noon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_calm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_patient_outburst_noon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_outburst_sunset",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_patient_calm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_patient_outburst_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_deterioration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_patient_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_zoophagous_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_outburst_noon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_patient_outburst_noon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_zoophagous_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_calm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_patient_calm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_zoophagous_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_outburst_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_patient_outburst_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_patient_outburst_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_zoophagous_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_patient_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_amsterdam",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    }
+  ]
+}

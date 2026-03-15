@@ -1,0 +1,402 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jane_eyre",
+      "label": "Jane Eyre",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charlotte_bronte",
+      "label": "Charlotte Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_bronte",
+      "label": "Emily Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_eliot",
+      "label": "George Eliot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tolstoi",
+      "label": "Tolstoi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_fairfax",
+      "label": "Mrs Fairfax",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_adele",
+      "label": "Adele",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_grace_poole",
+      "label": "Grace Poole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rochester",
+      "label": "Rochester",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_jane_on_roof",
+      "label": "Jane Eyre goes up on the roof and looks over the fields",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jane_longing",
+      "label": "Jane Eyre longs for a power of vision to see the distant world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grace_laugh",
+      "label": "Grace Poole's laugh is heard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charlotte_writing",
+      "label": "Charlotte Brontë writes Jane Eyre with indignation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_george_eliot_escape",
+      "label": "George Eliot escapes to a secluded villa in St John's Wood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tolstoi_travels",
+      "label": "Tolstoi lives freely and travels, picking up varied experience",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_reading",
+      "label": "The narrator reads and reflects on novels",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jane_austen_writing",
+      "label": "Jane Austen writes novels ignoring criticism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emily_bronte_writing",
+      "label": "Emily Brontë writes novels ignoring criticism",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_roof",
+      "label": "The roof of the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_distant_fields",
+      "label": "The distant fields and world beyond",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_parsonage",
+      "label": "The parsonage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_st_johns_wood",
+      "label": "St John's Wood villa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_priory",
+      "label": "The Priory",
+      "node_type": "Location"
+    },
+    {
+      "id": "book_jane_eyre",
+      "label": "Jane Eyre (novel)",
+      "node_type": "Event"
+    },
+    {
+      "id": "book_pride_prejudice",
+      "label": "Pride and Prejudice",
+      "node_type": "Event"
+    },
+    {
+      "id": "book_villette",
+      "label": "Villette",
+      "node_type": "Event"
+    },
+    {
+      "id": "book_wuthering_heights",
+      "label": "Wuthering Heights",
+      "node_type": "Event"
+    },
+    {
+      "id": "book_middlemarch",
+      "label": "Middlemarch",
+      "node_type": "Event"
+    },
+    {
+      "id": "book_war_peace",
+      "label": "War and Peace",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jane",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_charlotte",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_austen",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_emily",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_longing",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_writing",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_escape",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_travel",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_reflection",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_jane_on_roof",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_roof",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_on_roof",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jane_longing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_longing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jane_eyre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_longing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jane_on_roof",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jane_eyre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grace_laugh",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_grace_poole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grace_laugh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jane_longing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charlotte_writing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_charlotte_bronte",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charlotte_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_charlotte_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_parsonage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_george_eliot_escape",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_george_eliot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_george_eliot_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_george_eliot_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_st_johns_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tolstoi_travels",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_tolstoi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tolstoi_travels",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_reading",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jane_austen_writing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jane_austen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_austen_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_emily_bronte_writing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emily_bronte",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emily_bronte_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_roof",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_distant_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_parsonage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_st_johns_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_jane_eyre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charlotte_bronte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emily_bronte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

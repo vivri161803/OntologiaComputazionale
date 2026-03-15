@@ -1,0 +1,435 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Dr. Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Madam Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Miss Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire_sisters",
+      "label": "The three Vampire sisters",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_szgany",
+      "label": "The Szgany",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_pursuit",
+      "label": "The pursuit of the Szgany with their leiter wagon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_journey",
+      "label": "Van Helsing's journey to the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chapel_search",
+      "label": "Van Helsing's search through the chapel tombs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_wail",
+      "label": "Mina's wail heard by Van Helsing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_destruction",
+      "label": "Van Helsing's destruction of the three Vampire sisters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_tomb_sealing",
+      "label": "Van Helsing sealing Dracula's tomb with the Wafer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_awakening",
+      "label": "Mina's awakening from her sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_eastward_journey",
+      "label": "Van Helsing and Mina's journey eastward to meet their friends",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mountains",
+      "label": "The mountains",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The old chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_holy_circle",
+      "label": "The Holy circle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dracula_tomb",
+      "label": "Dracula's tomb",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_szgany",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_van_helsing_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chapel_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_sisters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chapel_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chapel_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_chapel_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chapel_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_wail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_wail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wail",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_chapel_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_wail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_tomb_sealing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dracula_tomb_sealing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_tomb_sealing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_dracula_tomb_sealing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dracula_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wail",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dracula_tomb_sealing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vampire_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_sisters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_vampire_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_vampire_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_tomb_sealing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampire_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mina_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_eastward_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_eastward_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eastward_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_mina_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_eastward_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_holy_circle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_mountains",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    }
+  ]
+}

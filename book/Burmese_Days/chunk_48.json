@@ -1,0 +1,708 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_lugale",
+      "label": "U Lugale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Mr Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_sein",
+      "label": "Ba Sein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weiksa",
+      "label": "the weiksa",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Mr Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Lieutenant Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Mr Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thongwa",
+      "label": "Thongwa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "jungle near Thongwa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hut",
+      "label": "ruined field hut",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "the Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tent",
+      "label": "tent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lackersteens_house",
+      "label": "Lackersteens' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_elizabeth_bedroom",
+      "label": "Elizabeth's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_rebellion_outbreak",
+      "label": "the rebellion breaks out in Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_returns_camp",
+      "label": "Flory returns to camp after drunken night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_spies_inform",
+      "label": "U Po Kyin's spies inform him of rebels assembling",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_raid_thongwa",
+      "label": "U Po Kyin and police raid Thongwa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_maxwell_joins_attack",
+      "label": "Mr Maxwell joins the attack on the hut",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ba_sein_raises_cry",
+      "label": "Ba Sein raises the cry of rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_europeans_rush_out",
+      "label": "Mr Macgregor, Mr Westfield and Lieutenant Verrall rush out to Thongwa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_lecturing",
+      "label": "U Po Kyin lectures the villagers under a teak tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weiksa_vanishes",
+      "label": "the weiksa vanishes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rebels_caught",
+      "label": "six rebels are caught",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rebel_death",
+      "label": "Mr Maxwell shoots a rebel in the abdomen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_jealousy",
+      "label": "Flory is tormented by jealousy over Elizabeth and Verrall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_elizabeth_rides",
+      "label": "Verrall and Elizabeth ride together every evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_elizabeth_dances",
+      "label": "Verrall and Elizabeth dance together every night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_lackersteen_lectures",
+      "label": "Mrs Lackersteen lectures Elizabeth about marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mr_lackersteen_returns",
+      "label": "Mr Lackersteen returns to Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rape_attempt",
+      "label": "Mr Lackersteen attempts to rape Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fresh_sedition",
+      "label": "further sedition is afoot",
+      "node_type": "Event"
+    },
+    {
+      "id": "weapon_shotgun",
+      "label": "one shotgun with damaged left barrel",
+      "node_type": "Event"
+    },
+    {
+      "id": "weapon_homemade_guns",
+      "label": "six home-made guns with zinc piping barrels",
+      "node_type": "Event"
+    },
+    {
+      "id": "weapon_cartridges",
+      "label": "thirty-nine twelve-bore cartridges",
+      "node_type": "Event"
+    },
+    {
+      "id": "weapon_dummy_guns",
+      "label": "eleven dummy guns carved out of teakwood",
+      "node_type": "Event"
+    },
+    {
+      "id": "weapon_crackers",
+      "label": "Chinese crackers",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_false_hero",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_victory",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_rebellion_outbreak",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebellion_outbreak",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_flory_returns_camp",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_returns_camp",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rebellion_outbreak",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spies_inform",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_returns_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spies_inform",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spies_inform",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_u_po_kyin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raid_thongwa",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_spies_inform",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raid_thongwa",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raid_thongwa",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_u_po_kyin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raid_thongwa",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_u_lugale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_joins_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_raid_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_joins_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hut",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_joins_attack",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_maxwell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ba_sein_raises_cry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_maxwell_joins_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ba_sein_raises_cry",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ba_sein",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_rush_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ba_sein_raises_cry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_rush_out",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_rush_out",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_macgregor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_rush_out",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_westfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_rush_out",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_lecturing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_europeans_rush_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_lecturing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_lecturing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_u_po_kyin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weiksa_vanishes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_lecturing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weiksa_vanishes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_weiksa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebels_caught",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weiksa_vanishes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebels_caught",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebel_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_maxwell_joins_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebel_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hut",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebel_death",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_maxwell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebel_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_flory_jealousy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_jealousy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_jealousy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_rides",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_rides",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_rides",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_dances",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_dances",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_dances",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_lectures",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteens_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_lectures",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mrs_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_lectures",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mr_lackersteen_returns",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mr_lackersteen_returns",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mr_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rape_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mr_lackersteen_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rape_attempt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_elizabeth_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rape_attempt",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mr_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rape_attempt",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fresh_sedition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_thongwa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_hut",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_tent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_lackersteens_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_elizabeth_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

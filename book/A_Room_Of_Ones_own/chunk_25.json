@@ -1,0 +1,696 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mary_beton",
+      "label": "Mary Beton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_audience",
+      "label": "Women audience members",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sir_arthur_quiller_couch",
+      "label": "Sir Arthur Quiller-Couch",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_florence_nightingale",
+      "label": "Florence Nightingale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sappho",
+      "label": "Sappho",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_murasaki",
+      "label": "The Lady Murasaki",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_bronte",
+      "label": "Emily Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_coleridge",
+      "label": "Coleridge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wordsworth",
+      "label": "Wordsworth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_keats",
+      "label": "Keats",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_browning",
+      "label": "Browning",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rossetti",
+      "label": "Rossetti",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruskin",
+      "label": "Ruskin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_oscar_browning",
+      "label": "Mr Oscar Browning",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mussolini",
+      "label": "Mussolini",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor_x",
+      "label": "Professor X",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john_langdon_davies",
+      "label": "Mr John Langdon Davies",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_mary_conclusion",
+      "label": "Mary Beton reaches the conclusion about five hundred a year and a room with a lock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mary_activities",
+      "label": "Mary Beton's various activities: flying into arms of Beadle, lunching, dining, drawing pictures, taking books, looking out window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_anticipates_criticisms",
+      "label": "The narrator anticipates two criticisms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_of_sexes",
+      "label": "Discussion of comparative merits of sexes as writers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_material_things",
+      "label": "Discussion of the importance of material things for poets",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quiller_couch_quote",
+      "label": "Sir Arthur Quiller-Couch's statement about great poets and material conditions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_poverty",
+      "label": "Recognition that women have always been poor and lacked intellectual freedom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crimean_war",
+      "label": "The Crimean War which allowed Florence Nightingale out of her drawing-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_european_war",
+      "label": "The European War which opened doors to average women",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_explains_motives",
+      "label": "The narrator explains her motives for wanting women to write",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_reflection",
+      "label": "The narrator reflects on her own train of thought and motives",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_reality",
+      "label": "Discussion of what reality means and the writer's role in capturing it",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peroration",
+      "label": "The narrator delivers the peroration of her speech",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warnings_to_women",
+      "label": "The narrator conveys warnings and reprobation about women from various men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_exhortation",
+      "label": "The narrator's final exhortation to young women about their accomplishments and responsibilities",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_british_museum",
+      "label": "The British Museum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cambridge",
+      "label": "Cambridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "Drawing-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dusty_road",
+      "label": "A dusty road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "The street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "A room with a lock on the door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_athens",
+      "label": "Athens",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_mary_conclusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mary_activities",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mary_conclusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_beton",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mary_conclusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_beton",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mary_activities",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_anticipates_criticisms",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mary_activities",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_anticipates_criticisms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_of_sexes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_anticipates_criticisms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_of_sexes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_material_things",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_of_sexes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_material_things",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quiller_couch_quote",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_material_things",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sir_arthur_quiller_couch",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_quiller_couch_quote",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quiller_couch_quote",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_poverty",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quiller_couch_quote",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_women_poverty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crimean_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_poverty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_florence_nightingale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crimean_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_european_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crimean_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_explains_motives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_european_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_explains_motives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_audience",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_narrator_explains_motives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_explains_motives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_reality",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_reality",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peroration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_reality",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_peroration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_audience",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_peroration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warnings_to_women",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_peroration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_oscar_browning",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mussolini",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor_x",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john_langdon_davies",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_exhortation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warnings_to_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_exhortation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_audience",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_final_exhortation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_final_exhortation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_british_museum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_dusty_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_piccadilly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_mary_activities",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_of_sexes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cambridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crimean_war",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_reality",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dusty_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_reality",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_reality",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_piccadilly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mary_conclusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_discussion_of_sexes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_discussion_material_things",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_women_poverty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_explains_motives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discussion_reality",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_peroration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_warnings_to_women",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_final_exhortation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_audience",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "char_oscar_browning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mussolini",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_professor_x",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_john_langdon_davies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

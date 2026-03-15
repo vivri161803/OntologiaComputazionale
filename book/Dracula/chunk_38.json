@@ -1,0 +1,471 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Dr. Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_child",
+      "label": "The child in the hospital",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vincent",
+      "label": "Dr. Vincent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Van Helsing's revelation about Lucy to Seward",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hospital_visit",
+      "label": "Visit to the hospital to examine the child",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at Jack Straw's Castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tomb_opening",
+      "label": "Opening of Lucy's tomb and coffin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coffin_empty",
+      "label": "Discovery that Lucy's coffin is empty",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_churchyard_vigil",
+      "label": "Vigil in the churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_found",
+      "label": "Finding the child in the churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_examination",
+      "label": "Examination of the child's throat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_left",
+      "label": "Leaving the child on Hampstead Heath for the policeman",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "The North Hospital",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jack_straws",
+      "label": "Jack Straw's Castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "The churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tomb",
+      "label": "The Westenra tomb",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hampstead_heath",
+      "label": "Hampstead Heath",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_seward",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_van_helsing",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_lucy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hospital_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hospital_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hospital_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_child",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hospital_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vincent",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_hospital_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hospital_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hospital",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jack_straws",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jack_straws",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_tomb_opening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tomb_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_tomb_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tomb_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tomb_opening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_tomb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_coffin_empty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coffin_empty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_coffin_empty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_coffin_empty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffin_empty",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tomb_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_churchyard_vigil",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_churchyard_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_churchyard_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_churchyard_vigil",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_churchyard_vigil",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_child_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_child_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_child",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_child_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_churchyard_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_child_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_child_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_child",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_child_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_child_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_left",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_child_left",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_child_left",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_child",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_child_left",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_left",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hampstead_heath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hampstead_heath",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_child_left",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_child_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hospital_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hospital_visit",
+      "target_closed_value": null
+    }
+  ]
+}

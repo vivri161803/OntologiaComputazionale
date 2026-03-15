@@ -1,0 +1,377 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pwe_girl",
+      "label": "pwe girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_lackersteen",
+      "label": "Ma Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom_lackersteen",
+      "label": "Tom Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_expedition_pwe",
+      "label": "Flory takes Elizabeth to the pwe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_arrival",
+      "label": "Elizabeth arrives at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_welcome_speech",
+      "label": "Mr Macgregor gives a welcome speech",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ellis_confrontation",
+      "label": "Ellis confronts Flory about Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_walks_elizabeth",
+      "label": "Mr Macgregor walks Elizabeth home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_elizabeth_reconciliation",
+      "label": "Flory and Elizabeth reconcile at the Club gate",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_road",
+      "label": "the road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pwe",
+      "label": "the pwe",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "the Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_gate",
+      "label": "the Club gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_card_room",
+      "label": "the card-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_lounge",
+      "label": "the Club lounge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "the garden",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_elizabeth",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_ellis",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_expedition_pwe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_elizabeth_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_elizabeth_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_expedition_pwe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_welcome_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_reconciliation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_flory_elizabeth_reconciliation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_expedition_pwe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_elizabeth_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_walks_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_macgregor_walks_elizabeth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ellis_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_expedition_pwe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pwe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_reconciliation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_card_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_walks_elizabeth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_expedition_pwe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_expedition_pwe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_arrival",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_speech",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_macgregor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_speech",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_reconciliation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_reconciliation",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ellis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_confrontation",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_westfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_walks_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_macgregor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_walks_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pwe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_club_lounge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_card_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

@@ -1,0 +1,297 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator (Virginia Woolf)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aunt_mary_beton",
+      "label": "Mary Beton (the narrator's aunt)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_waiter",
+      "label": "The waiter",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_aunt_death",
+      "label": "Mary Beton's death by fall from horse in Bombay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_legacy_received",
+      "label": "The narrator receives the solicitor's letter with news of five hundred pounds a year legacy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_suffrage",
+      "label": "The act that gave votes to women is passed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "The narrator has lunch and pays the bill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_london",
+      "label": "The narrator walks through London reflecting on freedom and independence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "The narrator returns to her house by the river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_psychological_transformation",
+      "label": "The narrator's transformation from fear and bitterness to pity, toleration, and freedom",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_restaurant",
+      "label": "The restaurant where the narrator has lunch",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bombay",
+      "label": "Bombay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_admiralty_arch",
+      "label": "Admiralty Arch",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house_by_river",
+      "label": "The narrator's house by the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_little_street",
+      "label": "The little street where the narrator lives",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aunt_donator",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_aunt_mary_beton",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_aunt_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_aunt_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bombay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aunt_mary_beton",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_aunt_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_legacy_received",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_legacy_received",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_aunt_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_legacy_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_legacy_received",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_suffrage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_waiter",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_psychological_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_psychological_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_legacy_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_psychological_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_walk_london",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_london",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house_by_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_restaurant",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_admiralty_arch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_house_by_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_little_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

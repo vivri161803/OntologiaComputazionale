@@ -1,0 +1,561 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "Butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Lieutenant Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burra_sahib",
+      "label": "Burra Sahib",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lounge",
+      "label": "The lounge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_card_room",
+      "label": "The card-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_doorway",
+      "label": "The doorway",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river_bank",
+      "label": "The river bank by the Irrawaddy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gold_mohur_tree",
+      "label": "Under the gold mohur tree",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_debate_veraswami",
+      "label": "Debate about Veraswami's membership at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lackersteens_arrival",
+      "label": "The Lackersteens arrive at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_elizabeth_conversation",
+      "label": "Flory confronts Elizabeth in the doorway",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_accusation",
+      "label": "Elizabeth accuses Flory of keeping a Burmese woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_escape",
+      "label": "Flory escapes the Club and climbs over the veranda rail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_lackersteen_discovery",
+      "label": "Mrs Lackersteen discovers Lieutenant Verrall's title in the Civil List",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_earthquake",
+      "label": "The earthquake",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_lackersteen_tells_elizabeth",
+      "label": "Mrs Lackersteen tells Elizabeth about Flory keeping a Burmese woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_reflection",
+      "label": "Flory stands by the river bank reflecting on his past",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ma_hla_may_confrontation",
+      "label": "Ma Hla May confronts Flory demanding money",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_gives_cigarette_case",
+      "label": "Flory gives Ma Hla May his gold cigarette-case",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_debate_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_debate_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_debate_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_debate_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_debate_veraswami",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "evt_lackersteens_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_debate_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lackersteens_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lackersteens_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lackersteens_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lackersteens_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lackersteens_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doorway",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_elizabeth_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_elizabeth_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_accusation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_elizabeth_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_accusation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doorway",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_elizabeth_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_accusation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_flory_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_lackersteen_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mrs_lackersteen_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_tells_elizabeth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_lackersteen_tells_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mrs_lackersteen_tells_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_tells_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_flory_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_river_bank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_ma_hla_may_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gold_mohur_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ma_hla_may_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ma_hla_may_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_flory_gives_cigarette_case",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ma_hla_may_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_gives_cigarette_case",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_flory_gives_cigarette_case",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_flory_gives_cigarette_case",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_lounge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_card_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_doorway",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    }
+  ]
+}

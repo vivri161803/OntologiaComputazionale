@@ -1,0 +1,426 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "Hospital compound",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hospital_yard",
+      "label": "Hospital yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_outpatients_dept",
+      "label": "Out-patients' department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_doctor_house",
+      "label": "Doctor's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "European Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_district",
+      "label": "District",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_flory_visit",
+      "label": "Flory visits the hospital",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_doctor_consultation",
+      "label": "Doctor consults with out-patients",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_apology",
+      "label": "Flory apologizes to the doctor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_doctor_reveals_plot",
+      "label": "Doctor reveals U Po Kyin's sham rebellion plot",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_promise",
+      "label": "Flory promises to propose doctor's election to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sham_rebellion",
+      "label": "Sham rebellion plot by U Po Kyin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_notice_signing",
+      "label": "Flory signs insulting notice at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_anonymous_letters",
+      "label": "U Po Kyin sends anonymous letters to Flory",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_flory_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hospital",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctor_consultation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_outpatients_dept",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctor_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_apology",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doctor_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_apology",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_doctor_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_apology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_apology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notice_signing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_notice_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_notice_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_notice_signing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_anonymous_letters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_district",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctor_reveals_plot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doctor_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctor_reveals_plot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_apology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_reveals_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_doctor_reveals_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_doctor_reveals_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sham_rebellion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_district",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sham_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_sham_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_promise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doctor_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_doctor_reveals_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_flory_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_doctor_reveals_plot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_flory_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_sham_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_notice_signing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_outpatients_dept",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_doctor_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

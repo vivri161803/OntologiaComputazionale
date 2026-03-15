@@ -1,0 +1,489 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire_women",
+      "label": "Vampire women",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_vampire_legend",
+      "label": "Something black and of the night crawling out of the Middle Ages",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_afternoon",
+      "label": "The twelve children that afternoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drinking",
+      "label": "Robert Neville drinking whisky and becoming drunk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_calling",
+      "label": "Ben Cortman calling for Robert Neville to come out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hand_injury",
+      "label": "Robert Neville shattering glass and cutting his hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_temptation",
+      "label": "Robert Neville tempted to open the door to the vampire women",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wall_punch",
+      "label": "Robert Neville punching the wall until his skin breaks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Robert Neville sleeping soundly through the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hangover",
+      "label": "Robert Neville waking with a hangover",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_sidewalk",
+      "label": "A woman crumpled across the sidewalk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_escape",
+      "label": "Robert Neville driving away in his station wagon at high speed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cemetery_visit",
+      "label": "Robert Neville visiting the cemetery and Virginia's crypt",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Robert Neville's house on Cimarron Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_outside",
+      "label": "Outside the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "Cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crypt",
+      "label": "Virginia's crypt",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_compton_boulevard",
+      "label": "Compton Boulevard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_vampire_women",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_kathy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_vampire_legend",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_children_afternoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_drinking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_cortman_calling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_hand_injury",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_temptation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_wall_punch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_car_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_cemetery_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_cemetery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vampire_legend",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_afternoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_calling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_calling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hand_injury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_women",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_temptation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_temptation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wall_punch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hangover",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cemetery_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cemetery_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_injury",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_temptation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wall_punch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hangover",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compton_boulevard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cemetery_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cemetery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_afternoon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampire_legend",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_afternoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_calling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_injury",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_calling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_temptation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hand_injury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wall_punch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_temptation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wall_punch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hangover",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_sidewalk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hangover",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_sidewalk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cemetery_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_escape",
+      "target_closed_value": null
+    }
+  ]
+}

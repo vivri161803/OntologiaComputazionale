@@ -1,0 +1,615 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_animals",
+      "label": "The animals of Animal Farm",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whymper",
+      "label": "Mr. Whymper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington",
+      "label": "Mr. Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_frederick",
+      "label": "Mr. Frederick",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_work_year",
+      "label": "The animals work throughout the year",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_announcement",
+      "label": "Napoleon announces work on Sunday afternoons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harvest_failure",
+      "label": "The harvest is less successful than the previous year",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quarry_work",
+      "label": "The animals work in the quarry breaking stones for the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_building_begins",
+      "label": "Building of the windmill begins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_trade_announcement",
+      "label": "Napoleon announces a new policy of trade with neighbouring farms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whymper_arrangement",
+      "label": "Mr. Whymper is arranged as intermediary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigs_move_farmhouse",
+      "label": "The pigs move into the farmhouse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_commandment_dispute",
+      "label": "Dispute over the Fourth Commandment regarding beds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_autumn_building",
+      "label": "The animals continue building the windmill in autumn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gale_storm",
+      "label": "A violent gale strikes the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_destruction",
+      "label": "The windmill is destroyed by the gale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_accusation",
+      "label": "Napoleon accuses Snowball of destroying the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarry",
+      "label": "The quarry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_windmill_site",
+      "label": "The windmill site",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "The farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barn",
+      "label": "The barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_willingdon",
+      "label": "Willingdon",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_falso_eroe",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_work_year",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_work_year",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_work_year",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_work_year",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_windmill_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harvest_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harvest_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_quarry_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harvest_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarry_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_quarry_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quarry_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_quarry_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_quarry_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_building_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quarry_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_building_begins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_building_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill_site",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_building_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trade_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_building_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trade_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_trade_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_trade_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whymper_arrangement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trade_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whymper_arrangement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whymper_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whymper",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_whymper_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_move_farmhouse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whymper_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_move_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_pigs_move_farmhouse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandment_dispute",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigs_move_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandment_dispute",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_commandment_dispute",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_commandment_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_muriel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_commandment_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_commandment_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_autumn_building",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_commandment_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_autumn_building",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_autumn_building",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill_site",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_autumn_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_autumn_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_autumn_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gale_storm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_autumn_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gale_storm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_gale_storm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gale_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill_site",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_accusation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_accusation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_snowball_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_snowball_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_quarry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_windmill_site",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_animal_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

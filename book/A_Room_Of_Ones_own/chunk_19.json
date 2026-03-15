@@ -1,0 +1,401 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator (unnamed female critic)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_carmichael",
+      "label": "Mary Carmichael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chloe",
+      "label": "Chloe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_olivia",
+      "label": "Olivia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_roger",
+      "label": "Roger",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tony",
+      "label": "Tony",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_bigham",
+      "label": "Mr Bigham",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_harrison",
+      "label": "Jane Harrison",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vernon_lee",
+      "label": "Vernon Lee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gertrude_bell",
+      "label": "Gertrude Bell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_winchilsea",
+      "label": "Lady Winchilsea",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aphra_behn",
+      "label": "Aphra Behn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cleopatra",
+      "label": "Cleopatra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_octavia",
+      "label": "Octavia",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_reading_novel",
+      "label": "The narrator reads Mary Carmichael's novel LIFE'S ADVENTURE",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_analyzing_sentences",
+      "label": "The narrator analyzes Mary Carmichael's sentence structure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_canoe_journey",
+      "label": "Roger, Chloe, Olivia, Tony and Mr Bigham go up the river in a canoe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chloe_likes_olivia",
+      "label": "Chloe likes Olivia and they share a laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mincing_liver",
+      "label": "Chloe and Olivia are engaged in mincing liver as a cure for pernicious anaemia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_olivia_reaches_for_knowledge",
+      "label": "Olivia reaches out for knowledge, adventure, and art",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_shelf",
+      "label": "The shelf holding books by living authors",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The library or reading room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory where Chloe and Olivia work",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "work_lifes_adventure",
+      "label": "LIFE'S ADVENTURE by Mary Carmichael",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_jane_eyre",
+      "label": "JANE EYRE",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_antony_cleopatra",
+      "label": "ANTONY AND CLEOPATRA",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_diana_crossways",
+      "label": "DIANA OF THE CROSSWAYS",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_carmichael",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_reading_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_novel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_novel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_analyzing_sentences",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_analyzing_sentences",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_carmichael",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_analyzing_sentences",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canoe_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_analyzing_sentences",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_roger",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chloe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_olivia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tony",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_bigham",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canoe_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canoe_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_chloe_likes_olivia",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_canoe_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chloe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chloe_likes_olivia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_olivia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chloe_likes_olivia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chloe_likes_olivia",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chloe_likes_olivia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mincing_liver",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chloe_likes_olivia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chloe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mincing_liver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_olivia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mincing_liver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mincing_liver",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_olivia_reaches_for_knowledge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mincing_liver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_olivia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_olivia_reaches_for_knowledge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_olivia_reaches_for_knowledge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_shelf",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_reading_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_shelf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_chloe",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_olivia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_olivia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_chloe",
+      "target_closed_value": null
+    }
+  ]
+}

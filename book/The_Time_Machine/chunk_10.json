@@ -1,0 +1,387 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eloi",
+      "label": "The Eloi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morlocks",
+      "label": "The Morlocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_male_eloi",
+      "label": "Male Upper-World person",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_female_eloi",
+      "label": "Female Upper-World person",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_observation",
+      "label": "The narrator observes the well and formulates theories about underground ventilation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter",
+      "label": "Two Eloi encounter the narrator at the well",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_matches",
+      "label": "The narrator shows matches to the Eloi",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "The narrator realizes the Morlocks are a subterranean species",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theory_development",
+      "label": "The narrator develops a theory about class division and species splitting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_questioning",
+      "label": "The narrator questions Weena about the underground world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_tears",
+      "label": "Weena cries when questioned about the Morlocks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_comfort",
+      "label": "The narrator comforts Weena by burning a match",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_well",
+      "label": "The well",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_daylight",
+      "label": "The daylight surface",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shadow",
+      "label": "The shadow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_underground",
+      "label": "The underground caverns and tunnels",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_upper_world",
+      "label": "The Upper World",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_theory_development",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_weena_tears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_well",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_underground",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_upper_world",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_male_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_female_eloi",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_male_eloi",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_female_eloi",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theory_development",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weena_tears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_daylight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_questioning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upper_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_matches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theory_development",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_questioning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theory_development",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_tears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_comfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_tears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_theory_development",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_theory_development",
+      "target_closed_value": null
+    }
+  ]
+}

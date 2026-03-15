@@ -1,0 +1,576 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nga_shwe_o",
+      "label": "Nga Shwe O",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_warder",
+      "label": "Indian warder",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_magician",
+      "label": "magician from Rangoon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_sein",
+      "label": "Ba Sein",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_boasting",
+      "label": "U Po Kyin marching and boasting in the living-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_anonymous_letters",
+      "label": "U Po Kyin writing eighteen anonymous letters against Dr Veraswami",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_troubled",
+      "label": "Mr Macgregor spending a troubled evening deciding on Dr Veraswami's loyalty",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape_plot",
+      "label": "Nga Shwe O's escape plot from Kyauktada jail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warder_bribed",
+      "label": "Indian warder being bribed to help Nga Shwe O escape",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warder_betrayal",
+      "label": "warder betraying the escape plot to U Po Kyin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape_letter",
+      "label": "U Po Kyin sending anonymous letter warning of escape",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape_happens",
+      "label": "Nga Shwe O escaping from jail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_deserts",
+      "label": "Flory deserting Dr Veraswami",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_westfield_letter",
+      "label": "U Po Kyin sending anonymous letter to Westfield accusing doctor of league with U Po Kyin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_lackersteen_letter",
+      "label": "U Po Kyin sending anonymous letter to Mrs Lackersteen about native rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rebellion_thongwa",
+      "label": "rebellion brewing near Thongwa village",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_arranges_rebellion",
+      "label": "U Po Kyin arranging and starting the rebellion at Thongwa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bullet_proof_jackets",
+      "label": "bullet-proof jackets being distributed to villagers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_crush_rebellion",
+      "label": "U Po Kyin planning to crush the rebellion and arrest ringleaders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ma_kin_revelation",
+      "label": "Ma Kin learning of U Po Kyin's plan to frame Dr Veraswami",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "living-room with beaded curtain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "bedroom with carved teak bed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada_jail",
+      "label": "Kyauktada jail",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thongwa_village",
+      "label": "Thongwa village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay_brothels",
+      "label": "Mandalay brothels",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_target",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_boasting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boasting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boasting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_kin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_boasting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_anonymous_letters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boasting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_troubled",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_mr_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_troubled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_macgregor_troubled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_troubled",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_anonymous_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warder_bribed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_warder",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warder_bribed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nga_shwe_o",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_warder_bribed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_plot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_nga_shwe_o",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warder_betrayal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_warder",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warder_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_warder_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warder_betrayal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warder_bribed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_macgregor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_escape_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warder_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_happens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_nga_shwe_o",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_happens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_happens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_happens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_escape_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_deserts",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_deserts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_deserts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_westfield_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_westfield_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_lackersteen_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_lackersteen_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mrs_lackersteen_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebellion_thongwa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rebellion_thongwa",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_arranges_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_arranges_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_magician",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_u_po_kyin_arranges_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_arranges_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rebellion_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bullet_proof_jackets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_bullet_proof_jackets",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_crush_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_crush_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_crush_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_arranges_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_kin_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_ma_kin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ma_kin_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_ma_kin_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_kin_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kyauktada_jail",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_thongwa_village",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

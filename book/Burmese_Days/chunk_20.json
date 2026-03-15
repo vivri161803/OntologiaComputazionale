@@ -1,0 +1,421 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_barber",
+      "label": "The barber",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_taik",
+      "label": "Ba Taik",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pwe_girl",
+      "label": "The pwe girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_library",
+      "label": "The Club library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bazaar_road",
+      "label": "The bazaar road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pwe",
+      "label": "The pwe",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_haircut",
+      "label": "Flory gets his hair cut",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dressing",
+      "label": "Flory dresses himself carefully",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Flory meets Elizabeth at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk",
+      "label": "Flory and Elizabeth walk down the bazaar road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pwe_invitation",
+      "label": "Ba Taik invites Flory and Elizabeth to watch the pwe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sitting",
+      "label": "Flory and Elizabeth sit to watch the pwe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dance",
+      "label": "The pwe girl dances",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Elizabeth and Flory leave the pwe",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_haircut",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barber",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_haircut",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_haircut",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_haircut",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dressing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_dressing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_haircut",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dressing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bazaar_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ba_taik",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pwe_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_pwe_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_pwe_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_pwe_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pwe_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sitting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pwe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pwe_invitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pwe_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pwe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sitting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bazaar_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bazaar_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_pwe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

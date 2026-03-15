@@ -1,0 +1,500 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "The butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_subahdar",
+      "label": "The Military Police subahdar",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burmans",
+      "label": "The Burmans",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_blind_boy",
+      "label": "The boy struck by Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_explosion",
+      "label": "A loud bang and petrol lamp crash",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_butler_warning",
+      "label": "Butler announces bad men coming",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_gathering",
+      "label": "Crowd of Burmans gathers outside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_confrontation",
+      "label": "Mr Macgregor confronts the crowd at the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_spokesman_demand",
+      "label": "Burman spokesman demands Ellis be sent out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stone_shower",
+      "label": "Shower of stones thrown at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_europeans_retreat",
+      "label": "Europeans retreat inside and bar the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_siege",
+      "label": "Burmans besiege the Club with stones",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_escape",
+      "label": "Flory escapes through the river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_police_attack",
+      "label": "Police attack the crowd from the rear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_joins_crowd",
+      "label": "Flory joins the crowd and searches for the subahdar",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lounge",
+      "label": "The lounge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The lawn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_police_lines",
+      "label": "The Military Police lines",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "The maidan",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_disturbance",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_escape",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_burmans",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_explosion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explosion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butler_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spokesman_demand",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stone_shower",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_spokesman_demand",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stone_shower",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stone_shower",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europeans_retreat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_siege",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_europeans_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_siege",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_joins_crowd",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_police_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_joins_crowd",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burmans",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_macgregor_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_joins_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subahdar",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_flory_joins_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_flory_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stone_shower",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burmans",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_stone_shower",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burmans",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explosion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_macgregor_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_stone_shower",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_siege",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_flory_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_police_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "loc_lounge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_blind_boy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_spokesman_demand",
+      "target_closed_value": null
+    }
+  ]
+}

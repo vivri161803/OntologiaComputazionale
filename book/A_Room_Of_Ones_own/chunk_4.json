@@ -1,0 +1,323 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dove_dear",
+      "label": "She (the dove, the dear one)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_manx_cat",
+      "label": "The Manx cat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tennyson",
+      "label": "Tennyson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_christina_rossetti",
+      "label": "Christina Rossetti",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_luncheon_party",
+      "label": "Luncheon party before the war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_1914",
+      "label": "The war (guns fired in August 1914)",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk",
+      "label": "The narrator's walk from the luncheon party towards Headingley",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_missed_turning",
+      "label": "Missing the turning up to Fernham",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_retracing_steps",
+      "label": "Retracing steps to Fernham",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection_poetry",
+      "label": "Reflection on poetry and modern times",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_luncheon_venue",
+      "label": "The luncheon party venue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_avenue",
+      "label": "The avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road towards Headingley",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fernham",
+      "label": "Fernham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_headingley",
+      "label": "Headingley",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_weir",
+      "label": "The weir (where the waters are churned up)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_houses",
+      "label": "The houses with red windows",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gardens",
+      "label": "The gardens running down to the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The lawn",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_love",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dove_dear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_luncheon_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_reflection_poetry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_missed_turning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_retracing_steps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DISTRICAMENTO"
+    },
+    {
+      "source_id": "evt_war_1914",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_luncheon_venue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_avenue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_weir",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gardens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection_poetry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_missed_turning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retracing_steps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_manx_cat",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_luncheon_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_luncheon_venue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_avenue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_poetry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_missed_turning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection_poetry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_retracing_steps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_missed_turning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_poetry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_weir",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tennyson",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_reflection_poetry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_christina_rossetti",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_reflection_poetry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_1914",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon_party",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother",
+      "label": "Lucy's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_attendant",
+      "label": "The attendant",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_renfield_attack",
+      "label": "Renfield's violent attack",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_quieting",
+      "label": "Renfield grows quiet at moonrise",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_relief",
+      "label": "Renfield is relieved from strait waistcoat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_escape_1",
+      "label": "Renfield's first escape attempt",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_escape_2",
+      "label": "Renfield escapes and runs to the chapel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_dreams",
+      "label": "Lucy experiences disturbing dreams",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_illness",
+      "label": "Lucy becomes ill and weak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_examination",
+      "label": "Dr. Seward examines Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_summoned",
+      "label": "Van Helsing is summoned to help",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_padded_room",
+      "label": "The padded room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grounds",
+      "label": "The grounds of the deserted house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The old chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillingham",
+      "label": "Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lucy_boudoir",
+      "label": "Lucy's boudoir",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amsterdam",
+      "label": "Amsterdam",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambio",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_padded_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_quieting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_quieting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_quieting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_relief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_quieting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_relief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_escape_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape_1",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape_1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_escape_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_renfield_escape_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_escape_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape_2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_escape_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape_2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_escape_2",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_dreams",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_dreams",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_dreams",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_illness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_dreams",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_illness",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_illness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_seward_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_seward_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_boudoir",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_van_helsing_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_van_helsing_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_summoned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_summoned",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amsterdam",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_summoned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_padded_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_grounds",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lucy_boudoir",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

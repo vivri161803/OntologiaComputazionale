@@ -1,0 +1,856 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_professor",
+      "label": "The Professor (Van Helsing)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john",
+      "label": "Friend John (Dr. John Seward)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Madam Mina (Mrs. Harker)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Miss Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count (Dracula)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_art",
+      "label": "Art (Lord Godalming)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_professor_meeting",
+      "label": "The Professor comes in and discusses Mina's condition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_changing",
+      "label": "Mina is changing and showing vampire characteristics",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_exclude",
+      "label": "Decision to exclude Mina from the council",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_general_gathering",
+      "label": "General gathering of the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_message",
+      "label": "Mrs. Harker sends message declining to join the meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plan_campaign",
+      "label": "Planning the campaign against the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_voyage",
+      "label": "The Czarina Catherine's voyage to Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_varna",
+      "label": "Decision to travel to Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harker_consultation",
+      "label": "Harker wants to consult with Mina about staying behind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_sleep",
+      "label": "Mina sleeping peacefully",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_promise",
+      "label": "Mina asks Jonathan for a solemn promise",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_promise_made",
+      "label": "Jonathan promises not to tell Mina of the plans",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_wakes",
+      "label": "Mina wakes early and asks for Dr. Van Helsing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_insists",
+      "label": "Mina insists on joining the journey to Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_revelation",
+      "label": "Mina reveals she knows the Count can control her",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_professor_agrees",
+      "label": "Professor agrees Mina should join them",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_informed",
+      "label": "The group is informed of Mina's decision",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plan_varna",
+      "label": "Planning the action at Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quincey_vow",
+      "label": "Quincey vows to destroy the monster immediately",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_affairs_settled",
+      "label": "Jonathan settles his affairs and makes his will",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_meeting_room",
+      "label": "The room where the Professor and John meet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gathering_place",
+      "label": "The place of the general gathering",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thames",
+      "label": "The Thames",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tobolsk",
+      "label": "Tobolsk",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mina_bedroom",
+      "label": "Mina and Jonathan's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_professor_room",
+      "label": "The Professor's room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_professor_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meeting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_professor_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_changing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_changing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_changing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_changing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_exclude",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_exclude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_exclude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_decision_exclude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_exclude",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_changing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_message",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gathering_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_mina_message",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision_exclude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_campaign",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_plan_campaign",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_general_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_ship_voyage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thames",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_varna",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_varna",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_harker_consultation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_harker_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plan_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_harker_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_harker_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mina_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harker_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mina_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise_made",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_promise_made",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promise_made",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_promise_made",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mina_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_promise_made",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_insists",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_mina_insists",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_insists",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_insists",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mina_insists",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_insists",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_professor_agrees",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_professor_agrees",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_agrees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_professor_agrees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_informed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_group_informed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professor_agrees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_group_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_group_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_group_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_plan_varna",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_group_informed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quincey_vow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_quincey_vow",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plan_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quincey_vow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_quincey_vow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_affairs_settled",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_affairs_settled",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quincey_vow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_affairs_settled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_meeting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gathering_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_mina_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_professor_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_art",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

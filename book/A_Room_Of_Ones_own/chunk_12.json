@@ -1,0 +1,732 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare_sister",
+      "label": "Shakespeare's sister",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_bronte",
+      "label": "Emily Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_robert_burns",
+      "label": "Robert Burns",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_anon",
+      "label": "Anon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_edward_fitzgerald",
+      "label": "Edward Fitzgerald",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_currer_bell",
+      "label": "Currer Bell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_eliot",
+      "label": "George Eliot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_sand",
+      "label": "George Sand",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_keats",
+      "label": "Keats",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flaubert",
+      "label": "Flaubert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carlyle",
+      "label": "Carlyle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_oscar_browning",
+      "label": "Mr Oscar Browning",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_bessborough",
+      "label": "Lady Bessborough",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_granville",
+      "label": "Lord Granville Leveson-Gower",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pericles",
+      "label": "Pericles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nick_greene",
+      "label": "Nick Greene",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_johnson",
+      "label": "Johnson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mlle_germaine_tailleferre",
+      "label": "Mlle. Germaine Tailleferre",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_writing_lear",
+      "label": "Writing LEAR",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_antony_cleopatra",
+      "label": "Writing ANTONY AND CLEOPATRA",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_french_revolution",
+      "label": "Writing the FRENCH REVOLUTION",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_madame_bovary",
+      "label": "Writing MADAME BOVARY",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_keats_writing_poetry",
+      "label": "Keats trying to write poetry against death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_ducked_witch",
+      "label": "A witch being ducked",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_possessed",
+      "label": "A woman possessed by devils",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wise_woman_selling_herbs",
+      "label": "A wise woman selling herbs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emily_bronte_death",
+      "label": "Emily Brontë dashing her brains out on the moor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_crazed_highways",
+      "label": "Woman mopped and mowed about the highways crazed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_gone_crazed",
+      "label": "Woman born with great gift gone crazed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_shot_herself",
+      "label": "Woman shot herself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_cottage",
+      "label": "Woman ended her days in lonely cottage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_walk_london",
+      "label": "Woman walked to London and stood at stage door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_browning_examination",
+      "label": "Mr Oscar Browning examining students",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_browning_finding_arthur",
+      "label": "Mr Browning finding Arthur on the sofa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lady_bessborough_politics",
+      "label": "Lady Bessborough's passion for politics",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lord_granville_speech",
+      "label": "Lord Granville's maiden speech in House of Commons",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_moor",
+      "label": "The moor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_highways",
+      "label": "The highways",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cottage",
+      "label": "Lonely cottage outside the village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stage_door",
+      "label": "Stage door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cambridge",
+      "label": "Cambridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_girton",
+      "label": "Girton",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_newnham",
+      "label": "Newnham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_browning_rooms",
+      "label": "Mr Browning's rooms",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_parliament_square",
+      "label": "Parliament Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house_of_commons",
+      "label": "House of Commons",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_genius",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_creation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_suffering",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_suppression",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emily_bronte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_robert_burns",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_anon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_keats",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_flaubert",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_carlyle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_oscar_browning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_lady_bessborough",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mlle_germaine_tailleferre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_writing_lear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_antony_cleopatra",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_french_revolution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_madame_bovary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_keats_writing_poetry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_ducked_witch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_woman_possessed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_wise_woman_selling_herbs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_emily_bronte_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_crazed_highways",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_gone_crazed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_shot_herself",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_cottage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_walk_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_browning_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_browning_finding_arthur",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lady_bessborough_politics",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_lord_granville_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_moor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_highways",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cottage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stage_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_cambridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_girton",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_newnham",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_browning_rooms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_parliament_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_house_of_commons",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_lear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_antony_cleopatra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_keats",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_keats_writing_poetry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flaubert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_madame_bovary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carlyle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_french_revolution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emily_bronte",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emily_bronte_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_gone_crazed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_shot_herself",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_cottage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_walk_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_oscar_browning",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_browning_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_oscar_browning",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_browning_finding_arthur",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_browning_finding_arthur",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_bessborough",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lady_bessborough_politics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_granville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lord_granville_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_lear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emily_bronte_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_moor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_crazed_highways",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_highways",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_cottage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cottage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_walk_london",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_browning_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cambridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_browning_finding_arthur",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_browning_rooms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_granville_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house_of_commons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_gone_crazed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_walk_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_shot_herself",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_gone_crazed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_cottage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_shot_herself",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_browning_finding_arthur",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_browning_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_granville_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lady_bessborough_politics",
+      "target_closed_value": null
+    }
+  ]
+}

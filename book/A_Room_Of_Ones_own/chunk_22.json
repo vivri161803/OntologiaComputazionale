@@ -1,0 +1,11 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_six",
+      "label": "Six",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [],
+  "relations": []
+}

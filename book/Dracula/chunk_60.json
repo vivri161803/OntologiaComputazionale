@@ -1,0 +1,472 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (Jonathan)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Breakfast gathering",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wafer_burning",
+      "label": "Sacred Wafer placed on Mina's forehead, burning her flesh",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_despair",
+      "label": "Mina's anguish and declaration of being unclean",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_comfort",
+      "label": "Van Helsing's consoling speech about redemption",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_oath_swearing",
+      "label": "Group swears oath to protect Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Narrator's farewell to Mina and departure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_carfax_entry",
+      "label": "Entering Carfax",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_box_opening",
+      "label": "Opening the great boxes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wafer_placement",
+      "label": "Placing Sacred Wafer in each box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_station",
+      "label": "Passing the asylum and catching the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mina_chamber",
+      "label": "Mina's chamber",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The old chapel at Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_asylum",
+      "label": "The asylum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The station",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_mina",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_van_helsing",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_count",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_van_helsing",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_mina_burden",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_wafer_burning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_despair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_van_helsing_comfort",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_oath_swearing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_carfax_entry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_wafer_placement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "loc_mina_chamber",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wafer_burning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wafer_burning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mina_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_oath_swearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_oath_swearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_oath_swearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carfax_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carfax_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carfax_entry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_box_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_box_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_opening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wafer_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wafer_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wafer_placement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_to_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wafer_burning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wafer_burning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_comfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oath_swearing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_oath_swearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carfax_entry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_opening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_carfax_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wafer_placement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_box_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wafer_placement",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The stuffy little library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_elizabeth_room",
+      "label": "Elizabeth's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_frangipani_tree",
+      "label": "The big frangipani tree by the tennis court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The side veranda of the Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_flory_arrival",
+      "label": "Flory arrives at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_uncle_assault",
+      "label": "Mr Lackersteen pinches Elizabeth's leg in her room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_elizabeth_library",
+      "label": "Flory and Elizabeth meet in the library",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_moonlight_walk",
+      "label": "Flory and Elizabeth walk to the frangipani tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss",
+      "label": "Flory and Elizabeth kiss by the frangipani tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_club",
+      "label": "Flory and Elizabeth return to the Club veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_confession",
+      "label": "Flory talks about his loneliness and life in Burma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_earthquake",
+      "label": "An earthquake strikes the Club",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_elizabeth",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_lackersteen",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_flory_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_flory_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_uncle_assault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_uncle_assault",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_elizabeth_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_uncle_assault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mr_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_uncle_assault",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_uncle_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_flory_elizabeth_library",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_library",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_library",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_elizabeth_library",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moonlight_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_moonlight_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_elizabeth_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moonlight_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_frangipani_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moonlight_walk",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moonlight_walk",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_moonlight_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_frangipani_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_to_club",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_club",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_flory_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_confession",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_confession",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_elizabeth_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_frangipani_tree",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

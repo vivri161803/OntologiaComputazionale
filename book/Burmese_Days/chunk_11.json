@@ -1,0 +1,556 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burman",
+      "label": "The Burman bullock-cart driver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_headman",
+      "label": "The village headman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fat_woman",
+      "label": "The fat yellow woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_bathing",
+      "label": "Flory bathing in the pool",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigeon_observation",
+      "label": "Flory observing the green pigeon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_jungle",
+      "label": "Flory and Flo walking through the jungle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_getting_lost",
+      "label": "Flory and Flo getting lost in the jungle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_burman",
+      "label": "Flory meeting the Burman bullock-cart driver",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cart_ride",
+      "label": "Flory riding on the bullock cart",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_village_visit",
+      "label": "Flory visiting Nyaunglebin village",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea_drinking",
+      "label": "Flory drinking tea at the headman's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grooming",
+      "label": "Flory and Ko S'la grooming Flo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Flory having dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_going_to_club",
+      "label": "Flory going to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_pool",
+      "label": "The pool in the forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_peepul_tree",
+      "label": "The peepul tree",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "The jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nyaunglebin",
+      "label": "Nyaunglebin village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_headman_house",
+      "label": "The headman's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flory_house",
+      "label": "Flory's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_flory_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_flo_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_burman_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_ko_sla_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_burman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigeon_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_peepul_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_jungle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_getting_lost",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_burman",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cart_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_village_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nyaunglebin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_drinking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_headman_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grooming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flory_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flory_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_to_club",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigeon_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_jungle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bathing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_getting_lost",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_burman",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cart_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_burman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_village_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cart_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_drinking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_village_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grooming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grooming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_to_club",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bathing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bathing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigeon_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_burman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_burman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cart_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_cart_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_village_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_headman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_village_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_headman",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_tea_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fat_woman",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_tea_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grooming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_grooming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_grooming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_to_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_getting_lost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_meeting_burman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cart_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_village_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_tea_drinking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_grooming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_pool",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_peepul_tree",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_nyaunglebin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_headman_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_flory_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

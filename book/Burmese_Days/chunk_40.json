@@ -1,0 +1,427 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "The old butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chokras",
+      "label": "Chokras (servants)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_earthquake",
+      "label": "The earthquake",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_picking_up",
+      "label": "Flory and Elizabeth picking themselves up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_going_inside",
+      "label": "Everyone going inside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drinks",
+      "label": "Having drinks at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Earthquake-chatter and conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_butler_anecdotes",
+      "label": "Butler relating anecdotes about past earthquakes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_proposal_delayed",
+      "label": "Flory's marriage proposal delayed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_bedtime",
+      "label": "Flory going to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_outside",
+      "label": "Outside (where earthquake occurred)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_servants_quarters",
+      "label": "Servants' quarters",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_earthquake",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_earthquake",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_earthquake",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_outside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_picking_up",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_earthquake",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_picking_up",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_picking_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_picking_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_inside",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_picking_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_inside",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_going_inside",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chokras",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_going_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_anecdotes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butler_anecdotes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_lackersteen",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_proposal_delayed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butler_anecdotes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_proposal_delayed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_proposal_delayed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_proposal_delayed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_bedtime",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_proposal_delayed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_bedtime",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_bedtime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_outside",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

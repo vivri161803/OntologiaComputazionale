@@ -1,0 +1,24 @@
+{
+  "open_nodes": [
+    {
+      "id": "evt_periodo",
+      "label": "Periodo novembre 1943 - febbraio 1944",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "evt_fine",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_periodo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    }
+  ]
+}

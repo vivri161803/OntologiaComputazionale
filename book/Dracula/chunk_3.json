@@ -1,0 +1,483 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_driver",
+      "label": "The Driver",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_midnight_check",
+      "label": "Checking the watch at midnight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dogs_howling",
+      "label": "Dogs beginning to howl from farmhouses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolves_howling",
+      "label": "Wolves howling from the mountains",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horses_panic",
+      "label": "Horses straining and rearing in fear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_driver_calms_horses",
+      "label": "Driver soothing and calming the horses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrow_road",
+      "label": "Turning down a narrow roadway to the right",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snow_falling",
+      "label": "Snow beginning to fall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blue_flame_first",
+      "label": "First sighting of a faint blue flame",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_driver_investigates_flame",
+      "label": "Driver investigating the blue flame and gathering stones",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_optical_effect",
+      "label": "Strange optical effect with the flame",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolves_ring",
+      "label": "Wolves appearing in a ring around the caleche",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_calls_driver",
+      "label": "Narrator calling to the driver for help",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_driver_commands_wolves",
+      "label": "Driver commanding the wolves with imperious voice and gestures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolves_retreat",
+      "label": "Wolves falling back and disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_castle",
+      "label": "Arrival at the ruined castle courtyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_pass",
+      "label": "The Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_narrow_road",
+      "label": "Narrow roadway with trees and rocks",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "Vast ruined castle with tall black windows",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_driver_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_midnight_check",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dogs_howling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_wolves_howling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_horses_panic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_driver_calms_horses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DISTRICAMENTO"
+    },
+    {
+      "source_id": "evt_narrow_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_snow_falling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_blue_flame_first",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_driver_investigates_flame",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_wolves_ring",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_driver_commands_wolves",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_wolves_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_narrow_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "evt_midnight_check",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_howling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_midnight_check",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_howling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dogs_howling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_panic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolves_howling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_calms_horses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horses_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrow_road",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_driver_calms_horses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snow_falling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blue_flame_first",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snow_falling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_investigates_flame",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blue_flame_first",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_optical_effect",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_driver_investigates_flame",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_ring",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_optical_effect",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_calls_driver",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolves_ring",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_commands_wolves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_calls_driver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_driver_commands_wolves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolves_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_midnight_check",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_howling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_howling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horses_panic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_calms_horses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrow_road",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snow_falling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blue_flame_first",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_investigates_flame",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_ring",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_commands_wolves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_castle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_midnight_check",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horses_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolves_ring",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_calls_driver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_driver_calms_horses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrow_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_driver_investigates_flame",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_driver_commands_wolves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival_castle",
+      "target_closed_value": null
+    }
+  ]
+}

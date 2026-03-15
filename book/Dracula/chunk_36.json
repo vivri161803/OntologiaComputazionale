@@ -1,0 +1,387 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_van_helsing",
+      "label": "Abraham Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Miss Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter_vh_to_mina",
+      "label": "Van Helsing writes a letter to Mina assuring her about Jonathan's condition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_mina_to_vh",
+      "label": "Mina writes a letter to Van Helsing inviting him to breakfast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_reads_diary",
+      "label": "Jonathan reads Van Helsing's letter and learns the truth about his experiences",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_meets_vh",
+      "label": "Jonathan meets Van Helsing at the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Jonathan and Van Helsing have breakfast together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vh_reads_papers",
+      "label": "Van Helsing reads the morning papers at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vh_departs",
+      "label": "Van Helsing departs by train",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harker_home",
+      "label": "The Harker home",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_diaries",
+      "label": "The diaries",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_papers",
+      "label": "Bundle of papers",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_vh",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_vh",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_jonathan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_mina",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_count",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_letter_vh_to_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_letter_vh_to_mina",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_vh_to_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_vh_to_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_mina_to_vh",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_letter_mina_to_vh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_vh_to_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_mina_to_vh",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_mina_to_vh",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_reads_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jonathan_reads_diary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_mina_to_vh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_reads_diary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_reads_diary",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_reads_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harker_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_meets_vh",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_jonathan_meets_vh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_reads_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_meets_vh",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_meets_vh",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_meets_vh",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_meets_vh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harker_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_reads_papers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_vh_reads_papers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_reads_papers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_reads_papers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_departs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_vh_departs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vh_reads_papers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_departs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vh_departs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_harker_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

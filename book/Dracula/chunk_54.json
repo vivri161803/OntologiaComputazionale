@@ -1,0 +1,480 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_harker",
+      "label": "Mrs. Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_seward_interview_renfield_1",
+      "label": "Dr. Seward interviews Renfield about his moods and the flies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_summons_seward",
+      "label": "Renfield sends for Dr. Seward later in the day",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_questions_renfield_souls",
+      "label": "Dr. Seward questions Renfield about souls and life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_outburst",
+      "label": "Renfield has an outburst and becomes hostile",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_tells_van_helsing",
+      "label": "Dr. Seward tells Van Helsing his suspicions about the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_seward_visit_renfield",
+      "label": "Van Helsing and Dr. Seward visit Renfield together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_singing_flies",
+      "label": "Renfield is singing and spreading sugar for flies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_places_guard",
+      "label": "Dr. Seward places a man in the corridor to watch Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_discussion",
+      "label": "The group gathers to discuss their discoveries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_accident",
+      "label": "Renfield meets with an accident and is found bleeding on the floor",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_study",
+      "label": "Dr. Seward's study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "No. 347, Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_british_museum",
+      "label": "British Museum",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seward_observer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_renfield_subject",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_van_helsing_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_count_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_seward_interview_renfield_1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_interview_renfield_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_interview_renfield_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_interview_renfield_1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_renfield_summons_seward",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_interview_renfield_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_summons_seward",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_summons_seward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_summons_seward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_questions_renfield_souls",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_summons_seward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_questions_renfield_souls",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_questions_renfield_souls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_questions_renfield_souls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_questions_renfield_souls",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_renfield_outburst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_questions_renfield_souls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_outburst",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_outburst",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_seward_tells_van_helsing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_tells_van_helsing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_tells_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_tells_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_tells_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_van_helsing_seward_visit_renfield",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_tells_van_helsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_seward_visit_renfield",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_seward_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_van_helsing_seward_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_van_helsing_seward_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_singing_flies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_seward_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_singing_flies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_singing_flies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_places_guard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_singing_flies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_places_guard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_places_guard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_places_guard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_group_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_places_guard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_renfield_accident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_group_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_accident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_accident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

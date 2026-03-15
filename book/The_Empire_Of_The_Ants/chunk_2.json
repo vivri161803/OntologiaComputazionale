@@ -1,0 +1,398 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_holroyd",
+      "label": "Holroyd",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gerilleau",
+      "label": "Captain Gerilleau",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_da_cunha",
+      "label": "Lieutenant da Cunha",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dead_man_1",
+      "label": "Dead man sitting on the fore planking",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dead_man_2",
+      "label": "Dead man on the longitudinal bridge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ants",
+      "label": "Giant black ants with grey clothing",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_badama",
+      "label": "Badama",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_moju",
+      "label": "Moju monastery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monitor",
+      "label": "The monitor gunboat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cuberta",
+      "label": "The Santa Rosa cuberta",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_approach",
+      "label": "Holroyd learns they are near Badama and examines the banks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_butterflies",
+      "label": "Yellow butterflies cross the river and alight on the monitor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "The gunboat discovers the derelict cuberta Santa Rosa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collapse",
+      "label": "The crouching man collapses and falls behind the bulwarks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boat_dispatch",
+      "label": "Gerilleau sends Lieutenant da Cunha and three sailors to board the cuberta",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ant_observation",
+      "label": "Holroyd observes giant black ants on the deck of the cuberta",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_da_cunha_boards",
+      "label": "Lieutenant da Cunha boards the cuberta and examines the dead men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ants_attack",
+      "label": "The ants attack Lieutenant da Cunha as he returns to the boat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_da_cunha_death",
+      "label": "Lieutenant da Cunha dies that night from ant stings",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_holroyd",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_gerilleau",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_ants",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_cuberta",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_cuberta",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_approach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ant_observation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ants_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_da_cunha_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cuberta",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dead_man_1",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_boat_dispatch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_da_cunha",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boat_dispatch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ant_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ant_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_da_cunha",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_da_cunha_boards",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dead_man_1",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_da_cunha_boards",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dead_man_2",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_da_cunha_boards",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ants_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_da_cunha",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ants_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_da_cunha",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_da_cunha_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_approach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butterflies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butterflies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collapse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boat_dispatch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ant_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boat_dispatch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_da_cunha_boards",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ant_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ants_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_da_cunha_boards",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_da_cunha_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ants_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ant_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_da_cunha_boards",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ants_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_monitor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_monitor",
+      "target_closed_value": null
+    }
+  ]
+}

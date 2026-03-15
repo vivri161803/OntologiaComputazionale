@@ -1,0 +1,489 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eloi",
+      "label": "The Eloi (fragile creatures from futurity)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fair_haired_creature",
+      "label": "Fair-haired little creature",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_first_encounter",
+      "label": "The Time Traveller stands face to face with a creature from futurity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_communication_attempt",
+      "label": "The Time Traveller attempts to communicate with the creatures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thunder_imitation",
+      "label": "A creature imitates the sound of thunder in response to the sun gesture",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_disappointment",
+      "label": "The Time Traveller realizes the creatures are intellectually primitive",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flower_garland",
+      "label": "The creatures place a chain of flowers around the Time Traveller's neck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exhibition",
+      "label": "The Time Traveller is led to a vast grey edifice to be exhibited",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fruit_dinner",
+      "label": "The Time Traveller dines on fruits in the great hall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_language_learning",
+      "label": "The Time Traveller begins to learn the speech of the future people",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure_from_hall",
+      "label": "The Time Traveller leaves the great hall and emerges into the sunlit world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration",
+      "label": "The Time Traveller explores the landscape and climbs towards a crest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_observation_of_ruins",
+      "label": "The Time Traveller observes the ruinous splendour and derelict structures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization_of_communism",
+      "label": "The Time Traveller realizes the absence of small houses and deduces communism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_observation_of_sexes",
+      "label": "The Time Traveller observes that the sexes are indistinguishable",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_time_machine_site",
+      "label": "The turf among the rhododendrons where the Time Machine is left",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grey_edifice",
+      "label": "The vast grey edifice of fretted stone",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_great_hall",
+      "label": "The great hall with brown hangings and stone tables",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river_valley",
+      "label": "The broad river valley with the shifted Thames",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crest",
+      "label": "The crest of the hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sphinx",
+      "label": "The sphinx of white marble",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_derelict_structure",
+      "label": "The great heap of granite and derelict remains of a vast structure",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_flower_chain",
+      "label": "Chain of beautiful flowers",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_of_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_first_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_communication_attempt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_disappointment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_observation_of_ruins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_realization_of_communism",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_observation_of_sexes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_time_machine_site",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_grey_edifice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_great_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_river_valley",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_crest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_first_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_time_machine_site",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_communication_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thunder_imitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_communication_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_disappointment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thunder_imitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flower_garland",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_disappointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exhibition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flower_garland",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exhibition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grey_edifice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fruit_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exhibition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fruit_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_language_learning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fruit_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_from_hall",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_language_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure_from_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river_valley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation_of_ruins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation_of_ruins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_derelict_structure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_of_communism",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_observation_of_ruins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation_of_sexes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization_of_communism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_communication_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_communication_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thunder_imitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_disappointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flower_garland",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_flower_chain",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flower_garland",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_exhibition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exhibition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fruit_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fruit_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_language_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fair_haired_creature",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_language_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure_from_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observation_of_ruins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization_of_communism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observation_of_sexes",
+      "target_closed_value": null
+    }
+  ]
+}

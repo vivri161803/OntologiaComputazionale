@@ -1,0 +1,394 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_will",
+      "label": "Making of the will",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sunset",
+      "label": "Sunset gathering",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_freedom",
+      "label": "Mina's period of freedom at sunset",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_oath",
+      "label": "Taking of the oath to kill Mina if needed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burial_service",
+      "label": "Reading of the Burial Service",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Journey to Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnosis",
+      "label": "Van Helsing hypnotizing Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_arrival",
+      "label": "Czarina Catherine reported from Dardanelles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plan",
+      "label": "Planning to intercept the Count on the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing room where the gathering takes place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "The Czarina Catherine ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dardanelles",
+      "label": "Dardanelles",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_heir",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_will",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_sunset",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_oath",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_will",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sunset",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_will",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_freedom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oath",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_freedom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_service",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burial_service",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnosis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sunset",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oath",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_service",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnosis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dardanelles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sunset",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_plan",
+      "target_closed_value": null
+    }
+  ]
+}

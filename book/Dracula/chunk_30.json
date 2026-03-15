@@ -1,0 +1,678 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bat",
+      "label": "A great bat",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_watch",
+      "label": "Dr. Seward relieves Van Helsing in his watch over Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_rest",
+      "label": "Arthur agrees to go to rest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_comfort",
+      "label": "Van Helsing comforts Arthur in the drawing room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bat_attack",
+      "label": "A bat strikes the window repeatedly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_removes_garlic",
+      "label": "Lucy tears away the garlic flowers from her throat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_wakes",
+      "label": "Lucy wakes and is given food",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wounds_disappear",
+      "label": "Van Helsing discovers the wounds on Lucy's throat have disappeared",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_diagnosis",
+      "label": "Van Helsing announces Lucy is dying",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_awakened",
+      "label": "Dr. Seward wakes Arthur and tells him Lucy is dying",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_enters_room",
+      "label": "Arthur enters Lucy's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_transformation",
+      "label": "Lucy undergoes a strange transformation, her appearance becomes monstrous",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_seduces_arthur",
+      "label": "Lucy, in her transformed state, seduces Arthur to kiss her",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_intervenes",
+      "label": "Van Helsing forcefully prevents Arthur from kissing Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_rage",
+      "label": "Lucy shows a spasm of rage before returning to her normal appearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_farewell",
+      "label": "Lucy bids farewell to Van Helsing and Arthur",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_death",
+      "label": "Lucy dies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_grief",
+      "label": "Arthur grieves over Lucy's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_lucy_room",
+      "label": "Lucy's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_window",
+      "label": "The window of Lucy's room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_seward",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_van_helsing",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_lucy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_arthur",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_lucy_transformed",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_watch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_watch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_watch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_watch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_watch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_rest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_watch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_rest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_rest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arthur_rest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_comfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_rest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_comfort",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_van_helsing_comfort",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bat_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bat_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_bat_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bat",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bat_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_removes_garlic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bat_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_removes_garlic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_removes_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_removes_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_wakes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wounds_disappear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wounds_disappear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wounds_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wounds_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_diagnosis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wounds_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_diagnosis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_awakened",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_awakened",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_arthur_awakened",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_awakened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_arthur_awakened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_enters_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_awakened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_enters_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_arthur_enters_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_enters_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_enters_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_seduces_arthur",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_seduces_arthur",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_seduces_arthur",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_seduces_arthur",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_intervenes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_seduces_arthur",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_intervenes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_van_helsing_intervenes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_van_helsing_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_van_helsing_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_rage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_rage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_rage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_farewell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_rage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_farewell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_lucy_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lucy_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lucy_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_arthur_grief",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_arthur_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lucy_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eloi",
+      "label": "The Eloi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morlocks",
+      "label": "The Morlocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_hesitation",
+      "label": "The Traveller's hesitation and restlessness about descending into the underground",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration_palace",
+      "label": "The Traveller's exploration towards the Palace of Green Porcelain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_descent_well",
+      "label": "The Traveller's descent into the well",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_morlocks",
+      "label": "The Traveller's first encounter with the Morlocks in the tunnel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cavern_discovery",
+      "label": "The Traveller's discovery of the vast cavern with machinery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlock_attack",
+      "label": "The Morlocks attacking and pursuing the Traveller",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ascent_escape",
+      "label": "The Traveller's escape and ascent back up the shaft",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_surface",
+      "label": "The Traveller's return to the surface and collapse",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_well",
+      "label": "The well near the ruins of granite and aluminium",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tunnel",
+      "label": "The narrow horizontal tunnel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cavern",
+      "label": "The vast arched cavern with machinery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_underworld",
+      "label": "The Under World",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace_green_porcelain",
+      "label": "The Palace of Green Porcelain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_surface",
+      "label": "The surface of the Overworld",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_return",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_underground",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_hesitation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_exploration_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_descent_well",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_encounter_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cavern_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ascent_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_return_surface",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "loc_well",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_tunnel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cavern",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_underworld",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_surface",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hesitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_exploration_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_descent_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_descent_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cavern_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cavern_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ascent_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ascent_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_return_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_return_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hesitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_descent_well",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hesitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_morlocks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_descent_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cavern_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cavern_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ascent_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_surface",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ascent_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hesitation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration_palace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace_green_porcelain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_descent_well",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_morlocks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tunnel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cavern_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cavern",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cavern",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ascent_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_well",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_surface",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_surface",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_underworld",
+      "target_closed_value": null
+    }
+  ]
+}

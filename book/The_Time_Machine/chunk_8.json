@@ -1,0 +1,445 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_little_people",
+      "label": "The little people of the future",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_discovery_loss",
+      "label": "Discovery that the Time Machine is gone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_panic_search",
+      "label": "Frantic search and running down the slope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reaching_lawn",
+      "label": "Reaching the lawn and confirming the machine's absence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation_people",
+      "label": "Confrontation with the little people in the great hall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_despair",
+      "label": "Night of despair and anguish among the ruins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_reflection",
+      "label": "Morning reflection and regaining composure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination_ground",
+      "label": "Careful examination of the ground and discovery of the pedestal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interaction_orange_people",
+      "label": "Interaction with orange-clad people about the pedestal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hammering_pedestal",
+      "label": "Hammering at the bronze pedestal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_patience",
+      "label": "Decision to be patient and learn the world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration_wells",
+      "label": "Exploration of circular wells and towers",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hill",
+      "label": "The hill with the view of the future world",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The little lawn near the White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sphinx_pedestal",
+      "label": "The bronze pedestal of the White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_great_hall",
+      "label": "The great stone building with sleeping people",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace",
+      "label": "The big palace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wells",
+      "label": "The circular wells with bronze rims",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_white_sphinx",
+      "label": "The White Sphinx",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_little_people",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_discovery_loss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_panic_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_examination_ground",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_morning_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_hill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_great_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_sphinx_pedestal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery_loss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_panic_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reaching_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination_ground",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interaction_orange_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hammering_pedestal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_patience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration_wells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery_loss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_panic_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reaching_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination_ground",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_little_people",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_little_people",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_interaction_orange_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_loss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reaching_lawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation_people",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_despair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sphinx_pedestal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_ground",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interaction_orange_people",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sphinx_pedestal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hammering_pedestal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sphinx_pedestal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration_wells",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_loss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_panic_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reaching_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reaching_lawn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation_people",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination_ground",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_ground",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interaction_orange_people",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interaction_orange_people",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hammering_pedestal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hammering_pedestal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision_patience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_patience",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration_wells",
+      "target_closed_value": null
+    }
+  ]
+}

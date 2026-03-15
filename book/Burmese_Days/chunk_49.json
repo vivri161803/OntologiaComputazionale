@@ -1,0 +1,429 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mali",
+      "label": "Mali",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Young Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_forest_ranger",
+      "label": "Forest Ranger",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "Butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chokra",
+      "label": "Chokra",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lounge",
+      "label": "The Lounge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The Veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_card_room",
+      "label": "Card-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_general_meeting",
+      "label": "General meeting of the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_arrival",
+      "label": "Flory arrives at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_westfield_greeting",
+      "label": "Westfield greets Flory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_rebellion",
+      "label": "Discussion about the rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_accounts",
+      "label": "Mr Macgregor presents the Club accounts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_native_member_proposal",
+      "label": "Proposal to elect a native member to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_proposes_veraswami",
+      "label": "Flory proposes Dr Veraswami as a member",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ellis_outrage",
+      "label": "Ellis reacts with outrage to Flory's proposal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ballot_preparation",
+      "label": "Preparation of the ballot box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forest_ranger_arrival",
+      "label": "Forest Ranger arrives with urgent news",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_maxwell_body_discovery",
+      "label": "Discovery of Maxwell's body",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_ellis",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_veraswami",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_general_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_general_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_greeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_greeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_westfield_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_accounts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_accounts",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_native_member_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_accounts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_native_member_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_proposes_veraswami",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_native_member_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_proposes_veraswami",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_proposes_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_proposes_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_outrage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_proposes_veraswami",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_outrage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_outrage",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ellis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ellis_outrage",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ballot_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ellis_outrage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ballot_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_ranger_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ballot_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_ranger_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_ranger_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_forest_ranger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_body_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_forest_ranger_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_body_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_maxwell_body_discovery",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_maxwell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_proposes_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ellis_outrage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_maxwell_body_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_general_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_lounge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Dr. Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_skinsky",
+      "label": "Petrof Skinsky",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hildesheim",
+      "label": "Immanuel Hildesheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_donelson",
+      "label": "Captain Donelson",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_mina_reading",
+      "label": "Mina reads the papers and makes a discovery about Dracula's escape route",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_analysis",
+      "label": "Mina analyzes Dracula's problem and possible routes of escape",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_council_of_war",
+      "label": "The group holds a Council of War to plan their pursuit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_outburst",
+      "label": "Jonathan protests against Van Helsing's plan to take Mina to the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_persuasion",
+      "label": "Van Helsing persuades Jonathan to accept the plan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparations",
+      "label": "The group prepares equipment and makes final arrangements for the expedition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_goodbye",
+      "label": "Mina says goodbye to Jonathan before departing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_escape",
+      "label": "Count Dracula's escape from England by water in a wooden box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_box_transport",
+      "label": "The box is transported from London to Galatz by ship and river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_skinsky_murder",
+      "label": "Count Dracula murders Petrof Skinsky to cover his tracks",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_galatz",
+      "label": "Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river (Pruth or Sereth)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "Castle of Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_borgo_pass",
+      "label": "Borgo Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bistritz",
+      "label": "Bistritz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veresti",
+      "label": "Veresti",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_box",
+      "label": "The wooden box containing Dracula",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_van_helsing_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_goodbye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_goodbye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_box_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skinsky",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_box_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hildesheim",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_box_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_donelson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_box_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_skinsky_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skinsky",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_skinsky_murder",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_analysis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_council_of_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_council_of_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_outburst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_persuasion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_goodbye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_analysis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_council_of_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_dracula_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_box_transport",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_skinsky_murder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_preparations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_mina_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_council_of_war",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparations",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_transport",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_transport",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_transport",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skinsky_murder",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_galatz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_borgo_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_box",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_box_transport",
+      "target_closed_value": null
+    }
+  ]
+}

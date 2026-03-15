@@ -1,0 +1,720 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Mr. Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_art",
+      "label": "Art",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_oversleep",
+      "label": "Jonathan and Mina oversleep after a busy day",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_wakes",
+      "label": "Mina wakes in terror from a bad dream",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxes_removed",
+      "label": "Twenty-one boxes have been removed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_professor_visit",
+      "label": "Professor Van Helsing visits Dr. Seward's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_work",
+      "label": "Last night's work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_interview",
+      "label": "Professor Van Helsing interviews the patient Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_insult",
+      "label": "Renfield insults Van Helsing and refuses to speak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_kept_dark",
+      "label": "Mina is kept in the dark about the Count's house visit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_avoids_mina",
+      "label": "Jonathan avoids mentioning the Count's house visit to Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_anxiety",
+      "label": "Mina feels devouring anxiety about past events",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_guilt",
+      "label": "Mina blames herself for Lucy's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dogs_barking",
+      "label": "Dogs bark and strange sounds come from Renfield's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mist_appears",
+      "label": "Mist creeps across the grass towards the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_struggle",
+      "label": "Attendants struggle with Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_dream",
+      "label": "Mina has a vivid dream of mist and red eyes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_sees_eyes",
+      "label": "In her dream, Mina sees two red eyes like Lucy described",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_faints_dream",
+      "label": "Mina faints in her dream and sees a livid white face",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_sleeps_next_night",
+      "label": "Mina sleeps without dreaming the next night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_visit",
+      "label": "Mr. Renfield asks to see Mina and kisses her hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_takes_opiate",
+      "label": "Mina takes a sleeping draught from Dr. Seward",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Mina's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_room",
+      "label": "Dr. Seward's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Mr. Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_study",
+      "label": "The study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "The churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_count_house",
+      "label": "The Count's house",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_oversleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_oversleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_oversleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_oversleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wakes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mina_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_oversleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_wakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxes_removed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_professor_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_professor_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_night_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_interview",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_patient_interview",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professor_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_interview",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_insult",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_renfield_insult",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_patient_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_insult",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_insult",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_kept_dark",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mina_kept_dark",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_kept_dark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_avoids_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_jonathan_avoids_mina",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_kept_dark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_avoids_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_avoids_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_avoids_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_anxiety",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_guilt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mina_guilt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_anxiety",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_guilt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_guilt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_barking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dogs_barking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_guilt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_barking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mist_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mist_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dogs_barking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mist_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_struggle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_renfield_struggle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mist_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_struggle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mina_dream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_dream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sees_eyes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_sees_eyes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_sees_eyes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_mina_sees_eyes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_faints_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mina_faints_dream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_sees_eyes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_faints_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleeps_next_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mina_sleeps_next_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_faints_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_sleeps_next_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_renfield_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_sleeps_next_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_takes_opiate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mina_takes_opiate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_takes_opiate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_mina_takes_opiate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_count_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

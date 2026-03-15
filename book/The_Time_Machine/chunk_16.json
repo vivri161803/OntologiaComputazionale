@@ -1,0 +1,547 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butterfly_creature",
+      "label": "huge white butterfly creature",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_crab_creature",
+      "label": "monstrous crab-like creature",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_round_creature",
+      "label": "round tentacled creature on the shoal",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_time_travel_forward",
+      "label": "Time Traveller pulls levers forward and travels into futurity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sky_darkens",
+      "label": "The palpitating greyness grows darker as the Traveller moves forward",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_day_night_cycle",
+      "label": "Blinking succession of day and night returns and grows more marked",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_twilight_descends",
+      "label": "A steady twilight broods over the earth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sun_halts",
+      "label": "The sun halts motionless upon the horizon, red and very large",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_beach",
+      "label": "The Time Traveller arrives at a desolate beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_butterfly_scream",
+      "label": "A harsh scream is heard and a huge white butterfly creature flies into the sky",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crab_approach",
+      "label": "A monstrous crab-like creature crawls slowly towards the Traveller",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_crab_attack",
+      "label": "A second crab creature stands behind the Traveller with descending claws",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape_month",
+      "label": "The Traveller places a month between himself and the monsters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hundred_years_forward",
+      "label": "The Traveller moves forward a hundred years",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thousand_years_strides",
+      "label": "The Traveller travels in great strides of a thousand years or more",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crabs_disappear",
+      "label": "The crawling multitude of crabs has disappeared",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snow_falls",
+      "label": "Rare white flakes come eddying down and snow appears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_eclipse_begins",
+      "label": "An eclipse begins as a concavity appears in the sun's outline",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_darkness_total",
+      "label": "Total darkness falls as the eclipse sweeps across",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sun_reappears",
+      "label": "The edge of the sun appears like a red-hot bow in the sky",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveller_dismounts",
+      "label": "The Traveller gets off the machine to recover himself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_round_creature_seen",
+      "label": "The Traveller sees the round tentacled creature moving on the shoal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveller_faints",
+      "label": "The Traveller feels he is fainting but climbs back upon the saddle",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_beach",
+      "label": "desolate beach with reddish rocks and green vegetation",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "the eternal salt sea with oily swell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sky",
+      "label": "the sky with red and black coloration",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_distant_hills",
+      "label": "distant desolate slope with low hillocks",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shoal",
+      "label": "sand-bank shoal in the sea",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_time_travel_forward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_travel_forward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sky_darkens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_travel_forward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sky_darkens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_day_night_cycle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sky_darkens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_day_night_cycle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_twilight_descends",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_day_night_cycle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_twilight_descends",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_sun_halts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_twilight_descends",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sun_halts",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_arrival_beach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sun_halts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_beach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_butterfly_scream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butterfly_scream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_butterfly_creature",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_butterfly_scream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_butterfly_scream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_distant_hills",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crab_approach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_butterfly_scream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crab_approach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_crab_creature",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_crab_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_crab_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crab_approach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_crab_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crab_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_crab_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_crab_creature",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_second_crab_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_crab_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_crab_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_month",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_crab_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_month",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_month",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hundred_years_forward",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_escape_month",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hundred_years_forward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hundred_years_forward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thousand_years_strides",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hundred_years_forward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thousand_years_strides",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thousand_years_strides",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crabs_disappear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thousand_years_strides",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crabs_disappear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_snow_falls",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crabs_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snow_falls",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_eclipse_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snow_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eclipse_begins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_eclipse_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_darkness_total",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_eclipse_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_darkness_total",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_sun_reappears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_darkness_total",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sun_reappears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_traveller_dismounts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sun_reappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveller_dismounts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_round_creature_seen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveller_dismounts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_round_creature_seen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_round_creature_seen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_round_creature",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_round_creature_seen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_round_creature_seen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shoal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveller_faints",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_round_creature_seen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveller_faints",
+      "target_closed_value": null
+    }
+  ]
+}

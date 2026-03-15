@@ -1,0 +1,311 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory, John Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sammy",
+      "label": "Sammy, the 'Mug' cook",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "Flory's veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gate",
+      "label": "The gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Flory and Elizabeth have an eager conversation about books and shooting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_buffalo_rescue",
+      "label": "Flory saved Elizabeth from a buffalo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elephant_hunt",
+      "label": "Flory described the murder of an elephant he perpetrated years earlier",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_audience_arrival",
+      "label": "Sammy and other villagers arrive to observe Elizabeth on the veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ma_hla_may_appearance",
+      "label": "Ma Hla May emerges onto the veranda and confronts Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_dismissal",
+      "label": "Flory dismisses Ma Hla May with a threat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farewell",
+      "label": "Flory and Elizabeth say goodbye at the gate",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_conversation",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rescue",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_farewell",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_buffalo_rescue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_ma_hla_may_appearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_audience_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_audience_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ma_hla_may_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_dismissal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_buffalo_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_buffalo_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ma_hla_may_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ma_hla_may_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ma_hla_may_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    }
+  ]
+}

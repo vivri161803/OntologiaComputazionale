@@ -1,0 +1,403 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virge",
+      "label": "Virge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cortman",
+      "label": "Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_scientific_discovery",
+      "label": "Robert discovers the nature of the vampire bacillus and how it becomes parasitic when exposed to air",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_decomposition",
+      "label": "A woman decomposes rapidly before Robert's eyes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vacuum_experiment",
+      "label": "Robert conducts an experiment with a dead vampire's arm in a vacuum",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virge_return",
+      "label": "Virge returns as a vampire after being buried",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virge_death",
+      "label": "Robert kills Virge with a stake",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_awakening",
+      "label": "Robert wakes up thinking Ruth is Virge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_dressed",
+      "label": "Robert finds Ruth dressed and questions why she was going to leave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_confession",
+      "label": "Robert confesses his past trauma about Virge to Ruth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_embrace",
+      "label": "Robert and Ruth embrace and hold each other",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_blood_test",
+      "label": "Robert takes a blood sample from Ruth to test for infection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_betrayal",
+      "label": "Ruth strikes Robert with a mallet when he discovers she is infected",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_unconscious",
+      "label": "Robert loses consciousness after being struck multiple times",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_recovery",
+      "label": "Robert regains consciousness and stumbles to the bathroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Robert's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "The bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_outside",
+      "label": "Outside the house where vampires are yelling",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_scientist",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambio_stato",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_scientific_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_vacuum_experiment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_decomposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vacuum_experiment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_scientific_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_scientific_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virge_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_scientific_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virge_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_virge_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_virge_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_virge",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_virge_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_virge_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_dressed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_dressed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_dressed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_dressed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_ruth_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_embrace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_ruth_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_blood_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_blood_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_blood_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_betrayal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_blood_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_betrayal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_unconscious",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_unconscious",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_unconscious",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_unconscious",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_awakening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_blood_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_betrayal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

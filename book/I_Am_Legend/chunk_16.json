@@ -1,0 +1,467 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert",
+      "label": "Robert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth_husband",
+      "label": "Ruth's husband",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth_daughters",
+      "label": "Ruth's two daughters",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire_bat",
+      "label": "Vampire bat",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_plague",
+      "label": "The plague outbreak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_arrival",
+      "label": "Ruth's arrival at Robert's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wine_conversation",
+      "label": "Robert and Ruth drinking wine and conversing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_demonstration",
+      "label": "Robert showing Ruth the vampire Ben Cortman through the peephole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_cross_test",
+      "label": "Robert testing the cross on Ben Cortman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_torah_test",
+      "label": "Robert testing the torah on Ben Cortman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_attack",
+      "label": "Ben Cortman attacking Robert",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_bathroom",
+      "label": "Ruth going to the bathroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_music_playing",
+      "label": "Ruth playing Rachmaninoff's Second Piano Concerto",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_explanation",
+      "label": "Robert explaining the bacillus disease to Ruth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_panama_bat_bite",
+      "label": "Robert being bitten by a vampire bat in Panama during the war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_decomposition",
+      "label": "Robert discovering that vampires decompose when exposed to air",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_robert_house",
+      "label": "Robert's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_window_peephole",
+      "label": "Window with peephole",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_outside_lamppost",
+      "label": "Outside by the lamppost",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_panama",
+      "label": "Panama",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_robert",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_cortman",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_ruth",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_plague",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plague",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wine_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_demonstration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_cross_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_torah_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_cross_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_torah_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_bathroom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music_playing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_music_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panama_bat_bite",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_plague",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_decomposition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wine_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_demonstration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window_peephole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_bathroom",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music_playing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panama_bat_bite",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_panama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_window_peephole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_outside_lamppost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_wine_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_cortman_cross_test",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cortman_torah_test",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cortman_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_robert_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_panama_bat_bite",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_vampire_decomposition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_cross_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cortman_cross_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_torah_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cortman_torah_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_robert_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_panama_bat_bite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_bat",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_panama_bat_bite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vampire_decomposition",
+      "target_closed_value": null
+    }
+  ]
+}

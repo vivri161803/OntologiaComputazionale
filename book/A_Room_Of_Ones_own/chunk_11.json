@@ -1,0 +1,597 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator (female scholar)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_judith",
+      "label": "Judith (Shakespeare's imagined sister)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor_trevelyon",
+      "label": "Professor Trevelyon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bishop",
+      "label": "The old bishop",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nick_greene",
+      "label": "Nick Greene (actor-manager)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare_mother",
+      "label": "Shakespeare's mother (heiress)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_judith_father",
+      "label": "Judith's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_judith_mother",
+      "label": "Judith's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_narrator_research",
+      "label": "The narrator's research into women's conditions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_consults_history",
+      "label": "The narrator consults Professor Trevelyon's History of England",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wife_beating_practice",
+      "label": "Wife-beating as a recognized right of man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forced_marriage",
+      "label": "Daughters forced into marriage against their will",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_education",
+      "label": "Shakespeare attends grammar school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_poaching",
+      "label": "Shakespeare poaches rabbits and shoots a deer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_forced_marriage",
+      "label": "Shakespeare forced to marry a woman in the neighbourhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_london",
+      "label": "Shakespeare goes to London to seek his fortune",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_theatre_work",
+      "label": "Shakespeare works in the theatre, becomes successful actor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_denied_education",
+      "label": "Judith denied formal education",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_betrothal",
+      "label": "Judith betrothed to wool-stapler's son",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_beaten",
+      "label": "Judith beaten by her father for refusing marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_escape",
+      "label": "Judith escapes to London by rope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_stage_door",
+      "label": "Judith seeks work at the stage door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_rejected",
+      "label": "Judith rejected as an actress by the manager",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_greene_affair",
+      "label": "Judith becomes pregnant by Nick Greene",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judith_suicide",
+      "label": "Judith kills herself",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_library",
+      "label": "The library with history books",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england_elizabethan",
+      "label": "England in the time of Elizabeth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grammar_school",
+      "label": "Grammar school",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_theatre",
+      "label": "The theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace_queen",
+      "label": "The palace of the queen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_home_judith",
+      "label": "Judith's family home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_apple_loft",
+      "label": "Apple loft",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tavern",
+      "label": "Tavern",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_elephant_castle",
+      "label": "Elephant and Castle (burial place)",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_scholar",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_viaggio",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_research",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_narrator_research",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_research",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_consults_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_consults_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor_trevelyon",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_narrator_consults_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_consults_history",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wife_beating_practice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_wife_beating_practice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_england_elizabethan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forced_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_forced_marriage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_england_elizabethan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_education",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grammar_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_poaching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_poaching",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shakespeare_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_forced_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_forced_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shakespeare_poaching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_london",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shakespeare_forced_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_shakespeare_london",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_theatre_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_theatre_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shakespeare_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_theatre_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_denied_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_denied_education",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_judith_denied_education",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_home_judith",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_judith_betrothal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_betrothal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_denied_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_betrothal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_judith_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_beaten",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_judith_beaten",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_beaten",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_betrothal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_beaten",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_judith_beaten",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_home_judith",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_beaten",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_judith_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_stage_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_stage_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_stage_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_judith_rejected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick_greene",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_rejected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_rejected",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_stage_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_rejected",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_judith_rejected",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_judith_greene_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick_greene",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_greene_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_greene_affair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_rejected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_greene_affair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_judith",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_judith_suicide",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_suicide",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judith_greene_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judith_suicide",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_judith_suicide",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_elephant_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_home_judith",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

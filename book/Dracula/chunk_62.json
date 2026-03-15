@@ -1,0 +1,619 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mrs. Harker (Mina)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count (Dracula)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arminius",
+      "label": "Arminius of Buda-Pesth",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waiting",
+      "label": "Waiting for Godalming and Morris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_professor_speech",
+      "label": "Professor explains the Count's nature and experiments",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telegram",
+      "label": "Receiving Mina's telegram about the Count leaving Carfax",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Godalming and Morris arrive with news of destroyed boxes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_arrival",
+      "label": "The Count arrives at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Violent confrontation with the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_escape",
+      "label": "The Count escapes through the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_speech",
+      "label": "The Count's threatening speech from the stable",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pursuit",
+      "label": "Failed pursuit of the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return",
+      "label": "Return to Seward's house to protect Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_seward_house",
+      "label": "Dr. Seward's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bermondsey",
+      "label": "Bermondsey",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mile_end",
+      "label": "Mile End",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hall",
+      "label": "The hall of the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stable",
+      "label": "The stable",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The flagged yard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_professor_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_professor_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_professor_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_professor_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_professor_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_arminius",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_professor_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professor_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_count_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stable",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stable",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bermondsey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_mile_end",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

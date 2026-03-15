@@ -1,0 +1,400 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john",
+      "label": "Dr. John Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_westenra",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_garlic",
+      "label": "Garlic flowers from Haarlem",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_parcel",
+      "label": "Arrival of parcel with garlic flowers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_explains",
+      "label": "Van Helsing explains the medicinal purpose of garlic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decorating_room",
+      "label": "Van Helsing decorates Lucy's room with garlic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_sleeps",
+      "label": "Lucy sleeps peacefully with garlic wreath",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_removes_garlic",
+      "label": "Mrs. Westenra removes garlic flowers and opens window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_despair",
+      "label": "Van Helsing breaks down in despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blood_transfusion",
+      "label": "Blood transfusion operation performed on Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_recovery",
+      "label": "Lucy recovers and grows stronger",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hillingham",
+      "label": "Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lucy_room",
+      "label": "Lucy's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room at Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_berkeley",
+      "label": "Berkeley Hotel",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_healer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival_parcel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_parcel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_parcel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_arrival_parcel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_explains",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_parcel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_explains",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_van_helsing_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decorating_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_explains",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decorating_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decorating_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decorating_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_decorating_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decorating_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_removes_garlic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_removes_garlic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_removes_garlic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_mrs_westenra",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_removes_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mother_removes_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_removes_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_despair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_despair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lucy_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lucy_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_hillingham",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_john",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

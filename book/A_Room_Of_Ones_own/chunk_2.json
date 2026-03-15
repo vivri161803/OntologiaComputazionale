@@ -1,0 +1,391 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator (Mary Beton, Mary Seton, Mary Carmichael)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beadle",
+      "label": "The Beadle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_librarian",
+      "label": "The librarian gentleman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles_lamb",
+      "label": "Charles Lamb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thackeray",
+      "label": "Thackeray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_milton",
+      "label": "Milton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_max_beerbohm",
+      "label": "Max Beerbohm",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_contemplation",
+      "label": "The narrator sits on the banks of a river contemplating women and fiction",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_trespassing",
+      "label": "The narrator walks across the turf and is intercepted by the Beadle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_strolling",
+      "label": "The narrator strolls through the colleges of Oxbridge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_library_rejection",
+      "label": "The narrator is denied entry to the library by the librarian",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chapel_observation",
+      "label": "The narrator observes the chapel and the congregation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection_on_oxbridge",
+      "label": "The narrator reflects on the history and construction of Oxbridge",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_river",
+      "label": "The banks of a river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oxbridge",
+      "label": "Oxbridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_college_turf",
+      "label": "The college turf",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_college_quadrangle",
+      "label": "The college quadrangle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The famous library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_fish_idea",
+      "label": "The small fish-like idea caught while fishing in thought",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_lycidas",
+      "label": "Milton's LYCIDAS manuscript",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_esmond",
+      "label": "Thackeray's ESMOND manuscript",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_beadle",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_librarian",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_beadle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_librarian",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_contemplation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_trespassing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_library_rejection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_strolling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reflection_on_oxbridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_oxbridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_college_turf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trespassing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beadle",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_trespassing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_library_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_librarian",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_library_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chapel_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection_on_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_contemplation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trespassing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_college_turf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_strolling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_rejection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chapel_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_oxbridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_contemplation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trespassing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trespassing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_strolling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_library_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chapel_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chapel_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection_on_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_fish_idea",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_lycidas",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_esmond",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_lamb",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thackeray",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_milton",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_strolling",
+      "target_closed_value": null
+    }
+  ]
+}

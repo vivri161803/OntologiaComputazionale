@@ -1,0 +1,687 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Murray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Lucy's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stranger",
+      "label": "Dark figure on the cliff",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_swales",
+      "label": "Mr. Swales",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sister_agatha",
+      "label": "Sister Agatha",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lucy_sleepwalking_night1",
+      "label": "Lucy tries to get out during the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_sleepwalking_night2",
+      "label": "Lucy sits up in bed pointing at window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bat_appearance",
+      "label": "A great bat flits across the moonlight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cliff_walk",
+      "label": "Mina and Lucy walk on the East Cliff",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_strange_remark",
+      "label": "Lucy murmurs about red eyes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_evening_walk",
+      "label": "Mina walks along the cliffs at moonlight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_at_window",
+      "label": "Mina finds Lucy at the window with a bird-like creature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_father_recovery",
+      "label": "Arthur's father recovers and wants marriage soon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_mother_confession",
+      "label": "Lucy's mother confides her terminal illness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_fading",
+      "label": "Lucy grows weaker and paler",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_window_faint",
+      "label": "Lucy found leaning out window in a faint",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_recovery",
+      "label": "Lucy sleeps well and recovers color",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_remembers_night",
+      "label": "Lucy recalls her sleepwalking experience",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_letter_arrival",
+      "label": "News arrives of Jonathan's illness and recovery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_departure",
+      "label": "Mina prepares to leave for Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_illness",
+      "label": "Jonathan suffers from violent brain fever",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Mina and Lucy's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east_cliff",
+      "label": "East Cliff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_pier",
+      "label": "West Pier",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crescent",
+      "label": "The Crescent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "Churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax, near Purfleet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hospital_budapest",
+      "label": "Hospital of St. Joseph and Ste. Mary, Buda-Pesth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_klausenburg",
+      "label": "Klausenburg",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_heroine",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_stranger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_sister_agatha",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking_night1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking_night2",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_bat_appearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lucy_strange_remark",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lucy_fading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_jonathan_illness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_letter_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_lucy_mother_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_east_cliff",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_hospital_budapest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking_night1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking_night2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bat_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cliff_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_east_cliff",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_strange_remark",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_pier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_evening_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crescent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_at_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crescent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_remembers_night",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_illness",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hospital_budapest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalking_night1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_sleepwalking_night1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalking_night2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_sleepwalking_night2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stranger",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bat_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cliff_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cliff_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_strange_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_strange_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_evening_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_at_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_at_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_arthur_father_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_mother_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lucy_mother_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_fading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_fading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_window_faint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_window_faint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_remembers_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_remembers_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_letter_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_hawkins",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_jonathan_letter_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sister_agatha",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_jonathan_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking_night2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleepwalking_night1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bat_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleepwalking_night2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cliff_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bat_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_strange_remark",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cliff_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_evening_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_strange_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_at_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_evening_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_father_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_at_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_mother_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_father_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_fading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_mother_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_window_faint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_fading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_window_faint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_remembers_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_letter_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_remembers_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_letter_arrival",
+      "target_closed_value": null
+    }
+  ]
+}

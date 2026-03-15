@@ -1,0 +1,561 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire",
+      "label": "Vampire",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "Dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_discovery_germ",
+      "label": "Discovery of the germ vampiris under the microscope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_understanding_bacillus",
+      "label": "Understanding the bacillus structure and flagella",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization_cause",
+      "label": "Realization that the germ is the cause of vampirism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_despair",
+      "label": "Overwhelming despair at having the answer too late",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_study_spores",
+      "label": "Study of bacterial spores and sporulation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theory_dust_storms",
+      "label": "Theory about spores spread by dust storms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_historical_plagues",
+      "label": "Consideration of historical plagues caused by the germ",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Robert Neville eats steak and drinks wine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_music",
+      "label": "Listening to Ravel's Daphnis and Chloe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_microscope_observation",
+      "label": "Second observation of the germ under microscope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garlic_test",
+      "label": "Testing allyl sulphide with germ-ridden blood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_list_making",
+      "label": "Making a list of vampire characteristics",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_frustration",
+      "label": "Frustration and violent outburst",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drinking_binge",
+      "label": "Two-day drinking binge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_encounter",
+      "label": "Encounter with a living dog on the lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chase_dog",
+      "label": "Chasing the dog through the neighborhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_loss_dog",
+      "label": "Loss of the dog and despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_microscope",
+      "label": "The microscope slide",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sink",
+      "label": "The sink",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar",
+      "label": "The bar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "Robert Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The lawn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "Cimarron Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_neighborhood",
+      "label": "The neighborhood",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_germ",
+      "label": "The vampiris bacillus germ",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_blood",
+      "label": "Blood",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_scientist",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_germ",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_discovery_germ",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_despair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_frustration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_drinking_binge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_microscope",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery_germ",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_germ",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery_germ",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_understanding_bacillus",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_germ",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_understanding_bacillus",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization_cause",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_understanding_bacillus",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization_cause",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_cause",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_study_spores",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_study_spores",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theory_dust_storms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_study_spores",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theory_dust_storms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_historical_plagues",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theory_dust_storms",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_historical_plagues",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_historical_plagues",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_music",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_microscope_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_microscope_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_microscope_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_microscope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garlic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_microscope_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garlic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garlic_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_list_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garlic_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_list_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_list_making",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_frustration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_list_making",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_frustration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_frustration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_binge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_frustration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drinking_binge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking_binge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking_binge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chase_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chase_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chase_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chase_dog",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_loss_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_loss_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chase_dog",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_loss_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_loss_dog",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    }
+  ]
+}

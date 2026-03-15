@@ -1,0 +1,500 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gerilleau",
+      "label": "Captain Gerilleau",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_holroyd",
+      "label": "Holroyd",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_da_cunha",
+      "label": "da Cunha",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_zambo",
+      "label": "Zambo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_negro_stoker",
+      "label": "negro stoker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_creole_girls",
+      "label": "Creole girls",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_promotion",
+      "label": "Gerilleau's romantic and irregular promotion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_instructions",
+      "label": "Captain Gerilleau receives instructions to take the Benjamin Constant to Badama",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_amazon",
+      "label": "Journey up the Amazon river for six days",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ants_plague",
+      "label": "Plague of ants attacking the inhabitants",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_son_attacked",
+      "label": "The son attacked by ants and drowns in the river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_son_death",
+      "label": "The son dies from ant poison",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_ants",
+      "label": "Three men dispute whether ants have eyes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_holroyd_catches_ants",
+      "label": "Holroyd goes ashore to catch ants and examine them",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mooring",
+      "label": "Benjamin Constant moored by cable under shadow of dark trees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gerilleau_sleep",
+      "label": "Gerilleau falls asleep on deck mattress",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_holroyd_meditation",
+      "label": "Holroyd meditates on the immensity of the forest and the threat of ants",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_badama",
+      "label": "Badama",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_batemo",
+      "label": "Batemo arm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guaramadema",
+      "label": "Guaramadema",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amazon",
+      "label": "Amazon river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_alemquer",
+      "label": "Alemquer",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_para",
+      "label": "Para",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rio_negro",
+      "label": "Rio Negro",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tamandu",
+      "label": "Tamandu",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forest",
+      "label": "Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gunboat",
+      "label": "Benjamin Constant gunboat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trinidad",
+      "label": "Trinidad",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_caracas",
+      "label": "Caracas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_southport",
+      "label": "Southport",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dancing_place",
+      "label": "dancing place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rancho",
+      "label": "rancho",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "house at dancing place",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_ants",
+      "label": "ants",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_commander",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_engineer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_promotion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_instructions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_instructions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_promotion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_instructions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_amazon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_amazon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_instructions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_amazon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_amazon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_amazon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amazon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ants_plague",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ants_plague",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_amazon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ants_plague",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ants_plague",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_son_attacked",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_son_attacked",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ants_plague",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_son_attacked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_son_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_son_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_son_attacked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_ants",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discussion_ants",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ants_plague",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_da_cunha",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_holroyd_catches_ants",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_holroyd_catches_ants",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_holroyd_catches_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mooring",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mooring",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_holroyd_catches_ants",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mooring",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gerilleau_sleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_gerilleau_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mooring",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gerilleau_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_holroyd_meditation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_holroyd_meditation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gerilleau_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_holroyd_meditation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_holroyd_meditation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gunboat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_ants",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_badama",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_gunboat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

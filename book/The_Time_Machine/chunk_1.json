@@ -1,0 +1,118 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_time_machine_invention",
+      "label": "Invention of the Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_travel",
+      "label": "Journey through time",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_future_world",
+      "label": "The future world",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_time_machine_invention",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_time_travel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_machine_invention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_travel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_machine_invention",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_travel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_future_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_future_world",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_time_machine_invention",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_travel",
+      "target_closed_value": null
+    }
+  ]
+}

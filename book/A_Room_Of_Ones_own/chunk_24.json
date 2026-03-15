@@ -1,0 +1,480 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_keats",
+      "label": "Keats",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sterne",
+      "label": "Sterne",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cowper",
+      "label": "Cowper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lamb",
+      "label": "Lamb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_coleridge",
+      "label": "Coleridge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shelley",
+      "label": "Shelley",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_milton",
+      "label": "Milton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_jonson",
+      "label": "Ben Jonson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wordsworth",
+      "label": "Wordsworth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tolstoi",
+      "label": "Tolstoi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proust",
+      "label": "Proust",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_bessborough",
+      "label": "Lady Bessborough",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_granville",
+      "label": "Lord Granville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_miss_davies",
+      "label": "Miss Davies",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_greg",
+      "label": "Mr Greg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_miss_clough",
+      "label": "Miss Clough",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sir_walter_raleigh",
+      "label": "Sir Walter Raleigh",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_duce",
+      "label": "The Duce",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_restless_mood",
+      "label": "The narrator's restless mood while handling books",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_envisaging_age",
+      "label": "Envisaging an age of pure, self-assertive virility",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rome_impression",
+      "label": "Being impressed in Rome by unmitigated masculinity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_academicians",
+      "label": "Meeting of academicians to develop the Italian novel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telegram_duce",
+      "label": "Sending a telegram to the Duce expressing hope for a poet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lady_bessborough_lie",
+      "label": "Lady Bessborough lying to Lord Granville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_miss_davies_truth",
+      "label": "Miss Davies telling the truth to Mr Greg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sex_consciousness",
+      "label": "Bringing about a state of sex-consciousness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_decision",
+      "label": "The narrator's decision to write about Women and Fiction",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collaboration_mind",
+      "label": "Collaboration between woman and man in the mind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage_opposites",
+      "label": "Marriage of opposites being consummated",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writer_experience",
+      "label": "The writer's experience and creative process",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boat_current",
+      "label": "The boat and under-graduate taken by the current",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_couple",
+      "label": "The taxi taking the man and woman together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_current_sweep",
+      "label": "The current sweeping them into London's traffic",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rome",
+      "label": "Rome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_italy",
+      "label": "Italy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_writing_table",
+      "label": "The writing-table",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "The street",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seducer_reformer",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_writer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_restless_mood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_restless_mood",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_envisaging_age",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_restless_mood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rome_impression",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_envisaging_age",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rome_impression",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rome",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_academicians",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rome_impression",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_academicians",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_italy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram_duce",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_academicians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lady_bessborough_lie",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_lady_bessborough",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lady_bessborough_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_granville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lady_bessborough_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_miss_davies_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_miss_davies",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_miss_davies_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_greg",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_miss_davies_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sex_consciousness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_miss_davies_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sex_consciousness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sex_consciousness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_decision",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_writing_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_decision",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_collaboration_mind",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collaboration_mind",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_marriage_opposites",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collaboration_mind",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_opposites",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_writer_experience",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_marriage_opposites",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boat_current",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writer_experience",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boat_current",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_couple",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boat_current",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_couple",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_current_sweep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_couple",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_current_sweep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_keats",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_proust",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "loc_rome",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_writing_table",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_unnamed_lady",
+      "label": "melancholy lady who loved wandering in the fields",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pope_gay",
+      "label": "Pope or Gay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_margaret_newcastle",
+      "label": "Margaret of Newcastle, the Duchess",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lamb",
+      "label": "Lamb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dorothy_osborne",
+      "label": "Dorothy Osborne",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_temple",
+      "label": "Temple",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_egerton_brydges",
+      "label": "Sir Egerton Brydges",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aphra_behn",
+      "label": "Aphra Behn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_dudley",
+      "label": "Lady Dudley",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_dudley",
+      "label": "Lord Dudley",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fanny_burney",
+      "label": "Fanny Burney",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eliza_carter",
+      "label": "Eliza Carter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_eliot",
+      "label": "George Eliot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_bronte",
+      "label": "Emily Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charlotte_bronte",
+      "label": "Charlotte Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marlowe",
+      "label": "Marlowe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chaucer",
+      "label": "Chaucer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_davies",
+      "label": "Miss Emily Davies",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nightingale",
+      "label": "Miss Nightingale",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_satire",
+      "label": "Pope or Gay satirizing the lady as a blue-stocking",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_laugh_at_gay",
+      "label": "laughing at Gay about his TRIVIA",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duchess_writing",
+      "label": "Margaret of Newcastle writing poetry and philosophy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duchess_isolation",
+      "label": "Margaret shutting herself up at Welbeck alone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dorothy_writing_letters",
+      "label": "Dorothy Osborne writing letters to Temple",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dorothy_walking",
+      "label": "Dorothy walking out to a Common and talking to shepherdesses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_aphra_making_living",
+      "label": "Aphra Behn making her living by her wits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lord_dudley_stroke",
+      "label": "Lord Dudley having a stroke",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lady_dudley_nursing",
+      "label": "Lady Dudley nursing Lord Dudley and ruling his estates",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_writing_novels",
+      "label": "middle-class women beginning to write novels in the eighteenth century",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jane_austen_writing",
+      "label": "Jane Austen writing PRIDE AND PREJUDICE in the common sitting-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jane_austen_hiding_manuscript",
+      "label": "Jane Austen hiding her manuscript from visitors",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_fields",
+      "label": "fields",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_welbeck",
+      "label": "Welbeck",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_common",
+      "label": "Common near Dorothy's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "garden by a small river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town",
+      "label": "town",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_court",
+      "label": "Court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "common sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_westminster_abbey",
+      "label": "Westminster Abbey",
+      "node_type": "Location"
+    },
+    {
+      "id": "work_trivia",
+      "label": "TRIVIA by Gay",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_pride_prejudice",
+      "label": "PRIDE AND PREJUDICE by Jane Austen",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_jane_eyre",
+      "label": "JANE EYRE by Charlotte Brontë",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_middlemarch",
+      "label": "MIDDLEMARCH by George Eliot",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_villette",
+      "label": "VILLETTE by Charlotte Brontë",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_wuthering_heights",
+      "label": "WUTHERING HEIGHTS by Emily Brontë",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_antony_cleopatra",
+      "label": "ANTONY AND CLEOPATRA by Shakespeare",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_blue_stocking",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_writer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_satirist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_satire",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_unnamed_lady",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_pope_gay",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_satire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_unnamed_lady",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_satire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_satire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_unnamed_lady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_laugh_at_gay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gay",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_laugh_at_gay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_laugh_at_gay",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_satire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_margaret_newcastle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_margaret_newcastle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duchess_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duchess_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_margaret_newcastle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duchess_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duchess_isolation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_duchess_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duchess_isolation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_welbeck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_welbeck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_dorothy_osborne",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dorothy_osborne",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dorothy_writing_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_temple",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dorothy_writing_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dorothy_writing_letters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dorothy_osborne",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dorothy_walking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dorothy_walking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_common",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_common",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_dorothy_walking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dorothy_writing_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aphra_behn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_aphra_behn",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_aphra_making_living",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_aphra_making_living",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_lady_dudley",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lord_dudley",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lord_dudley_stroke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lord_dudley_stroke",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_lady_dudley",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lady_dudley_nursing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_dudley",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lady_dudley_nursing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lady_dudley_nursing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lord_dudley_stroke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_writing_novels",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jane_austen_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_austen_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_jane_austen_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jane_austen_hiding_manuscript",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_austen_hiding_manuscript",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jane_austen_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fanny_burney",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_eliza_carter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_george_eliot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emily_bronte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charlotte_bronte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_marlowe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_chaucer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "work_pride_prejudice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "work_middlemarch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "work_villette",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "work_wuthering_heights",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "work_jane_eyre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "loc_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_westminster_abbey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

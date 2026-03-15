@@ -1,0 +1,316 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dyer",
+      "label": "Dyer",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_club_discussion",
+      "label": "Discussion about native membership in the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_departure",
+      "label": "Flory leaves the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_scandal_about_flory",
+      "label": "Scandal and gossip about Flory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_departure",
+      "label": "The group leaves the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay",
+      "label": "Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amritsar",
+      "label": "Amritsar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_prome",
+      "label": "Prome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_india",
+      "label": "India",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burma",
+      "label": "Burma",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ellis",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_macgregor",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_club_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_club_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_flory_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_club_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scandal_about_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_scandal_about_flory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scandal_about_flory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_scandal_about_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_scandal_about_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_scandal_about_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ellis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_india",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

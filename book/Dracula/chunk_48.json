@@ -1,0 +1,886 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_attendant",
+      "label": "The attendant",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_message",
+      "label": "An urgent message is brought to Dr. Seward from Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_refusal",
+      "label": "Dr. Seward refuses to see Renfield immediately",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warning",
+      "label": "The attendant warns of Renfield's violent fits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision",
+      "label": "Dr. Seward decides to see Renfield at once",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gathering",
+      "label": "Dr. Seward and his companions gather to visit Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "The group enters Renfield's room and meets him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_request",
+      "label": "Renfield requests to be released from the asylum",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_introduction",
+      "label": "Dr. Seward introduces his companions to Renfield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_handshakes",
+      "label": "Renfield shakes hands with each visitor and makes remarks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_appeal",
+      "label": "Renfield makes an eloquent appeal for his sanity and release",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_response",
+      "label": "Dr. Seward defers his decision and suggests a longer conversation in the morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_urgent_plea",
+      "label": "Renfield urgently insists on immediate release, mentioning a contract with the old scytheman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_refusal",
+      "label": "Dr. Seward frankly refuses Renfield's request",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_appeal",
+      "label": "Renfield shifts his appeal to claim he acts for others' sake, not personal grounds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_question",
+      "label": "Professor Van Helsing directly asks Renfield for his true reason for wanting freedom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_silence",
+      "label": "Renfield refuses to speak, claiming he is not his own master",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_departure",
+      "label": "Dr. Seward moves toward the door to end the scene",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emotional_outburst",
+      "label": "Renfield becomes emotionally distraught and makes an impassioned plea for release",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_intervention",
+      "label": "Dr. Seward takes Renfield by the hand and orders him to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collapse",
+      "label": "Renfield collapses and sits on the bed in resignation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_words",
+      "label": "Renfield speaks to Dr. Seward in a quiet, well-bred voice as he leaves",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "The house where Dr. Seward and his companions are gathered",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_asylum",
+      "label": "The asylum where Renfield is confined",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passage",
+      "label": "The passage leading to Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room in the asylum",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_message",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_message",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_refusal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_refusal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_request",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_introduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_introduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handshakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handshakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_appeal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_handshakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_appeal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_response",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_response",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_seward_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_urgent_plea",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_urgent_plea",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_urgent_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_urgent_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_refusal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_urgent_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_refusal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_seward_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_appeal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_appeal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_second_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_question",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_appeal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_question",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_question",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_question",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_silence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_question",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_silence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_silence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_renfield_silence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_silence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emotional_outburst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emotional_outburst",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emotional_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_emotional_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_intervention",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emotional_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_intervention",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_intervention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_intervention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collapse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_intervention",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collapse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_words",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_words",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_words",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_final_words",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_message",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_request",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_appeal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_emotional_outburst",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_collapse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_asylum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    }
+  ]
+}

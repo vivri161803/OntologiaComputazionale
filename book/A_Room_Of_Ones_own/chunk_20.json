@@ -1,0 +1,483 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_carmichael",
+      "label": "Mary Carmichael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_johnson",
+      "label": "Dr Johnson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thrale",
+      "label": "Mrs Thrale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goethe",
+      "label": "Goethe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carlyle",
+      "label": "Carlyle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_voltaire",
+      "label": "Voltaire",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_winchilsea",
+      "label": "Lady Winchilsea",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charlotte_bronte",
+      "label": "Charlotte Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_bronte",
+      "label": "Emily Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_eliot",
+      "label": "George Eliot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dorothy_osborne",
+      "label": "Dorothy Osborne",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thackeray",
+      "label": "Thackeray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lamb",
+      "label": "Lamb",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ancient_lady",
+      "label": "An ancient lady crossing the street",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_middle_aged_woman",
+      "label": "A middle-aged woman, her daughter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl_behind_counter",
+      "label": "The girl behind the counter",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_reading",
+      "label": "The narrator reading Mary Carmichael's work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection_on_women",
+      "label": "The narrator's reflection on women's creative power and complexity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_johnson_thrale_relationship",
+      "label": "Johnson's relationship with Mrs Thrale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thrale_marriage",
+      "label": "Mrs Thrale marries her Italian music master",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_johnson_rage",
+      "label": "Johnson goes half mad with rage and disgust",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_entering_room",
+      "label": "Going into a room and experiencing femininity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_indoors",
+      "label": "Women sitting indoors for millions of years",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crossing_street",
+      "label": "The ancient lady and her daughter crossing the street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battle_of_balaclava",
+      "label": "The battle of Balaclava",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_birth_king_edward",
+      "label": "The birth of King Edward the Seventh",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shop_scene",
+      "label": "Imagining a shop with black and white paving and coloured ribbons",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bookcase",
+      "label": "The bookcase",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "Drawing-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nursery",
+      "label": "Nursery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streatham",
+      "label": "Streatham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_law_courts",
+      "label": "Law courts",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house_of_commons",
+      "label": "House of Commons",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "A room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets_south_of_river",
+      "label": "Long streets somewhere south of the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hyde_park",
+      "label": "Hyde Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london_streets",
+      "label": "The streets of London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shop",
+      "label": "A shop with black and white paving",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_andes",
+      "label": "The Andes",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reflection_on_women",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bookcase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_carmichael",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_women",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection_on_women",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_johnson_thrale_relationship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_johnson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_johnson_thrale_relationship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thrale",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_johnson_thrale_relationship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrale_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_thrale_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_johnson_thrale_relationship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thrale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thrale_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_johnson_rage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_johnson_rage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thrale_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_johnson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_johnson_rage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_entering_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_entering_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_indoors",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_crossing_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_crossing_street",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_streets_south_of_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ancient_lady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crossing_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_middle_aged_woman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_crossing_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle_of_balaclava",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_birth_king_edward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_shop_scene",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_shop_scene",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl_behind_counter",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_shop_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_nursery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streatham",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets_south_of_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_london_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

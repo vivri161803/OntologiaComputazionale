@@ -1,0 +1,441 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_man",
+      "label": "The dark man with beaky nose and black moustache",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_westenra",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pretty_girl",
+      "label": "The pretty girl in the cart-wheel hat",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_wedding",
+      "label": "The wedding service of Mina and Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter",
+      "label": "Jonathan's encounter with the dark man on Piccadilly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_death",
+      "label": "Lucy's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_burial",
+      "label": "Lucy's burial",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_westenra_death",
+      "label": "Mrs. Westenra's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transfusion",
+      "label": "The blood transfusion from Arthur to Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hyde_park",
+      "label": "Hyde Park Corner",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_row",
+      "label": "The Row",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_green_park",
+      "label": "Green Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guiliano",
+      "label": "Guiliano's",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "The lonely churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amsterdam",
+      "label": "Amsterdam",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ring",
+      "label": "Ring",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hampstead",
+      "label": "Hampstead Hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_train",
+      "label": "The train to Exeter",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_bride",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_wedding",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_encounter",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_burial",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_transfusion",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_lucy_burial",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "evt_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_piccadilly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_green_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_piccadilly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_burial",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_burial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_ring",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_amsterdam",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_animals",
+      "label": "The animals",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hens",
+      "label": "The hens",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whymper",
+      "label": "Mr. Whymper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dogs",
+      "label": "Napoleon's dogs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_four_pigs",
+      "label": "Four pigs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_frederick",
+      "label": "Mr. Frederick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington",
+      "label": "Mr. Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_windmill_rebuilding",
+      "label": "Rebuilding of the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_food_shortage",
+      "label": "Food shortage in January",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_potato_crop_frosted",
+      "label": "Potato crop frosted in the clamps",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whymper_deception",
+      "label": "Deception of Mr. Whymper about food supplies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_egg_confiscation",
+      "label": "Confiscation of hens' eggs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hen_rebellion",
+      "label": "Hens' rebellion and protest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hen_starvation",
+      "label": "Hens starved by Napoleon's orders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_sightings",
+      "label": "Snowball secretly frequenting the farm by night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_inspection",
+      "label": "Napoleon's inspection tour of the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squealer_announcement",
+      "label": "Squealer's announcement of Snowball's treachery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_questioning",
+      "label": "Boxer questions Squealer's claims",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_assembly_yard",
+      "label": "Assembly of all animals in the yard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_attack",
+      "label": "Dogs attack four pigs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_defense",
+      "label": "Boxer defends himself against the dogs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pig_confession",
+      "label": "Four pigs confess their crimes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pig_execution",
+      "label": "Dogs execute the four pigs",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_windmill",
+      "label": "The windmill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarry",
+      "label": "The quarry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_store_shed",
+      "label": "The store-shed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "The farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_foxwood",
+      "label": "Foxwood Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pinchfield",
+      "label": "Pinchfield Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cowshed",
+      "label": "The Cowshed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_orchard",
+      "label": "The orchard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_falso_eroe",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_windmill_rebuilding",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_windmill_rebuilding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_potato_crop_frosted",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_potato_crop_frosted",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_food_shortage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_food_shortage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_potato_crop_frosted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_food_shortage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whymper_deception",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_whymper_deception",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_food_shortage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whymper_deception",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whymper",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whymper_deception",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_egg_confiscation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_egg_confiscation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whymper_deception",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_egg_confiscation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hens",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_egg_confiscation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hen_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_hen_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_egg_confiscation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hens",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hen_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_hen_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hen_starvation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_hen_starvation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hen_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hen_starvation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hens",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hen_starvation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_sightings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_snowball_sightings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hen_starvation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_sightings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_sightings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_inspection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_napoleon_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_sightings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_napoleon_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_squealer_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squealer_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_squealer_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_boxer_questioning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_boxer_questioning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_squealer_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_boxer_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_assembly_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_assembly_yard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_assembly_yard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_assembly_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_assembly_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_dog_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_assembly_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_four_pigs",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_defense",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_boxer_defense",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_defense",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_boxer_defense",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pig_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_pig_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_defense",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_four_pigs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pig_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_pig_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pig_execution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_pig_execution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pig_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pig_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_four_pigs",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_pig_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_animal_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_store_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_quarry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

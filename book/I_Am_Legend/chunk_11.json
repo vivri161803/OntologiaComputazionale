@@ -1,0 +1,767 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "The dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampires",
+      "label": "The vampires",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dog_disappears",
+      "label": "The dog disappears between the houses",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_search_neighborhood",
+      "label": "Robert searches the neighborhood for an hour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home_dejected",
+      "label": "Robert stumbles home in hopeless dejection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_illness_shock",
+      "label": "Robert becomes ill and trembling from shock and loss",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_afternoon_search",
+      "label": "Robert searches again in the afternoon for two blocks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_put_food_out",
+      "label": "Robert puts out milk and hamburger with garlic ring",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_existential_reflection",
+      "label": "Robert reflects on why he continues living",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prayer",
+      "label": "Robert offers a prayer for the dog's protection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_food_gone",
+      "label": "Robert finds the milk and hamburger are gone in the morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampires_on_lawn",
+      "label": "Two women vampires are found crumpled on the grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_safe",
+      "label": "Robert realizes the dog is safe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_buy_dog_supplies",
+      "label": "Robert buys dog food and supplies at the market",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_comes_at_four",
+      "label": "The dog comes at four o'clock to eat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_goes_to_door",
+      "label": "Robert goes to the front door as the dog finishes eating",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_bolts",
+      "label": "The dog bolts away from the dish",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_sits_on_porch",
+      "label": "Robert sits on the edge of the porch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_stops_and_looks_back",
+      "label": "The dog stops across the street and looks back",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_calls_out",
+      "label": "Robert calls out to the dog",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_runs_away_again",
+      "label": "The dog runs away at the sound of Robert's voice",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ben_cortman_appears",
+      "label": "Ben Cortman runs at Robert from across the street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_runs_inside",
+      "label": "Robert runs into the house and locks the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daily_game",
+      "label": "Robert and the dog play a daily game on the porch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_approaches_slowly",
+      "label": "The dog slowly approaches the food while Robert sits still",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_grabs_meat",
+      "label": "The dog darts in and grabs the meat",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_backyard",
+      "label": "The back yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_redwood_fence",
+      "label": "The redwood fence",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_neighborhood",
+      "label": "The neighborhood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_neville_house",
+      "label": "Robert's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_porch",
+      "label": "The porch",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "The street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_between_houses",
+      "label": "Between the houses",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The lawn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "The market",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_dog_disappears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_search_neighborhood",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_disappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home_dejected",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_search_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_illness_shock",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home_dejected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_afternoon_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_illness_shock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_put_food_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_afternoon_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_existential_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_put_food_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prayer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_existential_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_food_gone",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampires_on_lawn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_food_gone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_safe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampires_on_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_buy_dog_supplies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_safe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_comes_at_four",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_buy_dog_supplies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_goes_to_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_comes_at_four",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_bolts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_goes_to_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_sits_on_porch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_bolts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_stops_and_looks_back",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_sits_on_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_calls_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_stops_and_looks_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_runs_away_again",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_calls_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ben_cortman_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_runs_away_again",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_runs_inside",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ben_cortman_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daily_game",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_runs_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_approaches_slowly",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daily_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_grabs_meat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_approaches_slowly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_disappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_disappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home_dejected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_illness_shock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_afternoon_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_put_food_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_existential_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_food_gone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_vampires_on_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_safe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_buy_dog_supplies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_comes_at_four",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_goes_to_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_bolts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_sits_on_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_stops_and_looks_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_calls_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_runs_away_again",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ben_cortman_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_runs_inside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daily_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daily_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_approaches_slowly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dog_approaches_slowly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_grabs_meat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dog_grabs_meat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_disappears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_backyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_neighborhood",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home_dejected",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_illness_shock",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_afternoon_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_put_food_out",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_existential_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prayer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_food_gone",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampires_on_lawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_safe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_buy_dog_supplies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_comes_at_four",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_goes_to_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_bolts",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_sits_on_porch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_stops_and_looks_back",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_calls_out",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_runs_away_again",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ben_cortman_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_runs_inside",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daily_game",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_approaches_slowly",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_grabs_meat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_neville_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_porch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_neighborhood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

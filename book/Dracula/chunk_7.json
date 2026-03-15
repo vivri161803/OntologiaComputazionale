@@ -1,0 +1,532 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hawkins",
+      "label": "Mr. Peter Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_billington",
+      "label": "Samuel F. Billington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leutner",
+      "label": "Herr Leutner",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Count interrogates Jonathan about legal matters and business",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_solicitor_discussion",
+      "label": "Discussion about solicitors and agency systems",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_demand_stay",
+      "label": "Count demands Jonathan stay for a month",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_writing",
+      "label": "Jonathan writes letters under Count's supervision",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_inspection",
+      "label": "Jonathan inspects Count's letters while he is away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warning",
+      "label": "Count warns Jonathan not to sleep in other parts of castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_window_observation",
+      "label": "Jonathan observes Count climbing down castle wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration",
+      "label": "Jonathan explores the castle while Count is away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_observation",
+      "label": "Jonathan sees Count descend castle wall again",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diary_writing",
+      "label": "Jonathan writes in his diary in the abandoned wing",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_castle",
+      "label": "Count's castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jonathan_room",
+      "label": "Jonathan's chamber",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_count_room",
+      "label": "Count's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stone_stair",
+      "label": "Stone stairway",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_wing",
+      "label": "Abandoned wing of the castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_window",
+      "label": "Castle window overlooking the expanse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_budapest",
+      "label": "Buda Pesth",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_letters",
+      "label": "Letters written by Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_crucifix",
+      "label": "Crucifix",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_prisoner",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_employer",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_interrogation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_demand_stay",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_window_observation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle_wing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_jonathan_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_solicitor_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_solicitor_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_demand_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_demand_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_letter_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_window_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_window_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_second_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diary_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_solicitor_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_demand_stay",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_inspection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_wing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_wing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_solicitor_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_demand_stay",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_solicitor_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_demand_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_window_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_exeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_letters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_crucifix",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diary_writing",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,435 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_subahdar",
+      "label": "Subahdar",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_inspector",
+      "label": "Burmese Inspector of Police",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sepoys",
+      "label": "Sepoys",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_crowd",
+      "label": "Burmese crowd",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_crowd_surge",
+      "label": "Crowd surges against the men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whistle_blown",
+      "label": "Subahdar blows whistle to rally men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape_crowd",
+      "label": "Flory and subahdar escape the crowd",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_get_rifles",
+      "label": "Sepoys return with rifles and ammunition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fire_order",
+      "label": "Flory orders sepoys to fire over the crowd's heads",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_volley",
+      "label": "Sepoys fire first volley",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_panic",
+      "label": "Crowd falls in panic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_volley",
+      "label": "Sepoys fire second volley",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_retreat",
+      "label": "Crowd surges outward and retreats up the maidan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_veraswami_emerges",
+      "label": "Dr Veraswami emerges from the crowd",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_arrives",
+      "label": "U Po Kyin arrives at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_storm_arrives",
+      "label": "Storm arrives with wind and rain",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_police_lines",
+      "label": "Police lines",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "Maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_compound",
+      "label": "Club compound",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_gate",
+      "label": "Club gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_european_houses",
+      "label": "European houses",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillside",
+      "label": "Hillside",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_subahdar",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_crowd",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_crowd",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_subahdar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_crowd_surge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_first_volley",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_crowd_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_storm_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_maidan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crowd_surge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crowd",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_crowd_surge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subahdar",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_whistle_blown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subahdar",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_escape_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sepoys",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_get_rifles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fire_order",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inspector",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_fire_order",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sepoys",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_volley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crowd",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_first_volley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crowd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crowd_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sepoys",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_volley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_crowd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crowd_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_veraswami_emerges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whistle_blown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_surge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape_crowd",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whistle_blown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_get_rifles",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_escape_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fire_order",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_get_rifles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_volley",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fire_order",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_panic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_volley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_volley",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_volley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_veraswami_emerges",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_veraswami_emerges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_surge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_get_rifles",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_police_lines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_volley",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_retreat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_maidan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_veraswami_emerges",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_compound",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    }
+  ]
+}

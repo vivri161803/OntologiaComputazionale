@@ -1,0 +1,549 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_editor_burmese_patriot",
+      "label": "Editor of the Burmese Patriot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nga_shwe_o",
+      "label": "Nga Shwe O",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maxwell",
+      "label": "Maxwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_li_yeik",
+      "label": "Li Yeik",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_yi",
+      "label": "Ma Yi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_padre",
+      "label": "The padre",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_pe",
+      "label": "Ba Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sammy",
+      "label": "Old Sammy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_pu",
+      "label": "Ma Pu",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_feud",
+      "label": "The feud between U Po Kyin and Dr Veraswami",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_editor_trial",
+      "label": "Editor of the Burmese Patriot put on trial for sedition and libel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_riot_rangoon",
+      "label": "Riot in Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_editor_hunger_strike",
+      "label": "Editor's hunger strike in prison",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dacoit_escape",
+      "label": "Dacoit Nga Shwe O escaped from jail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_native_rising_rumours",
+      "label": "Rumours about a projected native rising in the district",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weiksa_appearance",
+      "label": "A weiksa appeared and prophesied doom of English power",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_westfield_journey",
+      "label": "Westfield journeyed to Thongwa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_westfield_search",
+      "label": "Westfield and constables searched for rebellion in Thongwa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_dismissal",
+      "label": "Flory turned Ma Hla May out of his house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cart_scene",
+      "label": "Ma Hla May's departure scene with the bullock cart",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_church",
+      "label": "Flory went to church",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thongwa",
+      "label": "Thongwa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp_maxwell",
+      "label": "Camp where Maxwell was girdling teak",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bazaar",
+      "label": "Bazaar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flory_house",
+      "label": "Flory's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_antagonist_u_po_kyin",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_dr_veraswami",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_editor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_westfield",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_feud",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_feud",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_feud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_feud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_editor_trial",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_editor_trial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_feud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor_burmese_patriot",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_editor_trial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riot_rangoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_riot_rangoon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riot_rangoon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_editor_trial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_editor_hunger_strike",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_editor_hunger_strike",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_riot_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor_burmese_patriot",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_editor_hunger_strike",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dacoit_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dacoit_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nga_shwe_o",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dacoit_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_native_rising_rumours",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_native_rising_rumours",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weiksa_appearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_weiksa_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_westfield_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_native_rising_rumours",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_westfield_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_westfield_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thongwa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_westfield_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_westfield_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_westfield_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_dismissal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_flory_dismissal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flory_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cart_scene",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_cart_scene",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cart_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_cart_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_flory_church",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_church",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cart_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_thongwa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bazaar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_flory_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

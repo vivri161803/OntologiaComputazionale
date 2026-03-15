@@ -1,0 +1,482 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Dr. Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_attendant",
+      "label": "The attendant on duty",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Meeting in the study to discuss the situation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_death",
+      "label": "Discovery of Renfield's death with bruised face and broken neck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_attendant_testimony",
+      "label": "Attendant's account of hearing loud voices and Renfield's cries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_revelation",
+      "label": "Decision to reveal all truth to Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_promise",
+      "label": "Mina's promise to live and not die until the Count is destroyed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_strategy",
+      "label": "Van Helsing's explanation of the strategy to hunt the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_piccadilly_plan",
+      "label": "Discussion and planning of the raid on the house in Piccadilly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_force_disposition",
+      "label": "Agreement on the disposition of forces for the hunt",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_study",
+      "label": "The study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passage",
+      "label": "The passage outside Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "The house in Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_walworth",
+      "label": "Walworth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mile_end",
+      "label": "Mile End",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bermondsey",
+      "label": "Bermondsey",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_renfield_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_renfield_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attendant_testimony",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attendant_testimony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_attendant",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_attendant_testimony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attendant_testimony",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_attendant_testimony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_strategy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_strategy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_strategy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_strategy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_strategy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piccadilly_plan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piccadilly_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piccadilly_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piccadilly_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piccadilly_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piccadilly_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piccadilly_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_strategy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_piccadilly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_force_disposition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_force_disposition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_force_disposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_force_disposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_force_disposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_force_disposition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_piccadilly_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_carfax",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_walworth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_mile_end",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bermondsey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

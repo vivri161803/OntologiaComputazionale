@@ -1,0 +1,628 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina Murray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weird_sisters",
+      "label": "The three weird sisters",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_szgany",
+      "label": "The Szgany",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_slovaks",
+      "label": "The Slovaks",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_castle_dracula",
+      "label": "Castle Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jonathan_room",
+      "label": "Jonathan's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The old chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_borgo_pass",
+      "label": "Borgo Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_count_leaves_window",
+      "label": "Count leaves the castle by the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_awakens_jonathan",
+      "label": "Count awakens Jonathan and announces departure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_requests_leave",
+      "label": "Jonathan requests to leave immediately",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolves_appear",
+      "label": "Wolves appear at the castle door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_refuses_leave",
+      "label": "Jonathan refuses to leave and asks to shut the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weird_sisters_visit",
+      "label": "The weird sisters visit Jonathan's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_dawn",
+      "label": "Jonathan wakes at dawn and prepares for death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_finds_door_locked",
+      "label": "Jonathan finds the castle door locked",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_scales_wall",
+      "label": "Jonathan scales the castle wall to Count's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_finds_count_in_box",
+      "label": "Jonathan finds Count in the great box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_attacks_count",
+      "label": "Jonathan attacks Count with a shovel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_szgany_slovaks_arrive",
+      "label": "The Szgany and Slovaks arrive at the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_trapped",
+      "label": "Jonathan becomes trapped in the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_writes_lucy",
+      "label": "Mina writes to Lucy about her life and Jonathan",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jonathan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_dracula",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_wolves",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_count_leaves_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_count_leaves_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_leaves_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_awakens_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_count_awakens_jonathan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_leaves_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_awakens_jonathan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_awakens_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_awakens_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_requests_leave",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_requests_leave",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_awakens_jonathan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_requests_leave",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_requests_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_jonathan_requests_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_appear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_wolves_appear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_requests_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_appear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolves_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wolves_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_refuses_leave",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_refuses_leave",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolves_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_refuses_leave",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_refuses_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_jonathan_refuses_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weird_sisters_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_weird_sisters_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_refuses_leave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weird_sisters_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jonathan_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weird_sisters",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weird_sisters_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_weird_sisters_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_dawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_jonathan_dawn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weird_sisters_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_dawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jonathan_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_finds_door_locked",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_finds_door_locked",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_finds_door_locked",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_finds_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_scales_wall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_jonathan_scales_wall",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_finds_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_scales_wall",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_scales_wall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_finds_count_in_box",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jonathan_finds_count_in_box",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_scales_wall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_finds_count_in_box",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_finds_count_in_box",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_finds_count_in_box",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_attacks_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_jonathan_attacks_count",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_finds_count_in_box",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_attacks_count",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_attacks_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_jonathan_attacks_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_szgany_slovaks_arrive",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_szgany_slovaks_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_attacks_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_szgany_slovaks_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_szgany",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_szgany_slovaks_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slovaks",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_szgany_slovaks_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_trapped",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_trapped",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_szgany_slovaks_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_trapped",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_trapped",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_writes_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_mina_writes_lucy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_england",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_writes_lucy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_writes_lucy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_castle_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_jonathan_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_england",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

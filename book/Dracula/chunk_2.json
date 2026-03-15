@@ -1,0 +1,503 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_driver_coach",
+      "label": "The coach driver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_driver_caleche",
+      "label": "The tall man with long brown beard",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fellow_passenger",
+      "label": "Fellow passenger",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Jonathan dines on robber steak and Golden Mediasch wine before leaving Bistritz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Jonathan boards the coach at the inn in Bistritz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_warning",
+      "label": "The crowd at the inn makes signs of the cross and points fingers at Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Jonathan travels through the Mittel Land and Carpathian mountains",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_borgo_pass",
+      "label": "The coach enters the Borgo Pass as darkness falls",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_caleche_arrival",
+      "label": "A caleche with four black horses arrives and the tall driver takes Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transfer",
+      "label": "Jonathan transfers from the coach to the caleche",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_journey",
+      "label": "Jonathan travels through the night in the caleche with the mysterious driver",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_midnight",
+      "label": "Jonathan checks his watch and finds it is nearly midnight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dogs_howl",
+      "label": "Dogs begin to howl in the distance, spreading across the countryside",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The Castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bistritz",
+      "label": "Bistritz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "The inn at Bistritz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mittel_land",
+      "label": "The Mittel Land",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carpathians",
+      "label": "The Carpathian mountains",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_borgo_pass",
+      "label": "The Borgo Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road through the mountains",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_driver_caleche",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_crowd_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_borgo_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_caleche_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_transfer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_midnight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_dogs_howl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bistritz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_mittel_land",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_carpathians",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_borgo_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_crowd_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_midnight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dogs_howl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver_coach",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver_coach",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver_caleche",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_caleche_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver_caleche",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver_caleche",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fellow_passenger",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_crowd_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_borgo_pass",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_caleche_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transfer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_caleche_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_midnight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dogs_howl",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_midnight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mittel_land",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carpathians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_borgo_pass",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_caleche_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transfer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_bistritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,624 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Murray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain",
+      "label": "Poor sea captain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_swales",
+      "label": "Mr. Swales",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_dog",
+      "label": "Man with dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "Dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_curate",
+      "label": "Young curate",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_westenra",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_holmwood",
+      "label": "Mr. Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_figure",
+      "label": "Dark figure in moonlight",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "Funeral of the sea captain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swales_death",
+      "label": "Death of Mr. Swales",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_incident",
+      "label": "Dog's distress during funeral service",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_cliffs",
+      "label": "Walk to Robin Hood's Bay and back",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Supper with young curate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_sleepwalk_first",
+      "label": "Lucy's first sleepwalking episode",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_search",
+      "label": "Mina's search for Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_found",
+      "label": "Lucy found in churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Return home from churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_day_after",
+      "label": "Day after sleepwalking - outing to Mulgrave Woods",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_sleepwalk_second",
+      "label": "Lucy's second sleepwalking attempt",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "Harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "Churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seat",
+      "label": "Favourite seat on cliff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_robin_hood_bay",
+      "label": "Robin Hood's Bay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "Old-fashioned inn at Robin Hood's Bay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "House",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crescent",
+      "label": "The Crescent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_north_terrace",
+      "label": "North Terrace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_cliff",
+      "label": "West Cliff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east_cliff",
+      "label": "East Cliff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_abbey",
+      "label": "Abbey ruins",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mulgrave_woods",
+      "label": "Mulgrave Woods",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_casino_terrace",
+      "label": "Casino Terrace",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero_mina",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hero_lucy",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim_captain",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim_swales",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_mina",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_swales_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dog_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_walk_cliffs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_first",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mina_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_lucy_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_day_after",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_second",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_harbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_seat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_abbey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swales_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_cliffs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_robin_hood_bay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_first",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crescent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_day_after",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mulgrave_woods",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_second",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swales_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_cliffs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_cliffs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_first",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleepwalk_first",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_day_after",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalk_second",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_day_after",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_swales",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_swales_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_man_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_cliffs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_cliffs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_curate",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalk_first",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_figure",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_day_after",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_day_after",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalk_second",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lucy_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    }
+  ]
+}

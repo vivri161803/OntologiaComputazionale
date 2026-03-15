@@ -1,0 +1,361 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "The dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_preacher",
+      "label": "The preacher at the revival meeting",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dog_care",
+      "label": "Neville cares for the injured dog",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_death",
+      "label": "The dog dies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_burial",
+      "label": "Neville buries the dog",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virginia_death",
+      "label": "Virginia's second and final rest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wandering",
+      "label": "Neville wanders the streets in despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revival",
+      "label": "Neville is pulled into the revival meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape",
+      "label": "Neville escapes from the revival meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_analysis",
+      "label": "Neville analyzes vampire phenomena psychologically",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hunting",
+      "label": "Neville hunts for Ben Cortman",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets",
+      "label": "The streets",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tent",
+      "label": "The revival tent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_compton_boulevard",
+      "label": "Compton Boulevard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_dog",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_dog",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_cortman",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_dog_care",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dog_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_analysis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hunting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_tent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_care",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_care",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dog_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_care",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_care",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_burial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wandering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_virginia_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wandering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wandering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wandering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_preacher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_analysis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_analysis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compton_boulevard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_hunting",
+      "target_closed_value": null
+    }
+  ]
+}

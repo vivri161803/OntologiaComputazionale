@@ -1,0 +1,294 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_deadseaman",
+      "label": "Dead seaman lashed to the wheel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fisherman",
+      "label": "Old fisherman who foretold the storm",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_coastguard",
+      "label": "Coastguard on duty",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_correspondent",
+      "label": "Newspaper correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_surgeon",
+      "label": "Surgeon J. M. Caffyn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "Immense dog that sprang from the schooner",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_storm",
+      "label": "The great and sudden storm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sunset",
+      "label": "Beautiful sunset before the storm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_schooner_arrival",
+      "label": "Foreign schooner entering the harbour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_escape",
+      "label": "Dog jumping from the schooner and disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Discovery of the dead seaman at the wheel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Surgeon's examination of the dead seaman",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastcliff",
+      "label": "East Cliff churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "Whitby Harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tatehillpier",
+      "label": "Tate Hill Pier",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sea",
+      "label": "The sea near Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_schooner",
+      "label": "Foreign schooner with all sails set",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_crucifix",
+      "label": "Crucifix fastened between the seaman's hands and the wheel",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_bottle",
+      "label": "Bottle with roll of paper containing addendum to the log",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "evt_type_storm",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_sea",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_cliff",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_harbour",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_storm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_schooner_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_sunset",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_schooner_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_schooner_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_schooner_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tatehillpier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tatehillpier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_eastcliff",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_harbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_deadseaman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_coastguard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_correspondent",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_surgeon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_deadseaman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fisherman",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_schooner",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_schooner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_schooner_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_crucifix",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_bottle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    }
+  ]
+}

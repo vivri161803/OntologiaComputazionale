@@ -1,0 +1,653 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_bob",
+      "label": "Bob",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_neville",
+      "label": "Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_woman",
+      "label": "Young woman (vampire)",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hallway",
+      "label": "Hallway",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_car",
+      "label": "Car",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house_cleared_area",
+      "label": "House in cleared area",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_front_lawn",
+      "label": "Front lawn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "Garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inglewood",
+      "label": "Inglewood",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_morning_routine",
+      "label": "Bob's morning routine with shaving and washing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_check_kathy",
+      "label": "Bob checks on Kathy sleeping",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kitchen_conversation",
+      "label": "Bob and Virginia discuss illness and storms in kitchen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virginia_unwell",
+      "label": "Virginia is unwell and resting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast_preparation",
+      "label": "Bob prepares his own breakfast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mosquito_encounter",
+      "label": "Virginia encounters a mosquito",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion_insects",
+      "label": "Bob and Virginia discuss insects and mutations",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kathy_school_decision",
+      "label": "Decision made to send Kathy to school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bob_leaves_for_work",
+      "label": "Bob leaves for work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_research",
+      "label": "Neville researches garlic composition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_obtains_allyl_sulphide",
+      "label": "Neville obtains allyl sulphide in syringe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_injects_vampire",
+      "label": "Neville injects allyl sulphide into young woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_injection_fails",
+      "label": "Injection has no effect on vampire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_onion_structure",
+      "label": "Neville builds structure with onions on lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_cross_experiment",
+      "label": "Neville experiments with cross on vampire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_awakens",
+      "label": "Young woman vampire awakens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_reacts_to_cross",
+      "label": "Vampire reacts with fear to cross",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_husband",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_wife",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_child",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_experimenter",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_test_subject",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_bob",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_kathy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_young_woman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_virginia_unwell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_kitchen_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_neville_research",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_neville_obtains_allyl_sulphide",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_injection_fails",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_vampire_reacts_to_cross",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_front_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kathy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mosquito_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_research",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_injects_vampire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house_cleared_area",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_onion_structure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_front_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_cross_experiment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kathy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_routine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_check_kathy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_unwell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kitchen_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_virginia_unwell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mosquito_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_insects",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mosquito_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kathy_school_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_insects",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bob_leaves_for_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kathy_school_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_research",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bob_leaves_for_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_obtains_allyl_sulphide",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_research",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_injects_vampire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_obtains_allyl_sulphide",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_injection_fails",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_injects_vampire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_onion_structure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_injection_fails",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_cross_experiment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_onion_structure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_awakens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_cross_experiment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_reacts_to_cross",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampire_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kathy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_check_kathy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_kathy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_virginia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_unwell",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_virginia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_preparation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mosquito_encounter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_virginia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mosquito_encounter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_insects",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_insects",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_virginia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kathy_school_decision",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kathy_school_decision",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_virginia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kathy_school_decision",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_kathy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bob_leaves_for_work",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bob",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bob_leaves_for_work",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ben_cortman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_research",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_obtains_allyl_sulphide",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_injects_vampire",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_injects_vampire",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_young_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_injection_fails",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_onion_structure",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_cross_experiment",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_cross_experiment",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_young_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_awakens",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_young_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_reacts_to_cross",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_young_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_reacts_to_cross",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_neville",
+      "target_closed_value": null
+    }
+  ]
+}

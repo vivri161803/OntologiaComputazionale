@@ -1,0 +1,352 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina_harker",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_westenra",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_seward",
+      "label": "Dr. John Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bloofer_lady",
+      "label": "The Bloofer Lady",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_children_straying",
+      "label": "Children straying from home on Hampstead Heath",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_wounded",
+      "label": "Children found with wounds in the throat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_death",
+      "label": "Death of Lucy Westenra",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_bad_night",
+      "label": "Jonathan's bad night and upset",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_reading_journal",
+      "label": "Mina reading Jonathan's foreign journal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_letter",
+      "label": "Van Helsing writing to Mina Harker",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_telegram",
+      "label": "Mina sending telegram to Van Helsing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_coming_london",
+      "label": "The Count coming to London",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hampstead",
+      "label": "Hampstead",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hampstead_heath",
+      "label": "Hampstead Heath",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shooters_hill",
+      "label": "Shooter's Hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_jonathan_journal",
+      "label": "Jonathan's foreign journal",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_children_straying",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hampstead_heath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_straying",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_bloofer_lady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_straying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_wounded",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_straying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_wounded",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hampstead_heath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_wounded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jonathan_bad_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_bad_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_reading_journal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_bad_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_reading_journal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_reading_journal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_jonathan_journal",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_reading_journal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lucy_westenra",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_telegram",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_telegram",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mina_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_coming_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_coming_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_coming_london",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_van_helsing_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_van_helsing_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hampstead_heath",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_hampstead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_shooters_hill",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_hampstead_heath",
+      "target_closed_value": null
+    }
+  ]
+}

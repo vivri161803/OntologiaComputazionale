@@ -1,0 +1,457 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_watchett",
+      "label": "Mrs. Watchett",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_future_being",
+      "label": "The beautiful frail creature in purple tunic",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_explanation",
+      "label": "The Time Traveller explains the principles of the Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_completion",
+      "label": "The Time Machine is completed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_journey",
+      "label": "The first journey in the Time Machine begins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_acceleration",
+      "label": "The Time Traveller accelerates through time",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landscape_change",
+      "label": "The landscape transforms and changes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_stop",
+      "label": "The Time Traveller decides to stop the machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crash",
+      "label": "The Time Machine crashes and overturns",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_future",
+      "label": "The Time Traveller arrives in the distant future",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sphinx_discovery",
+      "label": "The Time Traveller discovers the White Sphinx",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_panic",
+      "label": "The Time Traveller experiences panic and fear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter",
+      "label": "The Time Traveller encounters the future beings",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_workshop",
+      "label": "The workshop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden with rhododendron bushes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_future_world",
+      "label": "The distant future world",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillside",
+      "label": "The hillside",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_future_buildings",
+      "label": "The great buildings of the future",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_workshop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_completion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_completion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_first_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_first_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_acceleration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_acceleration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acceleration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_acceleration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landscape_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landscape_change",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_future_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landscape_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_landscape_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_decision_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_stop",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crash",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crash",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_crash",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_future",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_future",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_future",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_future_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_future",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_future",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sphinx_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sphinx_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sphinx_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sphinx_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_sphinx_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_future_buildings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_panic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_future_being",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_future_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_workshop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_future_world",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_future_buildings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

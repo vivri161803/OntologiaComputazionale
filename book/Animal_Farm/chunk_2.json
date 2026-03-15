@@ -1,0 +1,773 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_major",
+      "label": "Old Major",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mollie",
+      "label": "Mollie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moses",
+      "label": "Moses",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Mr. Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_jones",
+      "label": "Mrs. Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_orchard",
+      "label": "the orchard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farm",
+      "label": "Manor Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barn",
+      "label": "the barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_store_shed",
+      "label": "the store-shed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "the farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hayfield",
+      "label": "the hayfield",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gate",
+      "label": "the five-barred gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barn_wall",
+      "label": "the end wall of the big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_major_death",
+      "label": "Old Major dies peacefully in his sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_secret_activity",
+      "label": "Three months of secret activity and teaching",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_secret_meetings",
+      "label": "Secret meetings in the barn to expound Animalism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_questions",
+      "label": "Mollie questions Snowball about sugar and ribbons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_moses_lies",
+      "label": "Moses spreads lies about Sugarcandy Mountain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jones_drunk",
+      "label": "Mr. Jones gets drunk at the Red Lion on Midsummer's Eve",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animals_unfed",
+      "label": "Animals remain unfed while Jones sleeps",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rebellion",
+      "label": "The Rebellion: animals attack Jones and his men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jones_expelled",
+      "label": "Jones and his men are expelled from the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_destruction",
+      "label": "Animals destroy symbols of Jones's reign",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_celebration",
+      "label": "Animals celebrate and sing 'Beasts of England'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farm_inspection",
+      "label": "Animals inspect the farm at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farmhouse_exploration",
+      "label": "Animals explore the farmhouse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_ribbon",
+      "label": "Mollie is found with a blue ribbon in the farmhouse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_name_change",
+      "label": "The farm is renamed from Manor Farm to Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_commandments",
+      "label": "The Seven Commandments are written on the barn wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_milking",
+      "label": "The pigs milk the cows",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_milk_disappears",
+      "label": "The milk disappears while animals work in the hayfield",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_false_hero",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_victory",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_major_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_major_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_orchard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_secret_activity",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_secret_activity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_major_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_secret_meetings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_secret_meetings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_secret_meetings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_secret_activity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_questions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_mollie_questions",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_questions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_secret_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mollie_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moses_lies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_moses_lies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moses",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_moses_lies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_drunk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_jones_drunk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_moses_lies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jones_drunk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_unfed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_animals_unfed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_drunk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_rebellion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_store_shed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animals_unfed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_expelled",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_jones_expelled",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jones_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moses",
+      "edge_label": "PARTECIPA_COME_TRADITORE",
+      "target_open_id": "evt_jones_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farm_inspection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_farm_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farmhouse_exploration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_farmhouse_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farmhouse_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farm_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmhouse_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmhouse_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_ribbon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_mollie_ribbon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_ribbon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farmhouse_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_ribbon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_ribbon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_name_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_name_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandments",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_commandments",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn_wall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandments",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_name_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_commandments",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_commandments",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_milking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_milking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_commandments",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_milking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_milking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_milk_disappears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_milk_disappears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_milking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_orchard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_store_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_hayfield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "loc_barn_wall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_moses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    }
+  ]
+}

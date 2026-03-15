@@ -1,0 +1,416 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mrs. Harker (Mina)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Mr. Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dracula",
+      "label": "Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_seward_house",
+      "label": "Dr. Seward's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dracula_house",
+      "label": "The house which Dracula had bought",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Godalming and Morris arrive and study the diaries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea",
+      "label": "Mrs. Harker gives tea to the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_renfield",
+      "label": "Mrs. Harker visits Mr. Renfield in his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_conversation",
+      "label": "Renfield engages in philosophical conversation with Mrs. Harker and Dr. Seward",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_station",
+      "label": "Dr. Seward goes to the station to meet Van Helsing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_arrival",
+      "label": "Van Helsing arrives at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_house_discovery",
+      "label": "Dr. Seward tells Van Helsing that Dracula's house is next to his own",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_records_review",
+      "label": "Van Helsing reviews the compiled records and diaries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_preparation",
+      "label": "The group prepares for their meeting at nine o'clock to plan their strategy",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_tea",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_renfield",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_renfield",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_renfield",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renfield_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_renfield_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_house_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_house_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_house_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dracula_house_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_records_review",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dracula_house_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_records_review",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_records_review",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_records_review",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_records_review",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_records_review",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "loc_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

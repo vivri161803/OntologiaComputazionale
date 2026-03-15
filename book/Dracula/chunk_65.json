@@ -1,0 +1,567 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina_harker",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lord_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey_morris",
+      "label": "Mr. Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_meeting_report",
+      "label": "Meeting for report at 5 P.M.",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery_ship",
+      "label": "Discovery of the Czarina Catherine at Lloyd's",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_at_wharf",
+      "label": "Count Dracula appears at Doolittle's Wharf",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_box_loading",
+      "label": "Loading of the great box onto the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fog_appearance",
+      "label": "Dense fog envelops the Czarina Catherine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_departure",
+      "label": "The Czarina Catherine sails out on the ebb tide",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_speech",
+      "label": "Van Helsing's passionate speech about the necessity of pursuit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast_meeting",
+      "label": "Early breakfast meeting the next morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_reflection",
+      "label": "Mina's reflection on the red mark on her forehead",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_meeting_room",
+      "label": "Meeting room for the report",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lloyds",
+      "label": "Lloyd's shipping office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_doolittle_wharf",
+      "label": "Doolittle's Wharf",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_czarina_catherine",
+      "label": "The Czarina Catherine ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_black_sea",
+      "label": "The Black Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_danube",
+      "label": "The Danube",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_study",
+      "label": "Dr. Seward's study",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_great_box",
+      "label": "The great box containing Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ship_captain",
+      "label": "The captain of the Czarina Catherine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_office_man",
+      "label": "The man in the office at Doolittle's Wharf",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ristics",
+      "label": "Ristics, the agent at Varna",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_meeting_report",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_meeting_report",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meeting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey_morris",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovery_ship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lloyds",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_ship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lord_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_discovery_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_at_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dracula_at_wharf",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doolittle_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_at_wharf",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_at_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_office_man",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dracula_at_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_loading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_box_loading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doolittle_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_box_loading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dracula_at_wharf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_box_loading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ship_captain",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_box_loading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fog_appearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_fog_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_czarina_catherine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fog_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_box_loading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fog_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_ship_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_czarina_catherine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fog_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ship_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ship_captain",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ship_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_van_helsing_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_van_helsing_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_breakfast_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_breakfast_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mina_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_doolittle_wharf",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_czarina_catherine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_meeting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_black_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_danube",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mina_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_great_box",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_transylvania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_great_box",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator (female scholar)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor_von_x",
+      "label": "Professor von X",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_johnson",
+      "label": "Dr Johnson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goethe",
+      "label": "Goethe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mussolini",
+      "label": "Mussolini",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rebecca_west",
+      "label": "Rebecca West",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_z",
+      "label": "Z (humane, modest man)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cavalry_officer",
+      "label": "Cavalry officer (imagined)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor_wife",
+      "label": "Professor von X's wife (imagined)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_research_morning",
+      "label": "Morning of research at the library",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drawing_professor",
+      "label": "Drawing the angry professor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization_anger",
+      "label": "Realization of anger in the sketch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch_reflection",
+      "label": "Lunch and reflection on patriarchy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_newspaper",
+      "label": "Reading the evening newspaper",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_z_exclamation",
+      "label": "Z's exclamation about Rebecca West",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paying_bill",
+      "label": "Paying the restaurant bill",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_library",
+      "label": "Library (with central desk and colonnade)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_restaurant",
+      "label": "Small restaurant near the British Museum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "Street outside the restaurant",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_books_on_women",
+      "label": "Books about women and their inferiority",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_looking_glass",
+      "label": "The looking-glass (metaphor for women's role)",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_scholar",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_research",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_reflection",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_research_morning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research_morning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_drawing_professor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drawing_professor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drawing_professor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor_von_x",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_drawing_professor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_anger",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drawing_professor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_anger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_restaurant",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_reading_newspaper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_newspaper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_newspaper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_newspaper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_z_exclamation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_newspaper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_z_exclamation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_z",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_z_exclamation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rebecca_west",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_z_exclamation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paying_bill",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paying_bill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paying_bill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paying_bill",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor_von_x",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "obj_books_on_women",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_books_on_women",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_johnson",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_goethe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mussolini",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_research_morning",
+      "target_closed_value": null
+    }
+  ]
+}

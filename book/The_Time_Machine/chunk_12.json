@@ -1,0 +1,396 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morlocks",
+      "label": "The Morlocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eloi",
+      "label": "The Eloi",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_loss_time_machine",
+      "label": "Loss of the Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery_morlocks",
+      "label": "Discovery of the Morlocks' true nature",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_dark_nights",
+      "label": "Weena's remarks about the Dark Nights",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_palace",
+      "label": "Journey towards the Palace of Green Porcelain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_vigil",
+      "label": "Night vigil on the open hill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_moonrise",
+      "label": "Moonrise and dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization_meat",
+      "label": "Realization about the meat seen in the Under World",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_planning_escape",
+      "label": "Planning escape and refuge",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_thames_valley",
+      "label": "Valley of the Thames",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace_green_porcelain",
+      "label": "Palace of Green Porcelain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wimbledon",
+      "label": "Wimbledon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wood",
+      "label": "Thick wood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hill",
+      "label": "Open hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_under_world",
+      "label": "Under World",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_white_sphinx",
+      "label": "White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_flowers",
+      "label": "Two withered flowers",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_loss_time_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_discovery_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_weena_dark_nights",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_journey_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_night_vigil",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_planning_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_realization_meat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_palace_green_porcelain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_hill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_under_world",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_loss_time_machine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery_morlocks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_loss_time_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_dark_nights",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_palace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_dark_nights",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_vigil",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moonrise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_meat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_moonrise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization_meat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_discovery_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_journey_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_night_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization_meat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_eloi",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_realization_meat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_planning_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_palace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_thames_valley",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_palace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wimbledon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_vigil",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization_meat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace_green_porcelain",
+      "target_closed_value": null
+    }
+  ]
+}

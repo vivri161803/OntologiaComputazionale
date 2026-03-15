@@ -1,0 +1,558 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_checking_windows",
+      "label": "Robert checks the windows and boards of his house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_checking_hothouse",
+      "label": "Robert checks the hothouse and water tank in the backyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_repairing_plank",
+      "label": "Robert repairs a loose plank on the shutter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collecting_garlic",
+      "label": "Robert collects garlic bulbs from the hothouse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparing_garlic",
+      "label": "Robert prepares garlic cloves and makes necklaces",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hanging_garlic",
+      "label": "Robert hangs garlic necklaces over the window boarding",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_making_stakes",
+      "label": "Robert makes wooden stakes from doweling",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparing_supper",
+      "label": "Robert prepares his supper of lamb chops and vegetables",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_locking_house",
+      "label": "Robert locks and bolts the front door as darkness falls",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_creatures_arrival",
+      "label": "The creatures arrive at the house at nightfall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_shouting",
+      "label": "Ben Cortman shouts at Robert to come out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_and_listening",
+      "label": "Robert reads a physiology text while listening to music",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_creatures_attacking",
+      "label": "The creatures attack the house, throwing rocks and making noise",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_going_to_bed",
+      "label": "Robert puts in ear plugs and goes to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cimarron_street",
+      "label": "Cimarron Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_neville_house",
+      "label": "Robert Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hothouse",
+      "label": "The hothouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Robert's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_front_lawn",
+      "label": "The front lawn",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_creatures",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_checking_windows",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_checking_hothouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_repairing_plank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_collecting_garlic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_preparing_garlic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_hanging_garlic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_making_stakes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_preparing_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_locking_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_creatures_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_cortman_shouting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_creatures_attacking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_reading_and_listening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_checking_windows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_checking_hothouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repairing_plank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collecting_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparing_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hanging_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_making_stakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparing_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_locking_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_creatures_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_shouting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_shouting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_creatures_attacking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_and_listening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_going_to_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_checking_windows",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_checking_hothouse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hothouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repairing_plank",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_front_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collecting_garlic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hothouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparing_garlic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hanging_garlic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_making_stakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparing_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_locking_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creatures_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_shouting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creatures_attacking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_and_listening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_to_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_checking_windows",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_checking_hothouse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_checking_windows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repairing_plank",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_checking_hothouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collecting_garlic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_repairing_plank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparing_garlic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collecting_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hanging_garlic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparing_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_making_stakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hanging_garlic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparing_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_making_stakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_locking_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparing_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creatures_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_locking_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_shouting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_creatures_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creatures_attacking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_shouting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_and_listening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_creatures_attacking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_going_to_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_and_listening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_neville_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_neville_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hothouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_front_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_cimarron_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

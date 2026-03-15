@@ -1,0 +1,370 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_animals",
+      "label": "The animals",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_driver",
+      "label": "The man on the box",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_horses_van",
+      "label": "The two horses which drew the van",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_boxer_removal",
+      "label": "Boxer is taken away in the van",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_benjamin_warning",
+      "label": "Benjamin warns the animals about the van",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_death_announcement",
+      "label": "Squealer announces Boxer's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squealer_explanation",
+      "label": "Squealer explains the van's markings",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_oration",
+      "label": "Napoleon delivers an oration in Boxer's honour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_memorial_banquet",
+      "label": "The pigs hold a memorial banquet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_kicking",
+      "label": "Boxer tries to kick his way out of the van",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clover_pursuit",
+      "label": "Clover chases the van",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_van",
+      "label": "The van",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "The hospital at Willingdon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "The farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_boxer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_napoleon",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_benjamin",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_animals",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_boxer_removal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_boxer_removal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_driver",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_benjamin_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_benjamin_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_benjamin_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_benjamin_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clover_pursuit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clover_pursuit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_kicking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_kicking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_death_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_boxer_death_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_death_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_boxer_death_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_death_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_oration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_napoleon_oration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_oration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_napoleon_oration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_memorial_banquet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_memorial_banquet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_oration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_memorial_banquet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_van",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

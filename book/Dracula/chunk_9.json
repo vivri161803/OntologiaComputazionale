@@ -1,0 +1,930 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (Jonathan Harker)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peter_hawkins",
+      "label": "Peter Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_szgany",
+      "label": "The Szgany",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_slovaks",
+      "label": "The Slovaks",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ghostly_women",
+      "label": "Three ghostly women",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_in_courtyard",
+      "label": "Woman in the courtyard",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letters_thrown",
+      "label": "Narrator throws letters through the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_arrives",
+      "label": "The Count arrives and discovers the letters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_burned",
+      "label": "The Count burns the unsigned letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_locked",
+      "label": "The narrator discovers the door is locked",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_sleeps",
+      "label": "The narrator sleeps on the sofa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_papers_missing",
+      "label": "The narrator discovers all papers and notes are missing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clothes_missing",
+      "label": "The narrator discovers his traveling clothes are missing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wagons_arrive",
+      "label": "Two great leiter-wagons arrive at the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_calls_slovaks",
+      "label": "The narrator calls out to the Slovaks from the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxes_unloaded",
+      "label": "The great boxes are unloaded and packed in the yard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_emerges_window",
+      "label": "The Count emerges from his window wearing the narrator's clothes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_watches_moonlight",
+      "label": "The narrator watches floating specks in the moonlight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phantom_shapes",
+      "label": "The narrator sees phantom shapes materializing from moonbeams",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_flees",
+      "label": "The narrator flees screaming from the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_cries_out",
+      "label": "A woman cries out in the courtyard demanding her child",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_calls_wolves",
+      "label": "The Count calls from the tower and wolves attack the woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_climbs_window",
+      "label": "The narrator climbs out through the Count's window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_explores_room",
+      "label": "The narrator explores the Count's empty room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_descends_stairs",
+      "label": "The narrator descends the circular stairway",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chapel_discovery",
+      "label": "The narrator discovers the ruined chapel with wooden boxes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_found",
+      "label": "The narrator finds the Count lying in a box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_returns",
+      "label": "The narrator returns to his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_window",
+      "label": "The narrator's window",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_study",
+      "label": "The study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_count_room",
+      "label": "The Count's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_narrator_room",
+      "label": "The narrator's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_courtyard",
+      "label": "The courtyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_wall",
+      "label": "The castle wall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The ruined chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vault",
+      "label": "The vault",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_letters",
+      "label": "Letters",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_gold_piece",
+      "label": "Gold piece",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_boxes",
+      "label": "Great wooden boxes",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_letters_thrown",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_letters_thrown",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letters_thrown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_letters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letters_thrown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_count_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letters_thrown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_burned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_letter_burned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_burned",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_letters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letter_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_locked",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrator_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrator_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_missing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_papers_missing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_papers_missing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrator_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_papers_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clothes_missing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_clothes_missing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_papers_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clothes_missing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrator_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_clothes_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wagons_arrive",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_wagons_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clothes_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wagons_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slovaks",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wagons_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_boxes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wagons_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_calls_slovaks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_narrator_calls_slovaks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wagons_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_calls_slovaks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_calls_slovaks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slovaks",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_narrator_calls_slovaks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxes_unloaded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_boxes_unloaded",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_calls_slovaks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxes_unloaded",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slovaks",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxes_unloaded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_boxes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_boxes_unloaded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_emerges_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_emerges_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxes_unloaded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_emerges_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_count_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_emerges_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_watches_moonlight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_watches_moonlight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_emerges_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_watches_moonlight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_watches_moonlight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phantom_shapes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_phantom_shapes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_watches_moonlight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phantom_shapes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phantom_shapes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ghostly_women",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_phantom_shapes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_flees",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_narrator_flees",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phantom_shapes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_flees",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_flees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ghostly_women",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_narrator_flees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_cries_out",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_cries_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_flees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_cries_out",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman_in_courtyard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_cries_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_woman_cries_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_calls_wolves",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_count_calls_wolves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_cries_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_calls_wolves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_calls_wolves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman_in_courtyard",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_calls_wolves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_climbs_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_climbs_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_calls_wolves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_climbs_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_wall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_climbs_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_explores_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_narrator_explores_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_climbs_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_explores_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_count_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_explores_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_descends_stairs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_descends_stairs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_explores_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_descends_stairs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_count_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_descends_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chapel_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_chapel_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_descends_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chapel_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chapel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chapel_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_boxes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chapel_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chapel_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_returns",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_returns",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_returns",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrator_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "loc_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_count_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_narrator_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_courtyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle_wall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_chapel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_vault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

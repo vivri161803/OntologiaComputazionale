@@ -1,0 +1,393 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waking_woman",
+      "label": "Robert wakes the woman and discovers a golden cross around her neck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Robert interrogates Ruth about her origins and her husband's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garlic_test",
+      "label": "Robert forces Ruth to smell garlic to test if she is infected",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_retching",
+      "label": "Ruth retches and vomits from the garlic smell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_escape_attempt",
+      "label": "Ruth attempts to escape from Robert's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper_conversation",
+      "label": "Robert and Ruth have supper and discuss the vampire plague",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blood_test_agreement",
+      "label": "Ruth agrees to let Robert take a blood sample in the morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_evening_together",
+      "label": "Robert and Ruth spend the evening listening to music and drinking wine",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom where Ruth was sleeping",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Robert's kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "The bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Robert's living room with mural",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inglewood",
+      "label": "Inglewood",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_waking_woman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_waking_woman",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_waking_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garlic_test",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_garlic_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garlic_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garlic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_garlic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_retching",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ruth_retching",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garlic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_retching",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_retching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_escape_attempt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ruth_escape_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_retching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_escape_attempt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_escape_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ruth_escape_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_supper_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_escape_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_supper_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_test_agreement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_blood_test_agreement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_test_agreement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blood_test_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_blood_test_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_evening_together",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_evening_together",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blood_test_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_evening_together",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_evening_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_evening_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_inglewood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

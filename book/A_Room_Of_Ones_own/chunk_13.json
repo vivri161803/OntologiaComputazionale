@@ -1,0 +1,269 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lady_bessborough",
+      "label": "Lady Bessborough",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_florence_nightingale",
+      "label": "Florence Nightingale",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_keats",
+      "label": "Keats",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tennyson",
+      "label": "Tennyson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_donne",
+      "label": "Donne",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_jonson",
+      "label": "Ben Jonson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_milton",
+      "label": "Milton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_weeping",
+      "label": "Weeping over opinions and beliefs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nightingale_agony",
+      "label": "Florence Nightingale shrieking in agony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_keats_suffering",
+      "label": "Keats suffering from criticism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tennyson_suffering",
+      "label": "Tennyson suffering from criticism",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_creative_work",
+      "label": "The achievement of creative work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shakespeare_creation",
+      "label": "Shakespeare's creation of poetry",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_college",
+      "label": "College",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_rooms",
+      "label": "Sitting-rooms or bed-sitting-rooms",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tombstone",
+      "label": "Keats's tombstone",
+      "node_type": "Location"
+    },
+    {
+      "id": "work_cassandra",
+      "label": "CASSANDRA by Florence Nightingale",
+      "node_type": "Event"
+    },
+    {
+      "id": "work_antony_cleopatra",
+      "label": "ANTONY AND CLEOPATRA",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_artist",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_suffering",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_creation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_interior",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_lady_bessborough",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_florence_nightingale",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nightingale_agony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nightingale_agony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_keats",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_keats_suffering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_keats_suffering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_tennyson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tennyson_suffering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennyson_suffering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shakespeare_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_creative_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weeping",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_weeping",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_college",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_keats_suffering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tombstone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "work_cassandra",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "work_antony_cleopatra",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_college",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_sitting_rooms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_keats_suffering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weeping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennyson_suffering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_keats_suffering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creative_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tennyson_suffering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shakespeare_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_creative_work",
+      "target_closed_value": null
+    }
+  ]
+}

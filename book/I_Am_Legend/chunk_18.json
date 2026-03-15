@@ -1,0 +1,485 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_men",
+      "label": "Dark-suited men",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_ruth_strikes",
+      "label": "Ruth strikes Robert with a mallet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_wakes",
+      "label": "Robert wakes up in pain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_leaves",
+      "label": "Ruth leaves the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_reads_letter",
+      "label": "Robert reads Ruth's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_discovers_pill",
+      "label": "Robert discovers the amber pill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_realizes_mutation",
+      "label": "Robert realizes bacteria can mutate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dark_men_arrive",
+      "label": "Dark-suited men arrive by night with vehicles and weapons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampires_killed",
+      "label": "Seven vampires are killed with pikes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_spotted",
+      "label": "Ben Cortman is spotted on the roof",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_shot",
+      "label": "Ben Cortman is shot and killed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_attacked",
+      "label": "Dark men attack Robert's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robert_armed",
+      "label": "Robert arms himself with guns",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Robert's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "Cimarron Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_roof",
+      "label": "Roof across the street",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_ruth",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_ruth",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dark_men",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_ruth_strikes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ruth_strikes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_strikes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_strikes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_strikes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_wakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_reads_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_reads_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_robert_reads_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_reads_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_robert_reads_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_reads_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_discovers_pill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_discovers_pill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_robert_discovers_pill",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_discovers_pill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_discovers_pill",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_realizes_mutation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_realizes_mutation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_robert_realizes_mutation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_realizes_mutation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_realizes_mutation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dark_men_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dark_men_arrive",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_dark_men_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dark_men_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dark_men_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampires_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampires_killed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_vampires_killed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vampires_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampires_killed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_spotted",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_roof",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_spotted",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_cortman_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_roof",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cortman_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_attacked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_attacked",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_house_attacked",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_men",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_attacked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_house_attacked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_attacked",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robert_armed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robert_armed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_robert_armed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_robert_armed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_roof",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

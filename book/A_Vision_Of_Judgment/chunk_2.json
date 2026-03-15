@@ -1,0 +1,490 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_young_lieutenant",
+      "label": "The young lieutenant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_war_correspondent",
+      "label": "The war correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_enemy_soldier",
+      "label": "One man of the enemy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_defender_soldiers",
+      "label": "The defender soldiers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_invader_troops",
+      "label": "The invader troops",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_observation",
+      "label": "The young lieutenant and war correspondent observe the enemy lines through field-glass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shot",
+      "label": "A shot is fired at the observers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_declaration",
+      "label": "Declaration of war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_invader_advance",
+      "label": "The invader crosses the frontier in parallel columns",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_defender_resistance",
+      "label": "The defender horsemen hold up and pepper the invader",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prepared_lines",
+      "label": "The invader reaches the defender's prepared lines of defence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_trench_digging",
+      "label": "The invader begins grubbing trenches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_panic",
+      "label": "The defender soldiers sent out panic and blaze away at nothing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_something_seen",
+      "label": "The young lieutenant thinks he sees something black behind trees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gun_fired",
+      "label": "One of the big guns fires at the trees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_soldiers_pass",
+      "label": "A file of defender soldiers passes the war correspondent",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_enemy_lines",
+      "label": "The enemy's lines",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_frontier",
+      "label": "The frontier",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_capital",
+      "label": "The capital",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trenches",
+      "label": "The trenches",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trees",
+      "label": "A clump of trees",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "The camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_observation_point",
+      "label": "The observation point beside the war correspondent and young lieutenant",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe_lieutenant",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_eroe_correspondent",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_invader",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_defender",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_young_lieutenant",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_invader_troops",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_defender_soldiers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_war_declaration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_invader_advance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_defender_resistance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_prepared_lines",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_trench_digging",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_night_panic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_something_seen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_gun_fired",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_soldiers_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_enemy_lines",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_trenches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_observation_point",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_young_lieutenant",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy_soldier",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_lieutenant",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_invader_troops",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_invader_advance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defender_soldiers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_defender_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_invader_troops",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_defender_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_invader_troops",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_prepared_lines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_invader_troops",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trench_digging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defender_soldiers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_lieutenant",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_something_seen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defender_soldiers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gun_fired",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_soldiers_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defender_soldiers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_soldiers_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_observation_point",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_observation_point",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_invader_advance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_frontier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_defender_resistance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_frontier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prepared_lines",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trenches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trench_digging",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trenches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_panic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trenches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_something_seen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gun_fired",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_soldiers_pass",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_declaration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_invader_advance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_war_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_defender_resistance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_invader_advance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prepared_lines",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_defender_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trench_digging",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_prepared_lines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_panic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trench_digging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_something_seen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gun_fired",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_something_seen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_soldiers_pass",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gun_fired",
+      "target_closed_value": null
+    }
+  ]
+}

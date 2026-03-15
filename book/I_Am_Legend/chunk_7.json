@@ -1,0 +1,515 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire_woman",
+      "label": "The vampire woman in the chair",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampire_woman_green_house",
+      "label": "The woman in the small green and white house",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Neville interrogates the vampire woman with a cross",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_expelled",
+      "label": "Neville throws the vampire woman out the front door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_soil_experiment",
+      "label": "Neville examines soil and contemplates vampire legends",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_water_trough_test",
+      "label": "Neville constructs a water trough to test vampire behavior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_appears",
+      "label": "Ben Cortman appears on the lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_discovers_water",
+      "label": "Cortman discovers the water trough and grins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_shoots_cortman",
+      "label": "Neville shoots Cortman multiple times",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_laughs",
+      "label": "Neville realizes Cortman resembles Oliver Hardy and laughs uncontrollably",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stake_experiments",
+      "label": "Neville experiments with driving stakes into vampires",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_dissolution",
+      "label": "The woman in the green house dissolves when staked",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virginia_death",
+      "label": "Virginia's heart stops",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kathy_fire",
+      "label": "Kathy is taken away during a fire",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cimarron_street",
+      "label": "Cimarron Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_green_white_house",
+      "label": "The small green and white house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_vampire",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_woman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_expelled",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_vampire_expelled",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_expelled",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vampire_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_vampire_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_soil_experiment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_neville_soil_experiment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampire_expelled",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_soil_experiment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cimarron_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_soil_experiment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_water_trough_test",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_water_trough_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_soil_experiment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_water_trough_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_water_trough_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cortman_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_water_trough_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cimarron_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_discovers_water",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cortman_discovers_water",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_discovers_water",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cimarron_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_discovers_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_shoots_cortman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_neville_shoots_cortman",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_discovers_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_shoots_cortman",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_shoots_cortman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_neville_shoots_cortman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_laughs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_neville_laughs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_shoots_cortman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_laughs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_laughs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stake_experiments",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_stake_experiments",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_laughs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stake_experiments",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_dissolution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_woman_dissolution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stake_experiments",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_dissolution",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_green_white_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_dissolution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampire_woman_green_house",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_woman_dissolution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_virginia_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_dissolution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_virginia_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_virginia_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kathy_fire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_kathy_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_virginia_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kathy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kathy_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kathy_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cimarron_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_green_white_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

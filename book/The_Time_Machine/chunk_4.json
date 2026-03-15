@@ -1,0 +1,457 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_filby",
+      "label": "Filby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_medical_man",
+      "label": "The Medical Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_editor",
+      "label": "The Editor of a well-known daily paper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_psychologist",
+      "label": "The Psychologist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_journalist",
+      "label": "The Journalist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_silent_man",
+      "label": "The Silent Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_blank",
+      "label": "Blank",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_first_dinner",
+      "label": "The first Thursday dinner where the Time Traveller shows the model",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_model_demonstration",
+      "label": "Demonstration of the Time Machine model",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_friday_meeting",
+      "label": "Meeting with the Medical Man at the Linnaean on Friday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_dinner",
+      "label": "The second Thursday dinner at Richmond",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_traveller_arrival",
+      "label": "The Time Traveller's arrival at the second dinner, disheveled and injured",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_traveller_departure",
+      "label": "The Time Traveller leaves to wash and dress",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_traveller_return",
+      "label": "The Time Traveller returns dressed and joins dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_move_to_smoking_room",
+      "label": "The group moves to the smoking-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_travel_journey",
+      "label": "The Time Traveller's eight-day journey through time",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing-room at Richmond",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dinner_table",
+      "label": "The dinner table",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_smoking_room",
+      "label": "The smoking-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The Time Traveller's laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_linnaean",
+      "label": "The Linnaean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tubingen",
+      "label": "Tubingen",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine_model",
+      "label": "The Time Machine model",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_falso_eroe",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_first_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_model_demonstration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_first_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_second_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_time_traveller_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friday_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_friday_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_traveller_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_to_smoking_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_traveller_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_travel_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_journalist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_silent_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_travel_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_time_travel_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_time_traveller_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_smoking_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_move_to_smoking_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_smoking_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_journalist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_silent_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_blank",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_second_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_friday_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_friday_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friday_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_linnaean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine_model",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_model_demonstration",
+      "target_closed_value": null
+    }
+  ]
+}

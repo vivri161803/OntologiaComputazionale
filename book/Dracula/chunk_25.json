@@ -1,0 +1,460 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_thomas_bilder",
+      "label": "Thomas Bilder",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_interviewer",
+      "label": "The Interviewer from Pall Mall Gazette",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_tom",
+      "label": "Mrs. Tom (Thomas Bilder's wife)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tall_man",
+      "label": "Tall thin man with hook nose and pointed beard",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bersicker",
+      "label": "Bersicker the wolf",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gardener",
+      "label": "The gardener from the Zoological Gardens",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward_patient",
+      "label": "Dr. Seward's patient",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interview",
+      "label": "Interview with Thomas Bilder at the Zoological Gardens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolf_disturbance",
+      "label": "Bersicker becomes agitated at the sight of the tall man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tall_man_interaction",
+      "label": "The tall man strokes Bersicker's ears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolf_escape",
+      "label": "Bersicker escapes from his cage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolf_howling",
+      "label": "The wolves howl in the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolf_return",
+      "label": "Bersicker returns to the Zoological Gardens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_attack",
+      "label": "Dr. Seward's patient attacks him with a dinner knife",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_patient_blood_licking",
+      "label": "The patient licks Dr. Seward's blood from the floor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_telegram",
+      "label": "Van Helsing sends telegram to Seward",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_zoological_gardens",
+      "label": "Zoological Gardens",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bilder_cottage",
+      "label": "Thomas Bilder's cottage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wolf_cage",
+      "label": "Bersicker's cage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_park",
+      "label": "The Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_study",
+      "label": "Dr. Seward's study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillingdam",
+      "label": "Hillingdam",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_antwerp",
+      "label": "Antwerp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax, Sussex",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_interviewer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_keeper",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_tall_man",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_wolf",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_van_helsing",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_interview",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bilder_cottage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_interviewer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thomas_bilder",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_tom",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_disturbance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zoological_gardens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_disturbance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_bersicker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolf_disturbance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tall_man",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_wolf_disturbance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tall_man_interaction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zoological_gardens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tall_man_interaction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolf_disturbance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tall_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tall_man_interaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bersicker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tall_man_interaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_howling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zoological_gardens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_howling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tall_man_interaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_howling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_bersicker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolf_howling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wolf_cage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolf_howling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_bersicker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolf_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bilder_cottage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolf_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolf_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "char_bersicker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolf_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thomas_bilder",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_wolf_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_seward_patient",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_seward_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_blood_licking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_blood_licking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_patient_blood_licking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_seward_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_patient_blood_licking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_telegram",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_antwerp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_telegram",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_van_helsing_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bilder_cottage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_zoological_gardens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_seward_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

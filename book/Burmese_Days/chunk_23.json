@@ -1,0 +1,542 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen_mrs",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen_mr",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_francis",
+      "label": "Mr Francis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_samuel",
+      "label": "Mr Samuel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eurasian_overseer",
+      "label": "Eurasian overseer",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_ten_days_together",
+      "label": "Flory and Elizabeth spend ten days together in Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_timber_extraction",
+      "label": "Timber-extraction work in full swing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elephant_illness",
+      "label": "One of the elephants becomes ill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_railway_breakdown",
+      "label": "Engine of light railway breaks down",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coolies_desert",
+      "label": "Fifteen coolies desert",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daily_meetings",
+      "label": "Flory and Elizabeth meet every day, morning and evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tennis_games",
+      "label": "They play tennis at the Club each evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bridge_playing",
+      "label": "They play bridge and talk in the lounge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_burmese",
+      "label": "Flory praises Burmese customs and character to Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burmese_learning_attempt",
+      "label": "Flory tries to induce Elizabeth to learn Burmese",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_burmans_road",
+      "label": "A knot of Burmans passes them on the road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_eurasians_club",
+      "label": "Flory is cornered by Francis and Samuel at the Club gate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_snubs_eurasians",
+      "label": "Elizabeth snubs the Eurasians and walks away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tennis_postponed",
+      "label": "Tennis game is postponed due to Elizabeth's shock about Eurasians",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_lounge",
+      "label": "Club lounge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tennis_court",
+      "label": "Tennis court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club_gate",
+      "label": "Club gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "The jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bazaar",
+      "label": "The bazaar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_headquarters",
+      "label": "Headquarters",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_elizabeth",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_elizabeth",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_ten_days_together",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_timber_extraction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_conversation_burmese",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_encounter_eurasians_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_club_lounge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ten_days_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ten_days_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daily_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_daily_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tennis_games",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tennis_games",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen_mrs",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_tennis_games",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen_mr",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_tennis_games",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bridge_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bridge_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen_mrs",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_bridge_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lackersteen_mr",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_bridge_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_burmese",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation_burmese",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burmese_learning_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_burmese_learning_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_burmans_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_encounter_burmans_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_encounter_eurasians_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_francis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_eurasians_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_samuel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_eurasians_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_snubs_eurasians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_francis",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_elizabeth_snubs_eurasians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_samuel",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_elizabeth_snubs_eurasians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ten_days_together",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daily_meetings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennis_games",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tennis_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bridge_playing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_lounge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_burmans_road",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_eurasians_club",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_snubs_eurasians",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_timber_extraction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ten_days_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elephant_illness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_timber_extraction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_railway_breakdown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elephant_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coolies_desert",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_railway_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daily_meetings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ten_days_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennis_games",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daily_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bridge_playing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tennis_games",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_burmese",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bridge_playing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burmese_learning_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_burmese",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_burmans_road",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burmese_learning_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_eurasians_club",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_burmans_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_snubs_eurasians",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_eurasians_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennis_postponed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_snubs_eurasians",
+      "target_closed_value": null
+    }
+  ]
+}

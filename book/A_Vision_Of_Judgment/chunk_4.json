@@ -1,0 +1,341 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_war_correspondent",
+      "label": "War correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_artist",
+      "label": "Artist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lean_man",
+      "label": "Lean man",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_crossing_trench",
+      "label": "The iron machine crosses the trench",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_machine_advances",
+      "label": "The machine advances up the slope towards the observer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_men_fire",
+      "label": "Men fire furiously at the machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_retreat",
+      "label": "War correspondent and artist retreat along the trench",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_panic_crowd",
+      "label": "Furious crowd fights to get into the transverse zigzag ditch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_monster",
+      "label": "Another machine wins to the second trench",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_scramble_retreat",
+      "label": "War correspondent scrambles through trenches and sprints across open ground",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_halt_ridge",
+      "label": "War correspondent halts on the ridge in a knot of scrub",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_machines_advance_line",
+      "label": "Fourteen iron machines advance across the trench line methodically shooting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gun_fire",
+      "label": "Gun fire erupts from far away to the left",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_decision_stay",
+      "label": "War correspondent decides to stay",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_trench",
+      "label": "The trench",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_slope",
+      "label": "The gentle slope",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_narrow_passage",
+      "label": "Narrow passage crowded with men",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zigzag_ditch",
+      "label": "Transverse zigzag ditch",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ridge",
+      "label": "The ridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_plain",
+      "label": "The plain below the ridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camps",
+      "label": "Army camps on the north side",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trench_defences",
+      "label": "Elaborate lacework of trenches and defences on the southern side",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_iron_machine",
+      "label": "Iron machine (land ironclad)",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_crossing_trench",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_crossing_trench",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_machine_advances",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crossing_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_machine_advances",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_slope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_machine_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_fire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_artist",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_men_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic_crowd",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_panic_crowd",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zigzag_ditch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_monster",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_panic_crowd",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scramble_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_monster",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_scramble_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_halt_ridge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_scramble_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_halt_ridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_halt_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_machines_advance_line",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_machines_advance_line",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench_defences",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_iron_machine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_machines_advance_line",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gun_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_machines_advance_line",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_decision_stay",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gun_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_decision_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_trench",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_ridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_plain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_zigzag_ditch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

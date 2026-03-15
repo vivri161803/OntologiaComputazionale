@@ -1,0 +1,409 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_defender_general",
+      "label": "The defender-general",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_war_correspondent",
+      "label": "The war correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gunners",
+      "label": "The gunners",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain_ironclad_3",
+      "label": "The captain of Land Ironclad Number Three",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_riflemen",
+      "label": "The riflemen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_engineers",
+      "label": "The engineers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prisoners",
+      "label": "Prisoners",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_assault_dawn",
+      "label": "The assault at dawn with land ironclads advancing into trenches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_half_battery_fight",
+      "label": "The fight of half-battery 96B against the land ironclad",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ironclad_visible",
+      "label": "The land ironclad becomes visible over the brow of the hill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gunners_killed",
+      "label": "The gunners are shot down by the ironclad",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_surrender",
+      "label": "The surviving artillerymen surrender",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_correspondent_escape",
+      "label": "The war correspondent escapes through the gully",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ironclad_description",
+      "label": "Description of the land ironclad's construction and mechanisms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_victory",
+      "label": "The land ironclads achieve final victory on the crest",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ridge",
+      "label": "The ridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trenches",
+      "label": "The trenches",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_slope",
+      "label": "The slope",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gully",
+      "label": "The gully",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "The camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crest",
+      "label": "The crest",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_land_ironclads",
+      "label": "Land ironclads",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_assault_dawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_assault_dawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_assault_dawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trenches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_land_ironclads",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defender_general",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gunners",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_half_battery_fight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_half_battery_fight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_half_battery_fight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gunners",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_half_battery_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_land_ironclads",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_half_battery_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_half_battery_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ironclad_visible",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ironclad_visible",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_half_battery_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ironclad_visible",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gunners_killed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_gunners_killed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ironclad_visible",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_land_ironclads",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gunners_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gunners",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gunners_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surrender",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_surrender",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gunners_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gunners",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_surrender",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_correspondent_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_correspondent_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_surrender",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_correspondent_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gully",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_correspondent_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ironclad_description",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ironclad_description",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_surrender",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_victory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_final_victory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ironclad_description",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_victory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_ironclad_3",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_victory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_land_ironclads",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_victory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prisoners",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_final_victory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_trenches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_crest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_gully",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_riflemen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_engineers",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_assault_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_ironclad_3",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_final_victory",
+      "target_closed_value": null
+    }
+  ]
+}

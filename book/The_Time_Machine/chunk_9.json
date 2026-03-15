@@ -1,0 +1,413 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_upper_worlders",
+      "label": "The graceful children of the Upper World",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lemur_creature",
+      "label": "The bleached, obscene, nocturnal Thing",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_wells_discovery",
+      "label": "Discovery of wells and towers with ventilation system",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_rescue",
+      "label": "Rescue of Weena from drowning in the river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_friendship_begins",
+      "label": "Beginning of friendship with Weena",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_fear_discovery",
+      "label": "Discovery that Weena fears darkness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dawn_white_figures",
+      "label": "Sighting of white ape-like figures at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_creature_encounter",
+      "label": "Encounter with the luminous-eyed creature in the ruin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_well_descent_discovery",
+      "label": "Discovery of the creature descending into the well shaft",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_species_revelation",
+      "label": "Realization that humanity has split into two species",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_wells",
+      "label": "The wells with tall towers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river where Weena was bathing",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stone_arbour",
+      "label": "The little stone arbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_white_sphinx",
+      "label": "The White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace",
+      "label": "The great palace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ruin",
+      "label": "The colossal ruin with narrow gallery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_well_shaft",
+      "label": "The round well-like opening with shaft",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_garland",
+      "label": "The garland of flowers from Weena",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rescue",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_encounter",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lemur_creature",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_wells_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_weena_rescue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_friendship_begins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_creature_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_species_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_wells",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ruin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stone_arbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wells_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weena_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_weena_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_friendship_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_friendship_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weena_fear_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dawn_white_figures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lemur_creature",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dawn_white_figures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_creature_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lemur_creature",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_creature_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_well_descent_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lemur_creature",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_well_descent_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_species_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wells_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_rescue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_fear_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_friendship_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dawn_white_figures",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_fear_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creature_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dawn_white_figures",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_well_descent_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_creature_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_species_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_well_descent_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wells_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_rescue",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_friendship_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stone_arbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creature_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ruin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_well_descent_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_well_shaft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_white_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_garland",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_weena",
+      "target_closed_value": null
+    }
+  ]
+}

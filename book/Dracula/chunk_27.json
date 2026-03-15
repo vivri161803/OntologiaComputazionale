@@ -1,0 +1,601 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Lucy's mother (Mrs. Westenra)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing (the Professor)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_holmwood",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_servants",
+      "label": "Servant women",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_hillingham",
+      "label": "Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "The house at Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lucy_room",
+      "label": "Lucy's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bath",
+      "label": "Bath",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_breakfast_room",
+      "label": "Breakfast room",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_seward_arrival",
+      "label": "Dr. Seward arrives at Hillingham",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_no_response",
+      "label": "No one answers the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fear",
+      "label": "Seward's terrible fear about Lucy's fate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_arrival",
+      "label": "Van Helsing arrives at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_window_breach",
+      "label": "Breaking through the kitchen window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_servants_found",
+      "label": "Finding the drugged servant women",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_mother_death",
+      "label": "Discovery of Mrs. Westenra's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_revival",
+      "label": "Lucy's revival with brandy and heat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quincey_arrival",
+      "label": "Quincey Morris arrives at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blood_transfusion",
+      "label": "Blood transfusion from Quincey to Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_note_discovery",
+      "label": "Discovery of the mysterious note from Lucy's breast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_certificate",
+      "label": "Discussion about the death certificate for Mrs. Westenra",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_registration",
+      "label": "Registration of Mrs. Westenra's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quincey_conversation",
+      "label": "Quincey's private conversation with Seward",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rescue",
+      "label": "DISTRICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_seward_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_seward_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_no_response",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_no_response",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_no_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_no_response",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window_breach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window_breach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_window_breach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_window_breach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_window_breach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_servants_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_servants_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_servants",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_servants_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_mother_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_servants_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_mother_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy_mother",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_revival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_revival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_revival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DISTRICAMENTO"
+    },
+    {
+      "source_id": "evt_quincey_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_revival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quincey_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quincey_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quincey_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_note_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_note_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_note_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_note_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_note_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_death_certificate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_note_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_certificate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_death_certificate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_death_certificate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_registration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death_certificate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_registration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quincey_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_registration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quincey_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_breakfast_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quincey_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quincey_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_quincey_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_lucy_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

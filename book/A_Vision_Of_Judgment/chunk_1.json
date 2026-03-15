@@ -1,0 +1,461 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_little_man",
+      "label": "The little man beside the narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wicked_man",
+      "label": "The Wicked Man / Tyrannous King",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_saint",
+      "label": "The Saint",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_god",
+      "label": "The Lord God",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_recording_angel",
+      "label": "The recording angel with the book",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_azreal",
+      "label": "Azreal",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_michael",
+      "label": "Michael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gabriel",
+      "label": "Gabriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prophet",
+      "label": "The prophet tortured by the Wicked Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_darwin",
+      "label": "Darwin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_duke",
+      "label": "The Duke",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_priggles",
+      "label": "Priggles the publisher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_henry_viii",
+      "label": "Henry the Eighth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_paleolithic",
+      "label": "A Paleolithic man",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_last_trump",
+      "label": "The sounding of the Last Trump",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_resurrection",
+      "label": "The resurrection and gathering of all souls",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_judgment_begins",
+      "label": "The beginning of the judgment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wicked_man_judgment",
+      "label": "The judgment of the Wicked Man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wicked_man_reading",
+      "label": "The recording angel reads the Wicked Man's deeds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wicked_man_shame",
+      "label": "The Wicked Man experiences shame and flees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_saint_judgment",
+      "label": "The judgment of the Saint",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_saint_reading",
+      "label": "The recording angel reads the Saint's deeds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_saint_shame",
+      "label": "The Saint experiences shame and flees",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_flees",
+      "label": "The narrator flees into God's sleeve",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_planet",
+      "label": "God shakes the souls out onto the new planet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enlightenment",
+      "label": "The souls are enlightened and given new bodies",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_grave",
+      "label": "The narrator's grave",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monument",
+      "label": "The narrator's monument",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amphitheatral_space",
+      "label": "The amphitheatral space where souls gather",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_throne",
+      "label": "The throne of dazzling white cloud",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gods_palm",
+      "label": "The palm of God's hand",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gods_sleeve",
+      "label": "The shadow of God's sleeve",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_planet",
+      "label": "The new planet whirling about green Sirius",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ritorno",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_all_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_last_trump",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_resurrection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_last_trump",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_judgment_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_resurrection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wicked_man_judgment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_judgment_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wicked_man_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wicked_man_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wicked_man_shame",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wicked_man_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saint_judgment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wicked_man_shame",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saint_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_saint_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saint_shame",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_saint_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_flees",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_saint_shame",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_planet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_flees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enlightenment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_planet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wicked_man_judgment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_saint_judgment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_enlightenment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_to_planet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "char_wicked_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wicked_man_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_wicked_man_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_recording_angel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wicked_man_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_saint",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_saint_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_saint_judgment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_flees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_enlightenment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_god",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_enlightenment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_resurrection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amphitheatral_space",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wicked_man_judgment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gods_palm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saint_judgment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gods_palm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_flees",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gods_sleeve",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_planet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_planet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_amphitheatral_space",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gods_palm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_gods_sleeve",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_new_planet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_wicked_man",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_wicked_man_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_recording_angel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wicked_man_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_saint",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_saint_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_recording_angel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_saint_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prophet",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_wicked_man_reading",
+      "target_closed_value": null
+    }
+  ]
+}

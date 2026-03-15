@@ -1,0 +1,282 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_female_novelists",
+      "label": "Female novelists",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charlotte_bronte",
+      "label": "Charlotte Brontë",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_eliot",
+      "label": "George Eliot",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jane_austen",
+      "label": "Jane Austen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_male_writers",
+      "label": "Male writers (Lamb, Browne, Thackeray, Newman, Sterne, Dickens, De Quincey)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_johnson",
+      "label": "Johnson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gibbon",
+      "label": "Gibbon",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_writing_without_tradition",
+      "label": "Female novelists writing without literary tradition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_developing_sentence",
+      "label": "Developing a sentence suitable for women's writing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jane_austen_innovation",
+      "label": "Jane Austen devising a natural, shapely sentence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charlotte_bronte_struggle",
+      "label": "Charlotte Brontë struggling with the male sentence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_george_eliot_atrocities",
+      "label": "George Eliot committing atrocities with the male sentence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_writing_novels",
+      "label": "Women writing novels as the only young form available",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_future_of_womens_writing",
+      "label": "Future of women's writing and new literary forms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection_on_psychology",
+      "label": "Reflection on the psychology of women and physical conditions",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_paper",
+      "label": "Paper (setting pen to paper)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bookcase",
+      "label": "Bookcase",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nineteenth_century",
+      "label": "Nineteenth century literary tradition",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_writing_without_tradition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_female_novelists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_without_tradition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_male_writers",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_writing_without_tradition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_without_tradition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_developing_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_developing_sentence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_female_novelists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_developing_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_austen_innovation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_jane_austen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jane_austen_innovation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jane_austen_innovation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charlotte_bronte_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charlotte_bronte_struggle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_charlotte_bronte",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charlotte_bronte_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_george_eliot_atrocities",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_george_eliot",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_george_eliot_atrocities",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_george_eliot_atrocities",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jane_austen_innovation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_writing_novels",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_female_novelists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_women_writing_novels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_writing_novels",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_developing_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_future_of_womens_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_female_novelists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_future_of_womens_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_psychology",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reflection_on_psychology",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_future_of_womens_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_without_tradition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nineteenth_century",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_psychology",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bookcase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bookcase",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    }
+  ]
+}

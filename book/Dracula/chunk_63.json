@@ -1,0 +1,493 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_harker",
+      "label": "Mrs. Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_narrators_house",
+      "label": "The narrator's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "The group returns to the narrator's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reunion",
+      "label": "Mrs. Harker greets the group with cheerfulness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_comfort",
+      "label": "Mrs. Harker comforts her husband",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "The group shares supper together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narration",
+      "label": "The group tells Mrs. Harker everything that had passed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_harker_rushes_count",
+      "label": "Harker rushed at the Count recklessly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_harker_speech",
+      "label": "Mrs. Harker stands and speaks to the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_outburst",
+      "label": "Jonathan leaps to his feet and speaks of destroying the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mrs_harker_plea",
+      "label": "Mrs. Harker pleads with Jonathan to reconsider his words",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emotional_reconciliation",
+      "label": "Jonathan kneels beside his wife and they embrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_men_weep",
+      "label": "The men weep openly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_prepares_room",
+      "label": "Van Helsing prepares the room against the Vampire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_watch_arranged",
+      "label": "The men arrange to watch over Mrs. Harker through the night",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_harker_rushes_count",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reunion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reunion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_comfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_comfort",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_mrs_harker_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_harker_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_outburst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mrs_harker_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_outburst",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_harker_plea",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mrs_harker_plea",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emotional_reconciliation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mrs_harker_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emotional_reconciliation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_weep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emotional_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_weep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_prepares_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_men_weep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_prepares_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_watch_arranged",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_prepares_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_watch_arranged",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_narration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_harker_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mrs_harker_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mrs_harker_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mrs_harker_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jonathan_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mrs_harker_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mrs_harker_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emotional_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_harker",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_emotional_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_men_weep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_prepares_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_watch_arranged",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_watch_arranged",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_watch_arranged",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_narrators_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_narrators_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

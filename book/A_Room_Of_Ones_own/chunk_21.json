@@ -1,0 +1,329 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_carmichael",
+      "label": "Mary Carmichael",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_she",
+      "label": "She (the female writer)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_facing_situation",
+      "label": "Facing a situation and proving oneself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beckoning_summoning",
+      "label": "Beckoning and summoning memories",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing",
+      "label": "Writing and creating meaning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taking_fence",
+      "label": "Taking the fence without hesitation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_novel",
+      "label": "Writing her first novel in a bed-sitting-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_last_chapter",
+      "label": "Reading the last chapter of LIFE'S ADVENTURE",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_future_success",
+      "label": "Future success as a poet and writer",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_depths",
+      "label": "The depths beneath surfaces",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_top_of_world",
+      "label": "The top of the world",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_racecourse",
+      "label": "The racecourse with fences",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bed_sitting_room",
+      "label": "A bed-sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_life_adventure",
+      "label": "LIFE'S ADVENTURE (novel by Mary Carmichael)",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_she",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mary_carmichael",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_facing_situation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_beckoning_summoning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_facing_situation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_beckoning_summoning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taking_fence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_taking_fence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_novel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_novel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taking_fence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_last_chapter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_future_success",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_future_success",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_last_chapter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_she",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_facing_situation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_she",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beckoning_summoning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_she",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_she",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taking_fence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_carmichael",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_novel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_facing_situation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_taking_fence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_reading_last_chapter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_facing_situation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_depths",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_top_of_world",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taking_fence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_racecourse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_novel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_last_chapter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_racecourse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bed_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_depths",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_top_of_world",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

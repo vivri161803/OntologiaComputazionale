@@ -1,0 +1,640 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_padre",
+      "label": "Padre",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_pe",
+      "label": "Ba Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_shin",
+      "label": "Ba Shin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macdougall",
+      "label": "Macdougall",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_flory_death",
+      "label": "Flory's suicide",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burial_service",
+      "label": "Burial service and address",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_veraswami_ruin",
+      "label": "Dr Veraswami's ruin and disgrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_campaign",
+      "label": "U Po Kyin's campaign against the doctor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_veraswami_transfer",
+      "label": "Dr Veraswami's transfer to Mandalay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ko_sla_inheritance",
+      "label": "Ko S'la inherits money",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea_shop_failure",
+      "label": "Tea shop failure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ba_shin_death",
+      "label": "Ba Shin's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_club_election",
+      "label": "U Po Kyin elected to the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_promotion",
+      "label": "U Po Kyin's promotion to Deputy Commissioner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_durbar",
+      "label": "Governor's durbar in Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_decoration",
+      "label": "U Po Kyin receives decoration",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_death",
+      "label": "U Po Kyin's death from apoplexy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_proposal",
+      "label": "Mr Macgregor proposes to Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_marriage",
+      "label": "Elizabeth and Mr Macgregor's marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay",
+      "label": "Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bazaar",
+      "label": "Bazaar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "Mandalay General Hospital",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_brothel",
+      "label": "Brothel in Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_durbar_hall",
+      "label": "Durbar hall in Rangoon",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ritual",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ruin",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_victory",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_flory_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_flory_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_service",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_burial_service",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_service",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_padre",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burial_service",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_veraswami_ruin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_veraswami_ruin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_veraswami_ruin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_campaign",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_u_po_kyin_campaign",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_veraswami_ruin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_campaign",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_u_po_kyin_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_veraswami_transfer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_veraswami_transfer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_campaign",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_veraswami_transfer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mandalay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_veraswami_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ko_sla_inheritance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_ko_sla_inheritance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ko_sla_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_shop_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_tea_shop_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ko_sla_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_shop_failure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bazaar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_shop_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ba_pe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_shop_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ba_shin_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_ba_shin_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_shop_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ba_shin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ba_shin_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_club_election",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_u_po_kyin_club_election",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_veraswami_ruin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_club_election",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_club_election",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_promotion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_u_po_kyin_promotion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_club_election",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_promotion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_durbar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_durbar",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_durbar_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_decoration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_u_po_kyin_decoration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_promotion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_decoration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_durbar_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_decoration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_u_po_kyin_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_decoration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_macgregor_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_macgregor_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_macgregor_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_macgregor_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_mandalay",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_rangoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bazaar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_brothel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_durbar_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

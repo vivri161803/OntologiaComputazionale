@@ -1,0 +1,359 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_filby",
+      "label": "Filby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_psychologist",
+      "label": "The Psychologist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_medical_man",
+      "label": "The Medical Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_provincial_mayor",
+      "label": "The Provincial Mayor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_very_young_man",
+      "label": "The Very Young Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_exposition",
+      "label": "The Time Traveller expounds on the Fourth Dimension and the geometry of Time",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion",
+      "label": "Discussion and debate about the Fourth Dimension and Time travel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_model_presentation",
+      "label": "The Time Traveller presents the model Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_model_disappearance",
+      "label": "The model Time Machine vanishes when the lever is pressed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verification_debate",
+      "label": "The guests debate whether the machine travelled into past or future",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing room with the fireplace and chairs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The Time Traveller's laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_model_machine",
+      "label": "The model Time Machine - a glittering metallic framework with ivory and crystalline substance",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_exposition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_exposition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_provincial_mayor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_very_young_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exposition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_model_presentation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_model_presentation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_model_presentation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_model_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_model_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_model_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_model_presentation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_model_disappearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_model_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_model_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_model_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_model_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verification_debate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_verification_debate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_model_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verification_debate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_provincial_mayor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_verification_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

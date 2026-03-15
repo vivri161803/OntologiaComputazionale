@@ -1,0 +1,579 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cortman",
+      "label": "Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampires",
+      "label": "The vampires",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_car_chase",
+      "label": "Robert Neville drives frantically through the streets pursued by vampires",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cortman_attack",
+      "label": "Cortman lunges at Robert Neville from the garage shadows",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_porch_fight",
+      "label": "Robert Neville fights multiple vampires on the porch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_breach",
+      "label": "Robert Neville locks himself inside the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampire_siege",
+      "label": "Vampires howl and attack the house with bricks and rocks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_destruction",
+      "label": "Vampires destroy the station wagon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_power_failure",
+      "label": "Robert Neville discovers the house has no electricity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_armed_counterattack",
+      "label": "Robert Neville emerges from the house with pistols and fires at the vampires",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_retreat",
+      "label": "Robert Neville retreats back into the house, wounded",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_repair",
+      "label": "Robert Neville repairs and soundproofs the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_new_car_acquisition",
+      "label": "Robert Neville obtains a new station wagon from Santa Monica",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dust_storm",
+      "label": "A dust storm passes through during the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_virginia_illness",
+      "label": "Virginia appears weak and unable to sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_street",
+      "label": "Haas Street and surrounding neighborhood streets",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "Robert Neville's lawn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_driveway",
+      "label": "The driveway to the garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_porch",
+      "label": "The front porch of the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "Robert Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "The garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "The living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_santa_monica",
+      "label": "Santa Monica",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_station_wagon",
+      "label": "The station wagon",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_car_chase",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_car_chase",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_car_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_cortman_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cortman_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_driveway",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cortman_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cortman_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_porch_fight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_porch_fight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cortman_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_porch_fight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_porch_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_porch_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_breach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_house_breach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_porch_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_breach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_breach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_siege",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_vampire_siege",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_breach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampire_siege",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_vampire_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_car_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampire_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_driveway",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_station_wagon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_car_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_power_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_failure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_power_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_armed_counterattack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_armed_counterattack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_power_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_armed_counterattack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_armed_counterattack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_armed_counterattack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_final_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_armed_counterattack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_retreat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_repair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_house_repair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_final_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_repair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_repair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_new_car_acquisition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_new_car_acquisition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_repair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_new_car_acquisition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_santa_monica",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_new_car_acquisition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dust_storm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dust_storm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_illness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_virginia_illness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dust_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_virginia_illness",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_virginia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_virginia_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_virginia_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_porch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

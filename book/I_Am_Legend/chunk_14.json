@@ -1,0 +1,515 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruth",
+      "label": "Ruth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginia",
+      "label": "Virginia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "The dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_neville_hunting",
+      "label": "Neville hunting and destroying vampires in the neighborhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_resting",
+      "label": "Neville sitting on the porch smoking his pipe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_spotted",
+      "label": "Neville spots a woman walking in the field",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_calls_out",
+      "label": "Neville calls out to the woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chase",
+      "label": "Neville chases Ruth across the field",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_struggle",
+      "label": "Neville and Ruth struggle and fight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_crying",
+      "label": "Ruth cries and surrenders, revealing her name",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_brought_home",
+      "label": "Neville brings Ruth to his house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ruth_locked_in_bedroom",
+      "label": "Neville locks Ruth in the bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_worrying",
+      "label": "Neville worries about whether Ruth is infected",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neville_wakes_ruth",
+      "label": "Neville wakes Ruth and discovers the gold cross",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_neighborhood",
+      "label": "The neighborhood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_field",
+      "label": "The wide field across the boulevard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_porch",
+      "label": "The porch of Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_neville_house",
+      "label": "Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_virginia_grave",
+      "label": "The depression in the ground where Virginia was buried",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_neville",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_cortman",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_ruth",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_cortman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_neville_hunting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neighborhood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_hunting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_neville_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_resting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_porch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_resting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_resting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_spotted",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_spotted",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_resting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_spotted",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_woman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_calls_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_calls_out",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_calls_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_neville_calls_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chase",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_calls_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chase",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chase",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_crying",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_crying",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_crying",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_crying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_ruth_crying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_brought_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_crying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_brought_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_neville_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_brought_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_brought_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_brought_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_locked_in_bedroom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_brought_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ruth_locked_in_bedroom",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ruth_locked_in_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ruth_locked_in_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_worrying",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ruth_locked_in_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_worrying",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_worrying",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_worrying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_wakes_ruth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neville_worrying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_wakes_ruth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neville_wakes_ruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neville_wakes_ruth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_neville_wakes_ruth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_porch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_neville_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

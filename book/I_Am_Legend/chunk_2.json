@@ -1,0 +1,578 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ben_cortman",
+      "label": "Ben Cortman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kathy",
+      "label": "Kathy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_busch",
+      "label": "Dr. Busch",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_van_helsing",
+      "label": "Dr. Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fritz",
+      "label": "Fritz (Neville's father)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vampires",
+      "label": "Vampires",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_market",
+      "label": "Woman in the market",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_bedroom",
+      "label": "Woman in the bedroom",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_night_siege",
+      "label": "Vampires prowling around the house at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_alarm_morning",
+      "label": "Alarm goes off at five-thirty",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vampires_retreat",
+      "label": "Vampires retreat at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ben_cortman_call",
+      "label": "Ben Cortman cries out 'Come out, Neville!'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_body_disposal",
+      "label": "Neville disposes of two female bodies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burning_pit",
+      "label": "Neville dumps bodies in the burning pit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_market_visit",
+      "label": "Neville visits the market for water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_market_killing",
+      "label": "Neville kills two vampires in the market",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sears_visit",
+      "label": "Neville goes to Sears for a lathe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sears_killing",
+      "label": "Neville kills five vampires in Sears basement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "Neville eats lunch and reflects on vampires",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stake_hunt",
+      "label": "Neville hunts vampires with stakes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_dracula",
+      "label": "Neville reads Dracula and reflects on vampires",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "Neville's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "Garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_compton_boulevard",
+      "label": "Compton Boulevard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burning_pit_field",
+      "label": "Burning pit field",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "Market in Inglewood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sears",
+      "label": "Sears store",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gas_station",
+      "label": "Gas station on Western Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_record",
+      "label": "The Year of the Plague record",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_stakes",
+      "label": "Wooden stakes",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_dracula_book",
+      "label": "Dracula book",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_night_siege",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_alarm_morning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vampires_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_alarm_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ben_cortman_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vampires_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_disposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ben_cortman_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_pit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_body_disposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burning_pit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_killing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_market_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sears_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_market_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sears_killing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sears_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sears_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stake_hunt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_dracula",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stake_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vampires",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_night_siege",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_alarm_morning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ben_cortman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ben_cortman_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_body_disposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burning_pit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kathy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_burning_pit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_market_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_market_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman_market",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_market_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman_bedroom",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_market_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sears_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sears_killing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stake_hunt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_compton_boulevard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_burning_pit_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_market",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_sears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gas_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_night_siege",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_alarm_morning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_disposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_pit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_burning_pit_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_killing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sears_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sears_killing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_dracula",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_killing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_sears_killing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_stake_hunt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_reading_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    }
+  ]
+}

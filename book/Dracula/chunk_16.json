@@ -1,0 +1,914 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_captain",
+      "label": "Captain of the Demeter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mate",
+      "label": "First Mate of the Demeter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_petrofsky",
+      "label": "Petrofsky",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_olgaren",
+      "label": "Olgaren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_amramoff",
+      "label": "Amramoff",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_billington",
+      "label": "Mr. S.F. Billington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_russian_consul",
+      "label": "Russian Consul",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mysterious_being",
+      "label": "Tall, thin, ghastly pale being",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog",
+      "label": "Dog that landed from the ship",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dead_mastiff",
+      "label": "Half-bred mastiff of coal merchant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina Murray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "ship_demeter",
+      "label": "Demeter",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Arrival of the Demeter in storm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cargo_inspection",
+      "label": "Inspection and possession of cargo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_landing",
+      "label": "Dog landing when ship struck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dog_disappearance",
+      "label": "Dog disappearing from town",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mastiff_death",
+      "label": "Death of coal merchant's mastiff",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_log_examination",
+      "label": "Examination of Demeter's log book",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cargo_loading",
+      "label": "Loading cargo at Varna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bosphorus_entry",
+      "label": "Entering Bosphorus",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dardanelles_passage",
+      "label": "Passing through Dardanelles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cape_matapan",
+      "label": "Passing Cape Matapan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crew_dissatisfaction",
+      "label": "Crew becoming dissatisfied and scared",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mate_strikes_crew",
+      "label": "Mate striking crew member",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_petrofsky_missing",
+      "label": "Petrofsky going missing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_olgaren_report",
+      "label": "Olgaren reporting strange man aboard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_search",
+      "label": "Captain ordering search of entire ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rough_weather",
+      "label": "Rough weather for three days",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gibraltar_passage",
+      "label": "Passing Gibraltar and Straits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_disappearance",
+      "label": "Second crew member disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bay_of_biscay",
+      "label": "Entering Bay of Biscay with wild weather",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_maelstrom",
+      "label": "Four days in maelstrom with tempest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_third_disappearance",
+      "label": "Third crew member disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fourth_disappearance",
+      "label": "Fourth crew member disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fog_arrival",
+      "label": "Two days of fog in English Channel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fifth_disappearance",
+      "label": "Fifth crew member disappearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mate_encounter",
+      "label": "Mate encountering the mysterious being",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mate_madness",
+      "label": "Mate's descent into madness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mate_suicide",
+      "label": "Mate throwing himself into the sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_final_night",
+      "label": "Captain's final night at the helm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_wreck",
+      "label": "Ship wrecking in Whitby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_funeral",
+      "label": "Captain's public funeral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_restlessness",
+      "label": "Lucy being restless and sleep-walking",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_anxiety",
+      "label": "Mina's anxiety about Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bosphorus",
+      "label": "Bosphorus",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dardanelles",
+      "label": "Dardanelles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_archipelago",
+      "label": "Archipelago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cape_matapan",
+      "label": "Cape Matapan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gibraltar",
+      "label": "Gibraltar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bay_of_biscay",
+      "label": "Bay of Biscay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_english_channel",
+      "label": "English Channel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_north_sea",
+      "label": "North Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tate_hill_pier",
+      "label": "Tate Hill Pier",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "Whitby Harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship_hold",
+      "label": "Hold of the Demeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship_deck",
+      "label": "Deck of the Demeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crescent",
+      "label": "7, The Crescent",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_captain",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mate_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mysterious_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_crew_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_billington_recipient",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_disappearance",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_encounter",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_madness",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_suicide",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_wreck",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_search",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_sea",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_town",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "ship_demeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cargo_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cargo_inspection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_billington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cargo_inspection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_russian_consul",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_billington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_dog_landing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_landing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_landing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_disappearance",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mastiff_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tate_hill_pier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mastiff_death",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_dead_mastiff",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_log_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cargo_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_log_examination",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_russian_consul",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cargo_loading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cargo_loading",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bosphorus_entry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cargo_loading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bosphorus_entry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bosphorus",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bosphorus_entry",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "ship_demeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dardanelles_passage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bosphorus_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dardanelles_passage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dardanelles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cape_matapan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dardanelles_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cape_matapan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cape_matapan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_dissatisfaction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cape_matapan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crew_dissatisfaction",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_strikes_crew",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crew_dissatisfaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_strikes_crew",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_petrofsky_missing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mate_strikes_crew",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_petrofsky_missing",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_petrofsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_petrofsky_missing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_olgaren_report",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_petrofsky_missing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_olgaren_report",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_olgaren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_olgaren_report",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_olgaren_report",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_search",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rough_weather",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rough_weather",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_archipelago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gibraltar_passage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rough_weather",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gibraltar_passage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gibraltar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gibraltar_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_disappearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bay_of_biscay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_maelstrom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_third_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_maelstrom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_third_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_fourth_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_third_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fourth_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_fog_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fourth_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fog_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_english_channel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fifth_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fog_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fifth_disappearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_north_sea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fifth_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_mate_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fifth_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_encounter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_encounter",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_mysterious_being",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_mate_madness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mate_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_madness",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_madness",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mate_suicide",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mate_madness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_suicide",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mate_suicide",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_captain_final_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mate_suicide",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_final_night",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_final_night",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_mysterious_being",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_wreck",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_final_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_wreck",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_wreck",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "ship_demeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_wreck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_captain_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_wreck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_funeral",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_restlessness",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_restlessness",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_lucy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mysterious_being",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bosphorus",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_english_channel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_north_sea",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ship_hold",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

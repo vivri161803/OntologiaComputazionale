@@ -1,0 +1,555 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moses",
+      "label": "Moses the raven",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_windmill",
+      "label": "the windmill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "the farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_orchard",
+      "label": "the orchard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pasture",
+      "label": "the large pasture",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quarry",
+      "label": "the quarry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_willingdon",
+      "label": "Willingdon hospital",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_hoof_healing",
+      "label": "Boxer's split hoof healing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_rebuild",
+      "label": "rebuilding of the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ration_reduction",
+      "label": "reduction of rations",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_young_pigs_born",
+      "label": "four sows littering thirty-one young pigs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_schoolroom_built",
+      "label": "building of the schoolroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barley_reserved",
+      "label": "barley reserved for pigs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_spontaneous_demo",
+      "label": "Spontaneous Demonstration",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_republic_proclaimed",
+      "label": "Animal Farm proclaimed a Republic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_elected",
+      "label": "Napoleon elected President",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_revelation",
+      "label": "revelation of Snowball's complicity with Jones",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_moses_return",
+      "label": "Moses the raven reappeared on the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_collapse",
+      "label": "Boxer collapsed while dragging stone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_recovery",
+      "label": "Boxer's recovery in his stall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_taken_away",
+      "label": "Boxer taken away in a van",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_boxer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_hoof_healing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_ration_reduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_boxer_collapse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_boxer_taken_away",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_snowball_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_republic_proclaimed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_moses_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_boxer_taken_away",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_windmill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_pasture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_quarry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hoof_healing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hoof_healing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_rebuild",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ration_reduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ration_reduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_boxer_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_boxer_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_boxer_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_taken_away",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_boxer_taken_away",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_elected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_moses",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_moses_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hoof_healing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ration_reduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_collapse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_taken_away",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hoof_healing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_rebuild",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hoof_healing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ration_reduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_rebuild",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_young_pigs_born",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ration_reduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_schoolroom_built",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_young_pigs_born",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barley_reserved",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_schoolroom_built",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spontaneous_demo",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_barley_reserved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_republic_proclaimed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_spontaneous_demo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_elected",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_republic_proclaimed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_elected",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_moses_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_collapse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_moses_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_collapse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_taken_away",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_recovery",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jack_seward",
+      "label": "Jack Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Lucy's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_blood_transfusion",
+      "label": "Blood transfusion into Lucy's veins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_wakes",
+      "label": "Lucy wakes in the afternoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_realizes_death",
+      "label": "Lucy realizes her mother's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_tears_paper",
+      "label": "Lucy tears the paper in her sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mystery_discussion",
+      "label": "Discussion about the terrible mystery surrounding Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room where Lucy is",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_jack",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_van_helsing",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_lucy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jack_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_mystery_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_blood_transfusion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_realizes_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lucy_tears_paper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_jack_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mystery_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mystery_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jack_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_realizes_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_tears_paper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_tears_paper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mystery_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_wakes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blood_transfusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_realizes_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_wakes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_tears_paper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_realizes_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_wakes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_realizes_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_tears_paper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mystery_discussion",
+      "target_closed_value": null
+    }
+  ]
+}

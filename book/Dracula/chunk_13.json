@@ -1,0 +1,506 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Murray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_holmwood",
+      "label": "Arthur Holmwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy_mother",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_whitby",
+      "label": "Whitby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_dracula",
+      "label": "Castle Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard_cliff",
+      "label": "churchyard cliff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_renfield_room",
+      "label": "Renfield's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town",
+      "label": "the town",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_mina_alone",
+      "label": "Mina comes up alone and is sad",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_no_letter",
+      "label": "There is no letter for Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_flies",
+      "label": "Renfield catches flies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_spiders",
+      "label": "Renfield turns to catching spiders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_eats_fly",
+      "label": "Renfield eats a blowfly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_sparrows",
+      "label": "Renfield gets sparrows",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_kitten_request",
+      "label": "Renfield requests a kitten",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renfield_eats_birds",
+      "label": "Renfield eats his birds",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_diagnosis",
+      "label": "Dr. Seward diagnoses Renfield as zoophagous maniac",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_letter",
+      "label": "Jonathan's letter arrives from Castle Dracula",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_sleepwalking",
+      "label": "Lucy begins sleepwalking",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_holmwood_called_away",
+      "label": "Arthur Holmwood is called away to see his father",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_anxiety",
+      "label": "Mina expresses anxiety about Jonathan and Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_searching_key",
+      "label": "Lucy searches for the key to the locked door",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject_mina",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_seward",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_renfield",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist_renfield",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_hawkins",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_value_lucy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_mina_alone",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_no_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_renfield_flies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_renfield_eats_fly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_seward_diagnosis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_jonathan_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_whitby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castle_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_renfield_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_mina_alone",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_whitby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_flies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_renfield_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_spiders",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_flies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_eats_fly",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_spiders",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_sparrows",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_eats_fly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_kitten_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_sparrows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renfield_eats_birds",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_kitten_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_diagnosis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renfield_eats_birds",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_alone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_sleepwalking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_holmwood_called_away",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_sleepwalking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_anxiety",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_holmwood_called_away",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_searching_key",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_anxiety",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_alone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_no_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_anxiety",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_no_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_flies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_spiders",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_eats_fly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_sparrows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_kitten_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_renfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_eats_birds",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_flies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renfield_eats_fly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_searching_key",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_jonathan_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holmwood",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_holmwood_called_away",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_sleepwalking",
+      "target_closed_value": null
+    }
+  ]
+}

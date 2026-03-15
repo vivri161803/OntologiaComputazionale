@@ -1,0 +1,1094 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whymper",
+      "label": "Whymper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_frederick",
+      "label": "Frederick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington",
+      "label": "Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pinkeye",
+      "label": "Pinkeye",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jessie",
+      "label": "Jessie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bluebell",
+      "label": "Bluebell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hens",
+      "label": "three hens",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gander",
+      "label": "a gander",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dogs",
+      "label": "four dogs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pigeons",
+      "label": "pigeons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cow",
+      "label": "a cow",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sheep",
+      "label": "three sheep",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_geese",
+      "label": "two geese",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_horse",
+      "label": "old horse",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cows",
+      "label": "cows",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog_furnace",
+      "label": "a dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cocks",
+      "label": "cocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_poem_inscription",
+      "label": "poem inscribed on the wall of the big barn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_negotiations",
+      "label": "complicated negotiations with Frederick and Pilkington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hens_plot",
+      "label": "three hens confessed to plot to murder Napoleon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hens_execution",
+      "label": "execution of the three hens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_timber_sale_pilkington",
+      "label": "arrangement to sell timber to Pilkington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exchange_agreement",
+      "label": "agreement for exchange of products between Animal Farm and Foxwood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_revelation",
+      "label": "revelation of Snowball's mixing weed seeds with seed corn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gander_suicide",
+      "label": "gander committed suicide by swallowing deadly nightshade berries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_legend",
+      "label": "revelation that Snowball never received Animal Hero First Class",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_completion",
+      "label": "windmill was finished in autumn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_timber_sale_frederick",
+      "label": "Napoleon announced sale of timber to Frederick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_relations_broken",
+      "label": "all relations with Foxwood broken off",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_slogan_change",
+      "label": "pigeons ordered to change slogan from Death to Frederick to Death to Pilkington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_revelation_foxwood",
+      "label": "revelation that Snowball was at Foxwood as pensioner of Pilkington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_timber_carting",
+      "label": "timber was carted away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_banknotes_inspection",
+      "label": "animals inspected Frederick's bank-notes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forgery_discovery",
+      "label": "discovery that banknotes were forgeries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_sentence",
+      "label": "Napoleon pronounced death sentence upon Frederick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_attack",
+      "label": "Frederick and his men attacked Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_destruction",
+      "label": "windmill was destroyed by blasting powder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battle",
+      "label": "animals charged and fought Frederick's men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enemy_retreat",
+      "label": "Frederick's men retreated",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_victory_celebration",
+      "label": "gun fired to celebrate victory",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_barn",
+      "label": "the big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pinchfield_farm",
+      "label": "Pinchfield Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_foxwood",
+      "label": "Foxwood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_windmill",
+      "label": "the windmill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pasture",
+      "label": "the big pasture",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farm_buildings",
+      "label": "farm buildings",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_field",
+      "label": "the field",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "the yard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_poem_inscription",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_poem_inscription",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poem_inscription",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_poem_inscription",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_negotiations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_negotiations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poem_inscription",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_negotiations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whymper",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_negotiations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_negotiations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_negotiations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hens_plot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_hens_plot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_negotiations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hens",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hens_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_hens_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hens_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hens_execution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_hens_execution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hens_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hens_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hens",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hens_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_timber_sale_pilkington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_timber_sale_pilkington",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hens_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_timber_sale_pilkington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_timber_sale_pilkington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exchange_agreement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_exchange_agreement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_timber_sale_pilkington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exchange_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_exchange_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_snowball_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exchange_agreement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gander_suicide",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_gander_suicide",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gander",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gander_suicide",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_legend",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_snowball_legend",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gander_suicide",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_legend",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_completion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_windmill_completion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_legend",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_completion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_timber_sale_frederick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_timber_sale_frederick",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_timber_sale_frederick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_timber_sale_frederick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_relations_broken",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_relations_broken",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_timber_sale_frederick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_relations_broken",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_relations_broken",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_slogan_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_slogan_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_relations_broken",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_slogan_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pigeons",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_slogan_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_revelation_foxwood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_snowball_revelation_foxwood",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_slogan_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_revelation_foxwood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_snowball_revelation_foxwood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_timber_carting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_timber_carting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_revelation_foxwood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banknotes_inspection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_banknotes_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_timber_carting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banknotes_inspection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_banknotes_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_banknotes_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forgery_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_forgery_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_banknotes_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whymper",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_forgery_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_forgery_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_sentence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_death_sentence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_forgery_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pasture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cow",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sheep",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_geese",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jessie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bluebell",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enemy_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_enemy_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enemy_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_victory_celebration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_victory_celebration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enemy_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_victory_celebration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm_buildings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_victory_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_victory_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_animal_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_pinchfield_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_foxwood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_windmill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_pasture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_farm_buildings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

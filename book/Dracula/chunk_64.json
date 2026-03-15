@@ -1,0 +1,497 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Miss Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Mina sleeping without dreams",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "Mina awakened by Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morris_guard",
+      "label": "Mr. Morris standing guard in the corridor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_request",
+      "label": "Mina requests to see the Professor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnosis",
+      "label": "Van Helsing hypnotizes Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "Mina reveals the Count is on a ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_escape",
+      "label": "The Count escapes on a ship to Transylvania",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_faint",
+      "label": "Mina faints upon learning the Count's immortality",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vanhelsing_message",
+      "label": "Van Helsing sends phonograph message to Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_search_ship",
+      "label": "The group searches for the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_comfort",
+      "label": "Jonathan reads Van Helsing's message to Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_dracula",
+      "label": "Castle Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "The ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_earthbox",
+      "label": "The earth box",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_mark",
+      "label": "The mark on Mina's throat",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_escape",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morris_guard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morris_guard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnosis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_mina_faint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_faint",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_vanhelsing_message",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_faint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_ship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vanhelsing_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_comfort",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_search_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_morris_guard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hypnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_vanhelsing_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonathan_comfort",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morris_guard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnosis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_corridor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_transylvania",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_castle_dracula",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_earthbox",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    }
+  ]
+}

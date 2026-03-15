@@ -1,0 +1,488 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_driver",
+      "label": "The driver of the caleche",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_courtyard",
+      "label": "The courtyard of the castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_great_door",
+      "label": "The great door with iron nails",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_passage",
+      "label": "The passage and winding stair of the castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_supper_room",
+      "label": "The well-lit room with table and fireplace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_octagonal_room",
+      "label": "The small octagonal room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The great bedroom with log fire",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carpathians",
+      "label": "The Carpathians",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival_at_castle",
+      "label": "Jonathan arrives at the castle in the caleche",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_driver_departs",
+      "label": "The driver departs with the caleche",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waiting_at_door",
+      "label": "Jonathan waits at the great door in silence and fear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_opens",
+      "label": "The great door opens and Count Dracula appears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_welcome_greeting",
+      "label": "Count Dracula welcomes Jonathan with a handshake",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_carries_luggage",
+      "label": "Count Dracula carries Jonathan's luggage through the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper_preparation",
+      "label": "Jonathan prepares for supper and refreshes himself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper_meal",
+      "label": "Jonathan eats supper while Count Dracula watches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_reading",
+      "label": "Count Dracula reads the sealed letter from Mr. Hawkins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_by_fire",
+      "label": "Jonathan and Count Dracula converse by the fireplace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolves_howling",
+      "label": "The howling of wolves is heard from the valley",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_departure",
+      "label": "Count Dracula bids Jonathan goodnight and departs",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_sealed_letter",
+      "label": "The sealed letter from Mr. Hawkins",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_solicitor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_host",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_guest",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_meeting",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_interior",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_arrival_at_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_arrival_at_castle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_departs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_at_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_driver_departs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_driver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_driver_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting_at_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_driver_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting_at_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting_at_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_opens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting_at_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_opens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_opens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_greeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_opens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_greeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_welcome_greeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_welcome_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_welcome_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_carries_luggage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_welcome_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_carries_luggage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_carries_luggage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dracula_carries_luggage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dracula_carries_luggage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_meal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_meal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_supper_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_supper_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_supper_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_sealed_letter",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_by_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_by_fire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_supper_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_by_fire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_by_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_by_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_howling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_by_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolves_howling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carpathians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wolves_howling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_octagonal_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dracula_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_courtyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_great_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "loc_castle_passage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_supper_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_octagonal_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

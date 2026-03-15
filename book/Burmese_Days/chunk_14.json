@@ -1,0 +1,336 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_pe",
+      "label": "Ba Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gilbert",
+      "label": "Gilbert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pariah_dog",
+      "label": "pariah dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_colombo",
+      "label": "Colombo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_upper_burma",
+      "label": "Upper Burma town",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burma",
+      "label": "Burma",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gate",
+      "label": "the gate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "the veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "the maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_cable_arrival",
+      "label": "cable waiting for Flory at Colombo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_deaths",
+      "label": "three men died of black-water fever",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_rangoon",
+      "label": "Flory boarded boat for Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_journey",
+      "label": "took the train back to headquarters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_servants_greeting",
+      "label": "servants came crowding round him offering presents",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization",
+      "label": "Flory realized he was glad to be coming back",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_death",
+      "label": "Flory's father died",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_death",
+      "label": "Flory's mother died",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shot_fired",
+      "label": "Flory fired rifle at pariah dog",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_servants",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dog",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_cable_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cable_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_colombo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deaths",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_to_rangoon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cable_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_rangoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_to_rangoon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_rangoon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upper_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_greeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_greeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upper_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_greeting",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_greeting",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_ko_sla",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_servants_greeting",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_ba_pe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_servants_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shot_fired",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shot_fired",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_shot_fired",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shot_fired",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shot_fired",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_pariah_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_england",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_upper_burma",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_burma",
+      "target_closed_value": null
+    }
+  ]
+}

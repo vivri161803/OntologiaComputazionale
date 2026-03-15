@@ -1,0 +1,333 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_seton",
+      "label": "Mary Seton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_seton",
+      "label": "Mrs Seton (Mary's mother)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_unknown_scholar",
+      "label": "The bent figure, possibly a famous scholar",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_john_stuart_mill",
+      "label": "John Stuart Mill",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_stephen",
+      "label": "Lady Stephen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emily_davies",
+      "label": "Emily Davies",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mothers",
+      "label": "The mothers of the women at Fernham",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_spring_walk",
+      "label": "The narrator's walk through the garden at Fernham in spring twilight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner served in the great dining-hall in October",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Conversation between the narrator and Mary Seton in her sitting-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fund_raising",
+      "label": "The effort to raise thirty thousand pounds for the college around 1860",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection",
+      "label": "The narrator's reflection on women's economic history and inheritance laws",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_fernham_garden",
+      "label": "The gardens of Fernham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fernham_building",
+      "label": "The building at Fernham with curved windows",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_hall",
+      "label": "The great dining-hall at Fernham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mary_sitting_room",
+      "label": "Mary Seton's sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The chapel with a roof where masons worked",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_scotland",
+      "label": "Scotland",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_parthenon",
+      "label": "The Parthenon",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mary_seton_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mothers_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mary_seton",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_mothers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_spring_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_fund_raising",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_fernham_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_dining_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_mary_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_spring_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_seton",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_seton",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spring_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fernham_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mary_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spring_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fund_raising",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fund_raising",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_unknown_scholar",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_spring_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_john_stuart_mill",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_fund_raising",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_stephen",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_fund_raising",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emily_davies",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_fund_raising",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mothers",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_seton",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    }
+  ]
+}

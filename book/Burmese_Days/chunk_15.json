@@ -1,0 +1,474 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mohammed_ali",
+      "label": "Mohammed Ali",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_westfield",
+      "label": "Westfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sub_inspector",
+      "label": "Sub-inspector",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_suspect",
+      "label": "The suspect",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maung_ba",
+      "label": "Maung Ba",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mali",
+      "label": "The mali",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory_clerk",
+      "label": "Flory's clerk",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_pu",
+      "label": "Ma Pu",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_yi",
+      "label": "Ma Yi",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_pe",
+      "label": "Ba Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_bungalow",
+      "label": "The bungalow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "The maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "The veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "The bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom_macgregor",
+      "label": "Mr Macgregor's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_police_station",
+      "label": "The police station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lock_up",
+      "label": "The lock-up",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_compound",
+      "label": "The compound",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_servants_quarters",
+      "label": "The servants' quarters",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_office",
+      "label": "The office",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_morning_routine",
+      "label": "Flory's morning routine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_exercises",
+      "label": "Mr Macgregor's morning exercises",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "The interrogation of the suspect",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "The arrest of the suspect",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wives_quarrel",
+      "label": "Ko S'la's wives quarrel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_macgregor_walk",
+      "label": "Mr Macgregor's morning walk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_delivery",
+      "label": "Delivery of the anonymous letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_reading",
+      "label": "Flory reads the anonymous letter",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bungalow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_routine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_morning_routine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_exercises",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_macgregor_exercises",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom_macgregor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_exercises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mohammed_ali",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_macgregor_exercises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_police_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sub_inspector",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_suspect",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lock_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_suspect",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_westfield",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wives_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_wives_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_servants_quarters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_pu",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wives_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_yi",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_wives_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wives_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_macgregor_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_macgregor_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compound",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_macgregor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_macgregor_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compound",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory_clerk",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_letter_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_compound",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_veraswami",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letter_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bungalow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_maidan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_compound",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_police_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_lock_up",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_morning_routine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_macgregor_exercises",
+      "target_closed_value": null
+    }
+  ]
+}

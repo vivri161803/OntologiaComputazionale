@@ -1,0 +1,591 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_sein",
+      "label": "Ba Sein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_kin",
+      "label": "Ma Kin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_new_military_policeman",
+      "label": "New Military Police officer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stationmaster",
+      "label": "Stationmaster",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_plan_unfolded",
+      "label": "The plan is unfolded in detail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_returns_to_camp",
+      "label": "Flory goes back to camp",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_heavy_rain",
+      "label": "Heavy rain for thirty-eight hours",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_elizabeth_riding",
+      "label": "Verrall and Elizabeth go out riding in the evenings",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_news_verrall_leaving",
+      "label": "News filters to the Club that Verrall is leaving Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_fails_to_appear",
+      "label": "Verrall fails to turn up at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_waits_at_club",
+      "label": "Elizabeth and her aunt wait at the Club each evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lackersteen_harasses_elizabeth",
+      "label": "Mr Lackersteen pesters Elizabeth unceasingly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_new_officer_arrives",
+      "label": "New Military Police officer arrives at the Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_learns_verrall_gone",
+      "label": "Elizabeth learns that Verrall has departed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rush_to_station",
+      "label": "Elizabeth and Mrs Lackersteen rush to the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_departs_early",
+      "label": "The train departs early, before scheduled time",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_departure",
+      "label": "Verrall departs on the Mandalay train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_returns_home",
+      "label": "Elizabeth and Mrs Lackersteen return home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast_conversation",
+      "label": "Elizabeth and Mrs Lackersteen sit down to breakfast",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_camp",
+      "label": "Camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dakbungalow",
+      "label": "Dakbungalow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lackersteens_house",
+      "label": "Lackersteens' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_maidan",
+      "label": "Maidan",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "Veranda",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_di_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_plan_unfolded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_plan_unfolded",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_u_po_kyin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_unfolded",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ba_sein",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_unfolded",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ma_kin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_returns_to_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_flory_returns_to_camp",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_returns_to_camp",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heavy_rain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_heavy_rain",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_returns_to_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_riding",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_riding",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_elizabeth_riding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_heavy_rain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_verrall_leaving",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_news_verrall_leaving",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_verrall_leaving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_elizabeth_riding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_fails_to_appear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_verrall_fails_to_appear",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_fails_to_appear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_fails_to_appear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_news_verrall_leaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_waits_at_club",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_waits_at_club",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mrs_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_waits_at_club",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_waits_at_club",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_fails_to_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lackersteen_harasses_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lackersteen_harasses_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mr_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lackersteen_harasses_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lackersteen_harasses_elizabeth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_waits_at_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_new_officer_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_new_officer_arrives",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_new_military_policeman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_new_officer_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_new_officer_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lackersteen_harasses_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_learns_verrall_gone",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_elizabeth_learns_verrall_gone",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_learns_verrall_gone",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_learns_verrall_gone",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_new_officer_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rush_to_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rush_to_station",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rush_to_station",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mrs_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rush_to_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rush_to_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_learns_verrall_gone",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_departs_early",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_departs_early",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_departs_early",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rush_to_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_verrall_departure",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_verrall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_departs_early",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_returns_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_elizabeth_returns_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_returns_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mrs_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_returns_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_returns_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mrs_lackersteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_returns_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

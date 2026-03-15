@@ -1,0 +1,734 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mrs. Harker / Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_donelson",
+      "label": "Captain Donelson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hildesheim",
+      "label": "Immanuel Hildesheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_skinsky",
+      "label": "Petrof Skinsky",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_hypnotic_trance_1",
+      "label": "First hypnotic trance of Mrs. Harker on the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnotic_trance_2",
+      "label": "Second hypnotic trance at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnotic_trance_3",
+      "label": "Third hypnotic trance at sunset",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnotic_trance_4",
+      "label": "Fourth hypnotic trance at sunrise on 30 October",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_galatz",
+      "label": "Arrival at Galatz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_ship",
+      "label": "Visit to the Czarina Catherine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interview_captain",
+      "label": "Interview with Captain Donelson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_find_hildesheim",
+      "label": "Finding and interrogating Hildesheim",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_search_skinsky",
+      "label": "Search for Skinsky",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_skinsky_death",
+      "label": "Discovery of Skinsky's body in the churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_hotel",
+      "label": "Return to the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consult_mina",
+      "label": "Consultation about taking Mina into confidence",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_train",
+      "label": "Train from Varna to Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_galatz",
+      "label": "Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "Czarina Catherine",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "River Danube",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Hotel in Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_churchyard",
+      "label": "Churchyard of St. Peter",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_box",
+      "label": "The earth chest / box marked for Count Dracula",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_hypnotic_trance_1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hypnotic_trance_1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_2",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hypnotic_trance_2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnotic_trance_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnotic_trance_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hypnotic_trance_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_3",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hypnotic_trance_3",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnotic_trance_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_3",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnotic_trance_3",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hypnotic_trance_3",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_4",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hypnotic_trance_4",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnotic_trance_3",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_trance_4",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hypnotic_trance_4",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_hypnotic_trance_4",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_galatz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_galatz",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hypnotic_trance_4",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_galatz",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_ship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_ship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_captain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_interview_captain",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview_captain",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_donelson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_box",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interview_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_hildesheim",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_find_hildesheim",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interview_captain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hildesheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_box",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_skinsky",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_search_skinsky",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_find_hildesheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_skinsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_skinsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_search_skinsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skinsky",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_search_skinsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skinsky_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_skinsky_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_search_skinsky",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skinsky_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_churchyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skinsky",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_skinsky_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_skinsky_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_hotel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_skinsky_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_hotel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consult_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_consult_mina",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consult_mina",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consult_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consult_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consult_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_consult_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_train",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_churchyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_galatz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_box",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_windmill_destruction",
+      "label": "Destruction of the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_expulsion",
+      "label": "Snowball's ignominious expulsion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_sentence",
+      "label": "Death sentence pronounced upon Snowball",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_footprints_discovery",
+      "label": "Discovery of pig footprints in the grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_rebuilding",
+      "label": "Rebuilding of the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_windmill",
+      "label": "The windmill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_knoll",
+      "label": "The knoll",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hedge",
+      "label": "The hole in the hedge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_foxwood_farm",
+      "label": "Foxwood Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_expulsion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_footprints_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_footprints_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_footprints_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_knoll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_footprints_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_sentence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_footprints_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death_sentence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_rebuilding",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_windmill_rebuilding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windmill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_sentence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_rebuilding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_windmill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_knoll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_foxwood_farm",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_renfield",
+      "label": "Renfield",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_seward_office",
+      "label": "Seward's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hampstead",
+      "label": "Hampstead",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amsterdam",
+      "label": "Amsterdam",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_lucy_death",
+      "label": "Lucy's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_attack",
+      "label": "Children being decoyed away and wounded at Hampstead",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vanhelsing_trip",
+      "label": "Van Helsing's trip to Exeter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vanhelsing_revelation",
+      "label": "Van Helsing's revelation about Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_recovery",
+      "label": "Seward's emotional recovery",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_student",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_attack",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_lucy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_children_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_vanhelsing_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_seward_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_trip",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vanhelsing_trip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_trip",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_exeter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hampstead",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vanhelsing_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vanhelsing_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_seward_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_seward_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_seward_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hampstead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

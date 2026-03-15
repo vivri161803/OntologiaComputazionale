@@ -1,0 +1,851 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Mr. Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington",
+      "label": "Mr. Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_frederick",
+      "label": "Mr. Frederick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mollie",
+      "label": "Mollie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stable_lad",
+      "label": "stable-lad from Foxwood",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cat",
+      "label": "the cat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_geese",
+      "label": "the geese",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pigeons",
+      "label": "the pigeons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sheep",
+      "label": "the sheep",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_horses",
+      "label": "the three horses",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cows",
+      "label": "the three cows",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pigs",
+      "label": "the pigs",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_rebellion_spread",
+      "label": "news of the Rebellion spreads across the county",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigeons_mission",
+      "label": "Snowball and Napoleon send out pigeons to spread the story of the Rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jones_complaint",
+      "label": "Mr. Jones complains in the Red Lion taproom about being turned out of his property",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farmers_fear",
+      "label": "neighboring farmers become frightened by the rebellion and spread false stories",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_song_spread",
+      "label": "the tune of 'Beasts of England' spreads throughout the countryside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animals_rebellion",
+      "label": "animals on neighboring farms begin to rebel against their owners",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_invasion_preparation",
+      "label": "Jones and men from Foxwood and Pinchfield prepare to invade Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battle_cowshed",
+      "label": "the Battle of the Cowshed - the invasion and defense of Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigeons_attack",
+      "label": "pigeons attack the invading men from the air",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_geese_attack",
+      "label": "geese rush out and peck at the men's legs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_attack",
+      "label": "Muriel, Benjamin, and sheep rush forward to attack the men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ambush",
+      "label": "horses, cows, and pigs emerge from the cowshed in ambush",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_charges",
+      "label": "Snowball charges at Jones",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jones_shot",
+      "label": "Jones shoots at Snowball and wounds him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sheep_killed",
+      "label": "a sheep is killed by Jones's gunfire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_attacks_jones",
+      "label": "Snowball flings himself against Jones's legs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxer_kills_stable_lad",
+      "label": "Boxer strikes the stable-lad with his hoofs, killing him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_men_retreat",
+      "label": "the men retreat in panic from Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mollie_hiding",
+      "label": "Mollie is found hiding in her stall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stable_lad_recovery",
+      "label": "the stable-lad recovers and escapes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_celebration",
+      "label": "the animals hold a celebration of victory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "the dead sheep is given a solemn funeral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_medals_awarded",
+      "label": "military decorations are awarded to Snowball and Boxer",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_red_lion",
+      "label": "the Red Lion taproom at Willingdon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_foxwood",
+      "label": "Foxwood farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pinchfield",
+      "label": "Pinchfield farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "the yard of Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cowshed",
+      "label": "the cowshed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_countryside",
+      "label": "the countryside",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stall",
+      "label": "Mollie's stall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_graveside",
+      "label": "the graveside",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_rebellion_spread",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_pigeons_mission",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rebellion_spread",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigeons_mission",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigeons_mission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigeons_mission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigeons_mission",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_complaint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rebellion_spread",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_complaint",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_red_lion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jones_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farmers_fear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmers_fear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmers_fear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_song_spread",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigeons_mission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_song_spread",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_song_spread",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_countryside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_rebellion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_song_spread",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_rebellion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_invasion_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animals_rebellion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_invasion_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_invasion_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_invasion_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_frederick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_invasion_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle_cowshed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_invasion_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle_cowshed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_battle_cowshed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigeons_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_invasion_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigeons_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_pigeons",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigeons_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_geese_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigeons_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_geese_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_geese",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_geese_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_geese_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_muriel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sheep",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ambush",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ambush",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ambush",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_horses",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cows",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pigs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_charges",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ambush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_charges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_charges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_charges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_charges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jones_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jones_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sheep_killed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sheep_killed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_sheep",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_sheep_killed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_attacks_jones",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_attacks_jones",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snowball_attacks_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_snowball_attacks_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_kills_stable_lad",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_attacks_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxer_kills_stable_lad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxer_kills_stable_lad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stable_lad",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_boxer_kills_stable_lad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxer_kills_stable_lad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_men_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_men_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_hiding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_men_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mollie_hiding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mollie_hiding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stable_lad_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mollie_hiding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stable_lad",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stable_lad_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stable_lad_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graveside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sheep",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medals_awarded",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medals_awarded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_medals_awarded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_medals_awarded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_animal_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_cowshed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_red_lion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

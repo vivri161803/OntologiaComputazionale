@@ -1,0 +1,519 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ma_hla_may",
+      "label": "Ma Hla May",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_pe",
+      "label": "Ba Pe",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Flory's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "Camp",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_macgregor_bungalow",
+      "label": "Mr Macgregor's bungalow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cookhouse",
+      "label": "Cookhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "Jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stream",
+      "label": "Stream with ford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pool",
+      "label": "Pool with peepul tree",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_flory_sleeping",
+      "label": "Flory sleeping in his bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ko_sla_awakens",
+      "label": "Ko S'la awakens and prepares tea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ko_sla_wakes_flory",
+      "label": "Ko S'la wakes Flory with tea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ma_hla_may_arrives",
+      "label": "Ma Hla May arrives for tea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_ma_hla_may_encounter",
+      "label": "Flory and Ma Hla May's intimate encounter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_dismisses_ma_hla_may",
+      "label": "Flory dismisses Ma Hla May from the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_prepares_walk",
+      "label": "Flory prepares for a walk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_jungle_walk",
+      "label": "Flory walks into the jungle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_reaches_stream",
+      "label": "Flory reaches the stream and ford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_finds_pool",
+      "label": "Flory finds the pool with peepul tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_bathes",
+      "label": "Flory bathes in the pool",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_flory_sleeping",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_flory_sleeping",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_sleeping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_ko_sla_awakens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ko_sla_awakens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cookhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ko_sla_awakens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_sleeping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ko_sla_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ko_sla_wakes_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ko_sla_wakes_flory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ko_sla_wakes_flory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ko_sla_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ko_sla_wakes_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ko_sla_wakes_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ma_hla_may_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ma_hla_may_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ko_sla_wakes_flory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ma_hla_may_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_ma_hla_may_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_ma_hla_may_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_flory_ma_hla_may_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_ma_hla_may_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ma_hla_may_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_ma_hla_may_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_ma_hla_may_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_dismisses_ma_hla_may",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_flory_dismisses_ma_hla_may",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_dismisses_ma_hla_may",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_ma_hla_may_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_dismisses_ma_hla_may",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ma_hla_may",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_dismisses_ma_hla_may",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_prepares_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_flory_prepares_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_prepares_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_dismisses_ma_hla_may",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_prepares_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_prepares_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_jungle_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_flory_jungle_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_jungle_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_prepares_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_jungle_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_jungle_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_flory_reaches_stream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_flory_reaches_stream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_reaches_stream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_jungle_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_reaches_stream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_reaches_stream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_finds_pool",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_flory_finds_pool",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_finds_pool",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_reaches_stream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_finds_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_bathes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_flory_bathes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_bathes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_finds_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_bathes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flo",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_flory_bathes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pool",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

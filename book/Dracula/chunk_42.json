@@ -1,0 +1,629 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (Dr. Seward)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing (the Professor)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_graveyard",
+      "label": "The graveyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tomb",
+      "label": "Lucy's tomb",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_berkeley_hotel",
+      "label": "The Berkeley Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paddington",
+      "label": "Paddington Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_house",
+      "label": "Dr. Seward's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_gathering",
+      "label": "The three men call for the Professor at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_graveyard",
+      "label": "The group arrives at the graveyard and waits for the gravediggers to leave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enter_tomb",
+      "label": "The group enters Lucy's tomb",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparation",
+      "label": "Van Helsing prepares his tools and explains the nature of the Undead",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stake_driving",
+      "label": "Arthur drives the stake through Lucy's heart",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_transformation",
+      "label": "Lucy's body transforms back to her human form",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_rites",
+      "label": "The group performs final rites on Lucy's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_promise",
+      "label": "The group makes a promise to continue their quest against the Undead",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telegram",
+      "label": "Van Helsing receives a telegram from Mina Harker",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_meets_mina",
+      "label": "Dr. Seward meets Mina Harker at Paddington Station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_seward_house",
+      "label": "Mina Harker arrives at Dr. Seward's house",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_victory",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graveyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_graveyard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_graveyard",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graveyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_graveyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_enter_tomb",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_graveyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_tomb",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_tomb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enter_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enter_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enter_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_enter_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enter_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stake_driving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stake_driving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stake_driving",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stake_driving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_rites",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_rites",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_rites",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_rites",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_rites",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_final_rites",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_final_rites",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graveyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_berkeley_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_meets_mina",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_meets_mina",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paddington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_meets_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_meets_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_meets_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_seward_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_meets_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_seward_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_seward_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_tomb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_graveyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_graveyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_landlord",
+      "label": "Landlord of Golden Krone Hotel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_landlady",
+      "label": "Landlady of Golden Krone Hotel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_munich",
+      "label": "Munich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vienna",
+      "label": "Vienna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_buda_pesth",
+      "label": "Buda-Pesth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_klausenburgh",
+      "label": "Klausenburgh",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_danube",
+      "label": "Danube River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carpathians",
+      "label": "Carpathian Mountains",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_transylvania",
+      "label": "Transylvania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_moldavia",
+      "label": "Moldavia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bukovina",
+      "label": "Bukovina",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle_dracula",
+      "label": "Castle Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bistritz",
+      "label": "Bistritz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_borgo_pass",
+      "label": "Borgo Pass",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_golden_krone_hotel",
+      "label": "Golden Krone Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_british_museum",
+      "label": "British Museum",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_departure_from_munich",
+      "label": "Jonathan departs from Munich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_vienna",
+      "label": "Jonathan arrives at Vienna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_klausenburgh",
+      "label": "Jonathan arrives at Klausenburgh",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_klausenburgh",
+      "label": "Jonathan has dinner at Hotel Royale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_research_british_museum",
+      "label": "Jonathan researches Transylvania at British Museum",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_journey_day",
+      "label": "Jonathan travels by train through Transylvania",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_bistritz",
+      "label": "Jonathan arrives at Bistritz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_landlady",
+      "label": "Jonathan meets the landlady at Golden Krone Hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_receives_letter",
+      "label": "Jonathan receives letter from Count Dracula",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlord_inquiry",
+      "label": "Jonathan inquires about Count Dracula with landlord",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_landlady_warning",
+      "label": "Landlady warns Jonathan about St. George's Day",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crucifix_gift",
+      "label": "Landlady gives Jonathan a crucifix",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure_coach",
+      "label": "Jonathan departs by coach from Bistritz",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure_from_munich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_from_munich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure_from_munich",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_munich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_from_munich",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_research_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_vienna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_vienna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_vienna",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vienna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_vienna",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure_from_munich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_klausenburgh",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_klausenburgh",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_klausenburgh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_vienna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_klausenburgh",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_klausenburgh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_research_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research_british_museum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_research_british_museum",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_journey_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey_day",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_journey_day",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_transylvania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey_day",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_klausenburgh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_bistritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_bistritz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_bistritz",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bistritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_bistritz",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_journey_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_landlady",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlady",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting_landlady",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_landlady",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_krone_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_landlady",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_bistritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_receives_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count_dracula",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_receives_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_receives_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_receives_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_krone_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_receives_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_landlady",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlord_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlord",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_landlord_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_inquiry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_landlord_inquiry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_krone_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlord_inquiry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_receives_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_landlady_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlady",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_landlady_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlady_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_landlady_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_krone_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_landlady_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlord_inquiry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crucifix_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_landlady",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_crucifix_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crucifix_gift",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_krone_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crucifix_gift",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_landlady_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure_coach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_coach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure_coach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bistritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_coach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crucifix_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bistritz",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_borgo_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_carpathians",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_golden_krone_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_danube",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

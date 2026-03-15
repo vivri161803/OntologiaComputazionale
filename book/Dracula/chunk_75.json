@@ -1,0 +1,680 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mina Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_professor",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dracula",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gypsies",
+      "label": "Gypsy leader and companions",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_carpathians",
+      "label": "Carpathian mountains",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "Dracula's castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shelter",
+      "label": "Rocky hollow shelter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_plain",
+      "label": "Snow-covered plain",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Mina and Professor travel eastward toward Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shelter_found",
+      "label": "Professor finds protective rocky shelter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cart_spotted",
+      "label": "Mina and Professor spot cart with chest approaching",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_circle_drawn",
+      "label": "Professor draws protective circle around shelter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horsemen_spotted",
+      "label": "Four horsemen pursuing from south and north spotted",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_convergence",
+      "label": "All parties converge near the cart",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_halt_command",
+      "label": "Jonathan and Morris command gypsies to halt",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battle",
+      "label": "Armed confrontation between hunters and gypsies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chest_opened",
+      "label": "Jonathan and Morris force open the chest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dracula_death",
+      "label": "Jonathan and Morris strike down Dracula",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morris_death",
+      "label": "Mr. Morris dies from his wounds",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_chest",
+      "label": "Great square chest containing Dracula",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_mina",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_jonathan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_morris",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_professor",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_seward",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_godalming",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_dracula",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_gypsies",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_chest",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_gypsies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "obj_chest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_shelter_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_cart_spotted",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_circle_drawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_horsemen_spotted",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_convergence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_halt_command",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_chest_opened",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_dracula_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_morris_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_shelter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_plain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carpathians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shelter_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shelter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cart_spotted",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_circle_drawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shelter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horsemen_spotted",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convergence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_halt_command",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chest_opened",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morris_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shelter_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cart_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cart_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_circle_drawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horsemen_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horsemen_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gypsies",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_halt_command",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_halt_command",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gypsies",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_halt_command",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_professor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gypsies",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chest_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chest_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_chest",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chest_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dracula_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dracula",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dracula_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morris_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morris_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morris_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morris_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shelter_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cart_spotted",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shelter_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_circle_drawn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cart_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horsemen_spotted",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_circle_drawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convergence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horsemen_spotted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_halt_command",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_convergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_halt_command",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chest_opened",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dracula_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chest_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morris_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dracula_death",
+      "target_closed_value": null
+    }
+  ]
+}

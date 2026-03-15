@@ -1,0 +1,445 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_pilkington",
+      "label": "Mr. Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pigs",
+      "label": "The pigs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_animals",
+      "label": "The animals",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_pilkington_speech",
+      "label": "Mr. Pilkington's speech about friendly feelings and the labour problem",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_toast_animal_farm",
+      "label": "Mr. Pilkington raises a toast to the prosperity of Animal Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cheering",
+      "label": "Enthusiastic cheering and stamping of feet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_clink",
+      "label": "Napoleon clinks his mug against Mr. Pilkington's",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_speech",
+      "label": "Napoleon's speech about misunderstandings and changes on the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_suppress_comrade",
+      "label": "The custom of addressing one another as 'Comrade' is to be suppressed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bury_skull",
+      "label": "The boar's skull is buried",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_remove_flag_symbols",
+      "label": "The white hoof and horn are removed from the green flag",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rename_farm",
+      "label": "The farm is renamed from 'Animal Farm' to 'The Manor Farm'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_toast",
+      "label": "Napoleon raises a toast to the prosperity of The Manor Farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animals_observe",
+      "label": "The animals outside observe the strange changes in the pigs' faces",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quarrel",
+      "label": "A violent quarrel breaks out between Napoleon and Mr. Pilkington over playing an ace of spades",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transformation",
+      "label": "The pigs become indistinguishable from the men",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_table",
+      "label": "The table where the dinner takes place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "The farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden with the boar's skull",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_animal_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_pilkington",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_napoleon",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_pilkington_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_pilkington_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pilkington_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_toast_animal_farm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pilkington_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_toast_animal_farm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_toast_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cheering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_toast_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cheering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_cheering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_clink",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cheering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_clink",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_clink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_napoleon_clink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_clink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_suppress_comrade",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_suppress_comrade",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_suppress_comrade",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_bury_skull",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_suppress_comrade",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bury_skull",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bury_skull",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_remove_flag_symbols",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bury_skull",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_remove_flag_symbols",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_animal_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_remove_flag_symbols",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_rename_farm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_remove_flag_symbols",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rename_farm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rename_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rename_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_toast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rename_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_toast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_observe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_napoleon_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_observe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_animals_observe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_animals_observe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animals_observe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transformation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_pigs",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transformation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_animals",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_transformation",
+      "target_closed_value": null
+    }
+  ]
+}

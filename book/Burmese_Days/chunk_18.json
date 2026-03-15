@@ -1,0 +1,429 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth_father",
+      "label": "Elizabeth's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth_mother",
+      "label": "Elizabeth's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bank_manager",
+      "label": "French bank manager",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_lackersteen_drawing_room",
+      "label": "Lackersteen's drawing-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_highgate_house",
+      "label": "House in Highgate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boarding_school",
+      "label": "Expensive boarding-school",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montparnasse_studio",
+      "label": "Studio in Montparnasse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pension",
+      "label": "Pension near twelfth arrondissement",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_american_library",
+      "label": "American library in rue de l'Elysee",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burma",
+      "label": "Burma",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_elizabeth_reading",
+      "label": "Elizabeth reading on the sofa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boarding_school_years",
+      "label": "Elizabeth's two terms at boarding-school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_financial_crash",
+      "label": "Financial crash in 1919",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_death",
+      "label": "Elizabeth's father dies of influenza",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_move_to_paris",
+      "label": "Elizabeth and mother move to Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_teaching_job",
+      "label": "Elizabeth finds job as English teacher",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bank_manager_harassment",
+      "label": "Bank manager harasses Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_death",
+      "label": "Elizabeth's mother dies of ptomaine poisoning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_invitation_to_burma",
+      "label": "Uncle and aunt invite Elizabeth to Burma",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_orphan",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_elizabeth_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_elizabeth_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteen_drawing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lackersteen_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_boarding_school_years",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_boarding_school_years",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boarding_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boarding_school_years",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_financial_crash",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_financial_crash",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boarding_school_years",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_financial_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_father_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_financial_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_to_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_move_to_paris",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_father_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_move_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_lackersteen",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_move_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_to_paris",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_teaching_job",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_teaching_job",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_move_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_teaching_job",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_teaching_job",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pension",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_pension",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_bank_manager_harassment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_bank_manager_harassment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_teaching_job",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bank_manager",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bank_manager_harassment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bank_manager_harassment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mother_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bank_manager_harassment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_invitation_to_burma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_invitation_to_burma",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_invitation_to_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_invitation_to_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_invitation_to_burma",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_burma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_montparnasse_studio",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_highgate_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_american_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

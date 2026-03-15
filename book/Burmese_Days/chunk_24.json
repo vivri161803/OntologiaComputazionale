@@ -1,0 +1,242 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_eurasians",
+      "label": "Eurasians (Francis and Samuel)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosa_mcfee",
+      "label": "Rosa McFee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosa_mother",
+      "label": "Rosa's Burmese mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The narrator (male protagonist)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ellis",
+      "label": "Ellis",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_mandalay",
+      "label": "Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosa_house",
+      "label": "Rosa's house in Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tennis_court",
+      "label": "Tennis court",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_seduction",
+      "label": "Seduction of Rosa McFee in 1913",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_eurasians",
+      "label": "Conversation about Eurasians and their degeneration",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tennis",
+      "label": "Tennis game",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_questions",
+      "label": "Elizabeth questions about Eurasians after tennis",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pukka_sahib_remark",
+      "label": "Narrator's remark about not being a pukka sahib",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shooting_arrangement",
+      "label": "Arrangement for shooting expedition",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seducer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_seduced",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_questioner",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_respondent",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation_eurasians",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosa_mcfee",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosa_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rosa_house",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_mandalay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_eurasians",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tennis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_eurasians",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_questions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tennis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_elizabeth_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pukka_sahib_remark",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pukka_sahib_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_pukka_sahib_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shooting_arrangement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pukka_sahib_remark",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shooting_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_shooting_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shooting_arrangement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_rosa_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_tennis_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

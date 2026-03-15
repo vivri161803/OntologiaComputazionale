@@ -1,0 +1,569 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aunt",
+      "label": "Elizabeth's aunt (Mrs Lackersteen)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_uncle",
+      "label": "Elizabeth's uncle (Mr Lackersteen)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Mr Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burmese_girl",
+      "label": "Burmese girl (laundress)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "Indian butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother",
+      "label": "Elizabeth's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_small_station",
+      "label": "Small station in the jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "Ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mediterranean",
+      "label": "Mediterranean Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_indian_ocean",
+      "label": "Indian Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_colombo",
+      "label": "Colombo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mount_lavinia",
+      "label": "Mount Lavinia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay",
+      "label": "Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_india",
+      "label": "India",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lackersteen_house",
+      "label": "Lackersteen's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flory_house",
+      "label": "Flory's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Elizabeth spends thirty pounds on summer frocks and sets sail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_journey",
+      "label": "Ship journey across Mediterranean and Indian Ocean",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dancing_on_deck",
+      "label": "Dancing on deck at nights",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_colombo_arrival",
+      "label": "Ship sails into Colombo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sampan_dispute",
+      "label": "Sampan-wallahs dispute over passengers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mount_lavinia_bathing",
+      "label": "Elizabeth and friends bathe at Mount Lavinia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rangoon_arrival",
+      "label": "Ship reaches Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_journey",
+      "label": "Train journey north of Mandalay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kyauktada_arrival",
+      "label": "Elizabeth arrives at Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_uncle_greeting",
+      "label": "Mr Lackersteen greets Elizabeth warmly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_conversation",
+      "label": "Elizabeth and aunt talk under the punkah after dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_aunt_hints_marriage",
+      "label": "Aunt hints at the importance of marriage for girls",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast_conversation",
+      "label": "Elizabeth describes her adventure at Flory's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burmese_girl_revelation",
+      "label": "Elizabeth mentions seeing a Burmese girl at Flory's house",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_niece",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_guest",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_colombo_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sampan_dispute",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_colombo_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mount_lavinia_bathing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sampan_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rangoon_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mount_lavinia_bathing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rangoon_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kyauktada_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_uncle_greeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kyauktada_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_uncle_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_aunt_hints_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_aunt_hints_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burmese_girl_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ship_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing_on_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_colombo_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mount_lavinia_bathing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kyauktada_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_uncle",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_kyauktada_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aunt",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_kyauktada_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_uncle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_uncle_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_uncle_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aunt",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aunt",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_aunt_hints_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_aunt_hints_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aunt",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_breakfast_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_uncle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_breakfast_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_butler",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_breakfast_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burmese_girl_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_burmese_girl_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_burmese_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_burmese_girl_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_colombo_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_colombo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mount_lavinia_bathing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mount_lavinia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rangoon_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mandalay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kyauktada_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteen_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteen_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burmese_girl_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flory_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_colombo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_mount_lavinia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lackersteen_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_flory_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_small_station",
+      "target_closed_value": null
+    }
+  ]
+}

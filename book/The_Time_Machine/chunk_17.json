@@ -1,0 +1,462 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_medical_man",
+      "label": "The Medical Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_editor",
+      "label": "The Editor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_journalist",
+      "label": "The Journalist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_psychologist",
+      "label": "The Psychologist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_watchett",
+      "label": "Mrs. Watchett",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hillyer",
+      "label": "Hillyer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_richardson",
+      "label": "Richardson the publisher",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_return_journey",
+      "label": "The Time Traveller returns through time to the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_laboratory",
+      "label": "The Time Traveller arrives back at the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_story_telling",
+      "label": "The Time Traveller tells his story to the guests",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination_flowers",
+      "label": "The Medical Man examines the white flowers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verification_machine",
+      "label": "The guests verify the existence of the Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_guests_departure",
+      "label": "The guests depart from the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_return_visit",
+      "label": "The Narrator returns to visit the Time Traveller",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_machine_vanishes",
+      "label": "The Time Machine vanishes with the Time Traveller",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_traveller_disappearance",
+      "label": "The Time Traveller disappears for three years",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_smoking_room",
+      "label": "The smoking-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_white_flowers",
+      "label": "The white flowers from the future",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_ritorno",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_return_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "evt_arrival_laboratory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_laboratory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_story_telling",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_story_telling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_story_telling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_smoking_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_journalist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_flowers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_examination_flowers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_story_telling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination_flowers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_smoking_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_white_flowers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verification_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_verification_machine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verification_machine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verification_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verification_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_verification_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verification_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_editor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_journalist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_return_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_narrator_return_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_guests_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_return_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_return_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_machine_vanishes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_time_machine_vanishes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_return_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_machine_vanishes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_machine_vanishes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_time_machine_vanishes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_time_traveller_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_time_machine_vanishes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_traveller_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_smoking_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_corridor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "obj_white_flowers",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_weena",
+      "target_closed_value": null
+    }
+  ]
+}

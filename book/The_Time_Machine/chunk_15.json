@@ -1,0 +1,495 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveler",
+      "label": "The Time Traveler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morlocks",
+      "label": "The Morlocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_upperworld_people",
+      "label": "The Upper-World people",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_time_machine",
+      "label": "The Time Machine",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_matches",
+      "label": "The matches",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_crowbar",
+      "label": "The crowbar",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_yellow_seat",
+      "label": "The seat of yellow metal",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_overworld",
+      "label": "The Overworld",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_underworld",
+      "label": "The Under-World",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_white_sphinx",
+      "label": "The White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bronze_chamber",
+      "label": "The small apartment within the White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_reflection",
+      "label": "The Traveler reflects on his earlier conclusions and the beauty of the world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grief",
+      "label": "The Traveler grieves over the fate of human intellect and the Overworld people",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theorizing",
+      "label": "The Traveler theorizes about the decline of intelligence and the rise of the Morlocks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "The Traveler sleeps on the turf",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "The Traveler awakes before sunset",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_approach_sphinx",
+      "label": "The Traveler approaches the White Sphinx",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "The Traveler discovers the bronze valves of the Sphinx are open",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_entry",
+      "label": "The Traveler enters the chamber and finds the Time Machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_trap",
+      "label": "The bronze panels suddenly close, trapping the Traveler in darkness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlock_attack",
+      "label": "The Morlocks attack the Traveler in the darkness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_struggle",
+      "label": "The Traveler struggles with the Morlocks for control of the levers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape",
+      "label": "The Traveler activates the Time Machine and escapes",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yellow_seat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theorizing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_theorizing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theorizing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theorizing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_approach_sphinx",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_approach_sphinx",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_white_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_approach_sphinx",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_approach_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_white_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_approach_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_entry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_entry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bronze_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_entry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trap",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_trap",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bronze_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trap",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_entry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trap",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_trap",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bronze_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trap",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bronze_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_struggle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_yellow_seat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_overworld",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_white_sphinx",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bronze_chamber",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

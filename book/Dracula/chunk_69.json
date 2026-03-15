@@ -1,0 +1,466 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mrs. Harker (Mina)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming (Art)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count (Dracula)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_ship_arrival",
+      "label": "Czarina Catherine reported entering Galatz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telegram",
+      "label": "Telegram from Rufus Smith announcing ship arrival",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_trance",
+      "label": "Mina's hypnotic trance and connection to the Count",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_meeting",
+      "label": "Group meeting to discuss the ship arrival and plan action",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_task_assignment",
+      "label": "Van Helsing assigns tasks to the three men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_private_consultation",
+      "label": "Van Helsing and Seward's private consultation about Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_manuscript_retrieval",
+      "label": "Mina retrieves Harker's journal from the Castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_analysis",
+      "label": "Van Helsing's analysis of the Count's criminal nature and Mina's insight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_escape",
+      "label": "The Count's escape to Galatz by ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_galatz",
+      "label": "Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "Castle Dracula",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_danube",
+      "label": "The Danube River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "The ship (Czarina Catherine)",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_journal",
+      "label": "Harker's journal from the Castle",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_escape",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_group_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_task_assignment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_analysis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_varna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_galatz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_telegram",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_trance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telegram",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_task_assignment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_private_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_task_assignment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_manuscript_retrieval",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_private_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_analysis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_manuscript_retrieval",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_count_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_task_assignment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_task_assignment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_task_assignment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_task_assignment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_private_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_private_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_private_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_manuscript_retrieval",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_analysis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_journal",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mina_trance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mina_trance",
+      "target_closed_value": null
+    }
+  ]
+}

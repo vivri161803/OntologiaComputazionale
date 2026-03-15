@@ -1,0 +1,417 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_u_po_kyin",
+      "label": "U Po Kyin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ba_taik",
+      "label": "Ba Taik",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_ba_sein",
+      "label": "Ko Ba Sein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_macgregor",
+      "label": "Mr Macgregor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_headman_thitpingyi",
+      "label": "Headman of Thitpingyi village",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_village_girl",
+      "label": "Young village girl with a baby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ali_shah",
+      "label": "Ali Shah",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dacoit",
+      "label": "A dacoit",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_u_po_kyin_sitting",
+      "label": "U Po Kyin sitting in his veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_u_po_kyin_thinking",
+      "label": "U Po Kyin thinking about his past life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_british_troops_mandalay",
+      "label": "British troops marching victorious into Mandalay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_government_appointment",
+      "label": "Po Kyin trying for a Government appointment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_bazaar_work",
+      "label": "Po Kyin working in Mandalay bazaars",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blackmail_stroke",
+      "label": "Po Kyin obtaining four hundred rupees through blackmail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_rangoon_clerkship",
+      "label": "Po Kyin buying his way into a Government clerkship in Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_denouncing_confederates",
+      "label": "Po Kyin denouncing his confederates",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_assistant_township_officer",
+      "label": "Po Kyin being made an Assistant Township Officer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_po_kyin_rise_to_magistrate",
+      "label": "Po Kyin rising to Sub-divisional Magistrate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ba_taik_appearing",
+      "label": "Ba Taik appearing through the beaded curtain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ba_sein_visit",
+      "label": "Ko Ba Sein visiting U Po Kyin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burmese_patriot_article",
+      "label": "Publication of article in the Burmese Patriot about Mr Macgregor",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "U Po Kyin's veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada, Upper Burma",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay",
+      "label": "Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mandalay_bazaars",
+      "label": "Mandalay bazaars",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thitpingyi_village",
+      "label": "Thitpingyi village",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_burmese_patriot",
+      "label": "The Burmese Patriot newspaper",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_magistrate",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_servant",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_clerk",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_veranda",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_bazaar",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_u_po_kyin_sitting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kyauktada",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_u_po_kyin_sitting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_u_po_kyin_thinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_thinking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_british_troops_mandalay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_british_troops_mandalay",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_government_appointment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_government_appointment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_bazaar_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_bazaar_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blackmail_stroke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blackmail_stroke",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_rangoon_clerkship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_rangoon_clerkship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_denouncing_confederates",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_denouncing_confederates",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_assistant_township_officer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_assistant_township_officer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_po_kyin_rise_to_magistrate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_rise_to_magistrate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ba_taik_appearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ba_taik_appearing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ba_sein_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ba_sein_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burmese_patriot_article",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_sitting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_u_po_kyin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_u_po_kyin_thinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ba_taik",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_ba_taik_appearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_ba_sein",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ba_sein_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_macgregor",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_burmese_patriot_article",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_british_troops_mandalay",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mandalay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_bazaar_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mandalay_bazaars",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_rangoon_clerkship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_po_kyin_rise_to_magistrate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_u_po_kyin_sitting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_u_po_kyin_thinking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_british_troops_mandalay",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_po_kyin_government_appointment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_blackmail_stroke",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_po_kyin_denouncing_confederates",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_po_kyin_assistant_township_officer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_burmese_patriot_article",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_mandalay_bazaars",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

@@ -1,0 +1,564 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moses",
+      "label": "Moses the raven",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bluebell",
+      "label": "Bluebell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jessie",
+      "label": "Jessie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pincher",
+      "label": "Pincher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pilkington",
+      "label": "Mr. Pilkington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whymper",
+      "label": "Whymper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sheep",
+      "label": "The sheep",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dogs",
+      "label": "The dogs",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cockerel",
+      "label": "The black cockerel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_farmers",
+      "label": "Neighbouring farmers",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_farm",
+      "label": "Animal Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pasture",
+      "label": "The pasture",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_waste_ground",
+      "label": "Waste ground with birch saplings",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barn",
+      "label": "The big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "The farmhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The farmhouse garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_years_pass",
+      "label": "Years pass and seasons change",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_deaths",
+      "label": "Deaths of old animals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farm_expansion",
+      "label": "Farm expansion and prosperity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_completion",
+      "label": "Windmill completion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sheep_isolation",
+      "label": "Squealer isolates sheep for a week",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigs_walk_upright",
+      "label": "Pigs walk on hind legs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_commandment_change",
+      "label": "Seven Commandments changed to one",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pigs_adopt_human_ways",
+      "label": "Pigs adopt human clothes and luxuries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farmer_inspection",
+      "label": "Neighbouring farmers inspect the farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_party",
+      "label": "Dinner party with pigs and farmers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pilkington_toast",
+      "label": "Mr. Pilkington's toast and speech",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_years_pass",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_deaths",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_years_pass",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deaths",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_farm_expansion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_deaths",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farm_expansion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_windmill_completion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farm_expansion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_completion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_sheep_isolation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sheep_isolation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_sheep_isolation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_waste_ground",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sheep_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sheep",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_sheep_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_walk_upright",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sheep_isolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_walk_upright",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_pigs_walk_upright",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigs_walk_upright",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigs_walk_upright",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_pigs_walk_upright",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dogs",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_pigs_walk_upright",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandment_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigs_walk_upright",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_commandment_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_commandment_change",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_commandment_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_commandment_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_adopt_human_ways",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_commandment_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pigs_adopt_human_ways",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigs_adopt_human_ways",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pigs_adopt_human_ways",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farmer_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pigs_adopt_human_ways",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farmer_inspection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_farmer_inspection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_farmers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmer_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farmer_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_party",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farmer_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_dinner_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_farmers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pilkington_toast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pilkington_toast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_pilkington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pilkington_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_pilkington_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_farm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

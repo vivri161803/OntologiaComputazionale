@@ -1,0 +1,725 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_older_boys",
+      "label": "older boys",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_school_poet",
+      "label": "school poet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_captain_eleven",
+      "label": "captain of the eleven",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parents",
+      "label": "Flory's parents",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_four_youths",
+      "label": "four other youths",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_men_firm",
+      "label": "men in his firm",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor",
+      "label": "the doctor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_successor",
+      "label": "his successor",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_spanish_inquisition",
+      "label": "Spanish Inquisition torture sessions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beating_poet",
+      "label": "beating the school poet with a spiked running shoe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_school",
+      "label": "attending first school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_school",
+      "label": "attending cheap third-rate public school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coming_to_burma",
+      "label": "coming to Burma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rangoon_office",
+      "label": "learning office side of business in Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_debauchery",
+      "label": "debauchery in Rangoon chummery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jungle_camp",
+      "label": "going to jungle camp north of Mandalay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_acclimatization",
+      "label": "acclimatizing to Burma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_breaks_out",
+      "label": "the War breaking out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dodging_military",
+      "label": "dodging military service",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mud_sores",
+      "label": "celebrating twenty-seventh birthday in hospital with mud-sores",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intellectual_development",
+      "label": "developing intellectually and grasping truth about Empire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_secret_life",
+      "label": "living inwardly in books and secret thoughts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_westward",
+      "label": "ship rolling westward toward England",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cable_colombo",
+      "label": "receiving cable at Colombo about deaths",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_rangoon",
+      "label": "returning to Rangoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_headquarters",
+      "label": "taking train back to headquarters",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_school",
+      "label": "first school",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_public_school",
+      "label": "cheap third-rate public school",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rangoon",
+      "label": "Rangoon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chummery",
+      "label": "chummery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle_camp",
+      "label": "jungle camp north of Mandalay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_burma",
+      "label": "Burma",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paddy_fields",
+      "label": "paddy-fields",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clubs",
+      "label": "Kipling-haunted little Clubs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_colombo",
+      "label": "Colombo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_upper_burma_town",
+      "label": "Upper Burma town",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_empire",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_first_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_first_school",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spanish_inquisition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spanish_inquisition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_spanish_inquisition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_older_boys",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_spanish_inquisition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beating_poet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_beating_poet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beating_poet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_school_poet",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_beating_poet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_captain_eleven",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beating_poet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_second_school",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_school",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coming_to_burma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_coming_to_burma",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coming_to_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parents",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_coming_to_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rangoon_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_rangoon_office",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rangoon_office",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_coming_to_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rangoon_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_debauchery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_debauchery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chummery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_debauchery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rangoon_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_debauchery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_four_youths",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_debauchery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_jungle_camp",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_camp",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_debauchery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jungle_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_men_firm",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_jungle_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acclimatization",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_acclimatization",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_burma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acclimatization",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jungle_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_acclimatization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_breaks_out",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_war_breaks_out",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_acclimatization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dodging_military",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dodging_military",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_war_breaks_out",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dodging_military",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mud_sores",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_mud_sores",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dodging_military",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mud_sores",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intellectual_development",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_intellectual_development",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mud_sores",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intellectual_development",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_secret_life",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_secret_life",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clubs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_secret_life",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intellectual_development",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_secret_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doctor",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_secret_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_westward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_ship_westward",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_secret_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ship_westward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cable_colombo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cable_colombo",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_colombo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cable_colombo",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_westward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cable_colombo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_rangoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_rangoon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_rangoon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cable_colombo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_headquarters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_headquarters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upper_burma_town",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_headquarters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_rangoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_headquarters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_successor",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_train_headquarters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_public_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chummery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_jungle_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_burma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_clubs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_paddy_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

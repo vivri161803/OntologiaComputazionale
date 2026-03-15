@@ -1,0 +1,459 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_holroyd",
+      "label": "Holroyd",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gerilleau",
+      "label": "Captain Gerilleau",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lieutenant",
+      "label": "The lieutenant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stoker",
+      "label": "The stoker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ants",
+      "label": "The new intelligent ants",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_monitor",
+      "label": "The monitor (gunboat)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cuberta",
+      "label": "The Santa Rosa (cuberta canoe)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_badama",
+      "label": "Badama",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_batemo_river",
+      "label": "Batemo River",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amazon",
+      "label": "The Amazon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_british_guiana",
+      "label": "British Guiana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tropical_south_america",
+      "label": "Tropical South America",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_europe",
+      "label": "Europe",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_lieutenant_death",
+      "label": "The lieutenant's death in the cabin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burning_cuberta",
+      "label": "Burning the Santa Rosa",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_badama",
+      "label": "Arrival at Badama",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration_badama",
+      "label": "Exploration and examination of Badama",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_firing_gun",
+      "label": "Firing the big gun at Badama",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burial_lieutenant",
+      "label": "Burial of the lieutenant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ants_invasion",
+      "label": "The ants' invasion and conquest of territories",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_holroyd_return",
+      "label": "Holroyd's return to England",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_lieutenant_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_burning_cuberta",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_arrival_badama",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_exploration_badama",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_firing_gun",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_ants_invasion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_holroyd_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_monitor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_badama",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lieutenant_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lieutenant_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lieutenant",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lieutenant_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burning_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burning_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_burning_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_exploration_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_firing_gun",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gerilleau",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_firing_gun",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_firing_gun",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lieutenant",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_burial_lieutenant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burial_lieutenant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ants",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ants_invasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_holroyd",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_holroyd_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lieutenant_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_monitor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_cuberta",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_badama",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration_badama",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_firing_gun",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_lieutenant",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_batemo_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ants_invasion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tropical_south_america",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lieutenant_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burning_cuberta",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_cuberta",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_badama",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration_badama",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration_badama",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_firing_gun",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_firing_gun",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burial_lieutenant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burial_lieutenant",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_holroyd_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_badama",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_batemo_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_batemo_river",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_amazon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_amazon",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_tropical_south_america",
+      "target_closed_value": null
+    }
+  ]
+}

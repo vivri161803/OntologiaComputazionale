@@ -1,0 +1,604 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bloxam",
+      "label": "Sam Bloxam",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_deputy",
+      "label": "The deputy at Corcoran's lodging house",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatekeeper",
+      "label": "The surly gatekeeper",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_foreman",
+      "label": "The surlier foreman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morris",
+      "label": "Mr. Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_agent",
+      "label": "The gentleman from Mitchell, Sons, & Candy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter_received",
+      "label": "Jonathan receives a directed envelope with Sam Bloxam's address",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Jonathan departs for Walworth without waking Mina",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walworth_search",
+      "label": "Jonathan searches for Potter's Court in Walworth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_deputy_discovery",
+      "label": "Jonathan discovers the deputy at Corcoran's lodging house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poplar_journey",
+      "label": "Jonathan travels to Poplar to find Bloxam's workplace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cold_storage_found",
+      "label": "Jonathan finds the cold storage building at Cross Angel Street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bloxam_interview",
+      "label": "Jonathan interviews Sam Bloxam about the box transport",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_piccadilly_discovery",
+      "label": "Jonathan discovers the Piccadilly house where boxes were delivered",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_agent_visit",
+      "label": "Jonathan visits Mitchell, Sons, & Candy house agents",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_purfleet",
+      "label": "Jonathan returns to Purfleet by train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at Purfleet with the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diary_reading",
+      "label": "Jonathan reads his diary to the others in the study",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion",
+      "label": "The group discusses how to enter the Piccadilly house",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_walworth",
+      "label": "Walworth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_potters_court",
+      "label": "Potter's Court",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corcoran_lodging",
+      "label": "Corcoran's lodging house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_poplar",
+      "label": "Poplar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cross_angel",
+      "label": "Cross Angel Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carfax",
+      "label": "Carfax",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly",
+      "label": "Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piccadilly_house",
+      "label": "The empty house in Piccadilly",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_purfleet",
+      "label": "Purfleet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_study",
+      "label": "Dr. Seward's study",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_exeter",
+      "label": "Exeter",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_boxes",
+      "label": "Nine great boxes transported from Carfax",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_letter_received",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walworth_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deputy_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walworth_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poplar_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_deputy_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cold_storage_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poplar_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bloxam_interview",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cold_storage_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piccadilly_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bloxam_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_agent_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_piccadilly_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_purfleet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_agent_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_purfleet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walworth_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_deputy_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poplar_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cold_storage_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bloxam_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piccadilly_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_agent_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_purfleet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bloxam",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_bloxam_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_deputy",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_deputy_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatekeeper",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cold_storage_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_foreman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cold_storage_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bloxam_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_godalming",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morris",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diary_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vanhelsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_agent",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_agent_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walworth_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_walworth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walworth_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_potters_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_deputy_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corcoran_lodging",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poplar_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_poplar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cold_storage_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cross_angel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piccadilly_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_piccadilly_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_agent_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_piccadilly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_purfleet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_purfleet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seward_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_walworth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_potters_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_corcoran_lodging",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_poplar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_cross_angel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_piccadilly_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_piccadilly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_purfleet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_seward_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "obj_boxes",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_carfax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_boxes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bloxam_interview",
+      "target_closed_value": null
+    }
+  ]
+}

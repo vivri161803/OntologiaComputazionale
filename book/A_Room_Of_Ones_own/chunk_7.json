@@ -1,0 +1,295 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_student",
+      "label": "The student by my side",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lunch_dinner_oxbridge",
+      "label": "Lunching and dining at Oxbridge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_british_museum",
+      "label": "Visit to the British Museum",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pursuit_of_truth",
+      "label": "Pursuit of truth through research",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_catalogue",
+      "label": "Reading the catalogue and discovering books about women",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_books_arrive",
+      "label": "Avalanche of books sliding down on the desk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_research_struggle",
+      "label": "Struggling with research and note-taking",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_oxbridge",
+      "label": "Oxbridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "A room with a window looking across people's hats and vans",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_british_museum",
+      "label": "The British Museum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_museum_counter",
+      "label": "The counter at the British Museum",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_museum_stall",
+      "label": "The stall among other seekers",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_notebook",
+      "label": "Notebook and pencil",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_paper",
+      "label": "Blank sheet of paper with WOMEN AND FICTION written on it",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seeker",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_study",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_lunch_dinner_oxbridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_visit_british_museum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_visit_british_museum",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_dinner_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit_of_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_pursuit_of_truth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_catalogue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reading_catalogue",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pursuit_of_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_books_arrive",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_books_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_catalogue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research_struggle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_research_struggle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_books_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_dinner_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pursuit_of_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_catalogue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_research_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_student",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_research_struggle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_dinner_oxbridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oxbridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_british_museum",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_british_museum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pursuit_of_truth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_catalogue",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_museum_counter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_research_struggle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_museum_stall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_british_museum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "obj_paper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_squealer",
+      "label": "Squealer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_snowball",
+      "label": "Snowball",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_minimus",
+      "label": "Minimus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_major",
+      "label": "Old Major",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_battle_cowshed",
+      "label": "Battle of the Cowshed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snowball_expulsion",
+      "label": "Snowball's expulsion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_windmill_announcement",
+      "label": "Napoleon announces the windmill will be built",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_squealer_explanation",
+      "label": "Squealer explains Napoleon's tactics regarding the windmill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sunday_assembly",
+      "label": "Animals assemble on Sunday morning to receive orders",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_barn",
+      "label": "The big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_orchard",
+      "label": "The orchard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shed",
+      "label": "The shed where Snowball drew his plans",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_incubator_shed",
+      "label": "The incubator shed",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_windmill_plans",
+      "label": "The windmill plans",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_major_skull",
+      "label": "The skull of Old Major",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_boxer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_napoleon",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_squealer",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_snowball",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_battle_cowshed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snowball_expulsion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_battle_cowshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_snowball_expulsion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_windmill_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_windmill_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_windmill_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_squealer_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sunday_assembly",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sunday_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_squealer",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sunday_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_minimus",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sunday_assembly",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sunday_assembly",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_incubator_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "obj_windmill_plans",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_squealer_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_snowball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_major_skull",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_orchard",
+      "target_closed_value": null
+    }
+  ]
+}

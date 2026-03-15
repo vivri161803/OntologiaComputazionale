@@ -1,0 +1,485 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_war_correspondent",
+      "label": "War correspondent",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_artist",
+      "label": "War artist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lean_soldier",
+      "label": "Lean and sallow soldier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burly_corporal",
+      "label": "Burly and incredulous corporal",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burly_soldier",
+      "label": "Burly soldier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marksman",
+      "label": "Marksman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_enemy",
+      "label": "Enemy forces",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_defenders",
+      "label": "Defenders/riflemen",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_battle_begins",
+      "label": "Battle begins opposite Hackbone's Hut trenches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enemy_attack",
+      "label": "Enemy launches surprise attack with machine-guns and artillery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_search_lights",
+      "label": "Enemy uses search-lights to blind riflemen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shrapnel_fire",
+      "label": "Shrapnel bullets rain down on the ridge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_monster_appears",
+      "label": "Strange black machine-like creature appears on the battlefield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_monster_fires",
+      "label": "Monster fires from port-holes at defenders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dawn_breaks",
+      "label": "Dawn breaks revealing the battlefield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_monsters_revealed",
+      "label": "Fourteen or fifteen huge clumsy shapes revealed in daylight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_trench_lost",
+      "label": "First line of trenches lost to the monsters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_monster_crosses_trench",
+      "label": "Monster bridges and crosses the first trench",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_monster_advances",
+      "label": "Monster advances up the slope towards defenders",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_retreat",
+      "label": "Defenders retreat along the trench",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hackbone_hut_trenches",
+      "label": "Trenches called after Hackbone's Hut",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_broad_level_ground",
+      "label": "Broad and level ground between the lines",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ridge",
+      "label": "Ridge overlooking the battlefield",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_first_trench",
+      "label": "First line of trenches",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_second_trench",
+      "label": "Second line of trenches",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tent_camp",
+      "label": "Tent camp",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_correspondent",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_artist",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_defenders",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_enemy",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_monster",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_artist",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_battle_begins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_enemy_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_monster_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_first_trench_lost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_hackbone_hut_trenches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_ridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_first_trench",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_tent_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_battle_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hackbone_hut_trenches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enemy_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_battle_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_search_lights",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enemy_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shrapnel_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_search_lights",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shrapnel_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_fires",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_monster_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dawn_breaks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_monster_fires",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monsters_revealed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dawn_breaks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_trench_lost",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_monsters_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_crosses_trench",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_trench_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_advances",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_monster_crosses_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_monster_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enemy_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_broad_level_ground",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monsters_revealed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_first_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_monster_crosses_trench",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_first_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_retreat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_second_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_artist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_battle_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_monster_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_artist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_monster_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enemy_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_enemy_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_monster_fires",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_monster_fires",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_trench_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_first_trench_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_monster_crosses_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_monster_crosses_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_monster_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_enemy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_monster_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_war_correspondent",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_artist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_defenders",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_retreat",
+      "target_closed_value": null
+    }
+  ]
+}

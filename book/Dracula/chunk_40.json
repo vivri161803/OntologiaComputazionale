@@ -1,0 +1,359 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur (Lord Godalming)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quincey",
+      "label": "Quincey Morris",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucy",
+      "label": "Lucy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_seward_doubt",
+      "label": "Seward doubts Van Helsing's ideas about mysterious things",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Van Helsing meets with Arthur, Quincey, and Seward in his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_request_permission",
+      "label": "Van Helsing requests permission to do something grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_promise",
+      "label": "Arthur and Quincey promise to trust Van Helsing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "Van Helsing reveals his plan to open Lucy's coffin at Kingstead churchyard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_undead_revelation",
+      "label": "Van Helsing reveals that Lucy might be UnDead",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_anger",
+      "label": "Arthur becomes angry and refuses to consent to mutilation of Lucy's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_van_helsing_plea",
+      "label": "Van Helsing pleads with Arthur and explains his sacrifice for Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arthur_acceptance",
+      "label": "Arthur agrees to go with Van Helsing and wait",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_van_helsing_room",
+      "label": "Van Helsing's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kingstead",
+      "label": "Kingstead churchyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lucy_tomb",
+      "label": "Lucy's tomb",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seward_doubter",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_van_helsing_mandante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_arthur_beneficiary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_quincey_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_lucy_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_seward_doubt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_van_helsing_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_van_helsing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kingstead",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_seward_doubt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_request_permission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_request_permission",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_undead_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_undead_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arthur_anger",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_van_helsing_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_van_helsing_plea",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arthur_acceptance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_request_permission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_request_permission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_quincey",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_undead_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_undead_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_undead_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_arthur_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_van_helsing_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_van_helsing_plea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arthur_acceptance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_arthur_acceptance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_arthur_anger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    }
+  ]
+}

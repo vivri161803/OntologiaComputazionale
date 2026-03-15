@@ -1,0 +1,326 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "Count Dracula",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_shaving",
+      "label": "Jonathan shaves and sees the Count has no reflection in the mirror",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_attack",
+      "label": "The Count attacks Jonathan when he sees blood on his face",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mirror_destroyed",
+      "label": "The Count destroys the shaving glass by throwing it out the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Jonathan breakfasts alone and realizes the Count does not eat or drink",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exploration",
+      "label": "Jonathan explores the castle and discovers he is imprisoned",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization",
+      "label": "Jonathan realizes he is a prisoner in the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_returns",
+      "label": "The Count returns and Jonathan finds him making the bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Jonathan has a long conversation with the Count about Transylvania history",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Jonathan's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "The library",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_crucifix",
+      "label": "The crucifix",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_mirror",
+      "label": "The shaving glass",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_shaving",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shaving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_crucifix",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mirror_destroyed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mirror_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_mirror",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mirror_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mirror_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_returns",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_count_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    }
+  ]
+}

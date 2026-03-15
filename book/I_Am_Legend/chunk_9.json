@@ -1,0 +1,417 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_robert_neville",
+      "label": "Robert Neville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maiden_librarian",
+      "label": "maiden librarian",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_library_exploration",
+      "label": "Robert explores the library and collects books on medicine and blood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_lymphatic",
+      "label": "Robert reads about the lymphatic system and bacteria",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theory_realization",
+      "label": "Robert realizes bacteria could explain the vampire plague",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dust_storm_insight",
+      "label": "During a dust storm, Robert makes the connection about transmission",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_microscope_failure",
+      "label": "Robert destroys his first defective microscope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_microscope_learning",
+      "label": "Robert learns to use a proper microscope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blood_specimen_mounting",
+      "label": "Robert mounts a blood specimen from a woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_germ_discovery",
+      "label": "Robert discovers the bacillus germ under the microscope",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_library",
+      "label": "the library with high ceiling, sunken squares, wooden tables",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_science_room",
+      "label": "Science Room in the library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_front_doors",
+      "label": "huge front doors of the library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_broken_window",
+      "label": "broken window of the library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_car",
+      "label": "Robert's car parked on a one-way street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar",
+      "label": "the bar in Robert's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "the kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "the living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Robert's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bench",
+      "label": "the bench with microscope and equipment",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_books_medicine",
+      "label": "five books on general physiology and several works on blood",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_bacteriology_books",
+      "label": "several books on bacteriology",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_first_microscope",
+      "label": "the first defective microscope",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_proper_microscope",
+      "label": "the proper microscope with triple nose stage and good lenses",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_bacillus_germ",
+      "label": "the cylindrical bacillus germ with flagella",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_blood_specimen",
+      "label": "blood specimen from a woman",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_investigator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_realization",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_reading_lymphatic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_theory_realization",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dust_storm_insight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_first_microscope_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_microscope_learning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_blood_specimen_mounting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_germ_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_science_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_car",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bench",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_science_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_broken_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_library_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_lymphatic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theory_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dust_storm_insight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_microscope_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_microscope_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blood_specimen_mounting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_robert_neville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_germ_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_books_medicine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_library_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_bacteriology_books",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_library_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_first_microscope",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_first_microscope_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_proper_microscope",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_microscope_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_blood_specimen",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_blood_specimen_mounting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_bacillus_germ",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_germ_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_lymphatic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_library_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theory_realization",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_lymphatic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dust_storm_insight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theory_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_microscope_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dust_storm_insight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_microscope_learning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_microscope_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blood_specimen_mounting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_microscope_learning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_germ_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blood_specimen_mounting",
+      "target_closed_value": null
+    }
+  ]
+}

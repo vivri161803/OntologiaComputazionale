@@ -1,0 +1,528 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beater",
+      "label": "The beater youth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_woman",
+      "label": "Old woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_imperial_pigeon_shot",
+      "label": "Flory shoots the first imperial pigeon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_fails_shot",
+      "label": "Elizabeth fails to shoot at the first beats",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_green_pigeon_shown",
+      "label": "Flory shows Elizabeth the green pigeon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jungle_exploration",
+      "label": "Flory and Elizabeth walk deeper into the jungle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_peepul_tree_pigeon",
+      "label": "Imperial pigeons heard cooing in the peepul tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elizabeth_sitting_shot",
+      "label": "Elizabeth shoots the pigeon from the peepul tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clearing_crossed",
+      "label": "Flory and Elizabeth cross the pineapple clearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jungle_cock_heard",
+      "label": "Jungle cock heard beyond the hedge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jungle_cock_stalk",
+      "label": "Flory and Elizabeth stalk the jungle cock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jungle_cock_shot",
+      "label": "Elizabeth shoots the flying jungle cock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hand_clasp",
+      "label": "Flory and Elizabeth clasp hands over the dead bird",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_hesitation",
+      "label": "Flory turns away, remembering his birthmark",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_sighting",
+      "label": "Old woman reports seeing a leopard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_hunt_preparation",
+      "label": "Flory and Elizabeth prepare to hunt the leopard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_approach",
+      "label": "The leopard emerges from the undergrowth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_first_shot",
+      "label": "Flory shoots the leopard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_second_shot",
+      "label": "Flory fires again at the wounded leopard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_escape",
+      "label": "The leopard thrashes in the undergrowth",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "The jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_peepul_tree",
+      "label": "The peepul tree",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clearing",
+      "label": "The pineapple clearing",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hedge",
+      "label": "The thorn hedge",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_imperial_pigeon",
+      "label": "Imperial pigeon",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_green_pigeon",
+      "label": "Green pigeon",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_jungle_cock",
+      "label": "Jungle cock",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_leopard",
+      "label": "Leopard",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hunter",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_learner",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_prey",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_flory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_leopard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_beater",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_imperial_pigeon_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_elizabeth_sitting_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_jungle_cock_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_leopard_hunt_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_leopard_first_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_hand_clasp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_leopard_sighting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_clearing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_imperial_pigeon_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_sitting_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_peepul_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_cock_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_approach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_first_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_imperial_pigeon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elizabeth_sitting_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_imperial_pigeon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_elizabeth_sitting_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_elizabeth_sitting_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jungle_cock_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_jungle_cock",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jungle_cock_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_jungle_cock_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_hand_clasp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_hand_clasp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leopard_first_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_leopard",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leopard_first_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_leopard_first_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_fails_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_green_pigeon_shown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_fails_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_exploration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_green_pigeon_shown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_peepul_tree_pigeon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jungle_exploration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elizabeth_sitting_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_peepul_tree_pigeon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clearing_crossed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elizabeth_sitting_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_cock_heard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clearing_crossed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_cock_stalk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jungle_cock_heard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jungle_cock_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jungle_cock_stalk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_clasp",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jungle_cock_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_hesitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hand_clasp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_sighting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_hesitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_hunt_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_approach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_hunt_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_first_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_approach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_second_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_first_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_second_shot",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jones",
+      "label": "Mr. Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_major",
+      "label": "Old Major",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bluebell",
+      "label": "Bluebell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jessie",
+      "label": "Jessie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pincher",
+      "label": "Pincher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boxer",
+      "label": "Boxer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clover",
+      "label": "Clover",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_muriel",
+      "label": "Muriel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_benjamin",
+      "label": "Benjamin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mollie",
+      "label": "Mollie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cat",
+      "label": "The cat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_moses",
+      "label": "Moses",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rats",
+      "label": "The rats",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ducklings",
+      "label": "The ducklings",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_jones_retire",
+      "label": "Mr. Jones goes to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animals_gather",
+      "label": "Animals gather in the big barn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_major_speech",
+      "label": "Old Major delivers his speech",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rats_appear",
+      "label": "Rats appear and are chased by dogs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vote_rats",
+      "label": "Animals vote on whether rats are comrades",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_major_sings",
+      "label": "Old Major sings 'Beasts of England'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animals_sing",
+      "label": "All animals sing 'Beasts of England' together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jones_awakens",
+      "label": "Mr. Jones awakens and fires his gun",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_breaks",
+      "label": "The meeting breaks up and animals flee",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_manor_farm",
+      "label": "Manor Farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_big_barn",
+      "label": "The big barn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Mr. Jones's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_major",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_jones",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_jones_retire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_retire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animals_gather",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_gather",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_gather",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_major_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_major_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_major_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rats_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_major",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bluebell",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jessie",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pincher",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_muriel",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cat",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_major_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rats_appear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rats_appear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vote_rats",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rats",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rats_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bluebell",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rats_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jessie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rats_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pincher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rats_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vote_rats",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vote_rats",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_major_sings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_major",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_vote_rats",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_major_sings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_major_sings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_major",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_major_sings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_sing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_sing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jones_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animals_sing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_boxer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clover",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bluebell",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jessie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pincher",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_muriel",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_benjamin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mollie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ducklings",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_animals_sing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_awakens",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jones_awakens",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_breaks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jones_awakens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_breaks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_big_barn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_major",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_big_barn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

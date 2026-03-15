@@ -1,0 +1,273 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_filby",
+      "label": "Filby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_psychologist",
+      "label": "The Psychologist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_time_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator (I)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_provincial_mayor",
+      "label": "The Provincial Mayor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_medical_man",
+      "label": "The Medical Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_time_machine_small",
+      "label": "The small Time Machine (the one that vanished)",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_time_machine_large",
+      "label": "The larger Time Machine in the laboratory",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_discussion_disappearance",
+      "label": "Discussion about the machine's disappearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_psychologist_explanation",
+      "label": "The Psychologist explains the paradox of temporal perception",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_laboratory",
+      "label": "The Time Traveller leads the group to the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_viewing_large_machine",
+      "label": "The group views the larger Time Machine in the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_time_traveller_declaration",
+      "label": "The Time Traveller declares his intention to explore time",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room with the vacant table",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The long, draughty corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The Time Traveller's laboratory",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_time_traveller",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_group",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_discussion_disappearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discussion_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_psychologist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_psychologist_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_psychologist_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_psychologist_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_psychologist_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_laboratory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_psychologist_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_laboratory",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_journey_to_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_journey_to_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_viewing_large_machine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_viewing_large_machine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_viewing_large_machine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_viewing_large_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_medical_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_viewing_large_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_filby",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_viewing_large_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_time_machine_large",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_viewing_large_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_declaration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_viewing_large_machine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_declaration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_time_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_time_traveller_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_time_traveller_declaration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

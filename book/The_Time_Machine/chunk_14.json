@@ -1,0 +1,790 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveler",
+      "label": "The Time Traveler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_morlocks",
+      "label": "The Morlocks",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_palace",
+      "label": "Palace of Green Porcelain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wood",
+      "label": "The Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_white_sphinx",
+      "label": "The White Sphinx",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillock",
+      "label": "The Hillock with Hawthorn",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Departure from the Palace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gathering_wood",
+      "label": "Gathering firewood and dried grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reaching_wood",
+      "label": "Reaching the edge of the forest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_spotting_morlocks",
+      "label": "Spotting three crouching Morlock figures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lighting_fire",
+      "label": "Lighting the firewood to cover retreat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_entering_forest",
+      "label": "Entering the forest with Weena",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlock_attack",
+      "label": "Morlocks attacking in the darkness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_faints",
+      "label": "Weena fainting from fear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveler_disoriented",
+      "label": "Traveler becoming disoriented in the forest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_building_campfire",
+      "label": "Building a campfire for protection",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveler_sleeps",
+      "label": "Traveler falling asleep and fire going out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlock_assault",
+      "label": "Morlocks overwhelming the Traveler",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveler_fights_back",
+      "label": "Traveler fighting back with iron bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forest_fire",
+      "label": "The forest catching fire and spreading",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlocks_flee",
+      "label": "Morlocks fleeing from the fire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveler_escapes",
+      "label": "Traveler escaping to the open space",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morlocks_blinded",
+      "label": "Morlocks blinded and helpless in the firelight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_lost",
+      "label": "Discovering Weena is missing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dawn",
+      "label": "Daybreak and fire subsiding",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_traveler_leaves",
+      "label": "Traveler leaving the hillock toward the White Sphinx",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Discovering loose matches in trouser pocket",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_companion",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_traveler",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_gathering_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_reaching_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_spotting_morlocks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lighting_fire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_entering_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_weena_faints",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_traveler_disoriented",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_building_campfire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_traveler_sleeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_morlock_assault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_traveler_fights_back",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_forest_fire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_morlocks_flee",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_traveler_escapes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_morlocks_blinded",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_weena_lost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_traveler_leaves",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_white_sphinx",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hillock",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gathering_wood",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reaching_wood",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spotting_morlocks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lighting_fire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_entering_forest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_faints",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_disoriented",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_building_campfire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_sleeps",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_assault",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_fights_back",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_fire",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlocks_flee",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_escapes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlocks_blinded",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_lost",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dawn",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillock",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_white_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_white_sphinx",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gathering_wood",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reaching_wood",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gathering_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_spotting_morlocks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reaching_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lighting_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_spotting_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_entering_forest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lighting_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_entering_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_faints",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_disoriented",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_faints",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_building_campfire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveler_disoriented",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_sleeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_building_campfire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlock_assault",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveler_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_fights_back",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlock_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_fire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveler_fights_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlocks_flee",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_forest_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_escapes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlocks_flee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morlocks_blinded",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveler_escapes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_lost",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morlocks_blinded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dawn",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_traveler_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_traveler_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gathering_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reaching_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reaching_wood",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_spotting_morlocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lighting_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_entering_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_entering_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morlock_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_weena_faints",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveler_disoriented",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_building_campfire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveler_sleeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlock_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morlock_assault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveler_fights_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_traveler_fights_back",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_forest_fire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlocks_flee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveler_escapes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_morlocks",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_morlocks_blinded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morlocks_blinded",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weena_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_traveler_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    }
+  ]
+}

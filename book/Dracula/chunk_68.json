@@ -1,0 +1,303 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_mina",
+      "label": "Mrs. Harker (Mina)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_godalming",
+      "label": "Lord Godalming",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vanhelsing",
+      "label": "Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_harker",
+      "label": "Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waiting",
+      "label": "A week of waiting for news of the ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telegram_received",
+      "label": "Telegram received: Czarina Catherine reported from Dardanelles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_excitement",
+      "label": "The party becomes wild with excitement upon receiving the telegram",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_lethargy",
+      "label": "Mrs. Harker falls into a lethargy at noon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mina_sleep",
+      "label": "Mrs. Harker sleeps soundly and wakes refreshed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hypnotic_report",
+      "label": "Mrs. Harker's hypnotic reports of lapping waves and rushing water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_journey",
+      "label": "The Czarina Catherine journeys from Dardanelles to Galatz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_arrival",
+      "label": "Czarina Catherine reported entering Galatz at one o'clock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_escape_fear",
+      "label": "Van Helsing expresses fear that the Count is escaping",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_varna",
+      "label": "Varna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dardanelles",
+      "label": "Dardanelles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_galatz",
+      "label": "Galatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_blacksea",
+      "label": "Black Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_ship",
+      "label": "Czarina Catherine (ship)",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram_received",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram_received",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_excitement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telegram_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_excitement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_excitement",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_godalming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_excitement",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_seward",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_excitement",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_vanhelsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_lethargy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_excitement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_lethargy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mina_lethargy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mina_sleep",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_report",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_mina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hypnotic_report",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_varna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_blacksea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_journey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "obj_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_galatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "obj_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape_fear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_escape_fear",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_vanhelsing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_blacksea",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_harker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_excitement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telegram_received",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "char_godalming",
+      "target_closed_value": null
+    }
+  ]
+}

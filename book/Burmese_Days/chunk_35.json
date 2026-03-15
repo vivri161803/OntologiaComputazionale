@@ -1,0 +1,466 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flo",
+      "label": "Flo",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ko_sla",
+      "label": "Ko S'la",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_woman",
+      "label": "Old canoe-woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_burman_paddler",
+      "label": "Burman paddler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_village_headman",
+      "label": "Village headman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_hunter",
+      "label": "Old hunter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beaters",
+      "label": "Six beaters",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_creek",
+      "label": "Creek leading inland from the eastern bank of the Irrawaddy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "Burmese village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_headman_house",
+      "label": "Headman's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "Veranda of headman's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fields",
+      "label": "Open stubble fields",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle",
+      "label": "Jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_scrub",
+      "label": "Small patch of scrub",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_journey_upstream",
+      "label": "Journey up the creek in canoes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_village",
+      "label": "Arrival at the village",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rest_veranda",
+      "label": "Rest and conversation on the veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_fields",
+      "label": "Journey to the shooting fields",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_beat",
+      "label": "First beat in the scrub",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_beat",
+      "label": "Second beat with green pigeons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_imperial_pigeon_shot",
+      "label": "Shooting of the imperial pigeon",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_flory",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_elizabeth",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_ko_sla",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_old_hunter",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_journey_upstream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_upstream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_creek",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_upstream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_upstream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_upstream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_woman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_upstream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_village",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_village",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_village",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_upstream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_village_headman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rest_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rest_veranda",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rest_veranda",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rest_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rest_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_village_headman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_rest_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey_to_fields",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_fields",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rest_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_hunter",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_to_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beaters",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_to_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_beat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_first_beat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_scrub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_beat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beaters",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_first_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_beat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_second_beat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_beat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beaters",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_second_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_imperial_pigeon_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_imperial_pigeon_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fields",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_imperial_pigeon_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_beat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ko_sla",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_imperial_pigeon_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_creek",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_village",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_jungle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_scrub",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

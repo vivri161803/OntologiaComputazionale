@@ -1,0 +1,708 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_traveller",
+      "label": "The Time Traveller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_weena",
+      "label": "Weena",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_palace",
+      "label": "Palace of Green Porcelain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_palaeontology",
+      "label": "Gallery of Palaeontology",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_minerals",
+      "label": "Gallery of Minerals",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_natural_history",
+      "label": "Gallery of Natural History",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_machines",
+      "label": "Gallery of Machines",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_books",
+      "label": "Gallery of Books",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_chemistry",
+      "label": "Gallery of Technical Chemistry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery_arms",
+      "label": "Gallery of Arms",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_court",
+      "label": "Open Court within the Palace",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_approach_palace",
+      "label": "The Traveller and Weena approach the Palace of Green Porcelain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enter_palace",
+      "label": "The Traveller enters the Palace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_palaeontology",
+      "label": "The Traveller explores the Gallery of Palaeontology",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_minerals",
+      "label": "The Traveller explores the Gallery of Minerals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_natural_history",
+      "label": "The Traveller explores the Gallery of Natural History",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_machines",
+      "label": "The Traveller explores the Gallery of Machines",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_weena_warns",
+      "label": "Weena warns the Traveller about the darkness and Morlocks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obtain_mace",
+      "label": "The Traveller obtains a mace from a machine lever",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_books",
+      "label": "The Traveller explores the Gallery of Books",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_chemistry",
+      "label": "The Traveller explores the Gallery of Technical Chemistry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_find_matches",
+      "label": "The Traveller finds a box of matches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dance",
+      "label": "The Traveller dances with Weena",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_find_camphor",
+      "label": "The Traveller finds camphor in a sealed jar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_explore_arms",
+      "label": "The Traveller explores the Gallery of Arms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_find_dynamite",
+      "label": "The Traveller finds dynamite cartridges",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_test_dynamite",
+      "label": "The Traveller tests the dynamite cartridges",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rest_court",
+      "label": "The Traveller and Weena rest in the open court",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plan_night",
+      "label": "The Traveller plans to pass the night in the open with fire",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esplorazione",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_scoperta",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_approach_palace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_approach_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_approach_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_palace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_approach_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_palace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enter_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_palaeontology",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enter_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_palaeontology",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_palaeontology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_palaeontology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_explore_palaeontology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_minerals",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_palaeontology",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_minerals",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_minerals",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_minerals",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_natural_history",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_minerals",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_natural_history",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_natural_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_natural_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_machines",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_natural_history",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_machines",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_explore_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_warns",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_weena_warns",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_weena_warns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_weena_warns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obtain_mace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_weena_warns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obtain_mace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_machines",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_obtain_mace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_books",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_obtain_mace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_books",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_books",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_books",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_explore_books",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_chemistry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_books",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_chemistry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_matches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_matches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_find_matches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_camphor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_camphor",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_chemistry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_camphor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_arms",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_find_camphor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_explore_arms",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery_arms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_explore_arms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_dynamite",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_explore_arms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_find_dynamite",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_find_dynamite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_test_dynamite",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_find_dynamite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_test_dynamite",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_test_dynamite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rest_court",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_test_dynamite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rest_court",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rest_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_rest_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rest_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plan_night",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_court",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_plan_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_approach_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_palaeontology",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_minerals",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_natural_history",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_machines",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_books",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_chemistry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_explore_arms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_find_matches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_find_camphor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_find_dynamite",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_obtain_mace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_test_dynamite",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_plan_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_palaeontology",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_minerals",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_natural_history",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_machines",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_books",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_chemistry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gallery_arms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_court",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_traveller",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_weena",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    }
+  ]
+}

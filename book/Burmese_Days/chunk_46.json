@@ -1,0 +1,436 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_elizabeth",
+      "label": "Elizabeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_verrall",
+      "label": "Verrall",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_flory",
+      "label": "Flory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lackersteen",
+      "label": "Mr Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_lackersteen",
+      "label": "Mrs Lackersteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dr_veraswami",
+      "label": "Dr Veraswami",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nga_shwe_o",
+      "label": "Nga Shwe O",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_heat_crisis",
+      "label": "The oppressive heat of April in Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_ignores_club",
+      "label": "Verrall ignores other Club members and focuses on Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_riding_together",
+      "label": "Elizabeth and Verrall ride out together almost every evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_offers_belinda",
+      "label": "Verrall offers Elizabeth to ride his Arab mare Belinda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_verrall_kisses_elizabeth",
+      "label": "Verrall embraces and kisses Elizabeth while riding home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_decides_return",
+      "label": "Flory decides to return to Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_night_march",
+      "label": "Flory makes a night-march journey back to Kyauktada",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leopard_skin_ruined",
+      "label": "The leopard-skin is discovered to be ruined at Dr Veraswami's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_visits_elizabeth",
+      "label": "Flory visits Elizabeth at the Lackersteens' house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flory_presents_skin",
+      "label": "Flory presents the ruined leopard-skin to Elizabeth",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_club",
+      "label": "The Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jungle_road",
+      "label": "The red road into the jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lackersteens_house",
+      "label": "The Lackersteens' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kyauktada",
+      "label": "Kyauktada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp",
+      "label": "Flory's camp in the jungle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dr_bungalow",
+      "label": "Dr Veraswami's bungalow",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_flory_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_elizabeth_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_verrall_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_heat_crisis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kyauktada",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heat_crisis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_verrall_ignores_club",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_ignores_club",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_heat_crisis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_verrall_ignores_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riding_together",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_ignores_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riding_together",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_riding_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_riding_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_offers_belinda",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_riding_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_offers_belinda",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteens_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_verrall_offers_belinda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_verrall_offers_belinda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_kisses_elizabeth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_offers_belinda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_kisses_elizabeth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jungle_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_verrall_kisses_elizabeth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_verrall_kisses_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_verrall",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_verrall_kisses_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_decides_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_verrall_kisses_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_decides_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_camp",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_decides_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_decides_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_night_march",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_decides_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_night_march",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_night_march",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_skin_ruined",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_night_march",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_skin_ruined",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dr_bungalow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leopard_skin_ruined",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leopard_skin_ruined",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dr_veraswami",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leopard_skin_ruined",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_visits_elizabeth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leopard_skin_ruined",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_visits_elizabeth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteens_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flory_visits_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_flory_visits_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_presents_skin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flory_visits_elizabeth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flory_presents_skin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lackersteens_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_flory",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_flory_presents_skin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elizabeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_flory_presents_skin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_jungle_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lackersteens_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_camp",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_dr_bungalow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_shakespeare_sister",
+      "label": "Shakespeare's sister",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_women_readers",
+      "label": "Women readers/audience",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_seton",
+      "label": "Mrs Seton",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_women_colleges",
+      "label": "Establishment of women's colleges in England since 1866",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_property_law",
+      "label": "Married women allowed to possess their own property after 1880",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_voting_right",
+      "label": "Women given the vote in 1919",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_professions_open",
+      "label": "Professions opened to women for close on ten years",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sister_death",
+      "label": "Shakespeare's sister died young and never wrote",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sister_burial",
+      "label": "Shakespeare's sister buried at the cross-roads opposite the Elephant and Castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sister_rebirth",
+      "label": "Shakespeare's sister will be born again and write poetry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_preparation",
+      "label": "Women prepare conditions for the sister's rebirth through effort and determination",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_england",
+      "label": "England",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_elephant_castle",
+      "label": "Elephant and Castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_college",
+      "label": "College",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "Common sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_own_room",
+      "label": "Room of one's own",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_poet",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_sister",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_women_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_women_colleges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_property_law",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_voting_right",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_professions_open",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_women_colleges",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_england",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sister_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_sister_burial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sister_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sister_burial",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_elephant_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sister_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sister_burial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sister_rebirth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_women_readers",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_women_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_professions_open",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sister_rebirth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_sister_rebirth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_own_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_elephant_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_shakespeare_sister",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_women_readers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    }
+  ]
+}

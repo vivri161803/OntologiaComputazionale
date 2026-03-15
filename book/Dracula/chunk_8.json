@@ -1,0 +1,490 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jonathan",
+      "label": "Jonathan Harker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_count",
+      "label": "The Count",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fair_woman",
+      "label": "The fair woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_women",
+      "label": "Two dark women",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mina",
+      "label": "Mina",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hawkins",
+      "label": "Mr. Hawkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_szgany",
+      "label": "Szgany gipsies",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Jonathan falls asleep on the couch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_appear",
+      "label": "Three women appear in the moonlight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fair_woman_advances",
+      "label": "The fair woman advances and bends over Jonathan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_intervenes",
+      "label": "The Count appears and seizes the fair woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_women_disappear",
+      "label": "The women disappear with the bag",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_unconscious",
+      "label": "Jonathan loses consciousness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_wakes_bed",
+      "label": "Jonathan wakes in his own bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_door_closed",
+      "label": "Jonathan finds the room door closed and fastened",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_count_demands_letters",
+      "label": "The Count asks Jonathan to write three letters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_szgany_arrive",
+      "label": "A band of Szgany gipsies arrive at the castle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_writes_letters",
+      "label": "Jonathan writes letters home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jonathan_throws_letters",
+      "label": "Jonathan throws letters through the window to the gipsies",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room with the couch",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castle",
+      "label": "The castle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jonathan_bed",
+      "label": "Jonathan's own bed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_courtyard",
+      "label": "The castle courtyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_study",
+      "label": "The study",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_fair_woman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_dark_women",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fair_woman_advances",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_appear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fair_woman_advances",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fair_woman_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fair_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fair_woman_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_intervenes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fair_woman_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_intervenes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fair_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_disappear",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_intervenes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_women_disappear",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fair_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_women_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_women",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_women_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_unconscious",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_women_disappear",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_unconscious",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_wakes_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_unconscious",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_wakes_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jonathan_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_wakes_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_closed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_wakes_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_door_closed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_door_closed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_demands_letters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_door_closed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_demands_letters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_count",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_count_demands_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_count_demands_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_count_demands_letters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_szgany_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_count_demands_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_szgany_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_courtyard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_szgany",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_szgany_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_writes_letters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_szgany_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_writes_letters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_writes_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mina",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonathan_writes_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hawkins",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonathan_writes_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_throws_letters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jonathan_writes_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jonathan_throws_letters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jonathan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jonathan_throws_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_szgany",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_jonathan_throws_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_castle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_jonathan_bed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_courtyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_women_appear",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_count_intervenes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    }
+  ]
+}

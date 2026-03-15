@@ -1,0 +1,344 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lucy",
+      "label": "Lucy Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_seward",
+      "label": "Dr. Seward",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_van_helsing",
+      "label": "Professor Van Helsing",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_westenra",
+      "label": "Mrs. Westenra",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_operation_1",
+      "label": "First blood transfusion operation on Lucy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_vigil_1",
+      "label": "Dr. Seward sits up with Lucy through the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_recovery",
+      "label": "Lucy wakes refreshed and in good spirits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seward_exhaustion",
+      "label": "Dr. Seward arrives at Hillingham exhausted",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_deterioration",
+      "label": "Lucy found in a swoon, pale and drained",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_operation_2",
+      "label": "Second blood transfusion operation with Dr. Seward as donor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucy_recovery_2",
+      "label": "Lucy wakes fairly well and strong",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_lucy_bedroom",
+      "label": "Lucy's bedroom at Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hillingham",
+      "label": "Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seward_room",
+      "label": "Room next to Lucy's at Hillingham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room at Hillingham",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_healer",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_caregiver",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_medical",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_crisis",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_recovery",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_operation_1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_seward_vigil_1",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_operation_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_vigil_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_exhaustion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_deterioration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seward_exhaustion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation_2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery_2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_operation_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_operation_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_operation_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_operation_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_seward_vigil_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seward_vigil_1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seward_exhaustion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_operation_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_operation_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_operation_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucy_recovery_2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation_1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_vigil_1",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seward_exhaustion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hillingham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_deterioration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation_2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucy_recovery_2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lucy_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_lucy_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hillingham",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_lucy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_van_helsing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_seward",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_lucy_deterioration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lucy_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_lucy_recovery_2",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    }
+  ]
+}
