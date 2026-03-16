@@ -1,0 +1,906 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan_baker",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_wilson",
+      "label": "Mrs. Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_policeman",
+      "label": "The Policeman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_commissioner",
+      "label": "The Commissioner",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_earl_of_dorcaster",
+      "label": "The Earl of Dorcaster",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_gatsby_arrives",
+      "label": "Gatsby arrives at the narrator's door in his car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch_invitation",
+      "label": "Gatsby invites the narrator to lunch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_ride",
+      "label": "The disconcerting ride to town",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_confession",
+      "label": "Gatsby confesses his life story to the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_midwest_origin",
+      "label": "Gatsby reveals he is from the middle-west",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_inheritance",
+      "label": "Gatsby inherits money from his family",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_europe",
+      "label": "Gatsby lives as a young rajah in European capitals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_war",
+      "label": "Gatsby serves in the war as a first lieutenant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_argonne_forest",
+      "label": "Gatsby's heroic action in the Argonne Forest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_promotion",
+      "label": "Gatsby is promoted to major",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_decorations",
+      "label": "Gatsby receives decorations from Allied governments",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_shows_medal",
+      "label": "Gatsby shows the narrator his Montenegrin medal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_shows_photo",
+      "label": "Gatsby shows the narrator his Oxford photograph",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_request",
+      "label": "Gatsby makes a request of the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_jordan_matter",
+      "label": "Gatsby mentions a matter involving Jordan Baker",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drive_through_astoria",
+      "label": "The car drives through Astoria",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_policeman_stop",
+      "label": "A policeman stops Gatsby's car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_shows_card",
+      "label": "Gatsby shows the policeman a white card",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_queensboro_bridge",
+      "label": "The car crosses the Queensboro Bridge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_funeral_procession",
+      "label": "A funeral procession passes the car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_limousine_passes",
+      "label": "A limousine with three modish Negroes passes",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_narrators_door",
+      "label": "The narrator's door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rocky_drive",
+      "label": "The rocky drive",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_roadhouse",
+      "label": "Gatsby's elaborate roadhouse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_middle_west",
+      "label": "The middle-west",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_san_francisco",
+      "label": "San Francisco",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oxford",
+      "label": "Oxford",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_europe",
+      "label": "Europe",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_venice",
+      "label": "Venice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rome",
+      "label": "Rome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grand_canal",
+      "label": "The Grand Canal",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_argonne_forest",
+      "label": "The Argonne Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montenegro",
+      "label": "Montenegro",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trinity_quad",
+      "label": "Trinity Quad",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_port_roosevelt",
+      "label": "Port Roosevelt",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_valley_of_ashes",
+      "label": "The valley of ashes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "The garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_astoria",
+      "label": "Astoria",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_queensboro_bridge",
+      "label": "The Queensboro Bridge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_blackwells_island",
+      "label": "Blackwell's Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_city",
+      "label": "The city",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_gatsby_car",
+      "label": "Gatsby's gorgeous car",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_montenegrin_medal",
+      "label": "The Montenegrin medal",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_oxford_photo",
+      "label": "The Oxford photograph",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_white_card",
+      "label": "The white card",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_gatsby",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_narrator",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_gatsby",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_gatsby_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_gatsby_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_narrators_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_invitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_invitation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lunch_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_midwest_origin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_midwest_origin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_gatsby_midwest_origin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_san_francisco",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_midwest_origin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_inheritance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_midwest_origin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_inheritance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_europe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_inheritance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_europe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_gatsby_europe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_europe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_europe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_europe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_argonne_forest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_argonne_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_argonne_forest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_argonne_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_argonne_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_promotion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_argonne_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_promotion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_promotion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_decorations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_promotion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_decorations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_decorations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_medal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_decorations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_medal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_shows_medal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_shows_medal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_photo",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_shows_medal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_photo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_gatsby_shows_photo",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trinity_quad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_earl_of_dorcaster",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_gatsby_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_request",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_jordan_matter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_jordan_matter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_jordan_matter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_jordan_matter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_jordan_matter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_through_astoria",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_jordan_matter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_through_astoria",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_drive_through_astoria",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_astoria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drive_through_astoria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_drive_through_astoria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_policeman_stop",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drive_through_astoria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_policeman_stop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_policeman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_policeman_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_policeman_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_card",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_policeman_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shows_card",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_shows_card",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_policeman",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_shows_card",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queensboro_bridge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_shows_card",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_queensboro_bridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_queensboro_bridge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_queensboro_bridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_queensboro_bridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_queensboro_bridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral_procession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_queensboro_bridge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral_procession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_funeral_procession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_blackwells_island",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_limousine_passes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral_procession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_limousine_passes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_limousine_passes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_city",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_narrators_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_west_egg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_astoria",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_queensboro_bridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_city",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "obj_gatsby_car",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_gatsby_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_montenegrin_medal",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_shows_medal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_oxford_photo",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_white_card",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_gatsby_shows_card",
+      "target_closed_value": null
+    }
+  ]
+}

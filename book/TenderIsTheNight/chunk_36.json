@@ -1,0 +1,383 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prince",
+      "label": "Prince Chillicheff",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckinben",
+      "label": "Mr. McKibben",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hannan",
+      "label": "Mr. Hannan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Dick leaves Zurich for Munich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_flight",
+      "label": "Dick's flight to Munich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Dick meets Tommy Barban and Prince Chillicheff in Munich café",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_escape",
+      "label": "Tommy and Prince's escape from Russia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death",
+      "label": "Abe North beaten to death in speakeasy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_march",
+      "label": "Veterans' march and wreaths ceremony",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_airport",
+      "label": "Airport",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_munich",
+      "label": "Munich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cafe",
+      "label": "Café in Marienplatz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_russia",
+      "label": "Russia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_speakeasy",
+      "label": "Speakeasy in New York",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Hotel in Munich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_innsbruck",
+      "label": "Innsbruck",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_franz",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_nicole",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_incontro",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_escape",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_march",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_zurich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_munich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_speakeasy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_innsbruck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_flight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_airport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_flight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_flight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prince",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hannan",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_escape",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_russia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prince",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_speakeasy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_march",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_march",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_march",
+      "target_closed_value": null
+    }
+  ]
+}

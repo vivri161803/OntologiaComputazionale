@@ -1,0 +1,393 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thin_faced_american",
+      "label": "thin-faced American",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_divers",
+      "label": "the Divers",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_standing_around",
+      "label": "Dick standing around for three-quarters of an hour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_human_contact",
+      "label": "Dick becomes involved in human contact with thin-faced American",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Dick and thin-faced American have a conversation on Rue des Saintes-Anges",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_shakes_off",
+      "label": "Dick shakes off the thin-faced American",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_calls_rosemary",
+      "label": "Dick calls Rosemary from a bistro in Passy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_conversation",
+      "label": "Dick and Rosemary have an emotional phone conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_leaves",
+      "label": "Dick leaves the bistro and walks toward the Muette",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_writes_letter",
+      "label": "Rosemary finishes a letter to her mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_calls_nicole",
+      "label": "Dick calls Nicole at six o'clock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_nicole_dinner_play",
+      "label": "Dick and Nicole go to dinner at the hotel and then to a play",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rue_des_saintes_anges",
+      "label": "Rue des Saintes-Anges",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passy",
+      "label": "Passy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bistro",
+      "label": "bistro on the corner in Passy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_roi_george",
+      "label": "Roi George hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosemary_studio",
+      "label": "Rosemary's studio",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bois",
+      "label": "the Bois",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_muette",
+      "label": "the Muette",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fouquets",
+      "label": "Fouquet's bar",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick_contact",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick_phone",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_american",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_rosemary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_standing_around",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_human_contact",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_standing_around",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_human_contact",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shakes_off",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_calls_rosemary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_shakes_off",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_calls_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_writes_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_calls_nicole",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_writes_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_dinner_play",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_calls_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_human_contact",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_phone_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dick_calls_rosemary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bistro",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rue_des_saintes_anges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shakes_off",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_muette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_dinner_play",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fouquets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_human_contact",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_human_contact",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_thin_faced_american",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_thin_faced_american",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shakes_off",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shakes_off",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_thin_faced_american",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_calls_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_conversation",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_leaves",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_writes_letter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_calls_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_dinner_play",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_dinner_play",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rue_des_saintes_anges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_bistro",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_passy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

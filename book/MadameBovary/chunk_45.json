@@ -1,0 +1,642 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_physician",
+      "label": "The physician",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_canivet",
+      "label": "Canivet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Monsieur Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_blind_man",
+      "label": "The blind man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lariviere",
+      "label": "Monsieur Lariviere",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles_mother",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_physician_visit",
+      "label": "The physician's visit to the chemist's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bournisien_appearance",
+      "label": "Monsieur Bournisien's appearance with the holy oil",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_extreme_unction",
+      "label": "The priest administers extreme unction to Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blind_man_song",
+      "label": "The blind man sings outside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_death",
+      "label": "Emma's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_grief",
+      "label": "Charles's grief and collapse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_encounter_blind",
+      "label": "Homais encounters the blind man on the Place",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_funeral_arrangements",
+      "label": "Charles makes funeral arrangements",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vigil",
+      "label": "The vigil over Emma's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_canivet_discussion",
+      "label": "Homais and Bournisien's philosophical discussion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_contemplation",
+      "label": "Charles's contemplation of Emma's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visitors",
+      "label": "Evening visitors arrive",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "The chemist's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "The market",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bovary_room",
+      "label": "Emma's room at Bovary's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "Charles's consulting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "The sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing-room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_physician_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_bournisien_appearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_extreme_unction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_extreme_unction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_extreme_unction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_extreme_unction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_extreme_unction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blind_man_song",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_blind_man_song",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_blind_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blind_man_song",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_emma_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blind_man_song",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_encounter_blind",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_homais_encounter_blind",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_encounter_blind",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_encounter_blind",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_blind_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_homais_encounter_blind",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral_arrangements",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_funeral_arrangements",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral_arrangements",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral_arrangements",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_funeral_arrangements",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_funeral_arrangements",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vigil",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_vigil",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral_arrangements",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vigil",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_canivet_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_homais_canivet_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vigil",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_canivet_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_canivet_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_homais_canivet_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_contemplation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_charles_contemplation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_canivet_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_contemplation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visitors",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_visitors",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visitors",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visitors",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_chemist_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bovary_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_consulting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

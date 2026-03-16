@@ -1,0 +1,201 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_father",
+      "label": "The Father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_advice",
+      "label": "Father gives advice about criticizing others",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_college",
+      "label": "Narrator's college years and reputation as a politician",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_east",
+      "label": "Narrator returns from the East",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_dreams",
+      "label": "Gatsby's dreams and what preyed upon him",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_east",
+      "label": "The East",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_college",
+      "label": "College",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_father_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_gatsby_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_father",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_advice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_college",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_return_east",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_gatsby_dreams",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_advice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_advice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_college",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_dreams",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_advice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_college",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_college",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_college",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_east",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_advice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_college",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_college",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_east",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_dreams",
+      "target_closed_value": null
+    }
+  ]
+}

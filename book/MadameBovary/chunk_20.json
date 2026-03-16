@@ -1,0 +1,483 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_madame_lefrancois",
+      "label": "Madame Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary",
+      "label": "Madame Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_derozerays",
+      "label": "Monsieur Derozerays de la Panville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_colonel",
+      "label": "The Colonel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prefect",
+      "label": "The Prefect",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_fete",
+      "label": "The Agricultural Fair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_gathering",
+      "label": "Crowd gathering in the main street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_conversation",
+      "label": "Homais and Madame Lefrancois conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_emma_meeting",
+      "label": "Rodolphe and Emma meeting in the market",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_emma_walk",
+      "label": "Rodolphe and Emma walking together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_animal_examination",
+      "label": "Examination of animals at the fair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cannon_alarm",
+      "label": "False alarm from cannon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prefect_arrival",
+      "label": "Arrival of the Prefect",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_main_street",
+      "label": "Main street of the village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town_hall",
+      "label": "Town Hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen_steps",
+      "label": "Kitchen steps of the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "Market place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_meadow",
+      "label": "The meadow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_enclosure",
+      "label": "Enclosure for animal examination",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farrier_house",
+      "label": "Farrier's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_innkeeper",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_druggist",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_seducer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_merchant",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_president",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_gravedigger",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_official",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_fete",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_gathering",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conversation",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_meeting",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_walk",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_examination",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alarm",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_town_hall",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_kitchen",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_market",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_meadow",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_enclosure",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_fete",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_main_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fete",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_main_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_town_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "char_madame_lefrancois",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_homais_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_homais_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen_steps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kitchen_steps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_market",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_emma_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_rodolphe_emma_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rodolphe_emma_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meadow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_meadow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_derozerays",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_animal_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animal_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_animal_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_enclosure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_animal_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_emma_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_enclosure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_lestiboudois",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_animal_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cannon_alarm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_cannon_alarm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_animal_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prefect_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_prefect_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prefect_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cannon_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prefect",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_prefect_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_prefect_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_colonel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_prefect_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_the_norths",
+      "label": "The Norths",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_general",
+      "label": "A well-known general",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_french_musicians",
+      "label": "Two young French musicians",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole_sister",
+      "label": "Nicole's sister (Baby)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lunch_voisins",
+      "label": "Lunch at Voisins restaurant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_repose_discussion",
+      "label": "Discussion about repose and American men",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_general_bet",
+      "label": "Abe's bet with Dick about the general",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_general_scratches_head",
+      "label": "The general scratches his head",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_creates_unity",
+      "label": "Dick creates a bright unit from the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_arrives",
+      "label": "Nicole arrives at the restaurant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_party_conversation",
+      "label": "The party becomes funny and bitter, makes plans",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_phone_call",
+      "label": "Rosemary calls Franco-American Films",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_nicole_conversation",
+      "label": "Rosemary overhears Dick and Nicole's intimate conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shopping",
+      "label": "Rosemary and Nicole go shopping",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_story",
+      "label": "Nicole tells the story of her sister's court ball",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_leaves",
+      "label": "Nicole leaves in a taxi to meet Dick at the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_voisins",
+      "label": "Voisins restaurant",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_phone_booth",
+      "label": "Phone booth in the restaurant",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vestiaire",
+      "label": "Vestiaire (cloakroom area)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shops",
+      "label": "Shops in Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_berlin",
+      "label": "Berlin",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_dick",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_lunch_voisins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_voisins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_the_norths",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_french_musicians",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repose_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repose_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repose_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repose_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_bet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_repose_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_bet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_bet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_bet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_general",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_general_bet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_scratches_head",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_general_bet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_general_scratches_head",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_general",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_general_scratches_head",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_creates_unity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_general_scratches_head",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_creates_unity",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_creates_unity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_creates_unity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_creates_unity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_voisins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_phone_booth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vestiaire",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dick_nicole_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_nicole_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shops",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_story",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shops",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_nicole_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_sister",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_nicole_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shops",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_nicole_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_voisins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_phone_booth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_vestiaire",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_shops",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guard",
+      "label": "never-speaking guard",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_cell",
+      "label": "cell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_golden_country",
+      "label": "Golden Country",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ruins",
+      "label": "sunlit ruins",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_recovery",
+      "label": "Winston's physical recovery and healing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_feeding",
+      "label": "regular feeding at intervals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bathing",
+      "label": "bathing and washing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dental_work",
+      "label": "extraction of teeth and provision of dentures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dreaming",
+      "label": "happy dreams in the cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exercise",
+      "label": "physical exercise and strength training",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reeducation",
+      "label": "re-education of the mind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_capitulation",
+      "label": "Winston's capitulation to the Party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_slogans",
+      "label": "writing Party slogans on slate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "Winston and Julia's arrest at Ministry of Love",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_party",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_guard",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_feeding",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_feeding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_feeding",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_guard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_feeding",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dental_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dental_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dental_work",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_obrien",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exercise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_exercise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exercise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reeducation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_reeducation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reeducation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_capitulation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_capitulation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_of_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_capitulation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_slogans",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_slogans",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_slogans",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_of_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_golden_country",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_capitulation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_feeding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dental_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dreaming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exercise",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dreaming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reeducation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exercise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_slogans",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reeducation",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston Smith",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ampleforth",
+      "label": "Ampleforth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons",
+      "label": "Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "The drunk woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_officer",
+      "label": "Young officer in black uniform",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "Winston's arrest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_transport",
+      "label": "Being bundled into the closed van and driven away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_temporary_prison",
+      "label": "Confinement in the temporary lock-up with other prisoners",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_arrival",
+      "label": "The drunk woman being brought into the cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ampleforth_arrival",
+      "label": "Ampleforth being brought into the cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ampleforth_removal",
+      "label": "Ampleforth being taken to Room 101",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_parsons_arrival",
+      "label": "Parsons being brought into the cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_ampleforth",
+      "label": "Winston's conversation with Ampleforth about his crime",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_parsons",
+      "label": "Winston's conversation with Parsons about his guilt",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ministry_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cell_white",
+      "label": "High-ceilinged windowless cell with white porcelain walls",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_temporary_prison",
+      "label": "Temporary lock-up used by the patrols",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room_101",
+      "label": "Room 101",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_winston",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_guards",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_transport",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_temporary_prison",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_ampleforth_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_cell_white",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_temporary_prison",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_transport",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_temporary_prison",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_temporary_prison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ampleforth_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_temporary_prison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_ampleforth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ampleforth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ampleforth_removal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_ampleforth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ampleforth_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_parsons",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_parsons_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_transport",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_temporary_prison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ampleforth_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_ampleforth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_ampleforth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ampleforth_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_parsons_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_officer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ampleforth_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_temporary_prison",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_temporary_prison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ampleforth_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell_white",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_ampleforth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell_white",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell_white",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_parsons",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell_white",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_conversation_ampleforth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_conversation_ampleforth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_conversation_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_conversation_parsons",
+      "target_closed_value": null
+    }
+  ]
+}

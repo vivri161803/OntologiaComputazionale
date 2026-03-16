@@ -1,0 +1,414 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_viscount",
+      "label": "The Viscount",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_councillor",
+      "label": "The Councillor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lieuvain",
+      "label": "Monsieur Lieuvain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_derozerays",
+      "label": "Monsieur Derozerays",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_catherine",
+      "label": "Catherine Nicaise Elizabeth Leroux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tuvache",
+      "label": "Tuvache",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Monsieur Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_seduction",
+      "label": "Rodolphe's seduction of Emma in the garden",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_speeches",
+      "label": "Agricultural show speeches and ceremonies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prize_distribution",
+      "label": "Distribution of prizes to Catherine Leroux and others",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_banquet",
+      "label": "The feast and banquet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fireworks",
+      "label": "The fireworks display",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_article",
+      "label": "Homais writes article about the show",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden at the agricultural show",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_square",
+      "label": "The square below",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_platform",
+      "label": "The platform",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town_hall",
+      "label": "The town hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tent",
+      "label": "The tent for the feast",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_meadow",
+      "label": "The meadow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vaubyessard",
+      "label": "Vaubyessard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_leux",
+      "label": "The hill of Leux",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_seducer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_seduced",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_speaker",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_listener",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_seduction",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ceremony",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_celebration",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_lieuvain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_speeches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_derozerays",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_speeches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_speeches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_speeches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_town_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_town_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_prize_distribution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_councillor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_prize_distribution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tuvache",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_prize_distribution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prize_distribution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_prize_distribution",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_platform",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_platform",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_speeches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prize_distribution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_speeches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banquet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_prize_distribution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_banquet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banquet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_tent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_fireworks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_banquet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fireworks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_article",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_article",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_article",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_vaubyessard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_viscount",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_vaubyessard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    }
+  ]
+}

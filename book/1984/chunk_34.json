@@ -1,0 +1,355 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_martin",
+      "label": "Martin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Emmanuel Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_obrien_flat",
+      "label": "O'Brien's flat in the Inner Party quarter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "Long-shaped room with green-shaded lamp and dark-blue carpet",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Winston and Julia arrive at O'Brien's flat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telescreen_off",
+      "label": "O'Brien turns off the telescreen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confession",
+      "label": "Winston confesses their conspiracy beliefs and asks to join the Brotherhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wine_toast",
+      "label": "O'Brien serves wine and toasts Emmanuel Goldstein",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "O'Brien interrogates Winston and Julia about their willingness to commit crimes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_separation_refusal",
+      "label": "Julia refuses to separate from Winston; O'Brien warns of possible identity changes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_martin_departure",
+      "label": "Martin leaves to return to his duties",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_brotherhood_explanation",
+      "label": "O'Brien explains the structure and rules of the Brotherhood",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_julia",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_obrien",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_obrien",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_obrien",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_obrien_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_telescreen_off",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telescreen_off",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telescreen_off",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wine_toast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wine_toast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wine_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wine_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_wine_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wine_toast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation_refusal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_separation_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_separation_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_martin_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_separation_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_martin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_martin_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_brotherhood_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_martin_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_brotherhood_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_brotherhood_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_brotherhood_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_brotherhood_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_obrien_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

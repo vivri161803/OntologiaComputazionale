@@ -1,0 +1,406 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby",
+      "label": "Baby (Beth)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_gregory",
+      "label": "Doctor Gregory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sid_warren",
+      "label": "Sid Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_telephone_girl",
+      "label": "Telephone girl from Bar-sur-Aube",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_discussion",
+      "label": "Discussion about Dick's conduct with Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_entrance",
+      "label": "Dick meets Nicole at the clinic entrance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woodshed_conversation",
+      "label": "Dick and Nicole talk in the covered woodshed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_recovery_advice",
+      "label": "Dick advises Nicole on recovery and future",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_withdrawal",
+      "label": "Nicole withdraws to her room after dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_departure",
+      "label": "Dick leaves the clinic and goes to Zurich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_palace_hotel_encounter",
+      "label": "Dick sees Nicole at the Palace Hotel in a Rolls-Royce",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_dissatisfaction",
+      "label": "Dick experiences vast dissatisfaction in the following weeks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_book_project",
+      "label": "Dick projects a new work on neuroses and psychoses classification",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "The clinic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_main_entrance",
+      "label": "Main entrance of the clinic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_woodshed",
+      "label": "Covered woodshed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grain_field",
+      "label": "Grain field",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace_hotel",
+      "label": "Palace Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_america",
+      "label": "America",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_doctor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_advisor",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_meeting_entrance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woodshed_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_entrance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery_advice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woodshed_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_withdrawal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery_advice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_withdrawal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_palace_hotel_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_dissatisfaction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_palace_hotel_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_project",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_dissatisfaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_entrance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_meeting_entrance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woodshed_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_woodshed_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_recovery_advice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_recovery_advice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_withdrawal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_palace_hotel_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_palace_hotel_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_palace_hotel_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_dissatisfaction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_book_project",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_entrance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_main_entrance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woodshed_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_woodshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery_advice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_woodshed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_palace_hotel_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_woodshed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_palace_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_america",
+      "target_closed_value": null
+    }
+  ]
+}

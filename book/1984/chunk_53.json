@@ -1,0 +1,286 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "O'Brien interrogates Winston about the future world",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mirror",
+      "label": "Winston sees himself in the mirror",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tooth_extraction",
+      "label": "O'Brien extracts Winston's tooth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakdown",
+      "label": "Winston breaks down and weeps",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_conversation",
+      "label": "Winston and O'Brien discuss his fate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_brotherhood_enrollment",
+      "label": "Winston's enrollment in the Brotherhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cell",
+      "label": "The cell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_winston_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obrien_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_julia_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_party_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mirror",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_final_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "loc_cell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_brotherhood_enrollment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mirror",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mirror",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_mirror",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mirror",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tooth_extraction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mirror",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tooth_extraction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_tooth_extraction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tooth_extraction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tooth_extraction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_final_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_final_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,724 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tennessee_girl",
+      "label": "Red-haired girl from Tennessee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother_speers",
+      "label": "Mrs. Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_trench_walk",
+      "label": "Dick walks along the trench and observes the battlefield",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_explains_battle",
+      "label": "Dick explains the significance of the Western Front battle to Rosemary and Abe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grenade_game",
+      "label": "Abe playfully throws earth and pebbles, pretending to throw a grenade",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_memorial_tears",
+      "label": "Rosemary reads the memorial to Newfoundland dead and bursts into tears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_journey",
+      "label": "They get in their car and start back toward Amiens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meet_tennessee_girl",
+      "label": "Dick meets the Tennessee girl looking for her brother's grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wreath_placement",
+      "label": "The Tennessee girl places the wreath on a grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_amiens_evening",
+      "label": "They spend the evening in Amiens, waiting for the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_to_paris",
+      "label": "They take the train to Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paris_arrival",
+      "label": "They arrive in Paris and leave Nicole at the Hotel Roi George",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_houseboat_cafe",
+      "label": "Dick, Rosemary, and the Norths sit at a houseboat café on the Seine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_birthday",
+      "label": "Rosemary reveals it was her eighteenth birthday yesterday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_champagne_drinking",
+      "label": "Rosemary drinks champagne for the first time",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_departure",
+      "label": "Dick leaves the houseboat café and says goodnight",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_trench",
+      "label": "The trench at Beaumont Hamel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beaumont_hamel",
+      "label": "Beaumont Hamel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_thiepval",
+      "label": "Thiepval hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_battlefield",
+      "label": "The Western Front battlefield",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_graves",
+      "label": "The cemetery with graves",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amiens",
+      "label": "Amiens",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_roi_george",
+      "label": "Hotel Roi George",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_houseboat_cafe",
+      "label": "Houseboat café on the Seine",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seine",
+      "label": "The Seine river",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_battlefield",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_trench_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_trench_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trench_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_explains_battle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dick_explains_battle",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trench_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_explains_battle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_explains_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dick_explains_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dick_explains_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grenade_game",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_grenade_game",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_explains_battle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grenade_game",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trench",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grenade_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_grenade_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_grenade_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_memorial_tears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_memorial_tears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grenade_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_memorial_tears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_car_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_memorial_tears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meet_tennessee_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_meet_tennessee_girl",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meet_tennessee_girl",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meet_tennessee_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tennessee_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_meet_tennessee_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wreath_placement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_wreath_placement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meet_tennessee_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wreath_placement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_graves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tennessee_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wreath_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_amiens_evening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_amiens_evening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wreath_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_amiens_evening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amiens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_amiens_evening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_amiens_evening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_amiens_evening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tennessee_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_amiens_evening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_to_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_to_paris",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_amiens_evening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paris_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_paris_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_to_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paris_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paris_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paris_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_paris_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_houseboat_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_houseboat_cafe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_paris_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_houseboat_cafe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_champagne_drinking",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_champagne_drinking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_champagne_drinking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_champagne_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_birthday",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rosemary_birthday",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_champagne_drinking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_birthday",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_birthday",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_birthday",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_houseboat_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_trench",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_beaumont_hamel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_thiepval",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_battlefield",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_graves",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_amiens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_houseboat_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_seine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

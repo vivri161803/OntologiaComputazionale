@@ -1,0 +1,490 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_richard_diver",
+      "label": "Doctor Richard Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz_gregorovius",
+      "label": "Franz Gregorovius",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl_patient",
+      "label": "The girl patient",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ed_elkins",
+      "label": "Ed Elkins",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rumanian_intellectual",
+      "label": "Young Rumanian intellectual",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vienna",
+      "label": "Vienna",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_france",
+      "label": "France",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar_sur_aube",
+      "label": "Bar-sur-Aube",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dohmler_clinic",
+      "label": "Dohmler's clinic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurichsee",
+      "label": "Zurichsee",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_haven",
+      "label": "New Haven",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_johns_hopkins",
+      "label": "Johns Hopkins",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_connecticut",
+      "label": "Connecticut",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_salzburg",
+      "label": "Salzburg",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_arrival_zurich_1917",
+      "label": "Dick arrives in Zurich in spring 1917",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_studies_zurich",
+      "label": "Dick completes his studies in Zurich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vienna_visit",
+      "label": "Dick travels to Vienna in 1916",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_pamphlets",
+      "label": "Dick writes pamphlets in Vienna",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_book_publication",
+      "label": "Dick publishes a book in Zurich in 1920",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_burning_textbooks",
+      "label": "Dick burns textbooks for fuel in early 1917",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swimming_danube",
+      "label": "Dick swims in the winter Danube",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_neurological_unit",
+      "label": "Dick joins a neurological unit in Bar-sur-Aube",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discharge_1919",
+      "label": "Dick is discharged in spring 1919",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_girl",
+      "label": "Dick meets the girl patient near the Cedars",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girl_letters",
+      "label": "The girl writes letters to Dick over eight months",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_clinic",
+      "label": "Dick visits Dohmler's clinic to see Franz",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_franz_office_conversation",
+      "label": "Dick and Franz talk in Franz's office",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_scholar",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_clinician",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival_zurich_1917",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_zurich_1917",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_zurich_1917",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vienna_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vienna_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vienna_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vienna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vienna_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_studies_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_pamphlets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_pamphlets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_pamphlets",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vienna",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_publication",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_book_publication",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_publication",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_publication",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_pamphlets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_textbooks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_burning_textbooks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_burning_textbooks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neurological_unit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_neurological_unit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neurological_unit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar_sur_aube",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_neurological_unit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_burning_textbooks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discharge_1919",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discharge_1919",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discharge_1919",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_neurological_unit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl_patient",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_meeting_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_girl",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurichsee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_letters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_girl_patient",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_girl_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_girl_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_letters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz_gregorovius",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_clinic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dohmler_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_clinic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discharge_1919",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_office_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_franz_office_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz_gregorovius",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_franz_office_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_office_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dohmler_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_office_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_zurich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_dohmler_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_franz_gregorovius",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_girl_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ed_elkins",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_swimming_danube",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming_danube",
+      "target_closed_value": null
+    }
+  ]
+}

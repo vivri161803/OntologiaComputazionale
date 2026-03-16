@@ -1,0 +1,464 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary_mother",
+      "label": "Rosemary's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_yale_boy",
+      "label": "The boy from Yale prom",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waking_up",
+      "label": "Rosemary wakes up cooled and shamed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fittings",
+      "label": "Rosemary and Nicole go to a series of fittings",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_conversation",
+      "label": "Rosemary and Nicole talk in the taxi about their past in Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "Lunch at the Norths' apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_film_screening",
+      "label": "Screening of Daddy's Girl at Franco-American Films",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_screen_test_proposal",
+      "label": "Rosemary proposes a screen test for Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_with_dick",
+      "label": "Rosemary and Dick ride in taxi with Collis Clay",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea_visit",
+      "label": "Dick and Rosemary go to tea and then to buy pictures",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_gausse_hotel",
+      "label": "Gausse's hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rue_saints_peres",
+      "label": "Rue des Saints-Péres",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lake_forest",
+      "label": "Lake Forest house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rue_guynemer",
+      "label": "Rue Guynemer, across from Luxembourg Gardens",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_norths_apartment",
+      "label": "Norths' apartment",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_franco_american_films",
+      "label": "Franco-American Films projection room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lutetia",
+      "label": "Lutetia hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "film_daddys_girl",
+      "label": "Daddy's Girl film",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_nicole",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_dick",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_collis",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_waking_up",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_up",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gausse_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fittings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_waking_up",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fittings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fittings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_fittings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_fittings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_taxi_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rue_guynemer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_taxi_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_norths_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_film_screening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_film_screening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_film_screening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_film_screening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_film_screening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_film_screening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_franco_american_films",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "film_daddys_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_screen_test_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_film_screening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_screen_test_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_screen_test_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_screen_test_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_with_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_screen_test_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_with_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_with_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_taxi_with_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_taxi_with_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_taxi_with_dick",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_tea_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_gausse_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_norths_apartment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_franco_american_films",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rue_guynemer",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    }
+  ]
+}

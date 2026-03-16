@@ -1,0 +1,427 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_man",
+      "label": "Old man with white moustaches",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_barman",
+      "label": "Barman, large stout hook-nosed young man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_woman",
+      "label": "Young woman who grabbed a child",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_in_black_suit",
+      "label": "Man in concertina-like black suit",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_two_women",
+      "label": "Two monstrous women with brick-red forearms",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "Proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_walk",
+      "label": "Winston walks through London streets",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_smell_coffee",
+      "label": "Winston smells roasting coffee",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bomb_warning",
+      "label": "Rocket bomb warning and explosion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lottery_argument",
+      "label": "Three men argue about lottery numbers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enter_pub",
+      "label": "Winston enters the pub",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barman_altercation",
+      "label": "Old man argues with barman about pint measurement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_offer_drink",
+      "label": "Winston offers the old man a drink",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Winston and old man talk at the table",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_passage",
+      "label": "Passage with roasting coffee smell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry",
+      "label": "Ministry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london_streets",
+      "label": "Labyrinth of London streets",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_slums",
+      "label": "Brown-coloured slums north and east of Saint Pancras Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cobbled_street",
+      "label": "Cobbled street with two-storey houses",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pub",
+      "label": "Dingy little pub with frosted windows",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_alley",
+      "label": "Sunken alley with stall-keepers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_junk_shop",
+      "label": "Junk-shop where Winston bought his diary",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar_table",
+      "label": "Deal table under the window in the pub",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_community_centre",
+      "label": "Community Centre",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_smell_coffee",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_bomb_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_lottery_argument",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_barman_altercation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_cobbled_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_pub",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "evt_smell_coffee",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_smell_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bomb_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lottery_argument",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bomb_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_pub",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lottery_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barman_altercation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enter_pub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_offer_drink",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_barman_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_offer_drink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_smell_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bomb_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enter_pub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_offer_drink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_barman_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_offer_drink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_barman_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_man_in_black_suit",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bomb_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bomb_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_slums",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bomb_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cobbled_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lottery_argument",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enter_pub",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barman_altercation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_offer_drink",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_ministry",
+      "target_closed_value": null
+    }
+  ]
+}

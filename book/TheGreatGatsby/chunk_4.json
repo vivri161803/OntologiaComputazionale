@@ -1,0 +1,358 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_miss_baker",
+      "label": "Miss Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Mr. Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_crimson_room",
+      "label": "the crimson room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "the veranda",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_door",
+      "label": "the door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_mansion",
+      "label": "Gatsby's mansion",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dark_water",
+      "label": "the dark water",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_reading",
+      "label": "Miss Baker reading aloud from the Saturday Evening Post",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Nick and the narrator arriving in the crimson room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Miss Baker going to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Daisy and Tom discussing Jordan Baker and Nick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_engagement_rumor",
+      "label": "Daisy and Tom asking Nick about his engagement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_departure",
+      "label": "Nick leaving the house and driving away",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_sighting",
+      "label": "Nick seeing Gatsby standing on the lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_vanishing",
+      "label": "Gatsby vanishing into the darkness",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crimson_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_miss_baker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crimson_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_miss_baker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crimson_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_engagement_rumor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_engagement_rumor",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_engagement_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_engagement_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_engagement_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_engagement_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_departure",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sighting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sighting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sighting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_vanishing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_sighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_vanishing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_vanishing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_crimson_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_crimson_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_west_egg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

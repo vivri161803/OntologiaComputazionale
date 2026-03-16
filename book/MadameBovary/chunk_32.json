@@ -1,0 +1,853 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Léon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lagardy",
+      "label": "Edgar-Lagardy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucie",
+      "label": "Lucie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ashton",
+      "label": "Ashton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gilbert",
+      "label": "Gilbert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_arthur",
+      "label": "Arthur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouen_lady",
+      "label": "Rouen lady in short sleeves",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouen_lady_husband",
+      "label": "Rouen lady's husband",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_stroll",
+      "label": "Emma's stroll in the harbour before the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_theatre",
+      "label": "Emma and Charles arrive at the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theatre_filling",
+      "label": "The theatre begins to fill with spectators",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_orchestra_lights",
+      "label": "The lights of the orchestra are lit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_curtain_rises",
+      "label": "The curtain rises, revealing a country-scene",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hunting_song",
+      "label": "Peasants and lords sing a hunting-song",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_captain_appears",
+      "label": "A captain appears and evokes the spirit of evil",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucie_cavatina",
+      "label": "Lucie sings her cavatina in G major",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lagardy_appears",
+      "label": "Edgar-Lagardy appears on stage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lagardy_embraces_lucie",
+      "label": "Lagardy presses Lucie in his arms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_recitative_duet",
+      "label": "The recitative duet begins with Gilbert and Ashton",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lucie_advances",
+      "label": "Lucie advances with a wreath of orange blossoms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sextet",
+      "label": "The sextet begins with all characters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_curtain_falls",
+      "label": "The curtain falls at the end of the act",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_gets_water",
+      "label": "Charles goes to the refreshment-room to get barley-water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_spills_water",
+      "label": "Charles spills water on the Rouen lady",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_arrives",
+      "label": "Léon arrives at the theatre box",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_third_act_begins",
+      "label": "The third act begins",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mad_scene",
+      "label": "The mad scene of the opera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leave_theatre",
+      "label": "Emma, Charles, and Léon leave the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sit_at_cafe",
+      "label": "They sit down at a cafe in the harbour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "They converse about Emma's illness and Léon's work",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "The harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_theatre",
+      "label": "The theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vestibule",
+      "label": "The vestibule of the theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_staircase",
+      "label": "The staircase to the reserved seats",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_box",
+      "label": "Emma's box in the theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stage",
+      "label": "The stage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_country_scene",
+      "label": "A country-scene with a cross-roads and fountain",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pit",
+      "label": "The pit of the theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cafe",
+      "label": "A cafe in the harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lagardy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_stroll",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_arrival_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_arrival_theatre",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stroll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_filling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_orchestra_lights",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theatre_filling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_curtain_rises",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_orchestra_lights",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunting_song",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_curtain_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hunting_song",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucie_cavatina",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_captain_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lagardy_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucie_cavatina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lagardy_embraces_lucie",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lagardy_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recitative_duet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lagardy_embraces_lucie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucie_advances",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recitative_duet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sextet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lucie_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_curtain_falls",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_gets_water",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_curtain_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_spills_water",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_gets_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_spills_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_third_act_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mad_scene",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_third_act_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leave_theatre",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mad_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sit_at_cafe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leave_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sit_at_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stroll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_stroll",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_theatre_filling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_theatre_filling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_curtain_rises",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucie_cavatina",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lagardy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lagardy_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lagardy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lagardy_embraces_lucie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lagardy_embraces_lucie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lagardy_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gilbert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_recitative_duet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ashton",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_recitative_duet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_recitative_duet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lucie_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lucie_advances",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lagardy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ashton",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_arthur",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_sextet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_gets_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_spills_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouen_lady",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_spills_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouen_lady_husband",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_charles_spills_water",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_leon_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leon_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_third_act_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_third_act_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_third_act_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leave_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leave_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leave_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sit_at_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sit_at_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sit_at_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stroll",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_harbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_theatre",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_filling",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_curtain_rises",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunting_song",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_country_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_captain_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_country_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucie_cavatina",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lagardy_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lagardy_embraces_lucie",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recitative_duet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lucie_advances",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sextet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_curtain_falls",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_gets_water",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_spills_water",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_box",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_third_act_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mad_scene",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leave_theatre",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sit_at_cafe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_harbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_stage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_country_scene",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_box",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_rouen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

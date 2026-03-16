@@ -1,0 +1,297 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary_mother",
+      "label": "Rosemary's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_taxi",
+      "label": "the taxi",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_room",
+      "label": "Rosemary's room in the hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "the Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_conversation_taxi",
+      "label": "Rosemary and Dick's conversation in the taxi about what he is giving up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss_taxi",
+      "label": "Dick kisses Rosemary in the taxi",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_declaration",
+      "label": "Rosemary declares she has decided to give Dick up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seduction_attempt",
+      "label": "Rosemary attempts to seduce Dick in her hotel room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_refusal",
+      "label": "Dick refuses Rosemary's advances",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_departure",
+      "label": "Dick leaves Rosemary's room",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dick",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_rosemary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation_taxi",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_taxi",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss_taxi",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss_taxi",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kiss_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_declaration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_declaration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rosemary_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction_attempt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_declaration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction_attempt",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction_attempt",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_seduction_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_seduction_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_refusal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seduction_attempt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_refusal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_refusal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_taxi",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

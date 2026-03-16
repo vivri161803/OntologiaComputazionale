@@ -1,0 +1,601 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary_senior",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_brown_collar",
+      "label": "man with a brown collar",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Madame Bovary senior discovers Emma with a man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_argument",
+      "label": "Emma and Madame Bovary senior argue about morals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reconciliation",
+      "label": "Emma reconciles with Madame Bovary senior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_signal",
+      "label": "Emma makes a signal with white paper on the blind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Emma meets Rodolphe behind the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confession",
+      "label": "Emma confesses her suffering to Rodolphe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elopement_plan",
+      "label": "Emma and Rodolphe plan to run away together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shopping",
+      "label": "Emma purchases travel items from Lheureux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_delays",
+      "label": "Rodolphe delays the elopement multiple times",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_meeting",
+      "label": "Emma and Rodolphe meet on Saturday evening before the planned elopement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_abandonment",
+      "label": "Rodolphe abandons Emma and decides not to elope",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_passage",
+      "label": "the passage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "the kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "Emma's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lane",
+      "label": "the lane behind the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "the corner of the market",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "the yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_marseilles",
+      "label": "Marseilles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_genoa",
+      "label": "Genoa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "the garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "the terrace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_meadow",
+      "label": "the meadow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_provence",
+      "label": "Hotel de Provence",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "the chemist's shop",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_man_brown_collar",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_argument",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_argument",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reconciliation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_reconciliation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_signal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_signal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_signal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_signal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elopement_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_elopement_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elopement_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elopement_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elopement_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_delays",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_delays",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_delays",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_delays",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_abandonment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_rodolphe_abandonment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_final_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_abandonment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meadow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_passage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lane",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_meadow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

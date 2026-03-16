@@ -1,0 +1,507 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carraway",
+      "label": "Mr. Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_meyer_wolfsheim",
+      "label": "Meyer Wolfsheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatz",
+      "label": "Mr. Gatz (Gatsby's father)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_slagle",
+      "label": "Slagle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_klipspringer",
+      "label": "Klipspringer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_owl_eyes",
+      "label": "The man with owl-eyed glasses",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stella",
+      "label": "Stella",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_gatsby_death",
+      "label": "Gatsby's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meyer_letter",
+      "label": "Meyer Wolfsheim writes a letter about the shock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_slagle_call",
+      "label": "Slagle calls from Chicago about Parke's trouble",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatz_arrival",
+      "label": "Mr. Gatz arrives from Minnesota",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_carraway_visits_wolfsheim",
+      "label": "Carraway visits Meyer Wolfsheim's office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wolfsheim_refuses_funeral",
+      "label": "Meyer Wolfsheim refuses to attend the funeral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatz_shows_photo",
+      "label": "Mr. Gatz shows Carraway Gatsby's photograph",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatz_shows_schedule",
+      "label": "Mr. Gatz shows Carraway Gatsby's childhood schedule",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "Gatsby's funeral at the cemetery",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_carraway_house",
+      "label": "Carraway's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wolfsheim_office",
+      "label": "Meyer Wolfsheim's office (The Swastika Holding Company)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "The cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_minnesota",
+      "label": "Minnesota",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_york",
+      "label": "New York",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_gatsby_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_meyer_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_slagle_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_gatz_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_carraway_visits_wolfsheim",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_wolfsheim_refuses_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_gatz_shows_photo",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_gatz_shows_schedule",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "loc_carraway_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_wolfsheim_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cemetery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_west_egg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_meyer_wolfsheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meyer_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meyer_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slagle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_slagle_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_slagle_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatz_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carraway_visits_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_meyer_wolfsheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carraway_visits_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_meyer_wolfsheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wolfsheim_refuses_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_wolfsheim_refuses_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatz_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatz_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatz_shows_schedule",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatz_shows_schedule",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_owl_eyes",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meyer_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_slagle_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_slagle_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carraway_visits_wolfsheim",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatz_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wolfsheim_refuses_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_carraway_visits_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_shows_photo",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_carraway_visits_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_shows_schedule",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatz_shows_photo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatz_shows_schedule",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meyer_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carraway_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carraway_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_shows_photo",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carraway_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatz_shows_schedule",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carraway_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carraway_visits_wolfsheim",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wolfsheim_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cemetery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_minnesota",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slagle",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carraway",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_meyer_wolfsheim",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_gatz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    }
+  ]
+}

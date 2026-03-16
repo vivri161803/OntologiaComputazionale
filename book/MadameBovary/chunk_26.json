@@ -1,0 +1,610 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hippolyte",
+      "label": "Hippolyte Tautain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_lefrancois",
+      "label": "Mere Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_canivet",
+      "label": "Monsieur Canivet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abbe_bournisien",
+      "label": "Abbe Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_evening_conversation",
+      "label": "Evening conversation about future fortune and improvements",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_visit",
+      "label": "Monsieur Homais enters bedroom with newspaper paragraph",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_club_foot_operation",
+      "label": "Surgical operation on Hippolyte's club foot",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mere_lefrancois_alarm",
+      "label": "Mere Lefrancois cries for help about Hippolyte's condition",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leg_examination",
+      "label": "Examination of Hippolyte's leg showing swelling and ecchymosis",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hippolyte_moved",
+      "label": "Hippolyte moved to billiard-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gangrene_spreading",
+      "label": "Gangrene spreads on Hippolyte's leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abbe_visit",
+      "label": "Abbe Bournisien visits Hippolyte",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_canivet_arrival",
+      "label": "Doctor Canivet arrives at the Lion d'Or",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_amputation",
+      "label": "Amputation of Hippolyte's thigh by Doctor Canivet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_distress",
+      "label": "Charles sits in distress contemplating the mishap",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom of Charles and Emma",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "Lion d'Or hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_billiard_room",
+      "label": "Billiard-room at the Lion d'Or",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "Sitting-room of Charles's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place_darmes",
+      "label": "Place d'Armes",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_evening_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_evening_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_evening_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_evening_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_homais_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_evening_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_homais_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_homais_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_foot_operation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_club_foot_operation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_club_foot_operation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_club_foot_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_club_foot_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_club_foot_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mere_lefrancois_alarm",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_mere_lefrancois_alarm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_club_foot_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mere_lefrancois_alarm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_lefrancois",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mere_lefrancois_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mere_lefrancois_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mere_lefrancois_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leg_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_leg_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mere_lefrancois_alarm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leg_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leg_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leg_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leg_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_moved",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_hippolyte_moved",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leg_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_moved",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_lefrancois",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hippolyte_moved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hippolyte_moved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gangrene_spreading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_gangrene_spreading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hippolyte_moved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gangrene_spreading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_billiard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gangrene_spreading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gangrene_spreading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_lefrancois",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_gangrene_spreading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_gangrene_spreading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abbe_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_abbe_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gangrene_spreading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abbe_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_billiard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abbe_bournisien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abbe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_abbe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canivet_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_canivet_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abbe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canivet_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_canivet_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_canivet_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_amputation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_amputation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_canivet_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_amputation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_billiard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_amputation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_amputation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lestiboudois",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_amputation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_distress",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_charles_distress",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_amputation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_distress",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_distress",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_charles_distress",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lion_dor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_billiard_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_place_darmes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_chestnut_tree",
+      "label": "The Chestnut Tree Cafe",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_park",
+      "label": "The Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_africa",
+      "label": "Central Africa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_congo",
+      "label": "Congo",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_war_threat",
+      "label": "Eurasian army moving southward threatening Oceania",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_announcement",
+      "label": "Important announcement from Ministry of Peace about African front",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Winston and Julia meet in the Park",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_betrayal",
+      "label": "Winston and Julia confess their mutual betrayal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_separation",
+      "label": "Winston and Julia separate at the Tube station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_torture",
+      "label": "Winston's torture and interrogation by O'Brien",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_war_threat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_betrayal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_chestnut_tree",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_threat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_africa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chestnut_tree",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_betrayal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_threat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_betrayal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chestnut_tree",
+      "target_closed_value": null
+    }
+  ]
+}

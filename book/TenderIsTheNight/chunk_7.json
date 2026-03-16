@@ -1,0 +1,482 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_brady",
+      "label": "Brady",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_divers",
+      "label": "The Divers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_luis_campion",
+      "label": "Luis Campion",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_violet_mckisco",
+      "label": "Violet McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckisco",
+      "label": "McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_speers",
+      "label": "Mrs. Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_abrams",
+      "label": "Mrs. Abrams",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_gausse_hotel",
+      "label": "Gausse's hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "The terrace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stairway",
+      "label": "The white stairway of the formal entrance",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_divers_house",
+      "label": "The Divers' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_car_journey",
+      "label": "Brady's car journey to Gausse's hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_insomnia",
+      "label": "Rosemary's insomnia and sleeplessness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_walks_terrace",
+      "label": "Rosemary walks on the terrace at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_meets_campion",
+      "label": "Rosemary encounters Luis Campion weeping on the stairway",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_campion_reveals_duel",
+      "label": "Campion reveals the news of the duel to Rosemary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_meets_abe",
+      "label": "Rosemary meets Abe North",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_violet_gossip",
+      "label": "Violet McKisco gossips about the Divers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tommy_confrontation",
+      "label": "Tommy Barban confronts McKisco in the car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duel_arrangement",
+      "label": "The duel is arranged between Tommy Barban and McKisco",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_car_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_car_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_brady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_divers",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_insomnia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_rosemary_insomnia",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_insomnia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_rosemary_insomnia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_walks_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rosemary_walks_terrace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_insomnia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_walks_terrace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_walks_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_meets_campion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rosemary_meets_campion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_walks_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_meets_campion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_stairway",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_meets_campion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_luis_campion",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rosemary_meets_campion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_reveals_duel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_campion_reveals_duel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_meets_campion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_reveals_duel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_luis_campion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_campion_reveals_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_campion_reveals_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_meets_abe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rosemary_meets_abe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_campion_reveals_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_meets_abe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_meets_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_rosemary_meets_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violet_gossip",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_violet_gossip",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violet_gossip",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_violet_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_violet_gossip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_abrams",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_violet_gossip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_divers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_violet_gossip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_tommy_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_violet_gossip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tommy_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_tommy_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_violet_mckisco",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_tommy_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duel_arrangement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_duel_arrangement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tommy_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duel_arrangement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gausse_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duel_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_duel_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_stairway",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gausse_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

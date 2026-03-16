@@ -1,0 +1,338 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_high",
+      "label": "The High",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_middle",
+      "label": "The Middle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_low",
+      "label": "The Low",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_inner_party",
+      "label": "Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_outer_party",
+      "label": "Outer Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "The proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_new_aristocracy",
+      "label": "The new aristocracy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_struggle_high_middle",
+      "label": "The struggle between High and Middle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_overthrow_high",
+      "label": "The High are overthrown by the Middle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_middle_becomes_high",
+      "label": "The Middle become the High",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rise_ingsoc",
+      "label": "Rise of Ingsoc and totalitarian movements",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_development_machine_production",
+      "label": "Development of machine production",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hardening_outlook_1930",
+      "label": "General hardening of outlook around 1930",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_revolutionary_period_fifties_sixties",
+      "label": "Revolutionary period of the fifties and sixties",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abolition_private_property",
+      "label": "Abolition of private property",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_society_regroups",
+      "label": "Society regrouped into High, Middle, and Low",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_invention_print",
+      "label": "Invention of print",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_development_television",
+      "label": "Development of television",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastasia",
+      "label": "Eastasia",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_struggle_high_middle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_struggle_high_middle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_middle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_overthrow_high",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_high",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_overthrow_high",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_low",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_overthrow_high",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_overthrow_high",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_overthrow_high",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_struggle_high_middle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_middle_becomes_high",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_middle_becomes_high",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_overthrow_high",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_development_machine_production",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_hardening_outlook_1930",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_hardening_outlook_1930",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_development_machine_production",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rise_ingsoc",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rise_ingsoc",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hardening_outlook_1930",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_revolutionary_period_fifties_sixties",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_revolutionary_period_fifties_sixties",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rise_ingsoc",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_society_regroups",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_society_regroups",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_revolutionary_period_fifties_sixties",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abolition_private_property",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_abolition_private_property",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_society_regroups",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_society_regroups",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_outer_party",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_society_regroups",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_oceania",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_eurasia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_eastasia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_invention_print",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_development_television",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_development_television",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_invention_print",
+      "target_closed_value": null
+    }
+  ]
+}

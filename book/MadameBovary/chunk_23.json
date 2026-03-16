@@ -1,0 +1,526 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_prize_distribution",
+      "label": "Distribution of prizes at the fete",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_banquet",
+      "label": "Banquet in the meadow of Monsieur Leigeard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fireworks",
+      "label": "Fireworks in the evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_absence",
+      "label": "Six weeks of Rodolphe's absence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_return",
+      "label": "Rodolphe's return and visit to Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_riding_habit_decision",
+      "label": "Emma decides to accept the riding habit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horseback_ride",
+      "label": "Rodolphe and Emma's horseback ride",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forest_walk",
+      "label": "Walk in the forest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seduction",
+      "label": "Rodolphe's seduction of Emma by the pool",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_yonville",
+      "label": "Return to Yonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner with Charles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_seclusion",
+      "label": "Emma shuts herself in her room",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_meadow_leigeard",
+      "label": "Meadow of Monsieur Leigeard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_house",
+      "label": "Emma's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forest",
+      "label": "Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pool",
+      "label": "Small pool with duckweeds",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hills",
+      "label": "Hills overlooking Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_room",
+      "label": "Emma's room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rodolphe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_emma",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_charles",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_charles",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_prize_distribution",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meadow_leigeard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banquet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_prize_distribution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_banquet",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meadow_leigeard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fireworks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_banquet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_absence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_absence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_rodolphe_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riding_habit_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_riding_habit_decision",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_riding_habit_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_riding_habit_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horseback_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_riding_habit_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horseback_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hills",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_walk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_forest_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_forest_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_forest_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_to_yonville",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_yonville",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_to_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_return_to_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_seclusion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_seclusion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_seclusion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_meadow_leigeard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_pool",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_hills",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_emma_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_emma_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_horseback_ride",
+      "target_closed_value": null
+    }
+  ]
+}

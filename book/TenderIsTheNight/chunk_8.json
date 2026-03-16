@@ -1,0 +1,452 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckisco",
+      "label": "McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_divers",
+      "label": "The Divers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_campion",
+      "label": "Campion",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_barban",
+      "label": "Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_violet",
+      "label": "Violet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_speers",
+      "label": "Mrs. Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_french_second",
+      "label": "French second",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_french_doctor",
+      "label": "French doctor",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_duel",
+      "label": "The duel between McKisco and Barban",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckisco_preparation",
+      "label": "McKisco's preparation for the duel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckisco_writing",
+      "label": "McKisco writing a letter to his wife",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pistol_inspection",
+      "label": "Inspection of Barban's duelling pistols",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_decision",
+      "label": "Rosemary deciding to attend the duel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey_to_golf_course",
+      "label": "Journey to the golf course",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shots_fired",
+      "label": "The shots fired in the duel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barban_unsatisfied",
+      "label": "Barban declaring himself unsatisfied",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_negotiation",
+      "label": "Negotiation between Abe and Barban",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_doctor_payment",
+      "label": "Payment of the doctor's fees",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mckisco_room",
+      "label": "McKisco's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_golf_course",
+      "label": "The golf course",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_juan_les_pins",
+      "label": "Juan les Pins",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_mckisco",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_barban",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_abe",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_mrs_speers",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_doctor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_all_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_duel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_mckisco_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_journey_to_golf_course",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_golf_course",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_juan_les_pins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_mckisco_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mckisco_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pistol_inspection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mckisco_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golf_course",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_golf_course",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_juan_les_pins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pistol_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pistol_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey_to_golf_course",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shots_fired",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey_to_golf_course",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barban_unsatisfied",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shots_fired",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_negotiation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_barban_unsatisfied",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctor_payment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barban",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_mckisco_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mckisco_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_violet",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_mckisco_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_pistol_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pistol_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_pistol_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_rosemary_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey_to_golf_course",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_campion",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey_to_golf_course",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shots_fired",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shots_fired",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barban",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_shots_fired",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_barban_unsatisfied",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barban",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctor_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_french_doctor",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_doctor_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_campion",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_duel",
+      "target_closed_value": null
+    }
+  ]
+}

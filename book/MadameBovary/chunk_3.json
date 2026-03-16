@@ -1,0 +1,621 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother",
+      "label": "Charles's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary_first",
+      "label": "Madame Dubuc (Charles's first wife)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Monsieur Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_natasie",
+      "label": "Natasie (servant)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_messenger",
+      "label": "Messenger on horseback",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guide_boy",
+      "label": "Guide boy",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_medical_studies",
+      "label": "Charles attends medical courses and lectures",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abandonment",
+      "label": "Charles abandons his studies and frequents the public-house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exam_failure",
+      "label": "Charles fails his examination for an ordinary degree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_exam_success",
+      "label": "Charles passes his examination",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_installation_tostes",
+      "label": "Charles is installed as doctor in Tostes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_first_marriage",
+      "label": "Charles marries Madame Dubuc",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_night_call",
+      "label": "Charles receives a call at night to visit the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Charles travels to the Bertaux farm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_treatment",
+      "label": "Charles treats Monsieur Rouault's broken leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meal",
+      "label": "Charles shares a meal with Emma at the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whip_encounter",
+      "label": "Charles and Emma have a physical encounter while retrieving his whip",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_repeated_visits",
+      "label": "Charles makes repeated visits to the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "Hospital",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dieppe",
+      "label": "Dieppe",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bertaux",
+      "label": "Bertaux farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charles_home",
+      "label": "Charles's home in Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_public_house",
+      "label": "Public-house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen_bertaux",
+      "label": "Kitchen at the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom_rouault",
+      "label": "Rouault's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room at the Bertaux",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_student",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_doctor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_viaggio",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_medical_studies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_medical_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medical_studies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hospital",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medical_studies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abandonment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abandonment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_medical_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abandonment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exam_failure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exam_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exam_failure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abandonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_exam_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exam_success",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_exam_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_exam_success",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exam_failure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_installation_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_installation_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_installation_tostes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_installation_tostes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_exam_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_first",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_first_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_installation_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_messenger",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_night_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_night_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charles_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_night_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guide_boy",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_night_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treatment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treatment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom_rouault",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_treatment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whip_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whip_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_whip_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whip_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whip_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repeated_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_repeated_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whip_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rouen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bertaux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_charles_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_public_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen_bertaux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom_rouault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

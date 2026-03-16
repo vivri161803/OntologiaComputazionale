@@ -1,0 +1,354 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "The red-armed woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_room",
+      "label": "The shabby little room above Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charrington_shop",
+      "label": "Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The sun-filled court below",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church_belfry",
+      "label": "The church belfry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clearing_wood",
+      "label": "The clearing in the wood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_love",
+      "label": "The Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "The street",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_renting_room",
+      "label": "Winston rents the room from Mr Charrington",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_julia",
+      "label": "Winston and Julia meet in the street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_cancels",
+      "label": "Julia cancels their planned meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_arrives",
+      "label": "Julia arrives at the room with supplies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_love_affair",
+      "label": "Winston and Julia's love affair",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_paperweight",
+      "label": "The glass paperweight",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_coffee",
+      "label": "Real coffee from the Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_sugar",
+      "label": "Real sugar",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_bread",
+      "label": "Proper white bread",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_tea",
+      "label": "Real tea",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_renting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_love_affair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_julia_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_renting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renting_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charrington_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_meeting_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_julia",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_cancels",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_cancels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_cancels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_coffee",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_sugar",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_bread",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_tea",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_julia_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_love_affair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_love_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_love_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_paperweight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

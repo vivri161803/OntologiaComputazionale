@@ -1,0 +1,652 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma (Madame Bovary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles (Doctor Bovary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais (chemist/druggist)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin (apprentice)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite (servant)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Monsieur Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon (Homais's son)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_athalie",
+      "label": "Athalie (Homais's daughter)",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river by Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden_walls",
+      "label": "Garden walls along the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_garden",
+      "label": "Emma's garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_leon_office",
+      "label": "Leon's office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_la_pature",
+      "label": "La Pature at the top of Argueil hills",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "The sitting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "Lion d'Or (inn)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_homais_shop",
+      "label": "Homais's pharmacy shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yarn_mill",
+      "label": "Yarn-mill in the valley",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_walk_riverside",
+      "label": "Emma and Leon walk by the riverside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_dancers",
+      "label": "Emma and Leon discuss Spanish dancers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_solitude",
+      "label": "Leon goes to La Pature and reflects on his boredom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_moves_sitting_room",
+      "label": "Emma moves to the sitting-room in cold weather",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_passes_window",
+      "label": "Leon passes by Emma's window daily",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_dinner",
+      "label": "Homais dines at the Bovarys' house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_soiree_homais",
+      "label": "Soiree at Homais's house with card games",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_card_game",
+      "label": "Emma and Leon play cards together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_reading",
+      "label": "Leon reads to Emma while others sleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gift_exchange",
+      "label": "Leon gives gifts to Emma and Charles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rug_gift",
+      "label": "Emma gives Leon a velvet rug",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_torment",
+      "label": "Leon torments himself over declaring his love",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_yarn_mill_visit",
+      "label": "Group visits the yarn-mill in the valley",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_napoleon_lime",
+      "label": "Napoleon falls into lime heap",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_recipient",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_walk_riverside",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_riverside",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden_walls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_riverside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_riverside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_dancers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_riverside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_dancers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_dancers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_solitude",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_dancers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_solitude",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_la_pature",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_solitude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_moves_sitting_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_solitude",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_moves_sitting_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_moves_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_passes_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_moves_sitting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_passes_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_passes_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_soiree_homais",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_soiree_homais",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_homais_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_soiree_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_soiree_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_soiree_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_soiree_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_card_game",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_soiree_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_card_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_card_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_card_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_card_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_leon_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gift_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_gift_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gift_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gift_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rug_gift",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gift_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_rug_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_rug_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_torment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rug_gift",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_torment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_yarn_mill_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_torment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_yarn_mill_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yarn_mill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_athalie",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_lime",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_yarn_mill_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_napoleon_lime",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yarn_mill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_napoleon_lime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_napoleon_lime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_napoleon_lime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_napoleon_lime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden_walls",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_la_pature",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lion_dor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_homais_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yarn_mill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_walk_riverside",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_yarn_mill_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_leon_torment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_soiree_homais",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_emma_moves_sitting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    }
+  ]
+}

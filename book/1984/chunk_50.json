@@ -1,0 +1,334 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bigbrother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_whiteman",
+      "label": "man in the white coat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aaronson",
+      "label": "Aaronson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rutherford",
+      "label": "Rutherford",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "interrogation of Winston",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_torture",
+      "label": "torture with apparatus and electric shock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mindcontrol",
+      "label": "mind control and memory manipulation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_questioning",
+      "label": "questioning session about Julia, Big Brother, and Room 101",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_betrayal_julia",
+      "label": "Julia's betrayal and conversion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation_past",
+      "label": "interrogation of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_interrogationroom",
+      "label": "interrogation room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room101",
+      "label": "Room 101",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastasia",
+      "label": "Eastasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasia",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_obrien",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_julia",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_torture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_mindcontrol",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_betrayal_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogationroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogationroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mindcontrol",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogationroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_questioning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogationroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_interrogationroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room101",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_whiteman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mindcontrol",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_mindcontrol",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_questioning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_betrayal_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mindcontrol",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_torture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_questioning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mindcontrol",
+      "target_closed_value": null
+    }
+  ]
+}

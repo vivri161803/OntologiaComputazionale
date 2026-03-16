@@ -1,0 +1,288 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "The brawny red-armed woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_book",
+      "label": "THE BOOK",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading",
+      "label": "Winston reading the forbidden book",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_arrival",
+      "label": "Julia arrives at the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_embrace",
+      "label": "Winston and Julia embrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coffee",
+      "label": "Julia makes coffee by the oil stove",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bed",
+      "label": "Winston and Julia in bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_aloud",
+      "label": "Winston reads the book aloud to Julia",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room with no telescreen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard below",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bed",
+      "label": "The bed",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_book",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_julia",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reading_aloud",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_aloud",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_aloud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_reading_aloud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reading_aloud",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_aloud",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bed",
+      "target_closed_value": null
+    }
+  ]
+}

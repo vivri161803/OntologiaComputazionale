@@ -1,0 +1,306 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_party",
+      "label": "The Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_inner_party",
+      "label": "The Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_oligarchies",
+      "label": "Past oligarchies",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_subject_peoples",
+      "label": "Subject peoples of disputed territories",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "The proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_high",
+      "label": "The High",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_fall_of_oligarchies",
+      "label": "Fall of past oligarchies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ossification",
+      "label": "Ossification of oligarchies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_softening",
+      "label": "Growing soft of oligarchies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_overthrow_stupidity",
+      "label": "Overthrow due to stupidity and arrogance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_overthrow_cowardice",
+      "label": "Overthrow due to liberalism and cowardice",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_creation_doublethink",
+      "label": "Creation of DOUBLETHINK system",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_hysteria",
+      "label": "War hysteria increases in social scale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seizure_of_power",
+      "label": "Seizure of power by the Party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_establishment_thought_police",
+      "label": "Establishment of Thought Police",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_continuous_warfare",
+      "label": "Continuous warfare",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_oceanic_society",
+      "label": "Oceanic society",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_disputed_territories",
+      "label": "Disputed territories",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_peace",
+      "label": "Ministry of Peace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_plenty",
+      "label": "Ministry of Plenty",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_ruler",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_fall",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_oligarchies",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fall_of_oligarchies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ossification",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fall_of_oligarchies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_softening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fall_of_oligarchies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_overthrow_stupidity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ossification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_overthrow_cowardice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_softening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fall_of_oligarchies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_creation_doublethink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_creation_doublethink",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_creation_doublethink",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fall_of_oligarchies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war_hysteria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_hysteria",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceanic_society",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subject_peoples",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_continuous_warfare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_continuous_warfare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_continuous_warfare",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_disputed_territories",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seizure_of_power",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seizure_of_power",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_establishment_thought_police",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seizure_of_power",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_continuous_warfare",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seizure_of_power",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ministry_of_peace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_plenty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_oceanic_society",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

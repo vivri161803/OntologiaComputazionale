@@ -1,0 +1,394 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston Smith",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_victory_mansions",
+      "label": "Victory Mansions",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flat",
+      "label": "Winston's flat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_junk_shop",
+      "label": "frowsy little junk-shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_entering_building",
+      "label": "Winston enters Victory Mansions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_climbing_stairs",
+      "label": "Winston climbs seven flights of stairs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_observing_posters",
+      "label": "Winston observes Big Brother posters",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drinking_gin",
+      "label": "Winston drinks Victory Gin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_finding_diary",
+      "label": "Winston finds the diary in the junk-shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_opening_diary",
+      "label": "Winston opens the diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_date",
+      "label": "Winston writes the date in the diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_panic",
+      "label": "Winston begins writing in panic",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_diary",
+      "label": "the diary with creamy paper",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_telescreen",
+      "label": "the telescreen",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_entering_building",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_entering_building",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_mansions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_entering_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_climbing_stairs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_climbing_stairs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_entering_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_climbing_stairs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_mansions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_climbing_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observing_posters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_observing_posters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_climbing_stairs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_observing_posters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_observing_posters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_observing_posters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking_gin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_drinking_gin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_gin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_finding_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_finding_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_junk_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_finding_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_diary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_finding_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_opening_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_opening_diary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drinking_gin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_opening_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_opening_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_date",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_date",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_opening_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_date",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_date",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_panic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writing_panic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_date",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_panic",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_panic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_victory_mansions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_london",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ministry_of_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_flat",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_victory_mansions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ministry_of_truth",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    }
+  ]
+}

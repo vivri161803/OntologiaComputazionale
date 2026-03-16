@@ -1,0 +1,566 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles_bovary",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_headmaster",
+      "label": "Head-master",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_classmaster",
+      "label": "Monsieur Roger (class-master)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_schoolservant",
+      "label": "School servant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_classmates",
+      "label": "Classmates",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_master",
+      "label": "Master (teacher)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles_father",
+      "label": "Monsieur Charles Denis Bartolome Bovary (father)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles_mother",
+      "label": "Madame Bovary (mother)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fatherinlaw",
+      "label": "Father-in-law (hosier)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cure",
+      "label": "The Cure (village priest)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ironmonger",
+      "label": "Wholesale ironmonger",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrival_at_school",
+      "label": "Charles arrives at school as new student",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cap_incident",
+      "label": "Cap falls and causes laughter in class",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_name_announcement",
+      "label": "Charles announces his name (Charbovari)",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_punishment",
+      "label": "Charles receives punishment (conjugate ridiculus sum)",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_evening_preparation",
+      "label": "Charles works diligently at evening preparation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_marriage",
+      "label": "Charles's father marries hosier's daughter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_retirement",
+      "label": "Charles's father retires to the country",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_birth",
+      "label": "Charles is born",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_childhood_education",
+      "label": "Charles receives education from village cure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sent_to_rouen",
+      "label": "Charles is sent to school at Rouen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rouen_studies",
+      "label": "Charles studies at Rouen school",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_medicine_studies",
+      "label": "Charles begins studying medicine",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_classroom",
+      "label": "Classroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_punishment_form",
+      "label": "Punishment form at foot of master's desk",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "Village (Charles's birthplace)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_farmhouse",
+      "label": "Half farm, half private house on border of Caux and Picardy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sacristy",
+      "label": "Sacristy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen_school",
+      "label": "School at Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dyer_room",
+      "label": "Room on fourth floor of dyer's house overlooking Eau-de-Robec",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hospital",
+      "label": "Hospital",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_new_student",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist_classmates",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_authority_headmaster",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_mother",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_education",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival_at_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_arrival_at_school",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_classroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_at_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_headmaster",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_arrival_at_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_classmaster",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_arrival_at_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cap_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_cap_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_at_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cap_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_classroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cap_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_classmates",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_cap_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_name_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_name_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cap_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_name_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_classroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_name_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_master",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_name_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_punishment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_punishment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_name_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_punishment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_punishment_form",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_punishment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_master",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_punishment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_evening_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_evening_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_punishment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_evening_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_charles_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fatherinlaw",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_father_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_retirement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_father_retirement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_retirement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_birth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_charles_birth",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_farmhouse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_birth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_childhood_education",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_childhood_education",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sacristy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_childhood_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cure",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_childhood_education",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sent_to_rouen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_sent_to_rouen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sent_to_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_father",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sent_to_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouen_studies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rouen_studies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sent_to_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouen_studies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen_school",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rouen_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ironmonger",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_rouen_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medicine_studies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_medicine_studies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rouen_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_medicine_studies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dyer_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_medicine_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_medicine_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_classroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_punishment_form",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_sacristy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rouen_school",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dyer_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hospital",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_village",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_farmhouse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

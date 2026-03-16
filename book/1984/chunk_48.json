@@ -1,0 +1,408 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guards",
+      "label": "Guards in black uniforms",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_questioners",
+      "label": "Party intellectuals questioners",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor",
+      "label": "Man in white coat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_officer",
+      "label": "Waxed-faced officer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aaronson",
+      "label": "Aaronson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rutherford",
+      "label": "Rutherford",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "Winston's arrest",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beatings",
+      "label": "Physical torture and beatings",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Interrogation by Party intellectuals",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confessions",
+      "label": "Winston's confessions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_room101",
+      "label": "Arrival in Room 101",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pain_infliction",
+      "label": "O'Brien inflicts pain with dial",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_photograph",
+      "label": "O'Brien shows photograph of Jones, Aaronson, Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_photograph_destruction",
+      "label": "O'Brien destroys the photograph",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cell",
+      "label": "Prison cell with plank bed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room101",
+      "label": "Room 101",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_interrogation_room",
+      "label": "Interrogation room with dials and lights",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "Golden corridor",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_tormentor",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_beatings",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confessions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_room101",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_pain_infliction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_photograph",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_photograph_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "loc_cell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room101",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_interrogation_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beatings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_beatings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confessions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_room101",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confessions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pain_infliction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_photograph",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pain_infliction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_photograph_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_photograph",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guards",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_beatings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_beatings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_questioners",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confessions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pain_infliction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_pain_infliction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_photograph",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_photograph",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_photograph_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beatings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogation_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_room101",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pain_infliction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_photograph",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_photograph_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room101",
+      "target_closed_value": null
+    }
+  ]
+}

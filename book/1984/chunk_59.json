@@ -1,0 +1,167 @@
+{
+  "open_nodes": [
+    {
+      "id": "concept_newspeak",
+      "label": "Newspeak",
+      "node_type": "Character"
+    },
+    {
+      "id": "concept_a_vocabulary",
+      "label": "A vocabulary",
+      "node_type": "Character"
+    },
+    {
+      "id": "concept_grammar",
+      "label": "Grammar of Newspeak",
+      "node_type": "Character"
+    },
+    {
+      "id": "concept_interchangeability",
+      "label": "Interchangeability between parts of speech",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_regularity",
+      "label": "Regularity of Newspeak grammar",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_vocabulary_reduction",
+      "label": "Diminution of vocabulary through affixes",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_word_formation",
+      "label": "Word formation with affixes UN-, PLUS-, DOUBLEPLUS-",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_inflection_rules",
+      "label": "Regular inflection rules for verbs and plurals",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_irregular_words",
+      "label": "Irregular inflection in pronouns and auxiliary verbs",
+      "node_type": "Event"
+    },
+    {
+      "id": "concept_everyday_life",
+      "label": "Business of everyday life",
+      "node_type": "Location"
+    },
+    {
+      "id": "concept_literary_discussion",
+      "label": "Literary purposes and political discussion",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "event_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "event_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "location_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "concept_a_vocabulary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "concept_grammar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "concept_interchangeability",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "concept_regularity",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "concept_vocabulary_reduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "concept_word_formation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "concept_inflection_rules",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "concept_irregular_words",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "concept_interchangeability",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "concept_a_vocabulary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_word_formation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "concept_interchangeability",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_regularity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "concept_word_formation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_inflection_rules",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "concept_regularity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_irregular_words",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "concept_inflection_rules",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_a_vocabulary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "concept_everyday_life",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_topsy",
+      "label": "Topsy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicotera",
+      "label": "Nicotera",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_director",
+      "label": "Director",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_actress",
+      "label": "Actress",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary_mother",
+      "label": "Rosemary's Mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_elevator",
+      "label": "Elevator",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "Tortuous corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosemary_room",
+      "label": "Rosemary's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pincio",
+      "label": "Pincio",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forum_set",
+      "label": "Forum set",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guard_room_stage",
+      "label": "Guard-room stage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_castelli_dei_cesari",
+      "label": "Castelli dei Cæsari restaurant",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_dick_arrives",
+      "label": "Dick arrives at Rosemary's room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Dick and Rosemary converse about their lives",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss",
+      "label": "Dick and Rosemary kiss passionately",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intimate_moment",
+      "label": "Dick and Rosemary's intimate moment in the bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_pincio",
+      "label": "Dick and Rosemary walk in the Pincio",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_film_set_visit",
+      "label": "Dick visits the film set",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_performance",
+      "label": "Rosemary performs on stage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_director_outburst",
+      "label": "Director's outburst on set",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_luncheon",
+      "label": "Dick and Rosemary have luncheon at Castelli dei Cæsari",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consummation",
+      "label": "Dick and Rosemary consummate their relationship",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_rosemary",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "loctype_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loctype_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loctype_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_dick_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dick_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_pincio",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_pincio",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pincio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_pincio",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_pincio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_pincio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_film_set_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_pincio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_film_set_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_forum_set",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_film_set_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_film_set_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_film_set_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_performance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_film_set_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_performance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_guard_room_stage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_rosemary_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_director_outburst",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_director_outburst",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_forum_set",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_director",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_director_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_director_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_director_outburst",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_castelli_dei_cesari",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consummation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consummation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consummation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consummation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consummation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rosemary_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_pincio",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_forum_set",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_castelli_dei_cesari",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

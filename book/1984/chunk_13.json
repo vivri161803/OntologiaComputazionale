@@ -1,0 +1,301 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prostitute",
+      "label": "The prostitute woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_katharine",
+      "label": "Katharine, Winston's wife",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "The proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_party",
+      "label": "The Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_diary_writing",
+      "label": "Winston writing in his diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_prostitute",
+      "label": "Winston's encounter with the prostitute three years ago",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage_katharine",
+      "label": "Winston's marriage to Katharine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_separation_katharine",
+      "label": "Winston and Katharine's separation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_street_market_riot",
+      "label": "The women's riot at the street market over saucepans",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection_on_proles",
+      "label": "Winston's reflection on the proles' potential for rebellion",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_basement_kitchen",
+      "label": "The basement kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_side_street",
+      "label": "The narrow side-street near the railway station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street_market",
+      "label": "The street market",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crowded_street",
+      "label": "The crowded street where Winston witnessed the market scene",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_prostitute",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_party",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diary_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_side_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_prostitute",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_prostitute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prostitute",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_encounter_prostitute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_prostitute",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_basement_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_prostitute",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_marriage_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_katharine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_marriage_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_marriage_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation_katharine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_separation_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation_katharine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_marriage_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_street_market_riot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_street_market_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_street_market_riot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_proles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection_on_proles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reflection_on_proles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection_on_proles",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_street_market_riot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_party",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter_prostitute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_party",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_marriage_katharine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_basement_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_side_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_street_market",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_crowded_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

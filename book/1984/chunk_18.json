@@ -1,0 +1,260 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_man",
+      "label": "The old man",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_upstairs_room",
+      "label": "The upstairs room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cobbled_yard",
+      "label": "Cobbled yard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passage",
+      "label": "Tiny passage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fireplace",
+      "label": "Fireplace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_st_clement_danes",
+      "label": "St Clement Danes church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_palace_of_justice",
+      "label": "Palace of Justice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_tour_room",
+      "label": "The old man leads Winston upstairs to show him the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examine_picture",
+      "label": "Winston examines the picture of St Clement Danes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_old_man_recites_rhyme",
+      "label": "The old man recites the nursery rhyme about St Clement's",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_mahogany_bed",
+      "label": "Mahogany bed",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_gateleg_table",
+      "label": "Gateleg table",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_bookcase",
+      "label": "Small bookcase",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_picture",
+      "label": "Steel engraving of St Clement Danes in rosewood frame",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_lamp",
+      "label": "Lamp",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_guide",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_observer",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exploration",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_interior",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_old_man",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_tour_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_examine_picture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_old_man_recites_rhyme",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_tour_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examine_picture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tour_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_old_man_recites_rhyme",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examine_picture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tour_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_tour_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examine_picture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_examine_picture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_old_man_recites_rhyme",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_old_man_recites_rhyme",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_upstairs_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_upstairs_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_st_clement_danes",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_palace_of_justice",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_london",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_picture",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_mahogany_bed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_bookcase",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_gateleg_table",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    }
+  ]
+}

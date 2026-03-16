@@ -1,0 +1,603 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick_diver",
+      "label": "Doctor Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole_warren",
+      "label": "Nicole Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby_warren",
+      "label": "Baby Warren (Miss Warren)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tino_marmora",
+      "label": "Tino Marmora (young Italian)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marmora_parents",
+      "label": "Marmora's parents",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beth_evan_warren",
+      "label": "Beth Evan Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_hotel_salon",
+      "label": "Hotel salon with fabled acoustics",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_horseshoe_walk",
+      "label": "Horseshoe walk overlooking the lake",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mountain",
+      "label": "Mountain (high Alps)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montreux_vevey",
+      "label": "Montreux and Vevey (lights below)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lausanne",
+      "label": "Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rochers_de_naye",
+      "label": "Rochers de Naye",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_waiting",
+      "label": "Waiting for Dick's arrival at the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dancing",
+      "label": "Dancing in the hotel salon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_acoustic_test",
+      "label": "Nicole testing the acoustic properties of the salon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_conversation",
+      "label": "Baby Warren's conversation with Dick about Nicole's care",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_disappearance",
+      "label": "Nicole leaving the ballroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_search",
+      "label": "Dick searching for Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_promenade_meeting",
+      "label": "Dick and Nicole meeting on the horseshoe walk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss",
+      "label": "Dick and Nicole kissing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_storm",
+      "label": "Violent storm with thunder and lightning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_hotel",
+      "label": "Dick and Nicole returning to the hotel vestibule",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_climb",
+      "label": "Dick climbing to Rochers de Naye",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swim",
+      "label": "Dick swimming in Montreux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_notes_received",
+      "label": "Dick receiving two notes at his hotel",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tino_marmora",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acoustic_test",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acoustic_test",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acoustic_test",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_acoustic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_acoustic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_acoustic_test",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tino_marmora",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marmora_parents",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_baby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_baby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_disappearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mountain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promenade_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promenade_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_horseshoe_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_promenade_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_promenade_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_promenade_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_promenade_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_horseshoe_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_storm",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mountain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_hotel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_storm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_hotel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_return_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_return_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marmora_parents",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_return_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_climb",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_climb",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rochers_de_naye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_climb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_climb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swim",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_climb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swim",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_montreux_vevey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swim",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notes_received",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notes_received",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notes_received",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_notes_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_notes_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beth_evan_warren",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_notes_received",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hotel_salon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_horseshoe_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_horseshoe_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_mountain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    }
+  ]
+}

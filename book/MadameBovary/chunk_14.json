@@ -1,0 +1,535 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Monsieur Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_senior",
+      "label": "Monsieur Bovary, senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_senior_wife",
+      "label": "Madame Bovary, senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abbe_bournisien",
+      "label": "Abbe Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nurse",
+      "label": "Madame Rollet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lefrancois",
+      "label": "Madame Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tuvache",
+      "label": "Madame Tuvache",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_financial_worry",
+      "label": "Charles worries about money spent on repairs and moving",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pregnancy",
+      "label": "Emma's pregnancy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confinement",
+      "label": "Emma is confined and gives birth to a girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_naming",
+      "label": "Choosing a name for the daughter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baptism",
+      "label": "Berthe's baptism ceremony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bovary_senior_stay",
+      "label": "Monsieur Bovary senior stays at Yonville for a month",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_nurse",
+      "label": "Emma visits her daughter at the nurse's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_with_leon",
+      "label": "Emma and Leon walk together to the nurse's house and back",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_quincampoix",
+      "label": "Quincampoix",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vaubyessard",
+      "label": "Chateau of Vaubyessard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rollets_house",
+      "label": "Rollets' house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village_path",
+      "label": "Path bordered with privet hedges",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "Charles's consulting room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_attic",
+      "label": "The attic",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_husband",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_wife",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_godfather",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_godmother",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_financial_worry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_pregnancy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_confinement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_naming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_baptism",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_bovary_senior_stay",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_walk_with_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_rollets_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_village_path",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_financial_worry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pregnancy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confinement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_naming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baptism",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_stay",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_nurse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rollets_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_with_leon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village_path",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_financial_worry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pregnancy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_financial_worry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confinement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pregnancy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_naming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baptism",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_stay",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baptism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_nurse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bovary_senior_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_with_leon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_financial_worry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pregnancy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pregnancy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary_senior_wife",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_naming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_baptism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_baptism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary_senior_wife",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_baptism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abbe_bournisien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_baptism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovary_senior_stay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nurse",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_with_leon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_walk_with_leon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary_senior",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bovary_senior_stay",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sibley_biers",
+      "label": "Sibley-Biers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_caroline",
+      "label": "Lady Caroline",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gausse",
+      "label": "Gausse",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Phone call from police station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "Arrest of Mary North and Lady Caroline",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bail_negotiation",
+      "label": "Dick negotiates bail with police chief",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gausse_confrontation",
+      "label": "Gausse confronts Lady Caroline",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barber_visit",
+      "label": "Dick and Nicole visit the barber",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tommy_encounter",
+      "label": "Tommy Barban encounters Dick and Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation_cafe",
+      "label": "Tommy confronts Dick and Nicole at the café",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_antibes_police",
+      "label": "Police station in Antibes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_majestic_hotel",
+      "label": "Majestic Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carleton_hotel",
+      "label": "Carleton Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cafe_allies",
+      "label": "Café des Alliées",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_gausse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_lady_caroline",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_bail_negotiation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_confrontation_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_antibes_police",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_antibes_police",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bail_negotiation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_antibes_police",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gausse_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_majestic_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barber_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_carleton_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation_cafe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe_allies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bail_negotiation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gausse_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bail_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_barber_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gausse_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_barber_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation_cafe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tommy_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_caroline",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bail_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gausse",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bail_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gausse",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gausse_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_caroline",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gausse_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_barber_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_barber_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tommy_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_tommy_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confrontation_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_antibes_police",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_carleton_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_cafe_allies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

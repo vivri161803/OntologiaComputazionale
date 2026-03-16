@@ -1,0 +1,749 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_rollet",
+      "label": "Mere Rollet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles (the doctor/husband)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_emma_asks_time",
+      "label": "Emma asks Mere Rollet what time it is",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_waits_nurse",
+      "label": "Emma waits for the nurse to fetch someone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nurse_returns",
+      "label": "Mere Rollet returns with news that no one is at the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_decides_rodolphe",
+      "label": "Emma decides to go to Rodolphe at La Huchette",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_travels_to_chateau",
+      "label": "Emma travels to Rodolphe's chateau",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_enters_chateau",
+      "label": "Emma enters the chateau and climbs the staircase",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_meets_rodolphe",
+      "label": "Emma meets Rodolphe in his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_explains_rupture",
+      "label": "Rodolphe explains his conduct and the reason for their separation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_asks_money",
+      "label": "Emma asks Rodolphe for three thousand francs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_refuses",
+      "label": "Rodolphe refuses to lend the money",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_leaves_chateau",
+      "label": "Emma leaves the chateau in despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_goes_chemist",
+      "label": "Emma goes to the chemist's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_asks_justin_key",
+      "label": "Emma asks Justin for the key to the laboratory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_takes_poison",
+      "label": "Emma takes poison from the blue jar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_returns_home",
+      "label": "Emma returns home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_searches",
+      "label": "Charles searches for Emma and learns of the distraint",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_writes_letter",
+      "label": "Emma writes a letter and goes to bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cot",
+      "label": "The cot (Emma's location)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_la_huchette",
+      "label": "La Huchette (Rodolphe's estate)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chateau",
+      "label": "The chateau",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rodolphe_room",
+      "label": "Rodolphe's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "The chemist's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratory",
+      "label": "The laboratory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_home",
+      "label": "Emma's home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_denaro",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_rodolphe",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_rodolphe",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_lheureux",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_viaggio",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_emma_asks_time",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_waits_nurse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_nurse_returns",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_decides_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_emma_travels_to_chateau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_enters_chateau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_meets_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_rodolphe_explains_rupture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_asks_money",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_rodolphe_refuses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_emma_leaves_chateau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_emma_goes_chemist",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_takes_poison",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_emma_returns_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_charles_searches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_writes_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_asks_time",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_rollet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_asks_time",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_waits_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_rollet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nurse_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_decides_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_travels_to_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_enters_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_meets_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_meets_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_explains_rupture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_asks_money",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_asks_money",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_refuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_refuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_leaves_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_goes_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_asks_justin_key",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_asks_justin_key",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_takes_poison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_takes_poison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_returns_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_searches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_charles_searches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_writes_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_emma_writes_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_asks_time",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_waits_nurse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_waits_nurse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nurse_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nurse_returns",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_decides_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_decides_rodolphe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_travels_to_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_travels_to_chateau",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_enters_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_enters_chateau",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_meets_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_meets_rodolphe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_explains_rupture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_explains_rupture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_asks_money",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_asks_money",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_refuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_refuses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_leaves_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_leaves_chateau",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_goes_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_goes_chemist",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_asks_justin_key",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_asks_justin_key",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_takes_poison",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_takes_poison",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_returns_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_returns_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_searches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_searches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_writes_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_la_huchette",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_chateau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_rodolphe_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_chemist_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_laboratory",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_emma_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "evt_emma_asks_time",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_waits_nurse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_travels_to_chateau",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_la_huchette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_enters_chateau",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_meets_rodolphe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rodolphe_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_explains_rupture",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rodolphe_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_asks_money",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rodolphe_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_refuses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rodolphe_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_goes_chemist",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_asks_justin_key",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_takes_poison",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_returns_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_searches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_writes_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    }
+  ]
+}

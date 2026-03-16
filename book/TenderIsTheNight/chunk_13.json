@@ -1,0 +1,545 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hostess",
+      "label": "The hostess - tall rich American girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_cobra_women",
+      "label": "Three tall slender women with small groomed heads",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_palace",
+      "label": "House hewn from Cardinal de Retz's palace in Rue Monsieur",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hall",
+      "label": "Long hall of blue steel, silver-gilt, and mirrors",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_taxi",
+      "label": "Taxi",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place_concorde",
+      "label": "Place de la Concorde",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_party",
+      "label": "The party at the palace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_separation",
+      "label": "Dick and Rosemary are separated by the environment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_cobra",
+      "label": "Conversation of the three women about the Divers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Dick and Rosemary leave the party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_ride",
+      "label": "Rosemary and Dick in the taxi",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confession",
+      "label": "Dick confesses his love and concerns about Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duel",
+      "label": "The crazy duel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hotel_arrival",
+      "label": "Arrival at the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_staircase_kisses",
+      "label": "Kisses on the staircase",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farewell",
+      "label": "Final farewell with hands stretching along the banister",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_nicole",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_nicole",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hostess",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cobra_women",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_cobra",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_cobra",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation_cobra",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_cobra_women",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_cobra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation_cobra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation_cobra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation_cobra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_cobra",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_palace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_staircase_kisses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_staircase_kisses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_staircase_kisses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_staircase_kisses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_staircase_kisses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_staircase_kisses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_palace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_taxi",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

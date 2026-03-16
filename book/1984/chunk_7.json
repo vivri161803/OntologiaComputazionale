@@ -1,0 +1,347 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother",
+      "label": "Winston's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sister",
+      "label": "Winston's young sister",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_father",
+      "label": "Winston's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The girl with dark hair",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_instructress",
+      "label": "The instructress",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_man",
+      "label": "The old man in the Tube station",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dream_mother",
+      "label": "Winston's dream of his mother sinking",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_golden_country",
+      "label": "Dream of the Golden Country",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waking_up",
+      "label": "Winston wakes up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_physical_jerks",
+      "label": "Physical Jerks exercise session",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_air_raid",
+      "label": "Air raid during childhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tube_station",
+      "label": "Sheltering in Tube station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_purges",
+      "label": "The great purges of the fifties",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_continuous",
+      "label": "Continuous war since childhood",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Winston's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_golden_country",
+      "label": "The Golden Country",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tube_station",
+      "label": "Tube station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_colchester",
+      "label": "Colchester",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastasia",
+      "label": "Eastasia",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_dream_mother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_dream_mother",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dream_mother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mother",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dream_mother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sister",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dream_mother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_purges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_purges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_purges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_golden_country",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dream_mother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_golden_country",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_golden_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_golden_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_golden_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking_up",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_golden_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_physical_jerks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking_up",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_physical_jerks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_physical_jerks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_instructress",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_physical_jerks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_air_raid",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_air_raid",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_air_raid",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_air_raid",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tube_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_air_raid",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tube_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tube_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tube_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_tube_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_continuous",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "loc_tube_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_golden_country",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

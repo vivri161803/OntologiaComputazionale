@@ -1,0 +1,409 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ampleforth",
+      "label": "Ampleforth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_oliver_cromwell",
+      "label": "Oliver Cromwell",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prole",
+      "label": "An enormous prole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_prole_wife",
+      "label": "The prole's wife",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aged_prisoner",
+      "label": "An aged man prisoner",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_eating_canteen",
+      "label": "Winston and the girl eating in the canteen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_canteen",
+      "label": "Winston and the girl exchanging words in low voices",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_victory_square",
+      "label": "Winston and the girl meeting in Victory Square",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_convoy_passing",
+      "label": "A convoy of Eurasian prisoners passing through Victory Square",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_gathering",
+      "label": "The crowd gathering to watch the prisoners",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hand_squeeze",
+      "label": "The girl squeezing Winston's hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hand_clasping",
+      "label": "Winston and the girl clasping hands",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_canteen",
+      "label": "The canteen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_victory_square",
+      "label": "Victory Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monument",
+      "label": "The enormous fluted column with Big Brother's statue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_st_martin_church",
+      "label": "St Martin's Church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paddington_station",
+      "label": "Paddington Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_field",
+      "label": "A field with a grass-grown lane",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dead_tree",
+      "label": "A dead tree with moss",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_girl",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_eating_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_conversation_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_conversation_canteen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_eating_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_victory_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_meeting_victory_square",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convoy_passing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_convoy_passing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_squeeze",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_clasping",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hand_squeeze",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_eating_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_eating_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_eating_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prole",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_prole_wife",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aged_prisoner",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_convoy_passing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hand_squeeze",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hand_squeeze",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hand_clasping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hand_clasping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eating_canteen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_canteen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_victory_square",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convoy_passing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_squeeze",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hand_clasping",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_victory_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_victory_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_victory_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_monument",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_paddington_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

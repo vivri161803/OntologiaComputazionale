@@ -1,0 +1,328 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The girl from the Fiction Department",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bigbrother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_visit_shop",
+      "label": "Winston visits Mr Charrington's antique shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Winston talks with Mr Charrington about St Martin's and the rhyme",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_encounter_girl",
+      "label": "Winston encounters the girl from the Fiction Department on the pavement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Winston returns to his flat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_write_diary",
+      "label": "Winston opens his diary and prepares to write",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_shop",
+      "label": "Mr Charrington's antique shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_victory_square",
+      "label": "Victory Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_backstreet",
+      "label": "The obscure backstreet",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flat",
+      "label": "Winston's flat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stmartin",
+      "label": "St Martin's church",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_paperweight",
+      "label": "The glass paperweight",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_diary",
+      "label": "The diary",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_engraving",
+      "label": "The engraving of St Clement Danes",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "obj_paperweight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_visit_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_encounter_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_write_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_backstreet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_shop",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_girl",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_encounter_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_encounter_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_encounter_girl",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_backstreet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_encounter_girl",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_write_diary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_write_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_write_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_diary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_write_diary",
+      "target_closed_value": null
+    }
+  ]
+}

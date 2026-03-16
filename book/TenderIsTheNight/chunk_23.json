@@ -1,0 +1,469 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Captain Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dohmler",
+      "label": "Doctor Dohmler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_warren",
+      "label": "Mr. Devereux Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_valet",
+      "label": "The valet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gregory",
+      "label": "Dr. Gregory",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_switchboard",
+      "label": "The Switchboard girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letters",
+      "label": "Nicole writes letters to Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting",
+      "label": "Mr. Warren arrives at the clinic with Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consultation",
+      "label": "Doctor Dohmler consults with Mr. Warren",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_valet_incident",
+      "label": "Nicole accuses the valet of indecent advances",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_deterioration",
+      "label": "Nicole's condition worsens with increasingly crazy statements",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Mr. Warren brings Nicole to Switzerland by cruiser",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interview",
+      "label": "Doctor Dohmler interviews Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_recovery",
+      "label": "Nicole slowly comes back to life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_illness",
+      "label": "Dick becomes sick with the flu",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diagnosis",
+      "label": "Doctor Dohmler and Franz enter Nicole's diagnosis",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "The clinic in Switzerland",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lausanne",
+      "label": "Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_michigan_boulevard",
+      "label": "Michigan Boulevard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lake_forest",
+      "label": "Lake Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_berne",
+      "label": "Berne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar_sur_aube",
+      "label": "Bar-sur-Aube",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_doctor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_father",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_letters",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_valet_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_deterioration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_diagnosis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_michigan_boulevard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lake_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_valet_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_valet",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_valet_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dohmler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dohmler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_illness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dohmler",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_diagnosis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letters",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diagnosis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_valet_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lake_forest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_deterioration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interview",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letters",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_illness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diagnosis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_interview",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    }
+  ]
+}

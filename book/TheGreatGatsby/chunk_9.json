@@ -1,0 +1,534 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_owl_eyes",
+      "label": "Owl Eyes",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_red_haired_girl",
+      "label": "Red-haired girl from chorus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby_butler",
+      "label": "Gatsby's butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation_hydroplane",
+      "label": "Conversation about hydroplane",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_introduction",
+      "label": "Gatsby introduces himself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_phone_call",
+      "label": "Gatsby receives phone call from Chicago",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_questions",
+      "label": "Jordan and narrator discuss Gatsby's background",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_orchestra_performance",
+      "label": "Orchestra performs Vladimir Tostoff's Jazz History of the World",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_summoned",
+      "label": "Butler summons Jordan to speak with Gatsby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_indoor_party",
+      "label": "Indoor party scene with singing and fights",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_gatsby_meeting",
+      "label": "Jordan and Gatsby emerge from library",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_accident",
+      "label": "Car accident in ditch near Gatsby's drive",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_owl_eyes_explanation",
+      "label": "Owl Eyes explains the accident",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pale_man_emerges",
+      "label": "Pale man emerges from wrecked car",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_gatsby_garden",
+      "label": "Gatsby's garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_marble_steps",
+      "label": "Marble steps",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_library",
+      "label": "Library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_large_room",
+      "label": "Large room with piano",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road_ditch",
+      "label": "Road ditch near Gatsby's drive",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_narrator_home",
+      "label": "Narrator's home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sound",
+      "label": "The Sound",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_gatsby",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_gatsby",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation_hydroplane",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_hydroplane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_hydroplane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_hydroplane",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_introduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_introduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_hydroplane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_introduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_questions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_questions",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_questions",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_orchestra_performance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_orchestra_performance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_questions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_orchestra_performance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_summoned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_jordan_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_summoned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_orchestra_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_summoned",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_indoor_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_red_haired_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_indoor_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_indoor_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_indoor_party",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_indoor_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_large_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_gatsby_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_gatsby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_gatsby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_gatsby_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_indoor_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_gatsby_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_accident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_owl_eyes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_accident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_gatsby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_accident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road_ditch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_owl_eyes_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_owl_eyes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_owl_eyes_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_owl_eyes_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_owl_eyes_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_owl_eyes_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road_ditch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pale_man_emerges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_pale_man_emerges",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_owl_eyes_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pale_man_emerges",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road_ditch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_gatsby_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_large_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road_ditch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

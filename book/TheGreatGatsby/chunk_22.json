@@ -1,0 +1,474 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_michaelis",
+      "label": "Michaelis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_wilson",
+      "label": "George Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle_wilson",
+      "label": "Myrtle Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom_buchanan",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nick_carraway",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan_baker",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy_buchanan",
+      "label": "Daisy Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_policeman",
+      "label": "Policeman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_negro_witness",
+      "label": "Negro witness",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_myrtle_locked",
+      "label": "Wilson locks Myrtle in the office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_argument",
+      "label": "Myrtle argues with Wilson and rushes out",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_accident",
+      "label": "Myrtle is hit by a car and killed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inquest",
+      "label": "Inquest and police investigation at the garage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_interrogates_wilson",
+      "label": "Tom interrogates Wilson about the car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_carries_wilson",
+      "label": "Tom carries Wilson into the office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_at_buchanan_house",
+      "label": "Tom, Nick, and Jordan arrive at the Buchanan house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_appears",
+      "label": "Gatsby appears on the drive",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_confesses",
+      "label": "Gatsby confesses that Daisy was driving",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_spies_on_buchanans",
+      "label": "Nick spies on Tom and Daisy in the kitchen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_waits",
+      "label": "Gatsby waits outside the Buchanan house",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_garage",
+      "label": "Wilson's garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_coffee_joint",
+      "label": "Michaelis's coffee joint",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road near the garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_buchanan_house",
+      "label": "The Buchanan house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The Buchanan kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drive",
+      "label": "The drive of the Buchanan house",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_witness",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_investigation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_garage",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_house",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_kitchen",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_michaelis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_myrtle_wilson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_accident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_inquest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_tom_interrogates_wilson",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_gatsby_confesses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_garage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_buchanan_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "evt_myrtle_locked",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_argument",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_argument",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_argument",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_interrogates_wilson",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_interrogates_wilson",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_carries_wilson",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_carries_wilson",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tom_interrogates_wilson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_at_buchanan_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_buchanan_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_at_buchanan_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tom_carries_wilson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_at_buchanan_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confesses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confesses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_spies_on_buchanans",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_spies_on_buchanans",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_confesses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_waits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_waits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_spies_on_buchanans",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_michaelis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_locked",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle_wilson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_interrogates_wilson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_carries_wilson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick_carraway",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_confesses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy_buchanan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_policeman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_negro_witness",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_interrogates_wilson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick_carraway",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nick_spies_on_buchanans",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_waits",
+      "target_closed_value": null
+    }
+  ]
+}

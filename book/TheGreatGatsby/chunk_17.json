@@ -1,0 +1,282 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_swimming_party",
+      "label": "Swimming party from the black beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_conversation",
+      "label": "Gatsby's conversation with the narrator about Daisy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_rejection",
+      "label": "Daisy's rejection of the evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_past_kiss",
+      "label": "Gatsby and Daisy's kiss five years before on the moonlit sidewalk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_confession",
+      "label": "Daisy confessing to Tom that she never loved him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage_plan",
+      "label": "Gatsby and Daisy's planned marriage in Louisville",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Gatsby's garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_black_beach",
+      "label": "The black beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guest_rooms",
+      "label": "Guest rooms overhead",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_desolate_path",
+      "label": "Desolate path of fruit rinds and discarded favors",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_moonlit_sidewalk",
+      "label": "Moonlit sidewalk with no trees",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_louisville",
+      "label": "Louisville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's house",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_gatsby",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_daisy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_tom",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_swimming_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_black_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swimming_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swimming_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_gatsby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_past_kiss",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_past_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_past_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_past_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_moonlit_sidewalk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_moonlit_sidewalk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_black_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_daisy_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_daisy_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage_plan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_louisville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_marriage_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_marriage_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_desolate_path",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_guest_rooms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

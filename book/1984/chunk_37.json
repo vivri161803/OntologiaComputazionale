@@ -1,0 +1,254 @@
+{
+  "open_nodes": [
+    {
+      "id": "evt_world_split",
+      "label": "The splitting up of the world into three great super-states",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_absorption_europe",
+      "label": "The absorption of Europe by Russia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_absorption_empire",
+      "label": "The absorption of the British Empire by the United States",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_eastasia_emergence",
+      "label": "Eastasia emerged as a distinct unit after another decade of confused fighting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_permanent_war",
+      "label": "The three super-states are permanently at war for the past twenty-five years",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_atomic_war",
+      "label": "The atomic war of the nineteen-fifties",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastasia",
+      "label": "Eastasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_disputed_territories",
+      "label": "The disputed territories with corners at Tangier, Brazzaville, Darwin, and Hong Kong",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_equatorial_africa",
+      "label": "Equatorial Africa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_middle_east",
+      "label": "The countries of the Middle East",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_southern_india",
+      "label": "Southern India",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_indonesian_archipelago",
+      "label": "The Indonesian Archipelago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_floating_fortresses",
+      "label": "The Floating Fortresses which guard strategic spots on the sea lanes",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_inner_party",
+      "label": "The Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_outer_party",
+      "label": "The Outer Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "The proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_exploited_peoples",
+      "label": "The exploited peoples round the Equator",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_world_split",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_absorption_europe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_world_split",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_absorption_empire",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_world_split",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eastasia_emergence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_world_split",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_permanent_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_eastasia_emergence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_permanent_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_permanent_war",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_disputed_territories",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_atomic_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_permanent_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_eurasia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_oceania",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_eastasia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_disputed_territories",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_floating_fortresses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_permanent_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_outer_party",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_permanent_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_permanent_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_exploited_peoples",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_permanent_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_exploited_peoples",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_equatorial_africa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_exploited_peoples",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_middle_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_exploited_peoples",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_southern_india",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_exploited_peoples",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_indonesian_archipelago",
+      "target_closed_value": null
+    }
+  ]
+}

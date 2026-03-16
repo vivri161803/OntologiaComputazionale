@@ -1,0 +1,741 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_caroline",
+      "label": "Caroline Sibly-Biers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_golding",
+      "label": "Golding",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_minghetti",
+      "label": "Mary Minghetti",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_performance",
+      "label": "Performance of Caroline's song at dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Dick's confrontation with Lady Caroline about innuendo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_yacht_motion",
+      "label": "Yacht sets in motion westward",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bow_encounter",
+      "label": "Nicole finds Dick at the bow by the flagstaff",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intimate_moment",
+      "label": "Dick and Nicole's intimate moment at the bow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tommy_arrival",
+      "label": "Tommy arrives at the bow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dancing",
+      "label": "Dancing on the after deck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_cannes",
+      "label": "Arrival at the pier in Cannes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_ride",
+      "label": "Car ride to Tarmes with Dick and Tommy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_conversation",
+      "label": "Dick and Tommy's morning conversation about the evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garden_reflection",
+      "label": "Nicole's reflection in the garden about having a lover",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_terrace_sketch",
+      "label": "Nicole sketches Tommy on the terrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_camphor_rub",
+      "label": "Nicole gives Tommy the special camphor rub",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_withdrawal",
+      "label": "Dick withdraws to his room after Tommy leaves",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tommy_letter",
+      "label": "Tommy's letter arrives saying he will be at Gausses",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room where the performance occurs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yacht",
+      "label": "Yacht",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bow",
+      "label": "Bow of the yacht by the flagstaff",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gangway",
+      "label": "Gangway of the yacht",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_deck",
+      "label": "Deck of the yacht",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes pier",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tarmes",
+      "label": "Tarmes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nicole_room",
+      "label": "Nicole's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dick_room",
+      "label": "Dick's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Nicole's garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "Terrace of the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "Beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lausanne",
+      "label": "Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_africa",
+      "label": "Africa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nice",
+      "label": "Nice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gausses",
+      "label": "Gausses",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_caroline",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_caroline",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_tommy",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_nicole",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_performance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_performance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_caroline",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_performance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_caroline",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_golding",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_yacht_motion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_yacht_motion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yacht",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_yacht_motion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_bow_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_yacht_motion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bow_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bow_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bow_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bow_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tommy_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tommy_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_deck",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_golding",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_cannes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_cannes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_cannes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nicole_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_terrace_sketch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_terrace_sketch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_terrace_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_terrace_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_terrace_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_camphor_rub",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_terrace_sketch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_camphor_rub",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_camphor_rub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_camphor_rub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_camphor_rub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_withdrawal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_camphor_rub",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_withdrawal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dick_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_withdrawal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_withdrawal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_withdrawal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tommy_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_tommy_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_deck",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_nicole_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_dick_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

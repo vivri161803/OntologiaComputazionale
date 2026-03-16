@@ -5,13 +5,14 @@ from typing import List
 from KG_Extraction.books import *
 
 class GraphNegativeSampler:
-    def __init__(self):
+    def __init__(self, seed = 42):
         self.nodes_by_type = {
             "Character": [], "Event": [], "Location": [],
             "Role": [], "EventType": [], "LocationType": []
         }
         self.node_type_map = {}
         self.true_triplets = set()
+        self.random_seed = seed
         
         # NUOVO: Set per collezionare dinamicamente tutti i ruoli relazionali
         self.partecipa_come_relations = set()
@@ -69,6 +70,7 @@ class GraphNegativeSampler:
             dataset.append({"head": h, "relation": r, "tail": t, "label": 1})
             
             for _ in range(k_negatives):
+                random.seed(self.random_seed)
                 # NUOVO: Decidiamo cosa corrompere. 
                 # Usiamo pesi: 40% testa, 40% coda, 20% relazione.
                 corrupt_target = random.choices(

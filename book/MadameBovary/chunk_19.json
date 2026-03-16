@@ -1,0 +1,717 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary_senior",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Monsieur Rodolphe Boulanger",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peasant",
+      "label": "The peasant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_virginie",
+      "label": "Virginie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_la_huchette",
+      "label": "La Huchette",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_doctor_house",
+      "label": "The doctor's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_meadow",
+      "label": "The meadow",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_arguiel_hills",
+      "label": "Arguiel hills",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town_hall",
+      "label": "The town hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_evil_days",
+      "label": "The evil days of Tostes begin again",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_purchases",
+      "label": "Emma buys Gothic prie-dieu and cashmere gown",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_reading",
+      "label": "Emma attempts serious reading and learning Italian",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_brandy_dare",
+      "label": "Emma drinks brandy in opposition to Charles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_fainting",
+      "label": "Emma faints and spits blood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_weeps",
+      "label": "Charles weeps in his study",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consultation",
+      "label": "Charles and his mother consult about Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_stop_reading",
+      "label": "Decision to stop Emma reading novels",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_madame_bovary_departure",
+      "label": "Madame Bovary senior leaves on Wednesday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_market_day",
+      "label": "Market day at Yonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_arrival",
+      "label": "Monsieur Rodolphe Boulanger arrives at the doctor's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phlebotomy",
+      "label": "The peasant is bled by Charles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_justin_syncope",
+      "label": "Justin faints during the phlebotomy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_tends_justin",
+      "label": "Emma tends to Justin after his syncope",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_arrival",
+      "label": "Homais arrives at the doctor's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_departure",
+      "label": "Rodolphe departs and reflects on Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_decision",
+      "label": "Rodolphe decides to seduce Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_agricultural_show",
+      "label": "The agricultural show",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_charles",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_rodolphe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_charles",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_madame_bovary",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_homais",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_evil_days",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_evil_days",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_evil_days",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_purchases",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_emma_purchases",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_evil_days",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_purchases",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_emma_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_purchases",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_brandy_dare",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_brandy_dare",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_brandy_dare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_brandy_dare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_fainting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_fainting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_brandy_dare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_fainting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_weeps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_charles_weeps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_fainting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_weeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_consultation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_weeps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stop_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_stop_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_consultation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stop_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_stop_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_stop_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_madame_bovary_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_madame_bovary_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stop_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_madame_bovary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_madame_bovary_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_day",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_market_day",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_madame_bovary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_day",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_rodolphe_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rodolphe_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_market_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_rodolphe_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_doctor_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_doctor_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_phlebotomy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_phlebotomy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phlebotomy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peasant",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_phlebotomy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_phlebotomy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_syncope",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_justin_syncope",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phlebotomy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_justin_syncope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_tends_justin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_emma_tends_justin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_justin_syncope",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_tends_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_tends_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_homais_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_tends_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rodolphe_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_meadow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_meadow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_rodolphe_decision",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_rodolphe_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_agricultural_show",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_agricultural_show",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_agricultural_show",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_agricultural_show",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_la_huchette",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_town_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

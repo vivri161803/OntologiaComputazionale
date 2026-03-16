@@ -1,0 +1,354 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bill_hillis",
+      "label": "Bill Hillis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_italian_teacher",
+      "label": "Italian singing teacher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_casasus",
+      "label": "Casasus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pierce",
+      "label": "Pierce",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_perrin",
+      "label": "Perrin",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_square",
+      "label": "the square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_luxembourg_gardens",
+      "label": "Luxembourg Gardens",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosemary_studio",
+      "label": "Films Par Excellence Studio in Passy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bank",
+      "label": "Dick's bank in Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_muette",
+      "label": "the Muette",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_luncheon",
+      "label": "luncheon outdoors across from Luxembourg Gardens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_departure",
+      "label": "Rosemary leaves for her studio engagement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collis_arrival",
+      "label": "Collis Clay arrives at the table",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collis_story",
+      "label": "Collis tells Dick about Rosemary and Bill Hillis on the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_incident",
+      "label": "Rosemary and Bill Hillis locked in train compartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_bank",
+      "label": "Dick goes to his bank to write a check",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_studio",
+      "label": "Dick walks around the studio block waiting for Rosemary",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_rosemary",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_hillis",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_bill_hillis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_collis_story",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_studio",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_luxembourg_gardens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_luxembourg_gardens",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collis_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collis_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collis_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_bank",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collis_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_studio",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collis_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collis_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collis_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_collis_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_collis_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bill_hillis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_bank",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_studio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_studio",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_studio",
+      "target_closed_value": null
+    }
+  ]
+}

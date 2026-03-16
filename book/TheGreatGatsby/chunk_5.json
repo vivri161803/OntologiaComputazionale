@@ -1,0 +1,638 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george",
+      "label": "George B. Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_eckleburg",
+      "label": "Doctor T. J. Eckleburg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_catherine",
+      "label": "Catherine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckee",
+      "label": "Mr. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckee_wife",
+      "label": "Mrs. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dog_seller",
+      "label": "The Dog Seller",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_airedale",
+      "label": "The Airedale Dog",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_valley_ashes",
+      "label": "The Valley of Ashes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "Wilson's Garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_railroad",
+      "label": "The Railroad",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_york",
+      "label": "New York City",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_train_station",
+      "label": "New York Train Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fifth_avenue",
+      "label": "Fifth Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_apartment",
+      "label": "Myrtle's Apartment",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_narrator_meets_myrtle",
+      "label": "The Narrator meets Myrtle Wilson at the garage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_forces_narrator",
+      "label": "Tom forces the Narrator off the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_appears",
+      "label": "Myrtle appears from the office stairs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_tom_meeting",
+      "label": "Tom and Myrtle arrange to meet in New York",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_to_ny",
+      "label": "Tom, Myrtle, and the Narrator travel to New York by train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_buy_dog",
+      "label": "Myrtle buys an airedale dog from a street vendor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_ride",
+      "label": "The group rides in a lavender taxi to Fifth Avenue",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_apartment_gathering",
+      "label": "The group arrives at Myrtle's apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_guests_arrive",
+      "label": "Catherine and the McKees arrive at the apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drinking_party",
+      "label": "The group drinks whiskey and socializes in the apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_changes_dress",
+      "label": "Myrtle changes into an elaborate cream-colored chiffon dress",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckee_photography_discussion",
+      "label": "Mr. McKee discusses photographing Myrtle",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_meeting",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_george",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_narrator_meets_myrtle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_tom_forces_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_myrtle_appears",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_myrtle_tom_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_train_to_ny",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_buy_dog",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_apartment_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_drinking_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_valley_ashes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_apartment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_tom_forces_narrator",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_meets_myrtle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_appears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tom_forces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_tom_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_to_ny",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_tom_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_buy_dog",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_to_ny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_buy_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_apartment_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_apartment_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_changes_dress",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_guests_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking_party",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_changes_dress",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckee_photography_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_meets_myrtle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_forces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tom_forces_narrator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_appears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_tom_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_myrtle_tom_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_ny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_ny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_to_ny",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_buy_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dog_seller",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_buy_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_airedale",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_buy_dog",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_apartment_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_apartment_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_apartment_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee_wife",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_changes_dress",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee_wife",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drinking_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckee_photography_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mckee_photography_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_myrtle",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_forces_narrator",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_railroad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_appears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_tom_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_to_ny",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_york",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_buy_dog",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fifth_avenue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_apartment_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drinking_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_changes_dress",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckee_photography_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_valley_ashes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    }
+  ]
+}

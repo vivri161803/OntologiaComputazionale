@@ -1,0 +1,329 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "The woman with the freckled face",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_hideout",
+      "label": "The hide-out in the clearing",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clearing",
+      "label": "The clearing with a ring of saplings",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_whisper",
+      "label": "Winston whispers to the woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "They thread their way back to the clearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_undressing",
+      "label": "The woman tears off her clothes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Winston and the woman have a conversation about her past experiences",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_embrace",
+      "label": "Winston and the woman embrace on the grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "They fall asleep in the clearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waking",
+      "label": "Winston wakes and observes the sleeping woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection",
+      "label": "Winston reflects on the political meaning of their act",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_woman",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_whisper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_undressing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "loc_hideout",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_clearing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whisper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whisper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_undressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whisper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_undressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_undressing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    }
+  ]
+}

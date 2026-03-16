@@ -1,0 +1,327 @@
+{
+  "open_nodes": [
+    {
+      "id": "loc_french_riviera",
+      "label": "French Riviera, between Marseilles and Italian border",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gausse_hotel",
+      "label": "Gausse's Hôtel des Étrangers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "Beach of Gausse's Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_railroad_stop",
+      "label": "Isolated railroad stop a mile from the sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary Hoyt",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary_mother",
+      "label": "Rosemary's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_campion",
+      "label": "Campion",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_on_raft",
+      "label": "Tanned woman with white teeth on the raft",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_jockey_cap",
+      "label": "Man in jockey cap and red-striped tights",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_pearls",
+      "label": "Young woman with string of pearls",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_golden_head",
+      "label": "Man with golden, leonine head in blue tights",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_latin_man",
+      "label": "Latin young man in black tights",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_abrams",
+      "label": "Mrs. Abrams",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_mckisco",
+      "label": "Mrs. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_mckisco",
+      "label": "Mr. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_dumphry",
+      "label": "Mr. Dumphry",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_boy_twelve",
+      "label": "Boy of twelve",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Rosemary and her mother arrive at Gausse's Hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_beach",
+      "label": "Rosemary goes to the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_swimming",
+      "label": "Rosemary swims in the sea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_campion_warning",
+      "label": "Campion warns Rosemary about sharks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_campion_introduction",
+      "label": "Campion introduces Rosemary to the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_recognition",
+      "label": "Mrs. Abrams and group recognize Rosemary as an actress",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_all_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gausse_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rosemary_beach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_beach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_swimming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rosemary_swimming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_swimming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_warning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_campion_warning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_campion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_campion_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_campion_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_introduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_campion_introduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_campion_introduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_campion_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_campion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_campion_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_campion_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_recognition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_group_recognition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_recognition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_campion_introduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_abrams",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_group_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gausse_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

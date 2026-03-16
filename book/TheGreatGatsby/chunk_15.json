@@ -1,0 +1,482 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Jay Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_reporter",
+      "label": "ambitious young reporter from New York",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_james_gatz",
+      "label": "James Gatz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dan_cody",
+      "label": "Dan Cody",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ella_kaye",
+      "label": "Ella Kaye",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby_parents",
+      "label": "Gatsby's parents",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_reporter_visit",
+      "label": "Reporter arrives at Gatsby's door asking for a statement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_name_change",
+      "label": "James Gatz changes his name to Jay Gatsby at seventeen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cody_yacht_arrival",
+      "label": "Dan Cody's yacht drops anchor at Lake Superior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_warns_cody",
+      "label": "Gatsby borrows a row-boat and warns Cody about the wind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cody_meets_gatsby",
+      "label": "Cody asks Gatsby questions and finds him ambitious",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cody_buys_clothes",
+      "label": "Cody buys Gatsby a blue coat, white duck trousers, and yachting cap",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_joins_yacht",
+      "label": "Gatsby leaves with Cody on the TUOLOMEE for the West Indies and Barbary Coast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ella_kaye_boards",
+      "label": "Ella Kaye comes on board the yacht in Boston",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cody_dies",
+      "label": "Dan Cody dies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_inheritance",
+      "label": "Gatsby inherits money from Cody but doesn't receive it due to legal device",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_st_olaf_college",
+      "label": "Gatsby attends St. Olaf college in southern Minnesota for two weeks",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_gatsby_door",
+      "label": "Gatsby's door",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lake_superior",
+      "label": "Lake Superior",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_little_girl_bay",
+      "label": "Little Girl Bay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_duluth",
+      "label": "Duluth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_indies",
+      "label": "West Indies",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barbary_coast",
+      "label": "Barbary Coast",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boston",
+      "label": "Boston",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg, Long Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_north_dakota",
+      "label": "North Dakota",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_st_olaf",
+      "label": "St. Olaf college in southern Minnesota",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_tuolomee",
+      "label": "TUOLOMEE yacht",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_legacy",
+      "label": "legacy of twenty-five thousand dollars",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_reporter_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reporter_visit",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_reporter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reporter_visit",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reporter_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_james_gatz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_name_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reporter_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_yacht_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lake_superior",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_yacht_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_yacht_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_gatsby_warns_cody",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_warns_cody",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_warns_cody",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_little_girl_bay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_warns_cody",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cody_yacht_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_meets_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_meets_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_meets_gatsby",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_warns_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_meets_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_cody_buys_clothes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_buys_clothes",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_buys_clothes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_duluth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_buys_clothes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cody_meets_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_joins_yacht",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_joins_yacht",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_joins_yacht",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_indies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_joins_yacht",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cody_buys_clothes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_joins_yacht",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_ella_kaye_boards",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_ella_kaye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ella_kaye_boards",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ella_kaye_boards",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_joins_yacht",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_dies",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dan_cody",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_dies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ella_kaye_boards",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cody_dies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_gatsby_inheritance",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_inheritance",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_ella_kaye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_inheritance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cody_dies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_st_olaf_college",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_st_olaf_college",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_st_olaf",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_st_olaf_college",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dan_cody",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_ella_kaye",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_james_gatz",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_north_dakota",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    }
+  ]
+}

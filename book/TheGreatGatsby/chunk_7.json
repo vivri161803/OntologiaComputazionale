@@ -1,0 +1,532 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_catherine",
+      "label": "Catherine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wilson",
+      "label": "Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckinley",
+      "label": "Mrs. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckinley_husband",
+      "label": "Mr. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chester",
+      "label": "Chester",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Catherine and the Narrator discuss Tom and Daisy's affair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_overheard",
+      "label": "Myrtle overhears the question about Wilson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_europe_discussion",
+      "label": "Discussion about Europe and Monte Carlo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckinley_story",
+      "label": "Mrs. McKee tells her story about avoiding marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_marriage_story",
+      "label": "Myrtle explains why she married Wilson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_meeting",
+      "label": "Myrtle recounts her first meeting with Tom on the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_party_escalation",
+      "label": "The party continues with drinking and socializing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Tom and Myrtle argue about mentioning Daisy's name",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_violence",
+      "label": "Tom breaks Myrtle's nose with his hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_aftermath",
+      "label": "Aftermath of the violence with towels and women consoling",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "The Narrator and Mr. McKee leave the apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckinley_portfolio",
+      "label": "Mr. McKee shows his photography portfolio",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_station",
+      "label": "The Narrator waits at Pennsylvania Station",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_apartment",
+      "label": "Tom's apartment in the city",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "The garage where Myrtle and Wilson live",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monte_carlo",
+      "label": "Monte Carlo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_train",
+      "label": "The train to New York",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "The bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pennsylvania_station",
+      "label": "Pennsylvania Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mckinley_bed",
+      "label": "Mr. McKee's bed",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_overheard",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_overheard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_europe_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_overheard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_europe_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_europe_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckinley_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_europe_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckinley",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckinley_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_marriage_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckinley_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_marriage_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_marriage_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_myrtle_marriage_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_marriage_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_train_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_train_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_escalation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_escalation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_party_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_aftermath",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_aftermath",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckinley",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_aftermath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_aftermath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_aftermath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_aftermath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckinley_husband",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckinley_portfolio",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckinley_portfolio",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mckinley_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckinley_husband",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckinley_portfolio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mckinley_portfolio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckinley_portfolio",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pennsylvania_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_apartment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_train",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_pennsylvania_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

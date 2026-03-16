@@ -1,0 +1,155 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_ruling_groups",
+      "label": "Ruling groups",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_subjects",
+      "label": "Subjects",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_party_members",
+      "label": "Party members",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_war_past",
+      "label": "War in the past between ruling groups of different countries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_war_present",
+      "label": "War waged by ruling groups against their own subjects",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_plunder",
+      "label": "Victor plunders the vanquished",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_perpetual_peace",
+      "label": "Three super-states living in perpetual peace",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_territory",
+      "label": "Territory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_super_states",
+      "label": "Three super-states",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_war_past",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_war_past",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_super_states",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruling_groups",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plunder",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_war_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_plunder",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_war_present",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_ruling_groups",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war_present",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_subjects",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_war_present",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war_present",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_war_past",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_perpetual_peace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_perpetual_peace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_super_states",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_super_states",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

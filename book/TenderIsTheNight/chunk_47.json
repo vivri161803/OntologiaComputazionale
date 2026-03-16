@@ -1,0 +1,514 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_topsy",
+      "label": "Topsy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hosain",
+      "label": "Hosain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sick_boy",
+      "label": "Hosain's sick son",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_himadoun_woman",
+      "label": "Himadoun woman (Hosain's sister)",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "The Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_villa_diana",
+      "label": "Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_german_spas",
+      "label": "German spas",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_french_cathedrals",
+      "label": "French cathedral towns",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_boyen",
+      "label": "Boyen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chateau",
+      "label": "The Château",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_travel",
+      "label": "The Divers travel between spas and cathedral towns",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rent_villa",
+      "label": "Villa Diana is rented for the summer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_money_gain",
+      "label": "The Divers gain a plenitude of money from clinic sale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_arrival",
+      "label": "The Divers arrive at Boyen by train",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_greeting",
+      "label": "The Divers greet the Contessa and Conte di Minghetti",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at the château",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bathroom_incident",
+      "label": "Lanier is bathed in dirty water",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation_woman",
+      "label": "Dick confronts the Himadoun woman about the bath",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_confrontation",
+      "label": "Mary confronts the Divers about the incident",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lanier_interrogation",
+      "label": "Lanier is questioned about the bathwater",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hunting",
+      "label": "Hunting expedition on the hillside",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_father",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mother",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_host",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_travel",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_confrontation",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_rent_villa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_travel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_money_gain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_train_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_greeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_bathroom_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_confrontation_woman",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_morning_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_lanier_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_hunting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_riviera",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_villa_diana",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_chateau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_travel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_travel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bathroom_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sick_boy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bathroom_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_himadoun_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bathroom_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_himadoun_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_confrontation_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_morning_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_morning_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lanier_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanier_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanier_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lanier_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rent_villa",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_travel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_money_gain",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rent_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_money_gain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_greeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hunting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathroom_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hunting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation_woman",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bathroom_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_greeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lanier_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_boyen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_greeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathroom_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chateau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    }
+  ]
+}

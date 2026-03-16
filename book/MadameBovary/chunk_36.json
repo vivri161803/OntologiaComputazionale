@@ -1,0 +1,858 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mother",
+      "label": "Charles's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guillaumin",
+      "label": "Monsieur Guillaumin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_lefrancois",
+      "label": "Mere Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_artemise",
+      "label": "Artemise",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_rollet",
+      "label": "Mere Rollet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hivert",
+      "label": "Hivert",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lheureux_visit",
+      "label": "Lheureux visits to offer services",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_private_talk",
+      "label": "Private conversation between Lheureux and Emma about the bill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_proposal",
+      "label": "Lheureux proposes power of attorney arrangement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fabric_delivery",
+      "label": "Lheureux delivers black barege fabric",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_power_attorney_creation",
+      "label": "Emma creates power of attorney document",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_journey",
+      "label": "Emma travels to Rouen to consult Leon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_honeymoon",
+      "label": "Emma and Leon's three days together at Hotel-de-Boulogne",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boat_ride",
+      "label": "Emma and Leon take a covered boat to dine on an island",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ribbon_discovery",
+      "label": "Leon finds a scarlet silk ribbon in the boat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_separation",
+      "label": "Emma and Leon separate with promises to meet weekly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_return",
+      "label": "Leon returns to the village on Saturday morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_visits_doctor",
+      "label": "Leon visits the doctor's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garden_meeting",
+      "label": "Emma and Leon meet in the garden lane during a storm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_piano_discussion",
+      "label": "Charles and Emma discuss piano lessons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_music_lessons_arrangement",
+      "label": "Emma arranges to go to town weekly for music lessons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thursday_departure",
+      "label": "Emma departs on Thursday morning for town",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bovary_house",
+      "label": "Bovary's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_boulogne",
+      "label": "Hotel-de-Boulogne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_island",
+      "label": "Island in the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tavern",
+      "label": "Tavern on the island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden_lane",
+      "label": "Garden lane behind the house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "The village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "Lion d'Or inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_bill",
+      "label": "The bill for goods",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_power_attorney",
+      "label": "Power of attorney document",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_yellow_curtains",
+      "label": "Yellow curtains with large stripes",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_carpet",
+      "label": "Carpet",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_piano",
+      "label": "Piano",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_ribbon",
+      "label": "Scarlet silk ribbon",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_power_attorney",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_private_talk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lheureux_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_power_attorney_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_emma_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_honeymoon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_separation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_garden_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_music_lessons_arrangement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_thursday_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_bovary_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rouen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hotel_boulogne",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_island",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_garden_lane",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_lion_dor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_private_talk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fabric_delivery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_attorney_creation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_honeymoon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_boulogne",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boat_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_island",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ribbon_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_island",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_visits_doctor",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden_lane",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piano_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music_lessons_arrangement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thursday_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_private_talk",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_private_talk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fabric_delivery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_attorney_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fabric_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_power_attorney_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_honeymoon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boat_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_honeymoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ribbon_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boat_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_separation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ribbon_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_visits_doctor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_visits_doctor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_piano_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music_lessons_arrangement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_piano_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thursday_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_music_lessons_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_private_talk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_private_talk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fabric_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fabric_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_power_attorney_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_honeymoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_honeymoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boat_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boat_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ribbon_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_visits_doctor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_leon_visits_doctor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piano_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_piano_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music_lessons_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music_lessons_arrangement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thursday_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_power_attorney",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lheureux_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_power_attorney",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_power_attorney_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_yellow_curtains",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fabric_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_ribbon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ribbon_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_fabric_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_honeymoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_honeymoon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_boat_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_boat_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_separation",
+      "target_closed_value": null
+    }
+  ]
+}

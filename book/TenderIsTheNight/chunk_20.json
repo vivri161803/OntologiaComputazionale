@@ -1,0 +1,451 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peterson",
+      "label": "Mr. Peterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_freeman",
+      "label": "Freeman",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_rosemary_opens_door",
+      "label": "Rosemary opens her door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_knocks",
+      "label": "Dick knocks on the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_dick_kiss",
+      "label": "Rosemary and Dick kiss",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_knock_at_door",
+      "label": "Persistent knocking at the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_peterson_arrive",
+      "label": "Abe and Mr. Peterson arrive",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_move_to_divers_suite",
+      "label": "They move to the Divers' suite",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_montparnasse_dispute",
+      "label": "Early morning dispute in Montparnasse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_police_station",
+      "label": "Abe and Peterson go to the police station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bistro_identification",
+      "label": "Abe and Peterson identify the wrong Negro at the bistro",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_freeman_arrest",
+      "label": "Freeman is arrested by police",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_dick_conversation",
+      "label": "Abe and Dick discuss the situation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_leaves",
+      "label": "Abe leaves the suite",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rosemary_room",
+      "label": "Rosemary's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_divers_suite",
+      "label": "The Divers' suite",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montparnasse",
+      "label": "Montparnasse",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bistro",
+      "label": "The bistro",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stockholm",
+      "label": "Stockholm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_versailles",
+      "label": "Versailles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The corridor",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_abe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_abe",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_peterson",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_peterson",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_rosemary_opens_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_rosemary_opens_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_knocks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_opens_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_knocks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_knocks",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_dick_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_knocks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_dick_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_dick_kiss",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_dick_kiss",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_dick_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_peterson_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_knock_at_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_peterson_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_peterson_arrive",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_peterson_arrive",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_to_divers_suite",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_peterson_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_to_divers_suite",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_divers_suite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_montparnasse_dispute",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_montparnasse_dispute",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_montparnasse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_montparnasse_dispute",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_station",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_station",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bistro_identification",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_police_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bistro_identification",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bistro",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bistro_identification",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bistro_identification",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_peterson",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_freeman_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bistro_identification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_freeman_arrest",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_freeman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_dick_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_move_to_divers_suite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_dick_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_divers_suite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_dick_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_dick_conversation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_dick_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rosemary_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_divers_suite",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_montparnasse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bistro",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_opens_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_dick_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_peterson_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peterson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_abe_peterson_arrive",
+      "target_closed_value": null
+    }
+  ]
+}

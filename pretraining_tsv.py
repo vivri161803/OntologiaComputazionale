@@ -2,23 +2,18 @@ import torch
 import pandas as pd
 import json
 import matplotlib.pyplot as plt
+import os
 
 # Import locali
 from GNN.BERT.bert_csv import NodeFeatureEncoder
 from GNN.pretraining.NegativeSampling_csv import GraphNegativeSampler
 from GNN.EncoderDecoder import NarrativeKGModel
 from GNN.pretraining.train_loop import train_kg_model
-from train_set import train_library
+from train_set import *
 
 # Parametri modello
-BEST_HIDDEN_CHANNELS = 32
-BEST_NUM_LAYERS = 1
-BEST_DROPOUT = 0.1645
-BEST_LR = 0.00976
-BEST_WEIGHT_DECAY = 0.0026
-BEST_MARGIN = 0.5
-BEST_K_NEGATIVES = 3
-NUM_EPOCHS = 500 
+train_params = train_params_1
+NUM_EPOCHS = 500
 
 # --- A. Definisci i tuoi file TSV ---
 # Sostituisci questo array con i percorsi dei tuoi TSV creati dall'LLM
@@ -34,10 +29,10 @@ device = torch.device('cpu')
 X_tensor = X_tensor.to(device)
 
 # --- C. Genera il Dataset (Negative Sampling) ---
-print(f"\n[2/6] Generazione Dataset con Negative Sampling (K={BEST_K_NEGATIVES})...")
+print(f"\n[2/6] Generazione Dataset con Negative Sampling (K={train_params["k_negatives"]})...")
 sampler = GraphNegativeSampler()
 sampler.load_tsv(tsv_files)
-df_dataset_strings = sampler.generate_dataset(k_negatives=BEST_K_NEGATIVES)
+df_dataset_strings = sampler.generate_dataset(k_negatives=train_params["k_negatives"])
 
 # --- D. Il "PONTE": Mappa stringhe -> interi per PyTorch ---
 print("\n[3/6] Preparazione Tensori...")
@@ -62,9 +57,9 @@ model = NarrativeKGModel(
     num_nodes=len(node_to_idx), 
     num_relations=len(rel_to_idx), 
     in_channels=X_tensor.shape[1], 
-    hidden_channels=BEST_HIDDEN_CHANNELS,
-    num_layers=BEST_NUM_LAYERS,
-    dropout_rate=BEST_DROPOUT
+    hidden_channels=train_params["hidden_channels"],
+    num_layers=train_params["num_layers"],
+    dropout_rate=train_params["dropout_rate"]
 ).to(device=device)
 
 print("\n[5/6] Avvio Addestramento Definitivo...")
@@ -74,9 +69,9 @@ trained_model, training_history = train_kg_model(
     true_triplets_df=true_triplets_df, 
     node_features_X=X_tensor, 
     num_epochs=NUM_EPOCHS,
-    lr=BEST_LR,
-    weight_decay=BEST_WEIGHT_DECAY,
-    margin=BEST_MARGIN
+    lr=train_params["lr"],
+    weight_decay=train_params["weight_decay"],
+    margin=train_params["margin"]
 )
 
 # Salvataggio del Grafico Finale
@@ -101,17 +96,18 @@ with torch.no_grad():
     final_node_embeddings, final_rel_embeddings = model(X_tensor, edge_index, edge_type)
 
 # 1. Salviamo i pesi del modello per inferenze future
-torch.save(model.state_dict(), 'narrative_kg_model_weights.pt')
+os.makedirs("TrainedModel", exist_ok=True)
+torch.save(model.state_dict(), 'TrainedModel/narrative_kg_model_weights.pt')
 
 # 2. Salviamo i tensori degli embedding
-torch.save(final_node_embeddings, 'final_node_embeddings.pt')
-torch.save(final_rel_embeddings, 'final_rel_embeddings.pt')
+torch.save(final_node_embeddings, 'TrainedModel/final_node_embeddings.pt')
+torch.save(final_rel_embeddings, 'TrainedModel/final_rel_embeddings.pt')
 
 # 3. Salviamo i dizionari di mappatura in formato JSON per poter ricollegare i vettori ai testi!
-with open('node_mapping.json', 'w', encoding='utf-8') as f:
+with open('TrainedModel/node_mapping.json', 'w', encoding='utf-8') as f:
     json.dump(idx_to_node, f, indent=4)
     
-with open('relation_mapping.json', 'w', encoding='utf-8') as f:
+with open('TrainedModel/relation_mapping.json', 'w', encoding='utf-8') as f:
     json.dump(idx_to_rel, f, indent=4)
 
 print("\n=== PIPELINE COMPLETATA CON SUCCESSO! ===")

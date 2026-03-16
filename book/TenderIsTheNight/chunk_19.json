@@ -1,0 +1,651 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_paul",
+      "label": "Paul",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_claude",
+      "label": "Claude",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_yardly",
+      "label": "Mr. Yardly",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_slim_pearson",
+      "label": "Slim Pearson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_freeman",
+      "label": "Freeman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_divers",
+      "label": "the Divers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dane",
+      "label": "the Dane",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jules_peterson",
+      "label": "Jules Peterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_richard_diver",
+      "label": "Richard Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maria_wallis",
+      "label": "Maria Wallis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_abe_seeking_sanctuary",
+      "label": "Abe North seeking sanctuary at the Ritz bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_drinks",
+      "label": "Abe North drinks and feels better",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_shaved",
+      "label": "Abe North is shaved at the barber's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paul_arrives",
+      "label": "Paul arrives at the Ritz bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paul_talks_abe",
+      "label": "Paul talks with Abe about shipping home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_college_boys_arrive",
+      "label": "College boys arrive at the bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_calls_divers",
+      "label": "Abe has the chasseur telephone the Divers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bar_jammed",
+      "label": "The bar becomes jammed with clients",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_loses_seat",
+      "label": "Abe loses his seat in the confusion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_lunch",
+      "label": "Abe is invited to lunch but declines",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jules_searches",
+      "label": "Jules Peterson searches for Abe at American bars and hotels",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jules_arrives",
+      "label": "Jules Peterson arrives at the Ritz bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_leaves_ritz",
+      "label": "Abe leaves the Ritz bar and goes to Rue Cambon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_walks",
+      "label": "Richard Diver walks from the seventh arrondissement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_tailor",
+      "label": "Richard Diver visits his shirt-makers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_crillon",
+      "label": "Richard Diver drinks at the Crillon bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_bank",
+      "label": "Richard Diver goes to his bank",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_taxi",
+      "label": "Richard Diver takes a taxi up the Champs Élysées",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ritz_bar",
+      "label": "the Ritz bar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barber_shop",
+      "label": "the barber's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rue_cambon",
+      "label": "Rue Cambon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_seventh_arrondissement",
+      "label": "the seventh arrondissement",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shirt_makers",
+      "label": "the shirt-makers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_crillon_bar",
+      "label": "the Crillon bar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bank",
+      "label": "the bank",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_champs_elysees",
+      "label": "the Champs Élysées",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_roi_george",
+      "label": "the Roi George corridor",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_abe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_abe_seeking_sanctuary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_abe_seeking_sanctuary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_seeking_sanctuary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_drinks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_seeking_sanctuary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_drinks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_claude",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_abe_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_shaved",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_drinks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_shaved",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_barber_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_shaved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paul_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_shaved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paul_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_paul",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paul_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paul_talks_abe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_paul_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paul_talks_abe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_paul",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paul_talks_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_paul_talks_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_yardly",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_paul_talks_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_slim_pearson",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_paul_talks_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_college_boys_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_paul_talks_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_college_boys_arrive",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_calls_divers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_college_boys_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_calls_divers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_calls_divers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_divers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_abe_calls_divers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bar_jammed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_calls_divers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bar_jammed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_loses_seat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bar_jammed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_loses_seat",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_loses_seat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_loses_seat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jules_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jules_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jules_peterson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jules_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jules_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves_ritz",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jules_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves_ritz",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rue_cambon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_leaves_ritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_leaves_ritz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_walks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_walks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_seventh_arrondissement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_maria_wallis",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_dick_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_tailor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_tailor",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shirt_makers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_tailor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_crillon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_tailor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_crillon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_crillon_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_crillon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_bank",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_crillon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_bank",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_taxi",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_bank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_taxi",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_champs_elysees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_taxi",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_dick_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_taxi",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ritz_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_barber_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_crillon_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_champs_elysees",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_rue_cambon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_seventh_arrondissement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

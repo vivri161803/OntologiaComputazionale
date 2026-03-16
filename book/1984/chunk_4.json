@@ -1,0 +1,365 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sandy_haired_woman",
+      "label": "The little sandy-haired woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thought_police",
+      "label": "The Thought Police",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_two_minutes_hate",
+      "label": "The Two Minutes Hate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_big_brother_face_on_screen",
+      "label": "Big Brother's face appears on the screen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chanting",
+      "label": "The group chants 'B-B!...B-B!'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_eye_contact",
+      "label": "Winston and O'Brien exchange a glance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_silent_message",
+      "label": "O'Brien communicates a silent message to Winston",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_diary",
+      "label": "Winston writes in his diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing_down_with_big_brother",
+      "label": "Winston writes 'DOWN WITH BIG BROTHER' repeatedly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thoughtcrime",
+      "label": "Winston commits thoughtcrime",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_knock_at_door",
+      "label": "There is a knocking at the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_screen",
+      "label": "The screen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room where the Two Minutes Hate occurs",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cubicle",
+      "label": "Winston's cubicle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_door",
+      "label": "The door to Winston's room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_big_brother_face_on_screen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_eye_contact",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_silent_message",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_thoughtcrime",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cubicle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_big_brother_face_on_screen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chanting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eye_contact",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_down_with_big_brother",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_big_brother_face_on_screen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chanting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_big_brother_face_on_screen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_eye_contact",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chanting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_silent_message",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_eye_contact",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_diary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_silent_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writing_down_with_big_brother",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thoughtcrime",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_down_with_big_brother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thoughtcrime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sandy_haired_woman",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_eye_contact",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_eye_contact",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_silent_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_silent_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_down_with_big_brother",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thoughtcrime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thought_police",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_thoughtcrime",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_knock_at_door",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons",
+      "label": "Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons_daughter",
+      "label": "Parsons' little daughter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chinless_man",
+      "label": "Bumstead J., the chinless man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_skull_faced_man",
+      "label": "The skull-faced man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guard",
+      "label": "The guard with the truncheon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_officer",
+      "label": "The young officer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_interrogation_parsons",
+      "label": "Winston interrogates Parsons about his thoughtcrime",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_parsons_arrest",
+      "label": "Parsons' arrest for thoughtcrime",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daughter_denunciation",
+      "label": "Parsons' daughter denounces him to the patrols",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bread_offering",
+      "label": "Bumstead offers bread to the skull-faced man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bumstead_beating",
+      "label": "The guard beats Bumstead in the mouth",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_skull_faced_room101",
+      "label": "The skull-faced man is taken to Room 101",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_skull_faced_resistance",
+      "label": "The skull-faced man resists being taken to Room 101",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obrien_arrival",
+      "label": "O'Brien enters the cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_beating",
+      "label": "The guard strikes Winston with the truncheon on the elbow",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cell",
+      "label": "The prison cell",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room101",
+      "label": "Room 101",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_interrogation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_interrogation_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation_parsons",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation_parsons",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_parsons_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daughter_denunciation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons_daughter",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daughter_denunciation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_daughter_denunciation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daughter_denunciation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_chinless_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bread_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skull_faced_man",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_bread_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bread_offering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bumstead_beating",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bread_offering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bumstead_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chinless_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bumstead_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bumstead_beating",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_bumstead_beating",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skull_faced_resistance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bumstead_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skull_faced_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_skull_faced_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_officer",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_skull_faced_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skull_faced_resistance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_skull_faced_room101",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_skull_faced_resistance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_skull_faced_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_skull_faced_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_officer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_skull_faced_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skull_faced_room101",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_skull_faced_room101",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_obrien_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_skull_faced_room101",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_obrien_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_obrien_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obrien_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_beating",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_obrien_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_winston_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_beating",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_winston_beating",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_katharine",
+      "label": "Katharine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_community_hike",
+      "label": "Community hike in Kent",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_getting_lost",
+      "label": "Getting lost from the group",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovering_flowers",
+      "label": "Winston discovering the two-coloured loosestrife flowers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cliff_moment",
+      "label": "Winston's moment of temptation at the cliff edge",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_julia",
+      "label": "Conversation between Winston and Julia about the cliff incident",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_philosophical_discussion",
+      "label": "Philosophical discussion about death and the Party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_planning_meeting",
+      "label": "Planning the next secret meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kent",
+      "label": "Kent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chalk_quarry",
+      "label": "Old chalk quarry with cliff edge",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dusty_floor",
+      "label": "Dusty floor where Winston and Julia sit",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wood",
+      "label": "Secret place in the wood",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_flowers",
+      "label": "Two-coloured loosestrife flowers (magenta and brick-red)",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_katharine",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_party",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_community_hike",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_community_hike",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_getting_lost",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_community_hike",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_getting_lost",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_community_hike",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_community_hike",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovering_flowers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_getting_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovering_flowers",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovering_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_flowers",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovering_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discovering_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cliff_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovering_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cliff_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cliff_moment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cliff_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cliff_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_julia",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cliff_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_julia",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dusty_floor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_philosophical_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_philosophical_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dusty_floor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_philosophical_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_philosophical_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_philosophical_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dusty_floor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_chalk_quarry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_dusty_floor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_wood",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

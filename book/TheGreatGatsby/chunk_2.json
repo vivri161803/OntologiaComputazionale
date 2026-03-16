@@ -1,0 +1,495 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_grandfather",
+      "label": "Nick's grandfather",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_great_uncle",
+      "label": "Nick's great-uncle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_father",
+      "label": "Nick's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baker",
+      "label": "Miss Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_man",
+      "label": "Young man at the office",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_stranger",
+      "label": "Stranger on the road",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_midwest",
+      "label": "Middle-western city",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east_egg",
+      "label": "East Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_haven",
+      "label": "New Haven",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_france",
+      "label": "France",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_washington",
+      "label": "Washington",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_long_island_sound",
+      "label": "Long Island Sound",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_mansion",
+      "label": "Gatsby's mansion",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nick_house",
+      "label": "Nick's house in West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_buchanan_house",
+      "label": "Tom and Daisy's house in East Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_york",
+      "label": "New York",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_civil_war",
+      "label": "Civil War",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_graduation",
+      "label": "Nick's graduation from New Haven",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_great_war",
+      "label": "Great War",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_move_east",
+      "label": "Nick moves east to learn bond business",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_renting_house",
+      "label": "Nick rents a house in West Egg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_stranger",
+      "label": "Nick meets stranger on the road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at Tom and Daisy's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_baker",
+      "label": "Nick meets Miss Baker",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_civil_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_great_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_graduation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_move_east",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_renting_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_meeting_stranger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_meeting_baker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_west_egg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_east_egg",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_buchanan_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_midwest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_great_uncle",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_midwest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_east",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_york",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renting_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_stranger",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_buchanan_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_baker",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_buchanan_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_graduation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_civil_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_great_war",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_graduation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_move_east",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_great_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_renting_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_move_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_stranger",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_renting_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_stranger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_baker",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_graduation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_great_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_move_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_renting_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_stranger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_baker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_stranger",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_stranger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_baker",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baker",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_father",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_move_east",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_man",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_renting_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_gatsby_mansion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_gatsby_mansion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_meeting_baker",
+      "target_closed_value": null
+    }
+  ]
+}

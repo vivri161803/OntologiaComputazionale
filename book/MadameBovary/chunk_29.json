@@ -1,0 +1,501 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girard",
+      "label": "Girard",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_farewell",
+      "label": "Emma and Rodolphe's farewell at the river",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_reflection",
+      "label": "Rodolphe reflects on Emma at his bureau",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_writing",
+      "label": "Rodolphe writes the abandonment letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_delivery",
+      "label": "Girard delivers the letter in the basket of apricots",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_receives",
+      "label": "Emma receives the basket and reads the letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_attic_scene",
+      "label": "Emma goes to the attic and contemplates suicide",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Emma tries to eat dinner with Charles",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_passes",
+      "label": "Rodolphe passes through Yonville in his tilbury",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_collapse",
+      "label": "Emma collapses upon seeing Rodolphe",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river with bulrushes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_meadow",
+      "label": "The meadow across the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rodolphe_home",
+      "label": "Rodolphe's home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bureau",
+      "label": "Rodolphe's bureau with stag's head trophy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_provence",
+      "label": "Hotel de Provence",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_house",
+      "label": "Emma's house in Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sitting_room",
+      "label": "The sitting room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_attic",
+      "label": "The attic with garret-window",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village_square",
+      "label": "The village square of Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_la_huchette",
+      "label": "La Huchette",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_buchy",
+      "label": "Buchy",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_passports",
+      "label": "The passports",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_letter",
+      "label": "Rodolphe's abandonment letter",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_handkerchief",
+      "label": "Emma's handkerchief with pale spots",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_miniature",
+      "label": "Emma's miniature portrait",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_basket",
+      "label": "The basket of apricots",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lover",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beloved",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_separation",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bureau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_reflection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bureau",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_girard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_delivery",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_receives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_delivery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_receives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_receives",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_receives",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_felicite",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attic_scene",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_receives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attic_scene",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_attic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_attic_scene",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_attic_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_charles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_passes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_passes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_passes",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_collapse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_passes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_collapse",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_collapse",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_collapse",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_rodolphe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_attic_scene",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_collapse",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_meadow",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bureau",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_attic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "loc_village_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

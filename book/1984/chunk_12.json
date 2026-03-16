@@ -1,0 +1,511 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_syme",
+      "label": "Syme",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons",
+      "label": "Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl_dark_hair",
+      "label": "The girl with dark hair from the Fiction Department",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons_daughter",
+      "label": "Parsons' daughter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons_son",
+      "label": "Parsons' son",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_parsons",
+      "label": "Mrs Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_strange_man",
+      "label": "The strange man followed by Parsons' daughter",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beetle_man",
+      "label": "The small beetle-like man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_quacking_voice",
+      "label": "The eyeless creature with the quacking voice",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_parsons_arrival",
+      "label": "Parsons arrives at the table",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hate_week_collection",
+      "label": "Parsons collects subscription for Hate Week",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_catapult_incident",
+      "label": "Parsons' son shoots Winston with catapult",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_execution_absence",
+      "label": "Parsons' son upset about not going to execution",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hike_berkhamsted",
+      "label": "Parsons' daughter's troop hike near Berkhamsted",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_following_stranger",
+      "label": "Parsons' daughter and friends follow the strange man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_handing_over_patrols",
+      "label": "Parsons' daughter hands the man over to patrols",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ministry_announcement",
+      "label": "Ministry of Plenty announces production victory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chocolate_ration_announcement",
+      "label": "Announcement of chocolate ration increase to twenty grammes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chocolate_ration_reduction",
+      "label": "Previous announcement of chocolate ration reduction to twenty grammes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_two_minutes_hate",
+      "label": "Two Minutes Hate session",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girl_watching_winston",
+      "label": "The girl with dark hair watches Winston",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fire_market_woman",
+      "label": "Parsons' children set fire to market-woman's skirt",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ear_trumpet_test",
+      "label": "Parsons' daughter tests ear trumpet on sitting-room door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_to_work",
+      "label": "Telescreen signal to return to work",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_victory_mansions",
+      "label": "Victory Mansions",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_canteen",
+      "label": "The canteen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_community_centre",
+      "label": "Community Centre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_berkhamsted",
+      "label": "Berkhamsted",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_amersham",
+      "label": "Amersham",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_plenty",
+      "label": "Ministry of Plenty",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fiction_department",
+      "label": "Fiction Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministries",
+      "label": "The Ministries",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_airstrip_one",
+      "label": "Airstrip One",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_parsons",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_girl",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_girl",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_parsons",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_parsons",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_girl_dark_hair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_hate_week_collection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_catapult_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_following_stranger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_handing_over_patrols",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ministry_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_girl_watching_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "loc_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_victory_mansions",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week_collection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_watching_winston",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_following_stranger",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_berkhamsted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handing_over_patrols",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_amersham",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hike_berkhamsted",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_berkhamsted",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_victory_mansions",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl_dark_hair",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_fiction_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week_collection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_parsons_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hate_week_collection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_watching_winston",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ministry_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_to_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_girl_watching_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_parsons_arrival",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week_collection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week_collection",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catapult_incident",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons_son",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catapult_incident",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_following_stranger",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons_daughter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_following_stranger",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_strange_man",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handing_over_patrols",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons_daughter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handing_over_patrols",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_strange_man",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_announcement",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "char_quacking_voice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_watching_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_girl_dark_hair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_watching_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_girl_dark_hair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fire_market_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons_son",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fire_market_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_parsons_daughter",
+      "target_closed_value": null
+    }
+  ]
+}

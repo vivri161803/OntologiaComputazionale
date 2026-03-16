@@ -1,0 +1,488 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick_diver",
+      "label": "Doctor Richard Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby_warren",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_beth_evan_warren",
+      "label": "Beth Evan Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dohmler",
+      "label": "Doctor Dohmler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elsie_speers",
+      "label": "Mrs. Elsie Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter_beth",
+      "label": "Letter from Beth Evan Warren requesting Nicole ride with Dick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_ride",
+      "label": "Train ride from Lausanne to Zurich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea_zurich",
+      "label": "Tea meeting in Zurich between Dick and Baby Warren",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_marriage",
+      "label": "Marriage of Dick and Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_travels",
+      "label": "Travels from Woolloomooloo Bay to Biskra",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_birth",
+      "label": "Birth of Nicole's second child, Topsy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_purchase",
+      "label": "Purchase of house on the Riviera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_negro_incident",
+      "label": "Incident with Negroes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cafe_meeting",
+      "label": "Meeting at Café des Alliées",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_lausanne",
+      "label": "Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurichsee",
+      "label": "Zurichsee",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_como",
+      "label": "Como",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_capri",
+      "label": "Capri",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_orvieto",
+      "label": "Orvieto",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sahara",
+      "label": "Sahara",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_biskra",
+      "label": "Biskra",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cafe_allies",
+      "label": "Café des Alliées",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_letter_beth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_beth_evan_warren",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_letter_beth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_beth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_train_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_zurich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_tea_zurich",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_zurich",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_tea_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_tea_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_travels",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_travels",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_travels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_travels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_birth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_child_birth",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_travels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_child_birth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_purchase",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_house_purchase",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_purchase",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_child_birth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_purchase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_house_purchase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_house_purchase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_negro_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_negro_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_purchase",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_negro_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_negro_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_negro_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_negro_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cafe_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_cafe_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe_allies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cafe_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_negro_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cafe_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elsie_speers",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_cafe_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_zurich",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_riviera",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_cafe_allies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    }
+  ]
+}

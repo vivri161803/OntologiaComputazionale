@@ -1,0 +1,510 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_diver",
+      "label": "Mrs. Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick_diver",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole_diver",
+      "label": "Nicole Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_barban",
+      "label": "Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckisco",
+      "label": "Mr. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary_mother",
+      "label": "Rosemary's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_drug_store",
+      "label": "drug store",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cafe_allies",
+      "label": "Café des Alliés on the Croisette",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gausse_hotel",
+      "label": "Gausse's Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tarmes",
+      "label": "Tarmes",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_rosemary_leaves_drugstore",
+      "label": "Rosemary leaves the drug store with cocoanut oil",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_waits_for_train",
+      "label": "Rosemary waits for her train at Café des Alliés",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_mother_hire_car",
+      "label": "Rosemary and her mother hire a car and drive along the Riviera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_returns_to_hotel",
+      "label": "Rosemary returns to Gausse's Hotel in the late afternoon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_hears_dance",
+      "label": "Rosemary hears music from a dance in the hills",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_goes_to_beach",
+      "label": "Rosemary goes to the beach in the morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_abe_approach_rosemary",
+      "label": "Dick Diver and Abe North approach Rosemary on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_invites_rosemary",
+      "label": "Dick Diver invites Rosemary to join them for food and drink",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_meets_nicole",
+      "label": "Rosemary meets Nicole Diver",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_on_beach",
+      "label": "Rosemary converses with the Divers and their friends on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckiscos_arrive",
+      "label": "The McKiscos and others arrive on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swimming",
+      "label": "The party goes swimming",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_appears_in_lace",
+      "label": "Dick Diver appears in transparent black lace drawers",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_dick",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_nicole",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_nicole_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_rosemary_leaves_drugstore",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_rosemary_mother_hire_car",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_invites_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_conversation_on_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gausse_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cafe_allies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_rosemary_leaves_drugstore",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_drug_store",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_waits_for_train",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe_allies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_mother_hire_car",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_returns_to_hotel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gausse_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_goes_to_beach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_abe_approach_rosemary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_on_beach",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swimming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_leaves_drugstore",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_waits_for_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_waits_for_train",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_mother_hire_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_mother_hire_car",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_returns_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_returns_to_hotel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_hears_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_hears_dance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_goes_to_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_goes_to_beach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_abe_approach_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_abe_approach_rosemary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_invites_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_invites_rosemary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_meets_nicole",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_on_beach",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckiscos_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckiscos_arrive",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swimming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_appears_in_lace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_leaves_drugstore",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_waits_for_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_mother_hire_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_rosemary_mother_hire_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_returns_to_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_goes_to_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_abe_approach_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dick_abe_approach_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_invites_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dick_invites_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_on_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_mckiscos_arrive",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_appears_in_lace",
+      "target_closed_value": null
+    }
+  ]
+}

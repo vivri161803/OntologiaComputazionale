@@ -1,0 +1,630 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_viscount",
+      "label": "Viscount",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marquis",
+      "label": "Marquis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marchioness",
+      "label": "Marchioness",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mademoiselle_andervilliers",
+      "label": "Mademoiselle d'Andervilliers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_fan",
+      "label": "Lady who dropped her fan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gentleman_blue_coat",
+      "label": "Gentleman in blue coat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pale_woman",
+      "label": "Pale young woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_man_racer",
+      "label": "Young man who won the race",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nastasie",
+      "label": "Nastasie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_father",
+      "label": "Emma's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_woman_note",
+      "label": "Young woman who threw the note",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_ball",
+      "label": "The ball at the château",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waltz",
+      "label": "Emma waltzes with the Viscount",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Supper at the ball",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cotillion",
+      "label": "Cotillion dance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fan_incident",
+      "label": "Lady drops her fan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_window_breaking",
+      "label": "Servant breaks window panes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Bovarys depart from château",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_horsemen_encounter",
+      "label": "Encounter with horsemen on the road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cigar_case_found",
+      "label": "Charles finds the cigar case",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Bovarys return home to Tostes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_home",
+      "label": "Dinner at home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nastasie_warning",
+      "label": "Emma gives Nastasie warning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_smoking",
+      "label": "Charles smokes the cigar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_obsession",
+      "label": "Emma's obsession with the ball and Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ballroom",
+      "label": "The ballroom of the château",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gallery",
+      "label": "The gallery of the château",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "The drawing room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_billiard_room",
+      "label": "The billiard room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden of the château",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_stables",
+      "label": "The stables of the château",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bertaux",
+      "label": "Bertaux farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road from château to Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen at home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden_home",
+      "label": "Emma's garden at home",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_cigar_case",
+      "label": "Green silk cigar case",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_fan",
+      "label": "Fan",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_note",
+      "label": "White folded note",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_dress",
+      "label": "Beautiful dress",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_satin_shoes",
+      "label": "Satin shoes",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mandante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_viscount",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_ball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_waltz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_emma_obsession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_ballroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_viscount",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_waltz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waltz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_fan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fan_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gentleman_blue_coat",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_fan_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_woman_note",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_fan_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_window_breaking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cotillion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waltz",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fan_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_horsemen_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cigar_case_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_horsemen_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cigar_case_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nastasie_warning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_smoking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_obsession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ball",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ballroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waltz",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gallery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ballroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_obsession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nastasie_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nastasie",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_nastasie_warning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_obsession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_cigar_case",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cigar_case_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_cigar_case",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_smoking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_dress",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_satin_shoes",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_waltz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_viscount",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waltz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mademoiselle_andervilliers",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_waltz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_home",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_party",
+      "label": "The Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_inner_party",
+      "label": "Inner Party members",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_citizen_oceania",
+      "label": "Citizens of Oceania",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_scientists",
+      "label": "Scientists and researchers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ruling_groups",
+      "label": "Ruling groups of all three super-states",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thought_police",
+      "label": "Thought Police",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_war",
+      "label": "Continuous state of war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_atomic_bombing",
+      "label": "Atomic bombs dropped on industrial centres",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_scientific_research",
+      "label": "Scientific research for weapons development",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_surprise_attack",
+      "label": "Surprise attacks against allies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pact_friendship",
+      "label": "Signing pacts of friendship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reality_denial",
+      "label": "Denial of reality through Doublethink",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eastasia",
+      "label": "Eastasia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_peace",
+      "label": "Ministry of Peace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_laboratories",
+      "label": "Vast laboratories and experimental stations",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_disputed_areas",
+      "label": "Disputed areas round the Equator and the Pole",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_atomic_bomb",
+      "label": "Atomic bomb",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_doublethink",
+      "label": "Doublethink technique",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_ingsoc",
+      "label": "Ingsoc philosophy",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_party_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_inner_party_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_scientists_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_thought_police_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_atomic_bomb_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_doublethink_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_al_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_scientists",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_thought_police",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "obj_atomic_bomb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "obj_doublethink",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_war",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_scientific_research",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_pact_friendship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_surprise_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_reality_denial",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_disputed_areas",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMPO_DI_BATTAGLIA"
+    },
+    {
+      "source_id": "loc_ministry_peace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_laboratories",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_scientists",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_scientific_research",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruling_groups",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_surprise_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ruling_groups",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pact_friendship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reality_denial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_doublethink",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_reality_denial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_research",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_peace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_research",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_laboratories",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surprise_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_disputed_areas",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_war",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_atomic_bombing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_war",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_scientific_research",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_atomic_bombing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surprise_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_scientific_research",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pact_friendship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_surprise_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reality_denial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pact_friendship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_citizen_oceania",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_inner_party",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_reality_denial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_citizen_oceania",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_reality_denial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_ingsoc",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "obj_ingsoc",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_reality_denial",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,395 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guard",
+      "label": "A guard",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_imprisonment",
+      "label": "Winston's imprisonment in the windowless building",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beating",
+      "label": "The guards beating Winston in the cells below ground",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_interrogation",
+      "label": "Winston's interrogation by O'Brien near the roof",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_room101_revelation",
+      "label": "O'Brien reveals the contents of Room 101 to Winston",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cage_brought",
+      "label": "A guard brings in the wire cage with rats",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rats_revealed",
+      "label": "Winston sees the rats in the cage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obrien_explanation",
+      "label": "O'Brien explains the nature of unendurable fear and the rats",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cage_moved",
+      "label": "O'Brien moves the cage to the nearer table",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lever_pressed",
+      "label": "O'Brien presses the first lever of the cage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rats_fighting",
+      "label": "The rats fight and squeal in the cage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cage_closing",
+      "label": "The cage closes in on Winston's face",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_betrayal",
+      "label": "Winston shouts to transfer his punishment to Julia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cage_door_closes",
+      "label": "The cage door clicks shut without opening",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_windowless_building",
+      "label": "The windowless building",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cells_below",
+      "label": "The cells below ground level",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_interrogation_room",
+      "label": "The room high up near the roof where interrogation occurred",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room101",
+      "label": "Room 101",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_underground_chamber",
+      "label": "The underground chamber many metres below ground",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_cage",
+      "label": "The wire cage with rats",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_obrien",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_julia",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_imprisonment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_beating",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cells_below",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_interrogation_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_room101_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_room101_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_underground_chamber",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_imprisonment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beating",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_room101_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_room101_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guard",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cage_brought",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cage_brought",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_room101_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rats_revealed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cage_brought",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rats_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obrien_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rats_revealed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_obrien_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_obrien_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cage_moved",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_obrien_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cage_moved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lever_pressed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cage_moved",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lever_pressed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rats_fighting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lever_pressed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cage_closing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rats_fighting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_cage_closing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_betrayal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cage_closing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_betrayal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_winston_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cage_door_closes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winston_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_underground_chamber",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_windowless_building",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_imprisonment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_windowless_building",
+      "target_closed_value": null
+    }
+  ]
+}

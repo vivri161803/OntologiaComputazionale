@@ -1,0 +1,903 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hippolyte",
+      "label": "Hippolyte",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_derozeray",
+      "label": "Monsieur Derozeray",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_canivet",
+      "label": "Dr. Canivet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_theodore",
+      "label": "Theodore",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guillaumin",
+      "label": "Monsieur Guillaumin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma_mother",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_homais",
+      "label": "Madame Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_emma_reflection",
+      "label": "Emma reflects on her marriage and life choices",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cry",
+      "label": "A heart-rending cry rises in the village",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_comment",
+      "label": "Charles makes an unexpected comment about a valgus",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_anger",
+      "label": "Emma becomes angry and leaves the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_barometer_falls",
+      "label": "The barometer falls and smashes on the floor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_garden",
+      "label": "Rodolphe comes to the garden and reunites with Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_love_renewal",
+      "label": "Emma and Rodolphe begin to love one another again",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_messages",
+      "label": "Emma sends messages to Rodolphe through Justin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_visit",
+      "label": "Rodolphe visits Emma at her request",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_elopement_proposal",
+      "label": "Emma proposes they go and live elsewhere",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_preparations",
+      "label": "Emma prepares herself and her room for Rodolphe's visits",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hippolyte_leg",
+      "label": "Emma gives Hippolyte a wooden leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hippolyte_new_leg",
+      "label": "Emma buys Hippolyte a more convenient wooden leg",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_whip",
+      "label": "Monsieur Lheureux brings Emma a riding-whip",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_bill",
+      "label": "Lheureux presents Emma with a bill for 270 francs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_debt",
+      "label": "Emma realizes she has accumulated debts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_threat",
+      "label": "Lheureux threatens to take back the goods",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_derozeray_payment",
+      "label": "Emma receives payment from Monsieur Derozeray",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_return",
+      "label": "Lheureux returns and Emma pays him with 14 napoleons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_gifts",
+      "label": "Emma gives Rodolphe various gifts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_jealousy",
+      "label": "Emma expresses jealousy and demands reassurance of Rodolphe's love",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_declarations",
+      "label": "Emma makes passionate declarations of love to Rodolphe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_behavior_change",
+      "label": "Emma's manners and behavior change due to her love",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_scandal",
+      "label": "Emma walks out with Rodolphe smoking a cigarette",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_carriage",
+      "label": "Emma is seen getting out of the Hirondelle in a waistcoat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_arrival",
+      "label": "Madame Bovary senior arrives at her son's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_felicite_man",
+      "label": "Madame Bovary senior discovers Felicite with a man",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_complaint",
+      "label": "Madame Bovary senior complains about household morals",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room where Emma and Charles are",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "The village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_la_huchette",
+      "label": "La Huchette",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passage",
+      "label": "The passage",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_falso_eroe",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_cry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_anger",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_rodolphe_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_love_renewal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_messages",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_love_renewal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_elopement_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_preparations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_elopement_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_leg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_new_leg",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hippolyte_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_whip",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hippolyte_new_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_bill",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_whip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_debt",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_bill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_threat",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_debt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_derozeray_payment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_derozeray_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_gifts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_jealousy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_gifts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_declarations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_jealousy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_behavior_change",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_emma_behavior_change",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_declarations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_scandal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_behavior_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_carriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_scandal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_carriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_felicite_man",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_complaint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_felicite_man",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_charles_comment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_anger",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_barometer_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_love_renewal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_love_renewal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_elopement_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_elopement_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_hippolyte_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_hippolyte_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_hippolyte_new_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_hippolyte_new_leg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_lheureux_whip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_lheureux_whip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_bill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lheureux_bill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_debt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lheureux_threat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_derozeray",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_derozeray_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_derozeray_payment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_rodolphe_gifts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_rodolphe_gifts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_jealousy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_jealousy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_declarations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_emma_declarations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_behavior_change",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_scandal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_emma_scandal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_carriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_felicite_man",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_felicite_man",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_mother_complaint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_anger",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_garden",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_messages",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_la_huchette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_preparations",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_felicite_man",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_village",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_passage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

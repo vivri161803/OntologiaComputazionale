@@ -1,0 +1,488 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_djali",
+      "label": "Djali (greyhound)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles (doctor, Emma's husband)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marquis",
+      "label": "Marquis d'Andervilliers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_marchioness",
+      "label": "Marchioness",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_duke",
+      "label": "Old Duke de Laverdiere",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gentleman_blue_coat",
+      "label": "Gentleman in blue coat",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pale_woman",
+      "label": "Pale young woman with pearls",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_man_horses",
+      "label": "Very young man who beat racehorses",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_emma_reflection",
+      "label": "Emma's reflection on her marriage and life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_invitation",
+      "label": "Emma invited to Vaubyessard by Marquis d'Andervilliers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Monsieur and Madame Bovary travel to Vaubyessard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Arrival at Vaubyessard chateau at nightfall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at Vaubyessard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ball",
+      "label": "Ball at Vaubyessard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_quadrille",
+      "label": "Emma dances the quadrille",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_field",
+      "label": "Field near Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes (village)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vaubyessard",
+      "label": "Vaubyessard chateau",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vestibule",
+      "label": "Vestibule of chateau",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_billiard_room",
+      "label": "Billiard room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_drawing_room",
+      "label": "Drawing room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ballroom",
+      "label": "Ballroom",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_marquis",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_emma",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_invitation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_ball",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_quadrille",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_vaubyessard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_vestibule",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_drawing_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ballroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_djali",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_invitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vaubyessard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marchioness",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_duke",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marquis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_marchioness",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ball",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ballroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ball",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quadrille",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gentleman_blue_coat",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quadrille",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_pale_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quadrille",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_man_horses",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_quadrille",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quadrille",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ballroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_quadrille",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ball",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    }
+  ]
+}

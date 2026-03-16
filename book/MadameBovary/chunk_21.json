@@ -1,0 +1,396 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_prefect",
+      "label": "The Prefect",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jury",
+      "label": "Members of the jury",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_councillor",
+      "label": "The Councillor from the prefecture",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_colonel",
+      "label": "The Colonel",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mayor",
+      "label": "Monsieur Tuvache, the mayor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hippolyte",
+      "label": "Hippolyte, the groom from the inn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais, the chemist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Madame Bovary (Emma)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lieuvain",
+      "label": "Monsieur Lieuvain, the councillor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_derozerays",
+      "label": "Monsieur Derozerays",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon, son of Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tuvache_lieutenant",
+      "label": "The lieutenant, youngest son of Monsieur Tuvache",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Arrival of the carriage with the councillor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ceremony",
+      "label": "Official ceremony at the town hall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_speech",
+      "label": "Lieuvain's speech about agriculture and government",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_emma_meeting",
+      "label": "Rodolphe and Emma's private meeting in the council-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_seduction",
+      "label": "Rodolphe's seduction of Emma with romantic discourse",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place (town square)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_town_hall",
+      "label": "The town hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_council_room",
+      "label": "The council-room on the first floor of the town hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_platform",
+      "label": "The platform at the town hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "The Lion d'Or inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "The chemist's shop",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_councillor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_colonel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ceremony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_ceremony",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_town_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ceremony",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mayor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_councillor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jury",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_speech",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_platform",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lieuvain",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_derozerays",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_council_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_emma_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_seduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_rodolphe_seduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_council_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_seduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_emma_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_town_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_council_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_platform",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    }
+  ]
+}

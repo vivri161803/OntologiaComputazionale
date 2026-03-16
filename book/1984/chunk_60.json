@@ -1,0 +1,352 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston_smith",
+      "label": "Winston Smith",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_b_vocabulary_creation",
+      "label": "Creation and design of the B vocabulary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_word_abbreviation",
+      "label": "Abbreviation of organizational names and terms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vocabulary_reduction",
+      "label": "Continuous reduction of Newspeak vocabulary",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ministry_of_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_records_department",
+      "label": "Records Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_b_vocabulary",
+      "label": "B vocabulary",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_newspeak",
+      "label": "Newspeak language",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_oldspeak",
+      "label": "Oldspeak language",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_ingsoc",
+      "label": "Ingsoc (English Socialism)",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_party",
+      "label": "The Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_masses",
+      "label": "The masses",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_goodthink",
+      "label": "GOODTHINK word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_crimethink",
+      "label": "CRIMETHINK word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_oldthink",
+      "label": "OLDTHINK word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_bellyfeel",
+      "label": "BELLYFEEL word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_sexcrime",
+      "label": "SEXCRIME word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_goodsex",
+      "label": "GOODSEX word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_joycamp",
+      "label": "JOYCAMP word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_minipax",
+      "label": "MINIPAX word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_prolefeed",
+      "label": "PROLEFEED word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_duckspeak",
+      "label": "DUCKSPEAK word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_thinkpol",
+      "label": "THINKPOL word",
+      "node_type": "Character"
+    },
+    {
+      "id": "word_minitrue",
+      "label": "MINITRUE word",
+      "node_type": "Character"
+    },
+    {
+      "id": "concept_liberty_equality",
+      "label": "Concepts of liberty and equality",
+      "node_type": "Character"
+    },
+    {
+      "id": "concept_objectivity_rationalism",
+      "label": "Concepts of objectivity and rationalism",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_b_vocabulary_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_winston_smith",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "loc_records_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_records_department",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_ministry_of_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ministry_of_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "obj_b_vocabulary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_party",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_newspeak",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_word_abbreviation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_word_abbreviation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "obj_party",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_word_abbreviation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vocabulary_reduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_word_abbreviation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vocabulary_reduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "obj_newspeak",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_vocabulary_reduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_goodthink",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_crimethink",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_oldthink",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_bellyfeel",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_sexcrime",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_goodsex",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_joycamp",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_minipax",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_prolefeed",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_duckspeak",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_thinkpol",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "word_minitrue",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_b_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_liberty_equality",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "word_crimethink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "concept_objectivity_rationalism",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "word_oldthink",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_masses",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "word_prolefeed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_party",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "word_prolefeed",
+      "target_closed_value": null
+    }
+  ]
+}

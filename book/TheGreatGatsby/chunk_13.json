@@ -1,0 +1,599 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Jay Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wolfsheim",
+      "label": "Wolfsheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_finn",
+      "label": "The Finn",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ferdie",
+      "label": "Ferdie",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_drive_central_park",
+      "label": "Jordan and Nick drive through Central Park",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_reveals_gatsby_plan",
+      "label": "Jordan reveals Gatsby's plan to reunite with Daisy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_invites_jordan_dinner",
+      "label": "Nick invites Jordan to dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_lights_house",
+      "label": "Gatsby lights his entire house at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_meets_nick",
+      "label": "Gatsby meets Nick on his lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_proposes_business",
+      "label": "Gatsby proposes a business opportunity to Nick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_calls_daisy",
+      "label": "Nick calls Daisy and invites her to tea",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_sends_gardener",
+      "label": "Gatsby sends a man to cut Nick's grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_sends_flowers",
+      "label": "Gatsby sends flowers from his greenhouse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_arrives_at_nick_house",
+      "label": "Gatsby arrives at Nick's house in white flannel suit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_arrives",
+      "label": "Daisy arrives at Nick's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_daisy_reunion",
+      "label": "Gatsby and Daisy reunite in the living room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clock_incident",
+      "label": "Gatsby accidentally damages the mantelpiece clock",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tea_service",
+      "label": "Nick, Gatsby, and Daisy have tea together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_confides_in_nick",
+      "label": "Gatsby confides his anxiety to Nick in the kitchen",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_central_park",
+      "label": "Central Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_plaza_hotel",
+      "label": "The Plaza Hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's mansion",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nick_house",
+      "label": "Nick's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_coney_island",
+      "label": "Coney Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nick_living_room",
+      "label": "Nick's living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nick_kitchen",
+      "label": "Nick's kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nick_pantry",
+      "label": "Nick's pantry",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_gatsby",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_daisy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_jordan",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_nick",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_nick",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_incontro",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_drive_central_park",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_central_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_central_park",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_central_park",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_reveals_gatsby_plan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drive_central_park",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_reveals_gatsby_plan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_reveals_gatsby_plan",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_reveals_gatsby_plan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_nick_invites_jordan_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_reveals_gatsby_plan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_invites_jordan_dinner",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_invites_jordan_dinner",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_lights_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_invites_jordan_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_lights_house",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_lights_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_meets_nick",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_lights_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_meets_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_meets_nick",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_meets_nick",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_proposes_business",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_meets_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_proposes_business",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_proposes_business",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_calls_daisy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_proposes_business",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_calls_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_calls_daisy",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_gardener",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_calls_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_gardener",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_gardener",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_gardener",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_gatsby_sends_flowers",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_sends_gardener",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_flowers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_flowers",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_sends_flowers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_gatsby_arrives_at_nick_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_sends_flowers",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_arrives_at_nick_house",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_arrives_at_nick_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_arrives_at_nick_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_arrives",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_daisy_reunion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_daisy_reunion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_daisy_reunion",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_daisy_reunion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_daisy_reunion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_clock_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_daisy_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clock_incident",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clock_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_service",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clock_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_service",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_service",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_service",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_service",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confides_in_nick",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_service",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confides_in_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confides_in_nick",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_confides_in_nick",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nick_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_central_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_nick_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_nick_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

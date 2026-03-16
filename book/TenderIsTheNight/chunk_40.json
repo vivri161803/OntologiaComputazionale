@@ -1,0 +1,572 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicotera",
+      "label": "Nicotera",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dohmler",
+      "label": "Doctor Dohmler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick_father",
+      "label": "Dick's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_excelsior",
+      "label": "Excelsior",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lobby",
+      "label": "Lobby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ulpia",
+      "label": "Ulpia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_trattoria",
+      "label": "Little trattoria",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosemary_room",
+      "label": "Rosemary's sitting-room and room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london",
+      "label": "London",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_talbot_square",
+      "label": "Talbot Square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_livorno",
+      "label": "Livorno",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_dinner_date",
+      "label": "Rosemary's birthday party dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_collis_meeting",
+      "label": "Dick meets Collis in the lobby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_baby_meeting",
+      "label": "Dick encounters Baby Warren at the Excelsior",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_baby_dinner",
+      "label": "Dick and Baby dine together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_clinic",
+      "label": "Baby and Dick discuss Nicole's treatment and London move",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ulpia_continuation",
+      "label": "Conversation continues at the Ulpia with Collis",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_father_death",
+      "label": "Dick's father dies",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_lunch",
+      "label": "Rosemary treats Dick to lunch",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_hotel",
+      "label": "Dick and Rosemary go to the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicotera_interruption",
+      "label": "Nicotera is in Rosemary's sitting-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_rosemary_sofa",
+      "label": "Dick and Rosemary on the sofa in his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Nicotera calls for Rosemary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_rosemary_quarrel",
+      "label": "Dick and Rosemary quarrel about Nicotera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_leaves",
+      "label": "Dick leaves Rosemary",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_dick_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_nicole_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_baby_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_nicotera_rivale",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_scontro",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_dick_collis_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_collis_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_collis_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_dick_collis_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_baby_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_collis_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_baby_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_excelsior",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_baby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dick_baby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_baby_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_baby_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_baby_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_excelsior",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_baby_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dick_baby_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_clinic",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_baby_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_conversation_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ulpia_continuation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ulpia_continuation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ulpia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ulpia_continuation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_ulpia_continuation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_ulpia_continuation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_father_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick_father",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_father_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ulpia_continuation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_trattoria",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_rosemary_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_hotel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_hotel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_rosemary_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicotera_interruption",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicotera_interruption",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicotera",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_nicotera_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicotera_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_sofa",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicotera_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_sofa",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_rosemary_sofa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dick_rosemary_sofa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_rosemary_sofa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicotera",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_quarrel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_quarrel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_dick_rosemary_quarrel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_rosemary_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_rosemary_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicotera",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dick_rosemary_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_rosemary_quarrel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_leaves",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_excelsior",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rosemary_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_trattoria",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ulpia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

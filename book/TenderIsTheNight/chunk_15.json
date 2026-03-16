@@ -1,0 +1,426 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_maria_wallis",
+      "label": "Maria Wallis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_englishman",
+      "label": "An Englishman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_laura",
+      "label": "Laura",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_gare_saint_lazare",
+      "label": "Gare Saint Lazare",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_salzburg",
+      "label": "Salzburg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gausse_beach",
+      "label": "Gausse's Beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_abe_departure",
+      "label": "Abe's departure from Gare Saint Lazare",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_nicole_meeting",
+      "label": "Abe and Nicole meet at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_encounters_woman",
+      "label": "Nicole encounters a woman at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_mary_arrival",
+      "label": "Rosemary and Mary North arrive at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_arrival",
+      "label": "Dick Diver arrives at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shooting",
+      "label": "Maria Wallis shoots an Englishman at the train platform",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_rosemary_exchange",
+      "label": "Dick and Rosemary exchange glances and recognize their emotions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_phones_laura",
+      "label": "Nicole phones Laura about Maria Wallis",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_group_departure",
+      "label": "The group leaves the station",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_abe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_maria",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_englishman",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_dick",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_nicole",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_incontro",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_stazione",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_abe_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_abe_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_nicole_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_abe_nicole_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_nicole_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_abe_nicole_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_abe_nicole_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_encounters_woman",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_encounters_woman",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_nicole_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_encounters_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_maria_wallis",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_nicole_encounters_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_mary_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_rosemary_mary_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_mary_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_encounters_woman",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_mary_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_mary_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_mary_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shooting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_shooting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shooting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_maria_wallis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shooting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_englishman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_shooting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_exchange",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_rosemary_exchange",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gare_saint_lazare",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_rosemary_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shooting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_rosemary_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dick_rosemary_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_phones_laura",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_nicole_phones_laura",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shooting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_phones_laura",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_laura",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_nicole_phones_laura",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_group_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_phones_laura",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_group_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_gausse_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_salzburg",
+      "target_closed_value": null
+    }
+  ]
+}

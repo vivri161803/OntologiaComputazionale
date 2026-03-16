@@ -1,0 +1,442 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia_grandfather",
+      "label": "Julia's grandfather",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_julia_singing",
+      "label": "Julia singing alone in the summer evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_makeup",
+      "label": "Julia reveals herself with makeup and cosmetics",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intimate_moment",
+      "label": "Winston and Julia make love in the mahogany bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Winston and Julia fall asleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rat_incident",
+      "label": "Julia throws a shoe at a rat coming from the wainscoting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coffee_making",
+      "label": "Julia makes coffee while Winston examines the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paperweight_examination",
+      "label": "Julia and Winston examine the glass paperweight",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_church_discovery",
+      "label": "Julia discovers the engraving depicts St Clement Danes church",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nursery_rhyme_exchange",
+      "label": "Winston and Julia exchange lines from a nursery rhyme about bells",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure_preparation",
+      "label": "Julia prepares to leave and wash off her makeup",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_contemplation",
+      "label": "Winston gazes into the paperweight, contemplating the room as a world",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room above Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_proletarian_quarters",
+      "label": "Proletarian quarters where Julia bought makeup",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_st_clement_danes",
+      "label": "St Clement Danes church",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_paperweight",
+      "label": "Glass paperweight with coral inside",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_engraving",
+      "label": "Steel engraving of St Clement Danes",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_julia_singing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_singing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_singing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_makeup",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_singing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_makeup",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_makeup",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_makeup",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_julia_makeup",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_makeup",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rat_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rat_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rat_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rat_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_rat_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee_making",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rat_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee_making",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coffee_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_coffee_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paperweight_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_coffee_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paperweight_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paperweight_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paperweight_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_paperweight_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_nursery_rhyme_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_church_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nursery_rhyme_exchange",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nursery_rhyme_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nursery_rhyme_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_charrington",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_nursery_rhyme_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nursery_rhyme_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_preparation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_contemplation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_contemplation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_contemplation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_proletarian_quarters",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_engraving",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_st_clement_danes",
+      "target_closed_value": null
+    }
+  ]
+}

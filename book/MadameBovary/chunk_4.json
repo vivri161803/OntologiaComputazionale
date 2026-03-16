@@ -1,0 +1,656 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Mademoiselle Emma / Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Old Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_heloise",
+      "label": "Heloise / Madame Bovary junior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_elder",
+      "label": "Monsieur Bovary the elder",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_farewell",
+      "label": "Charles bids farewell to old Rouault and returns to the room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_whip_search",
+      "label": "Charles searches for his whip and brushes against Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_repeated_visits",
+      "label": "Charles returns to the Bertaux regularly, twice a week",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rouault_recovery",
+      "label": "Old Rouault recovers and walks alone after forty-six days",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_heloise_discovery",
+      "label": "Heloise discovers Charles's attraction to Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_heloise_confrontation",
+      "label": "Heloise confronts Charles about his visits to the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_oath",
+      "label": "Charles swears on the prayer-book to stop visiting the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_notary_theft",
+      "label": "The notary at Ingouville flees with the widow Dubuc's money",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bovary_parents_visit",
+      "label": "Charles's parents visit and accuse Heloise of causing misfortune",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_heloise_death",
+      "label": "Heloise dies after spitting blood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rouault_consolation",
+      "label": "Old Rouault brings Charles money and consolation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_return",
+      "label": "Charles returns to the Bertaux after Heloise's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kitchen_encounter",
+      "label": "Charles finds Emma in the kitchen and they share liqueur",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bedroom_visit",
+      "label": "Emma shows Charles her music-books and bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_obsession",
+      "label": "Charles becomes obsessed with Emma and contemplates marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bertaux",
+      "label": "The Bertaux farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen at the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden at the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_courtyard",
+      "label": "The courtyard at the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ingouville",
+      "label": "Ingouville",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_charles",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_emma",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_heloise",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_rouault",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_whip_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_rouault_recovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_heloise_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_heloise_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_charles_oath",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_notary_theft",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_bovary_parents_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_heloise_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_rouault_consolation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_kitchen_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_bedroom_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_charles_obsession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_bertaux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_courtyard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whip_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_whip_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_whip_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_repeated_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouault_recovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_repeated_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouault_recovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heloise_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_repeated_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heloise_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_heloise_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heloise_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_oath",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_heloise_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notary_theft",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_notary_theft",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ingouville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_parents_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_notary_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_parents_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heloise_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bovary_parents_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_heloise_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouault_consolation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_heloise_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouault_consolation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rouault_consolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kitchen_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bedroom_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kitchen_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bedroom_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_obsession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bedroom_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_whip_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_whip_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_repeated_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rouault_recovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_heloise_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_heloise_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_heloise_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_heloise_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_charles_oath",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bovary_elder",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovary_parents_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bovary_parents_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_heloise",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_heloise_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rouault_consolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_rouault_consolation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kitchen_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_kitchen_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bedroom_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_bedroom_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_obsession",
+      "target_closed_value": null
+    }
+  ]
+}

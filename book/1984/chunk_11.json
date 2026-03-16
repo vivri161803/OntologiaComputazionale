@@ -1,0 +1,255 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_syme",
+      "label": "Syme",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_fiction",
+      "label": "Man from Fiction Department",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_woman",
+      "label": "Young woman (secretary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons",
+      "label": "Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_canteen",
+      "label": "Low-ceilinged canteen, deep underground",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chestnut_tree_cafe",
+      "label": "Chestnut Tree Cafe",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_lunch_queue",
+      "label": "Lunch queue in the canteen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_syme",
+      "label": "Winston meets Syme at the counter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_newspeak",
+      "label": "Syme explains the Eleventh Edition of Newspeak Dictionary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prisoners_hanged",
+      "label": "Prisoners hanged (mentioned as past event)",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duckspeak_explanation",
+      "label": "Syme explains the word DUCKSPEAK",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_syme_speaker",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_winston_listener",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_man_fiction_speaker",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_goldstein_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_queue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_queue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_queue",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_syme",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_syme",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_syme",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_queue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_syme",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_newspeak",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_conversation_newspeak",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_newspeak",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_syme",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_newspeak",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_newspeak",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duckspeak_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_duckspeak_explanation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duckspeak_explanation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_newspeak",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duckspeak_explanation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_duckspeak_explanation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_man_fiction",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_queue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_woman",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lunch_queue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_goldstein",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chestnut_tree_cafe",
+      "target_closed_value": null
+    }
+  ]
+}

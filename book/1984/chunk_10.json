@@ -1,0 +1,290 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bigbrother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_withers",
+      "label": "Comrade Withers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ogilvy",
+      "label": "Comrade Ogilvy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tillotson",
+      "label": "Comrade Tillotson",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_orderofday",
+      "label": "Big Brother's Order for the Day reporting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ffcc_dissolution",
+      "label": "FFCC organization dissolved",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_withers_disgrace",
+      "label": "Withers falls into disgrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rewrite_task",
+      "label": "Winston's task to rewrite the article",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ogilvy_creation",
+      "label": "Winston creates the fictional Comrade Ogilvy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ogilvy_death",
+      "label": "Comrade Ogilvy's heroic death in battle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ogilvy_denunciation",
+      "label": "Ogilvy denounces his uncle to Thought Police",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ogilvy_grenade",
+      "label": "Ogilvy designs hand-grenade adopted by Ministry of Peace",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_times",
+      "label": "The Times newspaper office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cubicle",
+      "label": "Winston's cubicle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_floatingfortresses",
+      "label": "Floating Fortresses",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_indianocean",
+      "label": "Indian Ocean",
+      "node_type": "Location"
+    },
+    {
+      "id": "org_ffcc",
+      "label": "FFCC organization",
+      "node_type": "Character"
+    },
+    {
+      "id": "org_innerparty",
+      "label": "Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "org_thoughtpolice",
+      "label": "Thought Police",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_bigbrother",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_ogilvy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_bigbrother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_orderofday",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_times",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rewrite_task",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rewrite_task",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bigbrother",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_rewrite_task",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_orderofday",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ffcc_dissolution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ffcc_dissolution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_withers_disgrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_withers_disgrace",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rewrite_task",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rewrite_task",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ogilvy_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ogilvy_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ogilvy_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ogilvy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ogilvy_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ogilvy_denunciation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ogilvy_grenade",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ogilvy_grenade",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ogilvy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ogilvy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "char_ogilvy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ogilvy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ogilvy_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_indianocean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cubicle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_indianocean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_withers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_withers_disgrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tillotson",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_rewrite_task",
+      "target_closed_value": null
+    }
+  ]
+}

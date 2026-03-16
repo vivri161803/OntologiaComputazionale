@@ -1,0 +1,415 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_augustine",
+      "label": "Augustine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_golding",
+      "label": "T. F. Golding",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lady_caroline",
+      "label": "Lady Caroline Sibly-Biers",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_villa_diana",
+      "label": "Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "Terrace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nice",
+      "label": "Nice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nicean_bay",
+      "label": "Nicean Bay",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_margin",
+      "label": "Motor yacht Margin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_altercation",
+      "label": "Altercation between Dick and Augustine over wine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_police",
+      "label": "Nicole phones the police",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_augustine_leaves",
+      "label": "Augustine leaves Villa Diana",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_nice",
+      "label": "Dick and Nicole dine in Nice",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_marriage",
+      "label": "Dick and Nicole's conversation about their marriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_margin",
+      "label": "Dick and Nicole visit the Margin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reunion_tommy",
+      "label": "Nicole reunites with Tommy Barban",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_margin",
+      "label": "Dinner on the Margin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_offends_lady",
+      "label": "Dick offends Lady Caroline with his remarks",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_augustine",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_tommy",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_augustine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_altercation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_altercation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_augustine",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_police",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_altercation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_police",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_augustine_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_police",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_augustine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_augustine_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_nice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_augustine_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_nice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_margin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_margin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_visit_margin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nicean_bay",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reunion_tommy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reunion_tommy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reunion_tommy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reunion_tommy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_margin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reunion_tommy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_margin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_golding",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_dinner_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_caroline",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dinner_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_offends_lady",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_offends_lady",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_margin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_offends_lady",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lady_caroline",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_offends_lady",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_villa_diana",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_margin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

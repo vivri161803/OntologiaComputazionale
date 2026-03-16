@@ -1,0 +1,516 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_rouault",
+      "label": "Old Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_servant",
+      "label": "The old servant",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vicaire",
+      "label": "Monsieur le Vicaire",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_old_maid",
+      "label": "The old maid at the convent",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_wedding",
+      "label": "The wedding",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "The married pair's departure from Vassonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_tostes",
+      "label": "Monsieur and Madame Charles's arrival at Tostes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_tour",
+      "label": "Emma's tour of the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_changes",
+      "label": "Emma's changes to the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_departure",
+      "label": "Charles's morning departure on horseback",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_return",
+      "label": "Charles's quick return to see Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_convent_placement",
+      "label": "Emma's placement in the convent at age thirteen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_convent_life",
+      "label": "Emma's life at the convent",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading_novels",
+      "label": "Emma's reading of novels at the convent",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_wedding_venue",
+      "label": "The wedding venue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_vassonville",
+      "label": "Vassonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charles_house",
+      "label": "Charles's house at Tostes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining and sitting room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "Charles's consulting room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "The bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_convent",
+      "label": "The convent",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel",
+      "label": "The chapel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_highroad",
+      "label": "The highroad",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_groom",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_bride",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_father",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_wedding",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_departure",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wedding",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wedding_venue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_wedding",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_rouault",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_vassonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrival_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_tostes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tostes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_tour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_arrival_tostes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_servant",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_house_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_tour",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charles_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_changes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_house_tour",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_changes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_changes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_changes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charles_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_house_changes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_morning_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_morning_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_highroad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_morning_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convent_placement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_convent_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_rouault",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_convent_placement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convent_placement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_convent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convent_life",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_convent_placement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_convent_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_convent_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vicaire",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_convent_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_convent_life",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_convent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_novels",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_convent_life",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading_novels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading_novels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_maid",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_reading_novels",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading_novels",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_convent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_charles_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_tostes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_convent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_highroad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

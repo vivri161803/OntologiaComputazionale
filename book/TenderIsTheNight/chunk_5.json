@@ -1,0 +1,421 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_speers",
+      "label": "Mrs. Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_earl_brady",
+      "label": "Earl Brady",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckisco",
+      "label": "McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_abrams",
+      "label": "Mrs. Abrams",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_topsy",
+      "label": "Topsy",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Nicole's garden at Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tarmes",
+      "label": "Tarmes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_villa_diana",
+      "label": "Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "The terrace at Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mediterranean",
+      "label": "Mediterranean Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_garden_walk",
+      "label": "Nicole's walk through the garden",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_nicole_encounter",
+      "label": "Dick and Nicole's encounter in the garden",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_party_planning",
+      "label": "Dick plans a party and invites guests",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_guests_arrival",
+      "label": "Guests arrive at Villa Diana",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_singing",
+      "label": "Lanier and Topsy sing for the guests",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at the garden table",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_confession",
+      "label": "Rosemary confesses her love to Dick",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_rosemary",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "evt_garden_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_party_planning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_rosemary_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_planning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_planning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_nicole_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_planning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_villa_diana",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_earl_brady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_abrams",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party_planning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_singing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_singing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_singing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_guests_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_singing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_earl_brady",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_singing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rosemary_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_villa_diana",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_villa_diana",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_tarmes",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_mediterranean",
+      "target_closed_value": null
+    }
+  ]
+}

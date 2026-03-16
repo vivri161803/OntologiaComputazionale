@@ -1,0 +1,455 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz Gregorovius",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_englishman_young",
+      "label": "The young Englishman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_englishman_elder",
+      "label": "The elder Englishman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The special girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_tea_dance",
+      "label": "Tea dance in the great hall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_franz_arrival",
+      "label": "Franz arrives at the train station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fondue_dinner",
+      "label": "Fondue dinner in the Swiss tap-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_clinic_proposal",
+      "label": "Franz proposes the clinic partnership",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleigh_ride",
+      "label": "Sleigh ride down the hill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_saanen_dance",
+      "label": "Municipal dance in Saanen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_sleigh",
+      "label": "Return sleigh ride to Gstaad",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_gstaad",
+      "label": "Gstaad",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_great_hall",
+      "label": "The great hall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_train_station",
+      "label": "Holiday station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_swiss_taproom",
+      "label": "Swiss tap-room hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_saanen",
+      "label": "Saanen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "Clinic on the Zugersee",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_franz",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_franz",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_baby",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_franz",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_tea_dance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_great_hall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tea_dance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tea_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tea_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_franz_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_franz_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fondue_dinner",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_franz_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fondue_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_swiss_taproom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fondue_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fondue_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fondue_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fondue_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fondue_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clinic_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fondue_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clinic_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_swiss_taproom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_clinic_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_clinic_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_clinic_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_clinic_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleigh_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_clinic_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleigh_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gstaad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleigh_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleigh_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleigh_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleigh_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleigh_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saanen_dance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleigh_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saanen_dance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_saanen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_saanen_dance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_saanen_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_sleigh",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_saanen_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_sleigh",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gstaad",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_sleigh",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_sleigh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_return_sleigh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_englishman_elder",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_sleigh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_great_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_swiss_taproom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_saanen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_train_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gstaad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    }
+  ]
+}

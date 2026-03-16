@@ -13,9 +13,9 @@ def main():
     print("=== INIZIO PIPELINE DI ESTRAZIONE KNOWLEDGE GRAPH ===")
     
     # 1. Configurazione dei percorsi
-    file_input = "book/txt/A_Vision_Of_Judgment.txt"
-    output_dir = "book/A_Vision_Of_Judgment"
-    file_output_tsv = "book/A_Vision_Of_Judgment.tsv"
+    file_input = "book/txt/TenderIsTheNight.txt"
+    output_dir = "book/TenderIsTheNight"
+    file_output_tsv = "book/TenderIsTheNight/TenderIsTheNight.tsv"
 
 
     # Controllo di sicurezza: verifichiamo che il libro esista

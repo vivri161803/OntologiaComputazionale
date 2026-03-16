@@ -1,0 +1,336 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_old_man_bar",
+      "label": "The old man in the bar",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shop_proprietor",
+      "label": "The shop proprietor",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation_bar",
+      "label": "Winston and the old man discuss life before and after the Revolution",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pavement_incident",
+      "label": "A young gentleman pushes the old man off the pavement on Boat Race night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_leaves_bar",
+      "label": "Winston leaves the bar and walks into the street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovers_junk_shop",
+      "label": "Winston discovers he is standing outside the junk-shop where he bought the diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enters_shop",
+      "label": "Winston enters the junk-shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_finds_glass_coral",
+      "label": "Winston finds and purchases a glass object with embedded coral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visits_upstairs_room",
+      "label": "The proprietor leads Winston to an upstairs room",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bar",
+      "label": "The bar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_street",
+      "label": "A narrow street with dark little shops",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_junk_shop",
+      "label": "The junk-shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_upstairs_room",
+      "label": "The upstairs room in the junk-shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shaftesbury_avenue",
+      "label": "Shaftesbury Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_glass_coral",
+      "label": "A heavy lump of glass with embedded coral from the Indian Ocean",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_diary",
+      "label": "The diary Winston bought",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_questioner",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_informant",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_merchant",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_conversation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_acquisition",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_interior",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_old_man_bar",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_conversation_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation_bar",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_old_man_bar",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_pavement_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pavement_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_pavement_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shaftesbury_avenue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_bar",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pavement_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_leaves_bar",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_leaves_bar",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_leaves_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovers_junk_shop",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winston_leaves_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovers_junk_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovers_junk_shop",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovers_junk_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enters_shop",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovers_junk_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enters_shop",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_junk_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_enters_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shop_proprietor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_enters_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_finds_glass_coral",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enters_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_finds_glass_coral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_finds_glass_coral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_junk_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_finds_glass_coral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shop_proprietor",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_finds_glass_coral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_glass_coral",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_finds_glass_coral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visits_upstairs_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_finds_glass_coral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visits_upstairs_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visits_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shop_proprietor",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visits_upstairs_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_junk_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_upstairs_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

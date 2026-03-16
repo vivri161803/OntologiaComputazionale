@@ -1,0 +1,409 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_katharine",
+      "label": "Katharine",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_first_meeting",
+      "label": "First meeting in the clearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_planning_escape",
+      "label": "Planning the escape route and next meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_departure",
+      "label": "Julia's departure from the clearing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_street_meetings",
+      "label": "Series of clandestine street meetings",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rocket_bomb",
+      "label": "Rocket bomb explosion during street meeting",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_church_tower_meeting",
+      "label": "Meeting in the church tower belfry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_julia_conversation",
+      "label": "Julia's life story and beliefs revealed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_katharine_story",
+      "label": "Winston recounts his marriage to Katharine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chalk_quarry",
+      "label": "Incident at the chalk quarry in Kent",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_clearing",
+      "label": "Clearing in the wood",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market_street",
+      "label": "Street in a poor quarter with open market",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church_tower",
+      "label": "Belfry of a ruinous church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets",
+      "label": "Crowded pavements and side-streets",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_workshop",
+      "label": "Draughty workshop for munition work",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hostel",
+      "label": "Girls' hostel where Julia lives",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kent",
+      "label": "Kent countryside",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chalk_quarry",
+      "label": "Old chalk quarry in Kent",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_julia",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_party",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_first_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_planning_escape",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_planning_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_street_meetings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rocket_bomb",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_street_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_tower_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rocket_bomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_julia_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_church_tower_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_katharine_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_julia_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chalk_quarry",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_katharine_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_escape",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_street_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_street_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rocket_bomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rocket_bomb",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_tower_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_tower_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_julia_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_katharine_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_katharine_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_katharine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_first_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clearing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_street_meetings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_streets",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_tower_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church_tower",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chalk_quarry",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chalk_quarry",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_clearing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_church_tower",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_chalk_quarry",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_hostel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_workshop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rocket_bomb",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_julia_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_katharine_story",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    }
+  ]
+}

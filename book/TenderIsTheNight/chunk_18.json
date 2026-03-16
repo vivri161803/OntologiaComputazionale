@@ -1,0 +1,499 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe (Abraham North)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_freeman",
+      "label": "Freeman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sergeant",
+      "label": "Sergent-de-ville",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_crawshow",
+      "label": "Meestaire Crawshow",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_negro_copenhagen",
+      "label": "Negro from Copenhagen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fernand",
+      "label": "Fernand",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "Nicole awakes to a knock at the salon door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sergeant_visit",
+      "label": "Sergent-de-ville questions Nicole about Abe North",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_robbery",
+      "label": "Abe North is robbed in Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "A Negro is arrested for the robbery",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_abe_registration",
+      "label": "Abe registers at the hotel at six-thirty in the morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crawshow_call",
+      "label": "Meestaire Crawshow calls about Freeman in prison",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shopping",
+      "label": "Nicole and Rosemary shop on the Rue de Rivoli",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Dick receives a garbled telephone call from Abe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "Dick, Nicole, and Rosemary lunch at the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_race_riot",
+      "label": "Abe launches a race riot in Montmartre",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_salon",
+      "label": "The salon of Dick and Nicole's suite",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rue_rivoli",
+      "label": "Rue de Rivoli",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montmartre",
+      "label": "Montmartre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jail",
+      "label": "Jail",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dressmaker",
+      "label": "The dressmaker's",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room of the hotel",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sergeant_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_sergeant_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sergeant_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sergeant_visit",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_sergeant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sergeant_visit",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robbery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_robbery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_robbery",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_robbery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_negro_copenhagen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_registration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_abe_registration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sergeant_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_registration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_abe_registration",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crawshow_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_crawshow_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_abe_registration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crawshow_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crawshow_call",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_crawshow",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crawshow_call",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crawshow_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rue_rivoli",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shopping",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shopping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_race_riot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_race_riot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_montmartre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_race_riot",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_abe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_dick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_salon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rue_rivoli",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_montmartre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "char_rosemary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "char_nicole",
+      "target_closed_value": null
+    }
+  ]
+}

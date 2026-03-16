@@ -1,0 +1,468 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_albert_mckisco",
+      "label": "Albert McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick_diver",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_violet_mckisco",
+      "label": "Violet McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_topsy",
+      "label": "Topsy",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_steamship_pier",
+      "label": "steamship piers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ship",
+      "label": "the ship",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harbor",
+      "label": "the harbor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gibraltar",
+      "label": "Gibraltar",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_naples",
+      "label": "Naples",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rome",
+      "label": "Rome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_quirinal",
+      "label": "Hotel Quirinal",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mediterranean",
+      "label": "Mediterranean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_florence",
+      "label": "Florence",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_boarding_ship",
+      "label": "boarding the ship and departure from the pier",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckisco_voyage",
+      "label": "McKisco traveling on the ship as celebrated cargo",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckisco_meets_diver",
+      "label": "McKisco introducing himself to Dick Diver",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckisco_gibraltar",
+      "label": "McKiscos disembarking at Gibraltar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diver_helps_family",
+      "label": "Dick Diver helping a lost family in Naples",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diver_rome_arrival",
+      "label": "Dick Diver arriving at Hotel Quirinal in Rome",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diver_rosemary_meeting",
+      "label": "Dick Diver meeting Rosemary at the hotel lobby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_film",
+      "label": "Rosemary filming 'The Grandeur that was Rome'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diver_rest",
+      "label": "Dick Diver resting and preparing in his room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diver_collis_meeting",
+      "label": "Dick Diver encountering Collis Clay in the bar",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_duel_mckisco_barban",
+      "label": "McKisco's past duel with Tommy Barban",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_mckisco",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_diver",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_rosemary",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_barban",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_albert_mckisco",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_boarding_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_mckisco_voyage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_mckisco_meets_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_diver_rosemary_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_duel_mckisco_barban",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_diver_helps_family",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_steamship_pier",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ship",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_quirinal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rome",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_albert_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_albert_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_meets_diver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_meets_diver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diver_helps_family",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diver_rome_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diver_rosemary_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_diver_rosemary_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_albert_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_duel_mckisco_barban",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy_barban",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_duel_mckisco_barban",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diver_collis_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_diver_collis_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boarding_ship",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_steamship_pier",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_voyage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_meets_diver",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_gibraltar",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gibraltar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_helps_family",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_naples",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rome_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_quirinal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rosemary_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_quirinal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_quirinal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_collis_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_quirinal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boarding_ship",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_meets_diver",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_voyage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckisco_gibraltar",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_meets_diver",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_helps_family",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckisco_gibraltar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rome_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diver_helps_family",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rosemary_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diver_rome_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_rest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diver_rosemary_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diver_collis_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diver_rest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_film",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rome",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_film",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_violet_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckisco_voyage",
+      "target_closed_value": null
+    }
+  ]
+}

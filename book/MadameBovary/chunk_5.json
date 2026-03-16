@@ -1,0 +1,450 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Old Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary_senior",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_monsieur_bovary_senior",
+      "label": "Monsieur Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_fishmonger",
+      "label": "Fishmonger cousin",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_proposal",
+      "label": "Charles proposes marriage to Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_acceptance",
+      "label": "Old Rouault signals acceptance with the shutter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_engagement",
+      "label": "Charles and Emma become engaged",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wedding_ceremony",
+      "label": "Wedding ceremony at the church",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wedding_feast",
+      "label": "Wedding feast under the cart-shed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fishmonger_prank",
+      "label": "Fishmonger attempts water prank at keyhole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wedding_night",
+      "label": "Wedding night at the Bertaux",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bertaux",
+      "label": "The Bertaux farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_road",
+      "label": "The road near the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mairie",
+      "label": "The mairie",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "The church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cart_shed",
+      "label": "The cart-shed",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen at the Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fields",
+      "label": "The fields",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard at the Bertaux",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_suitor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_bride",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_father",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "evt_proposal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_proposal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_road",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acceptance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_acceptance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_acceptance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_acceptance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_engagement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_engagement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_acceptance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_engagement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_ceremony",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_wedding_ceremony",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_ceremony",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_monsieur_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_feast",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_wedding_feast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wedding_ceremony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_feast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cart_shed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding_feast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wedding_feast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wedding_feast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fishmonger_prank",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_fishmonger_prank",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wedding_feast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fishmonger_prank",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fishmonger",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_fishmonger_prank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fishmonger_prank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_wedding_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fishmonger_prank",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_night",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bertaux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_wedding_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bertaux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_road",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cart_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_fields",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

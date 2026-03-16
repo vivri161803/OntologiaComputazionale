@@ -1,0 +1,394 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tillotson",
+      "label": "Tillotson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sandy_woman",
+      "label": "Little woman with sandy hair",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ampleforth",
+      "label": "Ampleforth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_work_start",
+      "label": "Winston starts his day's work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_receive_messages",
+      "label": "Winston receives four messages from pneumatic tube",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examine_messages",
+      "label": "Winston examines the four slips of paper",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_call_times",
+      "label": "Winston calls for appropriate issues of The Times",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rectify_speech",
+      "label": "Winston rectifies Big Brother's speech about South Indian front",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rectify_forecasts",
+      "label": "Winston rectifies output forecasts for fourth quarter 1983",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rectify_chocolate",
+      "label": "Winston rectifies Ministry of Plenty's chocolate ration promise",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_submit_corrections",
+      "label": "Winston submits speakwritten corrections to pneumatic tube",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_destroy_originals",
+      "label": "Winston destroys original messages in memory hole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_two_minutes_hate",
+      "label": "Two Minutes Hate occurs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_task",
+      "label": "Winston begins work on final intricate message about Big Brother's Order for the Day",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cubicle",
+      "label": "Winston's cubicle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_records_hall",
+      "label": "Long windowless hall with double row of cubicles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_records_dept",
+      "label": "Records Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_furnaces",
+      "label": "Enormous furnaces hidden in building recesses",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_winston_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_big_brother_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_work_start",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_receive_messages",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_work_start",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examine_messages",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_receive_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_call_times",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examine_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_speech",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_call_times",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_forecasts",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rectify_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_chocolate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rectify_forecasts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_submit_corrections",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rectify_chocolate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_destroy_originals",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_submit_corrections",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_destroy_originals",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_task",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_work_start",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_receive_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examine_messages",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_call_times",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rectify_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rectify_forecasts",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rectify_chocolate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_submit_corrections",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_destroy_originals",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_task",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rectify_speech",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_work_start",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_receive_messages",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examine_messages",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_call_times",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_speech",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_forecasts",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rectify_chocolate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_submit_corrections",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_destroy_originals",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_task",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cubicle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_records_hall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_records_dept",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tillotson",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_work_start",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sandy_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_work_start",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ampleforth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_work_start",
+      "target_closed_value": null
+    }
+  ]
+}

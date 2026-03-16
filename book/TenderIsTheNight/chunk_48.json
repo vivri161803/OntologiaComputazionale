@@ -1,0 +1,269 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary",
+      "label": "Mary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hosain",
+      "label": "Hosain",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_bathwater_interrogation",
+      "label": "Interrogation about dirty bathwater",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conflict_escalation",
+      "label": "Conflict escalation between Dick and Mary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Departure from the house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_reconciliation",
+      "label": "Reconciliation on the train",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "Lanier's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "The house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_train",
+      "label": "The train",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_lanier",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_mary",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_nicole",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_bathwater_interrogation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bathwater_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bathwater_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_bathwater_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bathwater_interrogation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bathwater_interrogation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_conflict_escalation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_bathwater_interrogation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conflict_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conflict_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_conflict_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_conflict_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conflict_escalation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_conflict_escalation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_reconciliation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_train_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_train_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_reconciliation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_train",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

@@ -1,0 +1,402 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_richard_diver",
+      "label": "Doctor Richard Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elsie_speers",
+      "label": "Mrs. Elsie Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bartholomew_tailor",
+      "label": "Bartholomew Tailor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mcbeth",
+      "label": "Mr. McBeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckisco",
+      "label": "Mrs. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_meeting_cafe",
+      "label": "Meeting at Café des Alliées",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_departure",
+      "label": "Rosemary's departure from the Riviera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_journey",
+      "label": "Dick and Nicole's train journey to the Riviera",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_breakdown_tarmes",
+      "label": "Nicole's breakdown at Tarmes dinner",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_collapse_paris",
+      "label": "Nicole's collapse in Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_cannes_encounter",
+      "label": "Dick's encounter in Cannes with Mrs. Speers and Bartholomew Tailor",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cafe_allies",
+      "label": "Café des Alliées",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_villa_diana",
+      "label": "Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "The Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden at Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tarmes",
+      "label": "Tarmes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_work_room",
+      "label": "Dick's work-room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento_stato",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castello",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_meeting_cafe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cafe_allies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_cafe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elsie_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_rosemary_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_cafe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_rosemary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_riviera",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_collapse_paris",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_breakdown_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_breakdown_tarmes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_nicole_breakdown_tarmes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_breakdown_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_nicole_breakdown_tarmes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_collapse_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_nicole_collapse_paris",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_collapse_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_nicole_collapse_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_cannes_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_cannes_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_cannes_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cannes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_richard_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_cannes_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elsie_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_cannes_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bartholomew_tailor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_cannes_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cafe_allies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_villa_diana",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_work_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston Smith",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_instructress",
+      "label": "The instructress",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_physical_exercise",
+      "label": "Physical exercise session with the instructress",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_touches_toes",
+      "label": "Winston touches his toes with knees unbent",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_exercise_room",
+      "label": "The exercise room with telescreen",
+      "node_type": "Location"
+    },
+    {
+      "id": "ref_malabar_front",
+      "label": "The Malabar front",
+      "node_type": "Location"
+    },
+    {
+      "id": "ref_floating_fortresses",
+      "label": "The Floating Fortresses",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_instructress",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_instructress",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_physical_exercise",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_winston_touches_toes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_physical_exercise",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_exercise_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_touches_toes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_exercise_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_touches_toes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_physical_exercise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_physical_exercise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_instructress",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_physical_exercise",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_touches_toes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_exercise_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

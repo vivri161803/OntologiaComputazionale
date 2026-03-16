@@ -1,0 +1,318 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nick",
+      "label": "Nick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wolfsheim",
+      "label": "Wolfsheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_walter",
+      "label": "Walter",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_accusation",
+      "label": "Tom accuses Gatsby of illegal activities and a presumptuous flirtation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_denial",
+      "label": "Gatsby denies everything and defends his name",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_withdrawal",
+      "label": "Daisy draws further into herself and loses her courage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure",
+      "label": "Daisy and Gatsby leave in Gatsby's car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_birthday",
+      "label": "Nick realizes it is his thirtieth birthday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drive_home",
+      "label": "Nick, Tom, and Jordan drive toward Long Island in the coupé",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hotel_room",
+      "label": "The hotel room where the confrontation takes place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_long_island",
+      "label": "Long Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dark_bridge",
+      "label": "The dark bridge",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_tom",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_gatsby",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_daisy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_tom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "evt_gatsby_denial",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_gatsby_denial",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_denial",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_denial",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_withdrawal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_daisy_withdrawal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_denial",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_withdrawal",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_withdrawal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "char_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_birthday",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_nick_birthday",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_birthday",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_birthday",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_long_island",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_nick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_tom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_long_island",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_dark_bridge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "char_daisy",
+      "target_closed_value": null
+    }
+  ]
+}

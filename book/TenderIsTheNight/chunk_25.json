@@ -1,0 +1,374 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_senora",
+      "label": "Señora",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dohmler",
+      "label": "Professor Dohmler",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_veranda",
+      "label": "veranda of the central building",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_path",
+      "label": "path in the grounds",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cache",
+      "label": "cache behind a low wall",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_restaurant",
+      "label": "restaurant in Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dohmler_office",
+      "label": "Professor Dohmler's office",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_first_meeting",
+      "label": "Nicole emerges from the building and meets Dick on the veranda",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_together",
+      "label": "Dick and Nicole walk down the path together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phonograph_night",
+      "label": "Dick and Nicole listen to phonograph records behind the low wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_luncheon",
+      "label": "Dick and Nicole have luncheon in Zurich",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_work",
+      "label": "Dick re-establishes himself in Zurich to work on his book",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_franz_dick_conversation",
+      "label": "Dick and Franz discuss Nicole and Dick's work",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dohmler_meeting",
+      "label": "Dick, Franz, and Professor Dohmler meet to discuss Nicole's situation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_confession",
+      "label": "Dick confesses to being half in love with Nicole",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_nicole",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_franz",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_dohmler",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_first_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_first_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_veranda",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_veranda",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_walk_together",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_first_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_together",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_path",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walk_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_walk_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_path",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_phonograph_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_together",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phonograph_night",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cache",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phonograph_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_phonograph_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cache",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phonograph_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_restaurant",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_dick_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_zurich",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_dick_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_franz_dick_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_franz_dick_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dohmler_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_franz_dick_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dohmler_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dohmler_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dohmler_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dohmler_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dohmler_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dohmler",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_dohmler_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_dohmler_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_dick_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dohmler_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Jay Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wolfsheim",
+      "label": "Meyer Wolfsheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy Fay Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosy",
+      "label": "Rosy Rosenthal",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_katspaugh",
+      "label": "Katspaugh",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lieutenant",
+      "label": "A young lieutenant",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "Lunch at the restaurant on Forty-second Street",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosy_death",
+      "label": "The shooting of Rosy Rosenthal at the old Metropole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_leaves",
+      "label": "Gatsby leaves the table abruptly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_meeting_tom",
+      "label": "Nick encounters Tom Buchanan at the restaurant",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_meeting",
+      "label": "Jordan meets Daisy in Louisville in 1917",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_engagement",
+      "label": "Daisy becomes engaged to a man from New Orleans",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_marriage",
+      "label": "Daisy marries Tom Buchanan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wedding_night",
+      "label": "Daisy's emotional breakdown on her wedding night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_accident",
+      "label": "Tom's car accident on the Ventura road",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_daisy_daughter",
+      "label": "Daisy gives birth to her daughter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_france_trip",
+      "label": "Daisy and Tom travel to France",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chicago_life",
+      "label": "Daisy and Tom settle in Chicago",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_recognition",
+      "label": "Jordan recognizes Gatsby as the officer from 1917",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_restaurant",
+      "label": "The restaurant on Forty-second Street",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_metropole",
+      "label": "The old Metropole",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_louisville",
+      "label": "Louisville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_camp_taylor",
+      "label": "Camp Taylor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_long_island",
+      "label": "Long Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_new_orleans",
+      "label": "New Orleans",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chicago",
+      "label": "Chicago",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_santa_barbara",
+      "label": "Santa Barbara",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_france",
+      "label": "France",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_plaza",
+      "label": "The Plaza Hotel tea-garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_central_park",
+      "label": "Central Park",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donor",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_violence",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_street",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salon",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_wolfsheim",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_rosy_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_daisy_marriage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_wedding_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_gatsby_recognition",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_france_trip",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_restaurant",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_metropole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_louisville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_central_park",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wolfsheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rosy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wolfsheim",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosy_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_tom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_tom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meeting_tom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lieutenant",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wedding_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_daisy_daughter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_france_trip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_france_trip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chicago_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chicago_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_restaurant",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosy_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_metropole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_louisville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_marriage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_accident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_santa_barbara",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_france_trip",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_france",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chicago_life",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chicago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_recognition",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_plaza",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_engagement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_marriage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_engagement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wedding_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_accident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wedding_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_daisy_daughter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_accident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_france_trip",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_daisy_daughter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chicago_life",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_france_trip",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_recognition",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chicago_life",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_recognition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_tom",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_daisy_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_CONIUGE_FAMILIARE",
+      "target_open_id": "evt_daisy_marriage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_daisy_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_gatsby_recognition",
+      "target_closed_value": null
+    }
+  ]
+}

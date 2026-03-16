@@ -1,0 +1,479 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_canivet",
+      "label": "Monsieur Canivet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lariviere",
+      "label": "Doctor Lariviere",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Monsieur Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_letter_writing",
+      "label": "Emma writes a letter and seals it",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poisoning",
+      "label": "Emma poisons herself with arsenic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_symptoms_begin",
+      "label": "Emma begins experiencing symptoms of poisoning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_vomiting",
+      "label": "Emma vomits and shows signs of severe illness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_opened",
+      "label": "Charles opens and reads Emma's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_news_spreads",
+      "label": "News of poisoning spreads through the village",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_doctors_summoned",
+      "label": "Charles summons Doctors Canivet and Lariviere",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_canivet_treatment",
+      "label": "Doctor Canivet administers an emetic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lariviere_arrival",
+      "label": "Doctor Lariviere arrives at Emma's bedside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_berthe_visit",
+      "label": "Berthe is brought to see her mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lariviere_departure",
+      "label": "Doctor Lariviere departs and declares nothing more can be done",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakfast",
+      "label": "Homais hosts Doctor Lariviere for breakfast",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bournisien_arrival",
+      "label": "Monsieur Bournisien arrives with holy oil",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_writing_table",
+      "label": "Writing table",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_village",
+      "label": "The village",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "The market place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "Lion d'Or inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_homais_shop",
+      "label": "Homais's chemist shop",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_charles",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_lariviere",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrificio",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_poisoning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_symptoms_begin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_vomiting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_lariviere_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_market",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_homais_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_poisoning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_symptoms_begin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_vomiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_poisoning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_doctors_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_news_spreads",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_news_spreads",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_canivet_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lariviere",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lariviere_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_berthe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bournisien_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_writing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_writing_table",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poisoning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_symptoms_begin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vomiting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_opened",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_spreads",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_village",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canivet_treatment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lariviere_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_homais_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bournisien_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poisoning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_symptoms_begin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poisoning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_vomiting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_symptoms_begin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_opened",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vomiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_spreads",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_opened",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_doctors_summoned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_news_spreads",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_canivet_treatment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_doctors_summoned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_canivet_treatment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lariviere_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_berthe_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lariviere_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lariviere_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakfast",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lariviere_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bournisien_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakfast",
+      "target_closed_value": null
+    }
+  ]
+}

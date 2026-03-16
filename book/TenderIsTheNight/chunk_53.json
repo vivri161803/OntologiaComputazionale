@@ -1,0 +1,544 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary Hoyt",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_children",
+      "label": "The children",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_supper",
+      "label": "Tranquil supper with Dick drinking beer and playing music",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fireworks",
+      "label": "Watching fireworks from the Moorish roof",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_departure",
+      "label": "Dick takes the small car and goes to Provence alone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tommy_arrival",
+      "label": "Tommy Barban arrives after receiving Nicole's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_preparation",
+      "label": "Nicole bathes, anoints herself, and prepares her appearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garden_meeting",
+      "label": "Nicole greets Tommy in the garden and they walk toward the market umbrella",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_luncheon",
+      "label": "Nicole and Tommy have luncheon together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss_garden",
+      "label": "Tommy and Nicole kiss in the garden shade",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_drive_nice",
+      "label": "Nicole and Tommy drive toward Nice",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hotel_arrival",
+      "label": "Tommy and Nicole arrive at a small shore hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intimacy",
+      "label": "Nicole and Tommy become intimate in the hotel room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_noise_investigation",
+      "label": "Tommy investigates the noise from below the balcony",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_moorish_roof",
+      "label": "The Moorish roof",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shore",
+      "label": "The shore with casinos",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_provence",
+      "label": "Provence",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monte_carlo",
+      "label": "Monte Carlo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nice",
+      "label": "Nice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corniche",
+      "label": "The Corniche",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_shore_hotel",
+      "label": "Small shore hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_room",
+      "label": "Mediterranean hotel room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_balcony",
+      "label": "Hotel balcony",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_tommy",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dick",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_tommy",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_supper",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_moorish_roof",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fireworks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fireworks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_moorish_roof",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fireworks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_provence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tommy_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_tommy_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tommy_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_monte_carlo",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tommy_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_garden_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_luncheon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_kiss_garden",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_luncheon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss_garden",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_nice",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drive_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_drive_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_drive_nice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_drive_nice",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_drive_nice",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_shore_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimacy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hotel_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimacy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimacy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimacy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_intimacy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_noise_investigation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimacy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_noise_investigation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_noise_investigation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_balcony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_moorish_roof",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_shore_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_nice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_clerk",
+      "label": "The clerk",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lagardy",
+      "label": "Lagardy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cathedral",
+      "label": "Cathedral",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "The inn (Croix-Rouge)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room at the inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_luxembourg",
+      "label": "Luxembourg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_theatre",
+      "label": "Theatre",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_theatre_discussion",
+      "label": "Discussion about the theatre performance",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_parting",
+      "label": "Parting at Saint-Herbland Passage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_studies",
+      "label": "Leon studying law in Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_dancing",
+      "label": "Leon attending dancing-rooms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_return",
+      "label": "Leon returning to the provinces after three years",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_follows",
+      "label": "Leon following the Bovarys to the inn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_visits_room",
+      "label": "Leon visiting Emma's room at the inn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Intimate conversation between Leon and Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reminiscence",
+      "label": "Recalling past memories together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confession",
+      "label": "Leon confessing his past love",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_seduction",
+      "label": "Moment of seduction and physical closeness",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_departure_hint",
+      "label": "Emma hinting at her departure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cathedral_meeting",
+      "label": "Arrangement to meet at the cathedral tomorrow",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss",
+      "label": "Leon kissing Emma's neck",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beloved",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_theatre_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_leon_studies",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_cathedral_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_cathedral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_SOGLIA"
+    },
+    {
+      "source_id": "loc_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "evt_theatre_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_parting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_studies",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_dancing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_follows",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_visits_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reminiscence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cathedral_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cathedral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_follows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_visits_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reminiscence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leon_follows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leon_visits_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reminiscence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clerk",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_clerk",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_studies",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_dancing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_studies",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_follows",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_parting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_visits_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_follows",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_visits_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reminiscence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reminiscence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_seduction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_departure_hint",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cathedral_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_departure_hint",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_seduction",
+      "target_closed_value": null
+    }
+  ]
+}

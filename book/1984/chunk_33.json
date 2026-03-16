@@ -1,0 +1,415 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_winston_mother",
+      "label": "Winston's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_winston_sister",
+      "label": "Winston's sister",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_winston_father",
+      "label": "Winston's father",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jewish_woman",
+      "label": "Jewish woman from the news film",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_small_boy",
+      "label": "Small boy in the news film",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_refugee_woman",
+      "label": "Refugee woman in the boat",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dream",
+      "label": "Winston's luminous dream about his whole life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_father_disappearance",
+      "label": "Winston's father disappears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chocolate_ration",
+      "label": "Chocolate ration is issued",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chocolate_theft",
+      "label": "Winston snatches chocolate from his sister",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_disappearance",
+      "label": "Winston's mother and sister disappear",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_julia",
+      "label": "Winston and Julia discuss their fate and the Party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_news_film",
+      "label": "Jewish woman shelters boy from bullets before helicopter attack",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dream_two_months_ago",
+      "label": "Dream of mother drowning in sunken ship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_severed_hand",
+      "label": "Winston sees severed hand on pavement",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Bedroom where Winston and Julia wake up",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_childhood_room",
+      "label": "Dark, close-smelling room where Winston lived as a child",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tube_stations",
+      "label": "Tube stations for sheltering from air-raids",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_streets",
+      "label": "Streets where Winston scrounged for food",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_glass_paperweight",
+      "label": "Glass paperweight from the dream",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sunken_ship",
+      "label": "Sunken ship from the dream",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pavement",
+      "label": "Pavement where severed hand was seen",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_dream",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_glass_paperweight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston_mother",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jewish_woman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_news_film",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_small_boy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_news_film",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_news_film",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_father_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_winston_father",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_father_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_father_disappearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chocolate_ration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chocolate_ration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_chocolate_ration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chocolate_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chocolate_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston_sister",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_chocolate_theft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chocolate_theft",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_chocolate_theft",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_disappearance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_winston_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston_sister",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_disappearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dream_two_months_ago",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dream_two_months_ago",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sunken_ship",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston_mother",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dream_two_months_ago",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation_julia",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_conversation_julia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_severed_hand",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_severed_hand",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pavement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_severed_hand",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_childhood_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_streets",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_tube_stations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_winston_mother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    }
+  ]
+}

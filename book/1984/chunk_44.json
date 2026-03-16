@@ -1,0 +1,529 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "The woman in the yard",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proles",
+      "label": "The proles",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_waking",
+      "label": "Winston wakes and finds Julia asleep",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading",
+      "label": "Winston reads and reflects on THE BOOK",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleep",
+      "label": "Winston and Julia fall asleep together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waking2",
+      "label": "Winston wakes at twenty-thirty",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_song",
+      "label": "The woman sings in the yard",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coffee",
+      "label": "Julia and Winston prepare coffee",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_window",
+      "label": "Winston and Julia gaze at the woman from the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reflection",
+      "label": "Winston reflects on the proles and the future",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_thrush",
+      "label": "Winston and Julia discuss the thrush from the wood",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest",
+      "label": "The Thought Police arrest Winston and Julia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_telescreen",
+      "label": "The telescreen is revealed behind the picture",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_violence",
+      "label": "The Thought Police beat Julia and remove her",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charrington_reveal",
+      "label": "Mr Charrington is revealed as a member of the Thought Police",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room above the shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yard",
+      "label": "The yard below",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wood",
+      "label": "The edge of the wood",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_book",
+      "label": "THE BOOK (Goldstein's book)",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_paperweight",
+      "label": "The glass paperweight",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_false_hero",
+      "label": "FALSO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleep",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waking2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleep",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waking2",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_song",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_song",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waking2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_song",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yard",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_song",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_coffee",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_coffee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thrush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_thrush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrush",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_thrush",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telescreen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_thrush",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_telescreen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_violence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charrington_reveal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charrington_reveal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charrington_reveal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_violence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charrington_reveal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charrington_reveal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_charrington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "FALSO_EROE"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yard",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

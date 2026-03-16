@@ -1,0 +1,498 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma (Madame Bovary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet (tax-collector)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lefrancois",
+      "label": "Madame Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guillaumin",
+      "label": "Monsieur Guillaumin (notary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hivert",
+      "label": "Hivert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon_mother",
+      "label": "Leon's mother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_charles_request",
+      "label": "Charles asks Leon to inquire about daguerreotypes price at Rouen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_depression",
+      "label": "Leon's growing depression and weariness with Yonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_paris_dream",
+      "label": "Leon fantasizes about moving to Paris and leading an artist's life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_consent",
+      "label": "Leon's mother consents to his move to Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_preparations",
+      "label": "Leon makes extensive preparations for departure over a month",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_farewells",
+      "label": "Leon bids farewell to Yonville inhabitants",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_emma_farewell",
+      "label": "Leon's final farewell with Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_departure",
+      "label": "Leon departs for Rouen in the notary's carriage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_grief",
+      "label": "Emma falls into deep melancholy and despair after Leon's departure",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_purchases",
+      "label": "Emma buys luxury items and changes her appearance",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bovary_house",
+      "label": "Bovary's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market_place",
+      "label": "Market-place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "The river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_tostes",
+      "label": "Tostes",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_subject_leon",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent_yonville",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_homais",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper_mother",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_leon_depression",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_leon_paris_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_preparations",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_leon_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_purchases",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bovary_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_charles_request",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_depression",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_paris_dream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_depression",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_consent",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_paris_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_preparations",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_consent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_farewells",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_emma_farewell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_farewells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_emma_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_purchases",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_emma_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_grief",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_charles_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_depression",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_paris_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon_mother",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_mother_consent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hivert",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_preparations",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_farewells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_farewells",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_emma_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_leon_emma_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leon_emma_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leon_emma_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leon_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_leon_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_purchases",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    }
+  ]
+}

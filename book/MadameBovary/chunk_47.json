@@ -1,0 +1,588 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Old Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_theodore",
+      "label": "Theodore",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_senior",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_blind_man",
+      "label": "The blind man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vaufrylard",
+      "label": "Vaufrylard",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_funeral",
+      "label": "Emma's funeral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_coffin_descent",
+      "label": "Coffin descending into grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_water_sprinkling",
+      "label": "Holy water sprinkling ceremony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_grief",
+      "label": "Charles crying at grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rouault_departure",
+      "label": "Rouault's departure from Yonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_undressing",
+      "label": "Charles undressing at home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_family_conversation",
+      "label": "Charles and mother's evening conversation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_justin_weeping",
+      "label": "Justin weeping at grave",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_berthe_asking",
+      "label": "Berthe asking for her mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_money_troubles",
+      "label": "Charles's financial troubles begin",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_felicite_departure",
+      "label": "Felicite running away with Theodore",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_discovery",
+      "label": "Charles discovering Rodolphe's letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_mourning",
+      "label": "Charles's prolonged mourning and obsession",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_blind_man_confinement",
+      "label": "Blind man's confinement in asylum",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_journalism",
+      "label": "Homais's journalism and writing activities",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tomb_design",
+      "label": "Design and construction of Emma's tomb",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_church",
+      "label": "Charles attending church in evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_grave",
+      "label": "Emma's grave",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bertaux",
+      "label": "Bertaux",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charles_home",
+      "label": "Charles's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_attic",
+      "label": "The attic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bois_guillaume",
+      "label": "Bois-Guillaume hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_deceased",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_mourner",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_priest",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_ritual",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sorrow",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_coffin_descent",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_water_sprinkling",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_coffin_descent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_water_sprinkling",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rouault_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rouault_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_funeral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_undressing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rouault_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_family_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_undressing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_weeping",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_family_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_justin_weeping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_asking",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_justin_weeping",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_berthe_asking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_money_troubles",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_berthe_asking",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_money_troubles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_felicite_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_money_troubles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_felicite_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_theodore",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_felicite_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_felicite_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_letter_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_mourning",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_mourning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blind_man_confinement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_mourning",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blind_man_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_blind_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_blind_man_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_journalism",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blind_man_confinement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_journalism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tomb_design",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_journalism",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tomb_design",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_tomb_design",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vaufrylard",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_tomb_design",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_church",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tomb_design",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_grave",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_charles_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_funeral",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grave",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_mourning",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_church",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_coffin_descent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_letter_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_charles_mourning",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_money_troubles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    }
+  ]
+}

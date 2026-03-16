@@ -1,0 +1,431 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe",
+      "label": "Abe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mary_north",
+      "label": "Mary North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_major_hengest",
+      "label": "Major Hengest",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_horsa",
+      "label": "Mr. Horsa",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_scandinavian_heir",
+      "label": "heir to a Scandinavian throne",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_novelist",
+      "label": "novelist just back from Russia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_horseprotection",
+      "label": "George T. Horseprotection",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doll_voice_manufacturer",
+      "label": "manufacturer of dolls' voices from Newark",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_party_night",
+      "label": "the party that night in Paris",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dancing",
+      "label": "Rosemary and Dick dancing together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intimate_moment",
+      "label": "Rosemary and Dick alone in early morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ritz_lobby",
+      "label": "group at the Ritz lobby with General Pershing hoax",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_carrot_wagon",
+      "label": "riding in the market wagon with carrots",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Rosemary returning home at dawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ritz",
+      "label": "the Ritz",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_halles",
+      "label": "the Halles",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_champs_elysees",
+      "label": "Champs Élysées",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_saint_sulpice",
+      "label": "Saint-Sulpice",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "the hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_shah_car",
+      "label": "the car of the Shah of Persia",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_rosemary",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_dick",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_party_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_party_night",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_paris",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_major_hengest",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_horsa",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_scandinavian_heir",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_novelist",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ritz_lobby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_ritz_lobby",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ritz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ritz_lobby",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ritz_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ritz_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ritz_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carrot_wagon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_carrot_wagon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_halles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carrot_wagon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ritz_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mary_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_horseprotection",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doll_voice_manufacturer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_carrot_wagon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_paris",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_ritz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_halles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    }
+  ]
+}

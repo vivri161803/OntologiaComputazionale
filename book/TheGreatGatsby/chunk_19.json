@@ -1,0 +1,330 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_jordan",
+      "label": "Jordan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wilson",
+      "label": "Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan_baker",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_eckleburg",
+      "label": "Doctor T. J. Eckleburg",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_garage",
+      "label": "Wilson's garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ashheaps",
+      "label": "The ashheaps",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_window",
+      "label": "The window over the garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_stop",
+      "label": "The car stops at Wilson's garage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gas_request",
+      "label": "Tom requests gas from Wilson",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_discussion",
+      "label": "Tom and Wilson discuss the car sale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_revelation",
+      "label": "Wilson reveals he discovered Myrtle's secret life",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_observation",
+      "label": "Myrtle observes the car from the window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jealousy",
+      "label": "Myrtle experiences jealous terror seeing Jordan Baker",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_yellow_car",
+      "label": "The yellow car",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_tom",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_wilson",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_tom",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_wilson",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_stop",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gas_request",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_stop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gas_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gas_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gas_request",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gas_request",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_yellow_car",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_revelation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wilson_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_revelation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_wilson_revelation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_observation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_revelation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_myrtle_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_myrtle_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jealousy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jealousy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jealousy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jealousy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_jealousy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_garage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_window",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_car_discussion",
+      "target_closed_value": null
+    }
+  ]
+}

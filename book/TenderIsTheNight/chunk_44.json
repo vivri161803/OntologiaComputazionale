@@ -1,0 +1,500 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby_warren",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman_artist",
+      "label": "scabbed anonymous woman-artist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_senor_pardo",
+      "label": "Señor Pardo y Cuidad Real",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_francisco",
+      "label": "Francisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_royal_dumphry",
+      "label": "Royal Dumphry",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_devereux_warren",
+      "label": "Devereux Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_dangeu",
+      "label": "Doctor Dangeu",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_herbrugge",
+      "label": "Herbrugge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kaethe",
+      "label": "Kaethe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy_barban",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_rome_catastrophe",
+      "label": "catastrophe in Rome",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_artist_death",
+      "label": "death of the woman-artist",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_franz_wedge",
+      "label": "Franz inserting the wedge in their friendship",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_interview_francisco",
+      "label": "Dick's interview with Francisco",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dumphry_encounter",
+      "label": "encounter with Royal Dumphry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warren_dying",
+      "label": "Devereux Warren dying in Lausanne",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_visit_warren",
+      "label": "Dick visiting Devereux Warren",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kaethe_nicole_encounter",
+      "label": "Kaethe encountering Nicole on the mountain",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rome",
+      "label": "Rome",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "clinic on the Zugersee",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lausanne",
+      "label": "Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_trois_mondes",
+      "label": "Hôtel de Trois Mondes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_terrace",
+      "label": "terrace",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mountain",
+      "label": "mountain with wild-flowers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dick_garden",
+      "label": "Dick's garden",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_rome_catastrophe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_woman_artist_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_rome_catastrophe",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_franz_wedge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rome_catastrophe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_artist_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_franz_wedge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_interview_francisco",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_artist_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dumphry_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_interview_francisco",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warren_dying",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dumphry_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_visit_warren",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warren_dying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kaethe_nicole_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_visit_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rome_catastrophe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_rome_catastrophe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rome_catastrophe",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_artist_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman_artist",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_woman_artist_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_franz_wedge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_franz_wedge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_interview_francisco",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_francisco",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_interview_francisco",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_senor_pardo",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_dick_interview_francisco",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dumphry_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_royal_dumphry",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dumphry_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_francisco",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_dumphry_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_devereux_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_warren_dying",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_devereux_warren",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_warren_dying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doctor_dangeu",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_warren_dying",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_visit_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_devereux_warren",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_visit_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kaethe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kaethe_nicole_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kaethe_nicole_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rome_catastrophe",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rome",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_interview_francisco",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_trois_mondes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dumphry_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_terrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warren_dying",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lausanne",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_visit_warren",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_trois_mondes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kaethe_nicole_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mountain",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rome",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_trois_mondes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_terrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_mountain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_dick_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_rome",
+      "target_closed_value": null
+    }
+  ]
+}

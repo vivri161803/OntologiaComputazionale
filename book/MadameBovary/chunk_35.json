@@ -1,0 +1,641 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hivert",
+      "label": "Hivert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_homais",
+      "label": "Madame Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_athalie",
+      "label": "Athalie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_senior",
+      "label": "Monsieur Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hippolyte",
+      "label": "Hippolyte",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_carriage_journey",
+      "label": "Emma's journey in the closed carriage through the countryside",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrival_beauvoisine",
+      "label": "Woman exits carriage in Beauvoisine Quarter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_yonville",
+      "label": "Emma returns to Yonville by diligence",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jam_making",
+      "label": "Jam-making at the chemist's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_justin_capharnaum",
+      "label": "Justin takes key to Capharnaum and fetches pan",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arsenic_discovery",
+      "label": "Homais discovers Justin touched arsenic bottle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_book_discovery",
+      "label": "Homais discovers book 'Conjugal Love' in Justin's pocket",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_death_announcement",
+      "label": "Homais announces Monsieur Bovary senior's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bovary_senior_death",
+      "label": "Monsieur Bovary senior dies from apoplexy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_scene",
+      "label": "Emma and Charles have dinner together",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hippolyte_luggage",
+      "label": "Hippolyte brings Emma's luggage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mourning_discussion",
+      "label": "Charles and mother discuss mourning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_visit",
+      "label": "Monsieur Lheureux visits to discuss bill",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "The harbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_open_country",
+      "label": "Open country",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beauvoisine",
+      "label": "Beauvoisine Quarter",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "The inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "Chemist's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_capharnaum",
+      "label": "Capharnaum (laboratory room)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bovary_house",
+      "label": "Bovary house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_waterside",
+      "label": "Waterside under the arbour",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_emma",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_charles",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_homais",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_justin",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_homais",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_charles",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_emma",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_carriage_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_carriage_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_open_country",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_carriage_journey",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_beauvoisine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_arrival_beauvoisine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beauvoisine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_beauvoisine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival_beauvoisine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_carriage_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_return_yonville",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_yonville",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_yonville",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival_beauvoisine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jam_making",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_jam_making",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jam_making",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jam_making",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_capharnaum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_justin_capharnaum",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_capharnaum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_capharnaum",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_capharnaum",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jam_making",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arsenic_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_arsenic_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arsenic_discovery",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arsenic_discovery",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arsenic_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_justin_capharnaum",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_book_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_discovery",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_discovery",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "char_justin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arsenic_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_announcement",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_death_announcement",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_announcement",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_homais",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_announcement",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_death_announcement",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_book_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_bovary_senior_death",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_bovary_senior",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_scene",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_dinner_scene",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_scene",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_scene",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "char_charles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_scene",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_death_announcement",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_luggage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_hippolyte_luggage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_luggage",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_hippolyte",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_luggage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mourning_discussion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_mourning_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_waterside",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mourning_discussion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_charles",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mourning_discussion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mourning_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hippolyte_luggage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_lheureux",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "char_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mourning_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_harbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_open_country",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_beauvoisine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_chemist_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_capharnaum",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bovary_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_waterside",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

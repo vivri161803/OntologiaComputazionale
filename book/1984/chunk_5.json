@@ -1,0 +1,397 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_parsons",
+      "label": "Mrs Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons_boy",
+      "label": "Parsons' boy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons_girl",
+      "label": "Parsons' girl",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom_parsons",
+      "label": "Tom Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_writing_diary",
+      "label": "Winston writing in his diary 'Down with Big Brother'",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_knock_at_door",
+      "label": "Knocking at the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_opening_door",
+      "label": "Winston opening the door",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sink_repair",
+      "label": "Winston repairing the kitchen sink",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_game",
+      "label": "Children playing with toy weapons and accusing Winston of treason",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_catapult_attack",
+      "label": "Boy shooting Winston with a catapult",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_newsflash",
+      "label": "Newsflash about victory and chocolate ration reduction",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dream_obrien",
+      "label": "Winston's dream of walking through darkness and hearing O'Brien's voice",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_winstons_flat",
+      "label": "Winston's flat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_parsons_flat",
+      "label": "Parsons' flat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_living_room",
+      "label": "Living room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_passage",
+      "label": "Passage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_park",
+      "label": "Park",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dark_room",
+      "label": "Pitch-dark room",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_children",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_obrien",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_writing_diary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_writing_diary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_winstons_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing_diary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_knock_at_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_winstons_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_knock_at_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_opening_door",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_knock_at_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_opening_door",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_winstons_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_opening_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_parsons",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_opening_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sink_repair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_opening_door",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sink_repair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_parsons_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sink_repair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_parsons",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_sink_repair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_game",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sink_repair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_game",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_children_game",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_living_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_children_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons_boy",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_children_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons_girl",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_children_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catapult_attack",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_game",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catapult_attack",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_catapult_attack",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_passage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons_boy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_catapult_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_catapult_attack",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dream_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dream_obrien",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dark_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dream_obrien",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_dream_obrien",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_newsflash",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_newsflash",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_winstons_flat",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_newsflash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_winstons_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_parsons_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_living_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dark_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_tom_parsons",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    }
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hippolyte",
+      "label": "Hippolyte",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Theodore Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrival",
+      "label": "Someone arriving at the rendezvous",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pistol_discussion",
+      "label": "Discussion about pistols for defense",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_love_affair",
+      "label": "Rodolphe and Emma's love affair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter_arrival",
+      "label": "Arrival of letter from Rouault with turkey",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_nostalgia",
+      "label": "Emma's nostalgic reflection on her past",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_play",
+      "label": "Berthe playing on the lawn",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_tenderness",
+      "label": "Emma showing excessive tenderness to Berthe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_absence",
+      "label": "Rodolphe missing three rendezvous",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_proposal",
+      "label": "Homais proposing club-foot operation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_persuasion",
+      "label": "Charles being persuaded to perform operation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hippolyte_persuasion",
+      "label": "Hippolyte being persuaded to undergo operation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_machine_construction",
+      "label": "Construction of the orthopedic machine",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_operation",
+      "label": "Charles performing the club-foot operation on Hippolyte",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_operation_success",
+      "label": "Successful completion of the operation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_celebration",
+      "label": "Charles and Emma celebrating the operation's success",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rendezvous",
+      "label": "The rendezvous location",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouault_farm",
+      "label": "Rouault's farm",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_childhood",
+      "label": "Emma's childhood home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lawn",
+      "label": "The lawn where Berthe plays",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charles_home",
+      "label": "Charles and Emma's home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lion_dor",
+      "label": "Lion d'Or inn",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_magico",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinante_mandante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_fornitore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_love_affair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_rodolphe_absence",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_letter_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_machine_construction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_operation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_operation_success",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_emma_nostalgia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_rendezvous",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_lawn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_charles_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "evt_pistol_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_love_affair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_pistol_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_love_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_nostalgia",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_play",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_nostalgia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_tenderness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_child_play",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_absence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_tenderness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_proposal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_absence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_persuasion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hippolyte_persuasion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_machine_construction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hippolyte_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_machine_construction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation_success",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_operation_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_love_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_love_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_letter_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_nostalgia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_child_play",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lestiboudois",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_child_play",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_tenderness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_tenderness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_absence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_homais_proposal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hippolyte_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_hippolyte_persuasion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_machine_construction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_machine_construction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_operation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_operation_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hippolyte",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_operation_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_celebration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rendezvous",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_love_affair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rendezvous",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charles_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_play",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lawn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_operation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_celebration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_charles_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_rouault_farm",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rouault",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_rouault_farm",
+      "target_closed_value": null
+    }
+  ]
+}

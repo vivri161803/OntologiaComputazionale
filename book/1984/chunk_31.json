@@ -1,0 +1,206 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_he",
+      "label": "He (the man)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia (the woman)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aaronson",
+      "label": "Aaronson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rutherford",
+      "label": "Rutherford",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Conversation between him and Julia about the Records Department",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_story_jones",
+      "label": "Story of Jones, Aaronson, and Rutherford and the slip of paper",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_falsification",
+      "label": "The falsification of the past and destruction of records",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_possession_evidence",
+      "label": "Possession of concrete evidence after the event",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discarding_evidence",
+      "label": "Throwing away the evidence",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_records_dept",
+      "label": "Records Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_slip_paper",
+      "label": "Slip of paper",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_glass_lump",
+      "label": "Lump of glass",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_he",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_records_dept",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_he",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_story_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_story_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_story_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_story_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_slip_paper",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_story_jones",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_story_jones",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_falsification",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_he",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_falsification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_possession_evidence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_falsification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_he",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_possession_evidence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_slip_paper",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_possession_evidence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discarding_evidence",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_possession_evidence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_he",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discarding_evidence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_slip_paper",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discarding_evidence",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    }
+  ]
+}

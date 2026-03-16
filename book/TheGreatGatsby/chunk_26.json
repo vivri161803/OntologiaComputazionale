@@ -1,0 +1,494 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wilson",
+      "label": "Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_midwest",
+      "label": "the Middle West",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_union_station",
+      "label": "Union Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wisconsin",
+      "label": "Wisconsin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carraway_house",
+      "label": "Carraway house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east",
+      "label": "the East",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east_egg",
+      "label": "East Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fifth_avenue",
+      "label": "Fifth Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "the beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_daisy_dock",
+      "label": "Daisy's dock",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Nick returns home from prep school and college",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gathering",
+      "label": "gathering at Union Station at Christmas",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_departure",
+      "label": "train departure into winter night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_death",
+      "label": "Gatsby's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_decision",
+      "label": "Nick decides to come back home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_conversation",
+      "label": "Nick talks with Jordan Baker",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_engagement",
+      "label": "Jordan announces her engagement",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_jordan_breakup",
+      "label": "Jordan and Nick break up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_encounter",
+      "label": "Nick encounters Tom Buchanan on Fifth Avenue",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_handshake_refusal",
+      "label": "Nick refuses to shake Tom's hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_confession",
+      "label": "Tom confesses telling Wilson about the car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_death",
+      "label": "Gatsby runs over Myrtle with his car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nick_forgiveness",
+      "label": "Nick shakes hands with Tom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_house_visit",
+      "label": "Nick visits Gatsby's empty house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beach_reflection",
+      "label": "Nick sits on the beach and reflects",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_green_light",
+      "label": "Gatsby's dream of the green light",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_narrator",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_love_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_return",
+      "label": "RITORNO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sacrifice",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RITORNO"
+    },
+    {
+      "source_id": "evt_train_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_gatsby_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "evt_jordan_breakup",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_tom_confession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_beach_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_midwest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_jordan_breakup",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_jordan_breakup",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_handshake_refusal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tom_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_confession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_handshake_refusal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nick_forgiveness",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_tom_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_house_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nick_forgiveness",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beach_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_house_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_jordan_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_jordan_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_tom_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tom_confession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_myrtle_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_house_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_union_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_wisconsin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fifth_avenue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_house_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beach_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_midwest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_east_egg",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Emma and Leon's conversation about meeting again",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kiss",
+      "label": "Leon kisses Emma's neck",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter",
+      "label": "Emma writes a letter cancelling the rendezvous",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_preparation",
+      "label": "Leon prepares himself and buys flowers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cathedral_meeting",
+      "label": "Leon and Emma meet at the cathedral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beadle_tour",
+      "label": "The beadle conducts Leon and Emma through the cathedral",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_cab_ride",
+      "label": "Leon and Emma ride in a cab through the city",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_cathedral",
+      "label": "Notre Dame cathedral",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_square",
+      "label": "The square in front of the cathedral",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chapel_virgin",
+      "label": "Chapel of the Virgin",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cab",
+      "label": "The cab",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_beadle",
+      "label": "The beadle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_coachman",
+      "label": "The coachman",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kiss",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kiss",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_preparation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_preparation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_cathedral_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_preparation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cathedral_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cathedral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cathedral",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_beadle_tour",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_cathedral_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_beadle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beadle_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_beadle_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_beadle_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beadle_tour",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cathedral",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cab_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_beadle_tour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_cab_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_cab_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_coachman",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_cab_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_cab_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_cab_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cab",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_cab",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

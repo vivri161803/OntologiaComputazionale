@@ -1,0 +1,718 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_young_man",
+      "label": "The young man (clerk)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ship_captain",
+      "label": "Ship's captain",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles (her husband)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mademoiselle_lempereur",
+      "label": "Mademoiselle Lempereur",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux (shopkeeper)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_langlois",
+      "label": "Langlois (purchaser)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vincart",
+      "label": "Vincart (broker)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Monsieur Bournisien (priest)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tuvache",
+      "label": "Monsieur Tuvache",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bovary_senior",
+      "label": "Madame Bovary senior (Charles's mother)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe (Emma's daughter)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais (pharmacist)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guillaumin",
+      "label": "Monsieur Guillaumin (notary)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_confession_past_love",
+      "label": "Emma confesses her past love for a ship's captain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_music_lessons_lie",
+      "label": "Emma's lie about music lessons is discovered",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_snow_day",
+      "label": "The day it snowed and Charles gave the priest a shawl for Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_encounter",
+      "label": "Lheureux meets Emma coming out of Hotel de Boulogne with Leon",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_debt_negotiation",
+      "label": "Lheureux negotiates Emma's debts and the sale of her estate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fourth_bill_arrives",
+      "label": "The fourth bill arrives at the house on Thursday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bovary_senior_visit",
+      "label": "Madame Bovary senior visits and criticizes Emma's spending",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_power_of_attorney_burned",
+      "label": "The power of attorney is burned in the fire",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_hysterics",
+      "label": "Emma has an attack of hysterics",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_second_power_of_attorney",
+      "label": "Charles obtains a second power of attorney from the notary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hotel_reunion",
+      "label": "Emma and Leon reunite at the hotel on Thursday",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_missing_night",
+      "label": "Emma does not return to Yonville for the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_search",
+      "label": "Charles searches for Emma through the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_found",
+      "label": "Charles finds Emma on the street",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_croix_rouge",
+      "label": "Croix-Rouge (inn)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_de_boulogne",
+      "label": "Hotel de Boulogne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_barneville",
+      "label": "Barneville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_paris",
+      "label": "Paris",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hirondelle",
+      "label": "Hirondelle (carriage)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rue_renelle",
+      "label": "Rue de la Renelle-des-Maroquiniers",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_eroe",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_valore",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_young_man",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_ship_captain",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_confession_past_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confession_past_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_young_man",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_confession_past_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_music_lessons_lie",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music_lessons_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_music_lessons_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mademoiselle_lempereur",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_music_lessons_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confession_past_love",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_music_lessons_lie",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snow_day",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_snow_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_snow_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_snow_day",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_snow_day",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lheureux_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lheureux_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_de_boulogne",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_debt_negotiation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_debt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_debt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_langlois",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_debt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_vincart",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_debt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_debt_negotiation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fourth_bill_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fourth_bill_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fourth_bill_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_debt_negotiation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fourth_bill_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovary_senior_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_bovary_senior_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_bovary_senior_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fourth_bill_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bovary_senior_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_of_attorney_burned",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_bovary_senior",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_power_of_attorney_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_power_of_attorney_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovary_senior_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_power_of_attorney_burned",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_hysterics",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_hysterics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_emma_hysterics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_power_of_attorney_burned",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_hysterics",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_power_of_attorney",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_second_power_of_attorney",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_second_power_of_attorney",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_second_power_of_attorney",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_hysterics",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_second_power_of_attorney",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_reunion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hotel_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_hotel_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_second_power_of_attorney",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hotel_reunion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_reunion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_missing_night",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_missing_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_missing_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_missing_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hotel_reunion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_missing_night",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_search",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_missing_night",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_search",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_search",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_search",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rue_renelle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rouen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_croix_rouge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel_de_boulogne",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rue_renelle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

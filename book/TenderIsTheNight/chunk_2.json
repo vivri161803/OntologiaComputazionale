@@ -1,0 +1,485 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_mckisco",
+      "label": "Mrs. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mr_mckisco",
+      "label": "Mr. McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_abrams",
+      "label": "Mrs. Abrams",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dumphry",
+      "label": "Mr. Dumphry",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_campion",
+      "label": "Campion",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_diver",
+      "label": "Mrs. Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick_diver",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_speers",
+      "label": "Mrs. Elsie Speers",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_earl_brady",
+      "label": "Earl Brady",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gausse_pere",
+      "label": "Gausse père",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_beach_gathering",
+      "label": "Gathering on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_swimming",
+      "label": "Swimming in the Mediterranean",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_raft_incident",
+      "label": "Incident with the raft",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rosemary_falls_in_love",
+      "label": "Rosemary falls in love on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch",
+      "label": "Lunch in the dining room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation_about_plot",
+      "label": "Conversation about the plot",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_diver_farewell",
+      "label": "Dick Diver's farewell on the beach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_train_journey",
+      "label": "Train journey to Cannes",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mediterranean",
+      "label": "Mediterranean Sea",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_raft",
+      "label": "The raft",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cannes",
+      "label": "Cannes",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rooms",
+      "label": "Their rooms at the hotel",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object_of_value",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_abrams",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_campion",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beach_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beach_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mr_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_mckisco",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swimming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mediterranean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_swimming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_beach_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abe_north",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_raft_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_mckisco",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_raft_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raft_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_raft",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_raft_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rosemary_falls_in_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rosemary_falls_in_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_falls_in_love",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_falls_in_love",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_raft_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rosemary_falls_in_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rosemary_falls_in_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_about_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation_about_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_about_plot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rooms",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation_about_plot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_diver_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_diver_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_diver_farewell",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_diver_farewell",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation_about_plot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_train_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_diver_farewell",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_train_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_beach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_mediterranean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rooms",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_dick_diver",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_mrs_speers",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    }
+  ]
+}

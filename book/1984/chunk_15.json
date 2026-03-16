@@ -1,0 +1,370 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rutherford",
+      "label": "Rutherford",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_aaronson",
+      "label": "Aaronson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jones",
+      "label": "Jones",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bigbrother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_arrest1",
+      "label": "First arrest and trial of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_release",
+      "label": "Release of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arrest2",
+      "label": "Second arrest of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_trial2",
+      "label": "Second trial of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_execution",
+      "label": "Execution of Jones, Aaronson, and Rutherford",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Winston discovers the photograph from The Times",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_betrayal",
+      "label": "Jones, Aaronson, and Rutherford betray military secrets to Eurasian General Staff",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writing",
+      "label": "Winston writes in his diary about freedom and truth",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_desk",
+      "label": "Winston's desk",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_newyork",
+      "label": "New York",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_canada",
+      "label": "Canada",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_siberia",
+      "label": "Siberia",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eurasia",
+      "label": "Eurasian soil",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_bigbrother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_arrest1",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_trial2",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_execution",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "loc_desk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_newyork",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_eurasia",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest1",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arrest2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trial2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trial2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_trial2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rutherford",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_aaronson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jones",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_betrayal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest1",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_release",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_release",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arrest2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arrest2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_trial2",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_trial2",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_execution",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_execution",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_desk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_betrayal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_eurasia",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_arrest1",
+      "target_closed_value": null
+    }
+  ]
+}

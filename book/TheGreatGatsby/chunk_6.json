@@ -1,0 +1,352 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_tom_buchanan",
+      "label": "Tom Buchanan",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mckee",
+      "label": "Mr. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mrs_mckee",
+      "label": "Mrs. McKee",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_catherine",
+      "label": "Catherine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_wilson",
+      "label": "George B. Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_gathering",
+      "label": "Social gathering at the apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_myrtle_kitchen",
+      "label": "Myrtle goes to the kitchen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mckee_discussion",
+      "label": "Mr. McKee discusses his work on Long Island",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_catherine_conversation",
+      "label": "Catherine sits and talks with the narrator",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_rumor",
+      "label": "Catherine mentions rumors about Gatsby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_tom_joke",
+      "label": "Tom makes a joke about McKee and George Wilson",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_apartment",
+      "label": "The apartment",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "The kitchen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_long_island",
+      "label": "Long Island",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_montauk_point",
+      "label": "Montauk Point",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_studies",
+      "label": "Two framed studies by Mr. McKee",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_tom",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_myrtle",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_mckee",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_catherine",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mrs_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_kitchen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_myrtle_kitchen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckee_discussion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mckee_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mckee_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_mckee_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catherine_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mckee_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catherine_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_catherine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_catherine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_rumor",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_catherine_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_rumor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_gatsby_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_joke",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_rumor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_tom_joke",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_apartment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tom_buchanan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_tom_joke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mckee",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tom_joke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_tom_joke",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_apartment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    },
+    {
+      "source_id": "loc_long_island",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_west_egg",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_long_island",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_west_egg",
+      "target_closed_value": null
+    }
+  ]
+}

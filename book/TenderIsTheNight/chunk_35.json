@@ -1,0 +1,672 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "flirtatious little brunette",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "woman recently discharged",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_topsy",
+      "label": "Topsy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mademoiselle",
+      "label": "Mademoiselle",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emile",
+      "label": "Emile",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_meal",
+      "label": "Meals with the patients",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letter",
+      "label": "Dick receives accusatory letter from discharged patient's mother",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Dick and Nicole's confrontation about the letter",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_ride",
+      "label": "The Divers drive to Agiri Fair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fair",
+      "label": "The family visits Agiri Fair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_runs",
+      "label": "Nicole suddenly runs away into the crowd",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ferris_wheel",
+      "label": "Dick finds Nicole on the ferris wheel laughing hysterically",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_accusation",
+      "label": "Nicole accuses Dick of looking at a dark girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_breakdown",
+      "label": "Nicole's mental breakdown at the fair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_found",
+      "label": "Dick finds the children with the lottery booth woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_crash",
+      "label": "The car crashes against a tree",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_children_sent",
+      "label": "Dick sends the children to the inn for help",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emile_arrives",
+      "label": "Emile the innkeeper arrives to help",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "clinic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_villa",
+      "label": "Dick's villa",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_salon",
+      "label": "salon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lake",
+      "label": "lake",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zug",
+      "label": "Zug",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fair",
+      "label": "Agiri Fair",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_car",
+      "label": "Dick's Renault car",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn",
+      "label": "inn on the hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_letter",
+      "label": "letter",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_husband",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_meal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_meal",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_villa",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_fair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_runs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_nicole_runs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_runs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_runs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_runs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ferris_wheel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_ferris_wheel",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_runs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ferris_wheel",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_ferris_wheel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_ferris_wheel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ferris_wheel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_accusation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_accusation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_breakdown",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_found",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_children_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_fair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_children_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_children_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_crash",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_car_crash",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_crash",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_car",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_car_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_children_sent",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_children_sent",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_crash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_sent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_sent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_topsy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_children_sent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emile_arrives",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emile_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_children_sent",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emile_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emile",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emile_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_emile_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_villa",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_salon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_fair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_car",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_inn",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    }
+  ]
+}

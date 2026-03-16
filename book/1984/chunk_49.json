@@ -1,0 +1,400 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_man_white_coat",
+      "label": "The man in the white coat",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_photograph_destroyed",
+      "label": "The photograph is destroyed in the memory hole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obrien_denies_memory",
+      "label": "O'Brien denies remembering the photograph",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_party_slogan_recitation",
+      "label": "Winston recites the Party slogan about controlling the past",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_philosophical_debate",
+      "label": "O'Brien and Winston debate the nature of existence and reality",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_diary_entry_reference",
+      "label": "O'Brien references Winston's diary entry about freedom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fingers_torture_begins",
+      "label": "O'Brien begins torturing Winston with the dial, asking about fingers",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_breaks_down",
+      "label": "Winston breaks down and loses consciousness during torture",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_injection_relief",
+      "label": "A needle is injected into Winston's arm, providing relief from pain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_torture_resumes",
+      "label": "O'Brien resumes the torture with increased intensity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obrien_explains_purpose",
+      "label": "O'Brien explains that the purpose is to cure Winston, not punish him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_obrien_historical_lecture",
+      "label": "O'Brien lectures on the failures of past persecutions and the Party's methods",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_room",
+      "label": "The room with the memory hole",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "The Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bed",
+      "label": "The bed where Winston is restrained",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_photograph",
+      "label": "The photograph",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_dial",
+      "label": "The torture dial",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_obrien",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_man_coat",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_spazio_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_man_white_coat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_photograph_destroyed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_obrien_denies_memory",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_photograph_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_party_slogan_recitation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_obrien_denies_memory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_philosophical_debate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_party_slogan_recitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_diary_entry_reference",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_philosophical_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fingers_torture_begins",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_diary_entry_reference",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fingers_torture_begins",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_winston_breaks_down",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fingers_torture_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_breaks_down",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_injection_relief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winston_breaks_down",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture_resumes",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_injection_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture_resumes",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_obrien_explains_purpose",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_torture_resumes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obrien_explains_purpose",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_obrien_historical_lecture",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_obrien_explains_purpose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_obrien_historical_lecture",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_photograph_destroyed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_obrien_denies_memory",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_party_slogan_recitation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_philosophical_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_philosophical_debate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_diary_entry_reference",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fingers_torture_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fingers_torture_begins",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_breaks_down",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_injection_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_man_white_coat",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_injection_relief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_torture_resumes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_torture_resumes",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_obrien_explains_purpose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_obrien_explains_purpose",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_obrien_historical_lecture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_obrien_historical_lecture",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_photograph_destroyed",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fingers_torture_begins",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_of_love",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_torture_resumes",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministry_of_love",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_bed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

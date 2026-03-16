@@ -1,0 +1,467 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lanier",
+      "label": "Lanier",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_englishwoman",
+      "label": "Englishwoman patient",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_american_painter",
+      "label": "American painter woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_american_girl",
+      "label": "American girl of fifteen",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_caucasus_exile",
+      "label": "Frail exile from the Caucasus",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_portuguese_daughters",
+      "label": "Three daughters of a Portuguese general",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collapsed_psychiatrist",
+      "label": "Collapsed psychiatrist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_gregorovius",
+      "label": "Doctor Gregorovius",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_ladislau",
+      "label": "Doctor Ladislau",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dream",
+      "label": "Dick's dream of war",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_awakening",
+      "label": "Dick awakes at five",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_shaving",
+      "label": "Dick shaves while Nicole awakes",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inspection",
+      "label": "Dick's morning inspection of the clinic",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_eglantine",
+      "label": "Dick visits the Eglantine and the Beeches",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_painter",
+      "label": "Dick visits the American painter in room twenty",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_other_patients",
+      "label": "Dick visits other patients",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_zugersee",
+      "label": "Zugersee",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Dick's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_clinic",
+      "label": "Psychiatric clinic",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_administration_building",
+      "label": "Administration building",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_workshops",
+      "label": "Workshops for ergo-therapy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_carpentry_shop",
+      "label": "Carpentry shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_book_bindery",
+      "label": "Book-bindery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beadwork_room",
+      "label": "Beadwork, weaving and brass work room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_eglantine",
+      "label": "The Eglantine",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beeches",
+      "label": "The Beeches",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room_twenty",
+      "label": "Room twenty",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_doctor",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_patient",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_rifugio",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_dream",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shaving",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inspection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_eglantine",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_painter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_eglantine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_other_patients",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_painter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_american_painter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_american_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_dream",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_visit_painter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_visit_other_patients",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_clinic",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_workshops",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_eglantine",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_beeches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room_twenty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dream",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_awakening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lanier",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_shaving",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_englishwoman",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_inspection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_eglantine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_visit_eglantine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_painter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_american_painter",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_painter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_other_patients",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_american_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_other_patients",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_caucasus_exile",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_other_patients",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_portuguese_daughters",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_other_patients",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collapsed_psychiatrist",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_visit_other_patients",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_awakening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_shaving",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inspection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_administration_building",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_eglantine",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_eglantine",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_painter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room_twenty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_other_patients",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_clinic",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_zugersee",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_clinic",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_zugersee",
+      "target_closed_value": null
+    }
+  ]
+}

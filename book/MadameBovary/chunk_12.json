@@ -1,0 +1,481 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_curie",
+      "label": "The curie",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_inn_lion_dor",
+      "label": "Lion d'Or Inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "char_widow_lefrancois",
+      "label": "Widow Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_bovarys_arrival",
+      "label": "The Bovarys arrive at Yonville",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_priest",
+      "label": "The priest",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_priest_visit",
+      "label": "The priest visits the inn to retrieve his umbrella",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_criticizes_priest",
+      "label": "Homais criticizes the priest's behavior and religion",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hirondelle_arrives",
+      "label": "The Hirondelle coach arrives",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_hivert",
+      "label": "Hivert",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dog_lost",
+      "label": "Madame Bovary's greyhound runs away",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_emma_bovary",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles_bovary",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nurse",
+      "label": "A nurse",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_bovarys_enter_kitchen",
+      "label": "The Bovarys enter the kitchen of the inn",
+      "node_type": "Event"
+    },
+    {
+      "id": "char_leon_dupuis",
+      "label": "Monsieur Leon Dupuis",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dinner_gathering",
+      "label": "The group dines together in the large parlour",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_kitchen",
+      "label": "Kitchen of the Lion d'Or",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_parlour",
+      "label": "Large parlour of the Lion d'Or",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_small_parlour",
+      "label": "Small parlour of the Lion d'Or",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_square",
+      "label": "The square of Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_field",
+      "label": "A field near Yonville",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_gravedigger",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_church_beadle",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_landlady",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_chemist",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_tax_collector",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_clerk",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_priest",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_draper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_arrival",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_loss",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_gathering",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_criticism",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_lestiboudois",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "char_curie",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_homais_criticizes_priest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_inn_lion_dor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_widow_lefrancois",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovarys_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovarys_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_bovarys_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_priest",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_priest_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_priest_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_inn_lion_dor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_priest_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bovarys_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_criticizes_priest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_criticizes_priest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_priest_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hirondelle_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_criticizes_priest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hirondelle_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hivert",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_hirondelle_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hirondelle_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dog_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dog_lost",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dog_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_dog_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dog_lost",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovarys_enter_kitchen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hirondelle_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bovarys_enter_kitchen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovarys_enter_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovarys_enter_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovarys_enter_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nurse",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bovarys_enter_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon_dupuis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_dinner_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bovarys_enter_kitchen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_parlour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles_bovary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon_dupuis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_widow_lefrancois",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_dinner_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_kitchen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_parlour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_small_parlour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_bovarys_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dog_lost",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_dinner_gathering",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    }
+  ]
+}

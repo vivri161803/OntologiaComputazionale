@@ -1,0 +1,706 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_chemist",
+      "label": "The chemist",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_blind_man",
+      "label": "The blind man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_hivert",
+      "label": "Hivert",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guillaumin",
+      "label": "Monsieur Guillaumin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_theodore",
+      "label": "Theodore",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_vincart",
+      "label": "Vincart",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tuvache",
+      "label": "Madame Tuvache",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_caron",
+      "label": "Madame Caron",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nurse_rollet",
+      "label": "Nurse Rollet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_lefrangois",
+      "label": "Mere Lefrangois",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_blind_man_encounter",
+      "label": "Encounter with the blind man on the coach",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bill_posting",
+      "label": "Discovery of the bill announcing furniture sale",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visit_guillaumin",
+      "label": "Emma visits Monsieur Guillaumin's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_guillaumin_advance",
+      "label": "Monsieur Guillaumin makes advances to Emma",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_rejection",
+      "label": "Emma rejects Guillaumin and leaves",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_binet_encounter",
+      "label": "Emma visits Binet the tax-collector",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_binet_rejection",
+      "label": "Binet recoils from Emma's advances",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nurse_refuge",
+      "label": "Emma flees to Nurse Rollet's house",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_despair",
+      "label": "Emma lies in despair at Nurse Rollet's",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_remembers_leon",
+      "label": "Emma remembers Leon",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_coach",
+      "label": "The coach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guillaumin_house",
+      "label": "Monsieur Guillaumin's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "The dining-room at Guillaumin's",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river_path",
+      "label": "The path by the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_binet_garret",
+      "label": "Binet's garret workshop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "The church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_nurse_house",
+      "label": "Nurse Rollet's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_home",
+      "label": "Emma's home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_object",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicament",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_defeat",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_betrayal",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_road",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_castle",
+      "label": "IL_CASTELLO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_threshold",
+      "label": "LA_SOGLIA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_blind_man_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_bill_posting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_visit_guillaumin",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_guillaumin_advance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_emma_rejection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_binet_rejection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_nurse_refuge",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_emma_remembers_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_coach",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_place",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_guillaumin_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_CASTELLO"
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_river_path",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_binet_garret",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_nurse_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "loc_emma_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blind_man_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_blind_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_blind_man_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_blind_man_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_hivert",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_blind_man_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bill_posting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_felicite",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_bill_posting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_bill_posting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visit_guillaumin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_visit_guillaumin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_theodore",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_visit_guillaumin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_guillaumin_advance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_guillaumin_advance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_guillaumin",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tuvache",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_caron",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_binet_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nurse_refuge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nurse_rollet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_nurse_refuge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nurse_rollet",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_remembers_leon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_emma_remembers_leon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blind_man_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_coach",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bill_posting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_place",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_guillaumin",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_guillaumin_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guillaumin_advance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_rejection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_river_path",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_binet_garret",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nurse_refuge",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nurse_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nurse_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_remembers_leon",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_nurse_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_blind_man_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bill_posting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_blind_man_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visit_guillaumin",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bill_posting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guillaumin_advance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_visit_guillaumin",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_guillaumin_advance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_rejection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nurse_refuge",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_binet_rejection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nurse_refuge",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_remembers_leon",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nick",
+      "label": "Nick Carraway",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl_jersey",
+      "label": "Girl from Jersey City",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl_home",
+      "label": "Girl back home",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_new_york",
+      "label": "New York",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_probity_trust",
+      "label": "Probity Trust",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yale_club",
+      "label": "Yale Club",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_madison_avenue",
+      "label": "Madison Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fifth_avenue",
+      "label": "Fifth Avenue",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pennsylvania_station",
+      "label": "Pennsylvania Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forties",
+      "label": "Dark lanes of the Forties",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_warwick",
+      "label": "Warwick",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_east_egg",
+      "label": "East Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_work",
+      "label": "Nick works at Probity Trust",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_affair",
+      "label": "Nick's affair with girl from Jersey City",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dinner_yale",
+      "label": "Nick takes dinner at Yale Club",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_study",
+      "label": "Nick studies investments and securities",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walks",
+      "label": "Nick walks through New York at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reconnect_jordan",
+      "label": "Nick reconnects with Jordan Baker in midsummer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_house_party",
+      "label": "House party at Warwick",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_golf_scandal",
+      "label": "Jordan's golf tournament scandal",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_car_incident",
+      "label": "Jordan nearly hits workmen with car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "Nick and Jordan's conversation about driving",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_party",
+      "label": "Gatsby's summer party",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_nick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "evt_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_probity_trust",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_affair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_affair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl_jersey",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_affair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner_yale",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_dinner_yale",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yale_club",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner_yale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_study",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_study",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner_yale",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_walks",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_study",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walks",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_new_york",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reconnect_jordan",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_reconnect_jordan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reconnect_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_reconnect_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_house_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_warwick",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_house_party",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reconnect_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_house_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_golf_scandal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_golf_scandal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_house_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_golf_scandal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_car_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_car_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_golf_scandal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_car_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_car_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_party",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_gatsby_party",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_party",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_gatsby_party",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_probity_trust",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yale_club",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_new_york",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_madison_avenue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_fifth_avenue",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    }
+  ]
+}

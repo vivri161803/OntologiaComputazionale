@@ -1,0 +1,535 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girl",
+      "label": "The girl with dark hair",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_parsons",
+      "label": "Parsons",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wilsher",
+      "label": "Wilsher",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_little_man",
+      "label": "The small, beetle-like man",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_corridor_meeting",
+      "label": "Winston encounters the girl in the corridor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girl_falls",
+      "label": "The girl stumbles and falls on her injured arm",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_helps",
+      "label": "Winston helps the girl up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_note_passed",
+      "label": "The girl slips a folded paper into Winston's hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_note_reading",
+      "label": "Winston reads the note in his cubicle",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lunch_canteen",
+      "label": "Winston has lunch in the canteen with Parsons",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_falsifying_reports",
+      "label": "Winston falsifies production reports",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_community_centre",
+      "label": "Winston attends the Community Centre in the evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_planning_meeting",
+      "label": "Winston plans how to meet the girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_waiting_week",
+      "label": "Winston waits for a week, the girl appears and disappears",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girl_reappears",
+      "label": "The girl reappears with her arm healed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilsher_interruption",
+      "label": "Wilsher interrupts Winston's approach to the girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_little_man_falls",
+      "label": "The little man trips and falls with his tray",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_meeting",
+      "label": "Winston finally sits at the girl's table",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "The long, brightly-lit corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lavatory",
+      "label": "The lavatory",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cubicle",
+      "label": "Winston's cubicle",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_canteen",
+      "label": "The canteen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_community_centre",
+      "label": "The Community Centre",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry",
+      "label": "The Ministry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_home",
+      "label": "Winston's home and bed",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_note",
+      "label": "The folded paper with 'I LOVE YOU'",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_girl",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_thought_police",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_corridoio",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "evt_corridor_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_girl_falls",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_note_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "loc_corridor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_cubicle",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_canteen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "evt_corridor_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_falls",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_falls",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_corridor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_helps",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_girl_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_note_passed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winston_helps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_note_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_note_passed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_note_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_cubicle",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_canteen",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_note_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lunch_canteen",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_falsifying_reports",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lunch_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_community_centre",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_falsifying_reports",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_community_centre",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_community_centre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_community_centre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_planning_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_waiting_week",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_planning_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_reappears",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_waiting_week",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_reappears",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilsher_interruption",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_girl_reappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilsher_interruption",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_little_man_falls",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilsher_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_little_man_falls",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_little_man_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_corridor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_corridor_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_girl_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_winston_helps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_winston_helps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_note_passed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_note_passed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_note",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_note_passed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_note_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_note",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_note_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lunch_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_parsons",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_lunch_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_lunch_canteen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_falsifying_reports",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_community_centre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_planning_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_waiting_week",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_waiting_week",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_girl_reappears",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilsher_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wilsher",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_wilsher_interruption",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_little_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_little_man_falls",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girl",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_final_meeting",
+      "target_closed_value": null
+    }
+  ]
+}

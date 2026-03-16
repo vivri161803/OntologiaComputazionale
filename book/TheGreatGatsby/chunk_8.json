@@ -1,0 +1,461 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jordan_baker",
+      "label": "Jordan Baker",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_owl_eyed_man",
+      "label": "The Owl-Eyed Man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lucille",
+      "label": "Lucille",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_girls_yellow",
+      "label": "The Girls in Yellow",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gypsy_dancer",
+      "label": "The Gypsy Dancer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tenor",
+      "label": "The Celebrated Tenor",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_contralto",
+      "label": "The Notorious Contralto",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's House",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_blue_gardens",
+      "label": "The Blue Gardens",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach",
+      "label": "The Beach",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gothic_library",
+      "label": "The Gothic Library",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "The Garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_canvas_platform",
+      "label": "The Canvas Platform",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sound",
+      "label": "The Sound",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_summer_parties",
+      "label": "The Summer Parties at Gatsby's House",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_arrival",
+      "label": "The Narrator Arrives at the Party",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gypsy_dance",
+      "label": "The Gypsy Dancer Performs",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_meets_jordan",
+      "label": "The Narrator Meets Jordan Baker",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_supper_served",
+      "label": "The First Supper is Served",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_library_visit",
+      "label": "The Narrator and Jordan Visit the Library",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dancing",
+      "label": "Dancing in the Garden",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_meets_gatsby",
+      "label": "The Narrator Meets Gatsby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_orchestra_arrival",
+      "label": "The Orchestra Arrives",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_guests_speculation",
+      "label": "Guests Speculate About Gatsby",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_host",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_guest",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_movement",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINATARIO_BENEFICIARIO"
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_summer_parties",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_narrator_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_gypsy_dance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_narrator_meets_gatsby",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_guests_speculation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_blue_gardens",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gothic_library",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_summer_parties",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_summer_parties",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_orchestra_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gypsy_dance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_orchestra_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gypsy_dance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_canvas_platform",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_jordan",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_jordan",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_served",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gypsy_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_supper_served",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_guests_speculation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_meets_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_supper_served",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_library_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gothic_library",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_library_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dancing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_gatsby",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_meets_gatsby",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_narrator_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_meets_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_narrator_meets_jordan",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_girls_yellow",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_guests_speculation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lucille",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_guests_speculation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_owl_eyed_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_library_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_library_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jordan_baker",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_library_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_meets_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_narrator_meets_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gypsy_dancer",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gypsy_dance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tenor",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_contralto",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dancing",
+      "target_closed_value": null
+    }
+  ]
+}

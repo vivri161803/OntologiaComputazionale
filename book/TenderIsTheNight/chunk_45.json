@@ -1,0 +1,552 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_kaethe",
+      "label": "Kaethe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_warren",
+      "label": "Warren (Nicole's father)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_diver_children",
+      "label": "The Diver children",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nurse",
+      "label": "The nurse",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dangeu",
+      "label": "Dangeu",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Dick's phone call to Kaethe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kaethe_meets_nicole",
+      "label": "Kaethe meets Nicole on the hill",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_kaethe_reveals_news",
+      "label": "Kaethe reveals Warren's illness to Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_runs_to_train",
+      "label": "Nicole runs to catch the train to Lausanne",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_warren_departs",
+      "label": "Warren gets up and departs the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_learns_departure",
+      "label": "Dick learns of Warren's departure from the nun",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_franz_phone_call",
+      "label": "Dick's phone call with Franz about Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_traces_warren",
+      "label": "Dick spends hours tracing Warren's movements",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_misses_nicole",
+      "label": "Dick fails to meet Nicole at the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_nicole_meet_lobby",
+      "label": "Dick and Nicole meet in the hotel lobby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_explains_warren",
+      "label": "Dick explains Warren's departure to Nicole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_nicole_bar",
+      "label": "Dick and Nicole sit in the bar listening to music",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hill",
+      "label": "The deserted hill with wild-flowers",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "The hotel in Lausanne",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bar",
+      "label": "The hotel bar/grill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "The train station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_zurich",
+      "label": "Zurich",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_warren",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_warren",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_franz",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore_kaethe",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_dick",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_kaethe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_kaethe_reveals_news",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_nicole_runs_to_train",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_warren_departs",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_dick_learns_departure",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_traces_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_dick_explains_warren",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "loc_hill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_bar",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_station",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kaethe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kaethe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kaethe_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kaethe_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kaethe_meets_nicole",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_kaethe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_kaethe_reveals_news",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_kaethe_reveals_news",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_kaethe_reveals_news",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_runs_to_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_runs_to_train",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_warren_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warren_departs",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nurse",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_learns_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_learns_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_learns_departure",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_franz_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_franz_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_traces_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dangeu",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_dick_traces_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_misses_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_misses_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_misses_nicole",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_meet_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_nicole_meet_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_meet_lobby",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_explains_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_explains_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_explains_warren",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_nicole_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_dick_nicole_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_bar",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bar",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kaethe_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_kaethe_reveals_news",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kaethe_meets_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_runs_to_train",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_kaethe_reveals_news",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_warren_departs",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_runs_to_train",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_learns_departure",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_warren_departs",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_franz_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_learns_departure",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_traces_warren",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_franz_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_misses_nicole",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_traces_warren",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_meet_lobby",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_misses_nicole",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_explains_warren",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_nicole_meet_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_nicole_bar",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_explains_warren",
+      "target_closed_value": null
+    }
+  ]
+}

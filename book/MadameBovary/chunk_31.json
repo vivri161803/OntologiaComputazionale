@@ -1,0 +1,551 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_bovary_senior",
+      "label": "Madame Bovary senior",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Monsieur Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Binet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lagardy",
+      "label": "Lagardy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mere_rollet",
+      "label": "Mere Rollet",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_reading",
+      "label": "Emma reads religious texts",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_melancholy",
+      "label": "Emma experiences Catholic melancholy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_prayer",
+      "label": "Emma kneels and prays",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charity",
+      "label": "Emma engages in excessive charity",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_teaching",
+      "label": "Emma teaches Berthe to read",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_visitors",
+      "label": "Emma receives visitors",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_justin_observation",
+      "label": "Justin observes Emma's toilette",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garden",
+      "label": "Emma has the garden turned up",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dismissal",
+      "label": "Emma dismisses servants and visitors",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discussion",
+      "label": "Discussion about theatre and morality",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theatre_decision",
+      "label": "Charles decides to take Emma to the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_journey",
+      "label": "Emma and Charles travel to Rouen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_theatre_arrival",
+      "label": "Emma arrives at the theatre",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_house",
+      "label": "The Bovary house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_theatre",
+      "label": "Theatre in Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_croix_rouge",
+      "label": "Croix-Rouge inn",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_harbour",
+      "label": "Harbour",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_donatore",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_melancholy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_melancholy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_AMANTE_AMATO",
+      "target_open_id": "evt_melancholy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prayer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_melancholy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_prayer",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charity",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charity",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_prayer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charity",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_teaching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_teaching",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_teaching",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_visitors",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_bovary_senior",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_visitors",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AMICO",
+      "target_open_id": "evt_visitors",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_visitors",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_justin_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_justin_observation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_justin_observation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mere_rollet",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dismissal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dismissal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discussion",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_theatre_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_theatre_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_decision",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discussion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_theatre_decision",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_journey",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rouen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_theatre_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_journey",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_theatre_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_theatre",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_theatre",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_harbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

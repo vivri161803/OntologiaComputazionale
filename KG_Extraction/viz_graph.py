@@ -3,9 +3,11 @@ import networkx as nx
 from pyvis.network import Network
 
 print("Generazione del grafo interattivo a colori in corso...")
+path_file_to_read = "book/Animal_Farm/Animal_Farm.tsv"
+name_output_file = "AnimalFarm.html"
 
 # 1. Leggi il TSV
-df = pd.read_csv("book/Burmese_Days/Burmese_Days.tsv", sep="\t")
+df = pd.read_csv(path_file_to_read, sep="\t")
 
 # Attributi per gli archi (frecce)
 df['label'] = df['relation']
@@ -68,7 +70,7 @@ net.force_atlas_2based(gravity=-50, spring_length=150, overlap=1)
 
 # 5. Importa i dati e genera l'HTML
 net.from_nx(G)
-file_html = "grafo_colorato_avanzato.html"
+file_html = name_output_file
 net.show(file_html, notebook=False)
 
 print(f"Fatto! Apri il file '{file_html}' nel tuo browser.")

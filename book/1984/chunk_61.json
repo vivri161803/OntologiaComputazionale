@@ -1,0 +1,282 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_newspeak_system",
+      "label": "Newspeak language system",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_oldspeak",
+      "label": "Oldspeak language",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_ingsoc",
+      "label": "Ingsoc ideology",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_jefferson",
+      "label": "Jefferson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_shakespeare",
+      "label": "Shakespeare",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_milton",
+      "label": "Milton",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_swift",
+      "label": "Swift",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_byron",
+      "label": "Byron",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dickens",
+      "label": "Dickens",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_vocabulary_creation",
+      "label": "Creation of C vocabulary with scientific and technical terms",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_suppression_unorthodox",
+      "label": "Suppression of unorthodox opinions through language restriction",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_oldspeak_supersession",
+      "label": "Oldspeak superseded by Newspeak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_history_rewriting",
+      "label": "History rewritten and past literature censored",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_translation_process",
+      "label": "Translation of pre-revolutionary literature into Newspeak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_writers_translation",
+      "label": "Translation of Shakespeare, Milton, Swift, Byron, and Dickens",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_adoption",
+      "label": "Final adoption of Newspeak fixed for 2050",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_past_literature",
+      "label": "Fragments of past literature surviving in the world",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_declaration_independence",
+      "label": "Declaration of Independence text",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_tool_control",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obstacle",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_destruction",
+      "label": "SACRIFICIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_vocabulary_creation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_suppression_unorthodox",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_vocabulary_creation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_suppression_unorthodox",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_vocabulary_creation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_oldspeak_supersession",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_suppression_unorthodox",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_history_rewriting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_oldspeak_supersession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_translation_process",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_history_rewriting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_writers_translation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_translation_process",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_adoption",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_newspeak_system",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_suppression_unorthodox",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_oldspeak",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_oldspeak_supersession",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_ingsoc",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_translation_process",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_jefferson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_translation_process",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_shakespeare",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_milton",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_swift",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_byron",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dickens",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_writers_translation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_translation_process",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_writers_translation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_oldspeak_supersession",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_history_rewriting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SACRIFICIO"
+    },
+    {
+      "source_id": "loc_past_literature",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_history_rewriting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_declaration_independence",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "evt_translation_process",
+      "target_closed_value": null
+    }
+  ]
+}

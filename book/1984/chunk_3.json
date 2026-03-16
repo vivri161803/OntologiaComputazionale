@@ -1,0 +1,340 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dark_haired_girl",
+      "label": "Dark-haired girl from Fiction Department",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_sandy_haired_woman",
+      "label": "Small sandy-haired woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Emmanuel Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_big_brother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_diary_writing",
+      "label": "Winston writing in his diary",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_memory_clarification",
+      "label": "A different memory clarifying in Winston's mind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_morning_incident",
+      "label": "Incident at the Ministry that morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_two_minutes_hate",
+      "label": "Two Minutes Hate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_goldstein_appearance",
+      "label": "Face of Emmanuel Goldstein flashing on screen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hate_escalation",
+      "label": "Hate rising to frenzy in second minute",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girl_throws_dictionary",
+      "label": "Dark-haired girl throwing Newspeak dictionary at screen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winston_hatred_transfer",
+      "label": "Winston transferring his hatred to the dark-haired girl",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hate_climax",
+      "label": "Hate rising to its climax with Goldstein's face transforming",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_big_brother_appearance",
+      "label": "Face of Big Brother appearing on screen",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_records_department",
+      "label": "Records Department at the Ministry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_telescreen",
+      "label": "Big telescreen in the Records Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_fiction_department",
+      "label": "Fiction Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridors",
+      "label": "Corridors of the Ministry",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_winston",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_goldstein",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista_big_brother",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_esposizione",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_diary_writing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_memory_clarification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_memory_clarification",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_morning_incident",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_morning_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_records_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_records_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_two_minutes_hate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_morning_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_goldstein_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_goldstein_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_escalation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_goldstein_appearance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_throws_dictionary",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hate_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girl_throws_dictionary",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_haired_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_girl_throws_dictionary",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winston_hatred_transfer",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hate_escalation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winston_hatred_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_haired_girl",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_winston_hatred_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_climax",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winston_hatred_transfer",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_climax",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_big_brother_appearance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hate_climax",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_big_brother_appearance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_goldstein",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_big_brother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "loc_records_department",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_records_department",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_haired_girl",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_sandy_haired_woman",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_goldstein",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_two_minutes_hate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dark_haired_girl",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_fiction_department",
+      "target_closed_value": null
+    }
+  ]
+}

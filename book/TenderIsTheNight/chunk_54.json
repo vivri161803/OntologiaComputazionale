@@ -1,0 +1,418 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tommy",
+      "label": "Tommy Barban",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick Diver",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_american_sailors",
+      "label": "American sailors",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_two_girls",
+      "label": "Two young American girls",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_hotel_room",
+      "label": "Hotel room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_balcony",
+      "label": "Balcony",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_monte_carlo",
+      "label": "Monte Carlo",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beaulieu",
+      "label": "Beaulieu",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_villa_diana",
+      "label": "Villa Diana",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_wharf",
+      "label": "Wharf",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_beach_casino",
+      "label": "Beach Casino at Monte Carlo",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_intimate_moment",
+      "label": "Nicole and Tommy's intimate encounter in the hotel room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sailors_fight",
+      "label": "American sailors fighting outside the hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_battleship_recall",
+      "label": "Battleship sounding recall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_girls_wave_goodbye",
+      "label": "Two girls waving goodbye from the balcony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dining_swimming",
+      "label": "Nicole and Tommy dining and swimming",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_returns",
+      "label": "Dick returns to Villa Diana",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Tommy calls Nicole on the phone",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_confrontation",
+      "label": "Nicole confronts Dick at the cliff wall",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_final_separation",
+      "label": "Nicole and Dick's final separation",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_nicole",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_tommy",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_dick",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_tommy",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_intimate_moment",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_sailors_fight",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_sailors_fight",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_balcony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_american_sailors",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sailors_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sailors_fight",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intimate_moment",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_battleship_recall",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_battleship_recall",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sailors_fight",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girls_wave_goodbye",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_girls_wave_goodbye",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_balcony",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_two_girls",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_girls_wave_goodbye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_girls_wave_goodbye",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_battleship_recall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dining_swimming",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_dining_swimming",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_beaulieu",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dining_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dining_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dining_swimming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_girls_wave_goodbye",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_returns",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_dick_returns",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_villa_diana",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_returns",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dining_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_tommy",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_returns",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_villa_diana",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_confrontation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_separation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "TRADIMENTO_ROTTURA"
+    },
+    {
+      "source_id": "evt_final_separation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_villa_diana",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_final_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_final_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_final_separation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_confrontation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_beaulieu",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_villa_diana",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    }
+  ]
+}

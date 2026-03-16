@@ -1,0 +1,391 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abbe_bournisien",
+      "label": "Abbe Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lestiboudois",
+      "label": "Lestiboudois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_emma_despair",
+      "label": "Emma's despair and temptation to flee",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_angelus_ringing",
+      "label": "The Angelus bell ringing",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_church_visit",
+      "label": "Emma visits the church",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_abbe_conversation",
+      "label": "Emma's conversation with Abbe Bournisien",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_berthe_injury",
+      "label": "Berthe falls and injures herself",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_return",
+      "label": "Charles returns home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_chemist",
+      "label": "Charles goes to the chemist",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_leon_conversation",
+      "label": "Charles asks Leon about daguerreotypes",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_church",
+      "label": "The church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "The cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_room",
+      "label": "Emma's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "The chemist's shop",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_emma_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_charles_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_abbe_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_leon_opponente",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiesa",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_cimitero",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_salotto",
+      "label": "IL_SALOTTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_angelus_ringing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_angelus_ringing",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_angelus_ringing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lestiboudois",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_angelus_ringing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_church_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_angelus_ringing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_church_visit",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_church_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_church_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_abbe_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_church_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_abbe_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_abbe_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_abbe_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_abbe_bournisien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_emma_abbe_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_injury",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_abbe_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_injury",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_berthe_injury",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_berthe_injury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_berthe_injury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_berthe_injury",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_charles_return",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_chemist",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_return",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_chemist",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_charles_chemist",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_charles_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_leon_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_leon_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_charles_leon_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_leon_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_leon_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cemetery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_emma_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "IL_SALOTTO"
+    }
+  ]
+}

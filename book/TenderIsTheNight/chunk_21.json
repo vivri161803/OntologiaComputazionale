@@ -1,0 +1,455 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rosemary",
+      "label": "Rosemary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_peterson",
+      "label": "Peterson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_abe_north",
+      "label": "Abe North",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_mcbeth",
+      "label": "Mr. McBeth",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gendarme",
+      "label": "Gendarme",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_violet_mckisco",
+      "label": "Violet McKisco",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_embrace",
+      "label": "Dick and Rosemary embrace",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_discovery",
+      "label": "Rosemary discovers a dead body in her room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Dick examines Peterson's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_body_move",
+      "label": "Dick and Nicole move the body to the corridor",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_phone_call",
+      "label": "Dick calls the hotel manager",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_manager_arrival",
+      "label": "Mr. McBeth and gendarme arrive",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_body_removal",
+      "label": "The body is removed to another apartment",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_breakdown",
+      "label": "Nicole has a breakdown in the bathroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collis_call",
+      "label": "Collis Clay calls Rosemary",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_rosemary_room",
+      "label": "Rosemary's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_corridor",
+      "label": "Hotel corridor",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bathroom",
+      "label": "Bathroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_salon",
+      "label": "Dick's salon",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel",
+      "label": "Fashionable hotel in Paris",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_hero",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_struggle",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alliance",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_corridor",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_embrace",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_embrace",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peterson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosemary_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peterson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_move",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_body_move",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_move",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_body_move",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_body_move",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peterson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_body_move",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_salon",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_phone_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_body_move",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mcbeth",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_manager_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_manager_arrival",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_manager_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_phone_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mcbeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_manager_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gendarme",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_manager_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_body_removal",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_body_removal",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_manager_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_mcbeth",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_body_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_peterson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_body_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_breakdown",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_nicole_breakdown",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bathroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_breakdown",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_body_removal",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_nicole_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collis_call",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_collis_call",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_breakdown",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collis_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rosemary",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_collis_call",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_rosemary_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_corridor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LA_STRADA"
+    },
+    {
+      "source_id": "loc_bathroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_salon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    }
+  ]
+}

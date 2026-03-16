@@ -1,0 +1,823 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles (her husband)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_binet",
+      "label": "Captain Binet (tax-collector)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais (chemist)",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_madame_homais",
+      "label": "Madame Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin (druggist's pupil)",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_dinner",
+      "label": "Dinner at home",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_buys_horse",
+      "label": "Charles buys a horse from Monsieur Alexandre",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_alone_in_room",
+      "label": "Emma shuts herself in her room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_realizes_lover",
+      "label": "Emma realizes she has a lover and feels transformed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_forest_meeting",
+      "label": "Emma and Rodolphe meet in the forest shed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_letters_exchange",
+      "label": "Emma and Rodolphe exchange letters regularly",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_visits_lahuchette",
+      "label": "Emma visits Rodolphe at La Huchette early morning",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_enters_rodolphe_house",
+      "label": "Emma enters Rodolphe's house and finds him sleeping",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_regular_visits",
+      "label": "Emma makes regular secret visits to Rodolphe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_rodolphe_warns_emma",
+      "label": "Rodolphe warns Emma her visits are imprudent",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_fears_discovery",
+      "label": "Emma becomes anxious about being discovered",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_binet_encounter",
+      "label": "Emma encounters Captain Binet with his gun",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_lies_to_binet",
+      "label": "Emma lies to Binet about visiting the nurse",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_chemist_shop",
+      "label": "Emma and Charles visit the chemist's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_binet_at_chemist",
+      "label": "Binet appears at the chemist's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_winter_rendezvous",
+      "label": "Emma and Rodolphe arrange winter rendezvous in the garden",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_garden_meetings",
+      "label": "Rodolphe visits Emma in the garden at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arbour_encounter",
+      "label": "Emma and Rodolphe meet in the arbour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consulting_room_meeting",
+      "label": "Emma and Rodolphe meet in the consulting-room during rain",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_pistol_conversation",
+      "label": "Emma asks Rodolphe about his pistols",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_dining_room",
+      "label": "Dining room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_room",
+      "label": "Emma's room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_forest",
+      "label": "Forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_woodenshoe_shed",
+      "label": "Wooden-shoe maker's shed in the forest",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden_wall",
+      "label": "Garden wall by the river",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_lahuchette",
+      "label": "La Huchette (Rodolphe's house)",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rodolphe_bedroom",
+      "label": "Rodolphe's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_field",
+      "label": "Field",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_shop",
+      "label": "Chemist's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garden",
+      "label": "Garden at home",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_arbour",
+      "label": "Arbour in the garden",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulting_room",
+      "label": "Consulting-room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_river",
+      "label": "River",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_emma_lover",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_rodolphe_lover",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_charles_husband",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_binet_obstacle",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strada",
+      "label": "LA_STRADA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_charles_buys_horse",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_alone_in_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_buys_horse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_realizes_lover",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_alone_in_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_realizes_lover",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_forest_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_realizes_lover",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_letters_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_forest_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_visits_lahuchette",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_letters_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_visits_lahuchette",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_emma_enters_rodolphe_house",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_visits_lahuchette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_regular_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_enters_rodolphe_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_rodolphe_warns_emma",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_regular_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_fears_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_rodolphe_warns_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_fears_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_fears_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_lies_to_binet",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chemist_shop",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_lies_to_binet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_at_chemist",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_winter_rendezvous",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_binet_at_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_meetings",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_winter_rendezvous",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arbour_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_garden_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consulting_room_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arbour_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_pistol_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_consulting_room_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dinner",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_buys_horse",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_alone_in_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_realizes_lover",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_forest_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_forest_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letters_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_letters_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_visits_lahuchette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_enters_rodolphe_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_enters_rodolphe_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_regular_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_regular_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_rodolphe_warns_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_rodolphe_warns_emma",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_fears_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_lies_to_binet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_lies_to_binet",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_binet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_at_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_at_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_madame_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_binet_at_chemist",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winter_rendezvous",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_winter_rendezvous",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_garden_meetings",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arbour_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arbour_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consulting_room_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consulting_room_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pistol_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_pistol_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dinner",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dining_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_alone_in_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_forest_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_woodenshoe_shed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_letters_exchange",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden_wall",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_visits_lahuchette",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_enters_rodolphe_house",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rodolphe_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_regular_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_lahuchette",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_field",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_chemist_shop",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_binet_at_chemist",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_chemist_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_garden_meetings",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garden",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arbour_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_arbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consulting_room_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulting_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_dining_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_emma_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_forest",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_woodenshoe_shed",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_field",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_lahuchette",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_rodolphe_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_garden",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_arbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_consulting_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_chemist_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_river",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

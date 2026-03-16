@@ -1,0 +1,384 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_emma",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Leon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charles",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Monsieur Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_justin",
+      "label": "Justin",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_pere_tellier",
+      "label": "Pere Tellier",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_frost_walk",
+      "label": "Emma and Leon walk in the hoar-frost",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lheureux_visit",
+      "label": "Monsieur Lheureux visits Emma with merchandise",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_leon_room_visit",
+      "label": "Leon visits Emma in her bedroom",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_reflection",
+      "label": "Emma reflects on Leon by the fire at night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_virtue",
+      "label": "Emma adopts virtuous behavior and domestic duties",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_emma_despair",
+      "label": "Emma experiences emotional crisis and despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lime_incident",
+      "label": "Napoleon falls into lime heap",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_emma_bedroom",
+      "label": "Emma's bedroom",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rouen",
+      "label": "Rouen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_bovary_house",
+      "label": "Bovary house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_lover",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_beloved",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obstacle",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_interno",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_esterno",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_frost_walk",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_frost_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_room_visit",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_virtue",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_leon_room_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_virtue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_frost_walk",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_reflection",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lheureux_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_leon_room_visit",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_virtue",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_bovary_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_emma_despair",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_emma_bedroom",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_frost_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_frost_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lheureux_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_leon_room_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_leon_room_visit",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_virtue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_emma_virtue",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_emma_despair",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_napoleon",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lime_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lime_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_justin",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_lime_incident",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lime_incident",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lime_incident",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_frost_walk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_emma_bedroom",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_yonville",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_bovary_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_yonville",
+      "target_closed_value": null
+    }
+  ]
+}

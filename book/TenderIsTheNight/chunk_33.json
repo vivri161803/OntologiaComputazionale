@@ -1,0 +1,363 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_baby",
+      "label": "Baby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_elder_englishman",
+      "label": "Elder Englishman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_younger_englishman",
+      "label": "Younger Englishman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franz",
+      "label": "Franz",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_nicole",
+      "label": "Nicole",
+      "node_type": "Character"
+    },
+    {
+      "id": "loc_gstaad",
+      "label": "Gstaad",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_sleigh",
+      "label": "Smooth sleigh",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_grill",
+      "label": "Grill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ice_rink",
+      "label": "Ice rink",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_elevator",
+      "label": "Elevator",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_station",
+      "label": "Station",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_riviera",
+      "label": "Summer Riviera",
+      "node_type": "Location"
+    },
+    {
+      "id": "evt_debate_manners",
+      "label": "Debate about good manners and human respect",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_boxing_story",
+      "label": "Young Englishman tells story about boxing match with best friend",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_baiting",
+      "label": "Dick baits the young Englishman with questions",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_grill_gathering",
+      "label": "Group enters the grill with carnival spirit",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_questions_franz",
+      "label": "Dick questions Franz about character and patients",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_nicole_leaves",
+      "label": "Nicole announces she is going to bed and leaves",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_reflection",
+      "label": "Dick reflects negatively on Baby in his mind",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_sleigh_to_station",
+      "label": "Dick and Franz sleigh to the station",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_admission",
+      "label": "Dick admits to Franz that he thinks favorably on the matter",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_dick",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_englishman",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_debate_manners",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sleigh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_debate_manners",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_debate_manners",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_elder_englishman",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_debate_manners",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxing_story",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_debate_manners",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_boxing_story",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_sleigh",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_younger_englishman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_boxing_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_baiting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_boxing_story",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_baiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_younger_englishman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_baiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grill_gathering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_baiting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_grill_gathering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_grill_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_questions_franz",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_grill_gathering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_questions_franz",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_grill",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_questions_franz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_dick_questions_franz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_questions_franz",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_nicole_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_elevator",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_nicole",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_nicole_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_nicole_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_reflection",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_nicole_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_reflection",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleigh_to_station",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_reflection",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_sleigh_to_station",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_sleigh_to_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_sleigh_to_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_admission",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_sleigh_to_station",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_admission",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_admission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_franz",
+      "edge_label": "PARTECIPA_COME_DESTINATARIO",
+      "target_open_id": "evt_dick_admission",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_sleigh",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_grill",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_gstaad",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

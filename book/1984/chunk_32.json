@@ -1,0 +1,295 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_syme",
+      "label": "Syme",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_message_arrival",
+      "label": "The expected message arrives",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_corridor_encounter",
+      "label": "Winston encounters O'Brien in the corridor at the Ministry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_conversation",
+      "label": "O'Brien and Winston have a conversation about Newspeak",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_address_exchange",
+      "label": "O'Brien gives Winston his address",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_paper_destruction",
+      "label": "Winston drops the paper with the address into the memory hole",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_realization",
+      "label": "Winston realizes the conspiracy exists and he has reached its outer edges",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ministry_corridor",
+      "label": "The long corridor at the Ministry",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_telescreen",
+      "label": "The spot in front of the telescreen",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_obrien_flat",
+      "label": "O'Brien's flat",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_of_love",
+      "label": "The Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_note",
+      "label": "The note Julia slipped into Winston's hand",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_address",
+      "label": "O'Brien's address written on paper",
+      "node_type": "Event"
+    },
+    {
+      "id": "obj_dictionary",
+      "label": "The tenth edition of the Newspeak Dictionary",
+      "node_type": "Event"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_winston_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obrien_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obrien_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_alleanza",
+      "label": "ALLEANZA_PATTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_message_arrival",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": null,
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_corridor_encounter",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_message_arrival",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_corridor_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_address_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_paper_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_address_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_paper_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_corridor_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_corridor_encounter",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_address_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_address_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_paper_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_realization",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_corridor_encounter",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_corridor",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_address_exchange",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_telescreen",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_ministry_corridor",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_telescreen",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_obrien_flat",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_message_arrival",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_conversation",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALLEANZA_PATTO"
+    },
+    {
+      "source_id": "evt_realization",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "char_julia",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "obj_note",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_syme",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_conversation",
+      "target_closed_value": null
+    }
+  ]
+}

@@ -1,0 +1,669 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_narrator",
+      "label": "The Narrator",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_myrtle",
+      "label": "Myrtle Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_catherine",
+      "label": "Catherine",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_george_wilson",
+      "label": "George Wilson",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_michaelis",
+      "label": "Michaelis",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_gatsby",
+      "label": "Gatsby",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_daisy",
+      "label": "Daisy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_tom",
+      "label": "Tom",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_wolfsheim",
+      "label": "Meyer Wolfsheim",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_doctor_eckleburg",
+      "label": "Doctor T. J. Eckleburg",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_butler",
+      "label": "The Butler",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_chauffeur",
+      "label": "The Chauffeur",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_myrtle_death",
+      "label": "Myrtle Wilson is hit by a car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_catherine_arrives",
+      "label": "Catherine arrives at the garage drunk",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_crowd_at_garage",
+      "label": "Crowd gathers at the garage through the night",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_muttering",
+      "label": "Wilson mutters about the yellow car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_finds_leash",
+      "label": "Wilson finds the dog leash",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_accuses",
+      "label": "Wilson accuses the yellow car driver of murder",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_window",
+      "label": "Wilson speaks to Myrtle at the window about God",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_leaves",
+      "label": "Wilson leaves the garage",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_searches",
+      "label": "Wilson searches for the yellow car",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_pool",
+      "label": "Gatsby goes to the pool with a mattress",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_gatsby_shot",
+      "label": "Gatsby is shot at the pool",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_finds_gatsby",
+      "label": "The Narrator finds Gatsby's body",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_wilson_body_found",
+      "label": "Wilson's body is found in the grass",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_police_investigation",
+      "label": "Police and photographers investigate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_inquest",
+      "label": "Inquest with Michaelis's testimony",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_calls_daisy",
+      "label": "The Narrator calls Daisy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_narrator_seeks_wolfsheim",
+      "label": "The Narrator seeks Meyer Wolfsheim",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_ashheaps",
+      "label": "The ashheaps",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_garage",
+      "label": "The garage",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_flushing",
+      "label": "Flushing",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_port_roosevelt",
+      "label": "Port Roosevelt",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gads_hill",
+      "label": "Gad's Hill",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_west_egg",
+      "label": "West Egg",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_gatsby_house",
+      "label": "Gatsby's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_pool",
+      "label": "The pool",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_office",
+      "label": "The office",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_yellow_car",
+      "label": "The yellow car",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_dog_leash",
+      "label": "The dog leash",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_victim",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonist",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_helper",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_death",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_discovery",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_conflict",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_state_change",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_closed",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_open",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_myrtle_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_myrtle_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ashheaps",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_myrtle_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_yellow_car",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_myrtle_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catherine_arrives",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_myrtle_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_catherine_arrives",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_catherine_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_at_garage",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_catherine_arrives",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_crowd_at_garage",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_crowd_at_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_michaelis",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_crowd_at_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_muttering",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_crowd_at_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_muttering",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_muttering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_finds_leash",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_muttering",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_finds_leash",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_finds_leash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_dog_leash",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wilson_finds_leash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_accuses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_finds_leash",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_accuses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_accuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_yellow_car",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_wilson_accuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_michaelis",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_wilson_accuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_accuses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_myrtle",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wilson_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_doctor_eckleburg",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_wilson_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_leaves",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_leaves",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_garage",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_searches",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_leaves",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_searches",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_wilson_searches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_searches",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_port_roosevelt",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_pool",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_searches",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_pool",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_chauffeur",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_gatsby_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shot",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_pool",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_gatsby_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_gatsby_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_gatsby_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_finds_gatsby",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_gatsby_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_finds_gatsby",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_finds_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_gatsby",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_narrator_finds_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_body_found",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_finds_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_wilson_body_found",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_george_wilson",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_wilson_body_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_investigation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_wilson_body_found",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_police_investigation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_gatsby_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_inquest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_police_investigation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_michaelis",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_catherine",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_inquest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_calls_daisy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_finds_gatsby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_calls_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_daisy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_narrator_calls_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_narrator_seeks_wolfsheim",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_narrator_calls_daisy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_narrator",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_narrator_seeks_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_wolfsheim",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_narrator_seeks_wolfsheim",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_garage",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_pool",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_gatsby_house",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_ashheaps",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

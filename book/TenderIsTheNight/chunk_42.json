@@ -1,0 +1,702 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_baby_warren",
+      "label": "Baby Warren",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_dick",
+      "label": "Dick",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_guards_officer",
+      "label": "Guards officer",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_concierge",
+      "label": "Concierge",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_carabinieri",
+      "label": "Carabinieri",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_english_porter",
+      "label": "English porter at Embassy",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_embassy_official",
+      "label": "Embassy official in Persian robe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_collis_clay",
+      "label": "Collis Clay",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_consul",
+      "label": "Consul",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_taxi_driver",
+      "label": "Taxi driver",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_baby_reading",
+      "label": "Baby reading Marion Crawford's Roman stories in bed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_at_window",
+      "label": "Baby looking at carabinieri from window",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_concierge_message",
+      "label": "Concierge brings message about Dick's trouble",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_dresses",
+      "label": "Baby dresses and goes to lobby",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_taxi_ride",
+      "label": "Baby rides in taxi to jail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_dick_shouting",
+      "label": "Dick shouting from jail cell",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_confronts_carabinieri",
+      "label": "Baby confronts carabinieri about Dick's injuries",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_at_embassy",
+      "label": "Baby arrives at American Embassy",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_meets_official",
+      "label": "Baby meets Embassy official",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_at_consulate",
+      "label": "Baby goes to Consulate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_finds_collis",
+      "label": "Baby finds Collis Clay at his hotel",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_collis_and_baby_find_jail",
+      "label": "Collis and Baby find the jail",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_sees_dick_in_guard_room",
+      "label": "Baby sees Dick in guard-room",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_baby_at_consul_office",
+      "label": "Baby confronts Consul at his office",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_consul_agrees",
+      "label": "Consul agrees to help and rings for vice-consul",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_hotel_room",
+      "label": "Baby's hotel room",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_street",
+      "label": "Street across from hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_hotel_lobby",
+      "label": "Hotel lobby",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jail",
+      "label": "Italian jail",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_jail_court",
+      "label": "Jail courtyard",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_guard_room",
+      "label": "Guard-room at jail",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_american_embassy",
+      "label": "American Embassy",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_consulate",
+      "label": "American Consulate",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_collis_hotel",
+      "label": "Collis Clay's hotel",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_piazza_espagna",
+      "label": "Piazza d'Espagna",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_baby",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_destinatario_dick",
+      "label": "DESTINATARIO_BENEFICIARIO",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_carabinieri",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_embassy",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante_collis",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_campo_battaglia",
+      "label": "CAMPO_DI_BATTAGLIA",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_baby_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_baby_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_window",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_window",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_concierge_message",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_at_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_concierge_message",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_concierge_message",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_concierge",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "evt_concierge_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_reading",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_at_window",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_concierge_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_dresses",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_concierge_message",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_dresses",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_baby_dresses",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_hotel_lobby",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_dresses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_dresses",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_taxi_ride",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_taxi_driver",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shouting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_taxi_ride",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_dick_shouting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_dick_shouting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_dick_shouting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_confronts_carabinieri",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_dick_shouting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_confronts_carabinieri",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_baby_confronts_carabinieri",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_confronts_carabinieri",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_carabinieri",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_baby_confronts_carabinieri",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_embassy",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_confronts_carabinieri",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_embassy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_baby_at_embassy",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_american_embassy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_at_embassy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_meets_official",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_at_embassy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_meets_official",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_baby_meets_official",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_american_embassy",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_meets_official",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_embassy_official",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_baby_meets_official",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_consulate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_meets_official",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_consulate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_baby_at_consulate",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_at_consulate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_finds_collis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_at_consulate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_finds_collis",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_baby_finds_collis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_collis_hotel",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_finds_collis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_baby_finds_collis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collis_and_baby_find_jail",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_finds_collis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_collis_and_baby_find_jail",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_collis_and_baby_find_jail",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_collis_and_baby_find_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_collis_clay",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_collis_and_baby_find_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_sees_dick_in_guard_room",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_collis_and_baby_find_jail",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_sees_dick_in_guard_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_baby_sees_dick_in_guard_room",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_sees_dick_in_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_dick",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_baby_sees_dick_in_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_consul_office",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_sees_dick_in_guard_room",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_baby_at_consul_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_baby_at_consul_office",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_baby_at_consul_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_consul",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_baby_at_consul_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consul_agrees",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_baby_at_consul_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_consul_agrees",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_consul_agrees",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_consulate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_baby_warren",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_consul_agrees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_consul",
+      "edge_label": "PARTECIPA_COME_DESTINANTE",
+      "target_open_id": "evt_consul_agrees",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_hotel_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_american_embassy",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_consulate",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_jail",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_guard_room",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_collis_hotel",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_piazza_espagna",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    }
+  ]
+}

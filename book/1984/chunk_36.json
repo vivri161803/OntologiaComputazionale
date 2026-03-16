@@ -1,0 +1,576 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_winston",
+      "label": "Winston",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_obrien",
+      "label": "O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_charrington",
+      "label": "Mr Charrington",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_julia",
+      "label": "Julia",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_goldstein",
+      "label": "Emmanuel Goldstein",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_orator",
+      "label": "Orator of the Inner Party",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_meeting_obrien",
+      "label": "Winston meets O'Brien and receives a tablet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_intense_work",
+      "label": "Winston works ninety hours in five days at the Ministry",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_walk_to_charrington",
+      "label": "Winston walks to Mr Charrington's shop",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_hate_week",
+      "label": "Hate Week with processions, speeches, and demonstrations",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_enemy_switch",
+      "label": "Announcement that Oceania is at war with Eastasia, not Eurasia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_demonstration",
+      "label": "Winston participates in a demonstration in central London square",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_poster_destruction",
+      "label": "Posters and banners are torn down and destroyed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_briefcase_exchange",
+      "label": "A man taps Winston and mentions his dropped brief-case",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ministry_work",
+      "label": "Ministry of Truth staff work eighteen hours daily to rectify records",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_records_falsification",
+      "label": "Winston falsifies records to erase evidence of war with Eurasia",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_work_completion",
+      "label": "Work is completed and staff are released",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_return_home",
+      "label": "Winston returns home and prepares for Julia's arrival",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_book_opening",
+      "label": "Winston opens the book containing Goldstein's theory",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_reading",
+      "label": "Winston reads the book in comfort and safety",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_obrien_office",
+      "label": "O'Brien's office",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_dingy_street",
+      "label": "Dingy street towards Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_charrington_shop",
+      "label": "Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_london_square",
+      "label": "Central London square",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministry_truth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_records_department",
+      "label": "Records Department",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_room_above_shop",
+      "label": "Room above Mr Charrington's shop",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_tablet",
+      "label": "Tablet given by O'Brien",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_briefcase",
+      "label": "Heavy brief-case containing the book",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_book",
+      "label": "The Theory and Practice of Oligarchical Collectivism",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_winston_subject",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_obrien_donator",
+      "label": "DONATORE_FORNITORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_goldstein_destinante",
+      "label": "DESTINANTE_MANDANTE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_party_opponent",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparation",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_exposition",
+      "label": "ESPOSIZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_revelation",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_journey",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_change_state",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_indoor",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_outdoor",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategic",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affective",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_refuge",
+      "label": "RIFUGIO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_meeting_obrien",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_obrien_office",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_obrien",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_meeting_obrien",
+      "edge_label": "PARTECIPA_COME_DONATORE",
+      "target_open_id": "char_obrien",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_winston",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_obrien",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DONATORE_FORNITORE"
+    },
+    {
+      "source_id": "evt_intense_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_meeting_obrien",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intense_work",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intense_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministry_truth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_intense_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_walk_to_charrington",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_intense_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_to_charrington",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_to_charrington",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_dingy_street",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_walk_to_charrington",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_hate_week",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_walk_to_charrington",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_hate_week",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_enemy_switch",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_hate_week",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_enemy_switch",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_demonstration",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_enemy_switch",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_demonstration",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_demonstration",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_demonstration",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "evt_poster_destruction",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_demonstration",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poster_destruction",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_poster_destruction",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_briefcase_exchange",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_poster_destruction",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_briefcase_exchange",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_briefcase_exchange",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_london_square",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_work",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_briefcase_exchange",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_work",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_work",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_records_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ministry_work",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_records_falsification",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ministry_work",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_records_falsification",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_records_falsification",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_records_department",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_records_falsification",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_work_completion",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_records_falsification",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_work_completion",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_work_completion",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room_above_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_return_home",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "evt_book_opening",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_return_home",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_opening",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_opening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room_above_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_book_opening",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_book_opening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "char_winston",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_room_above_shop",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_reading",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ESPOSIZIONE"
+    },
+    {
+      "source_id": "loc_obrien_office",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_dingy_street",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_london_square",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ministry_truth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_records_department",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_room_above_shop",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIFUGIO"
+    },
+    {
+      "source_id": "char_goldstein",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "DESTINANTE_MANDANTE"
+    },
+    {
+      "source_id": "obj_book",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_goldstein",
+      "target_closed_value": null
+    }
+  ]
+}

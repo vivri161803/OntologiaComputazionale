@@ -1,0 +1,363 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_innerparty",
+      "label": "Inner Party members",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_outerparty",
+      "label": "Outer Party members",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_proletarians",
+      "label": "Proletarians",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bigbrother",
+      "label": "Big Brother",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_thoughtpolice",
+      "label": "Thought Police",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_partyintellectual",
+      "label": "Party intellectual",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_examination",
+      "label": "Admission examination at age sixteen",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_twominuteshate",
+      "label": "Two Minutes Hate",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_surveillance",
+      "label": "Continuous surveillance of Party members",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_purges",
+      "label": "Endless purges, arrests, tortures, imprisonments, and vaporizations",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_historyrewriting",
+      "label": "Day-to-day falsification and rewriting of history",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mentaltraining",
+      "label": "Elaborate mental training in childhood with Newspeak words",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_oceania",
+      "label": "Oceania",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministryoftruth",
+      "label": "Ministry of Truth",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_ministryoflove",
+      "label": "Ministry of Love",
+      "node_type": "Location"
+    },
+    {
+      "id": "obj_newspeak",
+      "label": "Newspeak language",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_ingsoc",
+      "label": "Ingsoc ideology",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_doublethink",
+      "label": "Doublethink mental technique",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_crimestop",
+      "label": "Crimestop mental discipline",
+      "node_type": "Character"
+    },
+    {
+      "id": "obj_blackwhite",
+      "label": "Blackwhite concept",
+      "node_type": "Character"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_antagonista",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_aiutante",
+      "label": "AIUTANTE_MAGICO",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_preparazione",
+      "label": "PREPARAZIONE",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_lotta",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_thoughtpolice",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_bigbrother",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "obj_doublethink",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AIUTANTE_MAGICO"
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_mentaltraining",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREPARAZIONE"
+    },
+    {
+      "source_id": "evt_surveillance",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_purges",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    },
+    {
+      "source_id": "evt_historyrewriting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "loc_oceania",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "loc_ministryoftruth",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_ministryoflove",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "evt_examination",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surveillance",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_purges",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_oceania",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_historyrewriting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_ministryoftruth",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mentaltraining",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_surveillance",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mentaltraining",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_twominuteshate",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_surveillance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_purges",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_twominuteshate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_historyrewriting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_purges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_outerparty",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_examination",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mentaltraining",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thoughtpolice",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_surveillance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_surveillance",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_thoughtpolice",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_purges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_proletarians",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_purges",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_twominuteshate",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_innerparty",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_historyrewriting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_ingsoc",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_innerparty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_newspeak",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "char_innerparty",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_doublethink",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "obj_ingsoc",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_crimestop",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "obj_ingsoc",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "obj_blackwhite",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "obj_ingsoc",
+      "target_closed_value": null
+    }
+  ]
+}

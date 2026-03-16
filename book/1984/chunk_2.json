@@ -1,0 +1,291 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_fat_man",
+      "label": "great huge fat man",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_woman",
+      "label": "middle-aged woman",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_little_boy",
+      "label": "little boy about three years old",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_protesting_woman",
+      "label": "woman down in the prole part of the house",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_police",
+      "label": "police",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_film_screening",
+      "label": "war film screening at the flicks",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_ship_bombing",
+      "label": "ship full of refugees being bombed",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fat_man_swimming",
+      "label": "fat man trying to swim away with helicopter after him",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_fat_man_shot",
+      "label": "fat man full of holes and sinking",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_lifeboat_scene",
+      "label": "lifeboat full of children with helicopter hovering",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_bomb_dropped",
+      "label": "helicopter planted a 20 kilo bomb in the lifeboat",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_child_arm_shot",
+      "label": "child's arm going up into the air",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_protest",
+      "label": "woman protesting about the film content",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_woman_removed",
+      "label": "police turning out the protesting woman",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_flicks",
+      "label": "the flicks",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_mediterranean",
+      "label": "Mediterranean",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_prole_part",
+      "label": "prole part of the house",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_fat_man",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_little_boy",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_helicopter",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_woman",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_soggetto_protesting_woman",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_police",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_lotta_scontro",
+      "label": "LOTTA_SCONTRO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_tradimento",
+      "label": "TRADIMENTO_ROTTURA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "evt_film_screening",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_flicks",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_bombing",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mediterranean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_ship_bombing",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_film_screening",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fat_man_swimming",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_ship_bombing",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fat_man",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_fat_man_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_fat_man_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fat_man_swimming",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_fat_man",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_fat_man_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_lifeboat_scene",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_fat_man_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_lifeboat_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_little_boy",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_lifeboat_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bomb_dropped",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_lifeboat_scene",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_bomb_dropped",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_mediterranean",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_child_arm_shot",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_bomb_dropped",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_protest",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_child_arm_shot",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_protest",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_prole_part",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_protesting_woman",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_protest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_woman_removed",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_woman_protest",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_police",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_woman_removed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_protesting_woman",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_woman_removed",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "loc_flicks",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_mediterranean",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "evt_fat_man_shot",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_bomb_dropped",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "LOTTA_SCONTRO"
+    }
+  ]
+}

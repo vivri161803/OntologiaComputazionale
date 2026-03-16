@@ -38,7 +38,7 @@ IN_CHANNELS = X_tensor.shape[1]
 def objective(trial):
     # 1. OPTUNA SUGGERISCE GLI IPERPARAMETRI DA TESTARE
     hidden_channels = trial.suggest_categorical('hidden_channels', [16, 32, 64, 128])
-    num_layers = trial.suggest_int('num_layers', 1, 3)
+    num_layers = trial.suggest_int('num_layers', 1, 5)
     dropout_rate = trial.suggest_float('dropout_rate', 0.1, 0.5)
     lr = trial.suggest_float('lr', 1e-4, 1e-2, log=True)
     weight_decay = trial.suggest_float('weight_decay', 1e-5, 1e-2, log=True)
@@ -125,14 +125,24 @@ if __name__ == "__main__":
     for key, value in study.best_params.items():
         print(f"  * {key}: {value}")
 
-# Parametri Migliori 
-# === MODEL SELECTION COMPLETATA ===
-#Miglior Validation Loss raggiunta: 0.21768862009048462
-#Iperparametri Ottimali Trovati:
+# Caso 1
+# Miglior Validation Loss raggiunta: 0.2253800481557846
+# Iperparametri Ottimali Trovati:
 #  * hidden_channels: 32
-#  * num_layers: 1
-#  * dropout_rate: 0.16445660109140914
-#  * lr: 0.009760362852277039
-#  * weight_decay: 0.002608397198388953
+#  * num_layers: 3
+#  * dropout_rate: 0.10174214482282506
+#  * lr: 0.008846175564081828
+#  * weight_decay: 2.6756844783872094e-05
 #  * margin: 0.5
 #  * k_negatives: 3
+
+# Caso 2
+# Miglior Validation Loss raggiunta: 0.2781398296356201
+# Iperparametri Ottimali Trovati:
+#   * hidden_channels: 64
+#   * num_layers: 2
+#   * dropout_rate: 0.22943336121970184
+#   * lr: 0.0018238113989311065
+#   * weight_decay: 0.0001164486298898722
+#   * margin: 0.5
+#   * k_negatives: 4

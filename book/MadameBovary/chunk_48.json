@@ -1,0 +1,632 @@
+{
+  "open_nodes": [
+    {
+      "id": "char_charles",
+      "label": "Charles Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_emma",
+      "label": "Emma Bovary",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_homais",
+      "label": "Monsieur Homais",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rodolphe",
+      "label": "Rodolphe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_leon",
+      "label": "Léon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_berthe",
+      "label": "Berthe",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_bournisien",
+      "label": "Monsieur Bournisien",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lheureux",
+      "label": "Lheureux",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_lefrancois",
+      "label": "Madame Lefrancois",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_felicite",
+      "label": "Felicite",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_canivet",
+      "label": "Monsieur Canivet",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_rouault",
+      "label": "Old Rouault",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_napoleon",
+      "label": "Napoleon",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_athalie",
+      "label": "Athalie",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_irma",
+      "label": "Irma",
+      "node_type": "Character"
+    },
+    {
+      "id": "char_franklin",
+      "label": "Franklin",
+      "node_type": "Character"
+    },
+    {
+      "id": "evt_emma_death",
+      "label": "Emma's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_charles_grief",
+      "label": "Charles's grief and despair",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_church_visits",
+      "label": "Charles visiting church in the evening",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_financial_crisis",
+      "label": "Charles's financial crisis and debt",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_mother_reconciliation",
+      "label": "Charles's mother offering reconciliation",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_berthe_separation",
+      "label": "Separation from Berthe",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_desk_discovery",
+      "label": "Charles discovering Emma's letters and Rodolphe's portrait",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_market_meeting",
+      "label": "Charles meeting Rodolphe at the market",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_beer_conversation",
+      "label": "Charles and Rodolphe's conversation over beer",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_arbour_death",
+      "label": "Charles's death in the arbour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_postmortem",
+      "label": "Post-mortem examination by Monsieur Canivet",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_ambition",
+      "label": "Homais's ambition for the Legion of Honour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_homais_success",
+      "label": "Homais receiving the cross of the Legion of Honour",
+      "node_type": "Event"
+    },
+    {
+      "id": "evt_berthe_future",
+      "label": "Berthe's life after Charles's death",
+      "node_type": "Event"
+    },
+    {
+      "id": "loc_church",
+      "label": "Church",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_house",
+      "label": "Charles's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_chemist_house",
+      "label": "Homais's house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_cemetery",
+      "label": "Cemetery",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_market",
+      "label": "Market at Argueil",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_public_house",
+      "label": "Public-house",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_arbour",
+      "label": "Arbour",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_place",
+      "label": "The Place",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_rosewood_desk",
+      "label": "Rosewood desk",
+      "node_type": "Location"
+    },
+    {
+      "id": "loc_yonville",
+      "label": "Yonville",
+      "node_type": "Location"
+    }
+  ],
+  "closed_nodes": [
+    {
+      "id": "role_soggetto_charles",
+      "label": "SOGGETTO_EROE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_oggetto_emma",
+      "label": "OGGETTO_DI_VALORE",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_rodolphe",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "role_opponente_lheureux",
+      "label": "OPPONENTE_ANTAGONISTA",
+      "node_type": "Role"
+    },
+    {
+      "id": "evt_type_predicamento",
+      "label": "PREDICAMENTO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_sconfitta",
+      "label": "SCONFITTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_rivelazione",
+      "label": "RIVELAZIONE_SCOPERTA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_spostamento",
+      "label": "SPOSTAMENTO_VIAGGIO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_cambiamento",
+      "label": "CAMBIAMENTO_DI_STATO",
+      "node_type": "EventType"
+    },
+    {
+      "id": "evt_type_vittoria",
+      "label": "VITTORIA",
+      "node_type": "EventType"
+    },
+    {
+      "id": "loc_type_chiuso",
+      "label": "AL_CHIUSO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_aperto",
+      "label": "ALL_APERTO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_affettivo",
+      "label": "SPAZIO_AFFETTIVO",
+      "node_type": "LocationType"
+    },
+    {
+      "id": "loc_type_strategico",
+      "label": "SPAZIO_STRATEGICO",
+      "node_type": "LocationType"
+    }
+  ],
+  "relations": [
+    {
+      "source_id": "char_charles",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SOGGETTO_EROE"
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OGGETTO_DI_VALORE"
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "OPPONENTE_ANTAGONISTA"
+    },
+    {
+      "source_id": "evt_emma_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "CAMBIAMENTO_DI_STATO"
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "PREDICAMENTO"
+    },
+    {
+      "source_id": "evt_desk_discovery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "RIVELAZIONE_SCOPERTA"
+    },
+    {
+      "source_id": "evt_arbour_death",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SCONFITTA"
+    },
+    {
+      "source_id": "evt_homais_success",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "VITTORIA"
+    },
+    {
+      "source_id": "evt_market_meeting",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPOSTAMENTO_VIAGGIO"
+    },
+    {
+      "source_id": "loc_church",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "AL_CHIUSO"
+    },
+    {
+      "source_id": "loc_cemetery",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "ALL_APERTO"
+    },
+    {
+      "source_id": "loc_arbour",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_AFFETTIVO"
+    },
+    {
+      "source_id": "loc_market",
+      "edge_label": "COME",
+      "target_open_id": null,
+      "target_closed_value": "SPAZIO_STRATEGICO"
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_church_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_bournisien",
+      "edge_label": "PARTECIPA_COME_AIUTANTE_ALLEATO",
+      "target_open_id": "evt_church_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_financial_crisis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_lheureux",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_financial_crisis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_mother_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_berthe_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_berthe_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_desk_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_emma",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_desk_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_leon",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_desk_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_desk_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_market_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_market_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_beer_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_rodolphe",
+      "edge_label": "PARTECIPA_COME_OPPONENTE_RIVALE",
+      "target_open_id": "evt_beer_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_arbour_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SPETTATORE_NEUTRALE",
+      "target_open_id": "evt_arbour_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_canivet",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_postmortem",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PARTECIPA_COME_OGGETTO_BERSAGLIO",
+      "target_open_id": "evt_postmortem",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_ambition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_homais_success",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PARTECIPA_COME_SOGGETTO",
+      "target_open_id": "evt_berthe_future",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_charles_grief",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_emma_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_visits",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_charles_grief",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_financial_crisis",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_church_visits",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_mother_reconciliation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_financial_crisis",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_separation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_mother_reconciliation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_desk_discovery",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_berthe_separation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_meeting",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_desk_discovery",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beer_conversation",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_market_meeting",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arbour_death",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_beer_conversation",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_postmortem",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_arbour_death",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_berthe_future",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_postmortem",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_homais_success",
+      "edge_label": "AVVIENE_DOPO",
+      "target_open_id": "evt_homais_ambition",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_church_visits",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_church",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_financial_crisis",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_desk_discovery",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_rosewood_desk",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_market_meeting",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_market",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_beer_conversation",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_public_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "evt_arbour_death",
+      "edge_label": "AVVIENE_IN",
+      "target_open_id": "loc_arbour",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_charles",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_berthe",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_house",
+      "target_closed_value": null
+    },
+    {
+      "source_id": "char_homais",
+      "edge_label": "PROVIENE_DA",
+      "target_open_id": "loc_chemist_house",
+      "target_closed_value": null
+    }
+  ]
+}
