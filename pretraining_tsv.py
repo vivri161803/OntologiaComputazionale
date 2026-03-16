@@ -12,7 +12,7 @@ from GNN.pretraining.train_loop import train_kg_model
 from train_set import *
 
 # Parametri modello
-train_params = train_params_1
+train_params = train_params_3
 NUM_EPOCHS = 500
 
 # --- A. Definisci i tuoi file TSV ---
