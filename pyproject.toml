@@ -97,6 +97,7 @@ dependencies = [
     "typer==0.24.1",
     "typing-extensions==4.15.0",
     "typing-inspection==0.4.2",
+    "umap-learn>=0.5.11",
     "urllib3==2.6.3",
     "uuid-utils==0.14.1",
     "wcwidth==0.6.0",

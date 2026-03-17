@@ -3,6 +3,7 @@ import pandas as pd
 import json
 from sentence_transformers import SentenceTransformer
 import re
+import torch.nn.functional as F
 
 # importazioni locali 
 from train_set import train_params_3
@@ -106,16 +107,33 @@ def get_new_book_embedding(tsv_path: str, model_weights_path: str, relation_mapp
 
         # 3. SUM POOLING 
         sum_pool = torch.sum(node_embeddings, dim=0)
-        
+
+        # 4. ATTENTION POOLING: basato sul rango dei nodi del grafo considerato
+        degrees = torch.zeros(node_embeddings.size(0), device=device)
+        heads, tails = edge_index[0], edge_index[1]
+        # Conto quante volte un nodo appare come testo o coda di una tripletta
+        degrees.scatter_add_(0, heads, torch.ones_like(heads, dtype=torch.float))
+        degrees.scatter_add_(0, tails, torch.ones_like(tails, dtype=torch.float))
+        # Per evitare che i nodi isolati abbiano un parametro pari a zero
+        degrees = degrees + 1e-6
+        attention_weights = F.softmax(degrees, dim=0)
+        # Calcolo dell'embedding utilizzando il parametro di attenzione
+        weighted_embeddings = node_embeddings * attention_weights.unsqueeze(1)
+        graph_embedding_attention = torch.sum(weighted_embeddings, dim=0)
+        # Ritornati i top_k match migliori
+
         # Concateniamo i due vettori per un Graph Embedding ricchissimo
-        graph_embedding_concat = torch.cat([mean_pool, max_pool, sum_pool], dim=0)
+        graph_embedding_concat = torch.cat([mean_pool, max_pool, sum_pool, graph_embedding_attention], dim=0)
         # Sommiamo i due vettori per un Graph Embedding ricchissimo
-        graph_embedding_sum = mean_pool + max_pool + sum_pool
+        graph_embedding_sum = mean_pool + max_pool + sum_pool + graph_embedding_attention
+
+
         
     print(f"Graph Embedding generato con successo! Shape (Concat): {graph_embedding_concat.shape}")
     print(f"Graph Embedding generato con successo! Shape (Sum): {graph_embedding_sum.shape}")
+    print(f"Graph Embedding generato con successo! Shape (Sum): {graph_embedding_attention.shape}")
     print("")
-    return mean_pool, max_pool, sum_pool, graph_embedding_concat, graph_embedding_sum
+    return mean_pool, max_pool, sum_pool, graph_embedding_concat, graph_embedding_sum, graph_embedding_attention
 
 # 2. Estrazione nomi a partire dal path 
 
@@ -139,17 +157,18 @@ def estrai_nomi_dal_path(path_list):
 if __name__ == "__main__":
 
     # parametri main
-    output_file = "Inference/Test.csv"
+    input_paths = train_library
+    output_file = "Inference/Train.csv"
     pesi_modello = "TrainedModel/narrative_kg_model_weights.pt"
     mappatura_rel = "TrainedModel/relation_mapping.json"
     
-    nomi_libri = estrai_nomi_dal_path(train_library)
+    nomi_libri = estrai_nomi_dal_path(input_paths)
     
     risultati = []
 
-    for path, nome in zip(test_library, nomi_libri):
+    for path, nome in zip(input_paths, nomi_libri):
         # Estraiamo l'impronta digitale dell'intero romanzo
-        mean_pool, max_pool, sum_pool, vettore_libro_concat, vettore_libro_sum = get_new_book_embedding(path, pesi_modello, mappatura_rel)
+        mean_pool, max_pool, sum_pool, vettore_libro_concat, vettore_libro_sum, vettore_libro_att = get_new_book_embedding(path, pesi_modello, mappatura_rel)
         
         risultati.append({
              "Titolo" : nome,
@@ -157,7 +176,8 @@ if __name__ == "__main__":
              "MaxPooling" : max_pool.tolist(),
              "SumPooling" : sum_pool.tolist(),
              "ConcatenationEmbeddings" : vettore_libro_concat.tolist(),
-             "SumEmbeddings" : vettore_libro_sum.tolist()
+             "SumEmbeddings" : vettore_libro_sum.tolist(),
+             "AttentionEmbedding" : vettore_libro_att.tolist()
              
         })
         
