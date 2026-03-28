@@ -2,6 +2,8 @@
 
 Questo progetto implementa una pipeline avanzata di **Analisi Narratologica** che trasforma testi letterari in **Knowledge Graphs** (KG) strutturati utilizzando LLM, per poi analizzarli attraverso **Graph Neural Networks** (GNN). Il sistema è in grado di mappare lo spazio latente delle opere letterarie e consigliare romanzi basandosi sulla loro affinità strutturale e ontologica.
 
+![alt text](app/screenshot.png)
+
 ---
 
 ## 🚀 Cosa è stato fatto
