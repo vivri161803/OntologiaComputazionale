@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch 
 
 class NarrativeKGModel(nn.Module):
-    # NUOVO: Aggiunti num_layers e dropout_rate
+    # Aggiunti num_layers e dropout_rate
     def __init__(self, num_nodes: int, num_relations: int, in_channels: int, hidden_channels: int, num_layers: int = 2, dropout_rate: float = 0.2):
         super().__init__()
         

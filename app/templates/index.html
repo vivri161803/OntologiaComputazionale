@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narrative Affinity - AI Demo</title>
+    <!-- Font OutFit for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <!-- Sfondo Animato -->
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+
+    <div class="container fade-in">
+        <header>
+            <h1 class="gradient-text">Narrative Affinity Engine</h1>
+            <p class="subtitle">Scopri romanzi strutturalmente simili sfruttando l'analisi semantica tramite Graph Neural Networks.</p>
+        </header>
+
+        <!-- Selettore del Libro -->
+        <main class="selection-card glass-panel">
+            <form method="POST" action="/" class="form-container">
+                <label for="book_path">Seleziona un libro da analizzare:</label>
+                <div class="input-group">
+                    <select id="book_path" name="book_path" class="elegant-select" required>
+                        <option value="" disabled {% if not selected %}selected{% endif %}>-- Scegli un romanzo --</option>
+                        {% for book in books %}
+                            <option value="{{ book.path }}" {% if selected == book.path %}selected{% endif %}>
+                                {{ book.title }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <button type="submit" class="btn-primary">
+                        Find Affinity 
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;"><path d="m18 15-6-6-6 6"/></svg>
+                    </button>
+                </div>
+            </form>
+        </main>
+
+        <!-- Sezione Risultati (Resa visibile solo quando ci sono i dati target) -->
+        {% if target %}
+        <section class="results-dashboard fade-in">
+            <!-- Colonna Target -->
+            <div class="target-book-col">
+                <div class="glass-panel target-card fade-up">
+                    <div class="badge">Libro Analizzato</div>
+                    <div class="cover-wrapper">
+                        <img src="{{ target.cover_url }}" alt="Copertina di {{ target.title }}">
+                    </div>
+                    <div class="book-info">
+                        <h2>{{ target.title }}</h2>
+                        <p class="author">di <strong>{{ target.author }}</strong></p>
+                        <p class="year">{{ target.year }}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colonna Simili -->
+            <div class="recommendations-col">
+                <h2 class="section-title">✨ Affinità Narrativa Top 3</h2>
+                
+                <div class="rec-grid">
+                    {% for rec in recommendations %}
+                    <div class="glass-panel rec-card fade-up" style="animation-delay: {{ loop.index0 * 0.15 }}s;">
+                        <div class="rec-cover">
+                            <img src="{{ rec.cover_url }}" alt="Copertina {{ rec.title }}">
+                        </div>
+                        <div class="rec-details">
+                            <div class="match-score">Match: <span>{{ rec.score }}%</span></div>
+                            <h3>{{ rec.title }}</h3>
+                            <p class="author">{{ rec.author }}</p>
+                            <p class="year">{{ rec.year }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+        {% endif %}
+    </div>
+
+</body>
+</html>

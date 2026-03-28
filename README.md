@@ -1,57 +1,65 @@
-# Ontologia Computazionale - OOP Architecture
+# Ontologia Computazionale: GNN-based Narrative Analysis & Recommendation
 
-Questo progetto estrae Knowledge Graph da testi narrativi usando LLM (Claude Haiku), sfrutta le Graph Neural Network (R-GCN + TransE) per elaborare Graph Embeddings, e performa analisi dimensionali (UMAP/T-SNE) per calcolare similarità strutturali.
-
-> **Nota:** L'intera architettura è stata recentemente riscritta seguendo rigidi paradigmi di **Object-Oriented Programming (OOP)** per garantire modularità, rimpiazzando i numerosi script procedurali con una pipeline a oggetti.
+Questo progetto implementa una pipeline avanzata di **Analisi Narratologica** che trasforma testi letterari in **Knowledge Graphs** (KG) strutturati utilizzando LLM, per poi analizzarli attraverso **Graph Neural Networks** (GNN). Il sistema è in grado di mappare lo spazio latente delle opere letterarie e consigliare romanzi basandosi sulla loro affinità strutturale e ontologica.
 
 ---
 
-## Struttura e Moduli
+## 🚀 Cosa è stato fatto
 
-Il repository è diviso in **3 package principali**, ciascuno responsabile di una fase logica:
+Il progetto copre l'intero ciclo di vita del dato, dall'estrazione grezza alla visualizzazione interattiva:
 
-### 1. Modulo: Acquisizione Dati ed Estrazione (KG_Extraction)
-Gestisce il processo end-to-end, scaricando il testo e trasformando la narrazione in un grafo direzionato esportabile. 
-
-- `book/book_downloader.py` (Classe **`BookDownloader`**)
-  Sostituisce il vecchio script `get_txt.py`. Scarica i testi integrali dei romanzi da URL specifici e li archivia. 
-- `KG_Extraction/pipeline.py` (Classe **`NarrativeKGPipeline`**)
-  L'orchestratore principale che unisce estrattore, resolver ed esportatore in un singolo flusso isolato. Sostituisce `KG_from_txt.py`.
-- `KG_Extraction/extractor.py` (Classe **`TextChunkExtractor`**)
-  Gestisce la frammentazione del libro in test chunks e l'invocazione di *Claude* tramite `instructor` per generare sub-grafi Pydantic aderenti all'ontologia formale.
-- `KG_Extraction/merger.py` (Classe **`GraphMerger`**)
-  Si occupa di fondere i sub-grafi e applicare la *Entity Resolution* IA in scaglioni per unificare i nodi logici (es. "char_strider" e "char_aragorn"). Crea il NetworkX `DiGraph` globale.
-- `KG_Extraction/exporter.py` (Classe **`GraphTSVExporter`**)
-  Esporta il NetworkX Graph globale nel formato TSV vettoriale standard (`head`, `relation`, `tail`).
-- `KG_Extraction/interactive_visualizer.py` (Classe **`PyVisGraphVisualizer`**)
-  Una classe utilitaria per renderizzare HTML esplorabili della rete, codificando autonomamente per colore i nodi a seconda della tipologia narratologica estratta.
+1.  **Estrazione KG con LLM**: Pipeline che utilizza **Claude Haiku** (via `instructor`) per estrarre entità e relazioni dai testi dei libri, applicando logiche di **Entity Resolution** per unificare i personaggi (es. "Aragorn" e "Grampasso").
+2.  **Modellazione GNN**: Architettura basata su **R-GCN** (Relational Graph Convolutional Networks) e decoder **TransE** per l'apprendimento di graph embeddings. Include negative sampling e ottimizzazione degli iperparametri con **Optuna**.
+3.  **Analisi dello Spazio Latente**: Utilizzo di **UMAP** e **T-SNE** per proiettare i complessi embedding dei grafi in uno spazio 2D, permettendo di visualizzare visivamente le "distanze" tra le opere.
+4.  **Motore di Similarità**: Sistema di calcolo della *Cosine Similarity* tra i vettori strutturali delle opere per identificare i "match" narratologici più stretti.
+5.  **Web Showcase**: Applicazione interattiva basata su **Flask** con interfaccia **Glassmorphism**, che integra metadati e cover scaricate dinamicamente via **OpenLibrary API**.
 
 ---
 
-### 2. Modulo: Graph Neural Network & Pretraining (GNN)
-Gestisce il setup, il campionamento negativo e il training loop della rete GNN personalizzata (R-GCN ed embeddings SBERT).
+## 🛠️ Stack Tecnologico
 
-- `GNN/pretraining/trainer.py` (Classe **`GNNTrainer`**)
-  Una possente classe unificata che integra generazione del dataset testuale SBERT, generazione di negatività (Negative Sampling) e tutto il loop di addestramento PyTorch completo con *Early Stopping*. 
-- `GNN/pretraining/optimizer.py` (Classe **`GNNHyperparameterOptimizer`**)
-  Incapsula `Optuna` per automatizzare la model-selection, istanziando dinamicamente plurimi `GNNTrainer` alla ricerca della Validation Loss minima prima di finalizzare l'allenamento.
-- `GNN/EncoderDecoder.py` (Classe `NarrativeKGModel`)
-  Ospita la definizione dell'architettura neurale PyTorch (layer convoluzionali RGCN e decoder di loss basato su TransE).
-- `GNN/BERT/bert_csv.py` (Classe `NodeFeatureEncoder`) e `GNN/pretraining/NegativeSampling_csv.py` (Classe `GraphNegativeSampler`)
-  Strutture per codificare linguisticamente i nodi usando SentenceTransformers e corrompere logicamente gli archi.
+Il progetto sfrutta le tecnologie più moderne nel campo dell'AI e del Graph ML:
 
----
-
-### 3. Modulo: Inferenza ed Analisi Cinetica (Inference)
-Applica il modello pre-addestrato a testi nuovi per quantificare, analizzare matematicamente e mappare lo Spazio Latente.
-
-- `Inference/book_embedder.py` (Classe **`BookGraphEmbedder`**)
-  Passa un nuovo Knowledge Graph inedito attraverso la GNN pre-allenata. Applica strategie di Pooling differenziate (Mean, Max, Sum, Attention) per definire la *fingerprint strutturale* dell'intera opera.
-- `Inference/similarity_analyzer.py` (Classe **`SemanticSimilarityAnalyzer`**)
-  Elabora il dataset vettoriale prodotto dall'Embedder eseguendo la *Cosine Similarity* tramite normalizzazione PyTorch (Tutti v Tutti), stampando heatmap ad altissima precisione con pre-processing ast Pydantic integrato.
-- `Inference/latent_space_visualization.py` (Classe **`LatentSpaceVisualizer`**)
-  Riunisce e ottimizza sia gli algoritmi di riduzione  T-SNE che UMAP in un singolo pattern strategico OOP, generando Scatterplots colorati Plotly in HTML.
+*   **Linguaggio**: Python 3.12+
+*   **Gestione Ambiente**: `uv` (per performance fulminee e determinismo delle dipendenze).
+*   **LLM & Orchestrazione**: Anthropic Claude Haiku, `instructor`, `Pydantic`.
+*   **Graph Machine Learning**: `PyTorch`, `PyTorch Geometric` (R-GCN, TransE).
+*   **Elaborazione Grafi**: `NetworkX`, `PyVis`.
+*   **Natural Language Processing**: `Sentence-Transformers` (SBERT) per le feature iniziali dei nodi.
+*   **Data Science**: `Pandas`, `NumPy`, `Scikit-Learn`, `UMAP-learn`.
+*   **Visualizzazione**: `Plotly`, `Matplotlib`, `Seaborn`.
+*   **Web Stack**: `Flask`, `Requests` (OpenLibrary API integration).
 
 ---
 
-*Refactoring architetturale OOP curato dinamicamente con successo per massimizzare estendibilità e manutenibilità del codice.*
+## 📂 Struttura del Progetto
+
+*   **`KG_Extraction/`**: Core dell'acquisizione. Contiene l'estrattore LLM, il merger di grafi e l'esportatore TSV.
+*   **`GNN/`**: Definizione del modello neurale, script di training, negative sampling e ottimizzazione.
+*   **`Inference/`**: Moduli per generare embedding di nuovi libri e analizzare le similarità.
+*   **`app/`**: Il backend e frontend della Web Application demo.
+*   **`book/`**: Contiene i testi originali (`.txt`), i grafi estratti (`.tsv`) e i database locali.
+*   **`TrainedModel/`**: Pesi del modello allenato e mappature delle relazioni.
+
+---
+
+## 🏁 Come Iniziare
+
+Assicurati di avere `uv` installato sul tuo sistema.
+
+### 1. Eseguire la Demo End-to-End
+Per estrarre un grafo, generare i grafici dello spazio latente e calcolare le similarità in un colpo solo:
+```bash
+uv run demo.py
+```
+
+### 2. Avviare la Web App
+Per navigare tra i consigli dei libri con un'interfaccia premium:
+```bash
+uv run python app/app.py
+```
+L'app sarà disponibile su **[http://127.0.0.1:5555/](http://127.0.0.1:5555/)**.
+
+---
+
+*Progetto sviluppato come framework modulare in Object-Oriented Programming (OOP) per la ricerca in Computer Science ed Humanities.*
