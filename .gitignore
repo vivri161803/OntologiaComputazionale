@@ -8,6 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+# Secrets and API Keys
+*api_key.py
 .env
-lib
-bk_TrainedModel
